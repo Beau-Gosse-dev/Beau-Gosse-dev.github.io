@@ -44,8 +44,9 @@
         <div class="guess-counter" id="guessCounter">Round 1 of 10</div>
         
         <img id="image" src="" alt="Random Image">
-        <input type="text" id="guess-input" placeholder="Enter image name">
+        <input type="text" id="guess-input" placeholder="Enter country name">
         <button id="enter-button">Enter</button>
+        <button id="next-round-button" style="display: none;">Next Round</button>
         <div id="result"></div>
     </div>
 
@@ -109,6 +110,8 @@
             countryListContainer.appendChild(countryItem);
         });
 
+        const nextRoundButton = document.getElementById("next-round-button");
+
         let score = 0;
         let imagesShown = 0;
         let currentImage = null;
@@ -125,6 +128,8 @@
 
         // Function to start the game
         playButton.addEventListener("click", () => {
+            playButton.style.display = "none"; // Hide the play button
+
             score = 0;
             imagesShown = 0;
             gameContainer.style.display = "block";
@@ -145,7 +150,15 @@
             imagesShown++;
             const guessCounterDisplay = document.getElementById("guessCounter");
             guessCounterDisplay.textContent = `Round ${imagesShown} of 10`;
+
+            enterButton.disabled = false; // Enable the "Enter" button
+            nextRoundButton.style.display = "none"; // Hide the "Next Round" button
         }
+        
+        // Event listener for the "Next Round" button
+        nextRoundButton.addEventListener("click", () => {
+            showNextImage();
+        });
 
         // Function to check the guess
         enterButton.addEventListener("click", () => {
@@ -156,7 +169,8 @@
             } else {
                 resultDiv.textContent = "Wrong! The correct answer was: " + currentImage.name;
             }
-            setTimeout(showNextImage, 1000);
+            enterButton.disabled = true; // Disable the "Enter" button to prevent multiple guesses
+            nextRoundButton.style.display = "inline"; // Show the "Next Round" button
         });
 
         // Function to end the game
