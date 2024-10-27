@@ -1,1 +1,108 @@
-<h1>Beau's Personal Site!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Guessing Game</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        #game-container { display: none; margin-top: 20px; }
+        #result { font-size: 1.5em; margin-top: 20px; }
+        #score-page { display: none; }
+    </style>
+</head>
+<body>
+    <h1>Image Guessing Game</h1>
+    <button id="play-button">Play</button>
+    
+    <div id="game-container">
+        <img id="image" src="" alt="Random Image" style="width: 200px; height: 200px;">
+        <input type="text" id="guess-input" placeholder="Enter image name">
+        <button id="enter-button">Enter</button>
+        <div id="result"></div>
+    </div>
+
+    <div id="score-page">
+        <h2>Game Over</h2>
+        <p id="final-score"></p>
+        <button id="restart-button">Restart</button>
+    </div>
+
+    <script>
+        // List of images and their names
+        const images = [
+            { src: "image1.jpg", name: "cat" },
+            { src: "image2.jpg", name: "dog" },
+            { src: "image3.jpg", name: "car" },
+            { src: "image4.jpg", name: "tree" },
+            { src: "image5.jpg", name: "house" },
+            { src: "image6.jpg", name: "apple" },
+            { src: "image7.jpg", name: "sun" },
+            { src: "image8.jpg", name: "moon" },
+            { src: "image9.jpg", name: "star" },
+            { src: "image10.jpg", name: "fish" }
+        ];
+
+        let score = 0;
+        let imagesShown = 0;
+        let currentImage = null;
+
+        const playButton = document.getElementById("play-button");
+        const gameContainer = document.getElementById("game-container");
+        const imageElement = document.getElementById("image");
+        const guessInput = document.getElementById("guess-input");
+        const enterButton = document.getElementById("enter-button");
+        const resultDiv = document.getElementById("result");
+        const scorePage = document.getElementById("score-page");
+        const finalScore = document.getElementById("final-score");
+        const restartButton = document.getElementById("restart-button");
+
+        // Function to start the game
+        playButton.addEventListener("click", () => {
+            score = 0;
+            imagesShown = 0;
+            gameContainer.style.display = "block";
+            scorePage.style.display = "none";
+            showNextImage();
+        });
+
+        // Function to show a random image
+        function showNextImage() {
+            if (imagesShown >= 10) {
+                endGame();
+                return;
+            }
+            currentImage = images[Math.floor(Math.random() * images.length)];
+            imageElement.src = currentImage.src;
+            guessInput.value = "";
+            resultDiv.textContent = "";
+            imagesShown++;
+        }
+
+        // Function to check the guess
+        enterButton.addEventListener("click", () => {
+            const userGuess = guessInput.value.trim().toLowerCase();
+            if (userGuess === currentImage.name.toLowerCase()) {
+                score++;
+                resultDiv.textContent = "Correct!";
+            } else {
+                resultDiv.textContent = "Wrong! The correct answer was: " + currentImage.name;
+            }
+            setTimeout(showNextImage, 1000);
+        });
+
+        // Function to end the game
+        function endGame() {
+            gameContainer.style.display = "none";
+            scorePage.style.display = "block";
+            finalScore.textContent = "Your final score is: " + score + " out of 10";
+        }
+
+        // Restart the game
+        restartButton.addEventListener("click", () => {
+            scorePage.style.display = "none";
+            playButton.click();
+        });
+    </script>
+</body>
+</html>
