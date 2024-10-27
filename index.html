@@ -3,19 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Guessing Game</title>
+    <title>Face Country Guessing Game</title>
     <style>
         body { font-family: Arial, sans-serif; text-align: center; }
         #game-container { display: none; margin-top: 20px; }
         #result { font-size: 1.5em; margin-top: 20px; }
         #score-page { display: none; }
+        .country-list {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 600px;
+            margin: 20px auto;
+            gap: 10px;
+            justify-content: center;
+        }
+        .country-item {
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100px;
+            text-align: center;
+            font-size: 14px;
+        }
+        h2 {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <h1>Image Guessing Game</h1>
+    <h1>Face Country Guessing Game</h1>
     <button id="play-button">Play</button>
     
     <div id="game-container">
+        <h2>Available Countries to Guess</h2>
+        <div class="country-list">
+            <!-- Country items will be inserted here by JavaScript -->
+        </div>
+        
         <img id="image" src="" alt="Random Image" style="width: 200px; height: 200px;">
         <input type="text" id="guess-input" placeholder="Enter image name">
         <button id="enter-button">Enter</button>
@@ -31,17 +56,56 @@
     <script>
         // List of images and their names
         const images = [
-            { src: "image1.jpg", name: "cat" },
-            { src: "image2.jpg", name: "dog" },
-            { src: "image3.jpg", name: "car" },
-            { src: "image4.jpg", name: "tree" },
-            { src: "image5.jpg", name: "house" },
-            { src: "image6.jpg", name: "apple" },
-            { src: "image7.jpg", name: "sun" },
-            { src: "image8.jpg", name: "moon" },
-            { src: "image9.jpg", name: "star" },
-            { src: "image10.jpg", name: "fish" }
-        ];
+            { src: "germany.png", name: "Germany" },
+            { src: "france.png", name: "France" },
+            { src: "england.png", name: "England" },
+            { src: "netherlands.png", name: "Netherlands" },
+            { src: "mexico.png", name: "Mexico" },
+            { src: "peru.png", name: "Peru" },
+            { src: "argentina.png", name: "Argentina" },
+            { src: "brazil.png", name: "Brazil" },
+            { src: "philippines.png", name: "Philippines" },
+            { src: "cambodia.png", name: "Cambodia" },
+            { src: "vietnam.png", name: "Vietnam" },
+            { src: "thailand.png", name: "Thailand" },
+            { src: "greece.png", name: "Greece" },
+            { src: "italy.png", name: "Italy" },
+            { src: "spain.png", name: "Spain" },
+            { src: "israel.png", name: "Israel" },
+            { src: "china.png", name: "China (Han)" },
+            { src: "korea.png", name: "Korea" },
+            { src: "japan.png", name: "Japan" },
+            { src: "mongolia.png", name: "Mongolia" },
+            { src: "ukraine.png", name: "Ukraine" },
+            { src: "sweden.png", name: "Sweden" },
+            { src: "poland.png", name: "Poland" },
+            { src: "russia.png", name: "Russia" },
+            { src: "serbia.png", name: "Serbia" },
+            { src: "czech_republic.png", name: "Czech Republic" },
+            { src: "hungary.png", name: "Hungary" },
+            { src: "romania.png", name: "Romania" },
+            { src: "south_india.png", name: "South India" },
+            { src: "india.png", name: "India" },
+            { src: "burma.png", name: "Burma" },
+            { src: "samoa.png", name: "Samoa" },
+            { src: "turkey.png", name: "Turkey" },
+            { src: "lebanon.png", name: "Lebanon" },
+            { src: "afghanistan.png", name: "Afghanistan" },
+            { src: "iran.png", name: "Iran" },
+            { src: "chad_cameroon.png", name: "Chad / Cameroon" },
+            { src: "ethiopia.png", name: "Ethiopia" },
+            { src: "south_africa.png", name: "South Africa" },
+            { src: "west_africa.png", name: "West Africa" }
+        ];          
+        
+        const countryListContainer = document.querySelector('.country-list');
+        
+        images.forEach(image => {
+            const countryItem = document.createElement('div');
+            countryItem.classList.add('country-item');
+            countryItem.textContent = image.name;
+            countryListContainer.appendChild(countryItem);
+        });
 
         let score = 0;
         let imagesShown = 0;
