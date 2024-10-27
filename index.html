@@ -36,12 +36,14 @@
     <button id="play-button">Play</button>
     
     <div id="game-container">
-        <h2>Available Countries to Guess</h2>
+        <h2>Available Countries to Guess From</h2>
         <div class="country-list">
             <!-- Country items will be inserted here by JavaScript -->
         </div>
+
+        <div class="guess-counter" id="guessCounter">Round 1 of 10</div>
         
-        <img id="image" src="" alt="Random Image" style="width: 200px; height: 200px;">
+        <img id="image" src="" alt="Random Image">
         <input type="text" id="guess-input" placeholder="Enter image name">
         <button id="enter-button">Enter</button>
         <div id="result"></div>
@@ -141,6 +143,8 @@
             guessInput.value = "";
             resultDiv.textContent = "";
             imagesShown++;
+            const guessCounterDisplay = document.getElementById("guessCounter");
+            guessCounterDisplay.textContent = `Round ${imagesShown} of 10`;
         }
 
         // Function to check the guess
