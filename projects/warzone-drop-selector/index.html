@@ -40,6 +40,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            display: none; /* Initially hidden */
         }
         
         .map-image {
@@ -68,6 +69,7 @@
         .btn-container {
             margin: 0;
             padding: 0;
+            display: none; /* Initially hide the drop button */
         }
         
         .timer {
@@ -84,8 +86,9 @@
             margin: 15px auto 0;
             max-width: 100%;
             overflow-y: auto;
-            max-height: 25vh;
+            max-height: 100vh; /* Increased to allow full content display */
             text-align: left;
+            display: block; /* Initially visible */
         }
         
         .map-info h3 {
@@ -98,6 +101,24 @@
             margin-bottom: 10px;
             font-size: clamp(12px, 2vw, 14px);
             line-height: 1.6;
+        }
+        
+        .info-toggle {
+            background-color: #161b22;
+            color: #4fcce8;
+            border: 1px solid #4fcce8;
+            border-radius: 8px;
+            padding: 10px 20px;
+            margin: 15px auto;
+            cursor: pointer;
+            font-size: 18px;
+            display: block;
+            width: fit-content;
+            transition: all 0.2s ease;
+        }
+        
+        .info-toggle:hover {
+            background-color: #1c2330;
         }
         
         @media (max-height: 600px) {
@@ -151,7 +172,7 @@
     <div class="navigation-top">
         <a href="../../index.html" class="back-link">← Back to Homepage</a>
         <div class="btn-container">
-            <button id="dropBtn" class="btn">Where we dropping?</button>
+            <button id="dropBtn" class="btn">Choose drop spot</button>
             <div id="timer" class="timer">No second-guessing it... (60s)</div>
         </div>
     </div>
@@ -171,7 +192,9 @@
             </div>
         </div>
         
-        <div class="map-info">
+        <button id="infoToggle" class="info-toggle">I'm Ready to Drop!</button>
+        
+        <div class="map-info" id="mapInfo">
             <h3>Why are you still choosing your own drop spot?!</h3>
             <p>
                 Look, we've ALL been there. Your squad's in the dropship, the countdown's ticking, and everyone's screaming different locations. Meanwhile, you're just sitting there like "uhhhh..." until you panic-drop into a hot zone with 20 other players and die immediately.
@@ -193,10 +216,25 @@
             const crosshair = document.getElementById('crosshair');
             const dropBtn = document.getElementById('dropBtn');
             const timer = document.getElementById('timer');
+            const infoToggle = document.getElementById('infoToggle');
+            const mapInfo = document.getElementById('mapInfo');
             let timeLeft = 60;
             let countdownInterval;
             let mapCenter;
             let relativePosition = { x: 0, y: 0 }; // Store relative position as percentage
+            
+            // Toggle info section visibility
+            infoToggle.addEventListener('click', function() {
+                // Hide the info section
+                mapInfo.style.display = 'none';
+                
+                // Show the map and drop button
+                document.querySelector('.map-container').style.display = 'flex';
+                document.querySelector('.btn-container').style.display = 'block';
+                
+                // Change button text and hide it
+                infoToggle.style.display = 'none';
+            });
             
             // Map playable area constraints (percentage of total map size)
             // These values represent the actual playable area excluding the green border
@@ -220,8 +258,23 @@
                 const topOffset = mapBounds.top * mapRect.height;
                 
                 // Generate random coordinates within the playable area
-                const x = leftOffset + Math.random() * playableWidth;
-                const y = topOffset + Math.random() * playableHeight;
+                let x = leftOffset + Math.random() * playableWidth;
+                let y = topOffset + Math.random() * playableHeight;
+                
+                // Additional check to avoid top left and top right corners
+                const cornerSize = 0.1; // Avoid 10% of the map from corners
+                const topRightCornerSize = 0.2; // Expanded avoidance for top right (20%)
+                const isInTopLeftCorner = (x < (mapBounds.left + cornerSize) * mapRect.width && 
+                                          y < (mapBounds.top + cornerSize) * mapRect.height);
+                const isInTopRightCorner = (x > (mapBounds.right - topRightCornerSize) * mapRect.width && 
+                                           y < (mapBounds.top + topRightCornerSize) * mapRect.height);
+                
+                // If in a corner, move the position more toward the center
+                if (isInTopLeftCorner || isInTopRightCorner) {
+                    // Move more toward center of map
+                    x = leftOffset + (0.3 + Math.random() * 0.4) * playableWidth;
+                    y = topOffset + (0.2 + Math.random() * 0.7) * playableHeight;
+                }
                 
                 // Store the relative position (as percentage of map dimensions)
                 relativePosition.x = x / mapRect.width;
@@ -273,7 +326,7 @@
                     if (timeLeft <= 0) {
                         clearInterval(countdownInterval);
                         dropBtn.disabled = false;
-                        dropBtn.textContent = "Where we dropping?";
+                        dropBtn.textContent = "Choose drop spot";
                         timer.style.visibility = 'hidden';
                         crosshair.style.opacity = '0';
                         crosshair.style.animation = '';
