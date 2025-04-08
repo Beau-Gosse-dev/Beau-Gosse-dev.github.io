@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warzone Drop Selector</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0d1117;
+            color: #e6e6e6;
+            text-align: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        html {
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        header {
+            padding: 10px;
+            background-color: #161b22;
+            margin-bottom: 0;
+        }
+        
+        h1 {
+            margin: 0;
+            color: #c9d1d9;
+            font-size: clamp(1.5rem, 4vw, 2rem);
+        }
+        
+        .container {
+            width: 100%;
+            height: calc(100% - 120px);
+            margin: 0 auto;
+            padding: 0 15px;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin: 10px 0;
+            color: #58a6ff;
+            text-decoration: none;
+            position: absolute;
+            left: 20px;
+            font-size: 14px;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        .navigation-top {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0;
+            background-color: #161b22;
+            margin-bottom: 10px;
+        }
+        
+        .map-container {
+            position: relative;
+            margin: 0 auto;
+            max-width: 900px;
+            height: 55vh;
+            min-height: 200px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 30px rgba(79, 204, 232, 0.3);
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .map-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+        
+        .crosshair {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.5s;
+            filter: drop-shadow(0 0 5px #ff0000);
+        }
+        
+        .crosshair svg {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .btn-container {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .btn {
+            background-color: #238636;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: clamp(14px, 3vw, 18px);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(35, 134, 54, 0.4);
+        }
+        
+        .btn:hover:not(:disabled) {
+            background-color: #2ea043;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(35, 134, 54, 0.6);
+        }
+        
+        .btn:disabled {
+            background-color: #30363d;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        
+        .timer {
+            font-size: 14px;
+            color: #8b949e;
+            margin-top: 8px;
+            visibility: hidden;
+        }
+        
+        .map-info {
+            background-color: #161b22;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px auto 0;
+            max-width: 100%;
+            overflow-y: auto;
+            max-height: 25vh;
+        }
+        
+        .map-info h3 {
+            margin-top: 0;
+            color: #4fcce8;
+            font-size: clamp(16px, 3vw, 20px);
+        }
+        
+        .map-info p {
+            margin-bottom: 0;
+            font-size: clamp(12px, 2vw, 14px);
+            line-height: 1.6;
+        }
+        
+        @media (max-height: 600px) {
+            .map-info {
+                max-height: 15vh;
+            }
+            
+            .container {
+                height: calc(100% - 90px);
+            }
+            
+            .map-container {
+                height: 45vh;
+                min-height: 180px;
+            }
+            
+            header {
+                padding: 5px;
+            }
+            
+            .navigation-top {
+                padding: 5px 0;
+            }
+        }
+        
+        @media (max-width: 500px) {
+            .back-link {
+                position: static;
+                margin: 5px 0;
+            }
+            
+            .navigation-top {
+                flex-direction: column;
+            }
+            
+            .btn-container {
+                margin-top: 5px;
+            }
+            
+            .container {
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Warzone Drop Selector</h1>
+    </header>
+    
+    <div class="navigation-top">
+        <a href="../../index.html" class="back-link">← Back to Homepage</a>
+        <div class="btn-container">
+            <button id="dropBtn" class="btn">Where we dropping?</button>
+            <div id="timer" class="timer">No second-guessing it... (60s)</div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="map-container">
+            <img src="images/verdansk-2025-map.jpg" alt="Verdansk 2025 Map" class="map-image" id="map">
+            <div class="crosshair" id="crosshair">
+                <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="9" fill="none" stroke="#ff0000" stroke-width="1.5"/>
+                    <line x1="12" y1="4" x2="12" y2="8" stroke="#ff0000" stroke-width="1.5"/>
+                    <line x1="12" y1="16" x2="12" y2="20" stroke="#ff0000" stroke-width="1.5"/>
+                    <line x1="4" y1="12" x2="8" y2="12" stroke="#ff0000" stroke-width="1.5"/>
+                    <line x1="16" y1="12" x2="20" y2="12" stroke="#ff0000" stroke-width="1.5"/>
+                    <circle cx="12" cy="12" r="2" fill="#ff0000"/>
+                </svg>
+            </div>
+        </div>
+        
+        <div class="map-info">
+            <h3>Why are you still choosing your own drop spot?!</h3>
+            <p>
+                Look, we've ALL been there. Your squad's in the dropship, the countdown's ticking, and everyone's screaming different locations. Meanwhile, you're just sitting there like "uhhhh..." until you panic-drop into a hot zone with 20 other players and die immediately.
+            </p>
+            <p>
+                NO MORE EXCUSES! Hit that big green button at the top, let the algorithm decide your fate, and STICK TO IT. No more of that "but I don't wanna drop there" nonsense. The crosshair has spoken. There's a 60-second timer so your indecisive ass can't change your mind.
+            </p>
+            <p>
+                Your K/D ratio will thank you. Your squad will thank you. Maybe you'll even win a match for once. You're welcome.
+            </p>
+        </div>
+    </div>
+    
+    <button id="testBtn" style="opacity: 0; position: fixed; bottom: 5px; right: 5px; width: 30px; height: 30px; border: none; background: transparent; cursor: default; outline: none; padding: 0;"></button>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const map = document.getElementById('map');
+            const crosshair = document.getElementById('crosshair');
+            const dropBtn = document.getElementById('dropBtn');
+            const timer = document.getElementById('timer');
+            let timeLeft = 60;
+            let countdownInterval;
+            let mapCenter;
+            let relativePosition = { x: 0, y: 0 }; // Store relative position as percentage
+            
+            // Map playable area constraints (percentage of total map size)
+            // These values represent the actual playable area excluding the green border
+            const mapBounds = {
+                top: 0.04,      // 4% from the top edge
+                right: 0.92,    // 92% from the left edge (8% from right)
+                bottom: 0.96,   // 96% from the top edge (4% from bottom)
+                left: 0.08      // 8% from the left edge
+            };
+            
+            // Function to get random position on the map
+            function getRandomPosition() {
+                const mapRect = map.getBoundingClientRect();
+                
+                // Calculate the playable area dimensions
+                const playableWidth = (mapBounds.right - mapBounds.left) * mapRect.width;
+                const playableHeight = (mapBounds.bottom - mapBounds.top) * mapRect.height;
+                
+                // Calculate the offset from the edges
+                const leftOffset = mapBounds.left * mapRect.width;
+                const topOffset = mapBounds.top * mapRect.height;
+                
+                // Generate random coordinates within the playable area
+                const x = leftOffset + Math.random() * playableWidth;
+                const y = topOffset + Math.random() * playableHeight;
+                
+                // Store the relative position (as percentage of map dimensions)
+                relativePosition.x = x / mapRect.width;
+                relativePosition.y = y / mapRect.height;
+                
+                return { x, y };
+            }
+            
+            // Function to calculate absolute position from relative position
+            function getAbsolutePosition() {
+                const mapRect = map.getBoundingClientRect();
+                
+                // Ensure the position stays within bounds even if the relative position was somehow outside
+                const boundedX = Math.min(Math.max(relativePosition.x, mapBounds.left), mapBounds.right);
+                const boundedY = Math.min(Math.max(relativePosition.y, mapBounds.top), mapBounds.bottom);
+                
+                return {
+                    x: mapRect.width * boundedX,
+                    y: mapRect.height * boundedY
+                };
+            }
+            
+            // Function to place crosshair at a random position
+            function placeRandomCrosshair() {
+                const position = getRandomPosition();
+                
+                // Position the crosshair
+                crosshair.style.left = `${position.x}px`;
+                crosshair.style.top = `${position.y}px`;
+                crosshair.style.opacity = '1';
+                
+                // Add pulsing animation to crosshair
+                crosshair.style.animation = 'pulse 1.5s infinite';
+                
+                // Disable button and update text
+                dropBtn.disabled = true;
+                dropBtn.textContent = "No second-guessing it";
+                
+                // Start countdown
+                timer.style.visibility = 'visible';
+                timeLeft = 60;
+                updateTimerText();
+                
+                clearInterval(countdownInterval);
+                countdownInterval = setInterval(() => {
+                    timeLeft--;
+                    updateTimerText();
+                    
+                    if (timeLeft <= 0) {
+                        clearInterval(countdownInterval);
+                        dropBtn.disabled = false;
+                        dropBtn.textContent = "Where we dropping?";
+                        timer.style.visibility = 'hidden';
+                        crosshair.style.opacity = '0';
+                        crosshair.style.animation = '';
+                    }
+                }, 1000);
+            }
+            
+            // Update timer text
+            function updateTimerText() {
+                timer.textContent = `No second-guessing it... (${timeLeft}s)`;
+            }
+            
+            // Add click event listener to button
+            dropBtn.addEventListener('click', placeRandomCrosshair);
+            
+            // Add test button for rapid testing
+            const testBtn = document.getElementById('testBtn');
+            testBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                // Generate new random position without timer or button disabling
+                const position = getRandomPosition();
+                crosshair.style.left = `${position.x}px`;
+                crosshair.style.top = `${position.y}px`;
+                crosshair.style.opacity = '1';
+                crosshair.style.animation = 'pulse 1.5s infinite';
+            });
+            
+            // Enable keyboard shortcut for test button (use T key)
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 't' || e.key === 'T') {
+                    testBtn.click();
+                }
+            });
+            
+            // Make the crosshair pulse
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes pulse {
+                    0% { transform: translate(-50%, -50%) scale(1); }
+                    50% { transform: translate(-50%, -50%) scale(1.2); }
+                    100% { transform: translate(-50%, -50%) scale(1); }
+                }
+            `;
+            document.head.appendChild(style);
+            
+            // Handle window resize events to keep the map responsive
+            window.addEventListener('resize', function() {
+                if (crosshair.style.opacity === '1') {
+                    // Use the stored relative position to maintain crosshair position
+                    const position = getAbsolutePosition();
+                    crosshair.style.left = `${position.x}px`;
+                    crosshair.style.top = `${position.y}px`;
+                }
+            });
+            
+            // Scroll to the top when the page loads
+            window.scrollTo(0, 0);
+        });
+    </script>
+</body>
+</html> 
