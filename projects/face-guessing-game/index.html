@@ -228,6 +228,39 @@
             content: " ▲";
         }
         
+        /* Perfect guess animation */
+        @keyframes perfectGuess {
+            0% { transform: scale(1); box-shadow: 0 0 10px rgba(74, 222, 128, 0.5); }
+            50% { transform: scale(1.05); box-shadow: 0 0 30px rgba(74, 222, 128, 0.8); }
+            100% { transform: scale(1); box-shadow: 0 0 10px rgba(74, 222, 128, 0.5); }
+        }
+        
+        .perfect-guess {
+            animation: perfectGuess 1s ease-in-out 3;
+        }
+        
+        /* Bonus points indicator */
+        .bonus-points {
+            display: inline-block;
+            font-weight: bold;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-left: 5px;
+            font-size: 0.9em;
+        }
+        
+        .perfect-bonus {
+            background-color: rgba(74, 222, 128, 0.2);
+            color: #4ade80;
+            border: 1px solid #4ade80;
+        }
+        
+        .neighbor-bonus {
+            background-color: rgba(250, 204, 21, 0.2);
+            color: #facc15;
+            border: 1px solid #facc15;
+        }
+        
         @media (max-width: 768px) {
             .country-item {
                 width: 85px;
@@ -255,6 +288,11 @@
             <p>Researchers at <a href="http://faceresearch.org/" target="_blank">faceresearch.org</a> used a complex process of aligning and combining multiple facial photographs from people of each country to create composite images representing the "average face" of that country's population.</p>
             <p>I was captivated by how these composite faces reveal subtle differences in facial characteristics between different regions while also highlighting our shared humanity. This game tests your ability to recognize these differences and match faces to their countries of origin.</p>
             <p>Challenge yourself to see how well you can identify these average faces from around the world!</p>
+            
+            <h3>Scoring System</h3>
+            <p><strong>Perfect guess</strong>: 10 points - You correctly identified the exact country</p>
+            <p><strong>Neighboring country</strong>: 5 points - Your guess was a country that shares a border with the correct country</p>
+            <p><strong>Maximum score</strong>: 100 points (10 rounds)</p>
         </div>
         
         <div id="game-container">
@@ -329,7 +367,51 @@
             { src: "images/ethiopia.png", name: "Ethiopia" },
             { src: "images/south_africa.png", name: "South Africa" },
             { src: "images/west_africa.png", name: "West Africa" }
-        ];          
+        ];
+        
+        // Neighboring countries data structure
+        const borders = {
+            "Germany": ["France", "Netherlands", "Poland", "Czech Republic"],
+            "France": ["Germany", "Spain", "Italy"],
+            "England": [],
+            "Netherlands": ["Germany"],
+            "Mexico": [],
+            "Peru": ["Brazil"],
+            "Argentina": ["Brazil"],
+            "Brazil": ["Peru", "Argentina"],
+            "Philippines": [],
+            "Cambodia": ["Thailand", "Vietnam"],
+            "Vietnam": ["Cambodia", "China"],
+            "Thailand": ["Cambodia", "Burma"],
+            "Greece": ["Turkey"],
+            "Italy": ["France"],
+            "Spain": ["France"],
+            "Israel": ["Lebanon"],
+            "China": ["Vietnam", "Mongolia", "Russia", "Korea"],
+            "Korea": ["China", "Russia"],
+            "Japan": [],
+            "Mongolia": ["China", "Russia"],
+            "Ukraine": ["Romania", "Poland", "Russia"],
+            "Sweden": [],
+            "Poland": ["Germany", "Czech Republic", "Ukraine", "Russia"],
+            "Russia": ["Poland", "Ukraine", "Mongolia", "China", "Korea"],
+            "Serbia": ["Romania", "Hungary"],
+            "Czech Republic": ["Germany", "Poland"],
+            "Hungary": ["Romania", "Serbia"],
+            "Romania": ["Ukraine", "Hungary", "Serbia"],
+            "South India": ["India"],
+            "India": ["South India"],
+            "Burma": ["Thailand"],
+            "Samoa": [],
+            "Turkey": ["Greece", "Iran"],
+            "Lebanon": ["Israel"],
+            "Afghanistan": ["Iran"],
+            "Iran": ["Turkey", "Afghanistan"],
+            "Chad": ["West Africa", "Ethiopia"],
+            "Ethiopia": ["Chad"],
+            "South Africa": [],
+            "West Africa": ["Chad"]
+        };
         
         const countryListContainer = document.querySelector('.country-list');
         
@@ -396,6 +478,7 @@
             imageElement.src = currentImage.src;
             guessInput.value = "";
             resultDiv.textContent = "";
+            resultDiv.className = ""; // Reset any special classes
             imagesShown++;
             const guessCounterDisplay = document.getElementById("guessCounter");
             guessCounterDisplay.textContent = `Round ${imagesShown} of 10`;
@@ -424,14 +507,53 @@
         
         function checkGuess() {
             const userGuess = guessInput.value.trim().toLowerCase();
-            if (userGuess === currentImage.name.toLowerCase()) {
-                score++;
-                resultDiv.textContent = "Correct! ✓";
+            const correctCountry = currentImage.name.toLowerCase();
+            
+            // Check for perfect match (10 points)
+            if (userGuess === correctCountry) {
+                score += 10;
+                
+                // Create bonus point indicator
+                const bonusElement = document.createElement('span');
+                bonusElement.className = 'bonus-points perfect-bonus';
+                bonusElement.textContent = '+10 points';
+                
+                // Create result message
+                resultDiv.textContent = "Perfect! ✓ ";
+                resultDiv.appendChild(bonusElement);
                 resultDiv.style.color = "#4ade80";
-            } else {
+                
+                // Add animation to the image
+                imageElement.classList.add('perfect-guess');
+                setTimeout(() => {
+                    imageElement.classList.remove('perfect-guess');
+                }, 3000);
+            } 
+            // Check for neighboring country (5 points)
+            else if (borders[currentImage.name] && borders[currentImage.name].some(country => country.toLowerCase() === userGuess)) {
+                score += 5;
+                
+                // Get the matched neighboring country with proper case
+                const neighboringCountry = borders[currentImage.name].find(
+                    country => country.toLowerCase() === userGuess
+                );
+                
+                // Create bonus point indicator
+                const bonusElement = document.createElement('span');
+                bonusElement.className = 'bonus-points neighbor-bonus';
+                bonusElement.textContent = '+5 points';
+                
+                // Create result message
+                resultDiv.textContent = `Close! ${neighboringCountry} borders ${currentImage.name}. `;
+                resultDiv.appendChild(bonusElement);
+                resultDiv.style.color = "#facc15";
+            } 
+            // Wrong answer, no points
+            else {
                 resultDiv.textContent = "Wrong! The correct answer was: " + currentImage.name;
                 resultDiv.style.color = "#f87171";
             }
+            
             enterButton.disabled = true; // Disable the "Enter" button to prevent multiple guesses
             nextRoundButton.style.display = "inline"; // Show the "Next Round" button
         }
@@ -440,15 +562,22 @@
         function endGame() {
             gameContainer.style.display = "none";
             scorePage.style.display = "block";
-            finalScore.textContent = "Your final score is: " + score + " out of 10";
+            finalScore.textContent = "Your final score is: " + score + " out of 100";
+            
+            // Remove all existing motivational messages (not just the first one)
+            const scorePageElement = document.getElementById("score-page");
+            const elements = scorePageElement.querySelectorAll("p:not(#final-score)");
+            elements.forEach(element => element.remove());
             
             // Add a motivational message based on score
             let message = "";
-            if (score === 10) {
-                message = "Perfect score! You're a face recognition expert!";
-            } else if (score >= 7) {
+            if (score === 100) {
+                message = "Perfect score!! That is incredible! (unless you cheated...)";
+            } else if (score >= 70) {
+                message = "Exceptional! You have an amazing eye for facial features across cultures!";
+            } else if (score >= 50) {
                 message = "Great job! Your global facial recognition skills are impressive!";
-            } else if (score >= 5) {
+            } else if (score >= 30) {
                 message = "Not bad! With a bit more practice, you'll be a pro!";
             } else {
                 message = "Keep practicing! These faces can be tricky to identify.";
