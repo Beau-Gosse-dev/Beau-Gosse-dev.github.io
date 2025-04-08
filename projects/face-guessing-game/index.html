@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Country Guessing Game</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        #game-container { display: none; margin-top: 20px; }
+        #result { font-size: 1.5em; margin-top: 20px; }
+        #score-page { display: none; }
+        .country-list {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 600px;
+            margin: 20px auto;
+            gap: 10px;
+            justify-content: center;
+        }
+        .country-item {
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100px;
+            text-align: center;
+            font-size: 14px;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Face Country Guessing Game</h1>
+    <p><a href="../../index.html">Back to Homepage</a></p>
+    <button id="play-button">Play</button>
+    
+    <div id="game-container">
+        <h2>Available Countries to Guess From</h2>
+        <div class="country-list">
+            <!-- Country items will be inserted here by JavaScript -->
+        </div>
+
+        <div class="guess-counter" id="guessCounter">Round 1 of 10</div>
+        
+        <div id="result"></div>
+        <img id="image" src="images/" alt="Random Image">
+        <input type="text" id="guess-input" placeholder="Enter country name">
+        <button id="enter-button">Enter</button>
+        <button id="next-round-button" style="display: none;">Next Round</button>
+        <p>Source of images can be found here: http://faceresearch.org/ or  https://www.artfido.com/this-is-what-the-average-person-looks-like-in-each-country/</p>
+        <p>Source code for this site: https://github.com/Beau-Gosse-dev/Beau-Gosse-dev.github.io/tree/main</p>
+    </div>
+
+    <div id="score-page">
+        <h2>Game Over</h2>
+        <p id="final-score"></p>
+        <button id="restart-button">Restart</button>
+    </div>
+
+    <script>
+        // List of images and their names
+        const images = [
+            { src: "images/germany.png", name: "Germany" },
+            { src: "images/france.png", name: "France" },
+            { src: "images/england.png", name: "England" },
+            { src: "images/netherlands.png", name: "Netherlands" },
+            { src: "images/mexico.png", name: "Mexico" },
+            { src: "images/peru.png", name: "Peru" },
+            { src: "images/argentina.png", name: "Argentina" },
+            { src: "images/brazil.png", name: "Brazil" },
+            { src: "images/philippines.png", name: "Philippines" },
+            { src: "images/cambodia.png", name: "Cambodia" },
+            { src: "images/vietnam.png", name: "Vietnam" },
+            { src: "images/thailand.png", name: "Thailand" },
+            { src: "images/greece.png", name: "Greece" },
+            { src: "images/italy.png", name: "Italy" },
+            { src: "images/spain.png", name: "Spain" },
+            { src: "images/israel.png", name: "Israel" },
+            { src: "images/china.png", name: "China" },
+            { src: "images/korea.png", name: "Korea" },
+            { src: "images/japan.png", name: "Japan" },
+            { src: "images/mongolia.png", name: "Mongolia" },
+            { src: "images/ukraine.png", name: "Ukraine" },
+            { src: "images/sweden.png", name: "Sweden" },
+            { src: "images/poland.png", name: "Poland" },
+            { src: "images/russia.png", name: "Russia" },
+            { src: "images/serbia.png", name: "Serbia" },
+            { src: "images/czech_republic.png", name: "Czech Republic" },
+            { src: "images/hungary.png", name: "Hungary" },
+            { src: "images/romania.png", name: "Romania" },
+            { src: "images/south_india.png", name: "South India" },
+            { src: "images/india.png", name: "India" },
+            { src: "images/burma.png", name: "Burma" },
+            { src: "images/samoa.png", name: "Samoa" },
+            { src: "images/turkey.png", name: "Turkey" },
+            { src: "images/lebanon.png", name: "Lebanon" },
+            { src: "images/afghanistan.png", name: "Afghanistan" },
+            { src: "images/iran.png", name: "Iran" },
+            { src: "images/chad.png", name: "Chad" },
+            { src: "images/ethiopia.png", name: "Ethiopia" },
+            { src: "images/south_africa.png", name: "South Africa" },
+            { src: "images/west_africa.png", name: "West Africa" }
+        ];          
+        
+        const countryListContainer = document.querySelector('.country-list');
+        
+        images.forEach(image => {
+            const countryItem = document.createElement('div');
+            countryItem.classList.add('country-item');
+            countryItem.textContent = image.name;
+            countryListContainer.appendChild(countryItem);
+        });
+
+        const nextRoundButton = document.getElementById("next-round-button");
+
+        let score = 0;
+        let imagesShown = 0;
+        let currentImage = null;
+
+        const playButton = document.getElementById("play-button");
+        const gameContainer = document.getElementById("game-container");
+        const imageElement = document.getElementById("image");
+        const guessInput = document.getElementById("guess-input");
+        const enterButton = document.getElementById("enter-button");
+        const resultDiv = document.getElementById("result");
+        const scorePage = document.getElementById("score-page");
+        const finalScore = document.getElementById("final-score");
+        const restartButton = document.getElementById("restart-button");
+
+        // Function to start the game
+        playButton.addEventListener("click", () => {
+            playButton.style.display = "none"; // Hide the play button
+
+            score = 0;
+            imagesShown = 0;
+            gameContainer.style.display = "block";
+            scorePage.style.display = "none";
+            showNextImage();
+        });
+
+        // Function to show a random image
+        function showNextImage() {
+            if (imagesShown >= 10) {
+                endGame();
+                return;
+            }
+            currentImage = images[Math.floor(Math.random() * images.length)];
+            imageElement.src = currentImage.src;
+            guessInput.value = "";
+            resultDiv.textContent = "";
+            imagesShown++;
+            const guessCounterDisplay = document.getElementById("guessCounter");
+            guessCounterDisplay.textContent = `Round ${imagesShown} of 10`;
+
+            enterButton.disabled = false; // Enable the "Enter" button
+            nextRoundButton.style.display = "none"; // Hide the "Next Round" button
+        }
+        
+        // Event listener for the "Next Round" button
+        nextRoundButton.addEventListener("click", () => {
+            showNextImage();
+        });
+
+        // Function to check the guess
+        enterButton.addEventListener("click", () => {
+            const userGuess = guessInput.value.trim().toLowerCase();
+            if (userGuess === currentImage.name.toLowerCase()) {
+                score++;
+                resultDiv.textContent = "Correct!";
+            } else {
+                resultDiv.textContent = "Wrong! The correct answer was: " + currentImage.name;
+            }
+            enterButton.disabled = true; // Disable the "Enter" button to prevent multiple guesses
+            nextRoundButton.style.display = "inline"; // Show the "Next Round" button
+        });
+
+        // Function to end the game
+        function endGame() {
+            gameContainer.style.display = "none";
+            scorePage.style.display = "block";
+            finalScore.textContent = "Your final score is: " + score + " out of 10";
+        }
+
+        // Restart the game
+        restartButton.addEventListener("click", () => {
+            scorePage.style.display = "none";
+            playButton.click();
+        });
+    </script>
+</body>
+</html> 

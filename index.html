@@ -3,190 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Face Country Guessing Game</title>
+    <title>Beau's Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; }
-        #game-container { display: none; margin-top: 20px; }
-        #result { font-size: 1.5em; margin-top: 20px; }
-        #score-page { display: none; }
-        .country-list {
-            display: flex;
-            flex-wrap: wrap;
-            max-width: 600px;
-            margin: 20px auto;
-            gap: 10px;
-            justify-content: center;
+        :root {
+            --primary-color: #4a6fa5;
+            --secondary-color: #166088;
+            --accent-color: #4d9078;
+            --text-color: #333;
+            --light-bg: #f5f5f5;
         }
-        .country-item {
-            padding: 10px;
-            background-color: #f0f0f0;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            width: 100px;
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
             text-align: center;
-            font-size: 14px;
+            padding: 40px 20px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
         h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+        }
+        
+        .intro {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .project-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+        
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid var(--accent-color);
+        }
+        
+        .project-content {
+            padding: 20px;
+        }
+        
+        .project-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+        }
+        
+        .project-description {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .project-link {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        
+        .project-link:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        footer {
+            margin-top: 60px;
             text-align: center;
+            padding: 20px;
+            color: #666;
+            border-top: 1px solid #ddd;
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                padding: 30px 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .projects-container {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Face Country Guessing Game</h1>
-    <button id="play-button">Play</button>
+    <header>
+        <h1>Beau's Portfolio</h1>
+        <p class="intro">Welcome to my portfolio website! Here you'll find various projects I've been working on.</p>
+    </header>
     
-    <div id="game-container">
-        <h2>Available Countries to Guess From</h2>
-        <div class="country-list">
-            <!-- Country items will be inserted here by JavaScript -->
+    <main>
+        <h2>My Projects</h2>
+        
+        <div class="projects-container">
+            <!-- Face Guessing Game -->
+            <div class="project-card">
+                <img src="projects/face-guessing-game/images/france.png" alt="Face Guessing Game" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Face Country Guessing Game</h3>
+                    <p class="project-description">Test your knowledge of facial characteristics across different countries. Can you guess which country a person is from based on their appearance?</p>
+                    <a href="projects/face-guessing-game/index.html" class="project-link">Play the Game</a>
+                </div>
+            </div>
+            
+            <!-- Placeholder for future projects -->
+            <div class="project-card">
+                <img src="https://via.placeholder.com/400x200?text=Coming+Soon" alt="Coming Soon" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Project 2</h3>
+                    <p class="project-description">This project is currently in development. Check back soon for updates!</p>
+                    <a href="#" class="project-link">Coming Soon</a>
+                </div>
+            </div>
+            
+            <!-- Placeholder for future projects -->
+            <div class="project-card">
+                <img src="https://via.placeholder.com/400x200?text=Coming+Soon" alt="Coming Soon" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Project 3</h3>
+                    <p class="project-description">This project is currently in development. Check back soon for updates!</p>
+                    <a href="#" class="project-link">Coming Soon</a>
+                </div>
+            </div>
         </div>
-
-        <div class="guess-counter" id="guessCounter">Round 1 of 10</div>
-        
-        <div id="result"></div>
-        <img id="image" src="" alt="Random Image">
-        <input type="text" id="guess-input" placeholder="Enter country name">
-        <button id="enter-button">Enter</button>
-        <button id="next-round-button" style="display: none;">Next Round</button>
-        <p>Source of images can be found here: http://faceresearch.org/ or  https://www.artfido.com/this-is-what-the-average-person-looks-like-in-each-country/</p>
-        <p>Source code for this site: https://github.com/Beau-Gosse-dev/Beau-Gosse-dev.github.io/tree/main</p>
-    </div>
-
-    <div id="score-page">
-        <h2>Game Over</h2>
-        <p id="final-score"></p>
-        <button id="restart-button">Restart</button>
-    </div>
-
-    <script>
-        // List of images and their names
-        const images = [
-            { src: "germany.png", name: "Germany" },
-            { src: "france.png", name: "France" },
-            { src: "england.png", name: "England" },
-            { src: "netherlands.png", name: "Netherlands" },
-            { src: "mexico.png", name: "Mexico" },
-            { src: "peru.png", name: "Peru" },
-            { src: "argentina.png", name: "Argentina" },
-            { src: "brazil.png", name: "Brazil" },
-            { src: "philippines.png", name: "Philippines" },
-            { src: "cambodia.png", name: "Cambodia" },
-            { src: "vietnam.png", name: "Vietnam" },
-            { src: "thailand.png", name: "Thailand" },
-            { src: "greece.png", name: "Greece" },
-            { src: "italy.png", name: "Italy" },
-            { src: "spain.png", name: "Spain" },
-            { src: "israel.png", name: "Israel" },
-            { src: "china.png", name: "China" },
-            { src: "korea.png", name: "Korea" },
-            { src: "japan.png", name: "Japan" },
-            { src: "mongolia.png", name: "Mongolia" },
-            { src: "ukraine.png", name: "Ukraine" },
-            { src: "sweden.png", name: "Sweden" },
-            { src: "poland.png", name: "Poland" },
-            { src: "russia.png", name: "Russia" },
-            { src: "serbia.png", name: "Serbia" },
-            { src: "czech_republic.png", name: "Czech Republic" },
-            { src: "hungary.png", name: "Hungary" },
-            { src: "romania.png", name: "Romania" },
-            { src: "south_india.png", name: "South India" },
-            { src: "india.png", name: "India" },
-            { src: "burma.png", name: "Burma" },
-            { src: "samoa.png", name: "Samoa" },
-            { src: "turkey.png", name: "Turkey" },
-            { src: "lebanon.png", name: "Lebanon" },
-            { src: "afghanistan.png", name: "Afghanistan" },
-            { src: "iran.png", name: "Iran" },
-            { src: "chad.png", name: "Chad" },
-            { src: "ethiopia.png", name: "Ethiopia" },
-            { src: "south_africa.png", name: "South Africa" },
-            { src: "west_africa.png", name: "West Africa" }
-        ];          
-        
-        const countryListContainer = document.querySelector('.country-list');
-        
-        images.forEach(image => {
-            const countryItem = document.createElement('div');
-            countryItem.classList.add('country-item');
-            countryItem.textContent = image.name;
-            countryListContainer.appendChild(countryItem);
-        });
-
-        const nextRoundButton = document.getElementById("next-round-button");
-
-        let score = 0;
-        let imagesShown = 0;
-        let currentImage = null;
-
-        const playButton = document.getElementById("play-button");
-        const gameContainer = document.getElementById("game-container");
-        const imageElement = document.getElementById("image");
-        const guessInput = document.getElementById("guess-input");
-        const enterButton = document.getElementById("enter-button");
-        const resultDiv = document.getElementById("result");
-        const scorePage = document.getElementById("score-page");
-        const finalScore = document.getElementById("final-score");
-        const restartButton = document.getElementById("restart-button");
-
-        // Function to start the game
-        playButton.addEventListener("click", () => {
-            playButton.style.display = "none"; // Hide the play button
-
-            score = 0;
-            imagesShown = 0;
-            gameContainer.style.display = "block";
-            scorePage.style.display = "none";
-            showNextImage();
-        });
-
-        // Function to show a random image
-        function showNextImage() {
-            if (imagesShown >= 10) {
-                endGame();
-                return;
-            }
-            currentImage = images[Math.floor(Math.random() * images.length)];
-            imageElement.src = currentImage.src;
-            guessInput.value = "";
-            resultDiv.textContent = "";
-            imagesShown++;
-            const guessCounterDisplay = document.getElementById("guessCounter");
-            guessCounterDisplay.textContent = `Round ${imagesShown} of 10`;
-
-            enterButton.disabled = false; // Enable the "Enter" button
-            nextRoundButton.style.display = "none"; // Hide the "Next Round" button
-        }
-        
-        // Event listener for the "Next Round" button
-        nextRoundButton.addEventListener("click", () => {
-            showNextImage();
-        });
-
-        // Function to check the guess
-        enterButton.addEventListener("click", () => {
-            const userGuess = guessInput.value.trim().toLowerCase();
-            if (userGuess === currentImage.name.toLowerCase()) {
-                score++;
-                resultDiv.textContent = "Correct!";
-            } else {
-                resultDiv.textContent = "Wrong! The correct answer was: " + currentImage.name;
-            }
-            enterButton.disabled = true; // Disable the "Enter" button to prevent multiple guesses
-            nextRoundButton.style.display = "inline"; // Show the "Next Round" button
-        });
-
-        // Function to end the game
-        function endGame() {
-            gameContainer.style.display = "none";
-            scorePage.style.display = "block";
-            finalScore.textContent = "Your final score is: " + score + " out of 10";
-        }
-
-        // Restart the game
-        restartButton.addEventListener("click", () => {
-            scorePage.style.display = "none";
-            playButton.click();
-        });
-    </script>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Beau's Portfolio. All rights reserved.</p>
+        <p>Source code for this site: <a href="https://github.com/Beau-Gosse-dev/Beau-Gosse-dev.github.io/tree/main" target="_blank">GitHub</a></p>
+    </footer>
 </body>
 </html>
