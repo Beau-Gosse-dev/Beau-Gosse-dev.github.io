@@ -268,6 +268,88 @@
                 padding: 5px 2px;
             }
         }
+        
+        /* Autocomplete styles */
+        .autocomplete-container {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .autocomplete-items {
+            position: absolute;
+            border: 1px solid #30363d;
+            border-top: none;
+            z-index: 99;
+            top: 100%;
+            left: 0;
+            right: 0;
+            max-height: 200px;
+            overflow-y: auto;
+            background-color: #0d1117;
+            border-radius: 0 0 6px 6px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            scrollbar-width: thin;
+            scrollbar-color: #30363d #21262d;
+        }
+        
+        .autocomplete-items::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .autocomplete-items::-webkit-scrollbar-track {
+            background: #21262d;
+        }
+        
+        .autocomplete-items::-webkit-scrollbar-thumb {
+            background-color: #30363d;
+            border-radius: 4px;
+        }
+        
+        .autocomplete-items div {
+            padding: 8px 12px;
+            cursor: pointer;
+            color: #c9d1d9;
+            font-size: 14px;
+            border-bottom: 1px solid #21262d;
+        }
+        
+        .autocomplete-items div:hover,
+        .autocomplete-active {
+            background-color: #21262d;
+        }
+        
+        @media (max-width: 768px) {
+            .country-item {
+                width: 85px;
+                font-size: 11px;
+                padding: 5px 2px;
+            }
+        }
+        
+        .autocomplete-active {
+            background-color: #21262d;
+        }
+        
+        /* Error shake animation */
+        @keyframes errorShake {
+            0%, 100% { transform: translateX(0); }
+            20%, 60% { transform: translateX(-5px); }
+            40%, 80% { transform: translateX(5px); }
+        }
+        
+        .error-shake {
+            animation: errorShake 0.5s ease-in-out;
+            border-color: #f87171 !important;
+            box-shadow: 0 0 5px rgba(248, 113, 113, 0.7) !important;
+        }
+        
+        @media (max-width: 768px) {
+            .country-item {
+                width: 85px;
+                font-size: 11px;
+                padding: 5px 2px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -306,7 +388,10 @@
             <div id="result"></div>
             <img id="image" src="images/" alt="Random Face">
             <div class="input-container">
-                <input type="text" id="guess-input" placeholder="Enter country name">
+                <div class="autocomplete-container">
+                    <input type="text" id="guess-input" placeholder="Enter country name" autocomplete="off">
+                    <div id="autocomplete-list" class="autocomplete-items" style="display: none;"></div>
+                </div>
                 <button id="enter-button" class="btn">Submit Guess</button>
                 <button id="next-round-button" class="btn" style="display: none;">Next Round</button>
             </div>
@@ -507,6 +592,24 @@
         
         function checkGuess() {
             const userGuess = guessInput.value.trim().toLowerCase();
+            
+            // Check if the guess is in the list of available countries
+            const isValidCountry = countryNames.some(country => country.toLowerCase() === userGuess);
+            
+            if (!isValidCountry) {
+                // Show a notification that the country is not valid
+                resultDiv.textContent = "Please enter a country from the list!";
+                resultDiv.style.color = "#f87171";
+                
+                // Shake the input field to indicate error
+                guessInput.classList.add('error-shake');
+                setTimeout(() => {
+                    guessInput.classList.remove('error-shake');
+                }, 500);
+                
+                return; // Don't process the guess
+            }
+            
             const correctCountry = currentImage.name.toLowerCase();
             
             // Check for perfect match (10 points)
@@ -606,6 +709,134 @@
                 countriesToggle.textContent = 'Hide Countries';
             } else {
                 countriesToggle.textContent = 'Available Countries to Guess From';
+            }
+        });
+        
+        // Autocomplete functionality
+        const autocompleteList = document.getElementById('autocomplete-list');
+        let currentFocus = -1;
+        
+        // Extract country names for autocomplete
+        const countryNames = images.map(img => img.name);
+        
+        // Add input event listener for autocomplete
+        guessInput.addEventListener('input', function() {
+            const val = this.value.trim().toLowerCase();
+            
+            // Close any already open lists
+            autocompleteList.innerHTML = '';
+            autocompleteList.style.display = 'none';
+            currentFocus = -1;
+            
+            if (!val) return false;
+            
+            // Filter matching countries
+            const matchingCountries = countryNames.filter(country => 
+                country.toLowerCase().indexOf(val) > -1
+            ).sort((a, b) => {
+                // Sort so that countries starting with the input come first
+                const aStartsWithVal = a.toLowerCase().startsWith(val);
+                const bStartsWithVal = b.toLowerCase().startsWith(val);
+                
+                if (aStartsWithVal && !bStartsWithVal) return -1;
+                if (!aStartsWithVal && bStartsWithVal) return 1;
+                return a.localeCompare(b);
+            });
+            
+            if (matchingCountries.length > 0) {
+                autocompleteList.style.display = 'block';
+                
+                matchingCountries.forEach(country => {
+                    const item = document.createElement('div');
+                    
+                    // Highlight the matching part
+                    const matchIndex = country.toLowerCase().indexOf(val);
+                    item.innerHTML = country.substring(0, matchIndex) + 
+                                     '<strong>' + country.substring(matchIndex, matchIndex + val.length) + '</strong>' +
+                                     country.substring(matchIndex + val.length);
+                    
+                    // Store the country name as a data attribute
+                    item.setAttribute('data-country', country);
+                    
+                    // Add click event to select the item
+                    item.addEventListener('click', function() {
+                        guessInput.value = this.getAttribute('data-country');
+                        autocompleteList.innerHTML = '';
+                        autocompleteList.style.display = 'none';
+                        currentFocus = -1;
+                    });
+                    
+                    autocompleteList.appendChild(item);
+                });
+            }
+        });
+        
+        // Handle keydown events for navigation
+        guessInput.addEventListener('keydown', function(e) {
+            if (!autocompleteList.style.display || autocompleteList.style.display === 'none') return;
+            
+            const items = autocompleteList.querySelectorAll('div');
+            if (!items.length) return;
+            
+            // Down arrow
+            if (e.key === 'ArrowDown') {
+                currentFocus++;
+                addActive(items);
+                e.preventDefault(); // Prevent cursor from moving to end of input
+            } 
+            // Up arrow
+            else if (e.key === 'ArrowUp') {
+                currentFocus--;
+                addActive(items);
+                e.preventDefault(); // Prevent cursor from moving to start of input
+            } 
+            // Enter
+            else if (e.key === 'Enter' && currentFocus > -1) {
+                e.preventDefault(); // Prevent form submission
+                if (items[currentFocus]) {
+                    items[currentFocus].click();
+                    
+                    // Submit the guess after a slight delay
+                    setTimeout(() => {
+                        if (!enterButton.disabled) {
+                            checkGuess();
+                        }
+                    }, 50);
+                }
+            }
+        });
+        
+        // Add active class to the current focused item
+        function addActive(items) {
+            if (!items) return false;
+            
+            // Remove active class from all items
+            removeActive(items);
+            
+            // Keep focus within bounds
+            if (currentFocus >= items.length) currentFocus = 0;
+            if (currentFocus < 0) currentFocus = items.length - 1;
+            
+            // Add active class to current item
+            items[currentFocus].classList.add('autocomplete-active');
+            
+            // Set input value to the currently focused item
+            guessInput.value = items[currentFocus].getAttribute('data-country');
+        }
+        
+        // Remove active class from all items
+        function removeActive(items) {
+            for (let i = 0; i < items.length; i++) {
+                items[i].classList.remove('autocomplete-active');
+            }
+        }
+        
+        // Close the autocomplete list when clicking elsewhere
+        document.addEventListener('click', function(e) {
+            if (e.target !== guessInput && e.target !== autocompleteList) {
+                autocompleteList.innerHTML = '';
+                autocompleteList.style.display = 'none';
+                currentFocus = -1;
             }
         });
     </script>
