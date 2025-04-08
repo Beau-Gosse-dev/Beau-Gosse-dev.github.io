@@ -4,59 +4,286 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Face Country Guessing Game</title>
+    <link rel="stylesheet" href="../../css/style.css">
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; }
-        #game-container { display: none; margin-top: 20px; }
-        #result { font-size: 1.5em; margin-top: 20px; }
-        #score-page { display: none; }
-        .country-list {
-            display: flex;
-            flex-wrap: wrap;
-            max-width: 600px;
+        /* Face Guessing Game specific styles */
+        #game-container {
+            display: none;
+            margin-top: 10px;
+            background-color: #161b22;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 30px rgba(79, 204, 232, 0.3);
+        }
+        
+        #score-page {
+            display: none;
+            margin-top: 20px;
+            background-color: #161b22;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 500px;
             margin: 20px auto;
+            box-shadow: 0 0 30px rgba(79, 204, 232, 0.3);
+        }
+        
+        .country-list {
+            display: none;
+            max-height: 200px;
+            overflow-y: auto;
+            max-width: 800px;
+            margin: 10px auto;
             gap: 10px;
             justify-content: center;
+            flex-wrap: wrap;
+            transition: all 0.3s ease;
+            scrollbar-width: thin;
+            scrollbar-color: #30363d #21262d;
         }
+        
+        /* Custom scrollbar for Webkit browsers */
+        .country-list::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .country-list::-webkit-scrollbar-track {
+            background: #21262d;
+            border-radius: 4px;
+        }
+        
+        .country-list::-webkit-scrollbar-thumb {
+            background-color: #30363d;
+            border-radius: 4px;
+            border: 2px solid #21262d;
+        }
+        
+        .country-list::-webkit-scrollbar-thumb:hover {
+            background-color: #4fcce8;
+        }
+        
+        .country-list.active {
+            display: flex;
+        }
+        
         .country-item {
             padding: 10px;
-            background-color: #f0f0f0;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            width: 100px;
+            background-color: #21262d;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            width: 110px;
             text-align: center;
             font-size: 14px;
+            color: #c9d1d9;
+            transition: all 0.3s ease;
         }
-        h2 {
-            text-align: center;
+        
+        .country-item:hover {
+            background-color: #30363d;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(48, 54, 61, 0.6);
+        }
+        
+        #image {
+            max-width: 300px;
+            max-height: 300px;
+            margin: 20px auto;
+            border-radius: 10px;
+            display: block;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+        }
+        
+        .guess-counter {
+            font-size: 14px;
+            color: #8b949e;
+            margin: 10px 0;
+        }
+        
+        #result {
+            font-size: 1.2em;
+            margin: 15px 0;
+            min-height: 30px;
+            color: #4fcce8;
+            font-weight: bold;
+        }
+        
+        #guess-input {
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #30363d;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-size: 16px;
+            margin-right: 10px;
+            width: 200px;
+        }
+        
+        #guess-input:focus {
+            outline: none;
+            border-color: #58a6ff;
+            box-shadow: 0 0 5px rgba(88, 166, 255, 0.5);
+        }
+        
+        #next-round-button {
+            background-color: #1f6feb;
+            box-shadow: 0 0 15px rgba(31, 111, 235, 0.4);
+        }
+        
+        #next-round-button:hover:not(:disabled) {
+            background-color: #388bfd;
+            box-shadow: 0 5px 15px rgba(31, 111, 235, 0.6);
+        }
+        
+        #final-score {
+            font-size: 1.5em;
+            margin: 20px 0;
+            color: #4fcce8;
+        }
+        
+        .game-info {
+            background-color: #21262d;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px auto;
+            max-width: 800px;
+            text-align: left;
+            border-left: 4px solid #4fcce8;
+        }
+        
+        .game-info h3 {
+            color: #4fcce8;
+            margin-top: 0;
+        }
+        
+        .game-info p {
+            margin-bottom: 10px;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+        
+        .game-info a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        
+        .game-info a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 600px) {
+            #image {
+                max-width: 250px;
+                max-height: 250px;
+            }
+            
+            .country-item {
+                width: 90px;
+                font-size: 12px;
+                padding: 6px 3px;
+                margin: 2px;
+            }
+            
+            #guess-input {
+                width: 150px;
+            }
+            
+            .game-info, .footer-info {
+                font-size: 12px;
+                padding: 10px;
+            }
+            
+            .country-list {
+                gap: 5px;
+                margin: 10px auto;
+            }
+        }
+        
+        /* Added collapsible countries section for better mobile experience */
+        .countries-toggle {
+            display: block;
+            margin: 15px auto;
+            background-color: #21262d;
+            color: #4fcce8;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 0 10px rgba(79, 204, 232, 0.2);
+            transition: all 0.3s ease;
+            font-size: 16px;
+        }
+        
+        .countries-toggle:hover {
+            background-color: #30363d;
+            transform: translateY(-2px);
+            box-shadow: 0 0 15px rgba(79, 204, 232, 0.4);
+        }
+        
+        .countries-toggle:after {
+            content: " ▼";
+            font-size: 12px;
+        }
+        
+        .countries-toggle.active:after {
+            content: " ▲";
+        }
+        
+        @media (max-width: 768px) {
+            .country-item {
+                width: 85px;
+                font-size: 11px;
+                padding: 5px 2px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Face Country Guessing Game</h1>
-    <p><a href="../../index.html">Back to Homepage</a></p>
-    <button id="play-button">Play</button>
+    <header>
+        <h1>Face Country Guessing Game</h1>
+    </header>
     
-    <div id="game-container">
-        <h2>Available Countries to Guess From</h2>
-        <div class="country-list">
-            <!-- Country items will be inserted here by JavaScript -->
+    <div class="navigation-top">
+        <a href="../../index.html" class="back-link">← Back to Homepage</a>
+    </div>
+    
+    <div class="container">
+        <button id="play-button" class="btn">Start Game</button>
+        
+        <div class="game-info">
+            <h3>About This Game</h3>
+            <p>This game was inspired by a fascinating research project featured on <a href="https://www.artfido.com/this-is-what-the-average-person-looks-like-in-each-country/" target="_blank">artFido</a> that shows what the average person looks like in different countries.</p>
+            <p>Researchers at <a href="http://faceresearch.org/" target="_blank">faceresearch.org</a> used a complex process of aligning and combining multiple facial photographs from people of each country to create composite images representing the "average face" of that country's population.</p>
+            <p>I was captivated by how these composite faces reveal subtle differences in facial characteristics between different regions while also highlighting our shared humanity. This game tests your ability to recognize these differences and match faces to their countries of origin.</p>
+            <p>Challenge yourself to see how well you can identify these average faces from around the world!</p>
+        </div>
+        
+        <div id="game-container">
+            <button class="countries-toggle">Available Countries to Guess From</button>
+            <div class="country-list">
+                <!-- Country items will be inserted here by JavaScript -->
+            </div>
+
+            <div class="guess-counter" id="guessCounter">Round 1 of 10</div>
+            
+            <div id="result"></div>
+            <img id="image" src="images/" alt="Random Face">
+            <div class="input-container">
+                <input type="text" id="guess-input" placeholder="Enter country name">
+                <button id="enter-button" class="btn">Submit Guess</button>
+                <button id="next-round-button" class="btn" style="display: none;">Next Round</button>
+            </div>
+            
+            <div class="footer-info">
+                <p>Source of images: <a href="http://faceresearch.org/" target="_blank">faceresearch.org</a> or <a href="https://www.artfido.com/this-is-what-the-average-person-looks-like-in-each-country/" target="_blank">artfido.com</a></p>
+                <p>Source code: <a href="https://github.com/Beau-Gosse-dev/Beau-Gosse-dev.github.io/tree/main" target="_blank">GitHub</a></p>
+            </div>
         </div>
 
-        <div class="guess-counter" id="guessCounter">Round 1 of 10</div>
-        
-        <div id="result"></div>
-        <img id="image" src="images/" alt="Random Image">
-        <input type="text" id="guess-input" placeholder="Enter country name">
-        <button id="enter-button">Enter</button>
-        <button id="next-round-button" style="display: none;">Next Round</button>
-        <p>Source of images can be found here: http://faceresearch.org/ or  https://www.artfido.com/this-is-what-the-average-person-looks-like-in-each-country/</p>
-        <p>Source code for this site: https://github.com/Beau-Gosse-dev/Beau-Gosse-dev.github.io/tree/main</p>
-    </div>
-
-    <div id="score-page">
-        <h2>Game Over</h2>
-        <p id="final-score"></p>
-        <button id="restart-button">Restart</button>
+        <div id="score-page">
+            <h2>Game Over</h2>
+            <p id="final-score"></p>
+            <button id="restart-button" class="btn">Play Again</button>
+        </div>
     </div>
 
     <script>
@@ -118,6 +345,7 @@
         let score = 0;
         let imagesShown = 0;
         let currentImage = null;
+        let usedImages = [];
 
         const playButton = document.getElementById("play-button");
         const gameContainer = document.getElementById("game-container");
@@ -132,21 +360,39 @@
         // Function to start the game
         playButton.addEventListener("click", () => {
             playButton.style.display = "none"; // Hide the play button
-
             score = 0;
             imagesShown = 0;
+            usedImages = [];
             gameContainer.style.display = "block";
             scorePage.style.display = "none";
+            
+            // Hide the game info section when the game starts
+            document.querySelector('.game-info').style.display = "none";
+            
             showNextImage();
         });
 
-        // Function to show a random image
+        // Function to show a random image (not previously used)
         function showNextImage() {
             if (imagesShown >= 10) {
                 endGame();
                 return;
             }
-            currentImage = images[Math.floor(Math.random() * images.length)];
+            
+            // Filter out images that have already been used
+            const availableImages = images.filter(img => !usedImages.includes(img.src));
+            
+            // If all images have been used (unlikely with 40 images and 10 rounds), reset
+            if (availableImages.length === 0) {
+                usedImages = [];
+                currentImage = images[Math.floor(Math.random() * images.length)];
+            } else {
+                currentImage = availableImages[Math.floor(Math.random() * availableImages.length)];
+            }
+            
+            // Add current image to used images
+            usedImages.push(currentImage.src);
+            
             imageElement.src = currentImage.src;
             guessInput.value = "";
             resultDiv.textContent = "";
@@ -156,6 +402,9 @@
 
             enterButton.disabled = false; // Enable the "Enter" button
             nextRoundButton.style.display = "none"; // Hide the "Next Round" button
+            
+            // Focus on the input field for better UX
+            guessInput.focus();
         }
         
         // Event listener for the "Next Round" button
@@ -164,29 +413,71 @@
         });
 
         // Function to check the guess
-        enterButton.addEventListener("click", () => {
+        enterButton.addEventListener("click", checkGuess);
+        
+        // Allow pressing Enter key to submit guess
+        guessInput.addEventListener("keypress", function(event) {
+            if (event.key === "Enter" && !enterButton.disabled) {
+                checkGuess();
+            }
+        });
+        
+        function checkGuess() {
             const userGuess = guessInput.value.trim().toLowerCase();
             if (userGuess === currentImage.name.toLowerCase()) {
                 score++;
-                resultDiv.textContent = "Correct!";
+                resultDiv.textContent = "Correct! ✓";
+                resultDiv.style.color = "#4ade80";
             } else {
                 resultDiv.textContent = "Wrong! The correct answer was: " + currentImage.name;
+                resultDiv.style.color = "#f87171";
             }
             enterButton.disabled = true; // Disable the "Enter" button to prevent multiple guesses
             nextRoundButton.style.display = "inline"; // Show the "Next Round" button
-        });
+        }
 
         // Function to end the game
         function endGame() {
             gameContainer.style.display = "none";
             scorePage.style.display = "block";
             finalScore.textContent = "Your final score is: " + score + " out of 10";
+            
+            // Add a motivational message based on score
+            let message = "";
+            if (score === 10) {
+                message = "Perfect score! You're a face recognition expert!";
+            } else if (score >= 7) {
+                message = "Great job! Your global facial recognition skills are impressive!";
+            } else if (score >= 5) {
+                message = "Not bad! With a bit more practice, you'll be a pro!";
+            } else {
+                message = "Keep practicing! These faces can be tricky to identify.";
+            }
+            
+            const motivationElement = document.createElement('p');
+            motivationElement.textContent = message;
+            finalScore.after(motivationElement);
         }
 
         // Restart the game
         restartButton.addEventListener("click", () => {
             scorePage.style.display = "none";
             playButton.click();
+        });
+        
+        // Toggle countries list on mobile
+        const countriesToggle = document.querySelector('.countries-toggle');
+        const countryList = document.querySelector('.country-list');
+        
+        countriesToggle.addEventListener('click', () => {
+            countryList.classList.toggle('active');
+            countriesToggle.classList.toggle('active');
+            
+            if (countriesToggle.classList.contains('active')) {
+                countriesToggle.textContent = 'Hide Countries';
+            } else {
+                countriesToggle.textContent = 'Available Countries to Guess From';
+            }
         });
     </script>
 </body>

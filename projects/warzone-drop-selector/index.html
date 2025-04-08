@@ -4,67 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Warzone Drop Selector</title>
+    <link rel="stylesheet" href="../../css/style.css">
     <style>
+        /* Warzone Drop Selector specific styles */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #0d1117;
-            color: #e6e6e6;
-            text-align: center;
             height: 100vh;
             overflow: hidden;
         }
         
         html {
-            height: 100%;
             overflow: hidden;
         }
         
-        header {
-            padding: 10px;
-            background-color: #161b22;
-            margin-bottom: 0;
-        }
-        
-        h1 {
-            margin: 0;
-            color: #c9d1d9;
-            font-size: clamp(1.5rem, 4vw, 2rem);
-        }
-        
         .container {
-            width: 100%;
             height: calc(100% - 120px);
-            margin: 0 auto;
-            padding: 0 15px;
             display: flex;
             flex-direction: column;
-            box-sizing: border-box;
         }
         
         .back-link {
-            display: inline-block;
-            margin: 10px 0;
-            color: #58a6ff;
-            text-decoration: none;
             position: absolute;
             left: 20px;
-            font-size: 14px;
-        }
-        
-        .back-link:hover {
-            text-decoration: underline;
-        }
-        
-        .navigation-top {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px 0;
-            background-color: #161b22;
-            margin-bottom: 10px;
         }
         
         .map-container {
@@ -110,31 +70,6 @@
             padding: 0;
         }
         
-        .btn {
-            background-color: #238636;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: clamp(14px, 3vw, 18px);
-            border-radius: 6px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 0 15px rgba(35, 134, 54, 0.4);
-        }
-        
-        .btn:hover:not(:disabled) {
-            background-color: #2ea043;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(35, 134, 54, 0.6);
-        }
-        
-        .btn:disabled {
-            background-color: #30363d;
-            cursor: not-allowed;
-            transform: none;
-            box-shadow: none;
-        }
-        
         .timer {
             font-size: 14px;
             color: #8b949e;
@@ -150,6 +85,7 @@
             max-width: 100%;
             overflow-y: auto;
             max-height: 25vh;
+            text-align: left;
         }
         
         .map-info h3 {
@@ -159,7 +95,7 @@
         }
         
         .map-info p {
-            margin-bottom: 0;
+            margin-bottom: 10px;
             font-size: clamp(12px, 2vw, 14px);
             line-height: 1.6;
         }

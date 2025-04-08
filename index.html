@@ -4,149 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beau's Portfolio</title>
-    <style>
-        :root {
-            --primary-color: #4a6fa5;
-            --secondary-color: #166088;
-            --accent-color: #4d9078;
-            --text-color: #333;
-            --light-bg: #f5f5f5;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--light-bg);
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        header {
-            text-align: center;
-            padding: 40px 20px;
-            background-color: var(--primary-color);
-            color: white;
-            border-radius: 8px;
-            margin-bottom: 40px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-        
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            color: var(--secondary-color);
-            border-bottom: 2px solid var(--accent-color);
-            padding-bottom: 10px;
-        }
-        
-        .intro {
-            font-size: 1.2rem;
-            margin-top: 10px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .projects-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-        
-        .project-card {
-            background-color: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-        }
-        
-        .project-image {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-bottom: 3px solid var(--accent-color);
-        }
-        
-        .project-content {
-            padding: 20px;
-        }
-        
-        .project-title {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            color: var(--secondary-color);
-        }
-        
-        .project-description {
-            color: #666;
-            margin-bottom: 20px;
-        }
-        
-        .project-link {
-            display: inline-block;
-            background-color: var(--accent-color);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: background-color 0.3s ease;
-        }
-        
-        .project-link:hover {
-            background-color: var(--secondary-color);
-        }
-        
-        footer {
-            margin-top: 60px;
-            text-align: center;
-            padding: 20px;
-            color: #666;
-            border-top: 1px solid #ddd;
-        }
-        
-        @media (max-width: 768px) {
-            header {
-                padding: 30px 15px;
-            }
-            
-            h1 {
-                font-size: 2rem;
-            }
-            
-            .projects-container {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <h1>Beau's Portfolio</h1>
-        <p class="intro">Welcome to my portfolio website! Here you'll find various projects I've been working on.</p>
     </header>
     
-    <main>
-        <h2>My Projects</h2>
+    <div class="navigation-top">
+        <p class="intro">Welcome to my portfolio website! Here you'll find various projects I've been working on.</p>
+    </div>
+    
+    <div class="container">
+        <div class="section-title">
+            <h2>My Projects</h2>
+        </div>
         
         <div class="projects-container">
             <!-- Face Guessing Game -->
@@ -155,7 +27,7 @@
                 <div class="project-content">
                     <h3 class="project-title">Face Country Guessing Game</h3>
                     <p class="project-description">Test your knowledge of facial characteristics across different countries. Can you guess which country a person is from based on their appearance?</p>
-                    <a href="projects/face-guessing-game/index.html" class="project-link">Play the Game</a>
+                    <a href="projects/face-guessing-game/index.html" class="project-link btn">Play the Game</a>
                 </div>
             </div>
             
@@ -165,15 +37,17 @@
                 <div class="project-content">
                     <h3 class="project-title">Warzone Drop Selector</h3>
                     <p class="project-description">Can't decide where to drop in Verdansk 2025? Let this tool decide for you! No more indecision - just click and drop where fate takes you.</p>
-                    <a href="projects/warzone-drop-selector/index.html" class="project-link">Choose Drop Point</a>
+                    <a href="projects/warzone-drop-selector/index.html" class="project-link btn">Choose Drop Point</a>
                 </div>
             </div>
         </div>
-    </main>
+    </div>
     
-    <footer>
-        <p>&copy; 2025 Beau's Portfolio. All rights reserved.</p>
-        <p>Source code for this site: <a href="https://github.com/Beau-Gosse-dev/Beau-Gosse-dev.github.io/tree/main" target="_blank">GitHub</a></p>
+    <footer class="footer">
+        <div class="footer-info">
+            <p>&copy; 2025 Beau's Portfolio. All rights reserved.</p>
+            <p>Source code for this site: <a href="https://github.com/Beau-Gosse-dev/Beau-Gosse-dev.github.io/tree/main" target="_blank">GitHub</a></p>
+        </div>
     </footer>
 </body>
 </html>
