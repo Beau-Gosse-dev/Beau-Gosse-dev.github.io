@@ -44,10 +44,13 @@
         }
         
         .map-image {
-            width: 100%;
-            height: 100%;
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
             object-fit: contain;
             display: block;
+            margin: 0 auto;
         }
         
         .crosshair {
@@ -248,14 +251,19 @@
             // Function to get random position on the map
             function getRandomPosition() {
                 const mapRect = map.getBoundingClientRect();
+                const containerRect = map.parentElement.getBoundingClientRect();
+                
+                // Get the actual image dimensions displayed on screen
+                const imageWidth = mapRect.width;
+                const imageHeight = mapRect.height;
+                
+                // Calculate offset if the image is centered in container
+                const leftOffset = mapBounds.left * imageWidth + (containerRect.width - imageWidth) / 2;
+                const topOffset = mapBounds.top * imageHeight + (containerRect.height - imageHeight) / 2;
                 
                 // Calculate the playable area dimensions
-                const playableWidth = (mapBounds.right - mapBounds.left) * mapRect.width;
-                const playableHeight = (mapBounds.bottom - mapBounds.top) * mapRect.height;
-                
-                // Calculate the offset from the edges
-                const leftOffset = mapBounds.left * mapRect.width;
-                const topOffset = mapBounds.top * mapRect.height;
+                const playableWidth = (mapBounds.right - mapBounds.left) * imageWidth;
+                const playableHeight = (mapBounds.bottom - mapBounds.top) * imageHeight;
                 
                 // Generate random coordinates within the playable area
                 let x = leftOffset + Math.random() * playableWidth;
@@ -264,10 +272,14 @@
                 // Additional check to avoid top left and top right corners
                 const cornerSize = 0.1; // Avoid 10% of the map from corners
                 const topRightCornerSize = 0.2; // Expanded avoidance for top right (20%)
-                const isInTopLeftCorner = (x < (mapBounds.left + cornerSize) * mapRect.width && 
-                                          y < (mapBounds.top + cornerSize) * mapRect.height);
-                const isInTopRightCorner = (x > (mapBounds.right - topRightCornerSize) * mapRect.width && 
-                                           y < (mapBounds.top + topRightCornerSize) * mapRect.height);
+                const isInTopLeftCorner = (
+                    x < (leftOffset + cornerSize * imageWidth) && 
+                    y < (topOffset + cornerSize * imageHeight)
+                );
+                const isInTopRightCorner = (
+                    x > (leftOffset + playableWidth - topRightCornerSize * imageWidth) && 
+                    y < (topOffset + topRightCornerSize * imageHeight)
+                );
                 
                 // If in a corner, move the position more toward the center
                 if (isInTopLeftCorner || isInTopRightCorner) {
@@ -276,9 +288,17 @@
                     y = topOffset + (0.2 + Math.random() * 0.7) * playableHeight;
                 }
                 
-                // Store the relative position (as percentage of map dimensions)
-                relativePosition.x = x / mapRect.width;
-                relativePosition.y = y / mapRect.height;
+                // Store map position and dimensions for resizing calculations
+                mapCenter = {
+                    width: imageWidth,
+                    height: imageHeight,
+                    offsetX: (containerRect.width - imageWidth) / 2,
+                    offsetY: (containerRect.height - imageHeight) / 2
+                };
+                
+                // Store the relative position within the playable area (for resizing)
+                relativePosition.x = (x - leftOffset) / playableWidth;
+                relativePosition.y = (y - topOffset) / playableHeight;
                 
                 return { x, y };
             }
@@ -286,15 +306,25 @@
             // Function to calculate absolute position from relative position
             function getAbsolutePosition() {
                 const mapRect = map.getBoundingClientRect();
+                const containerRect = map.parentElement.getBoundingClientRect();
                 
-                // Ensure the position stays within bounds even if the relative position was somehow outside
-                const boundedX = Math.min(Math.max(relativePosition.x, mapBounds.left), mapBounds.right);
-                const boundedY = Math.min(Math.max(relativePosition.y, mapBounds.top), mapBounds.bottom);
+                // Get the current image dimensions 
+                const imageWidth = mapRect.width;
+                const imageHeight = mapRect.height;
                 
-                return {
-                    x: mapRect.width * boundedX,
-                    y: mapRect.height * boundedY
-                };
+                // Calculate offset if the image is centered in container
+                const leftOffset = mapBounds.left * imageWidth + (containerRect.width - imageWidth) / 2;
+                const topOffset = mapBounds.top * imageHeight + (containerRect.height - imageHeight) / 2;
+                
+                // Calculate the playable area dimensions
+                const playableWidth = (mapBounds.right - mapBounds.left) * imageWidth;
+                const playableHeight = (mapBounds.bottom - mapBounds.top) * imageHeight;
+                
+                // Calculate the position based on relative coordinates
+                const x = leftOffset + relativePosition.x * playableWidth;
+                const y = topOffset + relativePosition.y * playableHeight;
+                
+                return { x, y };
             }
             
             // Function to place crosshair at a random position
