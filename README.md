@@ -20,6 +20,12 @@ Can't decide where to drop in Warzone? Let the algorithm decide your fate! A fun
 
 - [Try the Warzone Drop Selector](https://beau-gosse-dev.github.io/projects/warzone-drop-selector/index.html)
 
+### Civil War Field Companion
+
+A searchable visual companion to *The Civil War & Reconstruction* podcast, with episode maps, timelines, people, command structures, and historical images.
+
+- [View the Civil War Field Companion project](https://beau-gosse-dev.github.io/projects/civil-war-field-companion/index.html)
+
 This project was 100% vibe-coded with Cursor.
 
 ## Development

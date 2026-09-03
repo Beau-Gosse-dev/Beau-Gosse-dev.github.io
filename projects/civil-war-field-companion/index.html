@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A visual field companion for The Civil War & Reconstruction podcast, with maps, timelines, people, command structures, and battlefield images.">
+    <title>Civil War Field Companion | Beau's Personal Projects</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        .project-detail {
+            max-width: 900px;
+            margin: 36px auto;
+            padding: 0 20px;
+            text-align: left;
+        }
+
+        .project-detail-card {
+            overflow: hidden;
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(79, 204, 232, 0.24);
+        }
+
+        .project-detail-card img {
+            display: block;
+            width: 100%;
+            max-height: 480px;
+            object-fit: cover;
+            object-position: center;
+            border-bottom: 3px solid #30363d;
+        }
+
+        .project-detail-content {
+            padding: 28px;
+        }
+
+        .project-detail-content h2 {
+            margin-top: 0;
+            text-align: left;
+            font-size: clamp(1.5rem, 4vw, 2.25rem);
+        }
+
+        .project-detail-content p,
+        .project-detail-content li {
+            color: #c9d1d9;
+            line-height: 1.65;
+        }
+
+        .project-detail-content ul {
+            padding-left: 1.25rem;
+        }
+
+        .project-note {
+            color: #8b949e !important;
+            font-size: 0.92rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Beau's Personal Projects</h1>
+    </header>
+
+    <main class="project-detail">
+        <a href="../../index.html" class="back-link">&larr; All projects</a>
+        <article class="project-detail-card">
+            <img src="images/field-companion.png" alt="Civil War Field Companion episode archive and maps">
+            <div class="project-detail-content">
+                <h2>Civil War Field Companion</h2>
+                <p>A searchable visual companion to <em>The Civil War &amp; Reconstruction</em> podcast. Each completed episode guide puts the relevant geography, troop movements, timeline, people, chain of command, and historical images in one place for use while listening.</p>
+                <ul>
+                    <li>High-level, modern, and historical maps</li>
+                    <li>Timestamped factual episode timelines</li>
+                    <li>People and command structures</li>
+                    <li>Battlefield and historical photographs</li>
+                    <li>A public best-effort archive that continues to grow</li>
+                </ul>
+                <a href="https://civil-war-field-companion.the-bog.chatgpt.site/" class="btn" target="_blank" rel="noopener noreferrer">Open the Field Companion</a>
+                <p class="project-note">The guides are generated from podcast transcripts and historical research. They are published as a best-effort reference and may contain errors.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-info">
+            <p>&copy; 2026 Beau's Personal Projects. All rights reserved.</p>
+            <p>Source code for this site: <a href="https://github.com/Beau-Gosse-dev/Beau-Gosse-dev.github.io/tree/main" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        </div>
+    </footer>
+</body>
+</html>
