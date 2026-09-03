@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Battle of Yellow Tavern tactical map, May 11, 1864</title>
+  <desc id="desc">Schematic map showing Sheridan's Union cavalry approaching from the southwest, Stuart's first and second Confederate lines around Telegraph Road, and Custer's final mounted charge.</desc>
+  <defs>
+    <pattern id="paper" width="80" height="80" patternUnits="userSpaceOnUse">
+      <rect width="80" height="80" fill="#eee7d3"/>
+      <path d="M0 22 Q22 15 43 24 T80 19 M0 63 Q20 56 39 66 T80 61" fill="none" stroke="#d7ccb2" stroke-width="2" opacity=".45"/>
+    </pattern>
+    <marker id="blueArrow" viewBox="0 0 10 10" refX="8" refY="5" markerUnits="userSpaceOnUse" markerWidth="24" markerHeight="24" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#245a83"/>
+    </marker>
+    <marker id="redArrow" viewBox="0 0 10 10" refX="8" refY="5" markerUnits="userSpaceOnUse" markerWidth="22" markerHeight="22" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#9a3e31"/>
+    </marker>
+    <marker id="northArrow" viewBox="0 0 10 10" refX="8" refY="5" markerUnits="userSpaceOnUse" markerWidth="20" markerHeight="20" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#4d473c"/>
+    </marker>
+    <filter id="shadow"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity=".25"/></filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#paper)"/>
+  <path d="M1010 -40 C990 190 1045 420 1000 650 C980 770 1020 900 1000 1040" fill="none" stroke="#8c826e" stroke-width="28"/>
+  <path d="M1010 -40 C990 190 1045 420 1000 650 C980 770 1020 900 1000 1040" fill="none" stroke="#e3d8be" stroke-width="18"/>
+  <text x="1060" y="158" font-family="Georgia,serif" font-size="30" fill="#514b40" transform="rotate(4 1060 158)">Telegraph Road to Richmond</text>
+  <path d="M80 820 C320 750 520 705 760 690 C860 682 935 675 1005 650" fill="none" stroke="#8c826e" stroke-width="25"/>
+  <path d="M80 820 C320 750 520 705 760 690 C860 682 935 675 1005 650" fill="none" stroke="#e3d8be" stroke-width="16"/>
+  <text x="210" y="760" font-family="Georgia,serif" font-size="30" fill="#514b40" transform="rotate(-10 210 760)">Mountain Road</text>
+  <path d="M1230 35 C1100 190 1125 310 1190 410 C1240 490 1190 565 1030 610 C860 655 770 580 650 520" fill="none" stroke="#6694a3" stroke-width="25" opacity=".85"/>
+  <path d="M1230 35 C1100 190 1125 310 1190 410 C1240 490 1190 565 1030 610 C860 655 770 580 650 520" fill="none" stroke="#b9d2d4" stroke-width="14"/>
+  <text x="1170" y="330" font-family="Georgia,serif" font-size="28" fill="#315f70" transform="rotate(68 1170 330)">Turner’s Run</text>
+  <g fill="#9e8a62" opacity=".36">
+    <circle cx="330" cy="210" r="145"/><circle cx="530" cy="190" r="125"/><circle cx="1430" cy="250" r="150"/><circle cx="1390" cy="790" r="165"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="910" y="610" width="150" height="78" rx="8" fill="#f8f1dd" stroke="#574e3e" stroke-width="4"/>
+    <text x="985" y="644" text-anchor="middle" font-family="Georgia,serif" font-size="24" font-weight="700" fill="#332f28">YELLOW</text>
+    <text x="985" y="672" text-anchor="middle" font-family="Georgia,serif" font-size="24" font-weight="700" fill="#332f28">TAVERN</text>
+  </g>
+  <text x="70" y="80" font-family="Georgia,serif" font-size="54" font-weight="700" fill="#26322d">BATTLE OF YELLOW TAVERN</text>
+  <text x="72" y="124" font-family="Arial,sans-serif" font-size="26" letter-spacing="3" fill="#605a4e">MAY 11, 1864 · SCHEMATIC TROOP MOVEMENTS</text>
+  <g font-family="Arial,sans-serif" font-size="24" fill="#fff" text-anchor="middle">
+    <path d="M820 620 L820 300" stroke="#9a3e31" stroke-width="24" stroke-linecap="round"/>
+    <rect x="690" y="265" width="260" height="58" rx="8" fill="#9a3e31"/>
+    <text x="820" y="302">LOMAX · FIRST LINE</text>
+    <path d="M900 255 L1320 255" stroke="#9a3e31" stroke-width="24" stroke-linecap="round"/>
+    <rect x="1090" y="205" width="250" height="58" rx="8" fill="#9a3e31"/>
+    <text x="1215" y="242">WICKHAM</text>
+    <path d="M790 470 L1300 470" stroke="#7b2f28" stroke-width="22" stroke-dasharray="34 14" stroke-linecap="round"/>
+    <rect x="1015" y="420" width="345" height="58" rx="8" fill="#7b2f28"/>
+    <text x="1188" y="457">STUART · SECOND LINE</text>
+  </g>
+  <g fill="none" stroke="#245a83" stroke-width="13" stroke-linecap="round" marker-end="url(#blueArrow)">
+    <path d="M210 860 C390 795 590 760 770 728"/>
+    <path d="M400 870 C520 790 610 690 720 585"/>
+    <path d="M650 875 C750 780 850 735 930 700"/>
+    <path d="M780 760 C700 620 660 505 755 390"/>
+  </g>
+  <g font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#245a83">
+    <text x="180" y="905">SHERIDAN’S COLUMN</text>
+    <text x="250" y="770">MERRITT</text>
+    <text x="590" y="775">DEVIN</text>
+    <text x="350" y="520">CUSTER’S MOUNTED FLANKING CHARGE</text>
+  </g>
+  <path d="M810 485 C815 545 800 590 790 640" fill="none" stroke="#9a3e31" stroke-width="10" stroke-dasharray="18 12" marker-end="url(#redArrow)"/>
+  <text x="530" y="455" font-family="Arial,sans-serif" font-size="23" fill="#7b2f28">Lomax falls back after first attack</text>
+  <circle cx="940" cy="470" r="18" fill="#111"/>
+  <path d="M940 447 L940 493 M917 470 L963 470" stroke="#f6e9c9" stroke-width="5"/>
+  <text x="972" y="515" font-family="Georgia,serif" font-size="27" font-weight="700" fill="#28231d">Stuart mortally wounded</text>
+  <text x="972" y="547" font-family="Arial,sans-serif" font-size="22" fill="#514b40">during the final U.S. attack</text>
+  <g transform="translate(70 915)" font-family="Arial,sans-serif" font-size="21">
+    <line x1="0" y1="0" x2="90" y2="0" stroke="#245a83" stroke-width="14" marker-end="url(#blueArrow)"/><text x="110" y="8" fill="#26322d">United States movement</text>
+    <line x1="400" y1="0" x2="490" y2="0" stroke="#9a3e31" stroke-width="14"/><text x="510" y="8" fill="#26322d">Confederate position</text>
+    <line x1="790" y1="0" x2="880" y2="0" stroke="#7b2f28" stroke-width="12" stroke-dasharray="20 10"/><text x="900" y="8" fill="#26322d">Second Confederate line</text>
+  </g>
+  <text x="1530" y="110" text-anchor="end" font-family="Arial,sans-serif" font-size="20" fill="#6d6658">N</text>
+  <path d="M1530 225 L1530 135" stroke="#4d473c" stroke-width="5" marker-end="url(#northArrow)"/>
+  <text x="1530" y="970" text-anchor="end" font-family="Arial,sans-serif" font-size="17" fill="#746d5f">Based on the National Park Service battlefield account; positions are schematic.</text>
+</svg>
