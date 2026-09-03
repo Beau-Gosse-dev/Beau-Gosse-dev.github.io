@@ -1,0 +1,1 @@
+import{r as e}from"./framework-xGPblSfj.js";var t=e();function n({seconds:e,label:n}){return(0,t.jsx)(`button`,{className:`audio-timestamp`,type:`button`,onClick:()=>{let t=document.querySelector(`#episode-audio`);t&&(t.currentTime=e,t.play())},"aria-label":`Play episode from ${n}`,children:n})}export{n as AudioTimestamp};
