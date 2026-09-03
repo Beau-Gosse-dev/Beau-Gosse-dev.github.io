@@ -24,7 +24,7 @@ Can't decide where to drop in Warzone? Let the algorithm decide your fate! A fun
 
 A searchable visual companion to *The Civil War & Reconstruction* podcast, with episode maps, timelines, people, command structures, and historical images.
 
-- [View the Civil War Field Companion project](https://beau-gosse-dev.github.io/projects/civil-war-field-companion/index.html)
+- [View the Civil War Field Companion project](https://beau-gosse-dev.github.io/projects/civil-war-field-companion/)
 
 This project was 100% vibe-coded with Cursor.
 
