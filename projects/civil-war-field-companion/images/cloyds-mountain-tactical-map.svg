@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Battle of Cloyd's Mountain tactical map, May 9, 1864</title>
+  <desc id="desc">Schematic map showing Crook's two-brigade frontal attack across Back Creek, Carr White's flanking movement through woods, and Jenkins's Confederate breastworks on a ridge.</desc>
+  <defs>
+    <pattern id="paper" width="90" height="90" patternUnits="userSpaceOnUse"><rect width="90" height="90" fill="#eee6d0"/><path d="M0 28 Q22 19 46 29 T90 24 M0 72 Q25 62 48 73 T90 67" fill="none" stroke="#d9ccb0" stroke-width="2" opacity=".5"/></pattern>
+    <marker id="blueArrow" viewBox="0 0 10 10" refX="8" refY="5" markerUnits="userSpaceOnUse" markerWidth="24" markerHeight="24" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#245a83"/></marker>
+    <marker id="redArrow" viewBox="0 0 10 10" refX="8" refY="5" markerUnits="userSpaceOnUse" markerWidth="22" markerHeight="22" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#9a3e31"/></marker>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#paper)"/>
+  <path d="M0 170 Q240 85 460 170 T880 160 T1260 175 T1600 150 L1600 0 L0 0 Z" fill="#b9ad8c" opacity=".62"/>
+  <text x="70" y="72" font-family="Georgia,serif" font-size="52" font-weight="700" fill="#26322d">BATTLE OF CLOYD’S MOUNTAIN</text>
+  <text x="73" y="118" font-family="Arial,sans-serif" font-size="25" letter-spacing="3" fill="#5f594d">MAY 9, 1864 · SCHEMATIC TROOP MOVEMENTS</text>
+  <text x="1270" y="130" font-family="Georgia,serif" font-size="31" fill="#524b3e">Cloyd’s Mountain</text>
+  <path d="M0 515 C270 475 510 555 780 515 C1050 475 1280 550 1600 505" fill="none" stroke="#628f9d" stroke-width="34"/>
+  <path d="M0 515 C270 475 510 555 780 515 C1050 475 1280 550 1600 505" fill="none" stroke="#bad0d1" stroke-width="18"/>
+  <text x="1280" y="480" font-family="Georgia,serif" font-size="30" fill="#315f70">Back Creek</text>
+  <path d="M800 125 C770 290 785 440 810 585 C835 730 830 865 860 1000" fill="none" stroke="#8c826e" stroke-width="28"/>
+  <path d="M800 125 C770 290 785 440 810 585 C835 730 830 865 860 1000" fill="none" stroke="#e1d6bc" stroke-width="17"/>
+  <text x="845" y="245" font-family="Georgia,serif" font-size="28" fill="#514a3e" transform="rotate(81 845 245)">Dublin–Pearisburg Turnpike</text>
+  <g fill="#8d815e" opacity=".45"><circle cx="155" cy="360" r="115"/><circle cx="330" cy="340" r="130"/><circle cx="1450" cy="340" r="135"/><circle cx="1420" cy="730" r="145"/></g>
+  <text x="92" y="315" font-family="Georgia,serif" font-size="28" fill="#4d473c">Dense woods</text>
+  <path d="M155 690 Q410 625 720 690 T1450 675" fill="none" stroke="#9a3e31" stroke-width="24" stroke-linecap="round"/>
+  <path d="M180 660 Q420 595 720 660 T1440 645" fill="none" stroke="#6b5035" stroke-width="8" stroke-dasharray="28 14"/>
+  <rect x="950" y="625" width="420" height="62" rx="8" fill="#9a3e31"/>
+  <text x="1160" y="666" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" fill="#fff" font-weight="700">JENKINS · BREASTWORKS</text>
+  <g fill="#9a3e31"><circle cx="560" cy="642" r="14"/><circle cx="650" cy="635" r="14"/><circle cx="740" cy="638" r="14"/><circle cx="830" cy="640" r="14"/><circle cx="920" cy="638" r="14"/></g>
+  <text x="515" y="735" font-family="Georgia,serif" font-size="27" fill="#6e3029">Shuffle Ridge</text>
+  <g fill="none" stroke="#245a83" stroke-width="14" stroke-linecap="round" marker-end="url(#blueArrow)">
+    <path d="M650 265 C635 350 620 430 630 500 C642 570 660 610 690 648"/>
+    <path d="M990 265 C975 350 955 425 950 500 C950 570 930 610 910 645"/>
+    <path d="M360 275 C215 365 180 500 230 600 C270 660 355 680 470 655"/>
+  </g>
+  <g font-family="Arial,sans-serif" font-size="26" font-weight="700" fill="#245a83">
+    <text x="515" y="250">SICKEL · FRONTAL ATTACK</text>
+    <text x="910" y="250">HAYES · FRONTAL ATTACK</text>
+    <text x="120" y="255">WHITE · FLANKING ATTACK</text>
+  </g>
+  <text x="725" y="455" font-family="Georgia,serif" font-size="27" fill="#514a3e">Open meadow</text>
+  <circle cx="820" cy="666" r="19" fill="#111"/><path d="M820 640 L820 692 M794 666 L846 666" stroke="#f4e7c8" stroke-width="5"/>
+  <text x="770" y="790" font-family="Georgia,serif" font-size="28" font-weight="700" fill="#28231d">Jenkins wounded and captured</text>
+  <path d="M1390 720 C1460 770 1490 840 1510 900" fill="none" stroke="#9a3e31" stroke-width="11" stroke-dasharray="19 12" marker-end="url(#redArrow)"/>
+  <text x="1190" y="845" font-family="Arial,sans-serif" font-size="23" fill="#7b2f28">Confederate retreat toward Dublin</text>
+  <g transform="translate(70 925)" font-family="Arial,sans-serif" font-size="21">
+    <line x1="0" y1="0" x2="90" y2="0" stroke="#245a83" stroke-width="13" marker-end="url(#blueArrow)"/><text x="110" y="8" fill="#26322d">United States attack</text>
+    <line x1="390" y1="0" x2="480" y2="0" stroke="#9a3e31" stroke-width="14"/><text x="500" y="8" fill="#26322d">Confederate position</text>
+    <line x1="810" y1="0" x2="900" y2="0" stroke="#6b5035" stroke-width="8" stroke-dasharray="20 10"/><text x="920" y="8" fill="#26322d">Fence-rail breastworks</text>
+  </g>
+  <text x="1530" y="975" text-anchor="end" font-family="Arial,sans-serif" font-size="17" fill="#746d5f">Based on the National Park Service account and episode transcript; positions are schematic.</text>
+</svg>
