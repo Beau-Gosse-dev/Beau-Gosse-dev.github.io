@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Lee's planned opening movement for June 26, 1862</title>
+  <desc id="desc">Schematic map of the planned Confederate movement north of the Chickahominy: Jackson turning the Federal right, Branch signaling A. P. Hill, Longstreet and D. H. Hill crossing after Mechanicsville Bridge opened, and Magruder and Huger holding south of the river.</desc>
+  <defs>
+    <marker id="redArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#9a3d32"/></marker>
+    <style>
+      .label{font:600 20px Georgia,serif;fill:#1f2526}.small{font:16px Arial,sans-serif;fill:#273034}.tiny{font:14px Arial,sans-serif;fill:#3c4446}.river{fill:none;stroke:#5e99bd;stroke-width:22;stroke-linecap:round}.road{fill:none;stroke:#a89878;stroke-width:5;stroke-dasharray:10 8}.move{fill:none;stroke:#9a3d32;stroke-width:8;marker-end:url(#redArrow)}.redbox{fill:#f8e8e3;stroke:#9a3d32;stroke-width:3}.bluebox{fill:#e4eef6;stroke:#315f8c;stroke-width:3}.bridge{stroke:#4a4140;stroke-width:8}
+    </style>
+  </defs>
+  <rect width="1200" height="720" fill="#f3eedf"/>
+  <path d="M-20 457 C180 421 300 460 459 445 S782 392 1220 451" class="river"/>
+  <text x="780" y="487" class="label" fill="#396e91">Chickahominy River</text>
+  <path d="M173 70 L317 186 L429 322 L512 418" class="road"/>
+  <path d="M240 79 L402 203 L572 280 L829 332" class="road"/>
+  <path d="M512 418 L691 334 L1016 340" class="road"/>
+  <path d="M512 418 L725 520 L1004 591" class="road"/>
+  <text x="884" y="318" class="small">toward Cold Harbor</text>
+  <circle cx="512" cy="418" r="9" fill="#252a2b"/><text x="528" y="413" class="label">Mechanicsville</text>
+  <circle cx="829" cy="332" r="7" fill="#252a2b"/><text x="844" y="339" class="small">Beaver Dam Creek</text>
+  <line x1="433" y1="429" x2="444" y2="466" class="bridge"/><text x="325" y="493" class="tiny">Meadow Bridge</text>
+  <line x1="510" y1="432" x2="520" y2="470" class="bridge"/><text x="488" y="500" class="tiny">Mechanicsville Bridge</text>
+  <rect x="725" y="225" width="315" height="90" rx="14" class="bluebox"/>
+  <text x="745" y="257" class="label" fill="#315f8c">Federal right wing</text>
+  <text x="745" y="284" class="small">Porter's V Corps and McCall's division</text>
+  <rect x="666" y="534" width="360" height="92" rx="14" class="bluebox"/>
+  <text x="686" y="567" class="label" fill="#315f8c">Federal main body</text>
+  <text x="686" y="594" class="small">south of the Chickahominy</text>
+  <rect x="57" y="64" width="210" height="76" rx="13" class="redbox"/>
+  <text x="78" y="96" class="label" fill="#9a3d32">Jackson</text>
+  <text x="78" y="121" class="small">turn the Federal right</text>
+  <path d="M255 123 C335 151 375 197 430 255 S556 335 687 317" class="move"/>
+  <rect x="271" y="206" width="188" height="72" rx="13" class="redbox"/>
+  <text x="290" y="237" class="label" fill="#9a3d32">Branch</text>
+  <text x="290" y="261" class="small">relay approach</text>
+  <path d="M393 277 C430 316 458 336 485 373" class="move"/>
+  <rect x="153" y="316" width="218" height="74" rx="13" class="redbox"/>
+  <text x="173" y="347" class="label" fill="#9a3d32">A. P. Hill</text>
+  <text x="173" y="371" class="small">cross at Meadow Bridge</text>
+  <path d="M358 376 C400 393 420 408 432 427" class="move"/>
+  <rect x="76" y="523" width="258" height="76" rx="13" class="redbox"/>
+  <text x="96" y="554" class="label" fill="#9a3d32">Longstreet</text>
+  <text x="96" y="579" class="small">support A. P. Hill</text>
+  <path d="M329 543 C413 516 461 493 501 464" class="move"/>
+  <rect x="354" y="622" width="252" height="72" rx="13" class="redbox"/>
+  <text x="374" y="651" class="label" fill="#9a3d32">D. H. Hill</text>
+  <text x="374" y="676" class="small">move to Jackson's right</text>
+  <path d="M592 641 C665 604 716 539 746 472 C776 406 792 369 820 350" class="move"/>
+  <rect x="767" y="637" width="349" height="62" rx="13" class="redbox"/>
+  <text x="786" y="665" class="label" fill="#9a3d32">Magruder and Huger hold Richmond line</text>
+  <text x="786" y="687" class="tiny">while the main attack moves north</text>
+  <text x="27" y="700" class="tiny">Schematic; not to scale. Arrows show assigned sequence, not exact troop geometry or actual execution.</text>
+</svg>

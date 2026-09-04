@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Peninsula Campaign operational overview through June 1, 1862</title>
+  <desc id="desc">Schematic map showing the Army of the Potomac moving by water from Alexandria to Fort Monroe and then northwest through Yorktown and Williamsburg toward Richmond while Joseph Johnston's Confederate army retreats from the Yorktown line toward the Chickahominy.</desc>
+  <defs>
+    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#efe5ca"/><stop offset="1" stop-color="#d6c294"/></linearGradient>
+    <marker id="blue" markerUnits="userSpaceOnUse" markerWidth="20" markerHeight="20" refX="18" refY="10" orient="auto"><path d="M0 0L20 10L0 20Z" fill="#315f8c"/></marker>
+    <marker id="red" markerUnits="userSpaceOnUse" markerWidth="20" markerHeight="20" refX="18" refY="10" orient="auto"><path d="M0 0L20 10L0 20Z" fill="#9a3d32"/></marker>
+    <style>.title{font:700 29px Georgia,serif;fill:#27231e}.place{font:700 19px Georgia,serif;fill:#27231e}.label{font:700 16px Arial,sans-serif}.small{font:14px Arial,sans-serif;fill:#38332c}.tiny{font:12px Arial,sans-serif;fill:#38332c}.water{fill:#8ab9c8;stroke:#557f8f;stroke-width:3}.road{fill:none;stroke:#766247;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}</style>
+  </defs>
+  <rect width="1200" height="760" fill="url(#ground)"/>
+  <path d="M830 80 C870 150 890 220 860 292 C825 373 727 435 620 498 C515 559 405 627 300 738 L1200 760 L1200 0 L940 0Z" class="water"/>
+  <path d="M1090 740 C1020 632 924 546 810 475 C720 420 640 355 585 278 C535 209 500 130 488 0 L0 0 L0 760Z" class="water"/>
+  <path d="M488 0 C500 130 535 209 585 278 C640 355 720 420 810 475 C924 546 1020 632 1090 740 L300 738 C405 627 515 559 620 498 C727 435 825 373 860 292 C890 220 870 150 830 80 L940 0 L488 0Z" fill="#e7d7b4" stroke="#8d7956" stroke-width="4"/>
+  <text x="760" y="650" class="label" fill="#315d72" transform="rotate(31 760 650)">JAMES RIVER</text>
+  <text x="690" y="332" class="label" fill="#315d72" transform="rotate(-34 690 332)">YORK RIVER</text>
+  <path d="M445 118 C545 155 650 200 770 264 C885 325 952 380 1015 420" fill="none" stroke="#8ab9c8" stroke-width="26" stroke-linecap="round"/>
+  <text x="632" y="204" class="small" fill="#315d72" transform="rotate(27 632 204)">Pamunkey River</text>
+  <path d="M492 470 C610 440 742 434 870 450 C956 461 1010 474 1075 495" fill="none" stroke="#8ab9c8" stroke-width="29" stroke-linecap="round"/>
+  <text x="690" y="425" class="small" fill="#315d72">Chickahominy River</text>
+  <path d="M885 686 C812 622 733 560 648 508 C570 460 497 426 420 390" class="road"/>
+  <path d="M420 390 C475 330 540 285 605 250 C690 204 770 177 850 148" class="road"/>
+  <path d="M647 510 C760 500 882 499 1014 521" class="road" stroke-dasharray="18 10"/>
+  <text x="765" y="540" class="tiny">Richmond &amp; York River Railroad</text>
+  <path d="M120 92 C255 152 420 245 825 660" fill="none" stroke="#315f8c" stroke-width="10" stroke-dasharray="17 12" marker-end="url(#blue)"/>
+  <text x="145" y="125" class="small" fill="#244c72">Army transported from Alexandria</text>
+  <path d="M882 660 C813 605 745 553 653 506 C565 459 494 426 432 396" fill="none" stroke="#315f8c" stroke-width="17" marker-end="url(#blue)"/>
+  <path d="M432 395 C477 350 528 310 586 279" fill="none" stroke="#315f8c" stroke-width="17" marker-end="url(#blue)"/>
+  <path d="M586 278 C676 237 763 211 842 176" fill="none" stroke="#315f8c" stroke-width="17" marker-end="url(#blue)"/>
+  <path d="M472 110 C557 164 607 229 615 294 C623 346 600 396 570 433" fill="none" stroke="#9a3d32" stroke-width="11" stroke-dasharray="17 12" marker-end="url(#red)"/>
+  <text x="490" y="105" class="small" fill="#7e2e27">Johnston moves from the Rappahannock</text>
+  <path d="M585 278 C626 327 678 370 748 407 C806 438 860 453 917 465" fill="none" stroke="#9a3d32" stroke-width="15" stroke-dasharray="18 12" marker-end="url(#red)"/>
+  <g fill="#27231e">
+    <circle cx="873" cy="664" r="8"/><circle cx="425" cy="392" r="8"/><circle cx="586" cy="278" r="8"/><circle cx="649" cy="508" r="8"/><circle cx="850" cy="149" r="8"/><circle cx="1015" cy="521" r="8"/><circle cx="934" cy="468" r="8"/>
+  </g>
+  <text x="895" y="700" class="place">FORT MONROE</text>
+  <text x="295" y="385" class="place">YORKTOWN</text><text x="292" y="410" class="small">Warwick River line</text>
+  <text x="492" y="260" class="place">WILLIAMSBURG</text>
+  <text x="518" y="550" class="place">NEWPORT NEWS</text>
+  <text x="760" y="140" class="place">WHITE HOUSE</text><text x="762" y="162" class="small">supply landing</text>
+  <text x="1028" y="525" class="place">RICHMOND</text>
+  <text x="940" y="453" class="place">FAIR OAKS /</text><text x="952" y="478" class="place">SEVEN PINES</text>
+  <g transform="translate(36 26)"><rect width="840" height="92" rx="12" fill="#fff9ec" opacity=".97" stroke="#89795c"/><text x="24" y="39" class="title">From Fort Monroe to Richmond's outskirts</text><text x="24" y="69" class="label" fill="#5b4b35">March 17–June 1, 1862 · operational diagram · schematic and not to scale</text></g>
+  <g transform="translate(42 565)"><rect width="470" height="157" rx="12" fill="#fff9ec" opacity=".97" stroke="#89795c"/><text x="18" y="29" class="label">CAMPAIGN SEQUENCE</text><text x="18" y="56" class="small">1 · Federal army lands at Fort Monroe.</text><text x="18" y="80" class="small">2 · Magruder delays it at the Warwick line.</text><text x="18" y="104" class="small">3 · Johnston retreats through Williamsburg.</text><text x="18" y="128" class="small">4 · Both armies concentrate near Richmond and the Chickahominy.</text></g>
+  <g transform="translate(700 570)"><rect width="455" height="151" rx="12" fill="#fff9ec" opacity=".97" stroke="#89795c"/><text x="18" y="29" class="label">LIMITS</text><text x="18" y="55" class="small">Coastlines, rivers, roads, routes, and positions are simplified.</text><text x="18" y="79" class="small">Arrows show broad movement, not daily marches or exact frontages.</text><text x="18" y="105" class="small">Blue: United States movement</text><text x="235" y="105" class="small">Red: Confederate movement</text><circle cx="28" cy="126" r="8" fill="#315f8c"/><circle cx="244" cy="126" r="8" fill="#9a3d32"/></g>
+</svg>
