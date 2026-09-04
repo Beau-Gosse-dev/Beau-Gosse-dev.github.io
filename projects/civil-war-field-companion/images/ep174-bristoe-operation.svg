@@ -17,9 +17,8 @@
   <g class="tie">
     <path d="M115 601l-20-47M170 578l-20-47M225 555l-20-47M280 532l-20-47M335 509l-20-47M390 486l-20-47M445 463l-20-47M500 440l-20-47M555 417l-20-47M610 394l-20-47M665 371l-20-47M720 348l-20-47M775 325l-20-47M830 302l-20-47M885 279l-20-47M940 256l-20-47M995 233l-20-47M1050 210l-20-47"/>
   </g>
-  <text x="710" y="235" class="label" transform="rotate(-23 710 235)">ORANGE &amp; ALEXANDRIA RAILROAD</text>
+  <text x="700" y="350" class="label" transform="rotate(-23 700 350)">ORANGE &amp; ALEXANDRIA RAILROAD</text>
   <path class="road" d="M69 265 C250 252 370 298 544 354 C745 419 923 494 1127 603"/>
-  <text x="824" y="500" class="small" transform="rotate(25 824 500)">Road toward Manassas Junction</text>
 
   <g transform="translate(105 485)"><rect class="info" width="183" height="60" rx="8"/><text x="92" y="25" text-anchor="middle" class="label">Warrenton Junction</text><text x="92" y="46" text-anchor="middle" class="small">trains approach northeast</text></g>
   <g transform="translate(475 310)"><rect class="info" width="168" height="61" rx="8"/><text x="84" y="25" text-anchor="middle" class="label">Bristoe Station</text><text x="84" y="46" text-anchor="middle" class="small">seized near sunset</text></g>
