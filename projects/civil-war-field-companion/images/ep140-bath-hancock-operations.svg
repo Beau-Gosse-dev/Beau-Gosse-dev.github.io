@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Operations at Bath and Hancock, January 3 to 6, 1862</title>
+  <desc id="desc">Schematic map showing Jackson's approach to Bath, the failed militia turning movement around Warm Springs Mountain, Gilham's delayed advance, Union withdrawals west and north, Confederate artillery at Orrick's Hill, Hancock across the Potomac, and an abandoned bridging effort upstream.</desc>
+  <defs>
+    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f6efdc"/><stop offset="1" stop-color="#ded0b2"/></linearGradient>
+    <pattern id="mountain" width="45" height="34" patternUnits="userSpaceOnUse"><path d="M1 31 13 8 24 29 34 12 44 31" fill="none" stroke="#697a5b" stroke-width="2.2" opacity=".55"/></pattern>
+    <marker id="red" markerWidth="18" markerHeight="18" refX="11" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12"><path d="M0 0 12 6 0 12Z" fill="#963d35"/></marker>
+    <marker id="blue" markerWidth="18" markerHeight="18" refX="11" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12"><path d="M0 0 12 6 0 12Z" fill="#315f8c"/></marker>
+    <style>.title{font:700 29px Georgia,serif;fill:#29251f}.label{font:700 21px Georgia,serif;fill:#29251f}.small{font:17px Arial,sans-serif;fill:#3e3932}.tiny{font:14px Arial,sans-serif;fill:#514a41}.box{fill:#fffaf0;stroke:#847662;stroke-width:2}.redBox{fill:#f5e5df;stroke:#963d35;stroke-width:3}.blueBox{fill:#e5edf5;stroke:#315f8c;stroke-width:3}.road{fill:none;stroke:#9b7a4c;stroke-width:10;stroke-linecap:round}.red{fill:none;stroke:#963d35;stroke-width:12;stroke-linecap:round}.blue{fill:none;stroke:#315f8c;stroke-width:11;stroke-linecap:round}</style>
+  </defs>
+  <rect width="1200" height="760" fill="url(#ground)"/>
+  <text x="28" y="48" class="title">BATH AND HANCOCK • JANUARY 3–6, 1862</text>
+  <text x="29" y="79" class="small">Schematic: routes, unit positions, and frontages are approximate • not to scale</text>
+
+  <path d="M0 166 C231 147 393 180 591 161 C774 144 939 177 1200 151" fill="none" stroke="#6194b0" stroke-width="35"/>
+  <text x="499" y="138" class="label" fill="#315f8c">POTOMAC RIVER</text>
+  <path d="M0 114 C238 99 408 129 592 113 C784 96 971 126 1200 102" fill="none" stroke="#5187a4" stroke-width="7"/>
+  <text x="35" y="133" class="small" fill="#315f8c">C&amp;O Canal / B&amp;O corridor</text>
+  <path d="M74 207 C194 286 258 412 318 714 L560 714 C507 519 499 363 566 202Z" fill="url(#mountain)" opacity=".9"/>
+  <text x="224" y="325" class="label" fill="#596a4f" transform="rotate(71 224 325)">WARM SPRING MOUNTAIN</text>
+  <path class="road" d="M1110 694 C917 640 763 586 620 498 C547 453 500 398 481 326"/>
+  <path class="road" d="M481 326 C422 271 358 230 285 195"/>
+
+  <rect x="445" y="278" width="183" height="72" rx="9" class="box"/><text x="466" y="308" class="label">Bath</text><text x="466" y="333" class="small">Federal outpost</text>
+  <rect x="760" y="18" width="234" height="70" rx="9" class="blueBox"/><text x="780" y="47" class="label">Hancock, Md.</text><text x="780" y="72" class="small">reinforced garrison</text><line x1="760" y1="82" x2="572" y2="112" stroke="#756958" stroke-width="2"/>
+  <rect x="690" y="214" width="240" height="72" rx="9" class="redBox"/><text x="709" y="244" class="label">Orrick’s Hill</text><text x="709" y="269" class="small">Confederate artillery</text>
+
+  <path d="M1097 674 C892 620 718 558 590 474 C535 437 501 395 489 353" class="red" marker-end="url(#red)"/>
+  <text x="774" y="620" class="small" fill="#963d35">Jackson’s main column</text>
+  <path d="M903 655 C669 701 488 696 371 614 C293 559 279 438 337 346 C367 300 407 278 449 303" class="red" stroke-dasharray="16 10" marker-end="url(#red)"/>
+  <text x="437" y="673" class="small" fill="#963d35">militia turning movement failed</text>
+  <path d="M864 568 C732 527 631 459 569 365" class="red" stroke-dasharray="8 10" marker-end="url(#red)"/>
+  <text x="653" y="514" class="small" fill="#963d35">Gilham delayed Jan. 3–4</text>
+
+  <path d="M472 274 C413 230 352 205 296 185" class="blue" marker-end="url(#blue)"/>
+  <text x="76" y="245" class="small" fill="#315f8c">some Federals withdrew west</text>
+  <path d="M522 276 C528 222 545 180 567 111" class="blue" marker-end="url(#blue)"/>
+  <text x="577" y="205" class="small" fill="#315f8c">others crossed to Hancock</text>
+
+  <g transform="translate(735 185)"><circle r="9" fill="#29251f"/><path d="M-16 16 0-9 16 16Z" fill="#963d35"/><text x="22" y="7" class="tiny">guns</text></g>
+  <path d="M737 185 C681 155 635 129 600 98" fill="none" stroke="#963d35" stroke-width="5" stroke-dasharray="9 7" marker-end="url(#red)"/>
+  <text x="717" y="147" class="tiny" fill="#963d35">bombardment</text>
+  <path d="M370 185 C300 167 237 164 166 183" fill="none" stroke="#963d35" stroke-width="7" stroke-dasharray="13 9" marker-end="url(#red)"/>
+  <rect x="39" y="276" width="281" height="66" rx="9" class="box"/><text x="58" y="305" class="label">Proposed bridge</text><text x="58" y="329" class="small">begun upstream; abandoned</text><line x1="193" y1="276" x2="181" y2="190" stroke="#756958" stroke-width="2"/>
+
+  <rect x="31" y="624" width="346" height="102" rx="9" class="box"/>
+  <line x1="55" y1="654" x2="117" y2="654" class="red" marker-end="url(#red)"/><text x="139" y="660" class="small">Confederate movement</text>
+  <line x1="55" y1="694" x2="117" y2="694" class="blue" marker-end="url(#blue)"/><text x="139" y="700" class="small">United States withdrawal</text>
+  <path d="M1132 35v62" stroke="#29251f" stroke-width="4"/><path d="M1132 19 1119 46 1145 46Z" fill="#29251f"/><text x="1123" y="17" class="label">N</text>
+</svg>
