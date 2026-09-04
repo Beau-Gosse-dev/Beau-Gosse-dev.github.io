@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Jackson's early-afternoon movement toward Sandy Ridge at First Kernstown</title>
+  <desc id="desc">Schematic map with north at top showing Pritchard's Hill, Sandy Ridge, Barton's Woods, the Valley Turnpike, Confederate movements by Fulkerson and Garnett, Confederate artillery, and Ashby's diversion east of the turnpike.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8f2e2"/><stop offset="1" stop-color="#e9ddc2"/></linearGradient>
+    <pattern id="ridge" width="34" height="26" patternUnits="userSpaceOnUse"><path d="M1 23 L10 7 L19 21 L27 9 L34 23" fill="none" stroke="#7d8d69" stroke-width="2" opacity=".52"/></pattern>
+    <pattern id="woods" width="31" height="31" patternUnits="userSpaceOnUse"><circle cx="8" cy="10" r="6" fill="#83946c" opacity=".55"/><circle cx="22" cy="20" r="8" fill="#687d58" opacity=".47"/></pattern>
+    <marker id="blueArrow" markerWidth="18" markerHeight="18" refX="11" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12"><path d="M0 0 L12 6 L0 12 Z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerWidth="18" markerHeight="18" refX="11" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12"><path d="M0 0 L12 6 L0 12 Z" fill="#9a3d32"/></marker>
+    <style>.label{font:700 23px Georgia,serif;fill:#292621}.small{font:18px Arial,sans-serif;fill:#3f3a33}.tiny{font:15px Arial,sans-serif;fill:#554f46}.blue{fill:#315f8c}.red{fill:#9a3d32}.box{fill:#fffaf0;stroke:#8a7b66;stroke-width:2}.road{fill:none;stroke:#9a7a50;stroke-width:10;stroke-linecap:round}.minor{fill:none;stroke:#ad916b;stroke-width:5;stroke-dasharray:13 8}</style>
+  </defs>
+  <rect width="1200" height="760" fill="url(#paper)"/>
+  <text x="31" y="47" class="label" font-size="32">FIRST KERNSTOWN • EARLY AFTERNOON</text>
+  <text x="31" y="78" class="small">Jackson's piecemeal shift west • schematic, not to scale or exact frontage</text>
+
+  <path d="M148 105 C111 208 126 321 100 451 C84 533 101 625 141 718 L391 718 C365 617 382 517 412 423 C447 311 425 201 456 105 Z" fill="url(#ridge)" opacity=".8"/>
+  <text x="186" y="392" class="label" fill="#647653" transform="rotate(-83 186 392)">SANDY RIDGE</text>
+  <path d="M692 107 C656 199 668 302 645 391 C623 481 648 553 684 615 L890 615 C858 530 869 444 894 365 C922 271 894 184 923 107 Z" fill="url(#ridge)" opacity=".75"/>
+  <text x="716" y="391" class="label" fill="#647653" transform="rotate(-84 716 391)">PRITCHARD'S HILL</text>
+  <path class="road" d="M968 99 C962 211 967 329 975 448 C981 552 993 641 1004 736"/>
+  <text x="1003" y="467" class="tiny" transform="rotate(85 1003 467)">VALLEY TURNPIKE</text>
+  <path class="minor" d="M967 358 C842 371 719 403 601 451 C484 499 354 548 213 581"/>
+  <text x="527" y="490" class="tiny" transform="rotate(-22 527 490)">MIDDLE ROAD</text>
+  <path d="M440 495 C506 455 589 461 674 508 L663 712 L386 713 C390 627 408 548 440 495 Z" fill="url(#woods)" stroke="#687d58" stroke-width="2"/>
+  <text x="451" y="659" class="label" fill="#546748">BARTON'S WOODS</text>
+  <path d="M226 195 C280 162 344 160 401 198 L392 326 C339 306 282 307 229 335 Z" fill="url(#woods)" stroke="#687d58" stroke-width="2"/>
+  <text x="243" y="236" class="small" fill="#546748">RIDGE WOODS</text>
+
+  <path d="M673 233 L884 233" stroke="#315f8c" stroke-width="16"/><text x="700" y="210" class="small blue">Union infantry in support</text>
+  <line x1="701" y1="286" x2="858" y2="286" stroke="#315f8c" stroke-width="14"/><circle cx="729" cy="286" r="8" fill="#f8f2e2"/><circle cx="778" cy="286" r="8" fill="#f8f2e2"/><circle cx="827" cy="286" r="8" fill="#f8f2e2"/>
+  <rect x="674" y="303" width="223" height="63" rx="10" class="box"/><text x="694" y="331" class="label blue">Pritchard's Hill</text><text x="694" y="353" class="tiny">10 rifled guns • higher ground</text>
+  <path d="M566 306 L643 306" stroke="#315f8c" stroke-width="13"/><text x="497" y="278" class="tiny blue">84th Pennsylvania and grove</text>
+  <path d="M469 203 L543 203" stroke="#315f8c" stroke-width="13"/><text x="446" y="177" class="tiny blue">Battery L, 1st Ohio</text>
+
+  <path d="M546 579 C531 504 535 435 571 369 C590 335 600 308 598 281" fill="none" stroke="#9a3d32" stroke-width="12" marker-end="url(#redArrow)"/>
+  <text x="475" y="421" class="small red">Fulkerson: 23rd &amp; 37th Va.</text>
+  <path d="M592 283 C535 279 474 278 416 287 C377 293 344 291 317 274" fill="none" stroke="#9a3d32" stroke-width="11" stroke-dasharray="17 9" marker-end="url(#redArrow)"/>
+  <text x="389" y="332" class="tiny red">Turns left under artillery fire</text>
+  <path d="M554 603 C506 535 460 475 403 416 C357 368 318 336 289 306" fill="none" stroke="#9a3d32" stroke-width="10" marker-end="url(#redArrow)"/>
+  <text x="252" y="446" class="small red">Garnett with 33rd Va.</text>
+  <path d="M529 625 C458 574 400 532 333 503 C284 481 249 445 229 405" fill="none" stroke="#9a3d32" stroke-width="9" stroke-dasharray="15 8" marker-end="url(#redArrow)"/>
+  <text x="70" y="495" class="tiny red">2nd, 4th, 27th Va. and artillery follow</text>
+
+  <line x1="255" y1="360" x2="367" y2="360" stroke="#9a3d32" stroke-width="15"/><circle cx="283" cy="360" r="8" fill="#f8f2e2"/><circle cx="326" cy="360" r="8" fill="#f8f2e2"/>
+  <rect x="61" y="105" width="342" height="64" rx="10" class="box"/><text x="81" y="133" class="label red">11 Confederate guns</text><text x="81" y="155" class="tiny">East slope of Sandy Ridge • exposed</text>
+
+  <path d="M1038 619 C1060 545 1068 474 1061 405" fill="none" stroke="#9a3d32" stroke-width="11" marker-end="url(#redArrow)"/>
+  <text x="1018" y="654" class="small red">Ashby</text><text x="1018" y="677" class="tiny red">150 cavalry</text>
+  <path d="M1134 340 L1134 484" stroke="#315f8c" stroke-width="17"/>
+  <text x="1006" y="311" class="small blue">Union left held east</text>
+
+  <rect x="734" y="636" width="398" height="88" rx="10" class="box"/>
+  <text x="754" y="668" class="label">Pendleton's reconnaissance</text>
+  <text x="754" y="696" class="small">Reports a much larger Federal force.</text>
+  <text x="754" y="718" class="tiny">Episode ends: “We are in for it.”</text>
+  <path d="M1140 98 L1140 158" stroke="#292621" stroke-width="4"/><path d="M1140 79 L1127 107 L1153 107 Z" fill="#292621"/><text x="1131" y="69" class="label">N</text>
+</svg>

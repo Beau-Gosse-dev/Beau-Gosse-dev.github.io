@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Morning phase of the First Battle of Kernstown, March 23, 1862</title>
+  <desc id="desc">Schematic map with north at top showing Winchester, Kernstown, the Valley Turnpike, Pritchard's Hill, Union guns and infantry, Ashby's Confederate cavalry and artillery, the 8th Ohio reconnaissance, and fighting east of the turnpike.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8f2e2"/><stop offset="1" stop-color="#e9ddc2"/></linearGradient>
+    <pattern id="ridge" width="34" height="26" patternUnits="userSpaceOnUse"><path d="M1 23 L10 7 L19 21 L27 9 L34 23" fill="none" stroke="#7d8d69" stroke-width="2" opacity=".5"/></pattern>
+    <pattern id="woods" width="31" height="31" patternUnits="userSpaceOnUse"><circle cx="8" cy="10" r="6" fill="#83946c" opacity=".5"/><circle cx="22" cy="20" r="8" fill="#687d58" opacity=".45"/></pattern>
+    <marker id="blueArrow" markerWidth="18" markerHeight="18" refX="11" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12"><path d="M0 0 L12 6 L0 12 Z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerWidth="18" markerHeight="18" refX="11" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12"><path d="M0 0 L12 6 L0 12 Z" fill="#9a3d32"/></marker>
+    <style>.label{font:700 23px Georgia,serif;fill:#292621}.small{font:18px Arial,sans-serif;fill:#3f3a33}.tiny{font:15px Arial,sans-serif;fill:#554f46}.blue{fill:#315f8c}.red{fill:#9a3d32}.box{fill:#fffaf0;stroke:#8a7b66;stroke-width:2}.road{fill:none;stroke:#9a7a50;stroke-width:10;stroke-linecap:round}.minor{fill:none;stroke:#ad916b;stroke-width:5;stroke-dasharray:13 8}.water{fill:none;stroke:#6f9fb7;stroke-width:11}</style>
+  </defs>
+  <rect width="1200" height="760" fill="url(#paper)"/>
+  <text x="31" y="47" class="label" font-size="32">FIRST KERNSTOWN • MORNING, MARCH 23, 1862</text>
+  <text x="31" y="78" class="small">Schematic geography and movements • not to scale and not exact unit frontages</text>
+
+  <path d="M405 106 C344 178 338 265 366 357 C392 447 346 527 312 628 L530 628 C545 531 574 452 548 361 C520 265 533 179 578 106 Z" fill="url(#ridge)" opacity=".8"/>
+  <text x="375" y="352" class="label" fill="#647653" transform="rotate(-87 375 352)">PRITCHARD'S HILL</text>
+  <path d="M130 169 C96 259 119 373 87 479 C69 537 82 599 111 659 L256 659 C228 567 242 486 270 402 C304 300 266 219 279 156 Z" fill="url(#ridge)" opacity=".55"/>
+  <text x="127" y="465" class="small" fill="#647653" transform="rotate(-81 127 465)">SANDY RIDGE</text>
+  <path class="road" d="M687 102 C681 208 690 306 697 406 C707 522 718 622 733 735"/>
+  <text x="727" y="485" class="tiny" transform="rotate(84 727 485)">VALLEY TURNPIKE TO STRASBURG</text>
+  <path class="minor" d="M688 332 C583 343 469 377 359 432 C275 475 201 522 129 567"/>
+  <text x="408" y="418" class="tiny" transform="rotate(-21 408 418)">MIDDLE ROAD</text>
+  <path class="water" d="M602 335 C679 358 758 349 846 330 C930 311 1033 325 1170 361"/>
+  <text x="858" y="307" class="tiny blue">STREAM • COURSE SCHEMATIC</text>
+  <path d="M513 505 C564 487 624 499 675 533 L663 700 L423 698 C433 623 459 551 513 505 Z" fill="url(#woods)" stroke="#687d58" stroke-width="2"/>
+  <text x="481" y="632" class="label" fill="#546748">BARTON'S WOODS</text>
+
+  <circle cx="683" cy="113" r="10" fill="#292621"/><text x="716" y="120" class="label">Winchester • about 4 miles</text>
+  <circle cx="693" cy="332" r="10" fill="#292621"/><rect x="733" y="278" width="277" height="68" rx="10" class="box"/><text x="752" y="307" class="label">Kernstown</text><text x="752" y="332" class="tiny">Union covering position</text>
+
+  <g>
+    <rect x="383" y="196" width="238" height="78" rx="10" class="box"/><text x="403" y="225" class="label blue">10 rifled guns</text><text x="403" y="250" class="tiny">Kimball concentrates by 9 a.m.</text>
+    <line x1="420" y1="294" x2="535" y2="294" stroke="#315f8c" stroke-width="14"/><circle cx="441" cy="294" r="8" fill="#f8f2e2"/><circle cx="476" cy="294" r="8" fill="#f8f2e2"/><circle cx="511" cy="294" r="8" fill="#f8f2e2"/>
+    <path d="M350 171 L544 171" stroke="#315f8c" stroke-width="16"/><text x="370" y="153" class="small blue">Union infantry on and behind hill</text>
+    <path d="M417 385 C479 359 542 341 610 334" fill="none" stroke="#315f8c" stroke-width="10" marker-end="url(#blueArrow)"/><text x="247" y="401" class="small blue">8th Ohio reconnaissance</text>
+  </g>
+
+  <g>
+    <rect x="696" y="548" width="336" height="84" rx="10" class="box"/><text x="715" y="578" class="label red">Ashby's morning force</text><text x="715" y="604" class="tiny">Cavalry, guns, four companies 2nd Virginia</text>
+    <path d="M712 559 C704 486 700 425 696 354" fill="none" stroke="#9a3d32" stroke-width="12" marker-end="url(#redArrow)"/>
+    <path d="M743 523 C788 480 844 447 912 428" fill="none" stroke="#9a3d32" stroke-width="11" marker-end="url(#redArrow)"/>
+    <text x="810" y="475" class="small red">Confederate probe east</text>
+    <path d="M1014 304 C981 350 954 382 930 413" fill="none" stroke="#315f8c" stroke-width="11" marker-end="url(#blueArrow)"/>
+    <text x="940" y="279" class="small blue">14th Indiana counters</text>
+  </g>
+
+  <rect x="56" y="615" width="335" height="108" rx="10" class="box"/>
+  <text x="77" y="647" class="label">By about 11 a.m.</text>
+  <text x="77" y="677" class="small">Ashby is pushed southeast.</text>
+  <text x="77" y="703" class="small">He does not warn Jackson.</text>
+  <path d="M1125 101 L1125 164" stroke="#292621" stroke-width="4"/><path d="M1125 82 L1112 110 L1138 110 Z" fill="#292621"/><text x="1116" y="71" class="label">N</text>
+</svg>

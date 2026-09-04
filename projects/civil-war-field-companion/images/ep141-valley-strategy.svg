@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Shenandoah Valley operations from Harpers Ferry to Mount Jackson, February to March 1862</title>
+  <desc id="desc">Schematic regional map showing Harpers Ferry, Charles Town, Bunker Hill, Winchester, Kernstown, Middletown, Strasburg, Cedar Creek, and Mount Jackson, with Banks's advance, Jackson's withdrawal, and the March 22 Confederate countermarch.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8f2e2"/><stop offset="1" stop-color="#e9ddc2"/></linearGradient>
+    <pattern id="ridge" width="36" height="28" patternUnits="userSpaceOnUse"><path d="M1 25 L11 8 L20 22 L28 10 L35 25" fill="none" stroke="#7d8d69" stroke-width="2" opacity=".55"/></pattern>
+    <marker id="blueArrow" markerWidth="18" markerHeight="18" refX="11" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12"><path d="M0 0 L12 6 L0 12 Z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerWidth="18" markerHeight="18" refX="11" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12"><path d="M0 0 L12 6 L0 12 Z" fill="#9a3d32"/></marker>
+    <style>.label{font:700 23px Georgia,serif;fill:#292621}.small{font:18px Arial,sans-serif;fill:#3f3a33}.tiny{font:15px Arial,sans-serif;fill:#554f46}.blue{fill:#315f8c}.red{fill:#9a3d32}.box{fill:#fffaf0;stroke:#8a7b66;stroke-width:2}.road{fill:none;stroke:#9a7a50;stroke-width:8;stroke-linecap:round}.water{fill:none;stroke:#6194b0;stroke-width:24;stroke-linecap:round}</style>
+  </defs>
+  <rect width="1200" height="760" fill="url(#paper)"/>
+  <path d="M70 0 C118 142 124 267 103 410 C86 525 105 648 152 760 L300 760 C257 625 251 505 272 386 C300 228 267 107 241 0 Z" fill="url(#ridge)"/>
+  <path d="M825 0 C790 130 808 252 783 390 C762 518 752 642 780 760 L1000 760 C963 620 982 493 1000 365 C1022 224 996 106 1031 0 Z" fill="url(#ridge)"/>
+  <text x="138" y="521" class="small" fill="#647653" transform="rotate(-83 138 521)">ALLEGHENY FRONT / NORTH MOUNTAIN</text>
+  <text x="885" y="560" class="small" fill="#647653" transform="rotate(-82 885 560)">BLUE RIDGE</text>
+  <path class="water" d="M-25 105 C185 82 359 96 538 75 C714 55 898 57 1225 95"/>
+  <path class="water" d="M724 745 C690 651 664 562 642 467 C619 367 590 253 548 80"/>
+  <text x="58" y="65" class="small blue">POTOMAC RIVER</text>
+  <text x="673" y="654" class="small blue" transform="rotate(-76 673 654)">SHENANDOAH RIVER</text>
+  <path class="road" d="M546 139 C531 245 525 352 541 453 C556 549 579 642 616 736"/>
+  <text x="568" y="474" class="tiny" transform="rotate(80 568 474)">VALLEY TURNPIKE</text>
+
+  <text x="31" y="47" class="label" font-size="32">THE LOWER VALLEY • FEBRUARY–MARCH 1862</text>
+  <text x="31" y="78" class="small">Schematic operational geography • routes, positions, and distances are approximate</text>
+
+  <g>
+    <circle cx="550" cy="89" r="10" fill="#292621"/><rect x="644" y="104" width="283" height="61" rx="10" class="box"/><text x="663" y="133" class="label">Harpers Ferry</text><text x="663" y="156" class="tiny">Banks crosses Potomac, Feb. 24–26</text>
+    <circle cx="585" cy="163" r="8" fill="#292621"/><text x="607" y="170" class="small">Charles Town</text>
+    <circle cx="542" cy="226" r="8" fill="#292621"/><text x="564" y="233" class="small">Bunker Hill</text>
+    <circle cx="532" cy="345" r="11" fill="#292621"/><rect x="278" y="305" width="216" height="67" rx="10" class="box"/><text x="297" y="334" class="label">Winchester</text><text x="297" y="358" class="tiny">Banks enters Mar. 12</text>
+    <circle cx="538" cy="389" r="8" fill="#292621"/><text x="562" y="396" class="small">Kernstown</text>
+    <circle cx="543" cy="474" r="8" fill="#292621"/><text x="568" y="481" class="small">Middletown</text>
+    <circle cx="558" cy="547" r="11" fill="#292621"/><rect x="259" y="511" width="259" height="67" rx="10" class="box"/><text x="278" y="540" class="label">Strasburg</text><text x="278" y="564" class="tiny">Banks stops; Jackson HQ Mar. 22</text>
+    <circle cx="569" cy="603" r="8" fill="#292621"/><text x="592" y="610" class="small">Cedar Creek</text>
+    <circle cx="612" cy="731" r="10" fill="#292621"/><rect x="744" y="673" width="270" height="68" rx="10" class="box"/><text x="763" y="702" class="label">Mount Jackson</text><text x="763" y="727" class="tiny">Jackson's southern position</text>
+  </g>
+
+  <path d="M554 112 C546 183 536 257 532 328" fill="none" stroke="#315f8c" stroke-width="13" stroke-linecap="round" marker-end="url(#blueArrow)"/>
+  <text x="684" y="223" class="small blue">Banks advances up the Valley</text>
+  <path d="M538 359 C548 431 568 535 603 707" fill="none" stroke="#9a3d32" stroke-width="12" stroke-dasharray="19 11" marker-end="url(#redArrow)"/>
+  <text x="707" y="493" class="small red">Jackson withdraws, Mar. 11</text>
+  <path d="M604 707 C585 648 566 594 559 563" fill="none" stroke="#9a3d32" stroke-width="13" stroke-linecap="round" marker-end="url(#redArrow)"/>
+  <text x="742" y="624" class="small red">Forced march north, Mar. 22</text>
+  <path d="M558 533 C548 478 541 432 538 402" fill="none" stroke="#315f8c" stroke-width="10" stroke-dasharray="17 10" marker-end="url(#blueArrow)"/>
+  <text x="668" y="442" class="small blue">Shields returns toward Winchester, Mar. 20</text>
+
+  <rect x="29" y="623" width="444" height="109" rx="10" class="box"/>
+  <line x1="55" y1="654" x2="127" y2="654" stroke="#315f8c" stroke-width="11" marker-end="url(#blueArrow)"/><text x="148" y="661" class="small">United States movement</text>
+  <line x1="55" y1="691" x2="127" y2="691" stroke="#9a3d32" stroke-width="11" stroke-dasharray="19 11" marker-end="url(#redArrow)"/><text x="148" y="698" class="small">Confederate withdrawal</text>
+  <path d="M1126 90 L1126 150" stroke="#292621" stroke-width="4"/><path d="M1126 72 L1113 99 L1139 99 Z" fill="#292621"/><text x="1117" y="63" class="label">N</text>
+</svg>
