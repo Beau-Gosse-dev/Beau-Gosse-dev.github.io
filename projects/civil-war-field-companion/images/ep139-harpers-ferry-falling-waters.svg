@@ -39,7 +39,7 @@
   <path d="M447 252 C470 300 485 352 493 435" fill="none" stroke="#9a3d32" stroke-width="12" stroke-linecap="round" stroke-dasharray="18 10" marker-end="url(#redArrow)"/>
   <text x="531" y="382" class="small red">Jackson retires after reconnaissance</text>
   <path d="M650 186 C623 296 600 445 570 641" fill="none" stroke="#9a3d32" stroke-width="10" stroke-dasharray="18 10" marker-end="url(#redArrow)"/>
-  <text x="662" y="414" class="small red" transform="rotate(-78 662 414)">Johnston to Winchester • June 14</text>
+  <text x="735" y="522" class="small red">Johnston to Winchester • June 14</text>
 
   <rect x="24" y="630" width="441" height="102" rx="10" class="box"/>
   <line x1="47" y1="659" x2="117" y2="659" stroke="#315f8c" stroke-width="11" marker-end="url(#blueArrow)"/><text x="138" y="666" class="small">United States advance</text>

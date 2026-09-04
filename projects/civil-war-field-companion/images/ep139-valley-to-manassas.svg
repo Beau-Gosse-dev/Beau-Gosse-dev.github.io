@@ -5,6 +5,7 @@
     <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8f2e2"/><stop offset="1" stop-color="#e9ddc2"/></linearGradient>
     <pattern id="mountain" width="38" height="28" patternUnits="userSpaceOnUse"><path d="M1 25 L11 8 L20 22 L28 10 L37 25" fill="none" stroke="#7d8d69" stroke-width="2" opacity=".6"/></pattern>
     <marker id="redArrow" markerWidth="18" markerHeight="18" refX="11" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12"><path d="M0 0 L12 6 L0 12 Z" fill="#9a3d32"/></marker>
+    <marker id="blackArrow" markerWidth="18" markerHeight="18" refX="11" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12"><path d="M0 0 L12 6 L0 12 Z" fill="#30302e"/></marker>
     <style>.label{font:700 23px Georgia,serif;fill:#292621}.small{font:18px Arial,sans-serif;fill:#3f3a33}.tiny{font:15px Arial,sans-serif;fill:#554f46}.red{fill:#9a3d32}.blue{fill:#315f8c}.box{fill:#fffaf0;stroke:#8a7b66;stroke-width:2}.rail{fill:none;stroke:#30302e;stroke-width:5;stroke-dasharray:16 9}</style>
   </defs>
   <rect width="1200" height="760" fill="url(#paper)"/>
@@ -12,7 +13,7 @@
   <text x="502" y="592" class="small" fill="#647653" transform="rotate(-82 502 592)">BLUE RIDGE</text>
   <path d="M225 30 C250 154 269 280 286 401 C299 506 315 613 345 760" fill="none" stroke="#6194b0" stroke-width="25"/>
   <text x="235" y="412" class="small blue" transform="rotate(82 235 412)">SHENANDOAH RIVER</text>
-  <path class="rail" d="M621 485 C765 508 935 535 1170 581"/>
+  <path class="rail" d="M621 485 C765 508 935 535 1170 581" marker-end="url(#blackArrow)"/>
   <text x="798" y="491" class="small" transform="rotate(12 798 491)">MANASSAS GAP RAILROAD</text>
   <path d="M1114 428 C1085 510 1098 612 1160 731" fill="none" stroke="#6194b0" stroke-width="22"/>
   <text x="1092" y="685" class="small blue" transform="rotate(66 1092 685)">BULL RUN</text>
@@ -21,7 +22,6 @@
   <text x="31" y="80" class="small">Schematic operational route • not to scale</text>
 
   <path d="M117 168 C172 231 210 304 267 362 C327 423 386 462 464 469 C518 474 563 470 609 483" fill="none" stroke="#9a3d32" stroke-width="14" stroke-linecap="round" marker-end="url(#redArrow)"/>
-  <path d="M640 489 C780 511 930 543 1064 575" fill="none" stroke="#9a3d32" stroke-width="14" stroke-linecap="round" marker-end="url(#redArrow)"/>
 
   <g>
     <circle cx="111" cy="160" r="11" fill="#292621"/><rect x="40" y="190" width="259" height="72" rx="10" class="box"/><text x="59" y="220" class="label">Winchester</text><text x="59" y="245" class="small">march begins about noon</text>
