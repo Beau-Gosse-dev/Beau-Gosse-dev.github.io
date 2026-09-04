@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Generalized deployments and Confederate approach routes around Glendale on June 30, 1862</title>
+  <desc id="desc">Schematic map showing Union divisions near White Oak Swamp and Glendale, Confederate columns under Jackson, Huger, Longstreet, A. P. Hill, Magruder, and Holmes, and the wagon route toward Malvern Hill.</desc>
+  <defs>
+    <linearGradient id="paper2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f6f0df"/><stop offset="1" stop-color="#dfd5b8"/></linearGradient>
+    <marker id="redArrow" markerWidth="11" markerHeight="11" refX="9" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7 Z" fill="#9a3d32"/></marker>
+    <marker id="blueArrow2" markerWidth="11" markerHeight="11" refX="9" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7 Z" fill="#315f8c"/></marker>
+    <pattern id="woods" width="34" height="34" patternUnits="userSpaceOnUse"><circle cx="9" cy="10" r="7" fill="#7c9664" opacity=".24"/><circle cx="25" cy="26" r="8" fill="#648151" opacity=".2"/></pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#paper2)"/>
+  <path d="M0 0 H1200 V145 C1020 128 875 172 720 140 C530 100 340 165 0 124 Z" fill="url(#woods)"/>
+  <path d="M0 250 C190 224 330 281 500 243 S850 223 1200 255" fill="none" stroke="#6f9fb2" stroke-width="48" opacity=".92"/>
+  <path d="M0 250 C190 224 330 281 500 243 S850 223 1200 255" fill="none" stroke="#d8edf2" stroke-width="5"/>
+  <text x="72" y="214" font-family="Georgia,serif" font-size="25" fill="#315e72">White Oak Swamp / creek</text>
+  <path d="M585 198 L590 290" stroke="#5f5140" stroke-width="13" stroke-dasharray="22 11"/>
+  <text x="610" y="276" font-family="Arial,sans-serif" font-size="17" fill="#5f5140">destroyed bridge</text>
+
+  <g fill="none" stroke="#806c4f" stroke-width="7" stroke-linecap="round">
+    <path d="M40 390 C280 398 465 440 685 510 C820 555 990 570 1170 580"/>
+    <path d="M35 555 C240 555 430 548 685 510"/>
+    <path d="M55 712 C290 680 495 590 685 510"/>
+    <path d="M685 510 C730 594 770 670 820 765"/>
+    <path d="M900 710 C1010 675 1085 636 1170 580"/>
+  </g>
+  <g font-family="Arial,sans-serif" font-size="18" fill="#664f35">
+    <text x="90" y="379">Charles City Road</text><text x="90" y="542">Long Bridge Road</text><text x="110" y="700">Darbytown Road</text>
+    <text x="720" y="622" transform="rotate(63 720 622)">Willis Church Road</text><text x="975" y="681" transform="rotate(-22 975 681)">River Road</text>
+  </g>
+
+  <g font-family="Arial,sans-serif" text-anchor="middle">
+    <g transform="translate(630 328)"><rect x="-128" y="-30" width="256" height="60" rx="10" fill="#d9e6f1" stroke="#315f8c" stroke-width="3"/><text y="-4" font-size="21" font-weight="700" fill="#264e72">Franklin · VI Corps</text><text y="20" font-size="16" fill="#264e72">Smith and Slocum divisions</text></g>
+    <g transform="translate(790 365)"><rect x="-108" y="-30" width="216" height="60" rx="10" fill="#d9e6f1" stroke="#315f8c" stroke-width="3"/><text y="-4" font-size="20" font-weight="700" fill="#264e72">Richardson</text><text y="20" font-size="16" fill="#264e72">II Corps division</text></g>
+    <g transform="translate(710 440)"><rect x="-78" y="-28" width="156" height="56" rx="10" fill="#d9e6f1" stroke="#315f8c" stroke-width="3"/><text y="7" font-size="21" font-weight="700" fill="#264e72">Kearny</text></g>
+    <g transform="translate(708 515)"><rect x="-90" y="-31" width="180" height="62" rx="10" fill="#c7daea" stroke="#315f8c" stroke-width="4"/><text y="-4" font-size="21" font-weight="700" fill="#264e72">McCall</text><text y="20" font-size="16" fill="#264e72">Penn. Reserves</text></g>
+    <g transform="translate(720 595)"><rect x="-75" y="-28" width="150" height="56" rx="10" fill="#d9e6f1" stroke="#315f8c" stroke-width="3"/><text y="7" font-size="21" font-weight="700" fill="#264e72">Hooker</text></g>
+    <g transform="translate(835 600)"><rect x="-84" y="-28" width="168" height="56" rx="10" fill="#d9e6f1" stroke="#315f8c" stroke-width="3"/><text y="7" font-size="21" font-weight="700" fill="#264e72">Sedgwick</text></g>
+  </g>
+
+  <circle cx="685" cy="510" r="14" fill="#222c31"/><text x="705" y="493" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#222c31">Glendale crossroads</text>
+  <circle cx="820" cy="765" r="10" fill="#222c31"/><text x="842" y="754" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#222c31">toward Malvern Hill</text>
+
+  <g fill="none" stroke="#9a3d32" stroke-width="12" marker-end="url(#redArrow)" stroke-linecap="round">
+    <path d="M565 58 C575 105 582 150 585 196"/>
+    <path d="M112 350 C280 360 420 390 575 438"/>
+    <path d="M110 510 C300 512 450 510 585 510"/>
+    <path d="M110 590 C300 580 455 552 585 526"/>
+    <path d="M180 738 C330 694 465 618 580 548" stroke-dasharray="18 11"/>
+    <path d="M1090 710 C1020 685 970 666 910 648"/>
+  </g>
+  <g font-family="Arial,sans-serif" fill="#7f302a">
+    <text x="455" y="68" font-size="23" font-weight="700">Jackson</text><text x="455" y="92" font-size="16">from Savage Station</text>
+    <text x="118" y="329" font-size="23" font-weight="700">Huger</text><text x="118" y="352" font-size="16">advance obstructed</text>
+    <text x="115" y="492" font-size="22" font-weight="700">Longstreet</text>
+    <text x="115" y="625" font-size="22" font-weight="700">A. P. Hill</text>
+    <text x="183" y="770" font-size="22" font-weight="700">Magruder (reserve)</text>
+    <text x="1040" y="742" font-size="22" font-weight="700">Holmes</text>
+  </g>
+
+  <path d="M915 480 C885 530 876 610 840 695" fill="none" stroke="#315f8c" stroke-width="10" stroke-dasharray="16 9" marker-end="url(#blueArrow2)"/>
+  <path d="M905 454 C966 485 1008 520 1065 555" fill="none" stroke="#315f8c" stroke-width="7" stroke-dasharray="12 8" marker-end="url(#blueArrow2)"/>
+  <text x="930" y="444" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#264e72">wagons and units withdrawing south</text>
+
+  <g transform="translate(1025 90)" font-family="Arial,sans-serif" fill="#26343a"><path d="M0 52 L22 0 L44 52 Z" fill="#26343a"/><text x="22" y="76" text-anchor="middle" font-size="20" font-weight="700">N</text></g>
+  <rect x="885" y="285" width="260" height="125" rx="12" fill="#fffdf7" stroke="#a99673" stroke-width="2"/>
+  <line x1="910" y1="318" x2="980" y2="318" stroke="#9a3d32" stroke-width="11" marker-end="url(#redArrow)"/><text x="1000" y="325" font-family="Arial,sans-serif" font-size="18" fill="#26343a">Confederate approach</text>
+  <rect x="908" y="346" width="74" height="34" rx="7" fill="#d9e6f1" stroke="#315f8c" stroke-width="3"/><text x="1000" y="371" font-family="Arial,sans-serif" font-size="18" fill="#26343a">Union division area</text>
+  <text x="1015" y="398" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#6f5b3c">Frontages and routes generalized</text>
+  <text x="600" y="790" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="2" fill="#755e3f">SCHEMATIC · NOT TO SCALE</text>
+</svg>

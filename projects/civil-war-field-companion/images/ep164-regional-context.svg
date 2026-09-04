@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Regional context for the Seven Days Battles south and east of Richmond</title>
+  <desc id="desc">Schematic map showing Richmond, Mechanicsville, Gaines Mill, Savage Station, White Oak Swamp, Glendale, Malvern Hill, Haxall's Landing, the Chickahominy River, and the James River.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f4edda"/><stop offset="1" stop-color="#e6dcc1"/></linearGradient>
+    <marker id="blueArrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#315f8c"/></marker>
+    <filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity=".18"/></filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#paper)"/>
+  <path d="M0 90 C160 45 300 105 430 72 S760 35 930 95 S1080 125 1200 86" fill="none" stroke="#95ad78" stroke-width="70" opacity=".18"/>
+  <path d="M0 285 C175 245 315 333 470 288 S760 255 905 302 S1075 355 1200 310" fill="none" stroke="#6f9fb2" stroke-width="34" opacity=".9"/>
+  <path d="M0 286 C175 246 315 334 470 289 S760 256 905 303 S1075 356 1200 311" fill="none" stroke="#d8edf2" stroke-width="4" opacity=".8"/>
+  <text x="955" y="270" font-family="Georgia,serif" font-size="24" fill="#315e72" transform="rotate(9 955 270)">Chickahominy River</text>
+  <path d="M0 747 C200 690 370 735 520 710 S790 670 955 720 S1100 760 1200 735" fill="none" stroke="#5f91a8" stroke-width="76" opacity=".95"/>
+  <text x="930" y="700" font-family="Georgia,serif" font-size="28" fill="#eef8fa" transform="rotate(8 930 700)">James River</text>
+
+  <g fill="none" stroke="#8a7656" stroke-width="6" stroke-linecap="round">
+    <path d="M150 205 C335 214 520 252 640 345 C690 385 695 440 670 510 C660 555 682 620 758 682"/>+    <path d="M545 355 C465 432 448 505 470 570"/>
+    <path d="M120 198 C330 340 455 470 670 510"/>
+  </g>
+  <g font-family="Arial,sans-serif" font-size="17" fill="#6f5b3c">
+    <text x="335" y="212">York River Railroad</text>
+    <text x="684" y="564" transform="rotate(74 684 564)">Willis Church Road</text>
+  </g>
+
+  <path d="M620 360 C645 390 595 420 625 452 C654 484 600 510 630 538" fill="none" stroke="#6f9fb2" stroke-width="18" opacity=".75"/>
+  <text x="652" y="425" font-family="Georgia,serif" font-size="22" fill="#315e72">White Oak Swamp</text>
+
+  <g font-family="Arial,sans-serif" fill="#1f2c32">
+    <g filter="url(#shadow)"><circle cx="150" cy="198" r="14" fill="#333b42"/><rect x="74" y="130" width="152" height="46" rx="8" fill="#fffdf7"/><text x="150" y="160" text-anchor="middle" font-size="25" font-weight="700">RICHMOND</text></g>
+    <g><circle cx="420" cy="198" r="9" fill="#333b42"/><text x="420" y="172" text-anchor="middle" font-size="21" font-weight="700">Mechanicsville</text><text x="420" y="226" text-anchor="middle" font-size="16">June 26</text></g>
+    <g><circle cx="535" cy="226" r="9" fill="#333b42"/><text x="555" y="214" font-size="21" font-weight="700">Gaines's Mill</text><text x="555" y="238" font-size="16">June 27</text></g>
+    <g><circle cx="545" cy="355" r="10" fill="#333b42"/><text x="470" y="337" text-anchor="middle" font-size="21" font-weight="700">Savage Station</text><text x="470" y="361" text-anchor="middle" font-size="16">June 29</text></g>
+    <g><circle cx="625" cy="455" r="10" fill="#333b42"/><text x="757" y="470" text-anchor="middle" font-size="21" font-weight="700">White Oak Swamp bridge</text><text x="757" y="494" text-anchor="middle" font-size="16">June 30</text></g>
+    <g filter="url(#shadow)"><circle cx="670" cy="510" r="14" fill="#a43f35"/><rect x="697" y="500" width="159" height="64" rx="8" fill="#fffdf7"/><text x="776" y="526" text-anchor="middle" font-size="23" font-weight="700">GLENDALE</text><text x="776" y="550" text-anchor="middle" font-size="16">crossroads · June 30</text></g>
+    <g><circle cx="720" cy="635" r="10" fill="#333b42"/><text x="626" y="637" text-anchor="end" font-size="21" font-weight="700">Malvern Hill</text><text x="626" y="661" text-anchor="end" font-size="16">July 1</text></g>
+    <g><circle cx="820" cy="690" r="10" fill="#333b42"/><text x="840" y="676" font-size="21" font-weight="700">Haxall's Landing</text></g>
+  </g>
+
+  <path d="M548 380 C565 415 590 455 642 494" fill="none" stroke="#315f8c" stroke-width="11" stroke-dasharray="16 9" marker-end="url(#blueArrow)"/>
+  <path d="M675 535 C684 568 698 595 714 615" fill="none" stroke="#315f8c" stroke-width="11" stroke-dasharray="16 9" marker-end="url(#blueArrow)"/>
+  <path d="M733 650 C755 671 780 682 801 687" fill="none" stroke="#315f8c" stroke-width="11" stroke-dasharray="16 9" marker-end="url(#blueArrow)"/>
+  <rect x="70" y="585" width="360" height="118" rx="14" fill="#fffdf7" stroke="#a99673" stroke-width="2"/>
+  <text x="92" y="618" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#26343a">Army of the Potomac withdrawal</text>
+  <line x1="96" y1="652" x2="180" y2="652" stroke="#315f8c" stroke-width="10" stroke-dasharray="16 9" marker-end="url(#blueArrow)"/>
+  <text x="200" y="660" font-family="Arial,sans-serif" font-size="18" fill="#26343a">general direction toward the James</text>
+  <text x="92" y="688" font-family="Arial,sans-serif" font-size="16" fill="#6f5b3c">Locations and routes are generalized.</text>
+
+  <g transform="translate(1080 110)" font-family="Arial,sans-serif" fill="#26343a"><path d="M0 52 L22 0 L44 52 Z" fill="#26343a"/><text x="22" y="76" text-anchor="middle" font-size="20" font-weight="700">N</text></g>
+  <text x="600" y="780" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="2" fill="#755e3f">SCHEMATIC · NOT TO SCALE</text>
+</svg>

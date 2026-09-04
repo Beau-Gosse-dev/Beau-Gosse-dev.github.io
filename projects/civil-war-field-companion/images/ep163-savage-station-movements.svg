@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="700" viewBox="0 0 1100 700" role="img" aria-labelledby="title desc">
+  <title id="title">Generalized troop movements at Savage's Station</title>
+  <desc id="desc">Schematic tactical map showing Magruder advancing east, Jackson delayed north of the Chickahominy, the Union rear guard at Allen's Farm and Savage's Station, Heintzelman's withdrawal, and the route through White Oak Swamp.</desc>
+  <defs>
+    <marker id="uArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#315f8c"/></marker>
+    <marker id="cArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#9a3d32"/></marker>
+    <style>
+      .label{font:600 19px Georgia,serif;fill:#25211d}.small{font:15px Arial,sans-serif;fill:#34312d}.tiny{font:13px Arial,sans-serif;fill:#504b45}.road{fill:none;stroke:#9b8060;stroke-width:8;stroke-linecap:round}.rail{fill:none;stroke:#363636;stroke-width:7}.water{fill:none;stroke:#66a4c2;stroke-width:17;stroke-linecap:round}.u{fill:none;stroke:#315f8c;stroke-width:9;stroke-linecap:round;marker-end:url(#uArrow)}.c{fill:none;stroke:#9a3d32;stroke-width:9;stroke-linecap:round;marker-end:url(#cArrow)}
+    </style>
+  </defs>
+  <rect width="1100" height="700" fill="#f4edda"/>
+  <rect x="24" y="24" width="1052" height="652" rx="16" fill="#fbf7ea" stroke="#8c806c" stroke-width="2"/>
+  <text x="55" y="66" class="label" font-size="27">Savage's Station: positions and movements</text>
+  <text x="55" y="93" class="small">June 29, 1862 · SCHEMATIC — NOT TO SCALE</text>
+
+  <path class="water" d="M90 170 C300 120 470 130 650 170 C800 205 930 175 1020 145"/>
+  <text x="730" y="132" class="label" fill="#356a89">Chickahominy River</text>
+  <path class="rail" d="M85 350 L1015 350"/>
+  <path d="M120 338 L120 362 M165 338 L165 362 M210 338 L210 362 M255 338 L255 362 M300 338 L300 362 M345 338 L345 362 M390 338 L390 362 M435 338 L435 362 M480 338 L480 362 M525 338 L525 362 M570 338 L570 362 M615 338 L615 362 M660 338 L660 362 M705 338 L705 362 M750 338 L750 362 M795 338 L795 362 M840 338 L840 362 M885 338 L885 362 M930 338 L930 362 M975 338 L975 362" stroke="#fbf7ea" stroke-width="3"/>
+  <text x="455" y="328" class="small">Richmond &amp; York River Railroad</text>
+  <path class="road" d="M70 470 C320 445 540 456 1020 480"/>
+  <text x="390" y="503" class="label">Williamsburg Road</text>
+  <path class="road" d="M850 465 C850 540 820 585 760 640"/>
+  <text x="862" y="564" class="small" transform="rotate(67 862 564)">toward White Oak Swamp</text>
+
+  <rect x="580" y="275" width="110" height="150" fill="#e8d8b8" stroke="#a78d68"/>
+  <text x="572" y="254" class="label">Open field</text>
+  <path d="M535 255 C552 270 545 290 560 305 M720 255 C705 275 715 300 698 318 M540 425 C560 405 565 390 555 372 M720 425 C700 407 700 385 712 365" fill="none" stroke="#6f7f4c" stroke-width="10" stroke-linecap="round"/>
+  <text x="515" y="230" class="small">woods</text><text x="710" y="230" class="small">woods</text>
+
+  <circle cx="405" cy="400" r="10" fill="#5d5448"/><text x="330" y="390" class="label">Allen's Farm</text>
+  <circle cx="825" cy="393" r="12" fill="#5d5448"/><text x="840" y="397" class="label">Savage's Station</text>
+
+  <path class="c" d="M120 315 C260 315 345 330 430 345"/>
+  <text x="105" y="288" class="label" fill="#9a3d32">Magruder</text>
+  <text x="105" y="308" class="tiny" fill="#9a3d32">morning advance</text>
+  <path class="c" d="M430 345 C520 350 575 350 610 350"/>
+  <path class="c" d="M490 440 C565 420 600 410 620 395"/>
+  <text x="475" y="420" class="small" fill="#9a3d32">Semmes</text>
+  <path class="c" d="M480 510 C565 495 610 470 645 425"/>
+  <text x="470" y="540" class="small" fill="#9a3d32">Griffith's brigade</text>
+  <text x="470" y="560" class="tiny" fill="#9a3d32">Barksdale acting</text>
+  <text x="535" y="310" class="small" fill="#9a3d32">Kershaw</text>
+  <rect x="560" y="170" width="170" height="54" rx="8" fill="#f2d8d4" stroke="#9a3d32"/>
+  <text x="577" y="195" class="small" fill="#9a3d32">Jackson delayed north</text>
+  <text x="577" y="214" class="small" fill="#9a3d32">of the river; not engaged</text>
+
+  <path class="u" d="M420 375 C525 382 630 385 715 390"/>
+  <text x="430" y="370" class="small" fill="#315f8c">Sumner falls back, about 11 a.m.</text>
+  <rect x="705" y="300" width="125" height="45" rx="7" fill="#d9e7f1" stroke="#315f8c" stroke-width="2"/>
+  <text x="722" y="327" class="small" fill="#315f8c">II Corps units</text>
+  <rect x="715" y="420" width="150" height="47" rx="7" fill="#d9e7f1" stroke="#315f8c" stroke-width="2"/>
+  <text x="732" y="449" class="small" fill="#315f8c">Brooks recalled</text>
+  <path class="u" d="M945 280 C910 335 875 390 835 430"/>
+  <text x="892" y="255" class="small" fill="#315f8c">Smith / Brooks</text>
+  <path class="u" d="M820 505 C820 555 795 590 765 620"/>
+  <text x="665" y="605" class="small" fill="#315f8c">rear guard withdraws after dark</text>
+  <path class="u" d="M710 520 C760 555 790 585 770 625" stroke-dasharray="12 8"/>
+  <text x="585" y="535" class="small" fill="#315f8c">Heintzelman withdraws before</text>
+  <text x="585" y="555" class="small" fill="#315f8c">the late-afternoon battle</text>
+
+  <rect x="55" y="570" width="385" height="79" rx="9" fill="#eee5cf" stroke="#a99c83"/>
+  <text x="75" y="598" class="small" font-weight="700">Late battle line</text>
+  <text x="75" y="622" class="tiny">Kershaw advanced near the railroad; Semmes formed on</text>
+  <text x="75" y="641" class="tiny">his right; part of Griffith's brigade fought farther south.</text>
+</svg>
