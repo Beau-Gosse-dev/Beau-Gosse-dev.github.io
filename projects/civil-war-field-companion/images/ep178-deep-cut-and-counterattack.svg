@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Porter and Hatch at the Deep Cut and the opening of Longstreet's counterattack</title>
+  <desc id="desc">Two-panel schematic map. The left panel shows the 3 p.m. Federal assault against Starke's division at the unfinished railroad. The right panel shows the Federal withdrawal, Reynolds moving north, and Hood striking Warren shortly after 4 p.m.</desc>
+  <defs>
+    <pattern id="woods" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="7" cy="9" r="4" fill="#87a77d" opacity=".36"/><circle cx="21" cy="22" r="6" fill="#7d9e72" opacity=".28"/></pattern>
+    <marker id="u" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0l10 5-10 5z" fill="#235d9f"/></marker>
+    <marker id="c" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0l10 5-10 5z" fill="#a9493f"/></marker>
+    <marker id="g" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0l10 5-10 5z" fill="#626862"/></marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity=".18"/></filter>
+  </defs>
+  <rect width="1200" height="800" fill="#eee6d5"/>
+  <rect x="28" y="28" width="557" height="680" rx="18" fill="#f8f2e6" stroke="#b9aa90" stroke-width="2"/>
+  <rect x="615" y="28" width="557" height="680" rx="18" fill="#f8f2e6" stroke="#b9aa90" stroke-width="2"/>
+  <text x="58" y="73" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#6a5e4e">3:00 P.M.</text>
+  <text x="58" y="106" font-family="Georgia,serif" font-size="25" font-weight="700" fill="#312c25">Porter and Hatch attack</text>
+  <text x="645" y="73" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#6a5e4e">SHORTLY AFTER 4:00 P.M.</text>
+  <text x="645" y="106" font-family="Georgia,serif" font-size="25" font-weight="700" fill="#312c25">Longstreet counterattacks</text>
+
+  <path d="M45 122h523v117c-95 17-185 10-270-18-87-29-172-25-253 12z" fill="url(#woods)"/>
+  <path d="M68 240c110-31 209-35 298-12 62 16 121 15 178-2" fill="none" stroke="#66594d" stroke-width="16" stroke-dasharray="23 10"/>
+  <path d="M68 240c110-31 209-35 298-12 62 16 121 15 178-2" fill="none" stroke="#d2c8b7" stroke-width="4" stroke-dasharray="23 10"/>
+  <text x="73" y="195" font-family="Georgia,serif" font-size="21" font-weight="700" fill="#463c34">Unfinished railroad</text>
+  <text x="103" y="274" font-family="Georgia,serif" font-size="17" fill="#463c34">Deep Cut</text>
+  <text x="449" y="290" font-family="Georgia,serif" font-size="17" fill="#463c34">the Dump</text>
+  <g filter="url(#shadow)">
+    <rect x="166" y="128" width="282" height="55" rx="9" fill="#a9493f"/><text x="307" y="152" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="white">STARKE’S DIVISION</text><text x="307" y="173" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="white">Johnson • Stafford • Baylor</text>
+    <rect x="163" y="466" width="288" height="57" rx="9" fill="#235d9f"/><text x="307" y="490" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="white">PORTER + HATCH</text><text x="307" y="512" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="white">Butterfield left • Hatch right</text>
+  </g>
+  <path d="M236 459C217 396 213 327 222 267" fill="none" stroke="#235d9f" stroke-width="9" marker-end="url(#u)"/>
+  <path d="M378 459C398 396 412 331 421 275" fill="none" stroke="#235d9f" stroke-width="9" marker-end="url(#u)"/>
+  <text x="248" y="379" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#183f6d">Federal advance</text>
+  <path d="M72 402C178 359 277 322 370 292" fill="none" stroke="#a9493f" stroke-width="5" stroke-dasharray="9 7" marker-end="url(#c)"/>
+  <text x="77" y="432" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#7d322b">S. D. Lee’s enfilading artillery</text>
+  <path d="M500 330C456 315 419 304 389 294" fill="none" stroke="#a9493f" stroke-width="5" stroke-dasharray="9 7" marker-end="url(#c)"/>
+  <text x="402" y="379" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#7d322b">Jackson’s guns</text>
+  <path d="M45 548c128-22 227-20 296 7 72 28 147 28 227-1v136H45z" fill="url(#woods)"/>
+  <path d="M65 569c134-7 270-4 488 1" fill="none" stroke="#987858" stroke-width="7" stroke-dasharray="4 9"/>
+  <text x="81" y="601" font-family="Arial,sans-serif" font-size="15" fill="#5f4934">Groveton–Sudley Road</text>
+  <text x="361" y="638" font-family="Georgia,serif" font-size="18" font-weight="700" fill="#50613e">Groveton Woods</text>
+  <text x="70" y="665" font-family="Arial,sans-serif" font-size="14" fill="#5f574c">The attackers crossed 300–600 yards of exposed ground.</text>
+
+  <path d="M632 122h523v131c-83 20-160 17-231-9-93-34-190-28-292 18z" fill="url(#woods)"/>
+  <path d="M637 365c155-5 315-2 520-13" fill="none" stroke="#a57b4c" stroke-width="18"/>
+  <path d="M637 365c155-5 315-2 520-13" fill="none" stroke="#f1d9a9" stroke-width="8"/>
+  <text x="650" y="336" font-family="Georgia,serif" font-size="21" font-weight="700" fill="#64492f">Warrenton Turnpike</text>
+  <text x="1042" y="330" font-family="Arial,sans-serif" font-size="14" fill="#64492f">east</text>
+  <path d="M993 365c-9 91 16 186 75 285" fill="none" stroke="#987858" stroke-width="7" stroke-dasharray="4 9"/>
+  <text x="1030" y="421" font-family="Arial,sans-serif" font-size="15" fill="#5f4934" transform="rotate(66 1030 421)">Groveton–Sudley Road</text>
+  <ellipse cx="1010" cy="582" rx="128" ry="48" fill="#627747" opacity=".17"/>
+  <text x="966" y="625" font-family="Georgia,serif" font-size="19" font-weight="700" fill="#50613e">Chinn Ridge</text>
+  <g filter="url(#shadow)">
+    <rect x="662" y="504" width="224" height="57" rx="9" fill="#a9493f"/><text x="774" y="528" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="white">HOOD’S DIVISION</text><text x="774" y="550" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="white">Texas Brigade leads</text>
+    <rect x="907" y="405" width="222" height="57" rx="9" fill="#235d9f"/><text x="1018" y="429" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="white">WARREN</text><text x="1018" y="451" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="white">5th + 10th New York</text>
+    <rect x="706" y="158" width="235" height="57" rx="9" fill="#235d9f"/><text x="824" y="182" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="white">FEDERAL CENTER</text><text x="824" y="204" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="white">Porter withdraws north</text>
+    <rect x="901" y="642" width="222" height="57" rx="9" fill="#235d9f"/><text x="1012" y="666" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="white">REYNOLDS</text><text x="1012" y="688" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="white">ordered north</text>
+  </g>
+  <path d="M837 499C866 478 884 459 900 441" fill="none" stroke="#a9493f" stroke-width="10" marker-end="url(#c)"/>
+  <text x="674" y="476" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#7d322b">Hood strikes Warren first</text>
+  <path d="M1092 638C1140 549 1144 394 1086 305C1044 241 988 218 950 204" fill="none" stroke="#235d9f" stroke-width="7" stroke-dasharray="10 8" marker-end="url(#u)"/>
+  <text x="685" y="624" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#183f6d">Reynolds leaves Chinn Ridge</text>
+  <path d="M943 472C925 425 900 397 865 390" fill="none" stroke="#626862" stroke-width="4" stroke-dasharray="9 7" marker-end="url(#g)"/>
+  <text x="650" y="395" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#505650">Warren’s survivors withdraw</text>
+  <circle cx="981" cy="355" r="7" fill="#28231e"/><text x="996" y="345" font-family="Georgia,serif" font-size="17" font-weight="700" fill="#28231e">Groveton</text>
+  <text x="657" y="274" font-family="Arial,sans-serif" font-size="14" fill="#5f574c">Reynolds’s move left about 2,200 Federals</text>
+  <text x="657" y="294" font-family="Arial,sans-serif" font-size="14" fill="#5f574c">south of the turnpike.</text>
+  <g transform="translate(40 736)"><rect width="1120" height="44" rx="10" fill="#fffaf0" stroke="#b7aa92"/><rect x="18" y="13" width="27" height="18" rx="3" fill="#235d9f"/><text x="56" y="28" font-family="Arial,sans-serif" font-size="15" fill="#29251f">United States</text><rect x="198" y="13" width="27" height="18" rx="3" fill="#a9493f"/><text x="236" y="28" font-family="Arial,sans-serif" font-size="15" fill="#29251f">Confederacy</text><text x="390" y="28" font-family="Arial,sans-serif" font-size="15" fill="#5f574c">Generalized movements • not to scale • modern north-up orientation</text></g>
+</svg>
