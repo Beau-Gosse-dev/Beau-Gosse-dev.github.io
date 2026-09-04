@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Generalized movements during the retreat toward the James, June 28, 1862</title>
+  <desc id="desc">Schematic map showing Porter's night crossing of the Chickahominy, the Federal movement from the Richmond front toward Savage's Station and White Oak Swamp, Keyes leading the wagon train south, and Confederate reconnaissance toward White House Landing.</desc>
+  <defs>
+    <marker id="blueArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6 0 12Z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6 0 12Z" fill="#9a3d32"/></marker>
+    <style>
+      .label{font:600 20px Georgia,serif;fill:#202729}.small{font:16px Arial,sans-serif;fill:#2d3639}.tiny{font:14px Arial,sans-serif;fill:#3b4548}.river{fill:none;stroke:#67a2c4;stroke-width:24;stroke-linecap:round}.swamp{fill:#dce7cd;stroke:#789069;stroke-width:3;stroke-dasharray:9 7}.road{fill:none;stroke:#a99b7b;stroke-width:6;stroke-dasharray:11 8}.moveUs{fill:none;stroke:#315f8c;stroke-width:8;marker-end:url(#blueArrow)}.moveCs{fill:none;stroke:#9a3d32;stroke-width:8;marker-end:url(#redArrow)}.usbox{fill:#e4eef6;stroke:#315f8c;stroke-width:3}.csbox{fill:#f8e8e3;stroke:#9a3d32;stroke-width:3}.site{fill:#232829}
+    </style>
+  </defs>
+  <rect width="1200" height="720" fill="#f3eedf"/>
+  <path d="M-20 224C153 188 321 236 492 219S837 171 1220 209" class="river"/>
+  <text x="690" y="171" class="label" fill="#396e91">Chickahominy River</text>
+  <path d="M492 444C651 401 798 430 940 500S1113 579 1220 564" class="swamp"/>
+  <text x="783" y="473" class="label" fill="#5e7752">White Oak Swamp</text>
+  <path d="M255 614L427 524 584 381 687 291 843 239" class="road"/>
+  <path d="M584 381L775 345 1050 325" class="road"/>
+  <path d="M341 135L524 86 722 64 1038 67" class="road"/>
+  <text x="794" y="50" class="small">Richmond &amp; York River Railroad</text>
+  <circle cx="257" cy="615" r="10" class="site"/><text x="135" y="647" class="label">Richmond</text>
+  <circle cx="585" cy="380" r="9" class="site"/><text x="602" y="374" class="label">Savage's Station</text>
+  <circle cx="741" cy="439" r="9" class="site"/><text x="757" y="429" class="small">White Oak Swamp Bridge</text>
+  <circle cx="873" cy="479" r="9" class="site"/><text x="891" y="473" class="small">Brackett's Ford</text>
+  <circle cx="1062" cy="321" r="10" class="site"/><text x="912" y="304" class="label">White House Landing</text>
+  <circle cx="519" cy="178" r="9" class="site"/><text x="410" y="153" class="small">Gaines's Mill</text>
+  <circle cx="460" cy="245" r="8" class="site"/><text x="347" y="276" class="small">Trent House</text>
+  <path d="M519 175C508 202 490 224 467 241" class="moveUs"/>
+  <path d="M343 571C433 513 515 437 573 390" class="moveUs"/>
+  <path d="M602 387C660 406 700 426 730 438" class="moveUs"/>
+  <path d="M729 444C752 498 784 539 829 574" class="moveUs"/>
+  <rect x="39" y="477" width="343" height="105" rx="15" class="usbox"/>
+  <text x="61" y="511" class="label" fill="#315f8c">Army and trains move southeast</text>
+  <text x="61" y="539" class="small">Keyes's IV Corps leads through the swamp;</text>
+  <text x="61" y="563" class="small">other corps and the wagon columns follow.</text>
+  <rect x="38" y="286" width="312" height="103" rx="15" class="usbox"/>
+  <text x="60" y="320" class="label" fill="#315f8c">Porter crosses during the night</text>
+  <text x="60" y="348" class="small">V Corps withdraws south of the river;</text>
+  <text x="60" y="373" class="small">engineers destroy the bridges by morning.</text>
+  <path d="M522 141C673 100 831 81 1019 76" class="moveCs"/>
+  <rect x="545" y="96" width="290" height="82" rx="14" class="csbox"/>
+  <text x="566" y="128" class="label" fill="#9a3d32">Stuart and Ewell move east</text>
+  <text x="566" y="154" class="small">Reconnaissance finds White House abandoned.</text>
+  <rect x="870" y="605" width="289" height="67" rx="13" class="usbox"/>
+  <text x="892" y="635" class="label" fill="#315f8c">Toward Glendale and the James</text>
+  <text x="892" y="659" class="small">June 29–July 2 fighting lies ahead.</text>
+  <text x="22" y="700" class="tiny">Schematic; not to scale. Arrows show generalized operational relationships, not exact roads, positions, formations, frontage, or troop geometry.</text>
+</svg>

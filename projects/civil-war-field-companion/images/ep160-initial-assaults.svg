@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Piecemeal Confederate attacks at Gaines's Mill before 5 p.m.</title>
+  <desc id="desc">Schematic sequence diagram showing A. P. Hill's six brigades, Ewell's later brigades, Longstreet's diversion, Slocum's reinforcement, and Porter's defensive line behind Boatswain's Swamp.</desc>
+  <defs>
+    <marker id="redArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#9a3d32"/></marker>
+    <marker id="blueArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#315f8c"/></marker>
+    <pattern id="marsh" width="18" height="18" patternUnits="userSpaceOnUse"><path d="M3 18C3 10 8 9 8 3M10 18C10 12 15 11 15 6" fill="none" stroke="#477b70" stroke-width="2" opacity=".72"/></pattern>
+    <style>
+      .label{font:600 20px Georgia,serif;fill:#20282a}.small{font:16px Arial,sans-serif;fill:#293437}.tiny{font:14px Arial,sans-serif;fill:#3d474a}.red{fill:#f7e7e2;stroke:#9a3d32;stroke-width:3}.blue{fill:#e5eef6;stroke:#315f8c;stroke-width:3}.redmove{fill:none;stroke:#9a3d32;stroke-width:8;marker-end:url(#redArrow)}.bluemove{fill:none;stroke:#315f8c;stroke-width:8;marker-end:url(#blueArrow)}.line{fill:none;stroke:#315f8c;stroke-width:13;stroke-linecap:round}.note{fill:#fffdf7;stroke:#827966;stroke-width:2}
+    </style>
+  </defs>
+  <rect width="1200" height="720" fill="#f3eedf"/>
+  <text x="42" y="48" class="label">Generalized battlefield relationship</text>
+  <path d="M680 90C620 190 695 280 642 380S676 550 620 662" fill="none" stroke="#6e9fb2" stroke-width="13"/>
+  <path d="M600 78H744L708 670H560Z" fill="url(#marsh)"/>
+  <text x="592" y="383" class="small" fill="#356b63" transform="rotate(-82 592 383)">Boatswain's Swamp</text>
+  <path d="M765 114C930 89 1050 143 1064 245C1077 339 1002 395 927 425C847 456 820 536 814 618" class="line"/>
+  <text x="820" y="86" class="label" fill="#315f8c">Porter's V Corps</text>
+  <text x="948" y="143" class="small" fill="#315f8c">Sykes</text>
+  <text x="968" y="438" class="small" fill="#315f8c">Morell</text>
+  <rect x="875" y="522" width="198" height="60" rx="10" class="blue"/><text x="903" y="558" class="small" fill="#315f8c">McCall reserve</text>
+  <rect x="38" y="92" width="258" height="68" rx="10" class="red"/><text x="58" y="119" class="small" fill="#9a3d32">Ewell after about 3:30</text><text x="58" y="144" class="tiny">Seymour • Elzey • Trimble</text>
+  <path d="M297 125C430 121 505 148 594 175" class="redmove"/>
+  <rect x="38" y="214" width="330" height="135" rx="10" class="red"/>
+  <text x="58" y="243" class="small" fill="#9a3d32">A. P. Hill from about 2:30</text>
+  <text x="58" y="271" class="tiny">Gregg • Branch • Anderson • Archer</text>
+  <text x="58" y="295" class="tiny">then Pender and Field</text>
+  <text x="58" y="323" class="tiny">overlapping attacks, not one coordinated wave</text>
+  <path d="M370 255C465 244 520 251 604 279" class="redmove"/>
+  <path d="M370 300C465 307 522 332 600 349" class="redmove"/>
+  <rect x="38" y="414" width="300" height="92" rx="10" class="red"/>
+  <text x="58" y="443" class="small" fill="#9a3d32">Longstreet late afternoon</text>
+  <text x="58" y="470" class="tiny">diversion, then preparation</text>
+  <text x="58" y="491" class="tiny">for a full assault</text>
+  <path d="M340 457C450 450 530 457 603 477" class="redmove" stroke-dasharray="14 9"/>
+  <rect x="102" y="575" width="314" height="62" rx="10" class="blue"/>
+  <text x="123" y="602" class="small" fill="#315f8c">Slocum reinforces Porter</text>
+  <text x="123" y="624" class="tiny">from south of the Chickahominy</text>
+  <path d="M418 604C570 617 700 606 802 566" class="bluemove"/>
+  <rect x="742" y="642" width="414" height="64" rx="10" class="note"/>
+  <text x="760" y="669" class="tiny">Schematic; not to scale.</text>
+  <text x="760" y="691" class="tiny">Arrows show sequence, not exact routes or frontage.</text>
+  <rect x="768" y="256" width="365" height="100" rx="10" class="note"/>
+  <text x="788" y="286" class="label">Effect before 5 p.m.</text>
+  <text x="788" y="314" class="small">Temporary penetrations were contained.</text>
+  <text x="788" y="339" class="small">Porter's defensive arc remained intact.</text>
+</svg>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Virginia Peninsula campaign and Gaines's Mill context</title>
+  <desc id="desc">Schematic map showing Washington, Richmond, Fort Monroe, the Virginia Peninsula, the James and York rivers, and Gaines's Mill northwest of Richmond.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7f1df"/>
+      <stop offset="1" stop-color="#e8ddc5"/>
+    </linearGradient>
+    <marker id="blue-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#315f8c"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-opacity=".18"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="760" fill="url(#paper)"/>
+  <rect x="34" y="32" width="1132" height="696" rx="18" fill="#fffaf0" stroke="#6d6557" stroke-width="2" filter="url(#shadow)"/>
+
+  <text x="74" y="82" font-family="Georgia, serif" font-size="34" font-weight="700" fill="#26231f">Gaines's Mill in the Peninsula Campaign</text>
+  <text x="76" y="111" font-family="Arial, sans-serif" font-size="17" fill="#5d574d">Regional context — schematic and not to scale</text>
+
+  <path d="M188 180 C300 145 418 155 512 198 C605 241 650 302 746 321 C863 344 950 316 1050 348 L1090 592 C984 609 866 594 764 565 C649 533 548 518 431 539 C322 559 225 531 143 469 Z" fill="#d9d1b7" stroke="#766f60" stroke-width="3"/>
+  <text x="290" y="243" font-family="Georgia, serif" font-size="28" letter-spacing="3" fill="#7a705f">VIRGINIA</text>
+
+  <path d="M110 498 C281 483 408 496 520 526 C657 564 780 642 1102 627" fill="none" stroke="#5485a7" stroke-width="27" opacity=".86"/>
+  <path d="M429 439 C575 428 703 454 860 520 C939 553 1002 576 1098 584" fill="none" stroke="#6b9ab7" stroke-width="18"/>
+  <path d="M466 390 C599 385 706 409 838 472 C913 508 1008 538 1095 548" fill="none" stroke="#75a5c2" stroke-width="14"/>
+  <path d="M563 334 C641 348 677 373 713 410" fill="none" stroke="#7ba9c1" stroke-width="9" stroke-dasharray="10 7"/>
+
+  <text x="807" y="629" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#244f69">James River</text>
+  <text x="849" y="523" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#315f77">York River</text>
+  <text x="807" y="453" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#315f77">Chickahominy River</text>
+
+  <path d="M1013 156 C1018 216 1015 270 1004 330" fill="none" stroke="#3a6f92" stroke-width="8"/>
+  <text x="1025" y="210" font-family="Arial, sans-serif" font-size="15" fill="#315f77">Potomac River</text>
+
+  <g font-family="Arial, sans-serif">
+    <circle cx="1016" cy="151" r="8" fill="#242321"/>
+    <text x="1032" y="157" font-size="19" font-weight="700" fill="#2c2925">Washington</text>
+
+    <circle cx="567" cy="395" r="10" fill="#9a3d32"/>
+    <text x="583" y="400" font-size="21" font-weight="700" fill="#7b3028">Richmond</text>
+
+    <circle cx="546" cy="359" r="11" fill="#d3a52f" stroke="#5c4311" stroke-width="2"/>
+    <circle cx="546" cy="359" r="21" fill="none" stroke="#d3a52f" stroke-width="3"/>
+    <text x="568" y="349" font-size="20" font-weight="700" fill="#4b3a13">Gaines's Mill</text>
+    <text x="568" y="371" font-size="15" fill="#5c5549">June 27, 1862</text>
+
+    <circle cx="955" cy="568" r="8" fill="#315f8c"/>
+    <text x="970" y="574" font-size="18" font-weight="700" fill="#244f78">Fort Monroe</text>
+
+    <circle cx="846" cy="498" r="6" fill="#315f8c"/>
+    <text x="861" y="497" font-size="17" fill="#244f78">Yorktown</text>
+    <circle cx="748" cy="463" r="6" fill="#315f8c"/>
+    <text x="762" y="462" font-size="17" fill="#244f78">Williamsburg</text>
+  </g>
+
+  <path d="M940 550 C875 527 829 502 770 474 C700 441 644 421 588 407" fill="none" stroke="#315f8c" stroke-width="5" stroke-dasharray="14 9" marker-end="url(#blue-arrow)"/>
+  <text x="685" y="573" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#315f8c" transform="rotate(18 685 573)">Army of the Potomac advance, spring 1862</text>
+
+  <path d="M466 362 C500 357 518 355 536 357" fill="none" stroke="#9a3d32" stroke-width="6" marker-end="url(#blue-arrow)"/>
+  <text x="220" y="341" font-family="Arial, sans-serif" font-size="17" fill="#6e342e">Lee attacked Porter's exposed right wing north of the river</text>
+  <line x1="451" y1="346" x2="521" y2="358" stroke="#6e342e" stroke-width="2"/>
+
+  <g transform="translate(78 575)">
+    <rect width="455" height="111" rx="10" fill="#f1ead9" stroke="#9b917e"/>
+    <text x="20" y="30" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#34312c">Operational relationship</text>
+    <text x="20" y="56" font-family="Arial, sans-serif" font-size="15" fill="#4b4740">Porter's corps stood north of the Chickahominy while most of</text>
+    <text x="20" y="78" font-family="Arial, sans-serif" font-size="15" fill="#4b4740">McClellan's army remained south of it. The battle lay about</text>
+    <text x="20" y="100" font-family="Arial, sans-serif" font-size="15" fill="#4b4740">seven miles northeast of central Richmond.</text>
+  </g>
+</svg>

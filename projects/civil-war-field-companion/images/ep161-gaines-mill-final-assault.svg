@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">Final Confederate assault at Gaines's Mill</title>
+  <desc id="desc">Schematic tactical map showing Confederate divisions west of Boatswain's Swamp, Union divisions east of the stream, the Watt and McGehee houses, Confederate attack arrows, and Union withdrawal routes toward Chickahominy bridges.</desc>
+  <defs>
+    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f1df"/>
+      <stop offset="1" stop-color="#e6dcc2"/>
+    </linearGradient>
+    <pattern id="woods" width="32" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="8" cy="9" r="5" fill="#77916b" opacity=".34"/>
+      <circle cx="22" cy="17" r="7" fill="#567c58" opacity=".28"/>
+    </pattern>
+    <marker id="red-arrow" markerWidth="12" markerHeight="10" refX="11" refY="5" orient="auto"><path d="M0 0 L12 5 L0 10 Z" fill="#9a3d32"/></marker>
+    <marker id="blue-arrow" markerWidth="12" markerHeight="10" refX="11" refY="5" orient="auto"><path d="M0 0 L12 5 L0 10 Z" fill="#315f8c"/></marker>
+  </defs>
+  <rect width="1200" height="820" fill="url(#ground)"/>
+  <rect x="28" y="26" width="1144" height="768" rx="16" fill="#fffaf0" stroke="#6d6557" stroke-width="2"/>
+  <text x="66" y="76" font-family="Georgia, serif" font-size="34" font-weight="700" fill="#26231f">Gaines's Mill: the final assault, about 7–8 p.m.</text>
+  <text x="68" y="105" font-family="Arial, sans-serif" font-size="17" fill="#5d574d">Generalized positions and movements — schematic and not to scale</text>
+
+  <path d="M515 124 C610 185 623 249 585 315 C546 381 544 432 590 490 C643 556 640 638 582 720" fill="none" stroke="#78a2b3" stroke-width="62" opacity=".28"/>
+  <path d="M515 124 C610 185 623 249 585 315 C546 381 544 432 590 490 C643 556 640 638 582 720" fill="none" stroke="#4b7f9d" stroke-width="9"/>
+  <text x="524" y="270" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#315f77" transform="rotate(-71 524 270)">Boatswain's Swamp</text>
+
+  <path d="M91 705 C337 677 493 706 647 755 C813 805 991 762 1119 708" fill="none" stroke="#4b7f9d" stroke-width="28" opacity=".8"/>
+  <text x="799" y="755" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#284f68">Chickahominy River</text>
+
+  <path d="M210 229 C288 301 348 403 414 531 C445 594 480 649 534 700" fill="none" stroke="#6690aa" stroke-width="10"/>
+  <text x="205" y="390" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#315f77" transform="rotate(60 205 390)">Powhite Creek</text>
+
+  <path d="M60 128 L453 128 L523 182 L488 258 L116 265 Z" fill="url(#woods)" stroke="#829170"/>
+  <path d="M657 121 L1129 123 L1138 370 L718 340 Z" fill="url(#woods)" stroke="#829170"/>
+  <path d="M659 558 L1116 517 L1137 686 L682 699 Z" fill="url(#woods)" stroke="#829170"/>
+
+  <g font-family="Arial, sans-serif">
+    <text x="79" y="150" font-size="14" fill="#5c6651">woods and broken ground</text>
+    <text x="970" y="151" font-size="14" fill="#5c6651">woods</text>
+    <path d="M739 443 L760 422 L781 443 L781 476 L739 476 Z" fill="#c7ad7f" stroke="#665b47" stroke-width="2"/>
+    <text x="793" y="450" font-size="18" font-weight="700" fill="#3f3a32">Watt House</text>
+    <text x="793" y="472" font-size="14" fill="#5d574d">Porter's headquarters area</text>
+    <path d="M961 273 L980 254 L1000 273 L1000 303 L961 303 Z" fill="#c7ad7f" stroke="#665b47" stroke-width="2"/>
+    <text x="1011" y="280" font-size="17" font-weight="700" fill="#3f3a32">McGehee House</text>
+    <path d="M370 211 L388 194 L406 211 L406 240 L370 240 Z" fill="#c7ad7f" stroke="#665b47" stroke-width="2"/>
+    <text x="268" y="187" font-size="17" font-weight="700" fill="#3f3a32">Gaines's Mill / house</text>
+  </g>
+
+  <g fill="#9a3d32" font-family="Arial, sans-serif" font-size="18" font-weight="700">
+    <rect x="130" y="155" width="238" height="42" rx="7" fill="#f0d8d3" stroke="#9a3d32" stroke-width="2"/>
+    <text x="249" y="182" text-anchor="middle">D. H. Hill</text>
+    <rect x="105" y="304" width="278" height="42" rx="7" fill="#f0d8d3" stroke="#9a3d32" stroke-width="2"/>
+    <text x="244" y="331" text-anchor="middle">Winder · Lawton · Ewell</text>
+    <rect x="109" y="405" width="232" height="42" rx="7" fill="#f0d8d3" stroke="#9a3d32" stroke-width="2"/>
+    <text x="225" y="432" text-anchor="middle">A. P. Hill remnants</text>
+    <rect x="112" y="518" width="270" height="42" rx="7" fill="#f0d8d3" stroke="#9a3d32" stroke-width="2"/>
+    <text x="247" y="545" text-anchor="middle">Whiting: Law · Hood</text>
+    <rect x="118" y="614" width="262" height="42" rx="7" fill="#f0d8d3" stroke="#9a3d32" stroke-width="2"/>
+    <text x="249" y="641" text-anchor="middle">Longstreet: five brigades</text>
+  </g>
+
+  <g fill="none" stroke="#9a3d32" stroke-width="7" marker-end="url(#red-arrow)">
+    <path d="M360 186 C445 191 494 206 543 231"/>
+    <path d="M380 326 C459 329 505 342 548 372"/>
+    <path d="M341 426 C430 430 491 448 548 475"/>
+    <path d="M382 540 C462 535 520 551 568 582"/>
+    <path d="M380 635 C474 628 528 628 580 643"/>
+  </g>
+
+  <g font-family="Arial, sans-serif" font-size="18" font-weight="700">
+    <path d="M668 190 C772 177 920 176 1051 197" fill="none" stroke="#315f8c" stroke-width="12"/>
+    <text x="860" y="169" text-anchor="middle" fill="#315f8c">Sykes: Buchanan · Lovell · Warren</text>
+    <path d="M651 359 C748 342 867 349 969 385" fill="none" stroke="#315f8c" stroke-width="12"/>
+    <text x="825" y="328" text-anchor="middle" fill="#315f8c">Morell: Griffin · Martindale</text>
+    <path d="M654 511 C742 497 846 505 930 538" fill="none" stroke="#315f8c" stroke-width="12"/>
+    <text x="804" y="489" text-anchor="middle" fill="#315f8c">Butterfield and attached units</text>
+    <path d="M724 592 C831 576 948 584 1048 621" fill="none" stroke="#315f8c" stroke-width="8"/>
+    <text x="891" y="563" text-anchor="middle" fill="#315f8c">reserve artillery near Watt House</text>
+  </g>
+
+  <g fill="none" stroke="#315f8c" stroke-width="6" stroke-dasharray="13 9" marker-end="url(#blue-arrow)">
+    <path d="M926 638 C881 679 810 709 721 743"/>
+    <path d="M1035 390 C1083 454 1088 558 1028 675"/>
+  </g>
+  <text x="966" y="681" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#315f8c">withdrawal toward Alexander</text>
+  <text x="977" y="704" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#315f8c">and Grapevine bridges</text>
+
+  <g transform="translate(824 114)" font-family="Arial, sans-serif">
+    <path d="M0 48 L0 4 L-10 22 L0 16 L10 22 Z" fill="#33302b"/>
+    <text x="0" y="68" text-anchor="middle" font-size="16" font-weight="700" fill="#33302b">N</text>
+  </g>
+
+  <g transform="translate(65 704)" font-family="Arial, sans-serif">
+    <rect width="448" height="62" rx="9" fill="#f1ead9" stroke="#9b917e"/>
+    <text x="18" y="25" font-size="15" fill="#4b483f">The line broke in several sectors at nearly the same time.</text>
+    <text x="18" y="47" font-size="15" fill="#4b483f">Arrows show broad direction, not exact routes or formations.</text>
+  </g>
+</svg>

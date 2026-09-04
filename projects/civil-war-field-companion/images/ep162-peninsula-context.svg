@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Regional context for the Peninsula Campaign and the retreat to the James River</title>
+  <desc id="desc">Schematic regional map of eastern Virginia showing Washington, Richmond, the Virginia Peninsula, Fort Monroe, White House Landing, the York River, and the James River, with the Army of the Potomac's advance and June 1862 retreat.</desc>
+  <defs>
+    <marker id="blueArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6 0 12Z" fill="#315f8c"/></marker>
+    <style>
+      .label{font:600 21px Georgia,serif;fill:#202729}.small{font:16px Arial,sans-serif;fill:#2d3639}.tiny{font:14px Arial,sans-serif;fill:#3b4548}.water{fill:#dbeaf2;stroke:#67a2c4;stroke-width:3}.land{fill:#f3eedf;stroke:#6d735f;stroke-width:3}.route{fill:none;stroke:#315f8c;stroke-width:9;marker-end:url(#blueArrow)}.retreat{fill:none;stroke:#315f8c;stroke-width:9;stroke-dasharray:15 10;marker-end:url(#blueArrow)}.box{fill:#e4eef6;stroke:#315f8c;stroke-width:3}.site{fill:#232829}
+    </style>
+  </defs>
+  <rect width="1200" height="720" fill="#dbeaf2"/>
+  <path class="land" d="M0 0H876L839 78 801 164 775 234 819 296 765 351 729 425 675 509 602 586 489 646 373 720H0Z"/>
+  <path class="land" d="M875 0H1200V471L1118 439 1062 379 984 334 904 304 821 296 777 235 803 163 842 78Z"/>
+  <path class="water" d="M907 306C836 333 785 374 723 412 659 451 587 490 513 508" fill="none" stroke-width="30"/>
+  <path class="water" d="M849 242C787 265 732 289 672 314 613 339 550 359 484 366" fill="none" stroke-width="22"/>
+  <path class="water" d="M919 17C857 60 826 112 803 164" fill="none" stroke-width="20"/>
+  <text x="845" y="132" class="label" fill="#396e91">Potomac River</text>
+  <text x="660" y="291" class="label" fill="#396e91">York River</text>
+  <text x="625" y="483" class="label" fill="#396e91">James River</text>
+  <text x="954" y="264" class="label" fill="#396e91">Chesapeake Bay</text>
+  <circle cx="850" cy="55" r="10" class="site"/><text x="870" y="62" class="label">Washington</text>
+  <circle cx="425" cy="316" r="11" class="site"/><text x="290" y="308" class="label">Richmond</text>
+  <circle cx="507" cy="356" r="8" class="site"/><text x="519" y="348" class="small">Seven Days battle area</text>
+  <circle cx="744" cy="325" r="8" class="site"/><text x="755" y="319" class="small">White House Landing</text>
+  <circle cx="849" cy="412" r="9" class="site"/><text x="867" y="418" class="label">Fort Monroe</text>
+  <circle cx="553" cy="489" r="8" class="site"/><text x="402" y="515" class="small">Harrison's Landing</text>
+  <path d="M842 404C748 389 666 367 589 345 533 329 483 320 446 318" class="route"/>
+  <text x="617" y="392" class="small" fill="#315f8c">Army of the Potomac advances up the Peninsula, spring 1862</text>
+  <path d="M506 357C553 394 572 438 556 481" class="retreat"/>
+  <rect x="738" y="514" width="414" height="121" rx="15" class="box"/>
+  <text x="760" y="550" class="label" fill="#315f8c">Change of base, June 28–July 2</text>
+  <text x="760" y="580" class="small">McClellan abandoned the York River supply line</text>
+  <text x="760" y="605" class="small">and moved southeast to the James River, where</text>
+  <text x="760" y="630" class="small">water transport and United States gunboats were available.</text>
+  <text x="24" y="697" class="tiny">Schematic; not to scale. Shorelines, rivers, routes, locations, and distances are generalized.</text>
+</svg>
