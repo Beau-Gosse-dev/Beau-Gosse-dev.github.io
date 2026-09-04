@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Porter's actual position and Lee's expected position before Gaines's Mill</title>
+  <desc id="desc">Schematic local map showing Powhite Creek and the unoccupied line Lee expected, Boatswain's Swamp and Porter's actual arc on the plateau, the Watt, McGehee, and Adams houses, Union division sectors, and generalized Confederate approaches toward Cold Harbor.</desc>
+  <defs>
+    <marker id="redArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#9a3d32"/></marker>
+    <pattern id="marsh" width="18" height="18" patternUnits="userSpaceOnUse"><path d="M3 18C3 10 8 9 8 3M10 18C10 12 15 11 15 6" fill="none" stroke="#477b70" stroke-width="2" opacity=".65"/></pattern>
+    <style>
+      .label{font:600 20px Georgia,serif;fill:#20282a}.small{font:16px Arial,sans-serif;fill:#293437}.tiny{font:14px Arial,sans-serif;fill:#3d474a}.river{fill:none;stroke:#65a1c2;stroke-width:24;stroke-linecap:round}.creek{fill:none;stroke:#6e9fb2;stroke-width:12;stroke-linecap:round}.road{fill:none;stroke:#a89879;stroke-width:5;stroke-dasharray:10 8}.actual{fill:none;stroke:#315f8c;stroke-width:12;stroke-linecap:round}.expected{fill:none;stroke:#315f8c;stroke-width:7;stroke-dasharray:15 11;opacity:.65}.move{fill:none;stroke:#9a3d32;stroke-width:9;marker-end:url(#redArrow)}.bluebox{fill:#e5eef6;stroke:#315f8c;stroke-width:3}.redbox{fill:#f7e7e2;stroke:#9a3d32;stroke-width:3}.house{fill:#6d5640;stroke:#3e342a;stroke-width:2}.gun{fill:#315f8c}
+    </style>
+  </defs>
+  <rect width="1200" height="720" fill="#f3eedf"/>
+  <path d="M-20 630 C230 595 410 655 590 624 S920 570 1220 612" class="river"/>
+  <text x="810" y="665" class="label" fill="#3e7899">Chickahominy River</text>
+  <path d="M360 -20 C315 120 375 245 336 370 S362 540 340 622" class="creek"/>
+  <text x="254" y="390" class="small" fill="#3e7899" transform="rotate(-82 254 390)">Powhite Creek</text>
+  <path d="M686 -20 C623 101 700 201 653 302 S693 452 632 613" class="creek"/>
+  <path d="M610 0 L752 0 L723 616 L570 616 Z" fill="url(#marsh)" opacity=".9"/>
+  <text x="585" y="354" class="small" fill="#356b63" transform="rotate(-82 585 354)">Boatswain's Swamp</text>
+  <path d="M91 246 L382 288 L652 318 L1014 248" class="road"/>
+  <path d="M382 288 L347 468 L521 597" class="road"/>
+  <path d="M652 318 L790 184 L1050 92" class="road"/>
+  <circle cx="382" cy="288" r="8" fill="#292d2e"/><text x="400" y="281" class="small">Gaines farm area</text>
+  <circle cx="1050" cy="92" r="8" fill="#292d2e"/><text x="910" y="73" class="small">Old Cold Harbor</text>
+  <path d="M289 111 C342 178 359 234 350 329" class="expected"/>
+  <text x="74" y="77" class="small" fill="#315f8c">Line Lee expected behind Powhite Creek</text>
+  <text x="74" y="100" class="tiny">not the position Porter occupied</text>
+  <path d="M726 142 C840 112 981 145 1024 244 C1052 309 981 376 906 400 C835 423 791 469 777 537" class="actual"/>
+  <text x="774" y="116" class="label" fill="#315f8c">Porter's actual arc</text>
+  <text x="885" y="171" class="small" fill="#315f8c">Sykes</text>
+  <text x="913" y="390" class="small" fill="#315f8c">Morell</text>
+  <rect x="806" y="464" width="202" height="62" rx="11" class="bluebox"/>
+  <text x="825" y="490" class="small" fill="#315f8c">McCall in reserve</text>
+  <text x="825" y="513" class="tiny">after June 26 fighting</text>
+  <g transform="translate(782 280)"><rect width="16" height="12" class="house"/><path d="M-2 0L8 -9L18 0Z" class="house"/><text x="23" y="12" class="tiny">Watt House / headquarters</text></g>
+  <g transform="translate(924 230)"><rect width="16" height="12" class="house"/><path d="M-2 0L8 -9L18 0Z" class="house"/><text x="23" y="12" class="tiny">McGehee House</text></g>
+  <g transform="translate(1012 318)"><rect width="16" height="12" class="house"/><path d="M-2 0L8 -9L18 0Z" class="house"/><text x="23" y="12" class="tiny">Adams House</text></g>
+  <g transform="translate(808 332)" class="gun"><circle cx="0" cy="9" r="7"/><rect x="-4" y="0" width="23" height="7"/><circle cx="48" cy="9" r="7"/><rect x="44" y="0" width="23" height="7"/><circle cx="96" cy="9" r="7"/><rect x="92" y="0" width="23" height="7"/></g>
+  <text x="800" y="372" class="tiny" fill="#315f8c">artillery on the crest (96 guns reported)</text>
+  <path d="M65 431 C210 403 384 409 591 390" class="move"/>
+  <text x="69" y="465" class="small" fill="#9a3d32">A. P. Hill and Longstreet press east</text>
+  <path d="M535 62 C681 37 815 56 1009 89" class="move"/>
+  <text x="541" y="34" class="small" fill="#9a3d32">Jackson and D. H. Hill toward Old Cold Harbor</text>
+  <rect x="46" y="528" width="478" height="108" rx="12" fill="#fffdf7" stroke="#827966" stroke-width="2"/>
+  <text x="65" y="559" class="label">The map problem</text>
+  <text x="65" y="587" class="small">The Confederate map used by Lee showed Powhite Creek but</text>
+  <text x="65" y="612" class="small">did not show the brush-lined Boatswain's Swamp defense.</text>
+  <g transform="translate(1124 34)"><path d="M0 48V4" stroke="#293437" stroke-width="4"/><path d="M0 0L-8 16H8Z" fill="#293437"/><text x="-8" y="70" class="tiny">N</text></g>
+  <text x="682" y="708" class="tiny">Schematic; not to scale. Roads, watercourses, positions, and approaches are generalized.</text>
+</svg>

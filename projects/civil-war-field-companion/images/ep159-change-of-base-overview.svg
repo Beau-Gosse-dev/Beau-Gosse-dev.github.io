@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">McClellan's change of base and Porter's withdrawal, June 26–27, 1862</title>
+  <desc id="desc">Schematic overview showing Richmond, the Chickahominy and James Rivers, Porter's move from Beaver Dam Creek to Boatswain's Swamp, the Federal army south of the Chickahominy, and the transfer of the supply base from White House Landing to Harrison's Landing.</desc>
+  <defs>
+    <marker id="blueArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#9a3d32"/></marker>
+    <style>
+      .label{font:600 20px Georgia,serif;fill:#1f2729}.small{font:16px Arial,sans-serif;fill:#2a3437}.tiny{font:14px Arial,sans-serif;fill:#3c474a}.river{fill:none;stroke:#65a1c2;stroke-width:22;stroke-linecap:round}.road{fill:none;stroke:#aa9b7d;stroke-width:5;stroke-dasharray:11 8}.rail{fill:none;stroke:#4a4c4d;stroke-width:5;stroke-dasharray:15 5 3 5}.blue{fill:none;stroke:#315f8c;stroke-width:9;marker-end:url(#blueArrow)}.red{fill:none;stroke:#9a3d32;stroke-width:9;marker-end:url(#redArrow)}.box{fill:#fffdf7;stroke:#827966;stroke-width:2}.bluebox{fill:#e5eef6;stroke:#315f8c;stroke-width:3}.redbox{fill:#f7e7e2;stroke:#9a3d32;stroke-width:3}
+    </style>
+  </defs>
+  <rect width="1200" height="720" fill="#f3eedf"/>
+  <path d="M-20 305 C175 282 275 330 450 308 S735 250 905 297 S1060 332 1220 300" class="river"/>
+  <path d="M-20 654 C170 610 360 684 540 644 S860 584 1220 624" class="river"/>
+  <text x="700" y="266" class="label" fill="#3e7899">Chickahominy River</text>
+  <text x="820" y="682" class="label" fill="#3e7899">James River</text>
+  <path d="M225 440 L370 302 L638 226 L1030 154" class="rail"/>
+  <text x="596" y="204" class="small">Richmond &amp; York River Railroad</text>
+  <path d="M225 440 C430 476 560 535 725 618" class="road"/>
+  <path d="M225 440 C390 505 575 594 915 625" class="road"/>
+  <circle cx="225" cy="440" r="12" fill="#292d2e"/><text x="245" y="447" class="label">Richmond</text>
+  <circle cx="370" cy="302" r="8" fill="#292d2e"/><text x="310" y="282" class="small">Mechanicsville</text>
+  <circle cx="1030" cy="154" r="9" fill="#292d2e"/><text x="907" y="137" class="small">White House Landing</text>
+  <circle cx="915" cy="625" r="9" fill="#292d2e"/><text x="930" y="608" class="small">Harrison's Landing</text>
+  <rect x="348" y="89" width="220" height="74" rx="12" class="bluebox"/>
+  <text x="367" y="119" class="label" fill="#315f8c">Porter's V Corps</text>
+  <text x="367" y="144" class="small">Beaver Dam Creek</text>
+  <path d="M557 143 C640 132 703 146 774 177" class="blue"/>
+  <rect x="784" y="146" width="235" height="86" rx="12" class="bluebox"/>
+  <text x="804" y="178" class="label" fill="#315f8c">New position</text>
+  <text x="804" y="204" class="small">Boatswain's Swamp</text>
+  <text x="616" y="116" class="tiny" fill="#315f8c">about four miles east</text>
+  <rect x="409" y="391" width="360" height="92" rx="15" class="bluebox"/>
+  <text x="431" y="425" class="label" fill="#315f8c">Federal army south of the river</text>
+  <text x="431" y="451" class="small">McClellan rejects an attack on Richmond</text>
+  <path d="M1060 185 C1140 310 1128 487 952 607" class="blue" stroke-dasharray="18 10"/>
+  <text x="955" y="389" class="small" fill="#315f8c" transform="rotate(75 955 389)">supplies shipped to the James</text>
+  <path d="M185 85 C266 102 305 118 347 130" class="red"/>
+  <rect x="35" y="38" width="186" height="83" rx="12" class="redbox"/>
+  <text x="54" y="70" class="label" fill="#9a3d32">Lee presses east</text>
+  <text x="54" y="96" class="small">north of the river</text>
+  <g transform="translate(38 522)">
+    <rect width="520" height="102" rx="12" class="box"/>
+    <text x="18" y="31" class="label">McClellan's decision after Mechanicsville</text>
+    <text x="18" y="59" class="small">Porter would hold north of the Chickahominy while the army</text>
+    <text x="18" y="84" class="small">abandoned the York River supply line and moved toward the James.</text>
+  </g>
+  <text x="732" y="708" class="tiny">Schematic; not to scale. Routes, positions, and distances are generalized.</text>
+</svg>
