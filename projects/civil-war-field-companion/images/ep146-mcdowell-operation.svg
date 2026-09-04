@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">McDowell operation from Staunton to Franklin, May 7 to 13, 1862</title>
+  <desc id="desc">Schematic north-up operational map showing Jackson and Edward Johnson moving west from Staunton to McDowell, Schenck moving southeast from Franklin, the United States retreat to Franklin, Jackson's pursuit, and his return toward McDowell.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#faf5e8"/><stop offset="1" stop-color="#eadfc7"/></linearGradient>
+    <pattern id="mountains" width="44" height="34" patternUnits="userSpaceOnUse"><path d="M1 31 12 8 23 30 33 12 43 31" fill="none" stroke="#68765f" stroke-width="2" opacity=".55"/></pattern>
+    <marker id="blueArrow" markerWidth="16" markerHeight="16" refX="11" refY="6" orient="auto" viewBox="0 0 12 12"><path d="M0 0 12 6 0 12Z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerWidth="16" markerHeight="16" refX="11" refY="6" orient="auto" viewBox="0 0 12 12"><path d="M0 0 12 6 0 12Z" fill="#9a3d32"/></marker>
+    <marker id="grayArrow" markerWidth="16" markerHeight="16" refX="11" refY="6" orient="auto" viewBox="0 0 12 12"><path d="M0 0 12 6 0 12Z" fill="#6c665d"/></marker>
+    <style>.head{font:700 31px Georgia,serif;fill:#292621}.label{font:700 21px Georgia,serif;fill:#292621}.small{font:18px Arial,sans-serif;fill:#3f3a33}.tiny{font:15px Arial,sans-serif;fill:#554f46}.blue{fill:#315f8c}.red{fill:#9a3d32}.box{fill:#fffaf0;stroke:#8a7b66;stroke-width:2}.road{fill:none;stroke:#a07a4f;stroke-width:10;stroke-linecap:round}</style>
+  </defs>
+  <rect width="1200" height="760" fill="url(#paper)"/>
+  <text x="30" y="46" class="head">McDOWELL OPERATION • MAY 7–13, 1862</text>
+  <text x="30" y="77" class="small">Operational diagram • north is up • schematic routes, terrain bands, spacing, and camp positions</text>
+
+  <path d="M355 102H535V724H355Z" fill="url(#mountains)" opacity=".8"/>
+  <path d="M660 102H830V724H660Z" fill="url(#mountains)" opacity=".8"/>
+  <text x="400" y="693" class="label" fill="#617052" transform="rotate(-90 400 693)">ALLEGHENY RIDGES</text>
+  <text x="707" y="693" class="label" fill="#617052" transform="rotate(-90 707 693)">SHENANDOAH MOUNTAIN</text>
+
+  <path class="road" d="M1020 566C890 552 781 535 691 515C587 492 505 464 430 423C343 377 266 318 177 228"/>
+  <text x="770" y="585" class="tiny">Staunton–Parkersburg Turnpike</text>
+  <text x="214" y="285" class="tiny" transform="rotate(43 214 285)">road to Franklin</text>
+
+  <circle cx="1020" cy="566" r="11" fill="#292621"/><text x="1040" y="573" class="label">STAUNTON</text>
+  <circle cx="813" cy="539" r="9" fill="#292621"/><text x="780" y="518" class="small">Buffalo Gap</text>
+  <circle cx="690" cy="515" r="9" fill="#292621"/><text x="649" y="493" class="small">Shaw's Ridge</text>
+  <circle cx="531" cy="470" r="12" fill="#292621"/><text x="482" y="448" class="label">McDOWELL</text>
+  <circle cx="177" cy="228" r="12" fill="#292621"/><text x="105" y="205" class="label">FRANKLIN</text>
+
+  <path d="M997 550C908 528 827 517 715 512C657 510 605 491 552 474" fill="none" stroke="#9a3d32" stroke-width="13" marker-end="url(#redArrow)"/>
+  <text x="811" y="482" class="label red">JACKSON + JOHNSON</text>
+  <text x="824" y="507" class="small red">May 7–8 • advance west</text>
+
+  <path d="M198 246C281 323 363 385 509 459" fill="none" stroke="#315f8c" stroke-width="11" stroke-dasharray="18 10" marker-end="url(#blueArrow)"/>
+  <text x="88" y="315" class="label blue">SCHENCK</text>
+  <text x="88" y="340" class="small blue">34 miles in 23 hours</text>
+  <text x="88" y="365" class="small blue">arrives May 8, 10 a.m.</text>
+
+  <path d="M505 488C420 458 330 398 245 324C205 289 180 270 153 244" fill="none" stroke="#315f8c" stroke-width="13" marker-end="url(#blueArrow)"/>
+  <text x="249" y="461" class="label blue">UNITED STATES RETREAT</text>
+  <text x="249" y="486" class="small blue">May 9–11 • McDowell → Franklin</text>
+
+  <path d="M533 505C445 491 365 438 288 373" fill="none" stroke="#9a3d32" stroke-width="9" stroke-dasharray="15 10" marker-end="url(#redArrow)"/>
+  <text x="339" y="544" class="label red">PURSUIT</text>
+  <text x="339" y="569" class="small red">May 9–12 • delayed start</text>
+  <path d="M287 394C365 455 440 493 512 513" fill="none" stroke="#6c665d" stroke-width="8" stroke-dasharray="10 10" marker-end="url(#grayArrow)"/>
+  <text x="166" y="608" class="label">MAY 13</text>
+  <text x="166" y="633" class="small">Jackson turns back toward McDowell</text>
+  <text x="166" y="657" class="small">and the next operation against Banks</text>
+
+  <rect x="842" y="110" width="313" height="178" rx="12" class="box"/>
+  <text x="864" y="143" class="label">OPERATIONAL RESULT</text>
+  <text x="864" y="176" class="small">• McDowell evacuated overnight</text>
+  <text x="864" y="207" class="small">• Frémont's advance checked</text>
+  <text x="864" y="238" class="small">• Jackson breaks off at Franklin</text>
+  <text x="864" y="269" class="small">• Valley Army turns toward Banks</text>
+
+  <path d="M1150 112V173" stroke="#292621" stroke-width="4"/><path d="M1150 89 1136 119 1164 119Z" fill="#292621"/><text x="1140" y="75" class="head">N</text>
+</svg>

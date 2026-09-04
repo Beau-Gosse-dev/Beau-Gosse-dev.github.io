@@ -4,8 +4,8 @@
   <defs>
     <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#faf5e8"/><stop offset="1" stop-color="#eadfc7"/></linearGradient>
     <pattern id="mountains" width="44" height="34" patternUnits="userSpaceOnUse"><path d="M2 30 L13 8 L24 29 L34 12 L43 30" fill="none" stroke="#69765f" stroke-width="2" opacity=".55"/></pattern>
-    <marker id="blueArrow" markerWidth="16" markerHeight="16" refX="11" refY="6" orient="auto" viewBox="0 0 12 12"><path d="M0 0 L12 6 L0 12 Z" fill="#315f8c"/></marker>
-    <marker id="redArrow" markerWidth="16" markerHeight="16" refX="11" refY="6" orient="auto" viewBox="0 0 12 12"><path d="M0 0 L12 6 L0 12 Z" fill="#9a3d32"/></marker>
+    <marker id="blueArrow" markerWidth="16" markerHeight="16" refX="11" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12"><path d="M0 0 L12 6 L0 12 Z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerWidth="16" markerHeight="16" refX="11" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12"><path d="M0 0 L12 6 L0 12 Z" fill="#9a3d32"/></marker>
     <style>.head{font:700 30px Georgia,serif;fill:#292621}.label{font:700 20px Georgia,serif;fill:#292621}.small{font:17px Arial,sans-serif;fill:#3f3a33}.tiny{font:14px Arial,sans-serif;fill:#554f46}.blue{fill:#315f8c}.red{fill:#9a3d32}.box{fill:#fffaf0;stroke:#8a7b66;stroke-width:2}.town{fill:#2d2a26}.road{fill:none;stroke:#a4865f;stroke-width:7;stroke-linecap:round}.river{fill:none;stroke:#6f9cb5;stroke-width:7;opacity:.8}</style>
   </defs>
   <rect width="1200" height="760" fill="url(#paper)"/>
@@ -25,7 +25,7 @@
   <text x="449" y="368" class="tiny" transform="rotate(-84 449 368)">Valley Turnpike</text>
 
   <circle cx="524" cy="158" r="7" class="town"/><text x="542" y="165" class="small">New Market</text>
-  <circle cx="511" cy="260" r="7" class="town"/><text x="529" y="267" class="small">Harrisonburg</text>
+  <circle cx="511" cy="260" r="7" class="town"/><text x="529" y="285" class="small">Harrisonburg</text>
   <circle cx="672" cy="334" r="7" class="town"/><text x="691" y="341" class="small">Conrad's Store</text>
   <text x="691" y="363" class="tiny">Elk Run Valley / Swift Run Gap</text>
   <circle cx="606" cy="432" r="7" class="town"/><text x="624" y="439" class="small">Port Republic</text>
