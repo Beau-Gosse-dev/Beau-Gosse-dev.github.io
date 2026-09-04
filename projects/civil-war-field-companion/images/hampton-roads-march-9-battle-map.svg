@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Monitor and Virginia at Hampton Roads on March 9, 1862</title>
+  <desc id="desc">Schematic tactical map showing USS Monitor intercepting CSS Virginia near grounded USS Minnesota, the ships circling and firing, Virginia grounding and escaping, failed ramming attempts, John Worden wounded at Monitor's pilot house, and both ironclads withdrawing.</desc>
+  <defs>
+    <marker id="blueArrow" markerWidth="15" markerHeight="15" refX="12" refY="7.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L15,7.5 L0,15 Z" fill="#245f8a"/></marker>
+    <marker id="redArrow" markerWidth="15" markerHeight="15" refX="12" refY="7.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L15,7.5 L0,15 Z" fill="#9b3d35"/></marker>
+  </defs>
+  <rect width="1200" height="760" fill="#d9e8ec"/>
+  <path d="M0 0H385C420 132 393 240 326 315C246 405 133 434 0 447Z" fill="#eee5cf" stroke="#8e846d" stroke-width="3"/>
+  <path d="M0 760V658C148 633 278 645 411 708L472 760Z" fill="#eee5cf" stroke="#8e846d" stroke-width="3"/>
+  <path d="M1200 0H1009C992 133 1022 252 1083 335C1122 389 1160 424 1200 442Z" fill="#eee5cf" stroke="#8e846d" stroke-width="3"/>
+  <g font-family="Arial,sans-serif" fill="#17241e">
+    <text x="55" y="65" font-size="28" font-weight="700">Newport News Point</text>
+    <text x="1005" y="63" font-size="27" font-weight="700">Fort Monroe</text>
+    <text x="946" y="708" font-size="26" font-weight="700">Sewell's Point</text>
+    <rect x="720" y="261" width="68" height="20" rx="4" fill="#245f8a"/><text x="680" y="239" font-size="22" font-weight="700" fill="#245f8a">USS Minnesota</text><text x="711" y="305" font-size="17">grounded</text>
+  </g>
+  <path d="M937 647C814 594 699 527 632 438C579 367 601 302 676 287" fill="none" stroke="#9b3d35" stroke-width="10" marker-end="url(#redArrow)"/>
+  <path d="M748 307C673 315 600 337 552 382" fill="none" stroke="#245f8a" stroke-width="10" marker-end="url(#blueArrow)"/>
+  <path d="M555 386C480 452 486 535 573 574C678 622 797 539 746 442C706 366 603 365 554 423C507 480 562 551 645 531C737 508 742 421 672 397" fill="none" stroke="#245f8a" stroke-width="8" marker-end="url(#blueArrow)"/>
+  <path d="M626 433C711 369 800 413 802 494C803 553 744 597 683 571" fill="none" stroke="#9b3d35" stroke-width="8" marker-end="url(#redArrow)"/>
+  <path d="M679 570C756 628 853 654 936 662" fill="none" stroke="#9b3d35" stroke-width="7" stroke-dasharray="13 10" marker-end="url(#redArrow)"/>
+  <path d="M646 530C568 520 500 558 461 630" fill="none" stroke="#245f8a" stroke-width="7" stroke-dasharray="13 10" marker-end="url(#blueArrow)"/>
+  <g font-family="Arial,sans-serif" font-weight="700">
+    <g><circle cx="650" cy="346" r="22" fill="#245f8a"/><text x="643" y="354" font-size="22" fill="white">1</text><text x="399" y="329" font-size="19" fill="#245f8a">8:30 a.m.: Monitor intercepts</text></g>
+    <g><circle cx="536" cy="452" r="22" fill="#6f6659"/><text x="529" y="460" font-size="22" fill="white">2</text><text x="265" y="456" font-size="19" fill="#50483b">Ships circle and fire at close range</text></g>
+    <g><circle cx="780" cy="492" r="22" fill="#9b3d35"/><text x="773" y="500" font-size="22" fill="white">3</text><text x="816" y="488" font-size="18" fill="#9b3d35">Virginia grounds,</text><text x="816" y="511" font-size="18" fill="#9b3d35">then backs free</text></g>
+    <g><circle cx="687" cy="574" r="22" fill="#6f6659"/><text x="680" y="582" font-size="22" fill="white">4</text><text x="506" y="617" font-size="18" fill="#50483b">Both ships attempt to ram</text></g>
+    <g><circle cx="598" cy="526" r="22" fill="#245f8a"/><text x="591" y="534" font-size="22" fill="white">5</text><text x="265" y="538" font-size="18" fill="#245f8a">About noon: Worden wounded</text></g>
+    <g><circle cx="907" cy="641" r="22" fill="#9b3d35"/><text x="900" y="649" font-size="22" fill="white">6</text><text x="817" y="602" font-size="18" fill="#9b3d35">12:30 p.m.:</text><text x="817" y="624" font-size="18" fill="#9b3d35">Virginia withdraws</text></g>
+  </g>
+  <g font-family="Arial,sans-serif" font-size="17" fill="#50483b">
+    <text x="43" y="686">Blue: USS Monitor. Red: CSS Virginia. Dashed lines show withdrawals.</text>
+    <text x="43" y="714">The four-hour engagement moved through the roadstead; positions are approximate.</text>
+    <text x="965" y="744" font-family="Georgia,serif">Schematic; not to scale</text>
+  </g>
+</svg>
