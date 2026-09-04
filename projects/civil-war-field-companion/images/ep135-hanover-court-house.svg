@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Battle of Hanover Court House, May 27, 1862</title>
+  <desc id="desc">Schematic map showing Fitz John Porter's advance north, Lawrence Branch's attack near Peake's Crossing, and the United States counterattack.</desc>
+  <defs>
+    <marker id="us-arrow" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="18" refX="16" refY="8" orient="auto"><path d="M0,0 L17,8 L0,16 Z" fill="#315f8c"/></marker>
+    <marker id="cs-arrow" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="18" refX="16" refY="8" orient="auto"><path d="M0,0 L17,8 L0,16 Z" fill="#9a3d32"/></marker>
+    <pattern id="woods" width="35" height="35" patternUnits="userSpaceOnUse"><circle cx="8" cy="10" r="6" fill="#75986d"/><circle cx="25" cy="24" r="7" fill="#64865f"/><path d="M8 16v10M25 31v4" stroke="#526e4e" stroke-width="2"/></pattern>
+  </defs>
+  <rect width="1200" height="760" fill="#f5f0e4"/>
+  <path d="M150 705 C285 590 370 482 455 390 C545 293 650 190 780 72" fill="none" stroke="#b49c7b" stroke-width="38" stroke-linecap="round"/>
+  <path d="M150 705 C285 590 370 482 455 390 C545 293 650 190 780 72" fill="none" stroke="#f7edda" stroke-width="28" stroke-linecap="round"/>
+  <text x="600" y="218" font-family="Arial,sans-serif" font-size="19" fill="#6e5840" transform="rotate(-43 600 218)">Hanover Court House Road</text>
+  <path d="M155 570 L1015 330" fill="none" stroke="#bc792f" stroke-width="8"/>
+  <path d="M155 582 L1015 342" fill="none" stroke="#bc792f" stroke-width="3"/>
+  <text x="690" y="390" font-family="Arial,sans-serif" font-size="20" fill="#7e4d1f" transform="rotate(-16 690 390)">Richmond, Fredericksburg &amp; Potomac Railroad</text>
+  <path d="M320 690 C365 595 420 525 475 450 C525 382 600 290 685 205" fill="none" stroke="#315f8c" stroke-width="12" marker-end="url(#us-arrow)"/>
+  <text x="235" y="500" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#234866" transform="rotate(-51 235 500)">Porter advances north</text>
+  <path d="M910 545 C820 512 740 500 660 484 C605 472 558 450 514 420" fill="none" stroke="#9a3d32" stroke-width="12" marker-end="url(#cs-arrow)"/>
+  <text x="785" y="590" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#702a23">Branch attacks the rear</text>
+  <path d="M425 505 C475 482 520 465 580 468 C640 471 690 489 745 515" fill="none" stroke="#315f8c" stroke-width="11" marker-end="url(#us-arrow)"/>
+  <text x="350" y="590" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#234866">Morell concentrates and counterattacks</text>
+  <rect x="775" y="65" width="160" height="90" fill="#e9dfcc" stroke="#776a56" stroke-width="3"/>
+  <path d="M795 115 h120 M815 95 v40 M855 95 v40 M895 95 v40" stroke="#776a56" stroke-width="3"/>
+  <text x="775" y="185" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#2f2c27">Hanover Court House</text>
+  <circle cx="505" cy="415" r="14" fill="#282828"/>
+  <text x="330" y="400" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#282828">Peake’s Crossing</text>
+  <text x="325" y="430" font-family="Arial,sans-serif" font-size="18" fill="#4e4a44">main afternoon action</text>
+  <circle cx="165" cy="688" r="12" fill="#282828"/>
+  <text x="55" y="730" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#282828">Mechanicsville / New Bridge</text>
+  <rect x="835" y="425" width="300" height="205" rx="16" fill="url(#woods)" stroke="#698061" stroke-width="3"/>
+  <text x="940" y="650" font-family="Arial,sans-serif" font-size="18" fill="#395139">woods</text>
+  <text x="42" y="55" fill="#2c2925" font-family="Georgia,serif" font-size="34" font-weight="700">Hanover Court House</text>
+  <text x="44" y="88" fill="#5c574f" font-family="Arial,sans-serif" font-size="20">May 27, 1862 • schematic, not to scale</text>
+  <rect x="40" y="115" width="420" height="100" rx="10" fill="#fffaf0" stroke="#b8aa94"/>
+  <line x1="65" y1="150" x2="130" y2="150" stroke="#315f8c" stroke-width="8" marker-end="url(#us-arrow)"/>
+  <text x="148" y="157" font-family="Arial,sans-serif" font-size="19" fill="#292929">United States movement</text>
+  <line x1="65" y1="190" x2="130" y2="190" stroke="#9a3d32" stroke-width="8" marker-end="url(#cs-arrow)"/>
+  <text x="148" y="197" font-family="Arial,sans-serif" font-size="19" fill="#292929">Confederate movement</text>
+  <text x="955" y="710" text-anchor="end" font-family="Arial,sans-serif" font-size="18" fill="#5c574f">United States victory; McDowell did not arrive</text>
+</svg>
