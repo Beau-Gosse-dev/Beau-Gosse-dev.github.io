@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Strategic realignment after the Seven Days, summer 1862</title>
+  <desc id="desc">Generalized schematic map of eastern Virginia showing Washington, the Shenandoah Valley, Pope's Army of Virginia in northern Virginia, Richmond, Harrison's Landing, Fort Monroe, the withdrawal of McClellan's army, and Lee's movement north.</desc>
+  <defs>
+    <linearGradient id="paper2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6f0dc"/><stop offset="1" stop-color="#e5d8ba"/>
+    </linearGradient>
+    <marker id="b" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#315f8c"/></marker>
+    <marker id="r" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#9a3d32"/></marker>
+    <pattern id="mountains" width="58" height="42" patternUnits="userSpaceOnUse"><path d="M2 35 17 11 31 35 42 18 56 35" fill="none" stroke="#786f61" stroke-width="3" opacity=".65"/></pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#paper2)"/>
+  <path d="M0 0 H1200 V800 H0Z" fill="none" stroke="#554d40" stroke-width="8"/>
+  <path d="M83 110 C186 184 184 272 220 358 C252 433 247 540 193 684 L410 684 C446 576 442 461 410 373 C378 284 359 194 388 95 Z" fill="url(#mountains)" opacity=".8"/>
+  <text x="142" y="425" transform="rotate(-77 142 425)" font-family="Georgia, serif" font-size="27" fill="#5b554b" letter-spacing="3">SHENANDOAH VALLEY</text>
+  <path d="M1046 92 C1005 177 986 250 980 334 C971 460 1030 575 1142 733" fill="none" stroke="#527c87" stroke-width="22" opacity=".75"/>
+  <path d="M941 212 C877 273 841 331 803 398 C756 480 727 575 749 704" fill="none" stroke="#527c87" stroke-width="13" opacity=".65"/>
+  <path d="M654 164 C705 235 728 304 720 379 C710 456 675 525 625 587" fill="none" stroke="#527c87" stroke-width="9" opacity=".62"/>
+  <text x="1012" y="380" transform="rotate(82 1012 380)" font-family="Georgia, serif" font-size="23" fill="#385f68">Chesapeake Bay</text>
+  <text x="795" y="490" transform="rotate(65 795 490)" font-family="Georgia, serif" font-size="18" fill="#385f68">Potomac River</text>
+  <text x="661" y="410" transform="rotate(79 661 410)" font-family="Georgia, serif" font-size="17" fill="#385f68">Rappahannock</text>
+
+  <path d="M808 665 C920 658 1010 621 1052 543 C1081 488 1068 420 1004 358" fill="none" stroke="#315f8c" stroke-width="10" stroke-dasharray="16 11" marker-end="url(#b)"/>
+  <path d="M795 640 C720 554 681 479 665 385" fill="none" stroke="#315f8c" stroke-width="10" marker-end="url(#b)"/>
+  <path d="M529 612 C512 524 520 437 565 360" fill="none" stroke="#9a3d32" stroke-width="11" marker-end="url(#r)"/>
+  <path d="M542 592 C432 546 382 478 380 387" fill="none" stroke="#9a3d32" stroke-width="8" marker-end="url(#r)"/>
+
+  <g font-family="Arial, sans-serif" fill="#222">
+    <g transform="translate(761 146)"><circle r="12" fill="#315f8c"/><text x="-68" y="-23" font-size="25" font-weight="700">Washington, D.C.</text><text x="-55" y="33" font-size="17">capital to be protected</text></g>
+    <g transform="translate(670 283)"><circle r="8" fill="#6b665d"/><text x="-36" y="-16" font-size="19">Manassas</text></g>
+    <g transform="translate(644 394)"><circle r="8" fill="#6b665d"/><text x="-74" y="-16" font-size="19">Fredericksburg</text></g>
+    <g transform="translate(511 399)"><circle r="10" fill="#315f8c"/><text x="-55" y="-21" font-size="22" font-weight="700">Culpeper</text><text x="-74" y="33" font-size="17">Pope's concentration area</text></g>
+    <g transform="translate(469 486)"><circle r="8" fill="#6b665d"/><text x="-51" y="-17" font-size="19">Gordonsville</text></g>
+    <g transform="translate(542 617)"><circle r="12" fill="#9a3d32"/><text x="-47" y="-25" font-size="25" font-weight="700">Richmond</text><text x="-82" y="35" font-size="17">Confederate capital secured</text></g>
+    <g transform="translate(800 660)"><circle r="11" fill="#315f8c"/><text x="-71" y="-23" font-size="21" font-weight="700">Harrison's Landing</text><text x="-79" y="34" font-size="17">Army of the Potomac</text></g>
+    <g transform="translate(1056 536)"><circle r="10" fill="#315f8c"/><text x="-55" y="-21" font-size="21" font-weight="700">Fort Monroe</text></g>
+  </g>
+
+  <g transform="translate(50 72)" font-family="Arial, sans-serif">
+    <rect width="391" height="183" rx="13" fill="#fbf7e9" stroke="#756c59" stroke-width="2"/>
+    <text x="22" y="32" font-size="20" font-weight="700" fill="#2b2925">SUMMER 1862 REALIGNMENT</text>
+    <path d="M24 65 H112" stroke="#315f8c" stroke-width="9" marker-end="url(#b)"/><text x="132" y="72" font-size="18">Pope's Army of Virginia</text>
+    <path d="M24 105 H112" stroke="#315f8c" stroke-width="9" stroke-dasharray="12 8" marker-end="url(#b)"/><text x="132" y="112" font-size="18">McClellan's ordered transfer</text>
+    <path d="M24 145 H112" stroke="#9a3d32" stroke-width="9" marker-end="url(#r)"/><text x="132" y="152" font-size="18">Lee turns against Pope</text>
+  </g>
+  <text x="600" y="48" text-anchor="middle" font-family="Georgia, serif" font-size="34" font-weight="700" fill="#272822">EASTERN VIRGINIA AFTER THE SEVEN DAYS</text>
+  <text x="600" y="775" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#514c42">GENERALIZED SCHEMATIC • NOT TO SCALE • WATERWAYS, ROUTES, POSITIONS, AND DISTANCES ARE APPROXIMATE</text>
+</svg>

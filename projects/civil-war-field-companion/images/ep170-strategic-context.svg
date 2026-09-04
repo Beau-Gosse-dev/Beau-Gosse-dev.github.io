@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Strategic setting of the Army of Virginia in June and July 1862</title>
+  <desc id="desc">Generalized schematic map showing Washington, the Shenandoah Valley, Fredericksburg, Gordonsville, Richmond, Harrison's Landing, the three corps consolidated into John Pope's Army of Virginia, and Robert E. Lee's army between Pope and George McClellan.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f5eedc"/>
+      <stop offset="1" stop-color="#e5d4ae"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#493a2b" flood-opacity="0.22"/>
+    </filter>
+    <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#315f91"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#9a4037"/>
+    </marker>
+    <style>
+      .label { font-family: Georgia, 'Times New Roman', serif; fill: #2d2924; }
+      .small { font-family: Arial, sans-serif; fill: #514b43; font-size: 22px; }
+      .place { font-family: Georgia, 'Times New Roman', serif; fill: #211f1b; font-weight: 700; font-size: 28px; }
+      .water { fill: none; stroke: #6e9bab; stroke-width: 11; stroke-linecap: round; opacity: .9; }
+      .road { fill: none; stroke: #8d7b62; stroke-width: 4; stroke-dasharray: 11 10; }
+      .rail { fill: none; stroke: #3f3b36; stroke-width: 3; stroke-dasharray: 18 7 4 7; }
+      .union { fill: #e5eff8; stroke: #315f91; stroke-width: 4; }
+      .confed { fill: #f7e5e0; stroke: #9a4037; stroke-width: 4; }
+    </style>
+  </defs>
+
+  <rect width="1400" height="900" fill="url(#paper)"/>
+  <path d="M110 166 C270 120 435 132 575 105 C760 70 922 83 1095 128 C1210 157 1292 215 1335 305 L1335 848 L95 848 L95 280 C98 236 102 200 110 166 Z" fill="#eee3c8" stroke="#9d8969" stroke-width="3"/>
+
+  <text x="70" y="62" class="label" font-size="40" font-weight="700">Army of Virginia: strategic setting, June–July 1862</text>
+  <text x="72" y="94" class="small">Generalized relationships and routes. Schematic and not to scale.</text>
+
+  <path class="water" d="M970 88 C976 160 1002 228 1032 295 C1070 378 1068 452 1094 520 C1118 581 1176 640 1326 698"/>
+  <text x="1088" y="357" class="small" fill="#527e8d" transform="rotate(73 1088 357)">Potomac River</text>
+  <path class="water" d="M565 712 C696 750 829 771 953 754 C1063 739 1166 704 1326 698"/>
+  <text x="753" y="809" class="small" fill="#527e8d">James River</text>
+  <path class="water" d="M408 155 C385 230 397 298 438 354 C472 400 486 471 463 548"/>
+  <text x="330" y="316" class="small" fill="#527e8d" transform="rotate(66 330 316)">Shenandoah River</text>
+  <path class="water" d="M927 259 C930 350 915 445 887 550"/>
+  <text x="935" y="405" class="small" fill="#527e8d" transform="rotate(88 935 405)">Rappahannock River</text>
+  <path class="water" d="M775 478 C821 547 835 607 813 674"/>
+  <text x="790" y="568" class="small" fill="#527e8d" transform="rotate(72 790 568)">Rapidan River</text>
+
+  <path class="road" d="M1000 174 L720 510 L860 690"/>
+  <path class="road" d="M1000 174 L902 386 L860 690"/>
+  <path class="road" d="M525 308 L720 510 L860 690"/>
+  <path class="rail" d="M860 690 L720 510 L525 308"/>
+  <text x="643" y="608" class="small" transform="rotate(45 643 608)">Virginia Central Railroad</text>
+
+  <circle cx="1000" cy="174" r="11" fill="#23211e"/>
+  <text x="1019" y="168" class="place">Washington, D.C.</text>
+  <text x="1019" y="195" class="small">War Department</text>
+
+  <circle cx="902" cy="386" r="10" fill="#23211e"/>
+  <text x="922" y="379" class="place">Fredericksburg</text>
+
+  <circle cx="720" cy="510" r="10" fill="#23211e"/>
+  <text x="740" y="504" class="place">Gordonsville</text>
+  <text x="740" y="531" class="small">rail junction</text>
+
+  <circle cx="860" cy="690" r="11" fill="#23211e"/>
+  <text x="880" y="683" class="place">Richmond</text>
+
+  <circle cx="1080" cy="735" r="10" fill="#23211e"/>
+  <text x="1100" y="729" class="place">Harrison’s Landing</text>
+  <text x="1100" y="756" class="small">Army of the Potomac</text>
+
+  <text x="245" y="152" class="label" font-size="31" font-weight="700">Shenandoah Valley</text>
+
+  <g filter="url(#shadow)">
+    <rect x="183" y="206" width="325" height="97" rx="12" class="union"/>
+    <text x="205" y="239" class="label" font-size="26" font-weight="700">I Corps</text>
+    <text x="205" y="270" class="small">Frémont → Sigel</text>
+    <text x="205" y="294" class="small">Mountain Department force</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="354" y="385" width="304" height="97" rx="12" class="union"/>
+    <text x="376" y="418" class="label" font-size="26" font-weight="700">II Corps</text>
+    <text x="376" y="449" class="small">Nathaniel P. Banks</text>
+    <text x="376" y="473" class="small">Shenandoah force</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="920" y="424" width="332" height="97" rx="12" class="union"/>
+    <text x="942" y="457" class="label" font-size="26" font-weight="700">III Corps</text>
+    <text x="942" y="488" class="small">Irvin McDowell</text>
+    <text x="942" y="512" class="small">Rappahannock force</text>
+  </g>
+
+  <path d="M510 288 C590 319 645 359 683 438" fill="none" stroke="#315f91" stroke-width="7" marker-end="url(#arrowBlue)"/>
+  <path d="M605 463 C652 471 679 484 702 501" fill="none" stroke="#315f91" stroke-width="7" marker-end="url(#arrowBlue)"/>
+  <path d="M936 485 C858 479 800 486 747 503" fill="none" stroke="#315f91" stroke-width="7" marker-end="url(#arrowBlue)"/>
+  <g filter="url(#shadow)">
+    <rect x="478" y="555" width="424" height="83" rx="13" class="union"/>
+    <text x="690" y="588" class="label" font-size="29" font-weight="700" text-anchor="middle">Army of Virginia</text>
+    <text x="690" y="620" class="small" text-anchor="middle">Maj. Gen. John Pope · created June 26</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="870" y="574" width="378" height="82" rx="13" class="confed"/>
+    <text x="1059" y="608" class="label" font-size="28" font-weight="700" text-anchor="middle">Army of Northern Virginia</text>
+    <text x="1059" y="638" class="small" text-anchor="middle">Gen. Robert E. Lee near Richmond</text>
+  </g>
+  <path d="M914 647 C939 682 998 710 1047 726" fill="none" stroke="#9a4037" stroke-width="7" marker-end="url(#arrowRed)"/>
+  <path d="M916 578 C864 534 806 514 754 511" fill="none" stroke="#9a4037" stroke-width="7" marker-end="url(#arrowRed)"/>
+  <text x="851" y="544" class="small" fill="#87372f">Jackson sent toward Gordonsville</text>
+
+  <path d="M1049 704 C1004 670 967 649 930 632" fill="none" stroke="#315f91" stroke-width="5" stroke-dasharray="13 10" marker-end="url(#arrowBlue)"/>
+  <text x="1120" y="675" class="small" fill="#315f91">proposed cooperation</text>
+
+  <g transform="translate(76 760)">
+    <rect width="410" height="70" rx="10" fill="#f8f3e7" stroke="#9d8969" stroke-width="2"/>
+    <line x1="20" y1="23" x2="90" y2="23" stroke="#315f91" stroke-width="7" marker-end="url(#arrowBlue)"/>
+    <text x="106" y="30" class="small">Federal consolidation or intended link</text>
+    <line x1="20" y1="52" x2="90" y2="52" stroke="#9a4037" stroke-width="7" marker-end="url(#arrowRed)"/>
+    <text x="106" y="59" class="small">Confederate movement or position</text>
+  </g>
+</svg>
