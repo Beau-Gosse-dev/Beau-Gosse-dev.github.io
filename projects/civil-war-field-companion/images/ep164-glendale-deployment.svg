@@ -3,8 +3,8 @@
   <desc id="desc">Schematic map showing Union divisions near White Oak Swamp and Glendale, Confederate columns under Jackson, Huger, Longstreet, A. P. Hill, Magruder, and Holmes, and the wagon route toward Malvern Hill.</desc>
   <defs>
     <linearGradient id="paper2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f6f0df"/><stop offset="1" stop-color="#dfd5b8"/></linearGradient>
-    <marker id="redArrow" markerWidth="11" markerHeight="11" refX="9" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7 Z" fill="#9a3d32"/></marker>
-    <marker id="blueArrow2" markerWidth="11" markerHeight="11" refX="9" refY="3.5" orient="auto"><path d="M0,0 L10,3.5 L0,7 Z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerUnits="userSpaceOnUse" markerWidth="20" markerHeight="16" refX="18" refY="8" orient="auto"><path d="M0,0 L20,8 L0,16 Z" fill="#9a3d32"/></marker>
+    <marker id="blueArrow2" markerUnits="userSpaceOnUse" markerWidth="20" markerHeight="16" refX="18" refY="8" orient="auto"><path d="M0,0 L20,8 L0,16 Z" fill="#315f8c"/></marker>
     <pattern id="woods" width="34" height="34" patternUnits="userSpaceOnUse"><circle cx="9" cy="10" r="7" fill="#7c9664" opacity=".24"/><circle cx="25" cy="26" r="8" fill="#648151" opacity=".2"/></pattern>
   </defs>
   <rect width="1200" height="800" fill="url(#paper2)"/>
@@ -36,10 +36,10 @@
     <g transform="translate(835 600)"><rect x="-84" y="-28" width="168" height="56" rx="10" fill="#d9e6f1" stroke="#315f8c" stroke-width="3"/><text y="7" font-size="21" font-weight="700" fill="#264e72">Sedgwick</text></g>
   </g>
 
-  <circle cx="685" cy="510" r="14" fill="#222c31"/><text x="705" y="493" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#222c31">Glendale crossroads</text>
+  <text x="810" y="505" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#222c31">Glendale crossroads</text>
   <circle cx="820" cy="765" r="10" fill="#222c31"/><text x="842" y="754" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#222c31">toward Malvern Hill</text>
 
-  <g fill="none" stroke="#9a3d32" stroke-width="12" marker-end="url(#redArrow)" stroke-linecap="round">
+  <g fill="none" stroke="#9a3d32" stroke-width="10" marker-end="url(#redArrow)" stroke-linecap="round">
     <path d="M565 58 C575 105 582 150 585 196"/>
     <path d="M112 350 C280 360 420 390 575 438"/>
     <path d="M110 510 C300 512 450 510 585 510"/>
@@ -56,14 +56,14 @@
     <text x="1040" y="742" font-size="22" font-weight="700">Holmes</text>
   </g>
 
-  <path d="M915 480 C885 530 876 610 840 695" fill="none" stroke="#315f8c" stroke-width="10" stroke-dasharray="16 9" marker-end="url(#blueArrow2)"/>
+  <path d="M915 480 C885 530 876 610 840 695" fill="none" stroke="#315f8c" stroke-width="8" stroke-dasharray="14 9" marker-end="url(#blueArrow2)"/>
   <path d="M905 454 C966 485 1008 520 1065 555" fill="none" stroke="#315f8c" stroke-width="7" stroke-dasharray="12 8" marker-end="url(#blueArrow2)"/>
-  <text x="930" y="444" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#264e72">wagons and units withdrawing south</text>
+  <text x="1160" y="444" text-anchor="end" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#264e72">wagons and units withdrawing south</text>
 
   <g transform="translate(1025 90)" font-family="Arial,sans-serif" fill="#26343a"><path d="M0 52 L22 0 L44 52 Z" fill="#26343a"/><text x="22" y="76" text-anchor="middle" font-size="20" font-weight="700">N</text></g>
-  <rect x="885" y="285" width="260" height="125" rx="12" fill="#fffdf7" stroke="#a99673" stroke-width="2"/>
-  <line x1="910" y1="318" x2="980" y2="318" stroke="#9a3d32" stroke-width="11" marker-end="url(#redArrow)"/><text x="1000" y="325" font-family="Arial,sans-serif" font-size="18" fill="#26343a">Confederate approach</text>
-  <rect x="908" y="346" width="74" height="34" rx="7" fill="#d9e6f1" stroke="#315f8c" stroke-width="3"/><text x="1000" y="371" font-family="Arial,sans-serif" font-size="18" fill="#26343a">Union division area</text>
-  <text x="1015" y="398" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#6f5b3c">Frontages and routes generalized</text>
+  <rect x="920" y="285" width="250" height="125" rx="12" fill="#fffdf7" stroke="#a99673" stroke-width="2"/>
+  <line x1="940" y1="318" x2="990" y2="318" stroke="#9a3d32" stroke-width="9" marker-end="url(#redArrow)"/><text x="1012" y="325" font-family="Arial,sans-serif" font-size="17" fill="#26343a">Confederate approach</text>
+  <rect x="938" y="346" width="58" height="34" rx="7" fill="#d9e6f1" stroke="#315f8c" stroke-width="3"/><text x="1012" y="371" font-family="Arial,sans-serif" font-size="17" fill="#26343a">Union division area</text>
+  <text x="1045" y="398" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#6f5b3c">Frontages and routes generalized</text>
   <text x="600" y="790" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="2" fill="#755e3f">SCHEMATIC · NOT TO SCALE</text>
 </svg>

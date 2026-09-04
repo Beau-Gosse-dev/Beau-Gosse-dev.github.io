@@ -3,7 +3,7 @@
   <desc id="desc">Schematic map showing Richmond, Mechanicsville, Gaines Mill, Savage Station, White Oak Swamp, Glendale, Malvern Hill, Haxall's Landing, the Chickahominy River, and the James River.</desc>
   <defs>
     <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f4edda"/><stop offset="1" stop-color="#e6dcc1"/></linearGradient>
-    <marker id="blueArrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#315f8c"/></marker>
+    <marker id="blueArrow" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="14" refX="16" refY="7" orient="auto"><path d="M0,0 L18,7 L0,14 Z" fill="#315f8c"/></marker>
     <filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity=".18"/></filter>
   </defs>
   <rect width="1200" height="800" fill="url(#paper)"/>
@@ -31,19 +31,19 @@
     <g><circle cx="420" cy="198" r="9" fill="#333b42"/><text x="420" y="172" text-anchor="middle" font-size="21" font-weight="700">Mechanicsville</text><text x="420" y="226" text-anchor="middle" font-size="16">June 26</text></g>
     <g><circle cx="535" cy="226" r="9" fill="#333b42"/><text x="555" y="214" font-size="21" font-weight="700">Gaines's Mill</text><text x="555" y="238" font-size="16">June 27</text></g>
     <g><circle cx="545" cy="355" r="10" fill="#333b42"/><text x="470" y="337" text-anchor="middle" font-size="21" font-weight="700">Savage Station</text><text x="470" y="361" text-anchor="middle" font-size="16">June 29</text></g>
-    <g><circle cx="625" cy="455" r="10" fill="#333b42"/><text x="757" y="470" text-anchor="middle" font-size="21" font-weight="700">White Oak Swamp bridge</text><text x="757" y="494" text-anchor="middle" font-size="16">June 30</text></g>
+    <g><circle cx="625" cy="455" r="10" fill="#333b42"/><text x="588" y="444" text-anchor="end" font-size="20" font-weight="700">White Oak Swamp bridge</text><text x="588" y="468" text-anchor="end" font-size="16">June 30</text></g>
     <g filter="url(#shadow)"><circle cx="670" cy="510" r="14" fill="#a43f35"/><rect x="697" y="500" width="159" height="64" rx="8" fill="#fffdf7"/><text x="776" y="526" text-anchor="middle" font-size="23" font-weight="700">GLENDALE</text><text x="776" y="550" text-anchor="middle" font-size="16">crossroads · June 30</text></g>
     <g><circle cx="720" cy="635" r="10" fill="#333b42"/><text x="626" y="637" text-anchor="end" font-size="21" font-weight="700">Malvern Hill</text><text x="626" y="661" text-anchor="end" font-size="16">July 1</text></g>
     <g><circle cx="820" cy="690" r="10" fill="#333b42"/><text x="840" y="676" font-size="21" font-weight="700">Haxall's Landing</text></g>
   </g>
 
-  <path d="M548 380 C565 415 590 455 642 494" fill="none" stroke="#315f8c" stroke-width="11" stroke-dasharray="16 9" marker-end="url(#blueArrow)"/>
-  <path d="M675 535 C684 568 698 595 714 615" fill="none" stroke="#315f8c" stroke-width="11" stroke-dasharray="16 9" marker-end="url(#blueArrow)"/>
-  <path d="M733 650 C755 671 780 682 801 687" fill="none" stroke="#315f8c" stroke-width="11" stroke-dasharray="16 9" marker-end="url(#blueArrow)"/>
-  <rect x="70" y="585" width="360" height="118" rx="14" fill="#fffdf7" stroke="#a99673" stroke-width="2"/>
+  <path d="M548 380 C565 415 590 455 642 494" fill="none" stroke="#315f8c" stroke-width="8" stroke-dasharray="14 9" marker-end="url(#blueArrow)"/>
+  <path d="M675 535 C684 568 698 595 714 615" fill="none" stroke="#315f8c" stroke-width="8" stroke-dasharray="14 9" marker-end="url(#blueArrow)"/>
+  <path d="M733 650 C755 671 780 682 801 687" fill="none" stroke="#315f8c" stroke-width="8" stroke-dasharray="14 9" marker-end="url(#blueArrow)"/>
+  <rect x="70" y="585" width="405" height="118" rx="14" fill="#fffdf7" stroke="#a99673" stroke-width="2"/>
   <text x="92" y="618" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#26343a">Army of the Potomac withdrawal</text>
-  <line x1="96" y1="652" x2="180" y2="652" stroke="#315f8c" stroke-width="10" stroke-dasharray="16 9" marker-end="url(#blueArrow)"/>
-  <text x="200" y="660" font-family="Arial,sans-serif" font-size="18" fill="#26343a">general direction toward the James</text>
+  <line x1="96" y1="652" x2="180" y2="652" stroke="#315f8c" stroke-width="8" stroke-dasharray="14 9" marker-end="url(#blueArrow)"/>
+  <text x="200" y="660" font-family="Arial,sans-serif" font-size="18" fill="#26343a">general direction toward James River</text>
   <text x="92" y="688" font-family="Arial,sans-serif" font-size="16" fill="#6f5b3c">Locations and routes are generalized.</text>
 
   <g transform="translate(1080 110)" font-family="Arial,sans-serif" fill="#26343a"><path d="M0 52 L22 0 L44 52 Z" fill="#26343a"/><text x="22" y="76" text-anchor="middle" font-size="20" font-weight="700">N</text></g>
