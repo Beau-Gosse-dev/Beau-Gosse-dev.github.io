@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Johnston's withdrawal from Centreville and Manassas, March 7–10, 1862</title>
+  <desc id="desc">Schematic map of northern Virginia showing the Confederate withdrawal from Centreville and Manassas toward Culpeper and the Rappahannock, the Orange and Alexandria Railroad toward Gordonsville, Jackson remaining at Winchester, and the United States advance from Washington on March 10.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8f0dc"/>
+      <stop offset="1" stop-color="#e6d3ab"/>
+    </linearGradient>
+    <marker id="usaArrow" markerWidth="36" markerHeight="36" refX="33" refY="18" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L36,18 L0,36 Z" fill="#285f88"/>
+    </marker>
+    <marker id="csaArrow" markerWidth="36" markerHeight="36" refX="33" refY="18" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L36,18 L0,36 Z" fill="#98453b"/>
+    </marker>
+    <style>
+      .title { font: 700 42px Georgia, serif; fill: #292720; }
+      .subtitle { font: 21px Georgia, serif; fill: #514a3d; }
+      .place { font: 700 22px Arial, sans-serif; fill: #2f2c25; paint-order: stroke; stroke: #f4ead2; stroke-width: 6px; stroke-linejoin: round; }
+      .minor { font: 18px Arial, sans-serif; fill: #3f3b33; paint-order: stroke; stroke: #f4ead2; stroke-width: 5px; }
+      .water { font: italic 21px Georgia, serif; fill: #346f89; letter-spacing: 1px; }
+      .legend { font: 700 20px Arial, sans-serif; fill: #2f2c25; }
+      .note { font: 18px Arial, sans-serif; fill: #494338; }
+      .date { font: 700 18px Arial, sans-serif; fill: #2f2c25; paint-order: stroke; stroke: #f4ead2; stroke-width: 5px; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#paper)"/>
+  <path d="M1225 85 C1120 155 1160 245 1055 305 C950 365 875 327 776 380 C685 429 641 482 570 510" fill="none" stroke="#8fb8c7" stroke-width="46" stroke-linecap="round"/>
+  <path d="M1225 85 C1120 155 1160 245 1055 305 C950 365 875 327 776 380 C685 429 641 482 570 510" fill="none" stroke="#477584" stroke-width="3"/>
+  <path d="M1260 754 C1100 735 965 744 830 775 C680 811 530 832 366 818" fill="none" stroke="#8fb8c7" stroke-width="42" stroke-linecap="round"/>
+  <path d="M1260 754 C1100 735 965 744 830 775 C680 811 530 832 366 818" fill="none" stroke="#477584" stroke-width="3"/>
+  <path d="M315 120 C330 250 340 380 350 510 C362 640 370 776 390 920" fill="none" stroke="#7c846b" stroke-width="18" opacity="0.45"/>
+  <text x="180" y="528" class="minor" transform="rotate(-84 180 528)">BLUE RIDGE MOUNTAINS</text>
+
+  <path d="M1015 300 C890 404 785 510 686 612 C605 696 522 777 455 880" fill="none" stroke="#6d5940" stroke-width="7" stroke-dasharray="18 12"/>
+  <path d="M998 331 C916 405 830 465 744 526" fill="none" stroke="#575147" stroke-width="5" opacity="0.65"/>
+
+  <path d="M1090 235 C1028 295 970 356 909 416" fill="none" stroke="#285f88" stroke-width="16" stroke-linecap="round" marker-end="url(#usaArrow)"/>
+  <path d="M907 419 C850 472 796 515 744 526" fill="none" stroke="#285f88" stroke-width="16" stroke-linecap="round" marker-end="url(#usaArrow)"/>
+  <path d="M762 500 C714 567 659 639 610 702 C585 738 568 765 560 790" fill="none" stroke="#98453b" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#csaArrow)"/>
+  <path d="M260 320 L260 500" fill="none" stroke="#98453b" stroke-width="13" stroke-linecap="round"/>
+
+  <g fill="#292720" stroke="#f4ead2" stroke-width="5" paint-order="stroke">
+    <circle cx="1090" cy="235" r="11"/>
+    <circle cx="907" cy="419" r="10"/>
+    <circle cx="744" cy="526" r="12"/>
+    <circle cx="610" cy="702" r="10"/>
+    <circle cx="560" cy="790" r="10"/>
+    <circle cx="455" cy="880" r="11"/>
+    <circle cx="260" cy="320" r="11"/>
+    <circle cx="570" cy="510" r="10"/>
+  </g>
+
+  <text x="1110" y="225" class="place">WASHINGTON</text>
+  <text x="930" y="410" class="place">CENTREVILLE</text>
+  <text x="690" y="565" class="place">MANASSAS</text>
+  <text x="630" y="695" class="minor">CULPEPER</text>
+  <text x="375" y="915" class="place">GORDONSVILLE</text>
+  <text x="190" y="305" class="place">WINCHESTER</text>
+  <text x="482" y="492" class="place">HARPERS FERRY</text>
+  <text x="825" y="812" class="water">RAPPAHANNOCK RIVER</text>
+  <text x="820" y="325" class="water" transform="rotate(-22 820 325)">POTOMAC RIVER</text>
+  <text x="548" y="646" class="minor" transform="rotate(52 548 646)">ORANGE &amp; ALEXANDRIA R.R.</text>
+
+  <text x="978" y="356" class="date">U.S. advance, March 10</text>
+  <text x="665" y="635" class="date">Johnston's withdrawal, March 7–9</text>
+  <text x="150" y="535" class="date">Jackson remains near Winchester</text>
+
+  <rect x="62" y="52" width="1120" height="120" rx="15" fill="#faf3e3" stroke="#8d7b5c" stroke-width="2" opacity="0.97"/>
+  <text x="94" y="101" class="title">The Centreville–Manassas evacuation</text>
+  <text x="95" y="140" class="subtitle">Army movements and the railroad bottleneck, March 7–10, 1862</text>
+
+  <rect x="1124" y="548" width="414" height="334" rx="16" fill="#faf3e3" stroke="#8d7b5c" stroke-width="2" opacity="0.97"/>
+  <line x1="1160" y1="612" x2="1254" y2="612" stroke="#285f88" stroke-width="14" marker-end="url(#usaArrow)"/>
+  <text x="1280" y="619" class="legend">United States</text>
+  <text x="1160" y="653" class="note">Washington to the abandoned works</text>
+  <line x1="1160" y1="712" x2="1254" y2="712" stroke="#98453b" stroke-width="14" marker-end="url(#csaArrow)"/>
+  <text x="1280" y="719" class="legend">Confederacy</text>
+  <text x="1160" y="753" class="note">Withdrawal toward the Rappahannock</text>
+  <line x1="1160" y1="806" x2="1254" y2="806" stroke="#6d5940" stroke-width="7" stroke-dasharray="18 12"/>
+  <text x="1280" y="813" class="legend">Railroad</text>
+  <text x="1160" y="850" class="note">Single-track route toward Gordonsville</text>
+
+  <text x="1150" y="948" class="note">Schematic; positions are approximate</text>
+</svg>

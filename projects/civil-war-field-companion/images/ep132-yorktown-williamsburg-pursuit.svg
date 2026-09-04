@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Confederate evacuation of Yorktown and United States pursuit, May 3 and 4, 1862</title>
+  <desc id="desc">Schematic map showing Yorktown and the Warwick line, the Yorktown and Lee's Mill roads, Confederate retreat columns toward Williamsburg, Stoneman's pursuit, the fortified line east of Williamsburg, and the planned United States water movement toward West Point.</desc>
+  <defs>
+    <marker id="usArrow2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#315f8c"/></marker>
+    <marker id="csArrow2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#9a3d32"/></marker>
+    <style>
+      .label{font:600 20px Georgia,serif;fill:#1f2933}.small{font:16px Arial,sans-serif;fill:#334155}.tiny{font:14px Arial,sans-serif;fill:#475569}.water{font:italic 19px Georgia,serif;fill:#2e638d}.us{fill:none;stroke:#315f8c;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.cs{fill:none;stroke:#9a3d32;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.road{fill:none;stroke:#9d7b4f;stroke-width:7;stroke-linecap:round}.earthwork{fill:none;stroke:#9a3d32;stroke-width:7;stroke-dasharray:7 10}.place{fill:#fff;stroke:#17212b;stroke-width:3}
+    </style>
+  </defs>
+  <rect width="1200" height="760" fill="#edf1e3"/>
+  <path d="M40 80 C260 58 470 55 680 86 C880 115 1025 160 1160 230 L1160 55H40Z" fill="#cfe8f3"/>
+  <path d="M828 82 C892 154 917 222 907 330 C899 425 930 506 1020 620" fill="none" stroke="#83b8d1" stroke-width="48"/>
+  <text x="588" y="62" class="water">York River toward West Point</text>
+  <text x="932" y="404" class="water" transform="rotate(58 932 404)">Warwick River</text>
+
+  <path d="M1015 265 C840 310 650 360 500 425 C365 482 262 512 145 518" class="road"/>
+  <path d="M985 530 C790 500 655 478 500 425" class="road"/>
+  <text x="696" y="318" class="small">Yorktown Road</text>
+  <text x="706" y="528" class="small">Lee’s Mill Road</text>
+  <text x="365" y="548" class="tiny">Road junction commanded by Fort Magruder</text>
+
+  <path d="M1015 217 C985 270 966 325 955 390 C944 457 949 521 976 592" class="earthwork"/>
+  <text x="1019" y="390" class="small" fill="#9a3d32">Yorktown–Warwick line</text>
+
+  <path d="M957 280 C823 325 697 363 536 405 C391 444 287 470 171 493" class="cs" marker-end="url(#csArrow2)"/>
+  <path d="M944 520 C792 497 648 472 521 444 C379 413 279 420 168 480" class="cs" marker-end="url(#csArrow2)"/>
+  <rect x="510" y="244" width="300" height="32" rx="5" fill="#edf1e3" fill-opacity=".92"/>
+  <text x="522" y="266" class="small" fill="#9a3d32">Confederate columns, night of May 3–4</text>
+
+  <path d="M1033 335 C879 370 740 400 604 435 C468 470 360 492 232 505" class="us" marker-end="url(#usArrow2)"/>
+  <rect x="600" y="380" width="318" height="48" rx="5" fill="#edf1e3" fill-opacity=".92"/>
+  <text x="612" y="400" class="small" fill="#315f8c">Stoneman’s cavalry and horse artillery</text>
+  <text x="612" y="420" class="tiny">pursuit begins about noon, May 4</text>
+
+  <path d="M1035 130 C805 98 577 100 360 128" fill="none" stroke="#315f8c" stroke-width="5" stroke-dasharray="14 10" marker-end="url(#usArrow2)"/>
+  <rect x="485" y="133" width="390" height="32" rx="5" fill="#edf1e3" fill-opacity=".92"/>
+  <text x="500" y="155" class="small" fill="#315f8c">Four divisions ordered by water toward West Point</text>
+
+  <path d="M212 365 C235 415 241 476 225 555" class="earthwork"/>
+  <g fill="#9a3d32">
+    <path d="M197 390l14-18 14 18-14 18Z"/><path d="M211 431l14-18 14 18-14 18Z"/><path d="M215 476l14-18 14 18-14 18Z"/><path d="M208 523l14-18 14 18-14 18Z"/>
+  </g>
+  <text x="58" y="342" class="small" fill="#9a3d32">13-redoubt line</text>
+  <text x="58" y="364" class="tiny">about two miles east of town</text>
+  <g transform="translate(225 426)">
+    <path d="M0-22L20 12H-20Z" fill="#9a3d32" stroke="#68261f" stroke-width="3"/>
+    <text x="30" y="-3" class="label">Fort Magruder</text>
+  </g>
+
+  <g transform="translate(1050 250)"><circle r="10" class="place"/><text x="-35" y="-20" class="label">Yorktown</text></g>
+  <g transform="translate(970 535)"><circle r="9" class="place"/><text x="-100" y="38" class="small">Lee’s Mill</text></g>
+  <g transform="translate(112 490)"><circle r="10" class="place"/><text x="-28" y="-30" class="label">Williamsburg</text></g>
+  <g transform="translate(750 157)"><circle r="9" class="place"/><text x="-62" y="35" class="small">Gloucester Point</text></g>
+
+  <rect x="60" y="616" width="1080" height="90" rx="12" fill="#fff" fill-opacity=".9" stroke="#94a3b8"/>
+  <path d="M92 647h62" class="cs" marker-end="url(#csArrow2)"/><text x="175" y="653" class="small">Confederate withdrawal</text>
+  <path d="M410 647h62" class="us" marker-end="url(#usArrow2)"/><text x="493" y="653" class="small">United States pursuit</text>
+  <path d="M725 647h62" stroke="#315f8c" stroke-width="6" stroke-dasharray="14 10" marker-end="url(#usArrow2)"/><text x="808" y="653" class="small">Planned water movement</text>
+  <text x="92" y="687" class="tiny">Roads and positions are schematic; the individual redoubts are simplified.</text>
+  <text x="1110" y="104" class="label">N</text><path d="M1118 116v48" stroke="#17212b" stroke-width="4"/><path d="M1118 106l-10 20h20Z" fill="#17212b"/>
+</svg>

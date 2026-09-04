@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Washington and Peninsula Campaign operational context, March and April 1862</title>
+  <desc id="desc">Schematic map showing Washington, the Shenandoah Valley, Manassas, Warrenton, Alexandria, Fort Monroe, Yorktown, and Richmond. A blue sea route carries the Army of the Potomac from Alexandria to Fort Monroe and a red arrow shows Joseph Johnston moving from northern Virginia toward Yorktown and Richmond.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8f1df"/><stop offset="1" stop-color="#e7d6b4"/></linearGradient>
+    <marker id="blueArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#9a3d32"/></marker>
+    <style>
+      .title{font:700 42px Georgia,serif;fill:#29271f}.subtitle{font:21px system-ui,sans-serif;fill:#514b40}.place{font:700 21px system-ui,sans-serif;fill:#29271f;paint-order:stroke;stroke:#f5ecd8;stroke-width:6px;stroke-linejoin:round}.small{font:17px system-ui,sans-serif;fill:#4c473d}.route{font:700 18px system-ui,sans-serif;paint-order:stroke;stroke:#f5ecd8;stroke-width:5px}.water{font:italic 21px Georgia,serif;fill:#356e82}.legend{font:18px system-ui,sans-serif;fill:#37342e}.date{font:700 16px system-ui,sans-serif;fill:#37342e}
+    </style>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#paper)"/>
+  <path d="M1115 0C1086 116 1107 235 1191 332C1278 432 1265 530 1345 625C1400 690 1434 785 1427 1000H1600V0Z" fill="#96bdcc"/>
+  <path d="M1115 0C1086 116 1107 235 1191 332C1278 432 1265 530 1345 625C1400 690 1434 785 1427 1000" fill="none" stroke="#4d7e90" stroke-width="5"/>
+  <path d="M575 151C735 183 910 206 1094 244C1161 258 1198 291 1214 331" fill="none" stroke="#91bccb" stroke-width="48" stroke-linecap="round"/>
+  <path d="M575 151C735 183 910 206 1094 244C1161 258 1198 291 1214 331" fill="none" stroke="#4d7e90" stroke-width="3"/>
+  <path d="M1370 789C1206 780 1053 734 900 672C790 627 701 614 616 622" fill="none" stroke="#91bccb" stroke-width="38" stroke-linecap="round"/>
+  <path d="M1430 884C1278 870 1118 853 950 817C819 789 697 755 590 713" fill="none" stroke="#91bccb" stroke-width="50" stroke-linecap="round"/>
+  <path d="M173 145C265 202 326 276 358 368C389 458 430 538 497 608" fill="none" stroke="#91bccb" stroke-width="28" stroke-linecap="round"/>
+  <text x="209" y="222" class="water" transform="rotate(48 209 222)">SHENANDOAH RIVER</text>
+  <text x="697" y="167" class="water" transform="rotate(9 697 167)">POTOMAC RIVER</text>
+  <text x="1206" y="677" class="water" transform="rotate(17 1206 677)">YORK RIVER</text>
+  <text x="1120" y="850" class="water" transform="rotate(8 1120 850)">JAMES RIVER</text>
+  <text x="1385" y="402" class="water" transform="rotate(77 1385 402)">CHESAPEAKE BAY</text>
+
+  <path d="M662 221C884 265 1119 312 1282 431C1372 497 1420 612 1394 739" fill="none" stroke="#315f8c" stroke-width="15" stroke-linecap="round" marker-end="url(#blueArrow)"/>
+  <path d="M1390 756C1265 753 1136 718 1000 658C905 616 815 602 724 618" fill="none" stroke="#315f8c" stroke-width="15" stroke-linecap="round" marker-end="url(#blueArrow)"/>
+  <text x="1020" y="315" class="route" fill="#315f8c">ARMY OF THE POTOMAC BY WATER</text>
+  <text x="1068" y="620" class="route" fill="#315f8c">ADVANCE UP THE PENINSULA</text>
+
+  <path d="M606 380C700 440 768 495 835 566" fill="none" stroke="#9a3d32" stroke-width="13" stroke-dasharray="21 13" marker-end="url(#redArrow)"/>
+  <text x="615" y="431" class="route" fill="#9a3d32" transform="rotate(34 615 431)">JOHNSTON TO THE PENINSULA</text>
+
+  <g fill="#2b2923" stroke="#f5ecd8" stroke-width="5" paint-order="stroke">
+    <circle cx="575" cy="151" r="11"/><circle cx="652" cy="219" r="11"/><circle cx="541" cy="357" r="10"/><circle cx="451" cy="426" r="10"/><circle cx="259" cy="368" r="10"/><circle cx="1393" cy="758" r="11"/><circle cx="1000" cy="658" r="10"/><circle cx="724" cy="618" r="11"/>
+  </g>
+  <text x="462" y="126" class="place">WASHINGTON</text>
+  <text x="672" y="213" class="place">ALEXANDRIA</text>
+  <text x="559" y="352" class="place">MANASSAS</text>
+  <text x="333" y="419" class="place">WARRENTON</text>
+  <text x="112" y="352" class="place">WINCHESTER</text>
+  <text x="1260" y="799" class="place">FORT MONROE</text>
+  <text x="1018" y="651" class="place">YORKTOWN</text>
+  <text x="604" y="607" class="place">RICHMOND</text>
+
+  <rect x="62" y="48" width="904" height="109" rx="14" fill="#fffaf0" stroke="#887a61" stroke-width="2" opacity=".97"/>
+  <text x="92" y="94" class="title">Two connected theaters</text>
+  <text x="94" y="132" class="subtitle">Moving against Richmond while keeping Washington secure · March–April 1862</text>
+
+  <rect x="66" y="686" width="572" height="233" rx="14" fill="#fffaf0" stroke="#887a61" stroke-width="2" opacity=".97"/>
+  <path d="M105 744H218" stroke="#315f8c" stroke-width="13" marker-end="url(#blueArrow)"/><text x="249" y="750" class="legend">United States movement by water and land</text>
+  <path d="M105 799H218" stroke="#9a3d32" stroke-width="12" stroke-dasharray="18 11" marker-end="url(#redArrow)"/><text x="249" y="805" class="legend">Confederate reinforcement movement</text>
+  <text x="103" y="857" class="date">April 5:</text><text x="181" y="857" class="legend">McDowell’s I Corps retained in northern Virginia</text>
+  <text x="104" y="893" class="small">Schematic; locations and routes are approximate.</text>
+</svg>

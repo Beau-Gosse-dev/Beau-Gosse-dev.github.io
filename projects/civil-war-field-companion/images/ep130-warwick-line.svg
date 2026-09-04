@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Warwick defensive line and United States advance, April 4 to May 4, 1862</title>
+  <desc id="desc">Schematic tactical map of the Confederate Warwick line between Yorktown and the James River, the United States Third and Fourth Corps advances, the April 16 crossing at Dam Number 1, and the Confederate retreat toward Williamsburg.</desc>
+  <defs>
+    <linearGradient id="paper2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7f1df"/><stop offset="1" stop-color="#e9ddc2"/></linearGradient>
+    <marker id="uArrow" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto"><path d="M0 0L18 9L0 18Z" fill="#315f8c"/></marker>
+    <marker id="cArrow" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto"><path d="M0 0L18 9L0 18Z" fill="#9a3d32"/></marker>
+    <pattern id="marsh" width="22" height="14" patternUnits="userSpaceOnUse"><path d="M0 9Q5 4 11 9T22 9" fill="none" stroke="#5f8f84" stroke-width="1.4" opacity=".7"/></pattern>
+    <style>
+      .serif{font-family:Georgia,'Times New Roman',serif;fill:#29271f}.sans{font-family:system-ui,sans-serif;fill:#37352f}.town{font:700 18px system-ui,sans-serif;fill:#29271f}.small{font:15px system-ui,sans-serif;fill:#4b4942}.blue{fill:#315f8c}.red{fill:#9a3d32}.river{font:italic 18px Georgia,serif;fill:#326a7e}
+    </style>
+  </defs>
+  <rect width="1200" height="760" fill="url(#paper2)"/>
+  <path d="M0 0H1200V760H0Z" fill="none" stroke="#6c655b" stroke-width="12" opacity=".12"/>
+  <text x="58" y="64" class="serif" font-size="33" font-weight="700">The Warwick line stops the advance</text>
+  <text x="60" y="94" class="small">Operational and tactical schematic · April 4–May 4, 1862 · positions approximate</text>
+
+  <!-- Water and marsh -->
+  <path d="M892 106C942 170 978 218 1012 274L1200 301V0H961Z" fill="#8fb7c5"/>
+  <path d="M895 116C948 184 978 232 1010 284" fill="none" stroke="#4f8397" stroke-width="9"/>
+  <text x="1006" y="150" class="river" transform="rotate(43 1006 150)">York River</text>
+  <path d="M820 230C747 286 721 351 681 417C641 482 581 522 489 555C405 584 320 601 221 630" fill="none" stroke="#78aab8" stroke-width="25" stroke-linecap="round"/>
+  <path d="M820 230C747 286 721 351 681 417C641 482 581 522 489 555C405 584 320 601 221 630" fill="none" stroke="#b7d2d5" stroke-width="14" stroke-linecap="round"/>
+  <path d="M758 273C697 327 674 383 630 445C585 508 517 543 426 573L469 639C578 609 667 557 718 483C767 413 790 346 845 299Z" fill="url(#marsh)" opacity=".8"/>
+  <text x="552" y="540" class="river" transform="rotate(-27 552 540)">Warwick River and flooded lowlands</text>
+  <path d="M159 670C354 672 488 699 634 736H1200V627C1119 604 1028 602 910 622C726 653 547 630 405 622C301 616 218 628 159 670Z" fill="#8fb7c5"/>
+  <text x="839" y="702" class="river">James River</text>
+
+  <!-- Confederate line -->
+  <path d="M915 177C851 215 801 268 758 332C716 394 679 463 612 513C537 568 434 586 275 617" fill="none" stroke="#9a3d32" stroke-width="8" stroke-dasharray="18 10"/>
+  <path d="M891 209l22 22m-51 10 22 22m-58 8 22 22m-58 13 22 22m-60 14 22 22m-58 17 22 22m-62 21 22 22m-65 19 22 22m-69 12 22 22m-71 6 22 22m-72 3 22 22" stroke="#9a3d32" stroke-width="3" opacity=".8"/>
+  <text x="397" y="505" class="sans red" font-size="17" font-weight="700" transform="rotate(-15 397 505)">Magruder’s fortified Warwick line</text>
+
+  <!-- Places and dams -->
+  <circle cx="921" cy="169" r="9" fill="#fff" stroke="#29271f" stroke-width="3"/><text x="939" y="174" class="town">Yorktown</text>
+  <circle cx="1040" cy="220" r="8" fill="#fff" stroke="#29271f" stroke-width="3"/><text x="1056" y="225" class="town">Gloucester Point</text>
+  <circle cx="825" cy="259" r="6" fill="#fff" stroke="#29271f" stroke-width="2"/><text x="843" y="265" class="small">Wynn’s Mill</text>
+  <circle cx="684" cy="413" r="7" fill="#fff" stroke="#29271f" stroke-width="2"/><text x="705" y="410" class="town">Dam No. 1</text><text x="706" y="431" class="small">April 16 crossing</text>
+  <circle cx="494" cy="550" r="6" fill="#fff" stroke="#29271f" stroke-width="2"/><text x="408" y="530" class="small">Lee’s Mill</text>
+  <circle cx="270" cy="617" r="6" fill="#fff" stroke="#29271f" stroke-width="2"/><text x="151" y="601" class="small">Mulberry Island</text>
+  <circle cx="466" cy="690" r="8" fill="#fff" stroke="#29271f" stroke-width="3"/><text x="373" y="722" class="town">Fort Monroe</text>
+  <circle cx="744" cy="154" r="8" fill="#fff" stroke="#29271f" stroke-width="3"/><text x="650" y="137" class="town">Williamsburg</text>
+
+  <!-- Union advance -->
+  <path d="M474 672C557 607 667 523 758 440C825 379 875 304 901 221" fill="none" stroke="#315f8c" stroke-width="9" marker-end="url(#uArrow)"/>
+  <text x="745" y="529" class="sans blue" font-size="17" font-weight="700" transform="rotate(-44 745 529)">III Corps → Yorktown</text>
+  <path d="M452 672C490 598 553 535 626 477C651 457 663 437 674 417" fill="none" stroke="#315f8c" stroke-width="9" marker-end="url(#uArrow)"/>
+  <text x="427" y="595" class="sans blue" font-size="17" font-weight="700" transform="rotate(-48 427 595)">IV Corps → Lee’s Mill</text>
+
+  <!-- Dam No. 1 local action -->
+  <path d="M649 447C662 432 673 421 683 410" fill="none" stroke="#315f8c" stroke-width="7" marker-end="url(#uArrow)"/>
+  <path d="M703 385C694 394 688 402 681 414" fill="none" stroke="#9a3d32" stroke-width="7" marker-end="url(#cArrow)"/>
+  <rect x="755" y="446" width="382" height="98" rx="10" fill="#fffaf0" stroke="#847966"/>
+  <text x="777" y="476" class="sans" font-size="16" font-weight="700">April 16 · Dam No. 1</text>
+  <text x="777" y="501" class="small">Vermont troops crossed and gained a foothold.</text>
+  <text x="777" y="525" class="small">Without reinforcement, they withdrew under counterattack.</text>
+
+  <!-- Retreat -->
+  <path d="M898 180C845 157 809 151 763 153" fill="none" stroke="#9a3d32" stroke-width="8" stroke-dasharray="12 9" marker-end="url(#cArrow)"/>
+  <text x="760" y="112" class="sans red" font-size="16" font-weight="700">Confederate withdrawal, night of May 3–4</text>
+
+  <!-- Legend -->
+  <rect x="58" y="128" width="370" height="137" rx="10" fill="#fffaf0" stroke="#847966"/>
+  <path d="M82 162H149" stroke="#315f8c" stroke-width="8" marker-end="url(#uArrow)"/><text x="171" y="168" class="small">United States advance</text>
+  <path d="M82 201H149" stroke="#9a3d32" stroke-width="8" stroke-dasharray="15 8"/><text x="171" y="207" class="small">Confederate fortified line</text>
+  <path d="M82 239H149" stroke="#9a3d32" stroke-width="8" stroke-dasharray="10 8" marker-end="url(#cArrow)"/><text x="171" y="245" class="small">Confederate withdrawal</text>
+</svg>
