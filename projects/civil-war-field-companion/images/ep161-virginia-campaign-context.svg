@@ -27,7 +27,7 @@
   <path d="M466 390 C599 385 706 409 838 472 C913 508 1008 538 1095 548" fill="none" stroke="#75a5c2" stroke-width="14"/>
   <path d="M563 334 C641 348 677 373 713 410" fill="none" stroke="#7ba9c1" stroke-width="9" stroke-dasharray="10 7"/>
 
-  <text x="807" y="629" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#244f69">James River</text>
+  <text x="952" y="649" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#244f69">James River</text>
   <text x="849" y="523" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#315f77">York River</text>
   <text x="807" y="453" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#315f77">Chickahominy River</text>
 
@@ -39,7 +39,8 @@
     <text x="1032" y="157" font-size="19" font-weight="700" fill="#2c2925">Washington</text>
 
     <circle cx="567" cy="395" r="10" fill="#9a3d32"/>
-    <text x="583" y="400" font-size="21" font-weight="700" fill="#7b3028">Richmond</text>
+    <rect x="577" y="383" width="104" height="28" rx="5" fill="#fffaf0" opacity=".88"/>
+    <text x="583" y="404" font-size="21" font-weight="700" fill="#7b3028">Richmond</text>
 
     <circle cx="546" cy="359" r="11" fill="#d3a52f" stroke="#5c4311" stroke-width="2"/>
     <circle cx="546" cy="359" r="21" fill="none" stroke="#d3a52f" stroke-width="3"/>
@@ -56,11 +57,12 @@
   </g>
 
   <path d="M940 550 C875 527 829 502 770 474 C700 441 644 421 588 407" fill="none" stroke="#315f8c" stroke-width="5" stroke-dasharray="14 9" marker-end="url(#blue-arrow)"/>
-  <text x="685" y="573" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#315f8c" transform="rotate(18 685 573)">Army of the Potomac advance, spring 1862</text>
+  <text x="715" y="675" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#315f8c">Army of the Potomac advance, spring 1862</text>
 
   <path d="M466 362 C500 357 518 355 536 357" fill="none" stroke="#9a3d32" stroke-width="6" marker-end="url(#blue-arrow)"/>
-  <text x="220" y="341" font-family="Arial, sans-serif" font-size="17" fill="#6e342e">Lee attacked Porter's exposed right wing north of the river</text>
-  <line x1="451" y1="346" x2="521" y2="358" stroke="#6e342e" stroke-width="2"/>
+  <text x="220" y="320" font-family="Arial, sans-serif" font-size="17" fill="#6e342e">Lee attacked Porter's exposed right wing</text>
+  <text x="220" y="342" font-family="Arial, sans-serif" font-size="17" fill="#6e342e">north of the Chickahominy</text>
+  <line x1="445" y1="340" x2="521" y2="358" stroke="#6e342e" stroke-width="2"/>
 
   <g transform="translate(78 575)">
     <rect width="455" height="111" rx="10" fill="#f1ead9" stroke="#9b917e"/>

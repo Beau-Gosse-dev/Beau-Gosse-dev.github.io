@@ -41,7 +41,7 @@
     <path d="M961 273 L980 254 L1000 273 L1000 303 L961 303 Z" fill="#c7ad7f" stroke="#665b47" stroke-width="2"/>
     <text x="1011" y="280" font-size="17" font-weight="700" fill="#3f3a32">McGehee House</text>
     <path d="M370 211 L388 194 L406 211 L406 240 L370 240 Z" fill="#c7ad7f" stroke="#665b47" stroke-width="2"/>
-    <text x="268" y="187" font-size="17" font-weight="700" fill="#3f3a32">Gaines's Mill / house</text>
+    <text x="291" y="253" font-size="17" font-weight="700" fill="#3f3a32">Gaines's Mill / house</text>
   </g>
 
   <g fill="#9a3d32" font-family="Arial, sans-serif" font-size="18" font-weight="700">
@@ -80,8 +80,8 @@
     <path d="M926 638 C881 679 810 709 721 743"/>
     <path d="M1035 390 C1083 454 1088 558 1028 675"/>
   </g>
-  <text x="966" y="681" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#315f8c">withdrawal toward Alexander</text>
-  <text x="977" y="704" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#315f8c">and Grapevine bridges</text>
+  <text x="898" y="681" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#315f8c">withdrawal toward Alexander</text>
+  <text x="914" y="704" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#315f8c">and Grapevine bridges</text>
 
   <g transform="translate(824 114)" font-family="Arial, sans-serif">
     <path d="M0 48 L0 4 L-10 22 L0 16 L10 22 Z" fill="#33302b"/>
