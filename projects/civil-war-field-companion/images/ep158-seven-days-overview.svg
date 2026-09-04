@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Overview of Oak Grove and Beaver Dam Creek, June 25 and 26, 1862</title>
+  <desc id="desc">Schematic overview showing Richmond, the Chickahominy River, Oak Grove south of the river, Mechanicsville and Beaver Dam Creek north of it, and the broad locations of United States and Confederate forces.</desc>
+  <defs>
+    <marker id="blueArrow" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto"><path d="M0 0L11 5.5 0 11Z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto"><path d="M0 0L11 5.5 0 11Z" fill="#9a3d32"/></marker>
+    <style>
+      .label{font:600 21px Georgia,serif;fill:#202729}.small{font:16px Arial,sans-serif;fill:#2d3639}.tiny{font:14px Arial,sans-serif;fill:#3b4548}.river{fill:none;stroke:#67a2c4;stroke-width:24;stroke-linecap:round}.road{fill:none;stroke:#a99b7b;stroke-width:5;stroke-dasharray:10 8}.us{fill:#e4eef6;stroke:#315f8c;stroke-width:3}.cs{fill:#f8e8e3;stroke:#9a3d32;stroke-width:3}.site{fill:#fffaf0;stroke:#625b4d;stroke-width:3}
+    </style>
+  </defs>
+  <rect width="1200" height="720" fill="#f3eedf"/>
+  <path d="M-20 340C170 304 315 365 468 335S760 295 930 346 1080 374 1220 343" class="river"/>
+  <text x="768" y="390" class="label" fill="#396e91">Chickahominy River</text>
+  <path d="M107 126L365 244 542 315" class="road"/>
+  <path d="M542 315L755 202 1067 169" class="road"/>
+  <path d="M543 360L698 510 930 590" class="road"/>
+  <path d="M698 510L1015 486" class="road"/>
+  <text x="814" y="154" class="small">roads toward Cold Harbor</text>
+  <text x="820" y="470" class="small">Williamsburg Road</text>
+  <circle cx="542" cy="329" r="10" fill="#24292a"/><text x="561" y="324" class="label">Mechanicsville</text>
+  <circle cx="690" cy="244" r="8" fill="#24292a"/><text x="710" y="250" class="small">Beaver Dam Creek</text>
+  <circle cx="697" cy="509" r="8" fill="#24292a"/><text x="718" y="528" class="small">Oak Grove</text>
+  <circle cx="408" cy="579" r="11" fill="#24292a"/><text x="428" y="587" class="label">Richmond</text>
+  <rect x="73" y="55" width="306" height="102" rx="16" class="cs"/>
+  <text x="94" y="89" class="label" fill="#9a3d32">Lee concentrates north</text>
+  <text x="94" y="117" class="small">Jackson approaches from the northwest;</text>
+  <text x="94" y="140" class="small">other divisions wait at river crossings.</text>
+  <path d="M357 139C420 171 462 209 505 278" fill="none" stroke="#9a3d32" stroke-width="8" marker-end="url(#redArrow)"/>
+  <rect x="771" y="219" width="348" height="92" rx="16" class="us"/>
+  <text x="792" y="253" class="label" fill="#315f8c">Porter north of the river</text>
+  <text x="792" y="281" class="small">V Corps includes McCall's division.</text>
+  <rect x="760" y="532" width="367" height="94" rx="16" class="us"/>
+  <text x="781" y="566" class="label" fill="#315f8c">Federal majority south</text>
+  <text x="781" y="594" class="small">McClellan advances at Oak Grove on June 25.</text>
+  <path d="M859 541C821 520 780 511 728 507" fill="none" stroke="#315f8c" stroke-width="7" marker-end="url(#blueArrow)"/>
+  <rect x="88" y="456" width="281" height="98" rx="16" class="cs"/>
+  <text x="109" y="490" class="label" fill="#9a3d32">Richmond defenses</text>
+  <text x="109" y="518" class="small">Magruder and Huger hold while</text>
+  <text x="109" y="541" class="small">Lee shifts strength north on June 26.</text>
+  <g transform="translate(468 411)">
+    <rect width="248" height="75" rx="13" class="site"/>
+    <text x="18" y="30" class="label">June 25: Oak Grove</text>
+    <text x="18" y="56" class="small">indecisive; about 600 yards gained</text>
+  </g>
+  <g transform="translate(515 74)">
+    <rect width="353" height="79" rx="13" class="site"/>
+    <text x="18" y="31" class="label">June 26: Beaver Dam Creek</text>
+    <text x="18" y="58" class="small">United States tactical victory; Porter later withdraws</text>
+  </g>
+  <text x="25" y="699" class="tiny">Schematic; not to scale. Locations, routes, force areas, and distances are generalized; no exact unit frontage is claimed.</text>
+</svg>
