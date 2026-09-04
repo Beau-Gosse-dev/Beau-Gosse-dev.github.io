@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Jackson's forced march from Winchester to Manassas, July 18 to 19, 1861</title>
+  <desc id="desc">Schematic operational map showing Winchester, Millwood, the Shenandoah River, Ashby's Gap, Paris, Piedmont, the Manassas Gap Railroad, Manassas Junction, Bull Run, and Jackson's brigade route.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8f2e2"/><stop offset="1" stop-color="#e9ddc2"/></linearGradient>
+    <pattern id="mountain" width="38" height="28" patternUnits="userSpaceOnUse"><path d="M1 25 L11 8 L20 22 L28 10 L37 25" fill="none" stroke="#7d8d69" stroke-width="2" opacity=".6"/></pattern>
+    <marker id="redArrow" markerWidth="18" markerHeight="18" refX="11" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12"><path d="M0 0 L12 6 L0 12 Z" fill="#9a3d32"/></marker>
+    <style>.label{font:700 23px Georgia,serif;fill:#292621}.small{font:18px Arial,sans-serif;fill:#3f3a33}.tiny{font:15px Arial,sans-serif;fill:#554f46}.red{fill:#9a3d32}.blue{fill:#315f8c}.box{fill:#fffaf0;stroke:#8a7b66;stroke-width:2}.rail{fill:none;stroke:#30302e;stroke-width:5;stroke-dasharray:16 9}</style>
+  </defs>
+  <rect width="1200" height="760" fill="url(#paper)"/>
+  <path d="M430 0 C405 130 412 254 390 390 C373 502 360 625 382 760 L600 760 C575 620 593 505 612 385 C632 251 613 122 641 0 Z" fill="url(#mountain)"/>
+  <text x="502" y="592" class="small" fill="#647653" transform="rotate(-82 502 592)">BLUE RIDGE</text>
+  <path d="M225 30 C250 154 269 280 286 401 C299 506 315 613 345 760" fill="none" stroke="#6194b0" stroke-width="25"/>
+  <text x="235" y="412" class="small blue" transform="rotate(82 235 412)">SHENANDOAH RIVER</text>
+  <path class="rail" d="M621 485 C765 508 935 535 1170 581"/>
+  <text x="798" y="491" class="small" transform="rotate(12 798 491)">MANASSAS GAP RAILROAD</text>
+  <path d="M1114 428 C1085 510 1098 612 1160 731" fill="none" stroke="#6194b0" stroke-width="22"/>
+  <text x="1092" y="685" class="small blue" transform="rotate(66 1092 685)">BULL RUN</text>
+
+  <text x="31" y="48" class="label" font-size="33">VALLEY TO MANASSAS • JULY 18–19, 1861</text>
+  <text x="31" y="80" class="small">Schematic operational route • not to scale</text>
+
+  <path d="M117 168 C172 231 210 304 267 362 C327 423 386 462 464 469 C518 474 563 470 609 483" fill="none" stroke="#9a3d32" stroke-width="14" stroke-linecap="round" marker-end="url(#redArrow)"/>
+  <path d="M640 489 C780 511 930 543 1064 575" fill="none" stroke="#9a3d32" stroke-width="14" stroke-linecap="round" marker-end="url(#redArrow)"/>
+
+  <g>
+    <circle cx="111" cy="160" r="11" fill="#292621"/><rect x="40" y="190" width="259" height="72" rx="10" class="box"/><text x="59" y="220" class="label">Winchester</text><text x="59" y="245" class="small">march begins about noon</text>
+    <circle cx="236" cy="329" r="10" fill="#292621"/><rect x="33" y="351" width="227" height="63" rx="10" class="box"/><text x="51" y="380" class="label">Millwood</text><text x="51" y="403" class="small">11 miles; brief halt</text>
+    <circle cx="397" cy="461" r="10" fill="#292621"/><rect x="306" y="501" width="236" height="63" rx="10" class="box"/><text x="325" y="530" class="label">Ashby's Gap</text><text x="325" y="553" class="small">night crossing</text>
+    <circle cx="480" cy="469" r="10" fill="#292621"/><rect x="417" y="374" width="251" height="68" rx="10" class="box"/><text x="436" y="404" class="label">Paris</text><text x="436" y="429" class="small">halt about 2 a.m.</text>
+    <circle cx="625" cy="485" r="11" fill="#292621"/><rect x="590" y="565" width="275" height="69" rx="10" class="box"/><text x="609" y="595" class="label">Piedmont</text><text x="609" y="619" class="small">board trains after 6-mile march</text>
+    <circle cx="1083" cy="580" r="11" fill="#292621"/><rect x="858" y="626" width="306" height="68" rx="10" class="box"/><text x="877" y="656" class="label">Manassas Junction</text><text x="877" y="680" class="small">Jackson arrives evening Jul. 19</text>
+  </g>
+  <text x="175" y="128" class="small red">about 20 miles in 14 hours</text>
+  <text x="707" y="565" class="small red">34 miles by rail</text>
+  <rect x="34" y="635" width="425" height="83" rx="10" class="box"/>
+  <line x1="58" y1="665" x2="131" y2="665" stroke="#9a3d32" stroke-width="12" marker-end="url(#redArrow)"/><text x="151" y="672" class="small">foot march</text>
+  <line x1="58" y1="698" x2="131" y2="698" stroke="#30302e" stroke-width="5" stroke-dasharray="16 9"/><text x="151" y="705" class="small">rail movement</text>
+  <path d="M1124 89 L1124 150" stroke="#292621" stroke-width="4"/><path d="M1124 72 L1111 99 L1137 99 Z" fill="#292621"/><text x="1115" y="63" class="label">N</text>
+</svg>

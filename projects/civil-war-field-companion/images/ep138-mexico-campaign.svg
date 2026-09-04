@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Jackson in Winfield Scott's campaign from Veracruz to Mexico City</title>
+  <desc id="desc">Schematic operational map tracing the United States advance from Veracruz through Cerro Gordo to the battles around Mexico City in 1847, with Jackson's documented engagements marked.</desc>
+  <defs>
+    <marker id="advance-arrow" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="18" refX="16" refY="8" orient="auto"><path d="M0,0 L17,8 L0,16 Z" fill="#315f8c"/></marker>
+    <pattern id="gulf" width="30" height="18" patternUnits="userSpaceOnUse"><path d="M2 12 Q8 5 14 12 T26 12" fill="none" stroke="#8fb7c8" stroke-width="2"/></pattern>
+  </defs>
+  <rect width="1200" height="760" fill="#f5f0e4"/>
+  <path d="M784 100 C866 143 916 201 949 269 C984 341 1030 362 1102 391 C1149 410 1175 444 1200 480 L1200 760 L763 760 C756 679 771 618 803 557 C830 505 837 456 817 399 C796 337 753 287 750 224 C748 174 762 135 784 100 Z" fill="url(#gulf)"/>
+  <text x="978" y="633" fill="#4f7e91" font-family="Georgia,serif" font-size="29" font-style="italic">Gulf of Mexico</text>
+  <path d="M52 666 C151 602 246 572 337 530 C432 486 526 429 600 359 C671 292 711 218 785 108 L51 108 Z" fill="#e8dfc8" stroke="#a6977d" stroke-width="4"/>
+  <path d="M64 612 C193 571 298 497 407 446 C538 385 642 294 733 146" fill="none" stroke="#b9c6a7" stroke-width="76" opacity="0.68"/>
+  <path d="M799 527 C741 482 689 434 630 389 C557 334 503 291 435 260 C361 226 293 223 221 232" fill="none" stroke="#315f8c" stroke-width="9" stroke-linecap="round" marker-end="url(#advance-arrow)"/>
+  <text x="505" y="323" fill="#234866" font-family="Arial,sans-serif" font-size="21" font-weight="700" transform="rotate(-31 505 323)">Scott's inland advance</text>
+
+  <g font-family="Arial,sans-serif">
+    <g transform="translate(800 531)"><circle r="15" fill="#315f8c"/><rect x="-32" y="22" width="324" height="67" rx="10" fill="#edf4f8" stroke="#315f8c"/><text x="-14" y="50" font-size="24" font-weight="700" fill="#234866">Veracruz • March 9–29</text><text x="-14" y="76" font-size="18" fill="#315f72">Jackson served with the siege batteries</text></g>
+    <g transform="translate(624 384)"><circle r="15" fill="#315f8c"/><rect x="20" y="-75" width="300" height="66" rx="10" fill="#edf4f8" stroke="#315f8c"/><text x="38" y="-47" font-size="24" font-weight="700" fill="#234866">Cerro Gordo • April 17–18</text><text x="38" y="-22" font-size="18" fill="#315f72">Jackson was present in the campaign</text></g>
+    <g transform="translate(224 232)"><circle r="17" fill="#9a3d32" stroke="#fff" stroke-width="4"/><rect x="-145" y="25" width="365" height="161" rx="12" fill="#fffaf0" stroke="#9a3d32" stroke-width="2"/><text x="-126" y="55" font-size="25" font-weight="700" fill="#702a23">Mexico City approaches</text><text x="-126" y="85" font-size="19" fill="#292929">Contreras &amp; Churubusco • Aug. 19–20</text><text x="-126" y="113" font-size="19" fill="#292929">Molino del Rey • Sept. 8</text><text x="-126" y="141" font-size="19" fill="#292929">Chapultepec • Sept. 13</text><text x="-126" y="169" font-size="19" fill="#292929">San Cosme / city capture • Sept. 13–14</text></g>
+  </g>
+
+  <path d="M359 207 C332 170 296 150 255 140" fill="none" stroke="#9a3d32" stroke-width="6" marker-end="url(#advance-arrow)"/>
+  <text x="373" y="169" fill="#702a23" font-family="Arial,sans-serif" font-size="18">Jackson's brevet major dated Sept. 13</text>
+  <text x="42" y="52" fill="#2c2925" font-family="Georgia,serif" font-size="34" font-weight="700">Jackson in the Mexico City campaign</text>
+  <text x="54" y="85" fill="#5c574f" font-family="Arial,sans-serif" font-size="20">1847 • operational route and battle positions schematic, not to scale</text>
+  <rect x="558" y="647" width="587" height="72" rx="12" fill="#fffaf0" stroke="#b8aa94"/>
+  <text x="582" y="676" fill="#4d4942" font-family="Arial,sans-serif" font-size="18">The episode names Veracruz, Cerro Gordo, Churubusco, Chapultepec,</text>
+  <text x="582" y="703" fill="#4d4942" font-family="Arial,sans-serif" font-size="18">and San Cosme. The official register also lists Contreras and Molino del Rey.</text>
+</svg>

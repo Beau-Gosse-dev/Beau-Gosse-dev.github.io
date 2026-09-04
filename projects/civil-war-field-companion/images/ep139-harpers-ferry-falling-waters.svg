@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Harpers Ferry and the Falling Waters operation, April to July 1861</title>
+  <desc id="desc">Schematic regional map showing Harpers Ferry, Winchester, Martinsburg, Falling Waters, Williamsport, the Potomac and Shenandoah rivers, the Baltimore and Ohio Railroad, Patterson's advance, and Jackson's withdrawal.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8f2e2"/><stop offset="1" stop-color="#e9ddc2"/></linearGradient>
+    <pattern id="ridge" width="34" height="26" patternUnits="userSpaceOnUse"><path d="M2 22 L12 8 L20 19 L27 10 L33 22" fill="none" stroke="#8a9b74" stroke-width="2" opacity=".45"/></pattern>
+    <marker id="blueArrow" markerWidth="18" markerHeight="18" refX="11" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12"><path d="M0 0 L12 6 L0 12 Z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerWidth="18" markerHeight="18" refX="11" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12"><path d="M0 0 L12 6 L0 12 Z" fill="#9a3d32"/></marker>
+    <style>.water{fill:none;stroke:#6194b0;stroke-width:25;stroke-linecap:round}.rail{fill:none;stroke:#30302e;stroke-width:5;stroke-dasharray:16 9}.road{fill:none;stroke:#9a7a50;stroke-width:7;stroke-linecap:round}.label{font:700 23px Georgia,serif;fill:#292621}.small{font:18px Arial,sans-serif;fill:#3f3a33}.tiny{font:15px Arial,sans-serif;fill:#554f46}.blue{fill:#315f8c}.red{fill:#9a3d32}.box{fill:#fffaf0;stroke:#8a7b66;stroke-width:2}</style>
+  </defs>
+  <rect width="1200" height="760" fill="url(#paper)"/>
+  <path d="M670 0 C620 120 640 225 600 345 C566 449 520 560 500 760 L760 760 C780 640 824 500 836 352 C846 224 824 106 870 0 Z" fill="url(#ridge)" opacity=".8"/>
+  <text x="695" y="650" class="small" fill="#647653" transform="rotate(-78 695 650)">BLUE RIDGE</text>
+  <path class="water" d="M-25 193 C190 155 360 178 525 155 C704 130 885 112 1230 165"/>
+  <path class="water" d="M596 590 C615 510 660 425 682 335 C702 253 684 188 648 145"/>
+  <text x="76" y="143" class="small blue">POTOMAC RIVER</text>
+  <text x="635" y="500" class="small blue" transform="rotate(-74 635 500)">SHENANDOAH RIVER</text>
+  <path class="rail" d="M20 201 C220 194 390 202 585 173 C740 150 910 160 1180 205"/>
+  <text x="813" y="144" class="small">BALTIMORE &amp; OHIO RAILROAD</text>
+  <path class="road" d="M390 103 C430 198 458 287 476 380 C490 464 522 550 563 667"/>
+  <text x="429" y="442" class="tiny" transform="rotate(77 429 442)">VALLEY TURNPIKE</text>
+
+  <text x="31" y="48" class="label" font-size="33">NORTHERN SHENANDOAH • 1861</text>
+  <text x="31" y="80" class="small">Schematic geography • routes, positions, and distances are approximate</text>
+
+  <g>
+    <circle cx="655" cy="162" r="11" fill="#292621"/><rect x="685" y="181" width="330" height="79" rx="10" class="box"/><text x="704" y="211" class="label">Harpers Ferry</text><text x="704" y="237" class="small">Jackson arrives Apr. 28</text><text x="704" y="257" class="tiny">Johnston withdraws Jun. 14</text>
+    <circle cx="563" cy="667" r="11" fill="#292621"/><rect x="585" y="632" width="270" height="69" rx="10" class="box"/><text x="603" y="661" class="label">Winchester</text><text x="603" y="685" class="small">Army concentration</text>
+    <circle cx="477" cy="380" r="11" fill="#292621"/><rect x="188" y="345" width="252" height="68" rx="10" class="box"/><text x="207" y="375" class="label">Martinsburg</text><text x="207" y="399" class="small">Jackson's forward camp</text>
+    <circle cx="437" cy="232" r="11" fill="#292621"/><rect x="116" y="216" width="286" height="69" rx="10" class="box"/><text x="135" y="246" class="label">Falling Waters</text><text x="135" y="270" class="small">skirmish, July 2</text>
+    <circle cx="389" cy="105" r="11" fill="#292621"/><rect x="81" y="88" width="270" height="70" rx="10" class="box"/><text x="101" y="118" class="label">Williamsport</text><text x="101" y="143" class="small">Patterson crosses Potomac</text>
+    <circle cx="494" cy="458" r="8" fill="#292621"/><text x="516" y="466" class="small">Big Spring</text>
+  </g>
+
+  <path d="M397 125 C415 162 427 190 434 221 C449 271 466 324 475 363" fill="none" stroke="#315f8c" stroke-width="13" stroke-linecap="round" marker-end="url(#blueArrow)"/>
+  <text x="193" y="310" class="small blue">Patterson's advance • July 2</text>
+  <path d="M469 365 C458 323 448 279 441 246" fill="none" stroke="#9a3d32" stroke-width="12" stroke-linecap="round" marker-end="url(#redArrow)"/>
+  <text x="504" y="305" class="small red">5th Virginia + 1 gun</text>
+  <path d="M447 252 C470 300 485 352 493 435" fill="none" stroke="#9a3d32" stroke-width="12" stroke-linecap="round" stroke-dasharray="18 10" marker-end="url(#redArrow)"/>
+  <text x="531" y="382" class="small red">Jackson retires after reconnaissance</text>
+  <path d="M650 186 C623 296 600 445 570 641" fill="none" stroke="#9a3d32" stroke-width="10" stroke-dasharray="18 10" marker-end="url(#redArrow)"/>
+  <text x="662" y="414" class="small red" transform="rotate(-78 662 414)">Johnston to Winchester • June 14</text>
+
+  <rect x="24" y="630" width="441" height="102" rx="10" class="box"/>
+  <line x1="47" y1="659" x2="117" y2="659" stroke="#315f8c" stroke-width="11" marker-end="url(#blueArrow)"/><text x="138" y="666" class="small">United States advance</text>
+  <line x1="47" y1="697" x2="117" y2="697" stroke="#9a3d32" stroke-width="11" stroke-dasharray="18 10" marker-end="url(#redArrow)"/><text x="138" y="704" class="small">Confederate withdrawal</text>
+  <path d="M1120 89 L1120 150" stroke="#292621" stroke-width="4"/><path d="M1120 72 L1107 99 L1133 99 Z" fill="#292621"/><text x="1111" y="63" class="label">N</text>
+</svg>
