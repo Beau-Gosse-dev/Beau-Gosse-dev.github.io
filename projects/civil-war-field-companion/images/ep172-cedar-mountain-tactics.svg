@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Battle of Cedar Mountain tactical sequence</title>
+  <desc id="desc">Two-panel generalized tactical schematic showing Banks's attacks shortly before 6 p.m. and the Confederate counterattack by A. P. Hill's arriving brigades.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f7f2e6"/><stop offset="1" stop-color="#e8ddc7"/></linearGradient>
+    <pattern id="woods" width="34" height="34" patternUnits="userSpaceOnUse"><circle cx="8" cy="8" r="5" fill="#75805a" opacity=".32"/><circle cx="25" cy="19" r="7" fill="#65714d" opacity=".3"/></pattern>
+    <pattern id="field" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M0 20L20 0M-5 5L5-5M15 25L25 15" stroke="#b89c5e" stroke-width="2" opacity=".27"/></pattern>
+    <marker id="blueArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0l12 6-12 6z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0l12 6-12 6z" fill="#98382f"/></marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-opacity=".18"/></filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#paper)"/>
+  <text x="64" y="60" font-family="Georgia,serif" font-size="38" font-weight="700" fill="#2c2a26">Battle of Cedar Mountain: attack and counterattack</text>
+  <text x="64" y="96" font-family="Arial,sans-serif" font-size="20" fill="#595448">August 9, 1862 · generalized schematic · not to scale</text>
+
+  <g transform="translate(45 132)">
+    <rect width="735" height="760" rx="14" fill="#faf7ee" stroke="#b6aa91" stroke-width="2" filter="url(#shadow)"/>
+    <text x="26" y="42" font-family="Georgia,serif" font-size="26" font-weight="700" fill="#2c2a26">1 · Federal attacks, about 5:30–6:00 p.m.</text>
+    <rect x="25" y="80" width="685" height="630" fill="#ece4d3"/>
+    <path d="M25 102h210v290H25zM25 515h225v195H25z" fill="url(#woods)"/>
+    <path d="M446 80h264v220H446zM514 525h196v185H514z" fill="url(#woods)"/>
+    <path d="M238 104h204v288H238z" fill="url(#field)"/>
+    <path d="M237 468h252v242H237z" fill="url(#field)"/>
+    <path d="M24 521 C185 472 382 428 710 244" fill="none" stroke="#79694f" stroke-width="13"/>
+    <text x="385" y="383" transform="rotate(-28 385 383)" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#4e4437">Culpeper–Orange Road</text>
+    <path d="M25 675 C205 642 397 652 710 610" fill="none" stroke="#6f99b0" stroke-width="12" opacity=".8"/>
+    <text x="520" y="648" font-family="Arial,sans-serif" font-size="16" fill="#375d72">Cedar Run</text>
+    <path d="M584 710q59-127 126-179v179z" fill="#65714a" opacity=".82"/>
+    <text x="589" y="694" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#f8f4e9">Cedar Mountain</text>
+
+    <g font-family="Arial,sans-serif" font-size="15" font-weight="700" text-anchor="middle">
+      <rect x="121" y="167" width="116" height="34" rx="6" fill="#98382f"/><text x="179" y="189" fill="white">Ronald</text>
+      <rect x="205" y="261" width="116" height="34" rx="6" fill="#98382f"/><text x="263" y="283" fill="white">Garnett</text>
+      <rect x="248" y="374" width="118" height="34" rx="6" fill="#98382f"/><text x="307" y="396" fill="white">Taliaferro</text>
+      <rect x="296" y="442" width="110" height="34" rx="6" fill="#98382f"/><text x="351" y="464" fill="white">Early</text>
+      <rect x="395" y="500" width="110" height="34" rx="6" fill="#98382f"/><text x="450" y="522" fill="white">Thomas</text>
+      <rect x="538" y="549" width="135" height="34" rx="6" fill="#98382f"/><text x="605" y="571" fill="white">Trimble · Forno</text>
+
+      <rect x="507" y="151" width="116" height="34" rx="6" fill="#315f8c"/><text x="565" y="173" fill="white">Gordon</text>
+      <rect x="494" y="256" width="125" height="34" rx="6" fill="#315f8c"/><text x="557" y="278" fill="white">Crawford</text>
+      <rect x="509" y="383" width="110" height="34" rx="6" fill="#315f8c"/><text x="564" y="405" fill="white">Geary</text>
+      <rect x="531" y="463" width="110" height="34" rx="6" fill="#315f8c"/><text x="586" y="485" fill="white">Prince</text>
+      <rect x="575" y="516" width="110" height="30" rx="6" fill="#315f8c" opacity=".7"/><text x="630" y="537" fill="white">Greene</text>
+    </g>
+    <path d="M490 273C428 270 363 272 322 279" fill="none" stroke="#315f8c" stroke-width="10" marker-end="url(#blueArrow)"/>
+    <path d="M515 401C454 399 403 399 366 399" fill="none" stroke="#315f8c" stroke-width="9" marker-end="url(#blueArrow)"/>
+    <path d="M538 481C487 472 449 466 407 459" fill="none" stroke="#315f8c" stroke-width="9" marker-end="url(#blueArrow)"/>
+    <text x="84" y="737" font-family="Arial,sans-serif" font-size="15" fill="#6b6457">North is up. Bars and arrows show approximate relationships, not exact frontages or routes.</text>
+  </g>
+
+  <g transform="translate(820 132)">
+    <rect width="735" height="760" rx="14" fill="#faf7ee" stroke="#b6aa91" stroke-width="2" filter="url(#shadow)"/>
+    <text x="26" y="42" font-family="Georgia,serif" font-size="26" font-weight="700" fill="#2c2a26">2 · Hill arrives; Confederates counterattack</text>
+    <rect x="25" y="80" width="685" height="630" fill="#ece4d3"/>
+    <path d="M25 102h210v290H25zM25 515h225v195H25z" fill="url(#woods)"/>
+    <path d="M446 80h264v220H446zM514 525h196v185H514z" fill="url(#woods)"/>
+    <path d="M238 104h204v288H238z" fill="url(#field)"/>
+    <path d="M237 468h252v242H237z" fill="url(#field)"/>
+    <path d="M24 521 C185 472 382 428 710 244" fill="none" stroke="#79694f" stroke-width="13"/>
+    <text x="385" y="383" transform="rotate(-28 385 383)" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#4e4437">Culpeper–Orange Road</text>
+    <path d="M25 675 C205 642 397 652 710 610" fill="none" stroke="#6f99b0" stroke-width="12" opacity=".8"/>
+    <text x="520" y="648" font-family="Arial,sans-serif" font-size="16" fill="#375d72">Cedar Run</text>
+    <path d="M584 710q59-127 126-179v179z" fill="#65714a" opacity=".82"/>
+    <text x="589" y="694" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#f8f4e9">Cedar Mountain</text>
+
+    <g font-family="Arial,sans-serif" font-size="15" font-weight="700" text-anchor="middle">
+      <rect x="183" y="200" width="112" height="34" rx="6" fill="#98382f"/><text x="239" y="222" fill="white">Pender</text>
+      <rect x="215" y="251" width="112" height="34" rx="6" fill="#98382f"/><text x="271" y="273" fill="white">Archer</text>
+      <rect x="251" y="305" width="112" height="34" rx="6" fill="#98382f"/><text x="307" y="327" fill="white">Branch</text>
+      <rect x="271" y="392" width="112" height="34" rx="6" fill="#98382f"/><text x="327" y="414" fill="white">Taliaferro</text>
+      <rect x="318" y="447" width="104" height="34" rx="6" fill="#98382f"/><text x="370" y="469" fill="white">Early</text>
+      <rect x="413" y="500" width="104" height="34" rx="6" fill="#98382f"/><text x="465" y="522" fill="white">Thomas</text>
+      <rect x="540" y="548" width="134" height="34" rx="6" fill="#98382f"/><text x="607" y="570" fill="white">Trimble · Forno</text>
+
+      <rect x="513" y="174" width="110" height="34" rx="6" fill="#315f8c" opacity=".72"/><text x="568" y="196" fill="white">Gordon</text>
+      <rect x="527" y="262" width="125" height="34" rx="6" fill="#315f8c" opacity=".72"/><text x="590" y="284" fill="white">Crawford</text>
+      <rect x="530" y="392" width="110" height="34" rx="6" fill="#315f8c" opacity=".72"/><text x="585" y="414" fill="white">Geary</text>
+      <rect x="550" y="468" width="110" height="34" rx="6" fill="#315f8c" opacity=".72"/><text x="605" y="490" fill="white">Prince</text>
+    </g>
+    <path d="M295 217C376 209 453 198 510 192" fill="none" stroke="#98382f" stroke-width="9" marker-end="url(#redArrow)"/>
+    <path d="M327 268C410 264 470 272 524 277" fill="none" stroke="#98382f" stroke-width="9" marker-end="url(#redArrow)"/>
+    <path d="M363 322C429 319 486 302 530 288" fill="none" stroke="#98382f" stroke-width="10" marker-end="url(#redArrow)"/>
+    <path d="M421 464C474 447 510 426 546 412" fill="none" stroke="#98382f" stroke-width="8" marker-end="url(#redArrow)"/>
+    <path d="M517 517C550 505 567 499 583 496" fill="none" stroke="#98382f" stroke-width="8" marker-end="url(#redArrow)"/>
+    <text x="84" y="737" font-family="Arial,sans-serif" font-size="15" fill="#6b6457">Crawford's attack spent itself before Branch, Archer, and Pender struck the Federal right.</text>
+  </g>
+
+  <g transform="translate(65 920)" font-family="Arial,sans-serif" font-size="16">
+    <rect x="0" y="-18" width="34" height="18" rx="3" fill="#315f8c"/><text x="45" y="-3" fill="#38352f">United States</text>
+    <rect x="190" y="-18" width="34" height="18" rx="3" fill="#98382f"/><text x="235" y="-3" fill="#38352f">Confederacy</text>
+    <rect x="380" y="-18" width="34" height="18" fill="url(#field)"/><text x="425" y="-3" fill="#38352f">cultivated fields</text>
+    <rect x="590" y="-18" width="34" height="18" fill="url(#woods)"/><text x="635" y="-3" fill="#38352f">wooded ground</text>
+    <text x="900" y="-3" fill="#6a6358">Sources: NPS, Official Records, John Pope’s 1866 map, and episode transcript.</text>
+  </g>
+</svg>

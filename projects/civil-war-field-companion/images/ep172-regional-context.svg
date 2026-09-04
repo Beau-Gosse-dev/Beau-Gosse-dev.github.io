@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Cedar Mountain in the Northern Virginia Campaign</title>
+  <desc id="desc">Generalized regional map showing Richmond, Gordonsville, Orange Court House, the Rapidan River, Cedar Mountain, Culpeper, the Rappahannock River, and Jackson's northward advance and withdrawal.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f5f0e3"/><stop offset="1" stop-color="#e9dfc9"/></linearGradient>
+    <pattern id="grain" width="90" height="90" patternUnits="userSpaceOnUse"><path d="M4 18h30M58 52h22M17 78h45" stroke="#7e725d" stroke-opacity=".07" stroke-width="2"/></pattern>
+    <marker id="redArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0l12 6-12 6z" fill="#98382f"/></marker>
+    <marker id="blueArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0l12 6-12 6z" fill="#315f8c"/></marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-opacity=".18"/></filter>
+  </defs>
+  <rect width="1400" height="900" fill="url(#paper)"/>
+  <rect width="1400" height="900" fill="url(#grain)"/>
+  <text x="70" y="72" font-family="Georgia,serif" font-size="38" font-weight="700" fill="#2c2a26">Cedar Mountain in the Northern Virginia Campaign</text>
+  <text x="70" y="108" font-family="Arial,sans-serif" font-size="20" fill="#595448">August 7–11, 1862 · generalized schematic · not to scale</text>
+
+  <path d="M108 245 C330 210 532 226 748 196 S1110 165 1290 185" fill="none" stroke="#6f99b0" stroke-width="20" stroke-linecap="round" opacity=".8"/>
+  <path d="M124 596 C310 574 465 608 645 570 S1005 522 1288 558" fill="none" stroke="#6f99b0" stroke-width="18" stroke-linecap="round" opacity=".85"/>
+  <text x="1065" y="146" font-family="Arial,sans-serif" font-size="20" fill="#375d72">Rappahannock River</text>
+  <text x="1040" y="602" font-family="Arial,sans-serif" font-size="20" fill="#375d72">Rapidan River</text>
+
+  <path d="M340 757 Q520 670 681 526 Q820 410 947 287" fill="none" stroke="#816d51" stroke-width="8" stroke-dasharray="15 10"/>
+  <text x="430" y="706" transform="rotate(-27 430 706)" font-family="Arial,sans-serif" font-size="18" fill="#5d513f">Orange &amp; Alexandria Railroad corridor</text>
+
+  <path d="M367 748 C515 664 640 571 735 494 S856 380 933 304" fill="none" stroke="#98382f" stroke-width="10" marker-end="url(#redArrow)"/>
+  <path d="M928 319 C820 409 729 505 627 584" fill="none" stroke="#98382f" stroke-width="8" stroke-dasharray="16 10" marker-end="url(#redArrow)"/>
+  <text x="496" y="622" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#7b2d27">Jackson advances, August 7–9</text>
+  <text x="735" y="466" font-family="Arial,sans-serif" font-size="18" fill="#7b2d27">withdraws south, August 11</text>
+
+  <path d="M1115 228 C1055 255 995 285 948 315" fill="none" stroke="#315f8c" stroke-width="9" marker-end="url(#blueArrow)"/>
+  <text x="1062" y="275" font-family="Arial,sans-serif" font-size="18" fill="#294f77">Banks moves south</text>
+
+  <g filter="url(#shadow)">
+    <path d="M865 394 Q929 308 997 395 Q953 357 915 401Z" fill="#65714a" stroke="#465136" stroke-width="3"/>
+    <path d="M884 383 Q929 327 975 386" fill="none" stroke="#899363" stroke-width="8"/>
+  </g>
+  <text x="1004" y="395" font-family="Georgia,serif" font-size="24" font-weight="700" fill="#34322d">Cedar Mountain</text>
+  <text x="1004" y="422" font-family="Arial,sans-serif" font-size="18" fill="#5c5547">battle, August 9</text>
+
+  <g font-family="Arial,sans-serif" fill="#262521">
+    <circle cx="1112" cy="228" r="10" fill="#315f8c"/><text x="1129" y="235" font-size="23" font-weight="700">Culpeper Court House</text>
+    <circle cx="810" cy="495" r="9" fill="#685c49"/><text x="827" y="502" font-size="21" font-weight="700">Rapidan crossings</text>
+    <circle cx="610" cy="623" r="9" fill="#685c49"/><text x="626" y="629" font-size="21" font-weight="700">Orange Court House</text>
+    <circle cx="366" cy="748" r="10" fill="#98382f"/><text x="383" y="755" font-size="23" font-weight="700">Gordonsville</text>
+    <circle cx="198" cy="785" r="9" fill="#685c49"/><text x="215" y="792" font-size="21" font-weight="700">Richmond</text>
+  </g>
+
+  <g transform="translate(72 150)" font-family="Arial,sans-serif">
+    <rect width="354" height="182" rx="12" fill="#fffdf7" stroke="#b7aa91" stroke-width="2" filter="url(#shadow)"/>
+    <text x="22" y="34" font-size="20" font-weight="700" fill="#2f2d29">Operational situation</text>
+    <circle cx="30" cy="67" r="7" fill="#98382f"/><text x="48" y="74" font-size="18" fill="#403c34">Jackson: three divisions moving north</text>
+    <circle cx="30" cy="101" r="7" fill="#315f8c"/><text x="48" y="108" font-size="18" fill="#403c34">Banks: II Corps moving south</text>
+    <path d="M23 137h28" stroke="#98382f" stroke-width="7" marker-end="url(#redArrow)"/><text x="61" y="144" font-size="18" fill="#403c34">advance</text>
+    <path d="M186 137h31" stroke="#98382f" stroke-width="6" stroke-dasharray="8 6"/><text x="230" y="144" font-size="18" fill="#403c34">withdrawal</text>
+    <text x="22" y="171" font-size="15" fill="#6b6457">Routes, locations, rivers, and distances are generalized.</text>
+  </g>
+  <text x="70" y="861" font-family="Arial,sans-serif" font-size="16" fill="#6a6358">Sources: National Park Service, U.S. Army Center of Military History, John Pope’s 1866 maps, and episode transcript.</text>
+</svg>
