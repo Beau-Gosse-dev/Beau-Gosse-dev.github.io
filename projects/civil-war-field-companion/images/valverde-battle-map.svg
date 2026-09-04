@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Battle of Valverde, February 21, 1862</title>
+  <desc id="desc">Schematic map showing Fort Craig south of Valverde Ford, the Rio Grande, Union crossings and positions, Confederate positions in the old riverbed, the failed lancer charge, and the final Confederate attack on McRae's battery.</desc>
+  <defs>
+    <marker id="blueArrow" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto"><path d="M0,0 L14,7 L0,14 z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto"><path d="M0,0 L14,7 L0,14 z" fill="#9a3d32"/></marker>
+    <style>
+      .label{font:600 18px Georgia,serif;fill:#252b27}.small{font:15px Arial,sans-serif;fill:#38413c}.tiny{font:13px Arial,sans-serif;fill:#38413c}.water{fill:none;stroke:#7da4bd;stroke-width:54;stroke-linecap:round}.bank{fill:none;stroke:#d2c39e;stroke-width:78;stroke-linecap:round;opacity:.5}.arroyo{fill:none;stroke:#b49c70;stroke-width:16;stroke-dasharray:8 8}.union{fill:#315f8c}.confed{fill:#9a3d32}.unit{rx:5;stroke:#fff;stroke-width:2}.routeU{fill:none;stroke:#315f8c;stroke-width:8;marker-end:url(#blueArrow)}.routeC{fill:none;stroke:#9a3d32;stroke-width:8;marker-end:url(#redArrow)}
+    </style>
+  </defs>
+  <rect width="1200" height="800" fill="#f4eedf"/>
+  <path d="M477 -30 C420 115 520 205 452 330 C402 424 490 522 428 840" class="bank"/>
+  <path d="M477 -30 C420 115 520 205 452 330 C402 424 490 522 428 840" class="water"/>
+  <path d="M610 235 C770 190 930 220 1160 160" class="arroyo"/>
+  <text x="795" y="186" class="small">old Rio Grande channel / sand ridges</text>
+  <path d="M300 160 C365 205 407 235 460 264" class="routeU"/>
+  <path d="M315 420 C380 400 410 375 470 350" class="routeU"/>
+  <path d="M870 280 C768 296 690 318 586 343" class="routeC"/>
+  <path d="M898 420 C790 420 704 438 590 478" class="routeC"/>
+  <path d="M820 536 C725 525 650 532 570 548" class="routeC"/>
+  <g>
+    <rect x="235" y="90" width="202" height="50" class="unit union"/><text x="336" y="121" text-anchor="middle" fill="#fff" font-family="Arial" font-size="16" font-weight="700">Roberts: U.S. cavalry</text>
+    <rect x="170" y="344" width="244" height="50" class="unit union"/><text x="292" y="375" text-anchor="middle" fill="#fff" font-family="Arial" font-size="16" font-weight="700">U.S. infantry crosses ford</text>
+    <rect x="490" y="318" width="210" height="50" class="unit union"/><text x="595" y="349" text-anchor="middle" fill="#fff" font-family="Arial" font-size="16" font-weight="700">Selden / Colorado</text>
+    <rect x="486" y="455" width="214" height="50" class="unit union"/><text x="593" y="486" text-anchor="middle" fill="#fff" font-family="Arial" font-size="16" font-weight="700">McRae's battery</text>
+    <rect x="320" y="510" width="210" height="50" class="unit union"/><text x="425" y="541" text-anchor="middle" fill="#fff" font-family="Arial" font-size="16" font-weight="700">Carson / New Mexico</text>
+    <rect x="888" y="226" width="190" height="50" class="unit confed"/><text x="983" y="257" text-anchor="middle" fill="#fff" font-family="Arial" font-size="16" font-weight="700">Scurry / 4th Texas</text>
+    <rect x="916" y="394" width="194" height="50" class="unit confed"/><text x="1013" y="425" text-anchor="middle" fill="#fff" font-family="Arial" font-size="16" font-weight="700">5th Texas lancers</text>
+    <rect x="848" y="524" width="250" height="50" class="unit confed"/><text x="973" y="555" text-anchor="middle" fill="#fff" font-family="Arial" font-size="16" font-weight="700">Lockridge: 750 Texans</text>
+  </g>
+  <circle cx="471" cy="335" r="13" fill="#d9b84f" stroke="#5e4e19" stroke-width="3"/><text x="490" y="326" class="label">Valverde Ford</text>
+  <path d="M335 662 h122 v76 h-122 z" fill="#a58b62" stroke="#4b4133" stroke-width="4"/><path d="M349 678 h94 v44 h-94 z" fill="#f4eedf" stroke="#4b4133" stroke-width="3"/><text x="396" y="765" text-anchor="middle" class="label">Fort Craig</text><text x="396" y="786" text-anchor="middle" class="tiny">about 6 miles south</text>
+  <text x="84" y="48" class="label">WEST BANK</text><text x="880" y="48" class="label">EAST BANK</text><text x="434" y="90" transform="rotate(-76 434 90)" class="small">Rio Grande</text>
+  <text x="765" y="385" class="small" fill="#9a3d32">failed lancer charge</text>
+  <text x="704" y="510" class="small" fill="#9a3d32">final attack captured six guns</text>
+  <text x="52" y="706" class="small">Blue: United States</text><text x="52" y="733" class="small">Red: Confederacy</text><text x="52" y="760" class="tiny">Positions are schematic, not to scale.</text>
+  <path d="M1110 102 v-54" stroke="#252b27" stroke-width="4"/><path d="M1110 36 l-11 22 h22 z" fill="#252b27"/><text x="1110" y="126" text-anchor="middle" class="label">N</text>
+</svg>
