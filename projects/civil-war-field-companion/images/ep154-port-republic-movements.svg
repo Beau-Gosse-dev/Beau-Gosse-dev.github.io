@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Battle of Port Republic troop movements, June 9, 1862</title>
+  <desc id="desc">Schematic tactical map showing the Port Republic river crossings, Tyler's Federal line along Lewiston Lane, artillery at the Coaling, Winder's failed attack, Taylor's attacks on the Coaling, Ewell's arriving reinforcements, and the Federal retreat.</desc>
+  <defs><marker id="b" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto"><path d="M0 0 L11 5.5 L0 11 Z" fill="#315f8c"/></marker><marker id="r" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto"><path d="M0 0 L11 5.5 L0 11 Z" fill="#9a3d32"/></marker><pattern id="wood" width="38" height="32" patternUnits="userSpaceOnUse"><circle cx="9" cy="11" r="7" fill="#7f9566"/><circle cx="29" cy="21" r="9" fill="#6e8757"/></pattern></defs>
+  <rect width="1200" height="800" fill="#f2eadb"/>
+  <path d="M892 0 C825 118 780 232 778 340 C775 445 817 538 900 800 L1200 800 L1200 0 Z" fill="url(#wood)" opacity="0.8"/>
+  <path d="M0 650 C180 615 313 629 420 700 L420 800 L0 800 Z" fill="url(#wood)" opacity="0.63"/>
+  <path d="M0 510 C190 487 329 443 470 371" fill="none" stroke="#5b96bb" stroke-width="30"/>
+  <path d="M386 800 C410 684 427 543 470 371" fill="none" stroke="#5b96bb" stroke-width="30"/>
+  <path d="M470 371 C643 316 770 249 1200 165" fill="none" stroke="#5b96bb" stroke-width="34"/>
+  <text x="85" y="472" font-family="Arial,sans-serif" font-size="18" fill="#315f8c">North River</text><text x="376" y="704" font-family="Arial,sans-serif" font-size="18" fill="#315f8c" transform="rotate(-79 376 704)">South River</text><text x="923" y="188" font-family="Arial,sans-serif" font-size="18" fill="#315f8c" transform="rotate(-12 923 188)">South Fork Shenandoah</text>
+  <g transform="translate(463 388)"><rect x="-70" y="-36" width="140" height="72" rx="10" fill="#dfd0ae" stroke="#765f3b"/><text x="0" y="-6" text-anchor="middle" font-family="Georgia,serif" font-weight="bold" font-size="19">Port Republic</text><text x="0" y="18" text-anchor="middle" font-family="Arial,sans-serif" font-size="15">street bottleneck</text></g>
+  <g transform="translate(464 368)"><rect x="-32" y="-9" width="64" height="18" fill="#6a4a2e"/><path d="M-28 -9 L-28 9 M-9 -9 L-9 9 M9 -9 L9 9 M28 -9 L28 9" stroke="#f2eadb" stroke-width="3"/></g>
+  <text x="342" y="340" font-family="Arial,sans-serif" font-size="15" fill="#493a29">North River bridge</text>
+  <g transform="translate(423 503)"><rect x="-25" y="-8" width="50" height="16" fill="#8b6a43"/><text x="34" y="5" font-family="Arial,sans-serif" font-size="15">makeshift South River crossing</text></g>
+  <path d="M505 605 C645 548 764 480 940 360" fill="none" stroke="#c1a477" stroke-width="16"/>
+  <text x="714" y="485" font-family="Arial,sans-serif" font-size="18" fill="#604e36" transform="rotate(-32 714 485)">Lewiston Lane</text>
+  <ellipse cx="903" cy="394" rx="130" ry="82" fill="#b49466" opacity="0.55" transform="rotate(-20 903 394)"/>
+  <text x="888" y="375" text-anchor="middle" font-family="Georgia,serif" font-size="24" font-weight="bold" fill="#4c3e2a">The Coaling</text><text x="888" y="399" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#4c3e2a">commanding rise</text>
+  <path d="M565 573 C675 520 763 466 842 411" fill="none" stroke="#315f8c" stroke-width="17"/>
+  <path d="M842 411 C870 396 900 382 930 370" fill="none" stroke="#315f8c" stroke-width="17"/>
+  < x="615" y="524" width="194" height="38" rx="7" fill="#315f8c"/><text x="712" y="549" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="white" font-weight="bold">Tyler’s infantry line</text>
+  <g transform="translate(928 346)"><circle r="26" fill="#d4a744"/><path d="M-17 0 L17 0 M0 -17 L0 17 M-12 -12 L12 12 M-12 12 L12 -12" stroke="#42351f" stroke-width="3"/></g><text x="963" y="342" font-family="Arial,sans-serif" font-size="16" fill="#315f8c">Federal guns</text><text x="963" y="363" font-family="Arial,sans-serif" font-size="15" fill="#315f8c">on the Coaling</text>
+  <path d="M400 595 C514 570 576 558 630 540" fill="none" stroke="#9a3d32" stroke-width="13" marker-end="url(#r)"/><text x="350" y="623" font-family="Arial,sans-serif" font-size="17" fill="#9a3d32" font-weight="bold">Winder: repulsed</text>
+  <path d="M468 624 C586 660 722 626 821 500 C846 467 859 436 875 410" fill="none" stroke="#9a3d32" stroke-width="14" marker-end="url(#r)"/><text x="590" y="688" font-family="Arial,sans-serif" font-size="17" fill="#9a3d32" font-weight="bold">Taylor through woods; repeated attacks</text>
+  <path d="M485 428 C610 398 719 384 824 408" fill="none" stroke="#9a3d32" stroke-width="12" marker-end="url(#r)"/><text x="567" y="372" font-family="Arial,sans-serif" font-size="17" fill="#9a3d32" font-weight="bold">Ewell’s reinforcements arrive</text>
+  <path d="M850 485 C965 517 1040 573 1118 675" fill="none" stroke="#315f8c" stroke-width="11" stroke-dasharray="15 10" marker-end="url(#b)"/><text x="963" y="550" font-family="Arial,sans-serif" font-size="17" fill="#315f8c" font-weight="bold">Federal retreat</text>
+  <path d="M236 350 C311 336 372 333 420 345" fill="none" stroke="#315f8c" stroke-width="10" stroke-dasharray="13 9" marker-end="url(#b)"/><text x="70" y="306" font-family="Arial,sans-serif" font-size="17" fill="#315f8c" font-weight="bold">Frémont arrives too late</text><text x="70" y="329" font-family="Arial,sans-serif" font-size="15" fill="#315f8c">north of the burned bridge</text>
+  <path d="M413 344 L476 389" stroke="#b3473c" stroke-width="8"/><path d="M425 337 L410 357 M438 346 L423 367 M451 356 L436 377" stroke="#f5c04a" stroke-width="5"/><text x="310" y="393" font-family="Arial,sans-serif" font-size="15" fill="#9a3d32">bridge burned by rear guard</text>
+  <g transform="translate(54 34)"><rect width="527" height="110" rx="12" fill="#fffdf7" stroke="#c9b995"/><text x="22" y="36" font-family="Georgia,serif" font-weight="bold" font-size="27">Port Republic, June 9</text><text x="22" y="66" font-family="Arial,sans-serif" font-size="18">Jackson attacked before his army was massed. The Coaling’s</text><text x="22" y="90" font-family="Arial,sans-serif" font-size="18">fall forced Tyler’s entire line to withdraw.</text></g>
+  <text x="630" y="762" font-family="Arial,sans-serif" font-size="17" font-style="italic">Terrain, unit blocks, routes, and bridge spacing are schematic; not to scale. North is approximately up.</text>
+</svg>

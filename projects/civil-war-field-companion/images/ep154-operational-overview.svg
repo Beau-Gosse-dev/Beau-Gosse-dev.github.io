@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Cross Keys and Port Republic operational overview, June 8 and 9, 1862</title>
+  <desc id="desc">Schematic map showing Fremont approaching Cross Keys from Harrisonburg, Shields's detached brigades approaching Port Republic through the Page Valley, Jackson holding the river crossings, Ewell fighting at Cross Keys on June 8, and Confederate forces concentrating against Tyler and Carroll at Port Republic on June 9.</desc>
+  <defs>
+    <marker id="blueArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#9a3d32"/></marker>
+    <filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.22"/></filter>
+  </defs>
+  <rect width="1200" height="760" fill="#f4efe3"/>
+  <path d="M885 35 C830 120 858 198 814 275 C772 349 787 441 745 525 C720 575 715 646 738 730" fill="none" stroke="#8c806a" stroke-width="85" opacity="0.18"/>
+  <path d="M955 20 C910 125 940 230 900 330 C860 430 874 565 835 742" fill="none" stroke="#8c806a" stroke-width="60" opacity="0.12"/>
+  <text x="940" y="82" fill="#675f51" font-family="Georgia,serif" font-size="23" transform="rotate(72 940 82)">Massanutten Mountain</text>
+  <path d="M520 724 C540 646 570 590 622 530 C680 464 731 430 770 377" fill="none" stroke="#5b96bb" stroke-width="22"/>
+  <path d="M1160 548 C1048 518 946 482 861 438 C824 419 794 394 770 377" fill="none" stroke="#5b96bb" stroke-width="22"/>
+  <path d="M770 377 C720 319 680 273 647 217" fill="none" stroke="#5b96bb" stroke-width="24"/>
+  <text x="975" y="486" fill="#315f8c" font-family="Arial,sans-serif" font-size="20">South Fork Shenandoah</text>
+  <text x="520" y="665" fill="#315f8c" font-family="Arial,sans-serif" font-size="18" transform="rotate(-57 520 665)">North River</text>
+  <text x="842" y="452" fill="#315f8c" font-family="Arial,sans-serif" font-size="18" transform="rotate(18 842 452)">South River</text>
+  <path d="M145 690 C268 620 350 561 452 500 C565 432 665 403 770 377" fill="none" stroke="#c0aa83" stroke-width="13" stroke-linecap="round"/>
+  <path d="M640 74 C626 155 612 242 595 323 C578 402 527 455 452 500" fill="none" stroke="#c0aa83" stroke-width="13" stroke-linecap="round"/>
+  <path d="M1115 168 C1050 223 980 270 910 315 C855 350 813 370 770 377" fill="none" stroke="#c0aa83" stroke-width="13" stroke-linecap="round"/>
+  <text x="165" y="665" font-family="Arial,sans-serif" font-size="18" fill="#5f5038">Harrisonburg road</text>
+  <text x="632" y="110" font-family="Arial,sans-serif" font-size="18" fill="#5f5038">Keezletown road</text>
+  <text x="989" y="245" font-family="Arial,sans-serif" font-size="18" fill="#5f5038">Page Valley road</text>
+  <g filter="url(#shadow)"><rect x="360" y="430" width="185" height="72" rx="12" fill="#fffdf7"/><text x="452" y="459" text-anchor="middle" font-family="Georgia,serif" font-weight="bold" font-size="25">Cross Keys</text><text x="452" y="484" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">battle, June 8</text></g>
+  <g filter="url(#shadow)"><rect x="682" y="318" width="192" height="72" rx="12" fill="#fffdf7"/><text x="778" y="347" text-anchor="middle" font-family="Georgia,serif" font-weight="bold" font-size="24">Port Republic</text><text x="778" y="373" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">battle, June 9</text></g>
+  <circle cx="452" cy="500" r="7" fill="#2f2b25"/><circle cx="770" cy="377" r="7" fill="#2f2b25"/>
+  <path d="M155 650 C270 593 345 548 421 510" fill="none" stroke="#315f8c" stroke-width="13" stroke-linecap="round" marker-end="url(#blueArrow)"/>
+  <text x="170" y="610" font-family="Arial,sans-serif" font-weight="bold" font-size="22" fill="#315f8c">Frémont</text><text x="170" y="636" font-family="Arial,sans-serif" font-size="17" fill="#315f8c">toward Cross Keys, June 8</text>
+  <path d="M1085 184 C1018 242 934 298 828 350" fill="none" stroke="#315f8c" stroke-width="13" stroke-linecap="round" marker-end="url(#blueArrow)"/>
+  <text x="920" y="160" font-family="Arial,sans-serif" font-weight="bold" font-size="22" fill="#315f8c">Shields’s division</text><text x="920" y="184" font-family="Arial,sans-serif" font-size="17" fill="#315f8c">Tyler and Carroll in advance</text>
+  <path d="M500 480 C575 430 650 402 733 384" fill="none" stroke="#9a3d32" stroke-width="13" stroke-linecap="round" marker-end="url(#redArrow)"/>
+  <text x="520" y="430" font-family="Arial,sans-serif" font-weight="bold" font-size="22" fill="#9a3d32">Ewell, night of June 8–9</text><text x="520" y="454" font-family="Arial,sans-serif" font-size="17" fill="#9a3d32">most of division to Jackson</text>
+  <path d="M430 514 C375 520 327 523 284 523" fill="none" stroke="#9a3d32" stroke-width="10" stroke-dasharray="14 10" marker-end="url(#redArrow)"/>
+  <text x="130" y="496" font-family="Arial,sans-serif" font-weight="bold" font-size="19" fill="#9a3d32">Trimble and Patton</text><text x="130" y="520" font-family="Arial,sans-serif" font-size="16" fill="#9a3d32">rear guard, then withdraw</text>
+  <g transform="translate(746 382)"><rect x="-28" y="-10" width="56" height="20" fill="#6a4a2e"/><path d="M-24 -10 L-24 10 M-8 -10 L-8 10 M8 -10 L8 10 M24 -10 L24 10" stroke="#f4efe3" stroke-width="3"/></g>
+  <text x="788" y="410" font-family="Arial,sans-serif" font-size="16" fill="#493a29">controlled crossings</text>
+  <g transform="translate(56 42)"><rect width="473" height="115" rx="12" fill="#fffdf7" stroke="#c9b995"/><text x="24" y="34" font-family="Georgia,serif" font-weight="bold" font-size="27">Jackson’s divided-force problem</text><text x="24" y="64" font-family="Arial,sans-serif" font-size="18">The river crossings kept the two United States columns apart.</text><text x="24" y="90" font-family="Arial,sans-serif" font-size="18">Ewell checked Frémont, then reinforced Jackson against Tyler.</text></g>
+  <g transform="translate(70 690)"><line x1="0" y1="0" x2="42" y2="0" stroke="#315f8c" stroke-width="10"/><text x="52" y="6" font-family="Arial,sans-serif" font-size="17">United States movement</text><line x1="280" y1="0" x2="322" y2="0" stroke="#9a3d32" stroke-width="10"/><text x="332" y="6" font-family="Arial,sans-serif" font-size="17">Confederate movement</text><text x="650" y="6" font-family="Arial,sans-serif" font-size="17" font-style="italic">Schematic — not to scale</text></g>
+</svg>

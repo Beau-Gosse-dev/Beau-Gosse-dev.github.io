@@ -14,7 +14,7 @@
   <path d="M300 30 C310 150 365 235 470 330 C545 400 620 435 705 474" class="road"/>
   <path d="M1055 22 C1080 145 1050 255 970 350 C900 430 820 470 710 490" class="road"/>
   <path d="M710 490 C820 548 925 605 1075 700" class="road"/>
-  <path d="M250 118 C330 185 400 238 470 330" fill="none" stroke="#315f8c" stroke-width="18" marker-end="url(#blue)"/>
+  <path d="M285 215 C345 250 405 292 470 330" fill="none" stroke="#315f8c" stroke-width="18" marker-end="url(#blue)"/>
   <path d="M1080 115 C1050 225 970 350 760 470" fill="none" stroke="#315f8c" stroke-width="18" marker-end="url(#blue)"/>
   <path d="M500 342 C555 390 610 430 682 472" fill="none" stroke="#9a3d32" stroke-width="12" stroke-dasharray="18 14" marker-end="url(#red)"/>
   <path d="M490 385 C560 412 615 445 665 477" class="water"/>
@@ -23,15 +23,15 @@
   <text x="850" y="445" class="small" fill="#315d72" transform="rotate(-27 850 445)">South Fork Shenandoah</text>
   <text x="728" y="628" class="small" fill="#315d72" transform="rotate(70 728 628)">South River</text>
   <text x="530" y="395" class="small" fill="#315d72" transform="rotate(24 530 395)">North River</text>
-  <g transform="translate(170 76)"><rect width="250" height="80" rx="12" fill="#eaf2f7" stroke="#315f8c" stroke-width="3"/><text x="125" y="31" text-anchor="middle" class="label" fill="#244c72">FRÉMONT</text><text x="125" y="55" text-anchor="middle" class="small">about 11,500 in NPS account</text></g>
+  <g transform="translate(155 145)"><rect width="250" height="80" rx="12" fill="#eaf2f7" stroke="#315f8c" stroke-width="3"/><text x="125" y="31" text-anchor="middle" class="label" fill="#244c72">FRÉMONT</text><text x="125" y="55" text-anchor="middle" class="small">about 11,500 in NPS account</text></g>
   <g transform="translate(920 80)"><rect width="240" height="80" rx="12" fill="#eaf2f7" stroke="#315f8c" stroke-width="3"/><text x="120" y="31" text-anchor="middle" class="label" fill="#244c72">SHIELDS'S DIVISION</text><text x="120" y="55" text-anchor="middle" class="small">stretched along muddy road</text></g>
   <g transform="translate(330 275)"><rect width="270" height="83" rx="12" fill="#f7e7e2" stroke="#9a3d32" stroke-width="3"/><text x="135" y="31" text-anchor="middle" class="label" fill="#7e2e27">EWELL AT CROSS KEYS</text><text x="135" y="55" text-anchor="middle" class="small">5,000 in episode; about 6,000 NPS</text></g>
   <g transform="translate(405 500)"><rect width="330" height="84" rx="12" fill="#f7e7e2" stroke="#9a3d32" stroke-width="3"/><text x="165" y="31" text-anchor="middle" class="label" fill="#7e2e27">JACKSON NEAR PORT REPUBLIC</text><text x="165" y="55" text-anchor="middle" class="small">about 7,000 under direct command</text></g>
   <circle cx="472" cy="331" r="10" fill="#27231e"/><text x="348" y="380" class="place">CROSS KEYS</text>
   <circle cx="700" cy="489" r="10" fill="#27231e"/><text x="735" y="520" class="place">PORT REPUBLIC</text>
-  <circle cx="1010" cy="370" r="8" fill="#27231e"/><text x="1018" y="395" class="place">CONRAD'S STORE</text>
-  <circle cx="1068" cy="700" r="8" fill="#27231e"/><text x="915" y="730" class="place">BROWN'S GAP</text>
+  <circle cx="1010" cy="370" r="8" fill="#27231e"/><text x="835" y="395" class="place">CONRAD'S STORE</text>
+  <circle cx="1068" cy="700" r="8" fill="#27231e"/><text x="925" y="730" class="place">BROWN'S GAP</text>
   <g transform="translate(45 28)"><rect width="820" height="92" rx="12" fill="#fff9ec" opacity=".97" stroke="#89795c"/><text x="25" y="39" class="title">Two approaching columns, one surviving bridge</text><text x="25" y="69" class="label" fill="#5b4b35">Morning of June 8, 1862 · operational diagram · schematic and not to scale</text></g>
   <g transform="translate(35 600)"><rect width="520" height="125" rx="12" fill="#fff9ec" opacity=".97" stroke="#89795c"/><text x="20" y="30" class="label">OPERATIONAL IDEA</text><text x="20" y="57" class="small">Jackson used Massanutten and destroyed upstream bridges</text><text x="20" y="79" class="small">to prevent Frémont and Shields from joining. He planned to</text><text x="20" y="101" class="small">hold Frémont with Ewell, counterattack, then cross at Port Republic.</text></g>
-  <g transform="translate(820 535)"><rect width="340" height="188" rx="12" fill="#fff9ec" opacity=".97" stroke="#89795c"/><text x="18" y="30" class="label">LIMITS</text><text x="18" y="56" class="small">Routes, force positions, river courses,</text><text x="18" y="78" class="small">and distances are simplified. The map</text><text x="18" y="100" class="small">shows the episode's operational logic,</text><text x="18" y="122" class="small">not exact deployments. Strength figures</text><text x="18" y="144" class="small">differ by source and counting method.</text><circle cx="25" cy="168" r="8" fill="#315f8c"/><text x="42" y="173" class="small">United States</text><circle cx="180" cy="168" r="8" fill="#9a3d32"/><text x="197" y="173" class="small">Confederacy</text></g>
+  <g transform="translate(820 525)"><rect width="340" height="150" rx="12" fill="#fff9ec" opacity=".97" stroke="#89795c"/><text x="18" y="28" class="label">LIMITS</text><text x="18" y="52" class="small">Routes, force positions, river courses,</text><text x="18" y="73" class="small">and distances are simplified. The map</text><text x="18" y="94" class="small">shows operational logic, not exact deployments.</text><text x="18" y="115" class="small">Strength figures differ by source and scope.</text><circle cx="25" cy="135" r="8" fill="#315f8c"/><text x="42" y="140" class="small">United States</text><circle cx="180" cy="135" r="8" fill="#9a3d32"/><text x="197" y="140" class="small">Confederacy</text></g>
 </svg>
