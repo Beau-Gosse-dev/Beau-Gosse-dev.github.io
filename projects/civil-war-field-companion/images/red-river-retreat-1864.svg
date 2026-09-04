@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Federal withdrawal from Alexandria to Simmesport, April and May 1864</title>
+  <desc id="desc">Schematic map showing Alexandria, Bailey's Dam, the Red River, the Union withdrawal through Marksville, Mansura, Yellow Bayou, and Simmesport, Confederate harassment under Richard Taylor, and the crossing of the Atchafalaya River.</desc>
+  <defs>
+    <marker id="union-arrow" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#315f8c"/>
+    </marker>
+    <marker id="navy-arrow" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#277d86"/>
+    </marker>
+    <marker id="confederate-arrow" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9a3d32"/>
+    </marker>
+    <filter id="paper" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0" result="gray"/>
+      <feComponentTransfer in="gray" result="faded"><feFuncA type="table" tableValues="0 0.045"/></feComponentTransfer>
+      <feBlend in="SourceGraphic" in2="faded" mode="multiply"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="760" fill="#f3eddf"/>
+  <g filter="url(#paper)">
+    <path d="M625 40 C580 120 648 175 610 242 C570 310 635 365 590 430 C548 490 600 550 655 605" fill="none" stroke="#87aeba" stroke-width="34" stroke-linecap="round" opacity="0.7"/>
+    <path d="M655 605 C710 648 790 655 925 720" fill="none" stroke="#87aeba" stroke-width="52" stroke-linecap="round" opacity="0.7"/>
+    <path d="M844 542 C808 610 818 668 860 744" fill="none" stroke="#87aeba" stroke-width="45" stroke-linecap="round" opacity="0.7"/>
+
+    <text x="666" y="168" fill="#466d78" font-family="Georgia, serif" font-size="24" transform="rotate(72 666 168)">Red River</text>
+    <text x="874" y="667" fill="#466d78" font-family="Georgia, serif" font-size="22" transform="rotate(67 874 667)">Atchafalaya River</text>
+
+    <path d="M600 210 C535 286 508 350 535 421 C564 498 682 552 822 626" fill="none" stroke="#315f8c" stroke-width="9" stroke-linecap="round" stroke-dasharray="18 12" marker-end="url(#union-arrow)"/>
+    <path d="M625 244 C622 340 610 438 654 570" fill="none" stroke="#277d86" stroke-width="8" marker-end="url(#navy-arrow)"/>
+    <path d="M332 272 C420 310 475 346 518 388" fill="none" stroke="#9a3d32" stroke-width="8" marker-end="url(#confederate-arrow)"/>
+    <path d="M410 435 C510 455 612 500 719 565" fill="none" stroke="#9a3d32" stroke-width="8" marker-end="url(#confederate-arrow)"/>
+
+    <g fill="#172725" font-family="Arial, sans-serif">
+      <circle cx="600" cy="210" r="11" fill="#172725"/>
+      <text x="622" y="199" font-size="30" font-weight="700">Alexandria</text>
+      <text x="622" y="226" font-size="18">Army returned April 25; withdrew May 13</text>
+
+      <rect x="566" y="254" width="88" height="12" rx="3" fill="#7a5638" transform="rotate(-4 610 260)"/>
+      <text x="680" y="268" font-size="22" font-weight="700">Bailey's Dam</text>
+      <text x="680" y="293" font-size="17">Fleet passed the rapids, May 9–13</text>
+
+      <circle cx="535" cy="421" r="9"/>
+      <text x="555" y="417" font-size="24" font-weight="700">Marksville</text>
+      <text x="555" y="442" font-size="17">Artillery duel nearby, May 16</text>
+
+      <circle cx="625" cy="510" r="9"/>
+      <text x="645" y="505" font-size="24" font-weight="700">Mansura</text>
+
+      <circle cx="720" cy="565" r="12" fill="#9a3d32"/>
+      <text x="742" y="558" font-size="24" font-weight="700">Yellow Bayou</text>
+      <text x="742" y="583" font-size="17">Engagement, May 18</text>
+
+      <circle cx="822" cy="626" r="11"/>
+      <text x="845" y="619" font-size="24" font-weight="700">Simmesport</text>
+      <text x="845" y="644" font-size="17">Atchafalaya crossing, May 19–20</text>
+    </g>
+
+    <g font-family="Arial, sans-serif">
+      <text x="112" y="253" fill="#9a3d32" font-size="25" font-weight="700">Taylor's Confederates</text>
+      <text x="112" y="281" fill="#71332c" font-size="18">Harassed the retreat but</text>
+      <text x="112" y="305" fill="#71332c" font-size="18">could not block the column</text>
+
+      <rect x="62" y="585" width="360" height="126" rx="8" fill="#fffaf0" stroke="#c9bda7" stroke-width="2"/>
+      <line x1="91" y1="620" x2="167" y2="620" stroke="#315f8c" stroke-width="8" stroke-dasharray="16 10"/>
+      <text x="184" y="627" fill="#172725" font-size="18">U.S. Army withdrawal</text>
+      <line x1="91" y1="655" x2="167" y2="655" stroke="#277d86" stroke-width="8"/>
+      <text x="184" y="662" fill="#172725" font-size="18">Porter's fleet downstream</text>
+      <line x1="91" y1="690" x2="167" y2="690" stroke="#9a3d32" stroke-width="8"/>
+      <text x="184" y="697" fill="#172725" font-size="18">Confederate pressure</text>
+    </g>
+
+    <g transform="translate(1090 80)" fill="#172725" font-family="Arial, sans-serif" text-anchor="middle">
+      <text y="-18" font-size="18" font-weight="700">N</text>
+      <path d="M0 0 L-13 37 L0 29 L13 37 z" fill="#172725"/>
+    </g>
+
+    <text x="600" y="742" text-anchor="middle" fill="#665d4d" font-family="Arial, sans-serif" font-size="16">Schematic guide — positions and routes are simplified for clarity</text>
+  </g>
+</svg>
