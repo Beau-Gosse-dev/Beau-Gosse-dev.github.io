@@ -13,7 +13,7 @@
 
   <path d="M390 138 C345 230 350 350 386 472 C405 535 390 620 352 694 L565 694 C604 610 611 526 581 443 C548 348 552 240 602 138 Z" fill="#e8dfc8" opacity="0.82"/>
   <text x="468" y="420" transform="rotate(-82 468 420)" font-family="Arial,sans-serif" font-size="17" fill="#746b5d">MASSANUTTEN MOUNTAIN</text>
-  <path text-rendering="geometricPrecision" font-family="Arial,sans-serif" fill="none" stroke="#6d9fb7" stroke-width="8" stroke-linecap="round">
+  <g text-rendering="geometricPrecision" font-family="Arial,sans-serif" fill="none" stroke="#6d9fb7" stroke-width="8" stroke-linecap="round">
     <path d="M318 151 C300 225 318 310 303 383 C287 465 316 560 300 690"/>
     <path d="M642 172 C626 260 646 345 633 432 C621 521 642 601 624 690"/>
   </g>
