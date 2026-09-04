@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Operational setting of Jackson's movement to Manassas Junction, August 26 to 28, 1862</title>
+  <desc id="desc">Generalized regional diagram showing Jackson moving through Thoroughfare Gap to Bristoe Station and Manassas Junction, Longstreet following from the Rappahannock, and Union forces concentrating from the south and east.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7f1df"/><stop offset="1" stop-color="#ddd1b3"/></linearGradient>
+    <marker id="redArrow" markerWidth="18" markerHeight="14" refX="16" refY="7" orient="auto"><path d="M0 0 18 7 0 14Z" fill="#9a3d32"/></marker>
+    <marker id="blueArrow" markerWidth="18" markerHeight="14" refX="16" refY="7" orient="auto"><path d="M0 0 18 7 0 14Z" fill="#315f8c"/></marker>
+    <pattern id="mountains" width="48" height="32" patternUnits="userSpaceOnUse"><path d="M1 29 L14 8 L27 29 M20 29 L34 5 L47 29" fill="none" stroke="#786f5b" stroke-width="3" opacity=".38"/></pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#paper)"/>
+  <text x="54" y="58" font-family="Georgia,serif" font-size="32" fill="#2f2a22">Jackson behind Pope's army</text>
+  <text x="56" y="88" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="1.5" fill="#7b302a">AUGUST 26–28, 1862 · GENERALIZED · NOT TO SCALE</text>
+
+  <path d="M86 665 C200 585 252 505 278 392 C300 300 356 207 440 132" fill="none" stroke="#668fa4" stroke-width="27" opacity=".82"/>
+  <path d="M86 665 C200 585 252 505 278 392 C300 300 356 207 440 132" fill="none" stroke="#dceff3" stroke-width="4"/>
+  <text x="115" y="625" transform="rotate(-36 115 625)" font-family="Georgia,serif" font-size="20" fill="#315e72">Rappahannock River</text>
+
+  <path d="M500 96 C520 225 526 382 505 735 L650 735 C674 540 661 293 630 96Z" fill="url(#mountains)" stroke="#887a60" stroke-width="3"/>
+  <text x="548" y="286" transform="rotate(84 548 286)" font-family="Georgia,serif" font-size="22" fill="#594f3f">Bull Run Mountains</text>
+  <rect x="525" y="397" width="115" height="42" rx="12" fill="#fbf8ee" stroke="#6f654f" stroke-width="2"/>
+  <text x="541" y="424" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#3c352b">Thoroughfare Gap</text>
+
+  <path d="M650 420 C775 433 914 469 1089 538" fill="none" stroke="#6f5a3e" stroke-width="9"/>
+  <path d="M722 676 C820 593 920 522 1089 444" fill="none" stroke="#6f5a3e" stroke-width="9"/>
+  <path d="M668 540 C802 555 929 552 1086 530" fill="none" stroke="#45413b" stroke-width="8"/>
+  <path d="M668 540 C802 555 929 552 1086 530" fill="none" stroke="#f7f1df" stroke-width="2" stroke-dasharray="18 12"/>
+  <text x="825" y="570" font-family="Arial,sans-serif" font-size="18" fill="#41392f">Orange &amp; Alexandria Railroad</text>
+
+  <g font-family="Arial,sans-serif" fill="#282724">
+    <circle cx="165" cy="560" r="9"/><text x="184" y="555" font-size="20" font-weight="700">Pope on upper Rappahannock</text>
+    <circle cx="475" cy="388" r="8"/><text x="333" y="376" font-size="19" font-weight="700">Gainesville</text>
+    <circle cx="744" cy="538" r="9"/><text x="693" y="524" font-size="19" font-weight="700">Bristoe Station</text>
+    <circle cx="937" cy="535" r="11"/><text x="895" y="516" font-size="22" font-weight="700">Manassas Junction</text>
+    <circle cx="1065" cy="445" r="8"/><text x="971" y="427" font-size="19" font-weight="700">Centreville</text>
+    <circle cx="744" cy="676" r="8"/><text x="681" y="708" font-size="18" font-weight="700">Warrenton Junction</text>
+    <circle cx="1110" cy="250" r="8"/><text x="1000" y="230" font-size="20" font-weight="700">Washington</text>
+    <circle cx="1091" cy="301" r="8"/><text x="982" y="328" font-size="20" font-weight="700">Alexandria</text>
+  </g>
+
+  <path d="M165 530 C275 470 385 432 520 418 C579 412 616 414 688 461 C735 491 778 516 907 531" fill="none" stroke="#9a3d32" stroke-width="8" marker-end="url(#redArrow)"/>
+  <text x="207" y="442" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#7d302a">Jackson: Aug. 25–27</text>
+  <text x="208" y="466" font-family="Arial,sans-serif" font-size="16" fill="#7d302a">about 25,000 men; roughly 55 miles in two days</text>
+  <path d="M190 588 C328 552 417 508 511 443" fill="none" stroke="#9a3d32" stroke-width="6" stroke-dasharray="15 10" marker-end="url(#redArrow)"/>
+  <text x="296" y="584" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#7d302a">Lee and Longstreet follow</text>
+
+  <path d="M743 662 C790 623 839 587 902 549" fill="none" stroke="#315f8c" stroke-width="7" marker-end="url(#blueArrow)"/>
+  <text x="702" y="644" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#315f8c">Hooker along railroad</text>
+  <path d="M1085 316 C1034 363 1002 407 964 498" fill="none" stroke="#315f8c" stroke-width="7" marker-end="url(#blueArrow)"/>
+  <text x="885" y="363" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#315f8c">Taylor from Washington</text>
+  <path d="M218 535 C316 493 386 462 460 430" fill="none" stroke="#315f8c" stroke-width="6" stroke-dasharray="14 10" marker-end="url(#blueArrow)"/>
+  <text x="153" y="504" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#315f8c">Pope orders concentration</text>
+
+  <g transform="translate(57 725)" font-family="Arial,sans-serif" font-size="16">
+    <line x1="0" y1="0" x2="60" y2="0" stroke="#9a3d32" stroke-width="8" marker-end="url(#redArrow)"/><text x="76" y="6" fill="#30302d">Confederate movement</text>
+    <line x1="297" y1="0" x2="357" y2="0" stroke="#315f8c" stroke-width="8" marker-end="url(#blueArrow)"/><text x="374" y="6" fill="#30302d">United States movement</text>
+    <text x="728" y="6" fill="#5d5548">Routes and positions are schematic.</text>
+  </g>
+</svg>

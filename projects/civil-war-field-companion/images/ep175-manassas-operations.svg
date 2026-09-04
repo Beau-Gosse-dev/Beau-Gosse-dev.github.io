@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Manassas Station operations, August 27 and the night of August 27 to 28, 1862</title>
+  <desc id="desc">Generalized operational map showing Hill near Manassas Junction, Taylor advancing from Bull Run Bridge, Hooker attacking Ewell at Kettle Run, and Jackson's divisions moving north toward Stony Ridge.</desc>
+  <defs>
+    <linearGradient id="paper2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7f1df"/><stop offset="1" stop-color="#d8ccb0"/></linearGradient>
+    <pattern id="woods" width="38" height="38" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="8" fill="#668052" opacity=".24"/><circle cx="30" cy="28" r="7" fill="#789363" opacity=".2"/></pattern>
+    <marker id="redArrow2" markerWidth="18" markerHeight="14" refX="16" refY="7" orient="auto"><path d="M0 0 18 7 0 14Z" fill="#9a3d32"/></marker>
+    <marker id="blueArrow2" markerWidth="18" markerHeight="14" refX="16" refY="7" orient="auto"><path d="M0 0 18 7 0 14Z" fill="#315f8c"/></marker>
+  </defs>
+  <rect width="1200" height="800" fill="url(#paper2)"/>
+  <rect width="1200" height="800" fill="url(#woods)"/>
+  <text x="54" y="58" font-family="Georgia,serif" font-size="32" fill="#2f2a22">Manassas Junction, Kettle Run, and the night withdrawal</text>
+  <text x="56" y="88" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="1.5" fill="#7b302a">AUGUST 27–28, 1862 · GENERALIZED · NOT TO SCALE</text>
+
+  <path d="M934 97 C893 198 911 295 960 378 C1006 455 1020 558 972 741" fill="none" stroke="#668fa4" stroke-width="34"/>
+  <path d="M934 97 C893 198 911 295 960 378 C1006 455 1020 558 972 741" fill="none" stroke="#dceff3" stroke-width="4"/>
+  <text x="992" y="340" transform="rotate(72 992 340)" font-family="Georgia,serif" font-size="22" fill="#315e72">Bull Run</text>
+
+  <path d="M80 655 C314 575 510 530 719 495 C823 478 901 460 987 424" fill="none" stroke="#48423a" stroke-width="11"/>
+  <path d="M80 655 C314 575 510 530 719 495 C823 478 901 460 987 424" fill="none" stroke="#f7f1df" stroke-width="3" stroke-dasharray="19 13"/>
+  <text x="237" y="604" transform="rotate(-15 237 604)" font-family="Arial,sans-serif" font-size="18" fill="#37332d">Orange &amp; Alexandria Railroad</text>
+  <path d="M480 138 C610 167 748 221 920 348 C1004 410 1076 431 1160 445" fill="none" stroke="#745d40" stroke-width="10"/>
+  <text x="628" y="204" transform="rotate(23 628 204)" font-family="Arial,sans-serif" font-size="18" fill="#594832">Warrenton Turnpike</text>
+  <path d="M720 492 C728 371 762 279 843 199" fill="none" stroke="#745d40" stroke-width="8"/>
+  <path d="M985 424 C1051 350 1092 259 1110 172" fill="none" stroke="#745d40" stroke-width="8"/>
+
+  <path d="M508 523 C521 564 529 605 530 656" fill="none" stroke="#668fa4" stroke-width="24"/>
+  <text x="454" y="632" transform="rotate(75 454 632)" font-family="Georgia,serif" font-size="19" fill="#315e72">Kettle Run</text>
+
+  <g font-family="Arial,sans-serif" fill="#282724">
+    <circle cx="716" cy="494" r="12"/><text x="737" y="486" font-size="23" font-weight="700">Manassas Junction</text>
+    <circle cx="357" cy="586" r="9"/><text x="275" y="568" font-size="20" font-weight="700">Bristoe Station</text>
+    <circle cx="511" cy="542" r="8"/><text x="438" y="521" font-size="19" font-weight="700">Kettle Run</text>
+    <circle cx="984" cy="423" r="9"/><text x="1006" y="417" font-size="19" font-weight="700">Bull Run Bridge</text>
+    <circle cx="1098" cy="183" r="8"/><text x="1004" y="159" font-size="19" font-weight="700">Centreville</text>
+    <circle cx="736" cy="151" r="8"/><text x="666" y="130" font-size="19" font-weight="700">Stony Ridge</text>
+    <circle cx="622" cy="198" r="8"/><text x="548" y="179" font-size="19" font-weight="700">Groveton</text>
+    <circle cx="445" cy="145" r="8"/><text x="381" y="124" font-size="19" font-weight="700">Gainesville</text>
+  </g>
+
+  <g stroke="#9a3d32" stroke-width="13" stroke-linecap="round">
+    <path d="M655 420 L782 421"/><path d="M650 450 L785 451"/><path d="M643 480 L786 481"/>
+    <path d="M410 531 L505 517"/>
+  </g>
+  <g font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#7d302a">
+    <text x="647" y="397">A. P. Hill: about 9,000 men and 28 guns</text>
+    <text x="378" y="505">Ewell's rear guard</text>
+  </g>
+
+  <path d="M984 445 C922 466 860 465 799 454" fill="none" stroke="#315f8c" stroke-width="8" marker-end="url(#blueArrow2)"/>
+  <text x="833" y="506" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#315f8c">Taylor's New Jersey brigade</text>
+  <text x="852" y="528" font-family="Arial,sans-serif" font-size="15" fill="#315f8c">advance and retreat, morning</text>
+  <path d="M165 633 C277 586 368 550 397 536" fill="none" stroke="#315f8c" stroke-width="8" marker-end="url(#blueArrow2)"/>
+  <text x="124" y="586" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#315f8c">Hooker advances, about 3 p.m.</text>
+  <path d="M510 514 C473 528 441 531 411 532" fill="none" stroke="#9a3d32" stroke-width="7" marker-end="url(#redArrow2)"/>
+  <text x="417" y="482" font-family="Arial,sans-serif" font-size="15" fill="#7d302a">Ewell delays, then retires</text>
+
+  <path d="M721 473 C731 380 746 295 742 180" fill="none" stroke="#9a3d32" stroke-width="8" marker-end="url(#redArrow2)"/>
+  <text x="765" y="322" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#7d302a">Taliaferro: direct route</text>
+  <path d="M766 472 C882 382 965 291 1069 204 C984 195 888 182 770 166" fill="none" stroke="#9a3d32" stroke-width="7" stroke-dasharray="15 10" marker-end="url(#redArrow2)"/>
+  <text x="857" y="276" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#7d302a">Hill and Ewell: detour toward</text>
+  <text x="891" y="298" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#7d302a">Centreville, then backtrack</text>
+  <path d="M668 513 C720 551 785 567 852 556" fill="none" stroke="#c46a24" stroke-width="6" stroke-dasharray="10 8"/>
+  <text x="696" y="598" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#9a4c16">Depot supplies burned before withdrawal</text>
+
+  <g transform="translate(54 733)" font-family="Arial,sans-serif" font-size="16">
+    <line x1="0" y1="0" x2="60" y2="0" stroke="#315f8c" stroke-width="8" marker-end="url(#blueArrow2)"/><text x="76" y="6" fill="#30302d">United States movement</text>
+    <line x1="302" y1="0" x2="362" y2="0" stroke="#9a3d32" stroke-width="8" marker-end="url(#redArrow2)"/><text x="379" y="6" fill="#30302d">Confederate movement</text>
+    <text x="723" y="6" fill="#5d5548">Positions, routes, and frontages are approximate.</text>
+  </g>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 730" role="img" aria-labelledby="title desc">
+  <title id="title">Bristoe Station rail interdiction and Manassas expedition</title>
+  <desc id="desc">Generalized diagram of Confederate troop positions at Bristoe Station on August 26, the Orange and Alexandria Railroad, stopped and colliding trains, and Trimble and Stuart moving toward Manassas Junction.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f7f2e7"/><stop offset="1" stop-color="#eadfc9"/></linearGradient>
+    <marker id="rarr" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto"><path d="M0 0L18 9L0 18z" fill="#9a3d32"/></marker>
+    <marker id="barr" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto"><path d="M0 0L18 9L0 18z" fill="#315f8c"/></marker>
+    <style>
+      .title{font:700 30px Georgia,serif;fill:#292620}.sub{font:17px Arial,sans-serif;fill:#5b5448}.label{font:700 18px Arial,sans-serif;fill:#292620}.small{font:14px Arial,sans-serif;fill:#4e483e}.rail{stroke:#242424;stroke-width:8}.tie{stroke:#242424;stroke-width:4}.road{stroke:#8f8067;stroke-width:5;stroke-dasharray:12 9;fill:none}.red{fill:#9a3d32}.blue{fill:#315f8c}.cs{fill:#f6dfd9;stroke:#9a3d32;stroke-width:3}.us{fill:#dce8f2;stroke:#315f8c;stroke-width:3}.info{fill:#fffaf0;stroke:#796e5c;stroke-width:2}
+    </style>
+  </defs>
+  <rect width="1200" height="730" fill="url(#bg)"/>
+  <text x="50" y="49" class="title">Bristoe Station: railroad cut and night movement</text>
+  <text x="50" y="77" class="sub">Evening of August 26, 1862 • troop relationships and train sequence generalized • not to scale</text>
+
+  <path class="rail" d="M88 579 L1112 150"/>
+  <g class="tie">
+    <path d="M115 601l-20-47M170 578l-20-47M225 555l-20-47M280 532l-20-47M335 509l-20-47M390 486l-20-47M445 463l-20-47M500 440l-20-47M555 417l-20-47M610 394l-20-47M665 371l-20-47M720 348l-20-47M775 325l-20-47M830 302l-20-47M885 279l-20-47M940 256l-20-47M995 233l-20-47M1050 210l-20-47"/>
+  </g>
+  <text x="710" y="235" class="label" transform="rotate(-23 710 235)">ORANGE &amp; ALEXANDRIA RAILROAD</text>
+  <path class="road" d="M69 265 C250 252 370 298 544 354 C745 419 923 494 1127 603"/>
+  <text x="824" y="500" class="small" transform="rotate(25 824 500)">Road toward Manassas Junction</text>
+
+  <g transform="translate(105 485)"><rect class="info" width="183" height="60" rx="8"/><text x="92" y="25" text-anchor="middle" class="label">Warrenton Junction</text><text x="92" y="46" text-anchor="middle" class="small">trains approach northeast</text></g>
+  <g transform="translate(475 310)"><rect class="info" width="168" height="61" rx="8"/><text x="84" y="25" text-anchor="middle" class="label">Bristoe Station</text><text x="84" y="46" text-anchor="middle" class="small">seized near sunset</text></g>
+  <g transform="translate(925 88)"><rect class="info" width="204" height="61" rx="8"/><text x="102" y="25" text-anchor="middle" class="label">Manassas Junction</text><text x="102" y="46" text-anchor="middle" class="small">about 4 miles northeast</text></g>
+
+  <path d="M343 473L455 426" stroke="#315f8c" stroke-width="7" marker-end="url(#barr)"/>
+  <g transform="translate(278 467)"><rect class="us" width="117" height="52" rx="7"/><text x="58" y="22" text-anchor="middle" class="label">Train 1</text><text x="58" y="42" text-anchor="middle" class="small">breaks through</text></g>
+  <g transform="translate(444 383)"><rect class="us" width="126" height="52" rx="7"/><text x="63" y="22" text-anchor="middle" class="label">Train 2</text><text x="63" y="42" text-anchor="middle" class="small">stopped</text></g>
+  <g transform="translate(339 370)"><rect class="us" width="126" height="52" rx="7"/><text x="63" y="22" text-anchor="middle" class="label">Train 3</text><text x="63" y="42" text-anchor="middle" class="small">collides</text></g>
+  <path d="M414 403l39-10M424 389l20 28" stroke="#9a3d32" stroke-width="6"/>
+  <g transform="translate(150 570)"><rect class="us" width="158" height="52" rx="7"/><text x="79" y="22" text-anchor="middle" class="label">Train 4</text><text x="79" y="42" text-anchor="middle" class="small">backs away, warns rear</text></g>
+
+  <g transform="translate(490 180)"><rect class="cs" width="255" height="88" rx="9"/><text x="128" y="26" text-anchor="middle" class="label">MUNFORD + FORNO</text><text x="128" y="50" text-anchor="middle" class="small">2nd Virginia Cavalry and</text><text x="128" y="69" text-anchor="middle" class="small">Louisiana brigade disrupt railroad</text></g>
+  <path d="M573 268L552 305" stroke="#9a3d32" stroke-width="7" marker-end="url(#rarr)"/>
+
+  <g transform="translate(667 523)"><rect class="cs" width="285" height="91" rx="9"/><text x="143" y="26" text-anchor="middle" class="label">TRIMBLE'S DETACHMENT</text><text x="143" y="50" text-anchor="middle" class="small">21st Georgia + 21st North Carolina</text><text x="143" y="71" text-anchor="middle" class="small">about 500 men; departs around 9 p.m.</text></g>
+  <path d="M930 515 C1004 449 1040 346 1050 208" stroke="#9a3d32" stroke-width="10" fill="none" marker-end="url(#rarr)"/>
+  <g transform="translate(918 381)"><rect class="cs" width="224" height="63" rx="9"/><text x="112" y="25" text-anchor="middle" class="label">STUART</text><text x="112" y="46" text-anchor="middle" class="small">sent to reinforce and command</text></g>
+
+  <g transform="translate(50 108)"><rect class="info" width="374" height="152" rx="9"/><text x="18" y="29" class="label">LOCAL FEDERAL DEFENSE</text><text x="18" y="56" class="small">Bristoe: three infantry companies</text><text x="18" y="80" class="small">Manassas: three infantry companies, one battery,</text><text x="18" y="102" class="small">and an inexperienced cavalry regiment</text><text x="18" y="130" class="small">Figures follow the episode's account.</text></g>
+  <g transform="translate(50 649)"><text class="small">Arrows show operational direction, not surveyed routes or exact unit frontages.</text></g>
+  <g transform="translate(1120 637)"><path d="M25 45V2M25 2L12 23M25 2l13 21" stroke="#292620" stroke-width="3"/><text x="25" y="65" text-anchor="middle" class="label">N</text></g>
+</svg>

@@ -1,45 +1,54 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
   <title id="title">Operations along the Rappahannock, August 21 to 23, 1862</title>
-  <desc id="desc">Schematic operational map showing Federal positions on the north and east bank, Confederate positions on the south and west bank, the actions at Freeman's Ford, Sulphur Springs, Rappahannock Station, and Stuart's route to Catlett Station.</desc>
+  <desc id="desc">Schematic operational map showing Federal positions on the north and east bank, Confederate positions on the south and west bank, the actions at Freeman's Ford, Sulphur Springs, and Rappahannock Station, plus Stuart's route to Catlett Station.</desc>
   <defs>
     <marker id="ba" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="#315f8c"/></marker>
     <marker id="ra" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="#9a3d32"/></marker>
     <style>
-      .head{font:700 24px Georgia,serif;fill:#25272a}.label{font:600 18px Georgia,serif;fill:#25272a}.body{font:16px Arial,sans-serif;fill:#303236}.tiny{font:14px Arial,sans-serif;fill:#46484b}.water{fill:none;stroke:#79aaca;stroke-width:34;stroke-linecap:round}.usbox{fill:#dce8f2;stroke:#315f8c;stroke-width:3}.csbox{fill:#f0dfd9;stroke:#9a3d32;stroke-width:3}.usa{fill:none;stroke:#315f8c;stroke-width:7;marker-end:url(#ba)}.csa{fill:none;stroke:#9a3d32;stroke-width:7;marker-end:url(#ra)}
+      .head{font:700 23px Georgia,serif;fill:#25272a}.label{font:600 17px Georgia,serif;fill:#25272a}.body{font:15px Arial,sans-serif;fill:#303236}.tiny{font:13px Arial,sans-serif;fill:#46484b}.water{fill:none;stroke:#79aaca;stroke-width:31;stroke-linecap:round}.usbox{fill:#dce8f2;stroke:#315f8c;stroke-width:3}.csbox{fill:#f0dfd9;stroke:#9a3d32;stroke-width:3}.usa{fill:none;stroke:#315f8c;stroke-width:6;marker-end:url(#ba)}.csa{fill:none;stroke:#9a3d32;stroke-width:6;marker-end:url(#ra)}
     </style>
   </defs>
   <rect width="1200" height="760" fill="#f5f0e5"/>
-  <text x="42" y="44" class="head">Rappahannock line, August 21-23</text>
-  <path d="M70 670 C215 575 260 470 385 408 C530 337 660 359 775 275 C900 184 1020 151 1140 101" class="water"/>
-  <text x="435" y="408" class="label" fill="#386d90" transform="rotate(-14 435 408)">Rappahannock River</text>
-  <text x="820" y="66" class="body" fill="#315f8c">FEDERAL: north / east bank</text>
-  <text x="58" y="719" class="body" fill="#9a3d32">CONFEDERATE: south / west bank</text>
-  <g transform="translate(185 527)"><circle r="10" fill="#fff" stroke="#333" stroke-width="3"/><text x="-92" y="-22" class="label">Kelly's Ford</text></g>
-  <g transform="translate(388 395)"><circle r="10" fill="#fff" stroke="#333" stroke-width="3"/><text x="-92" y="-25" class="label">Rappahannock Station</text></g>
-  <g transform="translate(620 336)"><circle r="10" fill="#fff" stroke="#333" stroke-width="3"/><text x="-72" y="-31" class="label">Beverly Ford</text></g>
-  <g transform="translate(790 265)"><circle r="10" fill="#fff" stroke="#333" stroke-width="3"/><text x="-54" y="-31" class="label">Freeman's Ford</text></g>
-  <g transform="translate(1010 153)"><circle r="10" fill="#fff" stroke="#333" stroke-width="3"/><text x="-174" y="-32" class="label">Sulphur Springs / Waterloo</text></g>
-  <path d="M392 395 L485 515" stroke="#4d4d4d" stroke-width="6" stroke-dasharray="13 7"/>
-  <text x="414" y="489" class="tiny" transform="rotate(48 414 489)">Orange &amp; Alexandria RR</text>
-  <g transform="translate(300 185)"><rect width="245" height="75" rx="7" class="usbox"/><text x="14" y="27" class="label">McDowell / Hartsuff</text><text x="14" y="53" class="body">bridgehead withdrawn Aug. 23</text></g>
-  <g transform="translate(304 518)"><rect width="235" height="76" rx="7" class="csbox"/><text x="14" y="28" class="label">Longstreet</text><text x="14" y="54" class="body">artillery and infantry</text></g>
-  <path d="M409 515 C418 475 414 437 398 405" class="csa"/>
-  <path d="M490 208 C455 255 428 323 405 377" class="usa"/>
-  <g transform="translate(680 92)"><rect width="225" height="74" rx="7" class="usbox"/><text x="14" y="27" class="label">Sigel</text><text x="14" y="53" class="body">guards upper crossings</text></g>
-  <g transform="translate(684 430)"><rect width="226" height="75" rx="7" class="csbox"/><text x="14" y="27" class="label">Trimble + Hood</text><text x="14" y="53" class="body">counterattack, Aug. 22</text></g>
-  <path d="M780 429 C796 377 802 325 793 276" class="csa"/>
-  <path d="M745 164 C764 190 779 222 787 251" class="usa"/>
-  <text x="555" y="542" class="body">Bohlen's three regiments cross;</text>
-  <text x="555" y="566" class="body">Bohlen killed during the rout</text>
-  <g transform="translate(930 320)"><rect width="223" height="94" rx="7" class="csbox"/><text x="14" y="27" class="label">Ewell</text><text x="14" y="53" class="body">Early + 13th Georgia</text><text x="14" y="77" class="body">stranded by flood</text></g>
-  <path d="M1038 318 C1025 270 1018 221 1012 165" class="csa"/>
-  <path d="M982 167 C955 207 955 252 984 307" class="csa" stroke-dasharray="10 7"/>
-  <text x="897" y="451" class="body">Bridge rebuilt Aug. 23;</text>
-  <text x="897" y="475" class="body">troops return before dawn Aug. 24</text>
-  <path d="M1040 140 C1010 95 964 79 914 87" class="csa"/>
-  <path d="M914 87 C1000 58 1085 38 1148 54" class="csa"/>
-  <g transform="translate(930 505)"><rect width="223" height="112" rx="7" fill="#fffaf0" stroke="#8c816e"/><text x="13" y="27" class="label">Catlett raid</text><text x="13" y="52" class="body">Stuart, 1,500 cavalry</text><text x="13" y="77" class="body">captures Pope's baggage</text><text x="13" y="101" class="body">and dispatch book</text></g>
-  <path d="M1040 505 C1088 451 1105 355 1098 260" class="csa"/>
-  <circle cx="1098" cy="249" r="8" fill="#262626"/><text x="1003" y="230" class="label">Catlett Station</text>
-  <text x="48" y="748" class="tiny">GENERALIZED OPERATIONAL AND TROOP-POSITION SCHEMATIC • NOT TO SCALE • ARROWS DO NOT SHOW EXACT ROUTES</text>
+  <text x="38" y="42" class="head">Rappahannock crossings, August 21-23</text>
+  <text x="36" y="72" class="body" fill="#315f8c">FEDERAL POSITIONS • NORTH / EAST BANK</text>
+  <path d="M55 520 C230 435 350 388 474 352 C615 310 740 255 875 174" class="water"/>
+  <text x="356" y="420" class="label" fill="#386d90" transform="rotate(-17 356 420)">Rappahannock River</text>
+  <g transform="translate(105 496)"><circle r="9" fill="#fff" stroke="#333" stroke-width="3"/><text x="-66" y="-19" class="label">Kelly's Ford</text></g>
+  <g transform="translate(258 421)"><circle r="9" fill="#fff" stroke="#333" stroke-width="3"/><text x="-92" y="-20" class="label">Rappahannock Station</text></g>
+  <g transform="translate(474 352)"><circle r="9" fill="#fff" stroke="#333" stroke-width="3"/><text x="-52" y="-20" class="label">Beverly Ford</text></g>
+  <g transform="translate(648 298)"><circle r="9" fill="#fff" stroke="#333" stroke-width="3"/><text x="-58" y="-20" class="label">Freeman's Ford</text></g>
+  <g transform="translate(842 196)"><circle r="9" fill="#fff" stroke="#333" stroke-width="3"/></g>
+  <text x="620" y="168" class="label">White Sulphur Springs</text>
+  <text x="698" y="189" class="label">/ Waterloo</text>
+  <path d="M258 421 L321 520" stroke="#4d4d4d" stroke-width="5" stroke-dasharray="12 7"/>
+  <text x="278" y="455" class="tiny" transform="rotate(57 278 455)">Orange &amp; Alexandria RR</text>
+  <g transform="translate(45 102)"><rect width="250" height="76" rx="7" class="usbox"/><text x="14" y="29" class="label">McDowell / Hartsuff</text><text x="14" y="55" class="body">bridgehead withdrawn Aug. 23</text></g>
+  <path d="M238 179 C240 255 247 342 257 401" class="usa"/>
+  <g transform="translate(340 92)"><rect width="230" height="76" rx="7" class="usbox"/><text x="14" y="29" class="label">Sigel</text><text x="14" y="55" class="body">guards upper crossings</text></g>
+  <path d="M540 170 C580 209 614 253 637 281" class="usa"/>
+  <g transform="translate(620 56)"><rect width="250" height="90" rx="7" class="usbox"/><text x="14" y="29" class="label">Milroy + Buford detachment</text><text x="14" y="55" class="body">arrive late Aug. 23;</text><text x="14" y="78" class="body">no attack before dark</text></g>
+  <path d="M815 148 C824 160 832 175 838 186" class="usa"/>
+  <g transform="translate(48 611)"><rect width="236" height="76" rx="7" class="csbox"/><text x="14" y="29" class="label">Longstreet</text><text x="14" y="55" class="body">artillery and infantry</text></g>
+  <text x="52" y="716" class="body" fill="#9a3d32">CONFEDERATE POSITIONS • SOUTH / WEST BANK</text>
+  <text x="304" y="614" class="body">Rail bridge burned around noon Aug. 23</text>
+  <path d="M250 610 C259 552 263 487 259 439" class="csa"/>
+  <g transform="translate(352 512)"><rect width="236" height="76" rx="7" class="csbox"/><text x="14" y="29" class="label">Trimble + Hood</text><text x="14" y="55" class="body">counterattack, Aug. 22</text></g>
+  <path d="M570 512 C610 445 637 367 646 316" class="csa"/>
+  <text x="310" y="445" class="body">Bohlen's three regiments routed;</text>
+  <text x="310" y="467" class="body">Bohlen killed during withdrawal</text>
+  <g transform="translate(658 391)"><rect width="216" height="91" rx="7" class="csbox"/><text x="14" y="29" class="label">Ewell</text><text x="14" y="55" class="body">Early + 13th Georgia</text><text x="14" y="78" class="body">stranded by flood</text></g>
+  <path d="M810 391 C829 330 839 258 841 213" class="csa"/>
+  <path d="M826 218 C793 270 790 324 818 378" class="csa" stroke-dasharray="10 7"/>
+  <text x="650" y="522" class="body">Bridge rebuilt Aug. 23;</text>
+  <text x="650" y="544" class="body">troops return before dawn Aug. 24</text>
+  <line x1="912" y1="28" x2="912" y2="724" stroke="#aaa08d" stroke-width="2"/>
+  <text x="940" y="44" class="head">Catlett Station raid</text>
+  <path d="M958 648 C1005 570 1010 478 977 395 C948 322 969 242 1082 170" class="csa"/>
+  <circle cx="1082" cy="158" r="9" fill="#25272a"/>
+  <text x="987" y="137" class="label">Catlett Station</text>
+  <path d="M1007 142 L1154 142" stroke="#4d4d4d" stroke-width="5" stroke-dasharray="12 7"/>
+  <text x="990" y="184" class="tiny">Orange &amp; Alexandria Railroad</text>
+  <g transform="translate(943 249)"><rect width="225" height="121" rx="7" fill="#fffaf0" stroke="#8c816e"/><text x="13" y="28" class="label">Night of Aug. 22-23</text><text x="13" y="54" class="body">Stuart: 1,500 cavalry</text><text x="13" y="79" class="body">Bridge too wet to burn</text><text x="13" y="104" class="body">Dispatch book captured</text></g>
+  <g transform="translate(943 470)"><rect width="225" height="102" rx="7" class="csbox"/><text x="13" y="28" class="label">Stuart's division</text><text x="13" y="54" class="body">1st + 11th Virginia</text><text x="13" y="79" class="body">9th Virginia at baggage</text></g>
+  <text x="38" y="748" class="tiny">GENERALIZED OPERATIONAL AND TROOP-POSITION SCHEMATIC • NOT TO SCALE • ARROWS DO NOT SHOW EXACT ROUTES</text>
 </svg>

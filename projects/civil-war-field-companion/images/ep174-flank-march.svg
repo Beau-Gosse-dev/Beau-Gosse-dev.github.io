@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Jackson's flank march, August 25 to 26, 1862</title>
+  <desc id="desc">Generalized operational map showing the Rappahannock line, Jackson's march through Hinson's Mill, Salem, Thoroughfare Gap, Gainesville, and Bristoe Station, and Longstreet remaining opposite Pope before following Jackson.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f6f0e2"/><stop offset="1" stop-color="#e9dcc5"/></linearGradient>
+    <pattern id="hills" width="62" height="34" patternUnits="userSpaceOnUse"><path d="M4 28 Q18 7 32 28 Q43 13 57 28" fill="none" stroke="#9b8f73" stroke-width="2" opacity=".5"/></pattern>
+    <marker id="redArrow" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto"><path d="M0 0 L18 9 L0 18z" fill="#9a3d32"/></marker>
+    <marker id="blueArrow" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto"><path d="M0 0 L18 9 L0 18z" fill="#315f8c"/></marker>
+    <style>
+      .title{font:700 31px Georgia,serif;fill:#2c2923}.sub{font:17px Arial,sans-serif;fill:#595245}.label{font:700 17px Arial,sans-serif;fill:#2c2923}.small{font:14px Arial,sans-serif;fill:#514a3f}.date{font:700 14px Arial,sans-serif;fill:#fff}.river{fill:none;stroke:#628aa1;stroke-width:12;opacity:.85}.road{fill:none;stroke:#7e725c;stroke-width:4;stroke-dasharray:9 8}.rail{fill:none;stroke:#272727;stroke-width:5}.march{fill:none;stroke:#9a3d32;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#redArrow)}.hold{fill:none;stroke:#9a3d32;stroke-width:7;stroke-dasharray:15 10}.union{fill:none;stroke:#315f8c;stroke-width:9;stroke-linecap:round}.town{fill:#fffaf0;stroke:#665d4d;stroke-width:2}.box{fill:#fffaf0;stroke:#736955;stroke-width:2}.note{fill:#f0e6d2;stroke:#9a8c70;stroke-width:2}
+    </style>
+  </defs>
+  <rect width="1200" height="760" fill="url(#paper)"/>
+  <rect x="0" y="85" width="1200" height="675" fill="url(#hills)" opacity=".22"/>
+  <text x="55" y="48" class="title">Jackson's flank march around Pope's right</text>
+  <text x="55" y="75" class="sub">Northern Virginia • August 25–26, 1862 • generalized schematic, not to scale</text>
+
+  <path class="river" d="M92 110 C165 170 120 255 195 325 C250 375 198 460 270 532 C305 568 287 645 335 716"/>
+  <text x="78" y="410" class="label" transform="rotate(67 78 410)" fill="#315f8c">RAPPAHANNOCK RIVER</text>
+  <path class="road" d="M158 208 C300 195 420 240 540 294 C680 357 775 426 925 550"/>
+  <path class="road" d="M205 329 C365 370 510 405 640 462 C740 505 835 555 968 626"/>
+  <path class="rail" d="M612 154 L1115 651"/>
+  <path stroke="#fffaf0" stroke-width="2" stroke-dasharray="8 8" d="M612 154 L1115 651"/>
+  <text x="835" y="331" class="small" transform="rotate(45 835 331)">Orange &amp; Alexandria Railroad</text>
+
+  <path class="union" d="M187 197 C166 266 206 348 222 456 C227 513 253 580 282 630"/>
+  <text x="315" y="588" class="label" fill="#315f8c">POPE'S ARMY OF VIRGINIA</text>
+  <text x="315" y="612" class="small">Guarding the upper Rappahannock; headquarters at Warrenton</text>
+
+  <path class="march" d="M154 186 C168 134 252 128 316 166 L406 212 L526 225 L648 253 L764 326 L876 417 L1007 538"/>
+  <circle cx="152" cy="187" r="9" fill="#9a3d32"/><circle cx="315" cy="166" r="9" fill="#9a3d32"/><circle cx="526" cy="225" r="9" fill="#9a3d32"/><circle cx="649" cy="253" r="9" fill="#9a3d32"/><circle cx="764" cy="326" r="9" fill="#9a3d32"/><circle cx="876" cy="417" r="9" fill="#9a3d32"/><circle cx="1007" cy="538" r="9" fill="#9a3d32"/>
+  <path class="hold" d="M165 515 C115 555 115 625 169 683"/>
+
+  <g transform="translate(122 142)"><rect class="town" x="0" y="0" width="126" height="38" rx="6"/><text x="63" y="25" text-anchor="middle" class="label">Jeffersonton</text></g>
+  <g transform="translate(260 96)"><rect class="town" x="0" y="0" width="125" height="51" rx="6"/><text x="63" y="21" text-anchor="middle" class="label">Hinson's Mill</text><text x="63" y="41" text-anchor="middle" class="small">river crossing</text></g>
+  <g transform="translate(473 155)"><rect class="town" x="0" y="0" width="106" height="43" rx="6"/><text x="53" y="27" text-anchor="middle" class="label">Salem</text></g>
+  <g transform="translate(608 279)"><rect class="town" x="0" y="0" width="145" height="43" rx="6"/><text x="72" y="27" text-anchor="middle" class="label">Thoroughfare Gap</text></g>
+  <g transform="translate(720 348)"><rect class="town" x="0" y="0" width="120" height="43" rx="6"/><text x="60" y="27" text-anchor="middle" class="label">Gainesville</text></g>
+  <g transform="translate(900 438)"><rect class="town" x="0" y="0" width="146" height="43" rx="6"/><text x="73" y="27" text-anchor="middle" class="label">Bristoe Station</text></g>
+  <g transform="translate(1012 612)"><rect class="town" x="0" y="0" width="148" height="43" rx="6"/><text x="74" y="27" text-anchor="middle" class="label">Manassas Junction</text></g>
+  <g transform="translate(117 620)"><rect class="box" width="204" height="70" rx="8"/><text x="102" y="24" text-anchor="middle" class="label" fill="#9a3d32">LONGSTREET</text><text x="102" y="46" text-anchor="middle" class="small">Held Pope in front, then</text><text x="102" y="63" text-anchor="middle" class="small">ordered toward Salem late Aug. 26</text></g>
+
+  <g transform="translate(438 617)"><rect class="note" width="498" height="102" rx="9"/><text x="20" y="27" class="label">JACKSON'S COLUMN</text><text x="20" y="50" class="small">Ewell's division → A. P. Hill's Light Division → Taliaferro's division</text><text x="20" y="72" class="small">About 25,000–27,000 men; approximately 55 miles in two days</text><text x="20" y="93" class="small">Stuart's cavalry rejoined near Gainesville on August 26</text></g>
+  <g transform="translate(1005 102)"><path d="M30 46V3M30 3L16 25M30 3l14 22" stroke="#2c2923" stroke-width="3"/><text x="30" y="65" text-anchor="middle" class="label">N</text></g>
+  <g transform="translate(55 102)"><rect width="86" height="25" rx="12" fill="#9a3d32"/><text x="43" y="18" text-anchor="middle" class="date">AUG. 25</text></g>
+  <g transform="translate(610 102)"><rect width="86" height="25" rx="12" fill="#9a3d32"/><text x="43" y="18" text-anchor="middle" class="date">AUG. 26</text></g>
+</svg>
