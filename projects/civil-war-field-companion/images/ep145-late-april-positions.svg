@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Strategic positions around the Shenandoah Valley in late April 1862</title>
+  <desc id="desc">Schematic north-up map showing Banks at Harrisonburg, Jackson at Conrad's Store and Swift Run Gap, Ewell east of the Blue Ridge, Edward Johnson west of Staunton, and Milroy and Schenck in the mountains west of Staunton.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#faf5e8"/><stop offset="1" stop-color="#eadfc7"/></linearGradient>
+    <pattern id="mountains" width="44" height="34" patternUnits="userSpaceOnUse"><path d="M2 30 L13 8 L24 29 L34 12 L43 30" fill="none" stroke="#69765f" stroke-width="2" opacity=".55"/></pattern>
+    <marker id="blueArrow" markerWidth="16" markerHeight="16" refX="11" refY="6" orient="auto" viewBox="0 0 12 12"><path d="M0 0 L12 6 L0 12 Z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerWidth="16" markerHeight="16" refX="11" refY="6" orient="auto" viewBox="0 0 12 12"><path d="M0 0 L12 6 L0 12 Z" fill="#9a3d32"/></marker>
+    <style>.head{font:700 30px Georgia,serif;fill:#292621}.label{font:700 20px Georgia,serif;fill:#292621}.small{font:17px Arial,sans-serif;fill:#3f3a33}.tiny{font:14px Arial,sans-serif;fill:#554f46}.blue{fill:#315f8c}.red{fill:#9a3d32}.box{fill:#fffaf0;stroke:#8a7b66;stroke-width:2}.town{fill:#2d2a26}.road{fill:none;stroke:#a4865f;stroke-width:7;stroke-linecap:round}.river{fill:none;stroke:#6f9cb5;stroke-width:7;opacity:.8}</style>
+  </defs>
+  <rect width="1200" height="760" fill="url(#paper)"/>
+  <text x="32" y="46" class="head">LATE APRIL 1862 • FORCES AROUND THE VALLEY</text>
+  <text x="32" y="76" class="small">Strategic diagram • north is up • positions, routes, and distances are approximate</text>
+
+  <rect x="35" y="100" width="300" height="610" rx="18" fill="url(#mountains)" opacity=".78"/>
+  <rect x="760" y="100" width="155" height="610" rx="18" fill="url(#mountains)" opacity=".78"/>
+  <text x="105" y="690" class="label" fill="#65715e">ALLEGHENIES</text>
+  <text x="805" y="680" class="label" fill="#65715e" transform="rotate(-90 805 680)">BLUE RIDGE</text>
+  <text x="435" y="690" class="label" fill="#7a684d">SHENANDOAH VALLEY</text>
+  <text x="1000" y="690" class="label" fill="#7a684d">PIEDMONT</text>
+
+  <path class="river" d="M642 102 C624 181 664 246 650 324 C638 390 602 445 575 505 C548 566 552 632 520 708"/>
+  <text x="667" y="184" class="tiny" fill="#547f98" transform="rotate(78 667 184)">South Fork Shenandoah</text>
+  <path class="road" d="M524 110 C520 214 512 325 500 425 C491 506 483 590 478 710"/>
+  <text x="449" y="368" class="tiny" transform="rotate(-84 449 368)">Valley Turnpike</text>
+
+  <circle cx="524" cy="158" r="7" class="town"/><text x="542" y="165" class="small">New Market</text>
+  <circle cx="511" cy="260" r="7" class="town"/><text x="529" y="267" class="small">Harrisonburg</text>
+  <circle cx="672" cy="334" r="7" class="town"/><text x="691" y="341" class="small">Conrad's Store</text>
+  <text x="691" y="363" class="tiny">Elk Run Valley / Swift Run Gap</text>
+  <circle cx="606" cy="432" r="7" class="town"/><text x="624" y="439" class="small">Port Republic</text>
+  <circle cx="474" cy="553" r="7" class="town"/><text x="493" y="560" class="small">Staunton</text>
+  <circle cx="350" cy="547" r="7" class="town"/><text x="278" y="578" class="small">West View</text>
+  <circle cx="185" cy="526" r="7" class="town"/><text x="105" y="557" class="small">McDowell</text>
+  <circle cx="119" cy="345" r="7" class="town"/><text x="63" y="333" class="small">Franklin</text>
+  <circle cx="1030" cy="286" r="7" class="town"/><text x="973" y="318" class="small">Brandy Station area</text>
+
+  <rect x="378" y="185" width="235" height="78" rx="10" class="box"/>
+  <text x="396" y="214" class="label blue">Banks</text><text x="396" y="239" class="small">at Harrisonburg</text>
+  <path d="M500 264 C492 318 482 390 478 487" fill="none" stroke="#315f8c" stroke-width="8" stroke-dasharray="16 10" marker-end="url(#blueArrow)"/>
+
+  <rect x="694" y="217" width="230" height="82" rx="10" class="box"/>
+  <text x="712" y="247" class="label red">Jackson</text><text x="712" y="272" class="small">concealed near the gap</text>
+  <path d="M679 325 C626 341 570 363 535 405" fill="none" stroke="#9a3d32" stroke-width="8" stroke-dasharray="16 10" marker-end="url(#redArrow)"/>
+  <text x="570" y="319" class="tiny red">threat to Banks's flank</text>
+
+  <rect x="927" y="157" width="238" height="87" rx="10" class="box"/>
+  <text x="946" y="187" class="label red">Ewell • about 8,500</text><text x="946" y="212" class="small">moving toward Swift Run Gap</text>
+  <path d="M1020 253 C955 286 885 309 805 326" fill="none" stroke="#9a3d32" stroke-width="9" marker-end="url(#redArrow)"/>
+
+  <rect x="207" y="595" width="232" height="83" rx="10" class="box"/>
+  <text x="225" y="624" class="label red">Edward Johnson</text><text x="225" y="650" class="small">about 2,800 near West View</text>
+
+  <rect x="42" y="415" width="252" height="83" rx="10" class="box"/>
+  <text x="61" y="444" class="label blue">Milroy</text><text x="61" y="469" class="small">Frémont's vanguard</text>
+  <path d="M226 510 C272 524 310 532 336 540" fill="none" stroke="#315f8c" stroke-width="8" marker-end="url(#blueArrow)"/>
+  <text x="37" y="383" class="small blue">Schenck at Franklin, about 30 miles away</text>
+
+  <line x1="950" y1="630" x2="1032" y2="630" stroke="#9a3d32" stroke-width="13"/><text x="1048" y="637" class="small red">Confederacy</text>
+  <line x1="950" y1="666" x2="1032" y2="666" stroke="#315f8c" stroke-width="13"/><text x="1048" y="673" class="small blue">United States</text>
+  <path d="M1148 112 L1148 169" stroke="#292621" stroke-width="4"/><path d="M1148 92 L1135 120 L1161 120 Z" fill="#292621"/><text x="1139" y="82" class="label">N</text>
+</svg>
