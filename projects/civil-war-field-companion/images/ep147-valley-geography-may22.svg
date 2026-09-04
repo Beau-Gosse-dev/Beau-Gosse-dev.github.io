@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Strategic positions in the Shenandoah and Luray Valleys on May 22, 1862</title>
+  <desc id="desc">Schematic north-up map showing Banks at Strasburg and Front Royal, Jackson and Ewell concentrated in the Luray Valley, Shields moving toward Fredericksburg, and Fremont west of the Alleghenies.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbf6e9"/>
+      <stop offset="1" stop-color="#e9ddc4"/>
+    </linearGradient>
+    <pattern id="mountains" width="46" height="34" patternUnits="userSpaceOnUse">
+      <path d="M2 30 L13 8 L24 29 L35 11 L44 30" fill="none" stroke="#66735e" stroke-width="2" opacity=".62"/>
+    </pattern>
+    <marker id="redArrow" markerWidth="16" markerHeight="16" refX="11" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#9a3d32"/>
+    </marker>
+    <marker id="blueArrow" markerWidth="16" markerHeight="16" refX="11" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#315f8c"/>
+    </marker>
+    <style>
+      .head{font:700 30px Georgia,serif;fill:#292621}.label{font:700 20px Georgia,serif;fill:#292621}.small{font:17px Arial,sans-serif;fill:#3f3a33}.tiny{font:14px Arial,sans-serif;fill:#554f46}.blue{fill:#315f8c}.red{fill:#9a3d32}.muted{fill:#6c665d}.box{fill:#fffaf0;stroke:#8a7b66;stroke-width:2}.town{fill:#2d2a26}.road{fill:none;stroke:#aa8454;stroke-width:8;stroke-linecap:round}.rail{fill:none;stroke:#4d4b48;stroke-width:7;stroke-dasharray:3 9;stroke-linecap:round}.river{fill:none;stroke:#6f9cb5;stroke-width:7;opacity:.85}
+    </style>
+  </defs>
+  <rect width="1200" height="800" fill="url(#paper)"/>
+  <text x="32" y="46" class="head">MAY 22, 1862 • A DIVIDED FEDERAL LINE</text>
+  <text x="32" y="76" class="small">Strategic schematic • north is up • positions, routes, distances, and force footprints are approximate</text>
+
+  <rect x="38" y="102" width="118" height="635" rx="18" fill="url(#mountains)" opacity=".82"/>
+  <rect x="525" y="244" width="145" height="450" rx="58" fill="url(#mountains)" opacity=".9"/>
+  <rect x="910" y="102" width="110" height="635" rx="18" fill="url(#mountains)" opacity=".82"/>
+  <text x="72" y="704" class="label" fill="#65715e" transform="rotate(-90 72 704)">ALLEGHENIES</text>
+  <text x="573" y="661" class="label" fill="#65715e" transform="rotate(-90 573 661)">MASSANUTTEN</text>
+  <text x="948" y="695" class="label" fill="#65715e" transform="rotate(-90 948 695)">BLUE RIDGE</text>
+  <text x="258" y="754" class="label" fill="#7a684d">MAIN SHENANDOAH VALLEY</text>
+  <text x="694" y="754" class="label" fill="#7a684d">LURAY VALLEY</text>
+
+  <path class="road" d="M325 110 C344 192 370 270 386 352 C400 437 405 526 389 703"/>
+  <text x="303" y="411" class="tiny" transform="rotate(80 303 411)">Valley Turnpike</text>
+  <path class="road" d="M746 170 C756 268 759 363 754 470 C752 558 768 643 790 710"/>
+  <text x="782" y="405" class="tiny" transform="rotate(88 782 405)">Luray Valley turnpike</text>
+  <path class="rail" d="M376 210 C474 205 584 210 724 220"/>
+  <text x="460" y="193" class="tiny">Manassas Gap Railroad</text>
+  <path class="river" d="M699 112 C711 205 706 305 694 398 C684 484 686 591 709 718"/>
+  <text x="675" y="368" class="tiny" fill="#547f98" transform="rotate(-83 675 368)">South Fork Shenandoah</text>
+  <path class="river" d="M484 104 C468 198 462 310 475 407 C486 506 478 615 455 720"/>
+  <text x="490" y="357" class="tiny" fill="#547f98" transform="rotate(84 490 357)">North Fork Shenandoah</text>
+
+  <circle cx="325" cy="118" r="7" class="town"/><text x="344" y="124" class="small">Winchester</text>
+  <circle cx="376" cy="210" r="7" class="town"/><text x="300" y="238" class="small">Strasburg</text>
+  <circle cx="724" cy="220" r="7" class="town"/><text x="744" y="226" class="small">Front Royal</text>
+  <circle cx="553" cy="213" r="6" class="town"/><text x="519" y="188" class="tiny">Buckton</text>
+  <circle cx="399" cy="374" r="7" class="town"/><text x="315" y="400" class="small">Mount Jackson</text>
+  <circle cx="405" cy="470" r="7" class="town"/><text x="322" y="496" class="small">New Market</text>
+  <circle cx="754" cy="470" r="7" class="town"/><text x="774" y="476" class="small">Luray</text>
+  <circle cx="395" cy="576" r="7" class="town"/><text x="301" y="602" class="small">Harrisonburg</text>
+  <circle cx="360" cy="679" r="7" class="town"/><text x="375" y="686" class="small">Mount Solon</text>
+  <circle cx="928" cy="584" r="7" class="town"/><text x="946" y="590" class="small">Swift Run Gap</text>
+  <circle cx="584" cy="466" r="7" class="town"/><text x="538" y="438" class="small">New Market Gap</text>
+
+  <rect x="172" y="136" width="286" height="111" rx="12" class="box"/>
+  <text x="192" y="167" class="label blue">Banks • main force</text>
+  <text x="192" y="194" class="small">about 4,500 infantry</text>
+  <text x="192" y="220" class="small">plus about 1,500 cavalry</text>
+
+  <rect x="735" y="102" width="190" height="92" rx="12" class="box"/>
+  <text x="754" y="133" class="label blue">Front Royal</text>
+  <text x="754" y="159" class="small">about 900 infantry</text>
+  <text x="754" y="182" class="small">2 guns • no cavalry</text>
+
+  <path d="M514 212 L682 218" fill="none" stroke="#315f8c" stroke-width="5" stroke-dasharray="10 8"/>
+  <text x="520" y="242" class="tiny blue">12-mile, vulnerable connection</text>
+
+  <rect x="685" y="490" width="229" height="102" rx="12" class="box"/>
+  <text x="704" y="522" class="label red">Jackson + Ewell</text>
+  <text x="704" y="549" class="small">united in the Luray Valley</text>
+  <text x="704" y="575" class="small">by May 22</text>
+  <path d="M765 484 C754 403 748 323 734 244" fill="none" stroke="#9a3d32" stroke-width="10" marker-end="url(#redArrow)"/>
+
+  <rect x="964" y="366" width="205" height="122" rx="12" class="box"/>
+  <text x="983" y="397" class="label muted">Banks believed</text>
+  <text x="983" y="424" class="small">Ewell was still here</text>
+  <text x="983" y="450" class="small">and Jackson would</text>
+  <text x="983" y="476" class="small">approach Strasburg</text>
+  <path d="M965 493 C958 531 949 554 934 574" fill="none" stroke="#6c665d" stroke-width="6" stroke-dasharray="12 9"/>
+
+  <rect x="168" y="618" width="165" height="87" rx="12" class="box"/>
+  <text x="187" y="649" class="label blue">Frémont</text>
+  <text x="187" y="676" class="small">near Franklin, west</text>
+  <path d="M158 656 C133 641 111 620 94 593" fill="none" stroke="#315f8c" stroke-width="7" marker-end="url(#blueArrow)"/>
+
+  <rect x="1005" y="625" width="164" height="87" rx="12" class="box"/>
+  <text x="1024" y="656" class="label blue">Shields</text>
+  <text x="1024" y="683" class="small">moving east</text>
+  <path d="M1001 668 C969 676 944 688 919 709" fill="none" stroke="#315f8c" stroke-width="7" marker-end="url(#blueArrow)"/>
+  <text x="915" y="735" class="tiny">toward McDowell at Fredericksburg</text>
+
+  <line x1="1010" y1="112" x2="1082" y2="112" stroke="#9a3d32" stroke-width="12"/><text x="1096" y="119" class="small red">Confederacy</text>
+  <line x1="1010" y1="145" x2="1082" y2="145" stroke="#315f8c" stroke-width="12"/><text x="1096" y="152" class="small blue">United States</text>
+  <path d="M1144 204 L1144 259" stroke="#292621" stroke-width="4"/><path d="M1144 186 L1131 214 L1157 214 Z" fill="#292621"/><text x="1135" y="178" class="label">N</text>
+</svg>
