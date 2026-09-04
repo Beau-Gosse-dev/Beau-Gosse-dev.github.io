@@ -5,7 +5,7 @@
     <marker id="r" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" fill="#9a3d32"/></marker>
     <marker id="b" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" fill="#315f8c"/></marker>
     <pattern id="field" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M4 28L28 4M18 34L34 18M-2 14L14-2" stroke="#8b7653" stroke-width="1" opacity=".08"/></pattern>
-    <style>.head{font:700 31px Georgia,serif;fill:#27251f}.sub{font:16px Arial,sans-serif;fill:#4f493f}.label{font:600 17px Arial,sans-serif;fill:#26231f}.minor{font:14px Arial,sans-serif;fill:#4f493f}.road{fill:none;stroke:#887d6a;stroke-width:12}.rr{fill:none;stroke:#4c4943;stroke-width:5;stroke-dasharray:20 12}.woods{fill:#83916e;opacity:.38;stroke:#657052;stroke-width:2}.farm{fill:#f3e8d1;stroke:#5e5244;stroke-width:3}.cbar{fill:#9a3d32;stroke:#692c25;stroke-width:2}.ubar{fill:#315f8c;stroke:#234767;stroke-width:2}.ca{fill:none;stroke:#9a3d32;stroke-width:5;marker-end:url(#r)}.ua{fill:none;stroke:#315f8c;stroke-width:5;marker-end:url(#b)}</style>
+    <style>.head{font:700 31px Georgia,serif;fill:#27251f}.sub{font:16px Arial,sans-serif;fill:#4f493f}.label{font:600 17px Arial,sans-serif;fill:#26231f}.minor{font:14px Arial,sans-serif;fill:#4f493f}.barlabel{font:600 17px Arial,sans-serif;fill:#fff}.barminor{font:14px Arial,sans-serif;fill:#fff}.road{fill:none;stroke:#887d6a;stroke-width:12}.rr{fill:none;stroke:#4c4943;stroke-width:5;stroke-dasharray:20 12}.woods{fill:#83916e;opacity:.38;stroke:#657052;stroke-width:2}.farm{fill:#f3e8d1;stroke:#5e5244;stroke-width:3}.cbar{fill:#9a3d32;stroke:#692c25;stroke-width:2}.ubar{fill:#315f8c;stroke:#234767;stroke-width:2}.ca{fill:none;stroke:#9a3d32;stroke-width:5;marker-end:url(#r)}.ua{fill:none;stroke:#315f8c;stroke-width:5;marker-end:url(#b)}</style>
   </defs>
   <rect width="1200" height="820" fill="#eee4ce"/><rect width="1200" height="820" fill="url(#field)"/>
   <text x="54" y="56" class="head">Brawner Farm, evening of August 28</text><text x="55" y="87" class="sub">Generalized troop positions and movements • schematic • not to scale</text>
@@ -13,25 +13,26 @@
   <path d="M90 225 C330 205 520 250 720 220 S1000 175 1130 210" class="rr"/><text x="365" y="188" class="label">Unfinished railroad grade</text>
   <path d="M120 110 C340 65 510 95 685 150 C850 190 1005 110 1140 95 L1140 260 C930 245 760 300 570 270 C390 235 250 280 90 250Z" class="woods"/><text x="830" y="125" class="label">Stony Ridge woods</text>
   <path d="M120 505 C230 465 310 475 375 535 L350 650 L120 645Z" class="woods"/><text x="190" y="575" class="label">Brawner woods</text>
-  <path d="M860 500 C1000 450 1105 480 1160 560 L1145 660 L900 645Z" class="woods"/><text x="1015" y="565" class="label">woods</text>
+  <path d="M860 500 C1000 450 1105 480 1160 560 L1145 660 L900 645Z" class="woods"/><text x="1070" y="535" class="label">woods</text>
   <g transform="translate(320 445)"><rect width="58" height="42" class="farm"/><path d="M-6 0L29-28 65 0" fill="#725944"/><text x="29" y="66" text-anchor="middle" class="label">Brawner house</text></g>
-  <g transform="translate(950 635)"><rect width="25" height="22" class="farm"/><text x="12" y="-10" text-anchor="middle" class="minor">Groveton</text></g>
-  <g transform="translate(355 355)"><rect width="160" height="26" rx="4" class="cbar"/><text x="80" y="19" text-anchor="middle" fill="#fff" class="label">A. G. Taliaferro</text></g>
-  <g transform="translate(540 385)"><rect width="145" height="26" rx="4" class="cbar"/><text x="72" y="19" text-anchor="middle" fill="#fff" class="label">Baylor</text></g>
-  <g transform="translate(705 355)"><rect width="150" height="26" rx="4" class="cbar"/><text x="75" y="19" text-anchor="middle" fill="#fff" class="label">Lawton</text></g>
-  <g transform="translate(860 405)"><rect width="140" height="26" rx="4" class="cbar"/><text x="70" y="19" text-anchor="middle" fill="#fff" class="label">Trimble</text></g>
-  <g transform="translate(650 280)"><rect width="148" height="23" rx="4" class="cbar" opacity=".75"/><text x="74" y="17" text-anchor="middle" fill="#fff" class="minor">Early / Forno</text></g>
-  <g transform="translate(885 285)"><rect width="150" height="23" rx="4" class="cbar" opacity=".75"/><text x="75" y="17" text-anchor="middle" fill="#fff" class="minor">Johnson / Hill</text></g>
+  <g transform="translate(950 635)"><rect width="25" height="22" class="farm"/><text x="12" y="31" text-anchor="middle" class="minor">Groveton</text></g>
+  <g transform="translate(355 355)"><rect width="160" height="26" rx="4" class="cbar"/><text x="80" y="19" text-anchor="middle" class="barlabel">A. G. Taliaferro</text></g>
+  <g transform="translate(540 385)"><rect width="145" height="26" rx="4" class="cbar"/><text x="72" y="19" text-anchor="middle" class="barlabel">Baylor</text></g>
+  <g transform="translate(705 355)"><rect width="150" height="26" rx="4" class="cbar"/><text x="75" y="19" text-anchor="middle" class="barlabel">Lawton</text></g>
+  <g transform="translate(860 405)"><rect width="140" height="26" rx="4" class="cbar"/><text x="70" y="19" text-anchor="middle" class="barlabel">Trimble</text></g>
+  <g transform="translate(650 280)"><rect width="148" height="23" rx="4" class="cbar" opacity=".82"/><text x="74" y="17" text-anchor="middle" class="barminor">Early / Forno</text></g>
+  <g transform="translate(885 285)"><rect width="150" height="23" rx="4" class="cbar" opacity=".82"/><text x="75" y="17" text-anchor="middle" class="barminor">Johnson / Hill</text></g>
   <path d="M435 390 C430 420 420 445 415 472" class="ca"/><path d="M615 420 C610 450 605 470 600 495" class="ca"/><path d="M778 390 C785 425 790 445 795 475" class="ca"/><path d="M930 440 C920 465 900 490 880 515" class="ca"/>
-  <g transform="translate(315 515)"><rect width="150" height="28" rx="4" class="ubar"/><text x="75" y="20" text-anchor="middle" fill="#fff" class="label">19th Indiana</text></g>
-  <g transform="translate(485 535)"><rect width="138" height="28" rx="4" class="ubar"/><text x="69" y="20" text-anchor="middle" fill="#fff" class="label">2nd Wisconsin</text></g>
-  <g transform="translate(645 545)"><rect width="138" height="28" rx="4" class="ubar"/><text x="69" y="20" text-anchor="middle" fill="#fff" class="label">7th Wisconsin</text></g>
-  <g transform="translate(808 535)"><rect width="138" height="28" rx="4" class="ubar"/><text x="69" y="20" text-anchor="middle" fill="#fff" class="label">6th Wisconsin</text></g>
-  <g transform="translate(720 505)"><rect width="182" height="24" rx="4" class="ubar" opacity=".85"/><text x="91" y="17" text-anchor="middle" fill="#fff" class="minor">Doubleday: 56th PA / 76th NY</text></g>
-  <text x="554" y="608" class="label" fill="#315f8c">Gibbon’s Black Hat Brigade</text>
-  <g transform="translate(790 635)"><circle cx="0" cy="0" r="10" fill="#315f8c"/><text x="18" y="6" class="label">Campbell’s Battery B, 4th U.S.</text></g>
-  <path d="M785 646 C760 620 740 600 720 580" class="ua"/>
-  <path d="M1020 650 C980 610 950 590 925 570" class="ua"/><text x="1000" y="612" class="minor">Hatch halted near Groveton</text>+  <path d="M185 665 C225 630 265 600 310 575" class="ua"/><text x="85" y="692" class="minor">Patrick remained south of the pike</text>
+  <g transform="translate(315 515)"><rect width="150" height="28" rx="4" class="ubar"/><text x="75" y="20" text-anchor="middle" class="barlabel">19th Indiana</text></g>
+  <g transform="translate(485 535)"><rect width="138" height="28" rx="4" class="ubar"/><text x="69" y="20" text-anchor="middle" class="barlabel">2nd Wisconsin</text></g>
+  <g transform="translate(645 545)"><rect width="138" height="28" rx="4" class="ubar"/><text x="69" y="20" text-anchor="middle" class="barlabel">7th Wisconsin</text></g>
+  <g transform="translate(808 535)"><rect width="138" height="28" rx="4" class="ubar"/><text x="69" y="20" text-anchor="middle" class="barlabel">6th Wisconsin</text></g>
+  <g transform="translate(695 500)"><rect width="220" height="24" rx="4" class="ubar" opacity=".92"/><text x="110" y="17" text-anchor="middle" class="barminor">Doubleday: 56th PA / 76th NY</text></g>
+  <text x="490" y="620" class="label" fill="#315f8c">Gibbon’s Black Hat Brigade</text>
+  <g transform="translate(760 630)"><circle cx="0" cy="0" r="10" fill="#315f8c"/><text x="18" y="6" class="label">Campbell’s Battery B, 4th U.S.</text></g>
+  <path d="M752 620 C730 602 715 590 700 580" class="ua"/>
+  <g transform="translate(985 585)"><rect width="150" height="24" rx="4" class="ubar" opacity=".72"/><text x="75" y="17" text-anchor="middle" class="barminor">Hatch: not engaged</text></g>
+  <g transform="translate(105 615)"><rect width="165" height="24" rx="4" class="ubar" opacity=".72"/><text x="82" y="17" text-anchor="middle" class="barminor">Patrick: not engaged</text></g>
   <g transform="translate(70 115)"><path d="M0 40V0M0 0L-10 18M0 0L10 18" stroke="#292720" stroke-width="3" fill="none"/><text x="0" y="65" text-anchor="middle" class="label">N</text></g>
   <g transform="translate(55 755)"><rect width="450" height="46" rx="10" fill="#f8f2e4" stroke="#b3a58d"/><rect x="18" y="12" width="45" height="20" class="cbar"/><text x="75" y="28" class="minor">Confederacy</text><rect x="190" y="12" width="45" height="20" class="ubar"/><text x="247" y="28" class="minor">United States</text><path d="M348 22h45" class="rr"/><text x="402" y="28" class="minor">railroad</text></g>
 </svg>

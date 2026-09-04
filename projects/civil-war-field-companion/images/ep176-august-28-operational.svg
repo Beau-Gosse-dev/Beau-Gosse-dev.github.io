@@ -15,32 +15,33 @@
   <path d="M115 170 C145 230 110 310 145 375 C175 435 130 525 165 640" class="ridge"/>
   <text x="50" y="440" class="road-label" transform="rotate(-84 50 440)">Bull Run Mountains</text>
   <path d="M75 365 C240 350 390 360 525 375 S780 390 1130 365" class="route"/>
-  <text x="395" y="347" class="road-label">Warrenton Turnpike</text>
+  <text x="805" y="292" class="road-label">Warrenton Turnpike</text>
   <path d="M720 382 C765 445 775 520 790 665" class="route"/>
-  <text x="805" y="532" class="road-label" transform="rotate(76 805 532)">Road to Manassas Junction</text>
+  <text x="565" y="632" class="road-label">to Manassas Junction</text>
   <path d="M940 160 C900 245 930 330 905 420 C885 505 915 590 875 695" class="water"/>
   <text x="965" y="285" class="road-label" transform="rotate(80 965 285)">Bull Run</text>
   <path d="M560 250 C660 215 785 205 885 225" fill="none" stroke="#5f5548" stroke-width="5" stroke-dasharray="13 9"/>
-  <text x="618" y="196" class="road-label">Unfinished railroad grade</text>+  <g><rect x="120" y="335" width="78" height="50" rx="10" class="place"/><text x="159" y="366" text-anchor="middle" class="label">Gap</text><text x="159" y="407" text-anchor="middle" class="tiny">Thoroughfare</text></g>
+  <text x="618" y="196" class="road-label">Unfinished railroad grade</text>
+  <g><rect x="120" y="335" width="78" height="50" rx="10" class="place"/><text x="159" y="366" text-anchor="middle" class="label">Gap</text><text x="159" y="407" text-anchor="middle" class="tiny">Thoroughfare</text></g>
   <g><circle cx="330" cy="362" r="11" class="place"/><text x="330" y="402" text-anchor="middle" class="label">Haymarket</text></g>
-  <g><circle cx="500" cy="375" r="11" class="place"/><text x="500" y="416" text-anchor="middle" class="label">Gainesville</text></g>
-  <g><circle cx="665" cy="380" r="11" class="place"/><text x="650" y="425" text-anchor="middle" class="label">Brawner Farm</text><text x="650" y="448" text-anchor="middle" class="tiny">evening battle</text></g>
-  <g><circle cx="755" cy="382" r="11" class="place"/><text x="755" y="350" text-anchor="middle" class="label">Groveton</text></g>
-  <g><circle cx="1040" cy="370" r="11" class="place"/><text x="1040" y="410" text-anchor="middle" class="label">Centreville</text></g>
+  <g><circle cx="500" cy="375" r="11" class="place"/><text x="500" y="342" text-anchor="middle" class="label">Gainesville</text></g>
+  <g><circle cx="665" cy="380" r="11" class="place"/><text x="640" y="315" text-anchor="middle" class="label">Brawner Farm</text><text x="640" y="338" text-anchor="middle" class="tiny">evening battle</text></g>
+  <g><circle cx="755" cy="382" r="11" class="place"/><text x="780" y="345" text-anchor="middle" class="label">Groveton</text></g>
+  <g><circle cx="1040" cy="370" r="11" class="place"/><text x="1040" y="337" text-anchor="middle" class="label">Centreville</text></g>
   <g><circle cx="790" cy="657" r="11" class="place"/><text x="790" y="708" text-anchor="middle" class="label">Manassas Junction</text></g>
   <path d="M75 316 C105 315 115 330 148 342" class="confed"/>
-  <path d="M192 330 C285 300 385 320 465 354" class="confed"/>
+  <path d="M192 330 C270 302 350 315 430 347" class="confed"/>
   <text x="230" y="286" class="small" fill="#9a3d32">Longstreet and Lee</text>
   <text x="210" y="307" class="tiny">Anderson at the gap; Law around the north flank</text>
-  <path d="M185 430 C260 445 360 432 460 396" class="union"/>
-  <text x="235" y="484" class="small" fill="#315f8c">Ricketts withdraws toward Gainesville</text>
-  <path d="M790 622 C760 540 725 480 687 418" class="confed"/>
+  <path d="M185 450 C270 470 365 458 465 418" class="union"/>
+  <text x="235" y="505" class="small" fill="#315f8c">Ricketts withdraws toward Gainesville</text>
+  <path d="M790 622 C770 545 745 485 704 425" class="confed"/>
   <text x="835" y="585" class="small" fill="#9a3d32">Jackson leaves the junction</text>
   <text x="834" y="608" class="tiny">three divisions conceal themselves near Stony Ridge</text>
-  <path d="M505 405 C575 455 650 470 735 414" class="union"/>
-  <path d="M755 420 C845 448 930 420 1015 390" class="union"/>
-  <text x="780" y="478" class="small" fill="#315f8c">King ordered east toward Centreville</text>
-  <path d="M565 430 C640 515 700 565 770 630" class="union"/>
-  <text x="490" y="556" class="small" fill="#315f8c">Reynolds turns toward Manassas Junction</text>
+  <path d="M520 425 C585 475 650 485 722 432" class="union"/>
+  <path d="M775 438 C850 470 935 458 1015 410" class="union"/>
+  <text x="795" y="505" class="small" fill="#315f8c">King ordered east toward Centreville</text>
+  <path d="M535 440 C610 515 675 575 755 635" class="union"/>
+  <text x="420" y="575" class="small" fill="#315f8c">Reynolds turns toward Manassas Junction</text>
   <g transform="translate(55 650)"><rect width="410" height="70" rx="12" fill="#f8f2e4" stroke="#b3a58d"/><line x1="22" y1="25" x2="82" y2="25" class="confed"/><text x="100" y="31" class="small">Confederate movement</text><line x1="22" y1="51" x2="82" y2="51" class="union"/><text x="100" y="57" class="small">United States movement</text></g>
 </svg>

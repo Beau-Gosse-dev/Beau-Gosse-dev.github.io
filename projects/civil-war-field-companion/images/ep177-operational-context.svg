@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Operational setting of Second Manassas on August 29, 1862</title>
+  <desc id="desc">Generalized map of northern Virginia showing Thoroughfare Gap, Gainesville, Groveton, Manassas Junction, Centreville, Bull Run, and the movements of Jackson, Longstreet, and Pope.</desc>
+  <defs>
+    <marker id="blueArrow" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto"><path d="M0,0 L11,5.5 L0,11 Z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto"><path d="M0,0 L11,5.5 L0,11 Z" fill="#9a3d32"/></marker>
+    <style>
+      .label{font:600 21px Arial,sans-serif;fill:#20252b}.small{font:17px Arial,sans-serif;fill:#343b43}.tiny{font:15px Arial,sans-serif;fill:#49515a}.road{fill:none;stroke:#b58a55;stroke-width:9;stroke-linecap:round}.rail{fill:none;stroke:#686b70;stroke-width:5;stroke-dasharray:15 10}.water{fill:none;stroke:#78a9c8;stroke-width:12}.town{fill:#fff;stroke:#333;stroke-width:3}.blue{fill:none;stroke:#315f8c;stroke-width:9;marker-end:url(#blueArrow)}.red{fill:none;stroke:#9a3d32;stroke-width:9;marker-end:url(#redArrow)}
+    </style>
+  </defs>
+  <rect width="1200" height="760" fill="#f5f0e4"/>
+  <path d="M1030 70 C980 170 1060 270 990 365 C915 468 1025 575 950 708" class="water"/>
+  <text x="1015" y="530" class="small" fill="#386d8d" transform="rotate(79 1015 530)">Bull Run</text>
+  <path d="M110 445 C345 421 550 402 760 400 C900 399 1035 382 1140 357" class="road"/>
+  <text x="402" y="382" class="small">Warrenton Turnpike</text>
+  <path d="M242 111 C360 225 470 322 594 445 C665 515 760 590 883 660" class="rail"/>
+  <text x="510" y="306" class="small" transform="rotate(42 510 306)">Manassas Gap Railroad</text>
+  <path d="M616 255 C688 320 763 390 820 472 C867 540 920 603 989 657" fill="none" stroke="#9c8463" stroke-width="6"/>
+  <text x="786" y="479" class="tiny" transform="rotate(54 786 479)">Sudley Road</text>
+  <g><circle cx="145" cy="440" r="9" class="town"/><text x="104" y="477" class="label">Thoroughfare Gap</text></g>
+  <g><circle cx="365" cy="421" r="9" class="town"/><text x="323" y="459" class="label">Gainesville</text></g>
+  <g><circle cx="617" cy="400" r="9" class="town"/><text x="580" y="438" class="label">Groveton</text></g>
+  <g><circle cx="855" cy="570" r="9" class="town"/><text x="753" y="611" class="label">Manassas Junction</text></g>
+  <g><circle cx="1068" cy="338" r="9" class="town"/><text x="1005" y="318" class="label">Centreville</text></g>
+  <path d="M810 264 C725 308 673 351 625 385" class="red"/>
+  <text x="655" y="265" class="label" fill="#9a3d32">Jackson holds Stony Ridge</text>
+  <path d="M150 399 C315 362 468 360 573 393" class="red"/>
+  <text x="119" y="345" class="label" fill="#9a3d32">Longstreet arrives from the west</text>
+  <path d="M866 552 C760 503 701 459 652 420" class="blue"/>
+  <path d="M1047 356 C920 348 793 351 669 384" class="blue"/>
+  <text x="830" y="275" class="label" fill="#315f8c">Pope concentrates against Jackson</text>
+  <rect x="32" y="28" width="1136" height="93" rx="10" fill="#fff" stroke="#9d9486" stroke-width="2"/>
+  <text x="58" y="65" style="font:700 28px Arial,sans-serif;fill:#20252b">Second Manassas operational setting — August 29, 1862</text>
+  <text x="58" y="98" class="small">Generalized locations, routes, and movements. Schematic; not to scale.</text>
+  <g transform="translate(50 665)"><line x1="0" y1="0" x2="64" y2="0" class="red"/><text x="82" y="7" class="small">Confederate movement</text><line x1="320" y1="0" x2="384" y2="0" class="blue"/><text x="402" y="7" class="small">United States movement</text><line x1="680" y1="0" x2="750" y2="0" class="rail"/><text x="770" y="7" class="small">Railroad</text></g>
+  <path d="M1115 169 l18 43 h-36 z" fill="#26333d"/><text x="1092" y="151" class="label">N</text>
+</svg>
