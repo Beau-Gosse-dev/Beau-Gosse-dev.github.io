@@ -1,39 +1,45 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="950" viewBox="0 0 1400 950" role="img" aria-labelledby="title desc">
   <title id="title">Generalized troop positions and attacks at Second Manassas on August 29, 1862</title>
-  <desc id="desc">Schematic battlefield map showing Jackson along the unfinished railroad, Longstreet south of the Warrenton Turnpike, and Federal attacks by Sigel, Grover, Nagle, Kearny, Stevens, and Hatch.</desc>
+  <desc id="desc">Two-panel schematic with the battlefield on the left and a numbered sequence of Federal attacks on the right.</desc>
   <defs>
-    <marker id="ba" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#315f8c"/></marker>
-    <style>.h{font:700 29px Arial,sans-serif;fill:#20252b}.t{font:600 19px Arial,sans-serif;fill:#252b31}.s{font:16px Arial,sans-serif;fill:#3c454d}.road{fill:none;stroke:#b58a55;stroke-width:12}.rail{fill:none;stroke:#555b61;stroke-width:7;stroke-dasharray:17 11}.cs{fill:#9a3d32;stroke:#6c211a;stroke-width:2}.us{fill:#315f8c;stroke:#173d60;stroke-width:2}.atk{fill:none;stroke:#315f8c;stroke-width:9;marker-end:url(#ba)}.wood{fill:#dce7cf;stroke:#b8c7a8;stroke-width:2}</style>
+    <marker id="blueArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#315f8c"/></marker>
+    <style>
+      .heading{font:700 29px Arial,sans-serif;fill:#20252b}.subhead{font:700 20px Arial,sans-serif;fill:#20252b}.label{font:600 18px Arial,sans-serif;fill:#252b31}.body{font:16px Arial,sans-serif;fill:#3c454d}.small{font:14px Arial,sans-serif;fill:#4b545d}.rail{fill:none;stroke:#555b61;stroke-width:7;stroke-dasharray:17 11}.road{fill:none;stroke:#b58a55;stroke-width:11}.cs{fill:#9a3d32;stroke:#6c211a;stroke-width:2}.us{fill:#315f8c;stroke:#173d60;stroke-width:2}.attack{fill:none;stroke:#315f8c;stroke-width:8;marker-end:url(#blueArrow)}.panel{fill:#fff;stroke:#b7aea0;stroke-width:2}.woods{fill:#dce7cf;stroke:#bdcbaa;stroke-width:1.5}.breach{fill:#f2b544;stroke:#5e481b;stroke-width:3}
+    </style>
   </defs>
-  <rect width="1400" height="950" fill="#f6f1e6"/>
-  <path d="M65 290 C265 165 445 125 680 165 C850 194 980 165 1140 85 L1280 80 L1280 260 C1115 315 975 328 827 298 C622 257 433 286 245 380 Z" class="wood"/>
-  <text x="1080" y="150" class="s">wooded Stony Ridge</text>
-  <path d="M92 760 C385 695 663 650 880 630 C1070 612 1240 606 1360 595" class="road"/>
-  <text x="1000" y="660" class="t">Warrenton Turnpike</text>
-  <path d="M150 520 C360 395 580 320 785 287 C990 254 1160 225 1325 150" class="rail"/>
-  <text x="570" y="335" class="t" transform="rotate(-17 570 335)">unfinished Manassas Gap Railroad</text>
-  <path d="M1165 70 C1125 275 1090 500 1110 850" fill="none" stroke="#9b8464" stroke-width="7"/>
-  <text x="1142" y="483" class="s" transform="rotate(82 1142 483)">Sudley Road</text>
-  <path d="M355 822 C545 740 740 667 895 630" fill="none" stroke="#9b8464" stroke-width="6"/>
-  <text x="535" y="755" class="s" transform="rotate(-21 535 755)">Gainesville–Manassas road</text>
-  <g transform="rotate(-17 430 398)"><rect x="255" y="370" width="350" height="42" rx="7" class="cs"/><text x="330" y="398" class="t" fill="#fff">A. P. Hill: Gregg · Thomas · Pender</text></g>
-  <g transform="rotate(-17 742 315)"><rect x="632" y="288" width="300" height="42" rx="7" class="cs"/><text x="680" y="316" class="t" fill="#fff">Lawton: Johnson · Early</text></g>
-  <g transform="rotate(-17 1018 242)"><rect x="935" y="215" width="250" height="42" rx="7" class="cs"/><text x="975" y="243" class="t" fill="#fff">Starke’s division</text></g>
-  <rect x="518" y="688" width="405" height="45" rx="7" class="cs"/><text x="587" y="718" class="t" fill="#fff">Longstreet’s wing — concealed in woods</text>
-  <path d="M476 581 C430 523 400 480 390 440" class="atk"/><text x="225" y="604" class="t" fill="#315f8c">Sigel: Schurz and Milroy</text>
-  <path d="M660 550 C615 479 580 425 530 376" class="atk"/><text x="560" y="578" class="t" fill="#315f8c">Grover, about 3:15 p.m.</text>
-  <path d="M825 535 C797 457 790 395 778 326" class="atk"/><text x="790" y="566" class="t" fill="#315f8c">Nagle; Taylor follows</text>
-  <path d="M1025 495 C980 416 945 350 925 290" class="atk"/><text x="970" y="526" class="t" fill="#315f8c">Kearny and Stevens, about 5 p.m.</text>
-  <path d="M1005 735 C907 696 846 668 794 648" class="atk"/><text x="965" y="772" class="t" fill="#315f8c">Hatch toward Groveton at dusk</text>
-  <rect x="155" y="610" width="325" height="44" rx="7" class="us"/><text x="203" y="639" class="t" fill="#fff">Federal attack assembly areas</text>
-  <rect x="968" y="812" width="320" height="44" rx="7" class="us"/><text x="1011" y="841" class="t" fill="#fff">Porter and McDowell halted</text>
-  <path d="M1065 807 C958 752 861 704 788 667" fill="none" stroke="#315f8c" stroke-width="5" stroke-dasharray="12 9"/>
-  <circle cx="532" cy="376" r="17" fill="#f2b544" stroke="#5e481b" stroke-width="3"/><text x="504" y="347" class="s">Grover breach</text>
-  <circle cx="779" cy="326" r="17" fill="#f2b544" stroke="#5e481b" stroke-width="3"/><text x="736" y="294" class="s">Nagle breach</text>
-  <circle cx="925" cy="290" r="17" fill="#f2b544" stroke="#5e481b" stroke-width="3"/><text x="878" y="260" class="s">Kearny breach</text>
-  <rect x="26" y="24" width="1348" height="88" rx="10" fill="#fff" stroke="#9d9486" stroke-width="2"/>
-  <text x="52" y="61" class="h">August 29: Jackson’s railroad defense and Longstreet’s arrival</text>
-  <text x="52" y="92" class="s">Generalized formation bars and attack arrows show relationships, not exact frontage, routes, or timing. Schematic; not to scale.</text>
-  <g transform="translate(44 897)"><rect width="34" height="22" class="us"/><text x="47" y="18" class="s">United States</text><rect x="190" width="34" height="22" class="cs"/><text x="237" y="18" class="s">Confederacy</text><circle cx="423" cy="11" r="11" fill="#f2b544" stroke="#5e481b" stroke-width="2"/><text x="445" y="18" class="s">temporary penetration</text><line x1="686" y1="11" x2="755" y2="11" class="rail"/><text x="770" y="18" class="s">unfinished railroad</text></g>
-  <path d="M1310 154 l18 43 h-36 z" fill="#26333d"/><text x="1288" y="141" class="t">N</text>
+  <rect width="1400" height="950" fill="#f5f0e4"/>
+  <rect x="25" y="20" width="1350" height="88" rx="10" class="panel"/>
+  <text x="50" y="57" class="heading">August 29: Jackson’s railroad defense and Longstreet’s arrival</text>
+  <text x="50" y="87" class="body">Formation areas and attack routes are generalized. Schematic; not to scale.</text>
+  <rect x="25" y="128" width="925" height="792" rx="10" fill="#faf7ef" stroke="#b7aea0" stroke-width="2"/>
+  <rect x="975" y="128" width="400" height="792" rx="10" class="panel"/>
+  <path d="M55 172 C220 128 405 140 535 178 C685 220 803 179 927 148 L927 345 C785 377 652 383 526 351 C361 309 216 327 55 388 Z" class="woods"/>
+  <text x="67" y="202" class="small">wooded Stony Ridge</text>
+  <path d="M83 488 C285 417 480 359 655 322 C753 301 842 279 920 247" class="rail"/>
+  <rect x="67" y="430" width="195" height="38" rx="6" fill="#fff" stroke="#757a7f" stroke-width="1.5"/><text x="82" y="455" class="label">Unfinished railroad</text><line x1="262" y1="449" x2="292" y2="414" stroke="#757a7f" stroke-width="2"/>
+  <path d="M54 690 C297 690 538 690 925 690" class="road"/>
+  <rect x="63" y="646" width="188" height="36" rx="6" fill="#fff" stroke="#9d825f" stroke-width="1.5"/><text x="79" y="670" class="label">Warrenton Turnpike</text>
+  <rect x="115" y="270" width="225" height="47" rx="7" class="cs"/><text x="151" y="299" style="font:600 18px Arial,sans-serif;fill:#fff">A. P. Hill’s division</text><line x1="245" y1="317" x2="278" y2="416" stroke="#9a3d32" stroke-width="4"/>
+  <rect x="383" y="218" width="210" height="47" rx="7" class="cs"/><text x="421" y="247" style="font:600 18px Arial,sans-serif;fill:#fff">Lawton’s division</text><line x1="504" y1="265" x2="511" y2="354" stroke="#9a3d32" stroke-width="4"/>
+  <rect x="651" y="168" width="208" height="47" rx="7" class="cs"/><text x="691" y="197" style="font:600 18px Arial,sans-serif;fill:#fff">Starke’s division</text><line x1="747" y1="215" x2="744" y2="301" stroke="#9a3d32" stroke-width="4"/>
+  <rect x="344" y="744" width="339" height="49" rx="7" class="cs"/><text x="393" y="775" style="font:600 18px Arial,sans-serif;fill:#fff">Longstreet’s wing — deployed</text>
+  <rect x="692" y="832" width="224" height="45" rx="7" class="us"/><text x="722" y="861" style="font:600 18px Arial,sans-serif;fill:#fff">Porter and McDowell</text>
+  <rect x="93" y="580" width="760" height="45" rx="7" fill="#315f8c" opacity="0.16"/><text x="365" y="613" class="label" fill="#315f8c">Federal attack assembly areas</text>
+  <path d="M183 607 C199 554 224 503 268 447" class="attack"/><circle cx="166" cy="603" r="17" fill="#315f8c"/><text x="161" y="609" style="font:700 16px Arial,sans-serif;fill:#fff">1</text>
+  <path d="M366 590 C383 514 412 438 461 377" class="attack"/><circle cx="350" cy="586" r="17" fill="#315f8c"/><text x="345" y="592" style="font:700 16px Arial,sans-serif;fill:#fff">2</text><circle cx="473" cy="366" r="15" class="breach"/>
+  <path d="M551 578 C554 494 569 420 598 347" class="attack"/><circle cx="535" cy="574" r="17" fill="#315f8c"/><text x="530" y="580" style="font:700 16px Arial,sans-serif;fill:#fff">3</text><circle cx="606" cy="334" r="15" class="breach"/>
+  <path d="M768 557 C765 463 765 378 760 305" class="attack"/><circle cx="752" cy="553" r="17" fill="#315f8c"/><text x="747" y="559" style="font:700 16px Arial,sans-serif;fill:#fff">4</text><circle cx="759" cy="289" r="15" class="breach"/>
+  <path d="M853 690 C777 690 700 690 623 690" class="attack"/><circle cx="843" cy="657" r="17" fill="#315f8c"/><text x="838" y="663" style="font:700 16px Arial,sans-serif;fill:#fff">5</text>
+  <text x="1003" y="167" class="subhead">Attack sequence</text>
+  <circle cx="1010" cy="211" r="17" fill="#315f8c"/><text x="1005" y="217" style="font:700 16px Arial,sans-serif;fill:#fff">1</text><text x="1040" y="207" class="label">Morning — Sigel</text><text x="1040" y="230" class="body">Schurz and Milroy attack</text><text x="1040" y="251" class="body">Jackson’s left and center.</text>
+  <circle cx="1010" cy="303" r="17" fill="#315f8c"/><text x="1005" y="309" style="font:700 16px Arial,sans-serif;fill:#fff">2</text><text x="1040" y="299" class="label">About 3 p.m. — Grover</text><text x="1040" y="322" class="body">A bayonet attack crosses a</text><text x="1040" y="343" class="body">gap between Gregg and Thomas.</text>
+  <circle cx="1010" cy="395" r="17" fill="#315f8c"/><text x="1005" y="401" style="font:700 16px Arial,sans-serif;fill:#fff">3</text><text x="1040" y="391" class="label">Afternoon — Nagle</text><text x="1040" y="414" class="body">Three regiments cross the grade;</text><text x="1040" y="435" class="body">Bradley Johnson hits their flank.</text>
+  <circle cx="1010" cy="487" r="17" fill="#315f8c"/><text x="1005" y="493" style="font:700 16px Arial,sans-serif;fill:#fff">4</text><text x="1040" y="483" class="label">About 5 p.m. — Kearny</text><text x="1040" y="506" class="body">Kearny and Stevens penetrate;</text><text x="1040" y="527" class="body">Early helps restore the line.</text>
+  <circle cx="1010" cy="579" r="17" fill="#315f8c"/><text x="1005" y="585" style="font:700 16px Arial,sans-serif;fill:#fff">5</text><text x="1040" y="575" class="label">Dusk — Hatch</text><text x="1040" y="598" class="body">Hatch advances west and meets</text><text x="1040" y="619" class="body">Longstreet on the turnpike.</text>
+  <line x1="1000" y1="660" x2="1348" y2="660" stroke="#c7c0b5" stroke-width="2"/>
+  <text x="1003" y="699" class="subhead">Map key</text>
+  <circle cx="1011" cy="738" r="14" class="breach"/><text x="1040" y="744" class="body">Temporary Federal penetration</text>
+  <rect x="998" y="773" width="28" height="20" rx="3" class="cs"/><text x="1040" y="790" class="body">Confederate formation area</text>
+  <rect x="998" y="810" width="28" height="20" rx="3" class="us"/><text x="1040" y="827" class="body">United States formation area</text>
+  <text x="1003" y="870" class="small">Arrows do not show exact routes,</text><text x="1003" y="889" class="small">frontages, intervals, or timing.</text>
 </svg>
