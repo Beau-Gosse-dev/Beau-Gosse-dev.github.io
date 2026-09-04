@@ -28,7 +28,7 @@
     ]
   },
   "components/episode-browser.tsx": {
-    "file": "projects/civil-war-field-companion/_next/static/chunks/episode-browser-DLT6GFLi.js",
+    "file": "projects/civil-war-field-companion/_next/static/chunks/episode-browser-B-JWpte4.js",
     "name": "episode-browser",
     "src": "components/episode-browser.tsx",
     "isDynamicEntry": true,
@@ -39,7 +39,7 @@
     ]
   },
   "node_modules/.pnpm/vinext@1.0.0-beta.5_@vitejs_00faf19e5ba4318f3329433d3b787334/node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js": {
-    "file": "projects/civil-war-field-companion/_next/static/chunks/app-route-prefetch-policy-DIbASxsr.js",
+    "file": "projects/civil-war-field-companion/_next/static/chunks/app-route-prefetch-policy-6OAy6J_2.js",
     "name": "app-route-prefetch-policy",
     "src": "node_modules/.pnpm/vinext@1.0.0-beta.5_@vitejs_00faf19e5ba4318f3329433d3b787334/node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js",
     "isDynamicEntry": true,
@@ -48,7 +48,7 @@
     ]
   },
   "node_modules/.pnpm/vinext@1.0.0-beta.5_@vitejs_00faf19e5ba4318f3329433d3b787334/node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "projects/civil-war-field-companion/_next/static/chunks/layout-segment-context-C1jSmBa6.js",
+    "file": "projects/civil-war-field-companion/_next/static/chunks/layout-segment-context-DGN1Q8lZ.js",
     "name": "layout-segment-context",
     "src": "node_modules/.pnpm/vinext@1.0.0-beta.5_@vitejs_00faf19e5ba4318f3329433d3b787334/node_modules/vinext/dist/shims/layout-segment-context.js",
     "isDynamicEntry": true,
@@ -69,7 +69,7 @@
     ]
   },
   "virtual:vinext-app-browser-entry": {
-    "file": "projects/civil-war-field-companion/_next/static/chunks/index-CpTDHuZz.js",
+    "file": "projects/civil-war-field-companion/_next/static/chunks/index-DcLaxUhP.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
