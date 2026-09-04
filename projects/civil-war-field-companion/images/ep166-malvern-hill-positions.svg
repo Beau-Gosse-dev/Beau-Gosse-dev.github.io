@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Positions and intended artillery plan at Malvern Hill, July 1, 1862</title>
+  <desc id="desc">Schematic battlefield map showing the Federal position on Malvern Hill, Confederate approach areas, the planned artillery ridges, and Magruder's mistaken movement toward the actual Quaker Road.</desc>
+  <defs>
+    <marker id="redArrow" markerUnits="userSpaceOnUse" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto"><path d="M0 0L16 8 0 16Z" fill="#9a3d32"/></marker>
+    <marker id="redOutlineArrow" markerUnits="userSpaceOnUse" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto"><path d="M0 0L16 8 0 16Z" fill="#f3eedf" stroke="#9a3d32" stroke-width="1.5"/></marker>
+    <style>
+      .label{font:600 20px Georgia,serif;fill:#202729}.small{font:16px Arial,sans-serif;fill:#2d3639}.tiny{font:14px Arial,sans-serif;fill:#3b4548}.water{fill:none;stroke:#67a2c4;stroke-width:18;stroke-linecap:round}.swamp{fill:none;stroke:#83a98d;stroke-width:30;stroke-linecap:round;stroke-dasharray:5 10}.road{fill:none;stroke:#a99b7b;stroke-width:6;stroke-dasharray:12 8}.usline{fill:none;stroke:#315f8c;stroke-width:15;stroke-linecap:round}.usbox{fill:#e4eef6;stroke:#315f8c;stroke-width:3}.csbox{fill:#f8e8e3;stroke:#9a3d32;stroke-width:3}.planned{fill:none;stroke:#9a3d32;stroke-width:8;stroke-dasharray:14 9;marker-end:url(#redOutlineArrow)}.move{fill:none;stroke:#9a3d32;stroke-width:8;marker-end:url(#redArrow)}.gun{fill:#9a3d32;stroke:#5f241d;stroke-width:2}.usgun{fill:#315f8c;stroke:#173c61;stroke-width:2}.site{fill:#fffaf0;stroke:#625b4d;stroke-width:3}
+    </style>
+  </defs>
+  <rect width="1200" height="720" fill="#f3eedf"/>
+  <path d="M-20 647C216 614 421 663 630 642S970 612 1220 650" class="water"/>
+  <text x="884" y="687" class="label" fill="#396e91">James River</text>
+  <path d="M96 718C115 617 145 548 175 467S219 294 209 205" class="swamp"/>
+  <path d="M103 718C120 622 146 548 180 464S221 295 211 203" class="water"/>
+  <text x="30" y="414" class="label" fill="#396e91" transform="rotate(-76 30 414)">Turkey Run / Malvern Cliffs</text>
+  <path d="M1025 668C1002 582 971 516 946 438S901 299 875 236 839 115 850 -20" class="swamp"/>
+  <path d="M1025 668C1002 582 972 514 947 439S901 297 876 237 840 114 850 -20" class="water"/>
+  <text x="1000" y="322" class="label" fill="#396e91" transform="rotate(73 1000 322)">Western Run</text>
+  <path d="M599 -20L588 178 601 365 617 676" class="road"/>
+  <text x="618" y="345" class="label" transform="rotate(87 618 345)">Willis Church Road</text>
+  <path d="M260 -20C247 139 269 274 289 399" class="road"/>
+  <text x="274" y="175" class="small" transform="rotate(84 274 175)">actual Quaker Road</text>
+  <path d="M415 508C495 481 579 470 672 481S813 508 884 531" class="usline"/>
+  <path d="M410 494C469 430 525 418 594 425" class="usline"/>
+  <text x="454" y="460" class="label" fill="#315f8c">Morell</text>
+  <text x="286" y="542" class="label" fill="#315f8c">Sykes</text>
+  <text x="753" y="505" class="label" fill="#315f8c">Couch</text>
+  <rect x="674" y="557" width="296" height="70" rx="13" class="usbox"/>
+  <text x="695" y="588" class="label" fill="#315f8c">Sumner + Heintzelman</text>
+  <text x="695" y="613" class="small">supporting eastern sector</text>
+  <rect x="984" y="550" width="192" height="70" rx="13" class="usbox"/>
+  <text x="1004" y="581" class="label" fill="#315f8c">Franklin</text>
+  <text x="1004" y="606" class="small">James approaches</text>
+  <circle cx="525" cy="500" r="9" fill="#24292a"/><text x="472" y="528" class="small">Crew house</text>
+  <circle cx="741" cy="516" r="9" fill="#24292a"/><text x="708" y="546" class="small">West house</text>
+  <g transform="translate(468 390)">
+    <circle cx="0" cy="0" r="9" class="usgun"/><circle cx="44" cy="-7" r="9" class="usgun"/><circle cx="88" cy="0" r="9" class="usgun"/>
+  </g>
+  <g transform="translate(614 409)">
+    <circle cx="0" cy="0" r="9" class="usgun"/><circle cx="44" cy="0" r="9" class="usgun"/><circle cx="88" cy="8" r="9" class="usgun"/><circle cx="132" cy="17" r="9" class="usgun"/>
+  </g>
+  <rect x="342" y="209" width="257" height="85" rx="14" class="csbox"/>
+  <text x="362" y="241" class="label" fill="#9a3d32">Armistead + Wright</text>
+  <text x="362" y="266" class="small">Huger's division sector</text>
+  <text x="362" y="286" class="small">planned western gun ridge</text>
+  <g transform="translate(405 312)">
+    <circle cx="0" cy="0" r="9" class="gun"/><circle cx="39" cy="-5" r="9" class="gun"/><circle cx="78" cy="0" r="9" class="gun"/>
+  </g>
+  <rect x="700" y="176" width="259" height="89" rx="14" class="csbox"/>
+  <text x="720" y="208" class="label" fill="#9a3d32">Jackson / Poindexter</text>
+  <text x="720" y="233" class="small">eastern approach and</text>
+  <text x="720" y="254" class="small">planned eastern gun ridge</text>
+  <g transform="translate(748 298)">
+    <circle cx="0" cy="0" r="9" class="gun"/><circle cx="39" cy="5" r="9" class="gun"/><circle cx="78" cy="0" r="9" class="gun"/>
+  </g>
+  <path d="M487 329C512 351 526 370 535 392" class="planned"/>
+  <path d="M760 318C732 343 710 367 687 401" class="planned"/>
+  <path d="M517 69C444 75 364 84 302 126S274 243 288 309" class="move"/>
+  <rect x="26" y="51" width="316" height="89" rx="14" class="csbox"/>
+  <text x="46" y="83" class="label" fill="#9a3d32">Magruder's initial movement</text>
+  <text x="46" y="108" class="small">Guides follow the actual Quaker Road;</text>
+  <text x="46" y="130" class="small">an aide later redirects the column.</text>
+  <path d="M305 305C323 217 412 166 543 183" class="move"/>
+  <text x="290" y="335" class="small" fill="#9a3d32">corrected toward Willis Church Road</text>
+  <rect x="842" y="30" width="325" height="121" rx="14" class="site"/>
+  <circle cx="866" cy="57" r="8" class="gun"/><text x="886" y="63" class="small">Confederate artillery (planned)</text>
+  <circle cx="866" cy="91" r="8" class="usgun"/><text x="886" y="97" class="small">Federal artillery</text>
+  <line x1="857" y1="127" x2="904" y2="127" class="usline"/><text x="922" y="133" class="small">Federal infantry line</text>
+  <text x="24" y="699" class="tiny">Schematic; not to scale. Unit areas, routes, frontage, and gun positions are generalized. Dashed red arrows show the intended artillery plan, not accomplished fire.</text>
+</svg>
