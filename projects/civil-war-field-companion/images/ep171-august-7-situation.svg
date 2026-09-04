@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Operational situation between Gordonsville and Culpeper on August 7, 1862</title>
+  <desc id="desc">Generalized schematic showing Jackson's three Confederate divisions near Gordonsville, Banks's United States corps near Culpeper Court House, the Rapidan River crossings, Orange Court House, Cedar Mountain, railroad routes, and Jackson's intended northward advance.</desc>
+  <defs>
+    <marker id="redArrow2" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,8 L11,4 z" fill="#9a3d32"/></marker>
+    <marker id="blueArrow2" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,8 L11,4 z" fill="#315f8c"/></marker>
+    <style>
+      .label{font:600 20px Georgia,serif;fill:#20252a}.small{font:16px Arial,sans-serif;fill:#30363c}.tiny{font:14px Arial,sans-serif;fill:#4a5158}.water{fill:none;stroke:#7ca6bf;stroke-width:13;stroke-linecap:round}.rail{fill:none;stroke:#34383c;stroke-width:4;stroke-dasharray:11 7}.road{fill:none;stroke:#a09176;stroke-width:5;stroke-dasharray:5 8}.usbox{fill:#dbe7f1;stroke:#315f8c;stroke-width:3}.csbox{fill:#f0deda;stroke:#9a3d32;stroke-width:3}
+    </style>
+  </defs>
+  <rect width="1200" height="760" fill="#efe8d9"/>
+  <text x="50" y="54" font-family="Georgia,serif" font-size="30" font-weight="700">Opposing concentrations on August 7, 1862</text>
+  <text x="50" y="83" class="small">Jackson moved against Banks before the Army of Virginia could fully concentrate</text>
+  <path class="water" d="M80 390 C250 350 390 420 570 375 C740 332 940 390 1140 340"/>
+  <text x="920" y="395" class="label" fill="#315f8c">Rapidan River</text>
+  <path class="rail" d="M260 650 L455 515 L600 405 L760 285 L915 120"/>
+  <path class="rail" d="M260 650 L150 560"/>
+  <text x="490" y="513" class="tiny" transform="rotate(-39 490 513)">Orange &amp; Alexandria Railroad</text>
+  <text x="95" y="532" class="tiny" transform="rotate(32 95 532)">Virginia Central Railroad</text>
+  <path class="road" d="M290 630 C390 560 465 500 545 430 C625 362 690 320 760 285 C825 253 870 190 915 120"/>
+  <path class="road" d="M545 430 C685 455 810 455 980 420"/>
+  <path d="M338 590 C430 520 500 456 566 405 C630 356 690 329 747 300" fill="none" stroke="#9a3d32" stroke-width="12" marker-end="url(#redArrow2)" opacity=".92"/>
+  <circle cx="260" cy="650" r="8" fill="#20252a"/><text x="276" y="655" class="label">Gordonsville</text>
+  <circle cx="545" cy="430" r="8" fill="#20252a"/><text x="560" y="426" class="label">Orange C.H.</text>
+  <circle cx="638" cy="367" r="7" fill="#20252a"/><text x="650" y="360" class="small">Rapidan crossings</text>
+  <path d="M733 312 L766 247 L801 312 Z" fill="#86765e"/><text x="813" y="294" class="label">Cedar Mountain</text>
+  <text x="814" y="318" class="tiny">Battle site, August 9</text>
+  <circle cx="915" cy="120" r="8" fill="#20252a"/><text x="930" y="125" class="label">Culpeper C.H.</text>
+  <rect x="55" y="118" width="390" height="205" rx="14" class="csbox"/>
+  <text x="78" y="153" class="label" fill="#7f3028">Jackson’s command</text>
+  <text x="78" y="184" class="small">Near Gordonsville; roughly 24,000–26,000</text>
+  <rect x="82" y="207" width="325" height="30" rx="5" fill="#9a3d32" opacity=".88"/><text x="244" y="228" text-anchor="middle" font-family="Arial" font-size="15" fill="white">Charles S. Winder’s division</text>
+  <rect x="82" y="245" width="325" height="30" rx="5" fill="#9a3d32" opacity=".78"/><text x="244" y="266" text-anchor="middle" font-family="Arial" font-size="15" fill="white">Richard S. Ewell’s division</text>
+  <rect x="82" y="283" width="325" height="30" rx="5" fill="#9a3d32" opacity=".68"/><text x="244" y="304" text-anchor="middle" font-family="Arial" font-size="15" fill="white">A. P. Hill’s Light Division</text>
+  <rect x="760" y="465" width="385" height="165" rx="14" class="usbox"/>
+  <text x="784" y="501" class="label" fill="#284f75">Banks’s II Corps</text>
+  <text x="784" y="532" class="small">Near Culpeper; about 11,000 in the episode</text>
+  <text x="784" y="565" class="small">Part of Pope’s Army of Virginia</text>
+  <text x="784" y="595" class="tiny">Other Federal corps and reinforcements were not</text>
+  <text x="784" y="617" class="tiny">yet assembled with Banks when Jackson acted.</text>
+  <text x="465" y="600" class="small" fill="#7f3028" font-weight="700">Jackson’s intended advance</text>
+  <text x="50" y="726" class="small" font-weight="700">GENERALIZED SCHEMATIC — NOT TO SCALE</text>
+  <text x="1160" y="726" class="tiny" text-anchor="end">Arrows show operational intent, not exact march routes or timing.</text>
+</svg>

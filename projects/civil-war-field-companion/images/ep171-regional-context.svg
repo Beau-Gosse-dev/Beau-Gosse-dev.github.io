@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Central Virginia strategic setting, July 8 to August 7, 1862</title>
+  <desc id="desc">Generalized regional map showing Washington, Aquia Creek, Fredericksburg, Culpeper Court House, Gordonsville, Richmond, Harrison's Landing, Fort Monroe, the Rappahannock and Rapidan Rivers, railroads, and the principal Federal and Confederate movements covered in episode 171.</desc>
+  <defs>
+    <marker id="blueArrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#9a3d32"/></marker>
+    <style>
+      .label{font:600 20px Georgia,serif;fill:#20252a}.small{font:16px Arial,sans-serif;fill:#31373d}.tiny{font:14px Arial,sans-serif;fill:#4a5158}.water{fill:none;stroke:#7ca6bf;stroke-width:10;stroke-linecap:round}.rail{fill:none;stroke:#333;stroke-width:3;stroke-dasharray:10 7}.road{fill:none;stroke:#9b8c73;stroke-width:4;stroke-dasharray:4 7}.city{fill:#20252a}.us{fill:#315f8c}.cs{fill:#9a3d32}.panel{fill:#f8f3e8;stroke:#b4aa98;stroke-width:2}
+    </style>
+  </defs>
+  <rect width="1200" height="760" fill="#efe8d9"/>
+  <path d="M1040 0 C1050 150 1000 250 1030 390 C1070 510 1100 620 1140 760 L1200 760 L1200 0 Z" fill="#cbdde6"/>
+  <text x="50" y="54" font-family="Georgia,serif" font-size="30" font-weight="700" fill="#20252a">From the James River to Culpeper</text>
+  <text x="50" y="83" class="small">Operational setting covered in episode 171 · July 8–August 7, 1862</text>
+  <path class="water" d="M185 270 C350 260 470 260 610 240 C740 222 855 230 1020 185"/>
+  <path class="water" d="M240 380 C390 375 505 360 645 335 C790 312 910 324 1020 292"/>
+  <path class="water" d="M335 642 C520 625 650 642 760 610 C860 580 970 555 1090 575"/>
+  <text x="450" y="228" class="small" fill="#315f8c">Rappahannock River</text>
+  <text x="820" y="346" class="small" fill="#315f8c">Rapidan River</text>
+  <text x="770" y="595" class="small" fill="#315f8c">James River</text>
+  <path class="rail" d="M958 100 L865 210 L725 270 L600 350 L515 455 L565 580"/>
+  <path class="rail" d="M515 455 L350 410 L210 350"/>
+  <text x="650" y="378" class="tiny" transform="rotate(-42 650 378)">Orange &amp; Alexandria Railroad</text>
+  <text x="290" y="385" class="tiny" transform="rotate(18 290 385)">Virginia Central Railroad</text>
+  <path class="road" d="M1010 115 C1030 220 1010 310 955 405"/>
+  <path class="road" d="M958 100 C880 165 845 210 790 260"/>
+  <path d="M560 580 C535 505 500 465 515 455 C548 420 582 380 600 350" fill="none" stroke="#9a3d32" stroke-width="10" marker-end="url(#redArrow)" opacity=".9"/>
+  <path d="M725 270 C680 260 645 275 600 350" fill="none" stroke="#315f8c" stroke-width="10" marker-end="url(#blueArrow)" opacity=".9"/>
+  <path d="M895 642 C955 590 990 510 955 405 C925 325 860 288 725 270" fill="none" stroke="#315f8c" stroke-width="7" stroke-dasharray="14 10" marker-end="url(#blueArrow)" opacity=".75"/>
+  <circle class="city" cx="958" cy="100" r="7"/><text x="972" y="104" class="label">Washington</text>
+  <circle class="city" cx="865" cy="210" r="7"/><text x="879" y="214" class="label">Aquia Creek</text>
+  <circle class="city" cx="725" cy="270" r="7"/><text x="739" y="264" class="label">Fredericksburg</text>
+  <circle class="city" cx="600" cy="350" r="7"/><text x="614" y="345" class="label">Culpeper C.H.</text>
+  <circle class="city" cx="515" cy="455" r="7"/><text x="529" y="450" class="label">Gordonsville</text>
+  <circle class="city" cx="560" cy="580" r="7"/><text x="574" y="575" class="label">Richmond</text>
+  <circle class="city" cx="795" cy="620" r="7"/><text x="700" y="656" class="label">Harrison’s Landing</text>
+  <circle class="city" cx="895" cy="642" r="7"/><text x="909" y="647" class="label">Fort Monroe</text>
+  <rect x="48" y="112" width="360" height="162" rx="12" class="panel"/>
+  <line x1="78" y1="149" x2="151" y2="149" stroke="#9a3d32" stroke-width="10" marker-end="url(#redArrow)"/><text x="172" y="155" class="small">Jackson to Gordonsville</text>
+  <line x1="78" y1="195" x2="151" y2="195" stroke="#315f8c" stroke-width="10" marker-end="url(#blueArrow)"/><text x="172" y="201" class="small">Pope’s concentration</text>
+  <line x1="78" y1="237" x2="151" y2="237" stroke="#315f8c" stroke-width="7" stroke-dasharray="12 8" marker-end="url(#blueArrow)"/><text x="172" y="243" class="small">Reinforcements by water</text>
+  <rect x="782" y="382" width="357" height="130" rx="12" fill="#fbf8f0" stroke="#b4aa98" stroke-width="2"/>
+  <text x="806" y="417" class="small" font-weight="700">Strategic relationship</text>
+  <text x="806" y="448" class="tiny">Gordonsville joined the Virginia Central and</text>
+  <text x="806" y="472" class="tiny">Orange &amp; Alexandria railroads. A Federal</text>
+  <text x="806" y="496" class="tiny">advance toward it threatened Lee’s rail link.</text>
+  <text x="50" y="726" class="small" font-weight="700">GENERALIZED SCHEMATIC — NOT TO SCALE</text>
+  <text x="1160" y="726" class="tiny" text-anchor="end">Routes, positions, waterways, and distances are approximate.</text>
+</svg>
