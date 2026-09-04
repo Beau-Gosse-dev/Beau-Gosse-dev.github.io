@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Samuel Carroll's raid into Port Republic, June 8, 1862</title>
+  <desc id="desc">Schematic tactical map showing United States cavalry fording the South River, entering Port Republic, seizing the town end of the North River bridge, and retreating after Confederate infantry and artillery counterattacked.</desc>
+  <defs>
+    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#efe5ca"/><stop offset="1" stop-color="#d5c093"/></linearGradient>
+    <pattern id="ridge" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(30)"><line x1="0" y1="0" x2="0" y2="18" stroke="#6a6049" stroke-width="5" opacity=".18"/></pattern>
+    <marker id="blue" markerUnits="userSpaceOnUse" markerWidth="20" markerHeight="20" refX="18" refY="10" orient="auto"><path d="M0 0L20 10L0 20Z" fill="#315f8c"/></marker>
+    <marker id="red" markerUnits="userSpaceOnUse" markerWidth="20" markerHeight="20" refX="18" refY="10" orient="auto"><path d="M0 0L20 10L0 20Z" fill="#9a3d32"/></marker>
+    <style>.title{font:700 29px Georgia,serif;fill:#27231e}.place{font:700 20px Georgia,serif;fill:#27231e}.label{font:700 16px Arial,sans-serif}.small{font:14px Arial,sans-serif;fill:#38332c}.tiny{font:12px Arial,sans-serif;fill:#38332c}.road{fill:none;stroke:#705f45;stroke-width:17;stroke-linecap:round}.water{fill:none;stroke:#79b0c6;stroke-width:54;stroke-linecap:round}</style>
+  </defs>
+  <rect width="1200" height="760" fill="url(#ground)"/>
+  <path d="M0 220 C210 240 390 255 555 260 C710 265 830 250 948 218" class="water"/>
+  <path d="M915 780 C900 650 920 525 936 405 C948 320 950 260 948 218" class="water"/>
+  <path d="M948 218 C1040 175 1110 120 1210 45" class="water"/>
+  <path d="M0 220 C210 240 390 255 555 260 C710 265 830 250 948 218" fill="none" stroke="#c6e0e8" stroke-width="30" opacity=".7"/>
+  <path d="M915 780 C900 650 920 525 936 405 C948 320 950 260 948 218" fill="none" stroke="#c6e0e8" stroke-width="30" opacity=".7"/>
+  <path d="M948 218 C1040 175 1110 120 1210 45" fill="none" stroke="#c6e0e8" stroke-width="30" opacity=".7"/>
+  <text x="250" y="218" class="label" fill="#315d72">NORTH RIVER</text><text x="952" y="574" class="label" fill="#315d72" transform="rotate(-82 952 574)">SOUTH RIVER</text><text x="1015" y="170" class="label" fill="#315d72" transform="rotate(-31 1015 170)">SOUTH FORK</text>
+  <path d="M1030 655 C970 580 930 515 860 475 C740 430 610 448 480 470 C365 490 260 520 145 545" class="road"/>
+  <text x="185" y="580" class="small">Main Street / road toward the Confederate trains</text>
+  <path d="M620 455 C625 375 625 320 630 270 C630 230 625 185 620 130" class="road" stroke-width="13"/>
+  <rect x="595" y="226" width="72" height="84" rx="5" fill="#806b48" stroke="#3f3425" stroke-width="3"/>
+  <text x="675" y="290" class="small">covered bridge</text>
+  <path d="M1010 620 C965 570 945 522 927 480" fill="none" stroke="#315f8c" stroke-width="17" marker-end="url(#blue)"/>
+  <ellipse cx="928" cy="489" rx="44" ry="15" fill="none" stroke="#fff" stroke-width="4" stroke-dasharray="8 6"/>
+  <text x="968" y="505" class="small" fill="#244c72">middle ford</text>
+  <path d="M860 472 C790 458 720 448 655 450" fill="none" stroke="#315f8c" stroke-width="16" marker-end="url(#blue)"/>
+  <path d="M655 454 C530 470 405 500 275 530" fill="none" stroke="#315f8c" stroke-width="13" marker-end="url(#blue)"/>
+  <path d="M720 445 C690 395 660 350 638 305" fill="none" stroke="#315f8c" stroke-width="13" marker-end="url(#blue)"/>
+  <g transform="translate(966 360)"><ellipse cx="80" cy="55" rx="115" ry="48" fill="url(#ridge)" stroke="#84765a" stroke-width="3"/><text x="80" y="49" text-anchor="middle" class="label">YOST HILL</text><text x="80" y="70" text-anchor="middle" class="tiny">two Federal guns</text></g>
+  <g transform="translate(770 585)"><rect width="310" height="76" rx="12" fill="#eaf2f7" stroke="#315f8c" stroke-width="3"/><text x="155" y="30" text-anchor="middle" class="label" fill="#244c72">CARROLL: 150 CAVALRY + 2 GUNS</text><text x="155" y="54" text-anchor="middle" class="small">infantry follows but cannot hold the town</text></g>
+  <g transform="translate(515 85)"><rect width="275" height="82" rx="12" fill="#f7e7e2" stroke="#9a3d32" stroke-width="3"/><text x="137" y="31" text-anchor="middle" class="label" fill="#7e2e27">37TH VIRGINIA</text><text x="137" y="55" text-anchor="middle" class="small">charges toward and across bridge</text></g>
+  <path d="M620 145 C622 175 626 205 630 232" fill="none" stroke="#9a3d32" stroke-width="17" marker-end="url(#red)"/>
+  <path d="M420 580 C505 560 560 535 610 500" fill="none" stroke="#9a3d32" stroke-width="13" marker-end="url(#red)"/>
+  <g transform="translate(300 595)"><rect width="355" height="76" rx="12" fill="#f7e7e2" stroke="#9a3d32" stroke-width="3"/><text x="177" y="30" text-anchor="middle" class="label" fill="#7e2e27">MOORE'S SMALL DETACHMENT</text><text x="177" y="54" text-anchor="middle" class="small">fires from stone wall; Carrington's guns rally</text></g>
+  <path d="M430 525 Q480 490 520 480" fill="none" stroke="#555046" stroke-width="10" stroke-dasharray="16 7"/>
+  <g transform="translate(105 460)"><rect width="205" height="66" rx="10" fill="#f7e7e2" stroke="#9a3d32" stroke-width="3"/><text x="102" y="27" text-anchor="middle" class="label" fill="#7e2e27">SUPPLY TRAINS</text><text x="102" y="49" text-anchor="middle" class="small">begin to stampede</text></g>
+  <g transform="translate(510 400)"><rect width="185" height="64" rx="9" fill="#fff9ec" stroke="#89795c" stroke-width="2"/><text x="92" y="27" text-anchor="middle" class="label">PORT REPUBLIC</text><text x="92" y="49" text-anchor="middle" class="small">about 50 buildings</text></g>
+  <rect x="690" y="500" width="64" height="42" fill="#a67851" stroke="#4c3928" stroke-width="3"/><text x="760" y="530" class="small">Madison Hall HQ</text>
+  <path d="M712 495 C675 430 652 370 640 310" fill="none" stroke="#9a3d32" stroke-width="8" stroke-dasharray="14 10" marker-end="url(#red)"/>
+  <text x="678" y="378" class="small" fill="#7e2e27" transform="rotate(-72 678 378)">Jackson escapes</text>
+  <path d="M640 305 C715 320 785 345 850 395" fill="none" stroke="#315f8c" stroke-width="5" stroke-dasharray="9 8"/>
+  <text x="722" y="324" class="tiny" fill="#244c72">Gilday's gun briefly covers bridge</text>
+  <path d="M855 468 C925 490 970 555 1015 625" fill="none" stroke="#315f8c" stroke-width="10" stroke-dasharray="16 12" marker-end="url(#blue)"/>
+  <text x="985" y="548" class="small" fill="#244c72" transform="rotate(60 985 548)">Federal retreat</text>
+  <g transform="translate(42 26)"><rect width="860" height="91" rx="12" fill="#fff9ec" opacity=".97" stroke="#89795c"/><text x="25" y="39" class="title">Carroll's surprise raid into Port Republic</text><text x="25" y="69" class="label" fill="#5b4b35">About 8:30 a.m., June 8, 1862 · phase diagram · schematic and not to scale</text></g>
+  <g transform="translate(28 622)"><rect width="255" height="108" rx="12" fill="#fff9ec" opacity=".97" stroke="#89795c"/><text x="16" y="28" class="label">SEQUENCE</text><text x="16" y="52" class="small">1 · Cavalry crosses the ford.</text><text x="16" y="74" class="small">2 · Town and bridge end seized.</text><text x="16" y="96" class="small">3 · Counterattack forces retreat.</text></g>
+  <g transform="translate(810 112)"><rect width="355" height="172" rx="12" fill="#fff9ec" opacity=".97" stroke="#89795c"/><text x="18" y="29" class="label">LIMITS OF THE DIAGRAM</text><text x="18" y="56" class="small">River curves, street alignments, fords,</text><text x="18" y="78" class="small">buildings, hills, and unit footprints are</text><text x="18" y="100" class="small">approximate. Arrows combine several short</text><text x="18" y="122" class="small">phases. The map explains the sequence; it</text><text x="18" y="144" class="small">is not a surveyed battlefield reconstruction.</text></g>
+</svg>
