@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">CSS Virginia's route into Hampton Roads on March 8, 1862</title>
+  <desc id="desc">Schematic map of Hampton Roads showing Gosport Navy Yard, Norfolk, Sewell's Point, Fort Monroe, Newport News, the James and Elizabeth rivers, and CSS Virginia's route toward USS Cumberland and USS Congress.</desc>
+  <defs>
+    <marker id="redArrow" markerWidth="16" markerHeight="16" refX="13" refY="8" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L16,8 L0,16 Z" fill="#9b3d35"/></marker>
+    <marker id="blueArrow" markerWidth="16" markerHeight="16" refX="13" refY="8" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L16,8 L0,16 Z" fill="#245f8a"/></marker>
+  </defs>
+  <rect width="1200" height="760" fill="#d9e8ec"/>
+  <path d="M0 0H560C528 82 512 161 541 240C571 321 660 351 739 374C849 406 952 438 1200 426V0Z" fill="#eee5cf" stroke="#8e846d" stroke-width="3"/>
+  <path d="M0 760V397C109 382 203 360 275 323C352 284 400 217 414 0H0V760Z" fill="#eee5cf" stroke="#8e846d" stroke-width="3"/>
+  <path d="M0 760H1200V590C1041 574 890 565 729 591C590 613 483 658 362 653C250 648 166 609 0 627V760Z" fill="#eee5cf" stroke="#8e846d" stroke-width="3"/>
+  <path d="M431 760C426 678 418 603 445 550C470 501 508 480 550 485C597 491 621 537 621 625V760Z" fill="#d9e8ec" stroke="#8e846d" stroke-width="3"/>
+  <g font-family="Georgia,serif" fill="#50676e" font-style="italic">
+    <text x="95" y="190" font-size="31" transform="rotate(-13 95 190)">James River</text>
+    <text x="457" y="683" font-size="26" transform="rotate(-85 457 683)">Elizabeth River</text>
+    <text x="725" y="505" font-size="34">Hampton Roads</text>
+    <text x="1005" y="340" font-size="27">Chesapeake Bay</text>
+  </g>
+  <g font-family="Arial,sans-serif" fill="#17241e">
+    <circle cx="250" cy="314" r="8"/><text x="73" y="288" font-size="26" font-weight="700">Newport News Point</text>
+    <circle cx="519" cy="559" r="8"/><text x="363" y="600" font-size="25" font-weight="700">Gosport Navy Yard</text><text x="390" y="624" font-size="17">CSS Virginia departs</text>
+    <circle cx="594" cy="628" r="8"/><text x="610" y="637" font-size="24" font-weight="700">Norfolk</text>
+    <circle cx="742" cy="388" r="8"/><text x="666" y="354" font-size="24" font-weight="700">Sewell's Point</text>
+    <circle cx="1016" cy="429" r="8"/><text x="978" y="398" font-size="24" font-weight="700">Fort Monroe</text>
+  </g>
+  <g font-family="Arial,sans-serif">
+    <path d="M527 551C552 498 591 465 656 444C563 414 438 379 296 327" fill="none" stroke="#9b3d35" stroke-width="10" stroke-linecap="round" marker-end="url(#redArrow)"/>
+    <text x="495" y="445" font-size="21" font-weight="700" fill="#9b3d35" transform="rotate(-16 495 445)">CSS Virginia, March 8</text>
+    <rect x="174" y="337" width="28" height="11" rx="3" fill="#245f8a" transform="rotate(-14 188 342)"/>
+    <text x="39" y="375" font-size="21" font-weight="700" fill="#245f8a">USS Cumberland</text>
+    <rect x="239" y="381" width="28" height="11" rx="3" fill="#245f8a" transform="rotate(-14 253 386)"/>
+    <text x="181" y="424" font-size="21" font-weight="700" fill="#245f8a">USS Congress</text>
+    <rect x="851" y="451" width="30" height="11" rx="3" fill="#245f8a"/>
+    <text x="797" y="488" font-size="21" font-weight="700" fill="#245f8a">USS Minnesota</text>
+    <path d="M1176 493C1086 492 1012 484 920 467" fill="none" stroke="#245f8a" stroke-width="7" stroke-dasharray="13 10" marker-end="url(#blueArrow)"/>
+    <text x="951" y="531" font-size="19" font-weight="700" fill="#245f8a">USS Monitor arrives overnight</text>
+  </g>
+  <g font-family="Arial,sans-serif" font-size="18" fill="#50483b">
+    <text x="40" y="700">March 8: Virginia steamed from Gosport to attack the blockading ships off Newport News.</text>
+    <text x="40" y="727">March 9: Monitor fought Virginia near the grounded Minnesota; that action is covered in episode 106.</text>
+    <text x="966" y="714" font-family="Georgia,serif" font-size="19">Schematic; not to scale</text>
+  </g>
+</svg>
