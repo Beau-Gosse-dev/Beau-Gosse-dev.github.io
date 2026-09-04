@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Northern Virginia positions and withdrawals, autumn 1861</title>
+  <desc id="desc">Schematic map showing Washington, Alexandria, Munson's Hill, Fairfax Court House, Centreville, Manassas Junction, Leesburg, Ball's Bluff, and Confederate withdrawals in September and October 1861.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7f2e7"/>
+      <stop offset="1" stop-color="#e9dfcb"/>
+    </linearGradient>
+    <marker id="grayArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 10 5 0 10z" fill="#7c3f37"/>
+    </marker>
+    <marker id="blueArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 10 5 0 10z" fill="#315f8c"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#382f28" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="760" fill="url(#paper)"/>
+  <path d="M0 0h1200v255c-111 24-203 55-286 85-89 32-183 55-290 33-122-26-176-96-298-106C219 257 111 292 0 323z" fill="#e8edf0" opacity="0.8"/>
+  <path d="M80 207c173-16 316 1 460 48 118 39 202 86 315 80 94-5 172-42 267-37" fill="none" stroke="#5e88a0" stroke-width="26" stroke-linecap="round"/>
+  <path d="M80 207c173-16 316 1 460 48 118 39 202 86 315 80 94-5 172-42 267-37" fill="none" stroke="#a9c6d5" stroke-width="17" stroke-linecap="round"/>
+  <text x="770" y="286" font-family="Georgia, serif" font-size="20" fill="#31556a" transform="rotate(-6 770 286)">Potomac River</text>
+
+  <text x="55" y="65" font-family="Georgia, serif" font-size="34" font-weight="700" fill="#2e2925">Northern Virginia, autumn 1861</text>
+  <text x="57" y="98" font-family="Arial, sans-serif" font-size="17" fill="#5f554a">Confederate consolidation, U.S. occupation, and the Leesburg outpost</text>
+
+  <path d="M755 455 Q690 474 625 503 Q560 528 492 548 Q423 575 356 608" fill="none" stroke="#7c3f37" stroke-width="7" stroke-dasharray="14 10" marker-end="url(#grayArrow)"/>
+  <path d="M924 444 Q853 456 776 476" fill="none" stroke="#315f8c" stroke-width="7" marker-end="url(#blueArrow)"/>
+  <path d="M510 292 Q526 258 554 232" fill="none" stroke="#315f8c" stroke-width="5" stroke-dasharray="10 8" marker-end="url(#blueArrow)"/>
+
+  <g font-family="Arial, sans-serif">
+    <g transform="translate(930 437)">
+      <circle r="11" fill="#315f8c" stroke="#fff" stroke-width="3"/>
+      <text x="18" y="-6" font-size="20" font-weight="700" fill="#253341">Washington, D.C.</text>
+      <text x="18" y="17" font-size="15" fill="#52606b">McClellan's headquarters and main army</text>
+    </g>
+    <g transform="translate(850 500)">
+      <circle r="7" fill="#315f8c" stroke="#fff" stroke-width="2"/>
+      <text x="15" y="6" font-size="18" fill="#253341">Alexandria</text>
+    </g>
+    <g transform="translate(765 470)">
+      <circle r="9" fill="#8b6e3d" stroke="#fff" stroke-width="2"/>
+      <text x="-6" y="-18" font-size="18" font-weight="700" fill="#2e2925" text-anchor="middle">Munson's Hill</text>
+      <text x="-6" y="25" font-size="14" fill="#5f554a" text-anchor="middle">evacuated Sept. 28</text>
+    </g>
+    <g transform="translate(625 507)">
+      <circle r="9" fill="#8b6e3d" stroke="#fff" stroke-width="2"/>
+      <text x="0" y="-18" font-size="18" font-weight="700" fill="#2e2925" text-anchor="middle">Fairfax Court House</text>
+      <text x="0" y="25" font-size="14" fill="#5f554a" text-anchor="middle">withdrawal ordered Oct. 17</text>
+    </g>
+    <g transform="translate(492 552)">
+      <circle r="12" fill="#7c3f37" stroke="#fff" stroke-width="3"/>
+      <text x="0" y="-20" font-size="20" font-weight="700" fill="#6d332e" text-anchor="middle">Centreville</text>
+      <text x="0" y="29" font-size="14" fill="#5f554a" text-anchor="middle">winter line</text>
+    </g>
+    <g transform="translate(350 612)">
+      <circle r="12" fill="#7c3f37" stroke="#fff" stroke-width="3"/>
+      <text x="0" y="-20" font-size="20" font-weight="700" fill="#6d332e" text-anchor="middle">Manassas Junction</text>
+      <text x="0" y="29" font-size="14" fill="#5f554a" text-anchor="middle">rail junction and rear position</text>
+    </g>
+    <g transform="translate(510 294)">
+      <circle r="11" fill="#7c3f37" stroke="#fff" stroke-width="3"/>
+      <text x="-17" y="-15" font-size="20" font-weight="700" fill="#6d332e" text-anchor="end">Leesburg</text>
+      <text x="-17" y="8" font-size="14" fill="#5f554a" text-anchor="end">Evans's outpost</text>
+    </g>
+    <g transform="translate(561 227)">
+      <circle r="9" fill="#c28c3e" stroke="#fff" stroke-width="3"/>
+      <text x="16" y="-5" font-size="18" font-weight="700" fill="#6a4a1d">Ball's Bluff</text>
+      <text x="16" y="17" font-size="14" fill="#5f554a">Oct. 21 battle</text>
+    </g>
+  </g>
+
+  <g transform="translate(58 572)" filter="url(#shadow)">
+    <rect width="220" height="120" rx="8" fill="#fffaf0" stroke="#bba98d"/>
+    <text x="18" y="28" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#2e2925">Movement key</text>
+    <path d="M20 53h55" stroke="#7c3f37" stroke-width="6" stroke-dasharray="12 8" marker-end="url(#grayArrow)"/>
+    <text x="90" y="58" font-family="Arial, sans-serif" font-size="14" fill="#4f4740">Confederate withdrawal</text>
+    <path d="M20 86h55" stroke="#315f8c" stroke-width="6" marker-end="url(#blueArrow)"/>
+    <text x="90" y="91" font-family="Arial, sans-serif" font-size="14" fill="#4f4740">U.S. movement</text>
+  </g>
+
+  <text x="1142" y="724" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#6c6257">Schematic — not to scale</text>
+  <text x="58" y="724" font-family="Arial, sans-serif" font-size="13" fill="#6c6257">Based on Library of Congress 1861 mapping and U.S. Army / NPS campaign histories</text>
+</svg>

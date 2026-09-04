@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Ball's Bluff crossing and battle, October 21, 1861</title>
+  <desc id="desc">Schematic map showing Union troops moving from Maryland across the Potomac by Harrison's Island to Ball's Bluff, where Nathan Evans's Confederates drove them back toward the river.</desc>
+  <defs>
+    <linearGradient id="land" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6f0df"/>
+      <stop offset="1" stop-color="#dfd3bb"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8bb5c9"/>
+      <stop offset="1" stop-color="#b9d3dd"/>
+    </linearGradient>
+    <marker id="usArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0 0 10 5 0 10z" fill="#315f8c"/>
+    </marker>
+    <marker id="csArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0 0 10 5 0 10z" fill="#8b3f35"/>
+    </marker>
+    <pattern id="trees" width="42" height="38" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="15" r="8" fill="#849276" opacity="0.45"/>
+      <circle cx="27" cy="24" r="10" fill="#718467" opacity="0.4"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="760" fill="url(#land)"/>
+  <path d="M0 280 C210 210 390 350 578 300 C790 244 960 153 1200 210 L1200 475 C976 419 786 510 590 555 C371 606 200 465 0 535 Z" fill="url(#water)"/>
+  <path d="M0 280 C210 210 390 350 578 300 C790 244 960 153 1200 210" fill="none" stroke="#5d8799" stroke-width="4"/>
+  <path d="M0 535 C200 465 371 606 590 555 C786 510 976 419 1200 475" fill="none" stroke="#5d8799" stroke-width="4"/>
+  <path d="M395 382 C438 357 489 362 531 391 C552 407 551 445 520 461 C475 484 422 467 392 438 C375 421 375 394 395 382 Z" fill="#d8c9a9" stroke="#8d7a5a" stroke-width="3"/>
+  <text x="466" y="421" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#564a3b">Harrison's Island</text>
+  <text x="795" y="379" font-family="Georgia, serif" font-size="24" fill="#31556a" transform="rotate(-14 795 379)">Potomac River</text>
+
+  <path d="M0 535 C200 465 371 606 590 555 C786 510 976 419 1200 475 L1200 760 H0Z" fill="url(#trees)" opacity="0.75"/>
+  <path d="M666 540 C700 520 742 516 790 514" fill="none" stroke="#766250" stroke-width="16" stroke-linecap="round" opacity="0.7"/>
+  <path d="M655 543 C650 576 658 610 684 641" fill="none" stroke="#7a5a40" stroke-width="22" stroke-linecap="round"/>
+  <text x="687" y="627" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#fff9ec" transform="rotate(70 687 627)">Ball's Bluff</text>
+
+  <text x="55" y="65" font-family="Georgia, serif" font-size="34" font-weight="700" fill="#2e2925">Ball's Bluff, October 21, 1861</text>
+  <text x="57" y="98" font-family="Arial, sans-serif" font-size="17" fill="#5f554a">A narrow river crossing became a trap when the U.S. force was driven against the bluff</text>
+  <text x="1000" y="105" text-anchor="end" font-family="Georgia, serif" font-size="28" font-weight="700" fill="#5a6470">MARYLAND</text>
+  <text x="1020" y="704" text-anchor="end" font-family="Georgia, serif" font-size="28" font-weight="700" fill="#6d332e">VIRGINIA</text>
+
+  <g font-family="Arial, sans-serif">
+    <circle cx="318" cy="152" r="11" fill="#315f8c" stroke="#fff" stroke-width="3"/>
+    <text x="338" y="146" font-size="20" font-weight="700" fill="#253341">Poolesville area</text>
+    <text x="338" y="169" font-size="15" fill="#52606b">Stone's division on the Maryland side</text>
+
+    <path d="M329 177 Q360 267 417 370" fill="none" stroke="#315f8c" stroke-width="7" marker-end="url(#usArrow)"/>
+    <path d="M523 437 Q585 495 645 546" fill="none" stroke="#315f8c" stroke-width="7" marker-end="url(#usArrow)"/>
+    <text x="337" y="281" font-size="15" fill="#274d72">limited boats</text>
+
+    <circle cx="650" cy="548" r="15" fill="#c18c3e" stroke="#fff" stroke-width="4"/>
+    <text x="617" y="522" font-size="20" font-weight="700" fill="#65471d" text-anchor="end">Battlefield</text>
+    <text x="617" y="545" font-size="15" fill="#5f554a" text-anchor="end">Baker killed</text>
+
+    <circle cx="930" cy="585" r="12" fill="#8b3f35" stroke="#fff" stroke-width="3"/>
+    <text x="950" y="579" font-size="20" font-weight="700" fill="#6d332e">Leesburg</text>
+    <text x="950" y="602" font-size="15" fill="#5f554a">Evans's base</text>
+    <path d="M910 576 Q820 545 690 548" fill="none" stroke="#8b3f35" stroke-width="8" marker-end="url(#csArrow)"/>
+    <text x="798" y="522" font-size="15" fill="#713a33">Confederate counterattack</text>
+
+    <path d="M642 574 Q594 536 536 470" fill="none" stroke="#315f8c" stroke-width="7" stroke-dasharray="13 10" marker-end="url(#usArrow)"/>
+    <text x="524" y="584" font-size="15" fill="#274d72">U.S. retreat toward the river</text>
+  </g>
+
+  <g transform="translate(55 632)" font-family="Arial, sans-serif">
+    <rect width="490" height="76" rx="8" fill="#fffaf0" stroke="#bba98d"/>
+    <text x="18" y="28" font-size="15" font-weight="700" fill="#2e2925">NPS totals</text>
+    <text x="18" y="53" font-size="15" fill="#4f4740">3,600 engaged • 1,070 casualties • Confederate victory</text>
+  </g>
+  <text x="1142" y="724" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#6c6257">Schematic — not to scale</text>
+</svg>
