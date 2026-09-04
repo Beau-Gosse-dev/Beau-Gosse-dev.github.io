@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Lincoln redirects United States forces toward the Shenandoah Valley, May 24, 1862</title>
+  <desc id="desc">North-up schematic operational map showing Jackson near Winchester, Fremont ordered east from the mountains, McDowell and Shields redirected west from Fredericksburg, and the suspended movement toward McClellan near Richmond.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#faf5e8"/><stop offset="1" stop-color="#eadfc7"/></linearGradient>
+    <pattern id="mountains" width="42" height="34" patternUnits="userSpaceOnUse"><path d="M1 31 12 8 23 31 34 12 42 31" fill="none" stroke="#65735c" stroke-width="2" opacity=".5"/></pattern>
+    <marker id="blueArrow" markerUnits="userSpaceOnUse" markerWidth="28" markerHeight="28" refX="11" refY="6" orient="auto" viewBox="0 0 12 12"><path d="M0 0 12 6 0 12Z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerUnits="userSpaceOnUse" markerWidth="28" markerHeight="28" refX="11" refY="6" orient="auto" viewBox="0 0 12 12"><path d="M0 0 12 6 0 12Z" fill="#9a3d32"/></marker>
+    <marker id="grayArrow" markerUnits="userSpaceOnUse" markerWidth="28" markerHeight="28" refX="11" refY="6" orient="auto" viewBox="0 0 12 12"><path d="M0 0 12 6 0 12Z" fill="#756e65"/></marker>
+    <style>.head{font:700 28px Georgia,serif;fill:#292621}.label{font:700 19px Georgia,serif;fill:#292621}.small{font:16px Arial,sans-serif;fill:#3f3a33}.tiny{font:14px Arial,sans-serif;fill:#554f46}.blue{fill:#315f8c}.red{fill:#9a3d32}.box{fill:#fffaf0;stroke:#8a7b66;stroke-width:2}.road{fill:none;stroke:#a07a4f;stroke-width:8;stroke-linecap:round}.rail{fill:none;stroke:#5c554c;stroke-width:4;stroke-dasharray:12 8}</style>
+  </defs>
+  <rect width="1200" height="760" fill="url(#paper)"/>
+  <text x="30" y="44" class="head">LINCOLN REDIRECTS THE CAMPAIGN • MAY 24, 1862</text>
+  <text x="30" y="75" class="small">Operational diagram • north is up • schematic routes, positions, distances, and intended convergence</text>
+
+  <path d="M300 98H493V721H300Z" fill="url(#mountains)" opacity=".9"/>
+  <text x="365" y="657" class="label" fill="#617052" transform="rotate(-90 365 657)">ALLEGHENY FRONT</text>
+  <path d="M582 98H704V721H582Z" fill="url(#mountains)" opacity=".8"/>
+  <text x="630" y="615" class="label" fill="#617052" transform="rotate(-90 630 615)">BLUE RIDGE</text>
+  <text x="486" y="112" class="small">SHENANDOAH VALLEY</text>
+  <text x="770" y="112" class="small">PIEDMONT / COASTAL PLAIN</text>
+
+  <path class="road" d="M529 115C524 213 526 330 534 445C539 528 547 616 560 705"/>
+  <text x="494" y="436" class="tiny" transform="rotate(86 494 436)">Valley Turnpike</text>
+  <path class="road" d="M552 386C665 392 779 406 934 458"/>
+  <text x="695" y="388" class="tiny">Manassas Gap route toward the Valley</text>
+  <path class="rail" d="M854 112C913 185 955 267 981 361C1000 430 1014 510 1019 601"/>
+  <text x="1018" y="308" class="tiny" transform="rotate(72 1018 308)">R.F. &amp; P. Railroad</text>
+  <path class="road" d="M938 458C906 517 892 582 889 676"/>
+
+  <circle cx="522" cy="174" r="11" fill="#292621"/><text x="544" y="181" class="label">WINCHESTER</text>
+  <circle cx="534" cy="344" r="8" fill="#292621"/><text x="552" y="350" class="small">Strasburg</text>
+  <circle cx="438" cy="455" r="8" fill="#292621"/><text x="349" y="482" class="small">Franklin</text>
+  <circle cx="938" cy="458" r="10" fill="#292621"/><text x="957" y="466" class="label">FREDERICKSBURG</text>
+  <circle cx="889" cy="676" r="10" fill="#292621"/><text x="909" y="683" class="label">RICHMOND</text>
+  <circle cx="854" cy="112" r="10" fill="#292621"/><text x="873" y="119" class="label">WASHINGTON</text>
+
+  <rect x="463" y="194" width="272" height="76" rx="10" class="box"/><text x="484" y="225" class="label red">JACKSON + EWELL</text><text x="484" y="251" class="small red">victory at Winchester • May 25</text>
+  <path d="M548 335C538 279 531 225 525 190" fill="none" stroke="#9a3d32" stroke-width="12" marker-end="url(#redArrow)"/>
+  <text x="557" y="306" class="small red">Confederate advance down the Valley</text>
+
+  <rect x="40" y="391" width="278" height="84" rx="11" class="box"/><text x="61" y="424" class="label blue">FRÉMONT</text><text x="61" y="452" class="small blue">Mountain Department • ordered east</text>
+  <path d="M292 441C358 427 414 408 481 374" fill="none" stroke="#315f8c" stroke-width="12" marker-end="url(#blueArrow)"/>
+  <text x="321" y="397" class="small blue">western arm</text>
+
+  <rect x="819" y="481" width="337" height="84" rx="11" class="box"/><text x="840" y="514" class="label blue">McDOWELL + SHIELDS</text><text x="840" y="542" class="small blue">20,000 ordered toward the Valley</text>
+  <path d="M924 473C836 438 733 411 591 386" fill="none" stroke="#315f8c" stroke-width="12" marker-end="url(#blueArrow)"/>
+  <text x="722" y="452" class="small blue">eastern arm</text>
+
+  <path d="M929 486C906 546 896 604 893 652" fill="none" stroke="#756e65" stroke-width="9" stroke-dasharray="15 10" marker-end="url(#grayArrow)"/>
+  <line x1="867" y1="553" x2="935" y2="610" stroke="#9a3d32" stroke-width="8"/>
+  <line x1="935" y1="553" x2="867" y2="610" stroke="#9a3d32" stroke-width="8"/>
+  <text x="733" y="625" class="label" fill="#756e65">MOVEMENT TO RICHMOND SUSPENDED</text>
+
+  <rect x="37" y="592" width="470" height="124" rx="12" class="box"/>
+  <text x="59" y="625" class="label">INTENDED EFFECT</text>
+  <text x="59" y="655" class="small">Frémont and McDowell were to move behind Jackson</text>
+  <text x="59" y="681" class="small">and converge toward the Valley. The arrows show</text>
+  <text x="59" y="707" class="small">Lincoln’s plan, not movements completed on May 24.</text>
+  <path d="M1150 111V171" stroke="#292621" stroke-width="4"/><path d="M1150 86 1136 117 1164 117Z" fill="#292621"/><text x="1140" y="73" class="head">N</text>
+</svg>
