@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Strategic movements toward Shiloh, February to April 1862</title>
+  <desc id="desc">Map showing Confederate withdrawals and concentration at Corinth, Grant's army moving up the Tennessee River to Pittsburg Landing, and Buell marching from Nashville toward Savannah.</desc>
+  <defs>
+    <marker id="u" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10z" fill="#315f8c"/></marker>
+    <marker id="c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10z" fill="#9a3d32"/></marker>
+  </defs>
+  <rect width="1200" height="760" fill="#f3eedf"/>
+  <path d="M690 0C705 95 660 155 688 235S750 355 710 440S660 575 695 760" fill="none" stroke="#87afb4" stroke-width="34"/>
+  <text x="742" y="380" fill="#385f64" font-family="Georgia,serif" font-size="27" transform="rotate(88 742 380)">Tennessee River</text>
+  <path d="M130 574H1060" stroke="#5f5144" stroke-width="8"/>
+  <path d="M300 700L880 445" stroke="#5f5144" stroke-width="7" stroke-dasharray="18 12"/>
+  <text x="170" y="558" fill="#514438" font-family="Arial,sans-serif" font-size="19">Memphis &amp; Charleston Railroad</text>
+  <text x="745" y="565" fill="#514438" font-family="Arial,sans-serif" font-size="18" transform="rotate(-24 745 565)">Mobile &amp; Ohio Railroad</text>
+  <circle cx="535" cy="575" r="16" fill="#9a3d32"/>
+  <text x="535" y="620" text-anchor="middle" fill="#7c3029" font-family="Arial,sans-serif" font-size="28" font-weight="700">CORINTH</text>
+  <text x="535" y="648" text-anchor="middle" fill="#7c3029" font-family="Arial,sans-serif" font-size="18">about 40,000 Confederates concentrated</text>
+  <circle cx="690" cy="360" r="15" fill="#315f8c"/>
+  <text x="650" y="340" text-anchor="end" fill="#234b73" font-family="Arial,sans-serif" font-size="25" font-weight="700">PITTSBURG LANDING</text>
+  <text x="650" y="370" text-anchor="end" fill="#234b73" font-family="Arial,sans-serif" font-size="18">Grant's army on west bank</text>
+  <circle cx="720" cy="245" r="13" fill="#315f8c"/>
+  <text x="750" y="238" fill="#234b73" font-family="Arial,sans-serif" font-size="24" font-weight="700">SAVANNAH</text>
+  <text x="750" y="266" fill="#234b73" font-family="Arial,sans-serif" font-size="18">headquarters and rendezvous</text>
+  <circle cx="1010" cy="85" r="13" fill="#315f8c"/>
+  <text x="980" y="75" text-anchor="end" fill="#234b73" font-family="Arial,sans-serif" font-size="24" font-weight="700">NASHVILLE</text>
+  <circle cx="690" cy="52" r="12" fill="#315f8c"/>
+  <text x="655" y="48" text-anchor="end" fill="#234b73" font-family="Arial,sans-serif" font-size="20">Fort Henry</text>
+  <path d="M690 75C670 170 690 255 690 330" fill="none" stroke="#315f8c" stroke-width="12" marker-end="url(#u)"/>
+  <text x="560" y="180" fill="#234b73" font-family="Arial,sans-serif" font-size="20">Grant's army moved upriver</text>
+  <path d="M990 105C935 155 865 192 755 235" fill="none" stroke="#315f8c" stroke-width="12" stroke-dasharray="18 10" marker-end="url(#u)"/>
+  <text x="865" y="135" fill="#234b73" font-family="Arial,sans-serif" font-size="20">Buell marched southwest</text>
+  <path d="M160 125C240 255 360 430 510 555" fill="none" stroke="#9a3d32" stroke-width="12" stroke-dasharray="18 10" marker-end="url(#c)"/>
+  <text x="105" y="110" fill="#7c3029" font-family="Arial,sans-serif" font-size="21" font-weight="700">Polk withdrew from Columbus</text>
+  <path d="M940 315C840 400 700 490 565 555" fill="none" stroke="#9a3d32" stroke-width="12" stroke-dasharray="18 10" marker-end="url(#c)"/>
+  <text x="940" y="300" text-anchor="end" fill="#7c3029" font-family="Arial,sans-serif" font-size="21" font-weight="700">Johnston withdrew through Tennessee and Alabama</text>
+  <path d="M520 545C535 490 575 440 650 390" fill="none" stroke="#9a3d32" stroke-width="14" marker-end="url(#c)"/>
+  <text x="400" y="445" fill="#7c3029" font-family="Arial,sans-serif" font-size="21">Plan: attack Grant before Buell arrived</text>
+  <text x="40" y="52" fill="#263332" font-family="Georgia,serif" font-size="31" font-weight="700">The armies converge on Shiloh</text>
+  <text x="40" y="86" fill="#4b5856" font-family="Arial,sans-serif" font-size="18">Strategic orientation · February–early April 1862 · not to scale</text>
+  <path d="M1120 80V135" stroke="#263332" stroke-width="5" marker-end="url(#c)"/>
+  <text x="1120" y="60" text-anchor="middle" fill="#263332" font-family="Arial,sans-serif" font-weight="700" font-size="20">N</text>
+</svg>
