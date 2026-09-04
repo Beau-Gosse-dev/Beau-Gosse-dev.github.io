@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Jackson's 1862 Valley Campaign overview</title>
+  <desc id="desc">Schematic map showing Jackson's campaign movements from Kernstown through McDowell, Front Royal, Winchester, Cross Keys, Port Republic, Brown's Gap, and the movement toward Richmond.</desc>
+  <defs>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#9a3d32"/></marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#315f8c"/></marker>
+    <filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.18"/></filter>
+  </defs>
+  <rect width="1200" height="760" fill="#f5f0e5"/>
+  <rect x="28" y="28" width="1144" height="704" rx="18" fill="#fffdf8" stroke="#c7bda8" filter="url(#shadow)"/>
+  <text x="60" y="77" font-family="Georgia,serif" font-size="31" font-weight="700" fill="#26231f">Jackson's 1862 Valley Campaign</text>
+  <text x="60" y="106" font-family="Arial,sans-serif" font-size="16" fill="#665f55">Operational sequence, March 23–June 17, 1862 · schematic · not to scale</text>
+
+  <path d="M390 138 C345 230 350 350 386 472 C405 535 390 620 352 694 L565 694 C604 610 611 526 581 443 C548 348 552 240 602 138 Z" fill="#e8dfc8" opacity="0.82"/>
+  <text x="468" y="420" transform="rotate(-82 468 420)" font-family="Arial,sans-serif" font-size="17" fill="#746b5d">MASSANUTTEN MOUNTAIN</text>
+  <path text-rendering="geometricPrecision" font-family="Arial,sans-serif" fill="none" stroke="#6d9fb7" stroke-width="8" stroke-linecap="round">
+    <path d="M318 151 C300 225 318 310 303 383 C287 465 316 560 300 690"/>
+    <path d="M642 172 C626 260 646 345 633 432 C621 521 642 601 624 690"/>
+  </g>
+  <text x="208" y="302" font-family="Arial,sans-serif" font-size="15" fill="#47788e">North Fork</text>
+  <text x="651" y="337" font-family="Arial,sans-serif" font-size="15" fill="#47788e">South Fork / Page Valley</text>
+
+  <path d="M318 220 C333 285 320 350 308 415 C296 487 330 550 343 604" fill="none" stroke="#9a3d32" stroke-width="6" marker-end="url(#arrowRed)"/>
+  <path d="M343 604 C280 574 210 520 183 463 C165 425 202 389 250 370" fill="none" stroke="#9a3d32" stroke-width="6" marker-end="url(#arrowRed)"/>
+  <path d="M250 370 C335 378 465 361 616 320 C700 296 745 254 755 217" fill="none" stroke="#9a3d32" stroke-width="6" marker-end="url(#arrowRed)"/>
+  <path d="M755 217 C669 246 565 271 430 270 C370 270 329 244 318 220" fill="none" stroke="#9a3d32" stroke-width="6" marker-end="url(#arrowRed)"/>
+  <path d="M318 220 C316 340 318 478 354 625" fill="none" stroke="#9a3d32" stroke-width="6" stroke-dasharray="13 9" marker-end="url(#arrowRed)"/>
+  <path d="M354 625 C449 635 544 647 660 664" fill="none" stroke="#9a3d32" stroke-width="6" marker-end="url(#arrowRed)"/>
+  <path d="M660 664 C774 669 875 655 990 628" fill="none" stroke="#9a3d32" stroke-width="6" marker-end="url(#arrowRed)"/>
+
+  <path d="M125 470 C187 465 246 447 303 428" fill="none" stroke="#315f8c" stroke-width="5" stroke-dasharray="10 8" marker-end="url(#arrowBlue)"/>
+  <path d="M830 430 C757 472 684 536 610 612" fill="none" stroke="#315f8c" stroke-width="5" stroke-dasharray="10 8" marker-end="url(#arrowBlue)"/>
+
+  <g font-family="Arial,sans-serif">
+    <g fill="#fff" stroke="#9a3d32" stroke-width="3">
+      <circle cx="318" cy="220" r="9"/><circle cx="183" cy="463" r="9"/><circle cx="616" cy="320" r="9"/><circle cx="318" cy="270" r="9"/><circle cx="354" cy="625" r="9"/><circle cx="660" cy="664" r="9"/>
+    </g>
+    <g fill="#27231f" font-size="16" font-weight="700">
+      <text x="330" y="212">Kernstown · Mar 23</text>
+      <text x="70" y="455">McDowell · May 8</text>
+      <text x="630" y="313">Front Royal · May 23</text>
+      <text x="330" y="264">Winchester · May 25</text>
+      <text x="365" y="605">Cross Keys · Jun 8</text>
+      <text x="365" y="632">Port Republic · Jun 9</text>
+      <text x="673" y="660">Brown's Gap / Weyer's Cave</text>
+      <text x="1000" y="622">Toward Richmond</text>
+    </g>
+    <text x="64" y="505" font-size="14" fill="#315f8c">Milroy and Schenck</text>
+    <text x="744" y="451" font-size="14" fill="#315f8c">Frémont and Shields converge</text>
+  </g>
+
+  <g transform="translate(720 135)" font-family="Arial,sans-serif">
+    <rect width="412" height="175" rx="12" fill="#f7f4ec" stroke="#c7bda8"/>
+    <text x="20" y="31" font-size="17" font-weight="700" fill="#26231f">How to read the movement lines</text>
+    <line x1="22" y1="62" x2="93" y2="62" stroke="#9a3d32" stroke-width="6" marker-end="url(#arrowRed)"/>
+    <text x="111" y="68" font-size="15" fill="#413c35">Jackson's broad movement sequence</text>
+    <line x1="22" y1="100" x2="93" y2="100" stroke="#9a3d32" stroke-width="6" stroke-dasharray="13 9"/>
+    <text x="111" y="106" font-size="15" fill="#413c35">Retreat from northern Valley</text>
+    <line x1="22" y1="138" x2="93" y2="138" stroke="#315f8c" stroke-width="5" stroke-dasharray="10 8"/>
+    <text x="111" y="144" font-size="15" fill="#413c35">Federal approach, generalized</text>
+  </g>
+
+  <text x="60" y="715" font-family="Arial,sans-serif" font-size="13" fill="#746b5d">Routes, bends, locations, distances, and arrow timing are approximate. The diagram does not claim surveyed troop positions.</text>
+</svg>

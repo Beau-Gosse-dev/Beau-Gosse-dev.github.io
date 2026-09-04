@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Strategic effect of the Valley Campaign</title>
+  <desc id="desc">Schematic diagram showing United States forces in the Shenandoah Valley and at Fredericksburg held away from McClellan near Richmond, followed by Jackson's movement to join Robert E. Lee.</desc>
+  <defs>
+    <marker id="redArrow" markerWidth="11" markerHeight="11" refX="9" refY="3.5" orient="auto"><path d="M0,0 L0,7 L10,3.5 z" fill="#9a3d32"/></marker>
+    <marker id="blueArrow" markerWidth="11" markerHeight="11" refX="9" refY="3.5" orient="auto"><path d="M0,0 L0,7 L10,3.5 z" fill="#315f8c"/></marker>
+  </defs>
+  <rect width="1200" height="760" fill="#f5f0e5"/>
+  <rect x="28" y="28" width="1144" height="704" rx="18" fill="#fffdf8" stroke="#c7bda8"/>
+  <text x="60" y="77" font-family="Georgia,serif" font-size="31" font-weight="700" fill="#26231f">Strategic effect and the turn toward Richmond</text>
+  <text x="60" y="106" font-family="Arial,sans-serif" font-size="16" fill="#665f55">Late May–June 1862 · schematic · not to scale</text>
+
+  <path d="M205 160 C165 250 168 360 200 470 C220 540 216 620 190 682 L400 682 C432 600 430 510 407 433 C381 344 387 248 426 160 Z" fill="#e8dfc8"/>
+  <text x="302" y="418" transform="rotate(-82 302 418)" font-family="Arial,sans-serif" font-size="17" fill="#746b5d">BLUE RIDGE</text>
+  <path d="M138 175 C119 270 139 366 130 477 C124 550 138 614 125 685" fill="none" stroke="#6d9fb7" stroke-width="8"/>
+  <text x="66" y="360" font-family="Arial,sans-serif" font-size="15" fill="#47788e">Shenandoah Valley</text>
+
+  <g font-family="Arial,sans-serif">
+    <rect x="63" y="155" width="220" height="74" rx="10" fill="#e4eef5" stroke="#315f8c" stroke-width="2"/>
+    <text x="80" y="184" font-size="17" font-weight="700" fill="#244a6a">Banks</text>
+    <text x="80" y="207" font-size="14" fill="#244a6a">Lower Valley / Potomac line</text>
+    <rect x="63" y="268" width="220" height="74" rx="10" fill="#e4eef5" stroke="#315f8c" stroke-width="2"/>
+    <text x="80" y="297" font-size="17" font-weight="700" fill="#244a6a">Frémont</text>
+    <text x="80" y="320" font-size="14" fill="#244a6a">Mountain Department</text>
+    <rect x="63" y="381" width="220" height="74" rx="10" fill="#e4eef5" stroke="#315f8c" stroke-width="2"/>
+    <text x="80" y="410" font-size="17" font-weight="700" fill="#244a6a">Shields</text>
+    <text x="80" y="433" font-size="14" fill="#244a6a">From McDowell's command</text>
+    <rect x="102" y="535" width="245" height="91" rx="10" fill="#f3e4df" stroke="#9a3d32" stroke-width="2"/>
+    <text x="120" y="568" font-size="18" font-weight="700" fill="#7d3029">Jackson's Valley Army</text>
+    <text x="120" y="593" font-size="14" fill="#7d3029">Cross Keys and Port Republic</text>
+    <text x="120" y="614" font-size="14" fill="#7d3029">June 8–9 victories</text>
+  </g>
+
+  <g font-family="Arial,sans-serif">
+    <circle cx="695" cy="255" r="72" fill="#e4eef5" stroke="#315f8c" stroke-width="3"/>
+    <text x="695" y="245" text-anchor="middle" font-size="19" font-weight="700" fill="#244a6a">McDowell</text>
+    <text x="695" y="270" text-anchor="middle" font-size="14" fill="#244a6a">Fredericksburg</text>
+    <circle cx="942" cy="548" r="93" fill="#e4eef5" stroke="#315f8c" stroke-width="3"/>
+    <text x="942" y="535" text-anchor="middle" font-size="20" font-weight="700" fill="#244a6a">McClellan</text>
+    <text x="942" y="561" text-anchor="middle" font-size="14" fill="#244a6a">Army of the Potomac</text>
+    <text x="942" y="581" text-anchor="middle" font-size="14" fill="#244a6a">near Richmond</text>
+    <circle cx="740" cy="571" r="71" fill="#f3e4df" stroke="#9a3d32" stroke-width="3"/>
+    <text x="740" y="562" text-anchor="middle" font-size="20" font-weight="700" fill="#7d3029">Lee</text>
+    <text x="740" y="588" text-anchor="middle" font-size="14" fill="#7d3029">Richmond defenses</text>
+  </g>
+
+  <path d="M646 302 C550 330 459 359 304 399" fill="none" stroke="#315f8c" stroke-width="7" marker-end="url(#blueArrow)"/>
+  <text x="430" y="320" font-family="Arial,sans-serif" font-size="15" fill="#315f8c">Shields sent west toward Jackson</text>
+  <path d="M750 299 C816 364 864 428 907 471" fill="none" stroke="#315f8c" stroke-width="4" stroke-dasharray="10 8" opacity="0.55"/>
+  <line x1="807" y1="354" x2="870" y2="417" stroke="#8c342d" stroke-width="9"/>
+  <line x1="870" y1="354" x2="807" y2="417" stroke="#8c342d" stroke-width="9"/>
+  <text x="800" y="337" font-family="Arial,sans-serif" font-size="15" fill="#7d3029">planned junction interrupted</text>
+
+  <path d="M339 577 C471 590 568 585 666 574" fill="none" stroke="#9a3d32" stroke-width="8" marker-end="url(#redArrow)"/>
+  <text x="405" y="560" font-family="Arial,sans-serif" font-size="15" fill="#7d3029">June 17: Jackson moves east to join Lee</text>
+
+  <g transform="translate(480 142)" font-family="Arial,sans-serif">
+    <rect width="650" height="115" rx="12" fill="#f7f4ec" stroke="#c7bda8"/>
+    <text x="20" y="31" font-size="17" font-weight="700" fill="#26231f">Campaign-level consequence</text>
+    <text x="20" y="60" font-size="15" fill="#413c35">Washington kept Banks and Frémont oriented toward the Valley and diverted part</text>
+    <text x="20" y="82" font-size="15" fill="#413c35">of McDowell's command. McClellan therefore did not receive the planned full junction.</text>
+    <text x="20" y="103" font-size="13" fill="#746b5d">Exact counterfactual effects remain interpretive; the orders and diversions are documented.</text>
+  </g>
+
+  <text x="60" y="715" font-family="Arial,sans-serif" font-size="13" fill="#746b5d">Positions, paths, distances, force sizes, and timing relationships are generalized. This diagram does not show tactical troop geometry.</text>
+</svg>
