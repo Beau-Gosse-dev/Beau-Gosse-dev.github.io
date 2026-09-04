@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">Shiloh at nightfall, April 6, 1862</title>
+  <desc id="desc">Map shows Grant's final line west of Pittsburg Landing, Chalmers and Jackson attacking across Dill Branch, Beauregard's army returning to captured camps, Lew Wallace approaching from Crump's Landing, and Nelson's Army of the Ohio troops crossing the Tennessee River after marching south from Savannah.</desc>
+  <defs>
+    <marker id="usa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10z" fill="#315f8c"/></marker>
+    <marker id="csa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10z" fill="#9a3d32"/></marker>
+  </defs>
+  <rect width="1200" height="820" fill="#f3eedf"/>
+  <path d="M800 0C760 150 850 290 790 430S865 690 805 820H1040C980 675 1045 530 990 390S1045 125 1010 0Z" fill="#b6cfcd"/>
+  <text x="913" y="430" text-anchor="middle" fill="#385f64" font-family="Georgia,serif" font-size="25" transform="rotate(88 913 430)">TENNESSEE RIVER</text>
+  <path d="M785 220L1045 220" stroke="#665746" stroke-width="7" stroke-dasharray="12 9"/>
+  <text x="915" y="198" text-anchor="middle" fill="#514438" font-family="Arial,sans-serif" font-size="16">ferry crossing</text>
+  <circle cx="790" cy="220" r="9" fill="#263332"/><text x="760" y="180" text-anchor="end" fill="#263332" font-family="Arial,sans-serif" font-size="18" font-weight="700">PITTSBURG LANDING</text>
+  <path d="M170 420C275 320 470 245 770 240" fill="none" stroke="#315f8c" stroke-width="24"/>
+  <text x="465" y="210" text-anchor="middle" fill="#234b73" font-family="Arial,sans-serif" font-size="21" font-weight="700">GRANT'S FINAL LINE</text>
+  <g fill="#315f8c"><circle cx="550" cy="270" r="11"/><circle cx="585" cy="260" r="11"/><circle cx="620" cy="252" r="11"/><circle cx="655" cy="247" r="11"/><circle cx="690" cy="243" r="11"/></g>
+  <text x="625" y="305" text-anchor="middle" fill="#234b73" font-family="Arial,sans-serif" font-size="16">Webster's guns and supporting infantry</text>
+  <path d="M570 525Q655 455 780 510" fill="none" stroke="#6e8a64" stroke-width="20"/><text x="675" y="560" text-anchor="middle" fill="#4e684a" font-family="Arial,sans-serif" font-size="18" font-weight="700">DILL BRANCH</text>
+  <path d="M610 690C645 630 665 565 670 505" fill="none" stroke="#9a3d32" stroke-width="13" marker-end="url(#csa)"/>
+  <path d="M735 700C730 620 720 560 700 510" fill="none" stroke="#9a3d32" stroke-width="13" marker-end="url(#csa)"/>
+  <text x="670" y="735" text-anchor="middle" fill="#7c3029" font-family="Arial,sans-serif" font-size="18" font-weight="700">CHALMERS + JACKSON · ABOUT 6 P.M.</text>
+  <text x="670" y="762" text-anchor="middle" fill="#7c3029" font-family="Arial,sans-serif" font-size="15">attack repulsed by artillery, infantry, gunboats, and terrain</text>
+  <path d="M120 120C145 190 155 275 175 395" fill="none" stroke="#315f8c" stroke-width="11" stroke-dasharray="15 10" marker-end="url(#usa)"/>
+  <text x="82" y="100" fill="#234b73" font-family="Arial,sans-serif" font-size="18" font-weight="700">LEW WALLACE</text><text x="82" y="124" fill="#234b73" font-family="Arial,sans-serif" font-size="15">from Crump's Landing · arrives after dark</text>
+  <path d="M1110 70C1080 120 1060 165 1045 215" fill="none" stroke="#315f8c" stroke-width="11" stroke-dasharray="15 10" marker-end="url(#usa)"/>
+  <text x="1130" y="48" text-anchor="end" fill="#234b73" font-family="Arial,sans-serif" font-size="18" font-weight="700">NELSON FROM SAVANNAH</text>
+  <text x="1130" y="72" text-anchor="end" fill="#234b73" font-family="Arial,sans-serif" font-size="15">36th Indiana first across · more troops overnight</text>
+  <path d="M1040 230C985 245 920 250 805 240" fill="none" stroke="#315f8c" stroke-width="9" marker-end="url(#usa)"/>
+  <g fill="#6d5848" stroke="#263332" stroke-width="3"><path d="M835 430h100l-18 30h-68z"/><path d="M855 412h45v18h-45z"/><path d="M865 555h100l-18 30h-68z"/><path d="M885 537h45v18h-45z"/></g>
+  <text x="885" y="395" text-anchor="middle" fill="#385f64" font-family="Arial,sans-serif" font-size="17" font-weight="700">TYLER</text><text x="915" y="520" text-anchor="middle" fill="#385f64" font-family="Arial,sans-serif" font-size="17" font-weight="700">LEXINGTON</text>
+  <path d="M835 445C780 450 730 475 695 510" fill="none" stroke="#315f8c" stroke-width="5" stroke-dasharray="9 7" marker-end="url(#usa)"/>
+  <rect x="220" y="585" width="275" height="118" rx="10" fill="#d8b88a" stroke="#9a3d32" stroke-width="5"/>
+  <text x="358" y="625" text-anchor="middle" fill="#7c3029" font-family="Arial,sans-serif" font-size="19" font-weight="700">CAPTURED UNITED STATES CAMPS</text>
+  <text x="358" y="655" text-anchor="middle" fill="#7c3029" font-family="Arial,sans-serif" font-size="16">Confederate bivouac after Beauregard</text><text x="358" y="680" text-anchor="middle" fill="#7c3029" font-family="Arial,sans-serif" font-size="16">ordered the attack stopped near sundown</text>
+  <text x="40" y="50" fill="#263332" font-family="Georgia,serif" font-size="31" font-weight="700">Nightfall and reinforcements</text>
+  <text x="40" y="84" fill="#4b5856" font-family="Arial,sans-serif" font-size="18">April 6–7, 1862 · simplified orientation · not to scale</text>
+  <rect x="45" y="690" width="20" height="20" fill="#315f8c"/><text x="77" y="707" fill="#263332" font-family="Arial,sans-serif" font-size="16">United States</text>
+  <rect x="45" y="724" width="20" height="20" fill="#9a3d32"/><text x="77" y="741" fill="#263332" font-family="Arial,sans-serif" font-size="16">Confederacy</text>
+  <path d="M1125 690V745" stroke="#263332" stroke-width="5" marker-end="url(#usa)"/><text x="1125" y="672" text-anchor="middle" fill="#263332" font-family="Arial,sans-serif" font-size="20" font-weight="700">N</text>
+</svg>
