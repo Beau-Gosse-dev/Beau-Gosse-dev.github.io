@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Northern Virginia campaign context, August 1862</title>
+  <desc id="desc">Generalized map showing the Rapidan and Rappahannock river lines, Lee's movement from Gordonsville, Pope's withdrawal from Culpeper, and the rail corridor through Catlett Station and Manassas to Alexandria and Washington.</desc>
+  <defs>
+    <marker id="blueArrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#9a3d32"/></marker>
+    <style>
+      .label{font:600 20px Georgia,serif;fill:#292b2d}.small{font:16px Arial,sans-serif;fill:#333}.tiny{font:14px Arial,sans-serif;fill:#454545}.city{fill:#262626}.water{fill:none;stroke:#6f9fbd;stroke-width:12;stroke-linecap:round}.rail{fill:none;stroke:#4d4d4d;stroke-width:5;stroke-dasharray:15 8}.road{fill:none;stroke:#b28a5c;stroke-width:4;stroke-dasharray:8 8}.us{fill:none;stroke:#315f8c;stroke-width:10;marker-end:url(#blueArrow)}.cs{fill:none;stroke:#9a3d32;stroke-width:10;marker-end:url(#redArrow)}
+    </style>
+  </defs>
+  <rect width="1200" height="720" fill="#f4efe3"/>
+  <path d="M45 660 C260 585 440 565 620 596 C830 632 1015 607 1160 530" class="water"/>
+  <text x="545" y="646" class="small" fill="#426f8f">Rapidan River</text>
+  <path d="M60 160 C210 210 350 249 470 278 C630 317 835 326 1160 435" class="water"/>
+  <text x="525" y="286" class="small" fill="#426f8f">Rappahannock River</text>
+  <path d="M282 613 L405 505 L530 416 L662 350 L790 280 L945 190 L1088 108" class="rail"/>
+  <text x="740" y="251" class="tiny" transform="rotate(-28 740 251)">Orange &amp; Alexandria Railroad</text>
+  <path d="M260 620 C395 540 462 448 540 379 C625 304 720 235 805 165" class="road"/>
+  <path d="M339 557 C412 507 453 463 486 421" class="us"/>
+  <text x="145" y="521" class="small" fill="#315f8c">Pope withdraws, Aug. 18-20</text>
+  <path d="M225 659 C302 606 366 555 433 510" class="cs"/>
+  <text x="55" y="682" class="small" fill="#9a3d32">Lee follows from Gordonsville</text>
+  <path d="M463 406 C510 351 535 322 573 295" class="cs"/>
+  <text x="260" y="365" class="small" fill="#9a3d32">Confederate probes, Aug. 21-23</text>
+  <path d="M505 306 C593 262 642 231 704 204" class="cs"/>
+  <text x="509" y="183" class="small" fill="#9a3d32">Stuart raid, Aug. 22-23</text>
+  <g><circle cx="282" cy="613" r="8" class="city"/><text x="120" y="612" class="label">Gordonsville</text></g>
+  <g><circle cx="405" cy="505" r="8" class="city"/><text x="317" y="493" class="label">Culpeper</text></g>
+  <g><circle cx="530" cy="416" r="8" class="city"/><text x="545" y="440" class="label">Rappahannock Station</text></g>
+  <g><circle cx="565" cy="298" r="8" class="city"/><text x="578" y="323" class="label">Freeman's Ford</text></g>
+  <g><circle cx="476" cy="274" r="8" class="city"/><text x="256" y="259" class="label">Sulphur Springs / Waterloo</text></g>
+  <g><circle cx="662" cy="350" r="8" class="city"/><text x="676" y="376" class="label">Bealeton</text></g>
+  <g><circle cx="676" cy="215" r="8" class="city"/><text x="690" y="214" class="label">Warrenton</text></g>
+  <g><circle cx="790" cy="280" r="8" class="city"/><text x="805" y="306" class="label">Catlett Station</text></g>
+  <g><circle cx="945" cy="190" r="8" class="city"/><text x="959" y="216" class="label">Manassas Junction</text></g>
+  <g><circle cx="1088" cy="108" r="8" class="city"/><text x="932" y="91" class="label">Alexandria</text></g>
+  <g><circle cx="1142" cy="42" r="8" class="city"/><text x="960" y="50" class="label">Washington</text></g>
+  <g><circle cx="1057" cy="495" r="8" class="city"/><text x="870" y="521" class="label">Fredericksburg</text></g>
+  <rect x="36" y="28" width="552" height="112" rx="8" fill="#fffaf0" stroke="#8e826e"/>
+  <text x="58" y="64" class="label">Operational setting, August 18-23, 1862</text>
+  <text x="58" y="91" class="small">Pope retired from the Rapidan to the north/east bank of the</text>
+  <text x="58" y="116" class="small">Rappahannock, covering the railroad toward Washington.</text>
+  <g transform="translate(960 610)"><path d="M0 54 L0 0 L-10 20 L0 15 L10 20 Z" fill="#323232"/><text x="-7" y="75" class="small">N</text></g>
+  <text x="883" y="690" class="tiny">GENERALIZED • NOT TO SCALE</text>
+</svg>

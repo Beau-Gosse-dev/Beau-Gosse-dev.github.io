@@ -5,8 +5,8 @@
     <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f7f2e6"/><stop offset="1" stop-color="#e8ddc7"/></linearGradient>
     <pattern id="woods" width="34" height="34" patternUnits="userSpaceOnUse"><circle cx="8" cy="8" r="5" fill="#75805a" opacity=".32"/><circle cx="25" cy="19" r="7" fill="#65714d" opacity=".3"/></pattern>
     <pattern id="field" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M0 20L20 0M-5 5L5-5M15 25L25 15" stroke="#b89c5e" stroke-width="2" opacity=".27"/></pattern>
-    <marker id="blueArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0l12 6-12 6z" fill="#315f8c"/></marker>
-    <marker id="redArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0l12 6-12 6z" fill="#98382f"/></marker>
+    <marker id="blueArrow" markerWidth="18" markerHeight="18" refX="15" refY="9" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 18 18"><path d="M0 0l18 9-18 9z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerWidth="18" markerHeight="18" refX="15" refY="9" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 18 18"><path d="M0 0l18 9-18 9z" fill="#98382f"/></marker>
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-opacity=".18"/></filter>
   </defs>
   <rect width="1600" height="1000" fill="url(#paper)"/>

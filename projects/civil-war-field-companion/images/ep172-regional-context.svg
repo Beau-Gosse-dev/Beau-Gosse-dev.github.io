@@ -4,8 +4,8 @@
   <defs>
     <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f5f0e3"/><stop offset="1" stop-color="#e9dfc9"/></linearGradient>
     <pattern id="grain" width="90" height="90" patternUnits="userSpaceOnUse"><path d="M4 18h30M58 52h22M17 78h45" stroke="#7e725d" stroke-opacity=".07" stroke-width="2"/></pattern>
-    <marker id="redArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0l12 6-12 6z" fill="#98382f"/></marker>
-    <marker id="blueArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0l12 6-12 6z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerWidth="18" markerHeight="18" refX="15" refY="9" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 18 18"><path d="M0 0l18 9-18 9z" fill="#98382f"/></marker>
+    <marker id="blueArrow" markerWidth="18" markerHeight="18" refX="15" refY="9" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 18 18"><path d="M0 0l18 9-18 9z" fill="#315f8c"/></marker>
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-opacity=".18"/></filter>
   </defs>
   <rect width="1400" height="900" fill="url(#paper)"/>
@@ -19,12 +19,12 @@
   <text x="1040" y="602" font-family="Arial,sans-serif" font-size="20" fill="#375d72">Rapidan River</text>
 
   <path d="M340 757 Q520 670 681 526 Q820 410 947 287" fill="none" stroke="#816d51" stroke-width="8" stroke-dasharray="15 10"/>
-  <text x="430" y="706" transform="rotate(-27 430 706)" font-family="Arial,sans-serif" font-size="18" fill="#5d513f">Orange &amp; Alexandria Railroad corridor</text>
+  <text x="400" y="700" transform="rotate(-28 400 700)" font-family="Arial,sans-serif" font-size="18" fill="#5d513f">railroad and road corridor</text>
 
   <path d="M367 748 C515 664 640 571 735 494 S856 380 933 304" fill="none" stroke="#98382f" stroke-width="10" marker-end="url(#redArrow)"/>
   <path d="M928 319 C820 409 729 505 627 584" fill="none" stroke="#98382f" stroke-width="8" stroke-dasharray="16 10" marker-end="url(#redArrow)"/>
-  <text x="496" y="622" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#7b2d27">Jackson advances, August 7–9</text>
-  <text x="735" y="466" font-family="Arial,sans-serif" font-size="18" fill="#7b2d27">withdraws south, August 11</text>
+  <text x="484" y="566" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#7b2d27">Jackson advances, August 7–9</text>
+  <text x="742" y="458" font-family="Arial,sans-serif" font-size="18" fill="#7b2d27">withdraws south, August 11</text>
 
   <path d="M1115 228 C1055 255 995 285 948 315" fill="none" stroke="#315f8c" stroke-width="9" marker-end="url(#blueArrow)"/>
   <text x="1062" y="275" font-family="Arial,sans-serif" font-size="18" fill="#294f77">Banks moves south</text>
