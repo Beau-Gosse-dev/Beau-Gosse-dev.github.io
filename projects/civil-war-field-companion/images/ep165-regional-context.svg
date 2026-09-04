@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Regional context for the Battle of Glendale, Virginia, June 30, 1862</title>
+  <desc id="desc">Schematic map placing Richmond and Glendale in eastern Virginia between Washington and the James River, with an inset showing the Union withdrawal route through Glendale to Malvern Hill and the James River.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7f1df"/><stop offset="1" stop-color="#ddd2b4"/></linearGradient>
+    <marker id="blueArrow" markerWidth="16" markerHeight="12" refX="14" refY="6" orient="auto"><path d="M0 0 16 6 0 12Z" fill="#315f8c"/></marker>
+  </defs>
+  <rect width="1200" height="800" fill="url(#paper)"/>
+  <text x="58" y="68" font-family="Georgia,serif" font-size="34" fill="#2f2a22">Glendale in the Peninsula Campaign</text>
+  <text x="60" y="102" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="1.5" fill="#7b302a">SCHEMATIC — NOT TO SCALE</text>
+
+  <path d="M95 150 C210 128 315 132 430 175 C500 202 548 245 595 304 C642 363 676 440 706 530 C728 598 759 656 815 710 L90 710 Z" fill="#d9dfc5" stroke="#80735e" stroke-width="4"/>
+  <path d="M525 260 C586 278 645 322 692 382 C740 443 760 503 796 553 C832 602 905 636 1110 690" fill="none" stroke="#668fa4" stroke-width="34"/>
+  <path d="M525 260 C586 278 645 322 692 382 C740 443 760 503 796 553 C832 602 905 636 1110 690" fill="none" stroke="#dceff3" stroke-width="4"/>
+  <path d="M805 245 C875 298 915 354 936 430 C952 487 982 543 1110 604 L1160 690 L1110 690 C905 636 832 602 796 553 C760 503 740 443 692 382 Z" fill="#d7e7e6" stroke="#668fa4" stroke-width="3"/>
+  <text x="915" y="390" transform="rotate(20 915 390)" font-family="Georgia,serif" font-size="23" fill="#315e72">Chesapeake Bay</text>
+  <text x="808" y="635" transform="rotate(18 808 635)" font-family="Georgia,serif" font-size="23" fill="#315e72">James River</text>
+
+  <circle cx="520" cy="240" r="10" fill="#30302d"/>
+  <text x="540" y="235" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#30302d">Washington</text>
+  <circle cx="500" cy="512" r="11" fill="#9a3d32"/>
+  <text x="522" y="505" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#7b302a">Richmond</text>
+  <circle cx="575" cy="566" r="10" fill="#111"/>
+  <text x="596" y="560" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#111">Glendale</text>
+  <text x="596" y="585" font-family="Arial,sans-serif" font-size="17" fill="#4a463f">June 30, 1862</text>
+  <path d="M566 540 C555 526 541 519 515 516" fill="none" stroke="#9a3d32" stroke-width="5" stroke-dasharray="10 8"/>
+
+  <g transform="translate(825 120)">
+    <rect width="315" height="390" rx="14" fill="#fbf8ee" stroke="#776c5a" stroke-width="3"/>
+    <text x="22" y="40" font-family="Georgia,serif" font-size="25" fill="#2f2a22">Withdrawal corridor</text>
+    <text x="23" y="66" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#7b302a">SCHEMATIC — NOT TO SCALE</text>
+    <path d="M160 90 C142 135 146 174 159 215 C170 251 176 303 170 354" fill="none" stroke="#806c4f" stroke-width="10"/>
+    <path d="M58 112 C104 110 130 116 151 132" fill="none" stroke="#806c4f" stroke-width="6"/>
+    <path d="M52 222 C96 218 122 218 158 220" fill="none" stroke="#806c4f" stroke-width="6"/>
+    <path d="M160 354 C204 360 242 352 290 330" fill="none" stroke="#668fa4" stroke-width="19"/>
+    <path d="M145 126 C145 177 151 260 169 330" fill="none" stroke="#315f8c" stroke-width="5" marker-end="url(#blueArrow)"/>
+    <circle cx="150" cy="132" r="8" fill="#111"/>
+    <circle cx="158" cy="220" r="10" fill="#111"/>
+    <circle cx="168" cy="324" r="8" fill="#111"/>
+    <text x="177" y="125" font-family="Arial,sans-serif" font-size="17">White Oak Swamp</text>
+    <text x="178" y="217" font-family="Arial,sans-serif" font-size="21" font-weight="700">Glendale</text>
+    <text x="188" y="286" font-family="Arial,sans-serif" font-size="17">Willis Church Road</text>
+    <text x="187" y="326" font-family="Arial,sans-serif" font-size="18" font-weight="700">Malvern Hill</text>
+    <text x="208" y="376" font-family="Georgia,serif" font-size="18" fill="#315e72">James River</text>
+  </g>
+
+  <g transform="translate(92 653)" font-family="Arial,sans-serif">
+    <line x1="0" y1="0" x2="58" y2="0" stroke="#315f8c" stroke-width="6" marker-end="url(#blueArrow)"/>
+    <text x="70" y="7" font-size="17" fill="#30302d">Army of the Potomac’s generalized route toward the James</text>
+  </g>
+</svg>
