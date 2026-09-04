@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">Shiloh counterattack and Confederate withdrawal, April 7, 1862</title>
+  <desc id="desc">Simplified map shows Lew Wallace advancing on the United States right, Sherman, McClernand, and Hurlbut advancing through the center, Buell's divisions advancing on the left, Confederate counterattacks near Water Oaks Pond, and Breckinridge covering Beauregard's withdrawal down the Corinth Road.</desc>
+  <defs>
+    <marker id="usa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10z" fill="#315f8c"/></marker>
+    <marker id="csa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10z" fill="#9a3d32"/></marker>
+  </defs>
+  <rect width="1200" height="820" fill="#f3eedf"/>
+  <path d="M1025 0C980 130 1060 260 1005 390S1060 650 995 820H1200V0Z" fill="#b6cfcd"/>
+  <text x="1090" y="430" text-anchor="middle" fill="#385f64" font-family="Georgia,serif" font-size="25" transform="rotate(88 1090 430)">TENNESSEE RIVER</text>
+  <circle cx="1005" cy="145" r="9" fill="#263332"/>
+  <text x="1090" y="185" text-anchor="middle" fill="#263332" font-family="Arial,sans-serif" font-size="16" font-weight="700">PITTSBURG LANDING</text>
+  <path d="M470 785L520 620L550 470L565 315L610 165" fill="none" stroke="#665746" stroke-width="9"/>
+  <text x="458" y="625" fill="#514438" font-family="Arial,sans-serif" font-size="17" transform="rotate(-74 458 625)">Corinth Road</text>
+  <path d="M125 530C340 520 530 505 815 490" fill="none" stroke="#756551" stroke-width="7" stroke-dasharray="14 10"/>
+  <text x="245" y="498" fill="#514438" font-family="Arial,sans-serif" font-size="16">Hamburg–Purdy Road</text>
+  <path d="M110 170C225 240 300 315 355 430" fill="none" stroke="#6e8a64" stroke-width="17"/>
+  <text x="120" y="210" fill="#4e684a" font-family="Arial,sans-serif" font-size="17" font-weight="700">TILGHMAN BRANCH</text>
+  <ellipse cx="505" cy="500" rx="82" ry="40" fill="#b6cfcd" stroke="#6e8a64" stroke-width="5"/>
+  <text x="505" y="505" text-anchor="middle" fill="#385f64" font-family="Arial,sans-serif" font-size="17" font-weight="700">WATER OAKS POND</text>
+  <rect x="705" y="390" width="190" height="94" rx="8" fill="#d8b88a"/>
+  <text x="800" y="426" text-anchor="middle" fill="#553e28" font-family="Arial,sans-serif" font-size="18" font-weight="700">SARAH BELL FIELD</text>
+  <text x="800" y="454" text-anchor="middle" fill="#553e28" font-family="Arial,sans-serif" font-size="15">near Peach Orchard</text>
+  <rect x="325" y="655" width="125" height="70" rx="7" fill="#d8b88a" stroke="#665746" stroke-width="4"/>
+  <text x="388" y="684" text-anchor="middle" fill="#553e28" font-family="Arial,sans-serif" font-size="17" font-weight="700">SHILOH</text>
+  <text x="388" y="707" text-anchor="middle" fill="#553e28" font-family="Arial,sans-serif" font-size="17" font-weight="700">CHURCH</text>
+  <path d="M210 150C225 255 270 355 355 470" fill="none" stroke="#315f8c" stroke-width="15" marker-end="url(#usa)"/>
+  <text x="112" y="115" fill="#234b73" font-family="Arial,sans-serif" font-size="19" font-weight="700">LEW WALLACE</text>
+  <text x="112" y="140" fill="#234b73" font-family="Arial,sans-serif" font-size="15">United States right</text>
+  <path d="M560 150C540 245 535 330 520 445" fill="none" stroke="#315f8c" stroke-width="15" marker-end="url(#usa)"/>
+  <text x="520" y="106" text-anchor="middle" fill="#234b73" font-family="Arial,sans-serif" font-size="16" font-weight="700">SHERMAN · McCLERNAND · HURLBUT</text>
+  <text x="520" y="132" text-anchor="middle" fill="#234b73" font-family="Arial,sans-serif" font-size="15">United States center</text>
+  <path d="M930 165C885 245 855 325 825 390" fill="none" stroke="#315f8c" stroke-width="15" marker-end="url(#usa)"/>
+  <path d="M820 165C770 240 735 315 700 395" fill="none" stroke="#315f8c" stroke-width="15" marker-end="url(#usa)"/>
+  <text x="820" y="106" text-anchor="middle" fill="#234b73" font-family="Arial,sans-serif" font-size="16" font-weight="700">NELSON · CRITTENDEN · McCOOK</text>
+  <text x="820" y="132" text-anchor="middle" fill="#234b73" font-family="Arial,sans-serif" font-size="15">Buell’s Army of the Ohio on the left</text>
+  <path d="M425 580C445 545 465 525 487 513M605 565C575 535 550 520 527 512M710 550C655 525 590 510 545 505" fill="none" stroke="#9a3d32" stroke-width="11" marker-end="url(#csa)"/>
+  <text x="795" y="550" text-anchor="middle" fill="#7c3029" font-family="Arial,sans-serif" font-size="18" font-weight="700">CONFEDERATE COUNTERATTACKS · MIDDAY</text>
+  <text x="795" y="575" text-anchor="middle" fill="#7c3029" font-family="Arial,sans-serif" font-size="15">briefly checked the United States advance</text>
+  <path d="M600 635C560 685 525 730 490 785" fill="none" stroke="#9a3d32" stroke-width="16" marker-end="url(#csa)"/>
+  <path d="M700 650C620 680 555 720 510 780" fill="none" stroke="#9a3d32" stroke-width="12" marker-end="url(#csa)"/>
+  <text x="735" y="714" fill="#7c3029" font-family="Arial,sans-serif" font-size="19" font-weight="700">BEAUREGARD WITHDRAWS</text>
+  <text x="735" y="740" fill="#7c3029" font-family="Arial,sans-serif" font-size="15">main body toward Corinth · about 2 p.m.</text>
+  <path d="M545 610L665 603" stroke="#9a3d32" stroke-width="18"/>
+  <text x="135" y="590" fill="#7c3029" font-family="Arial,sans-serif" font-size="16" font-weight="700">BRECKINRIDGE REAR GUARD</text>
+  <text x="135" y="614" fill="#7c3029" font-family="Arial,sans-serif" font-size="15">covered the road until about 5 p.m.</text>
+  <text x="40" y="50" fill="#263332" font-family="Georgia,serif" font-size="31" font-weight="700">The second day at Shiloh</text>
+  <text x="40" y="84" fill="#4b5856" font-family="Arial,sans-serif" font-size="18">April 7, 1862 · simplified orientation · not to scale</text>
+  <rect x="42" y="708" width="20" height="20" fill="#315f8c"/><text x="74" y="725" fill="#263332" font-family="Arial,sans-serif" font-size="16">United States advance</text>
+  <rect x="42" y="742" width="20" height="20" fill="#9a3d32"/><text x="74" y="759" fill="#263332" font-family="Arial,sans-serif" font-size="16">Confederate movement</text>
+  <path d="M1125 130V75" stroke="#263332" stroke-width="5" marker-end="url(#usa)"/><text x="1125" y="48" text-anchor="middle" fill="#263332" font-family="Arial,sans-serif" font-size="20" font-weight="700">N</text>
+</svg>

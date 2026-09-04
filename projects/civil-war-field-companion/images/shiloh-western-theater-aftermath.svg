@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Strategic aftermath of Shiloh, April to June 1862</title>
+  <desc id="desc">Schematic map linking Shiloh and Corinth to United States gains at Island Number Ten, Memphis, New Orleans, and along the Mississippi River.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8f2e4"/>
+      <stop offset="1" stop-color="#e8dcc3"/>
+    </linearGradient>
+    <marker id="blueArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#315f8c"/>
+    </marker>
+    <marker id="redArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#9a3d32"/>
+    </marker>
+    <style>
+      .title { font: 700 34px Georgia, serif; fill: #2d2923; }
+      .subtitle { font: 18px Arial, sans-serif; fill: #5f574c; }
+      .place { font: 700 22px Arial, sans-serif; fill: #2d2923; }
+      .date { font: 17px Arial, sans-serif; fill: #5f574c; }
+      .label { font: 16px Arial, sans-serif; fill: #403a32; }
+      .water { fill: none; stroke: #6e9fbe; stroke-width: 18; stroke-linecap: round; }
+      .waterline { fill: none; stroke: #b9d5e5; stroke-width: 5; stroke-linecap: round; }
+      .rail { fill: none; stroke: #6a6257; stroke-width: 7; stroke-dasharray: 14 8; }
+      .advance { fill: none; stroke: #315f8c; stroke-width: 7; marker-end: url(#blueArrow); }
+      .retreat { fill: none; stroke: #9a3d32; stroke-width: 7; stroke-dasharray: 15 10; marker-end: url(#redArrow); }
+      .node-us { fill: #315f8c; stroke: #f8f2e4; stroke-width: 4; }
+      .node-cs { fill: #9a3d32; stroke: #f8f2e4; stroke-width: 4; }
+      .box { fill: #fffaf0; stroke: #b9aa91; stroke-width: 2; rx: 12; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="760" fill="url(#paper)"/>
+  <rect x="24" y="24" width="1152" height="712" fill="none" stroke="#8e7c61" stroke-width="2"/>
+  <text x="60" y="72" class="title">Shiloh and the western theater</text>
+  <text x="60" y="104" class="subtitle">Strategic aftermath, April–June 1862 · schematic, not to scale</text>
+
+  <path class="water" d="M220 155 C170 240,265 320,210 405 C160 485,260 565,205 670"/>
+  <path class="waterline" d="M220 155 C170 240,265 320,210 405 C160 485,260 565,205 670"/>
+  <text x="67" y="405" class="place" transform="rotate(-82 67 405)">Mississippi River</text>
+
+  <path class="water" d="M710 195 C650 245,640 315,590 350 C540 385,500 410,455 440"/>
+  <path class="waterline" d="M710 195 C650 245,640 315,590 350 C540 385,500 410,455 440"/>
+  <text x="590" y="285" class="label" transform="rotate(-28 590 285)">Tennessee River</text>
+
+  <path class="rail" d="M255 484 L990 484"/>
+  <path class="rail" d="M760 170 L760 675"/>
+  <text x="790" y="468" class="label">Memphis &amp; Charleston Railroad</text>
+  <text x="784" y="642" class="label" transform="rotate(-90 784 642)">Mobile &amp; Ohio Railroad</text>
+
+  <path class="advance" d="M210 205 L210 283"/>
+  <path class="advance" d="M210 350 L210 440"/>
+  <path class="advance" d="M212 648 L212 565"/>
+  <path class="advance" d="M590 354 L720 462"/>
+  <path class="retreat" d="M760 510 L760 620"/>
+
+  <circle cx="210" cy="185" r="12" class="node-us"/>
+  <text x="245" y="181" class="place">Island No. 10</text>
+  <text x="245" y="207" class="date">captured April 7–8</text>
+
+  <circle cx="210" cy="480" r="12" class="node-us"/>
+  <text x="72" y="510" class="place">Memphis</text>
+  <text x="72" y="535" class="date">captured June 6</text>
+
+  <circle cx="210" cy="672" r="12" class="node-us"/>
+  <text x="245" y="670" class="place">New Orleans</text>
+  <text x="245" y="695" class="date">occupied May 1</text>
+
+  <circle cx="590" cy="350" r="12" class="node-us"/>
+  <text x="720" y="260" class="place">Pittsburg Landing / Shiloh</text>
+  <text x="720" y="287" class="date">United States victory, April 6–7</text>
+
+  <circle cx="760" cy="484" r="14" class="node-cs"/>
+  <text x="800" y="526" class="place">Corinth</text>
+  <text x="800" y="553" class="date">occupied May 30 after a month-long advance</text>
+  <text x="800" y="578" class="date">Beauregard’s army withdrew toward Tupelo</text>
+
+  <rect x="390" y="560" width="310" height="120" class="box"/>
+  <text x="414" y="592" class="place">Strategic effect</text>
+  <text x="414" y="623" class="label">Corinth’s railroad junction was lost.</text>
+  <text x="414" y="648" class="label">The upper and lower river offensives</text>
+  <text x="414" y="671" class="label">advanced toward Vicksburg.</text>
+
+  <rect x="875" y="130" width="245" height="102" class="box"/>
+  <line x1="899" y1="158" x2="955" y2="158" class="advance"/>
+  <text x="970" y="164" class="label">U.S. advance</text>
+  <line x1="899" y1="198" x2="955" y2="198" class="retreat"/>
+  <text x="970" y="204" class="label">Confederate withdrawal</text>
+</svg>
