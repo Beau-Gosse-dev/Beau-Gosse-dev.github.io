@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">Perryville at noon, October 8, 1862</title>
+  <desc id="desc">North-up schematic showing McCook's First Corps on Loomis Heights and Open Knob, the Confederate attack forming east of the Chaplin River, Gilbert and Crittenden south of the target, and the roads around Perryville.</desc>
+  <defs>
+    <marker id="blueArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#315f8c"/>
+    </marker>
+    <marker id="redArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#963b31"/>
+    </marker>
+    <filter id="paper" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="13" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 0.03"/></feComponentTransfer>
+      <feBlend in="SourceGraphic" mode="multiply"/>
+    </filter>
+    <style>
+      .title { font: 700 30px Georgia, serif; fill: #2b2722; }
+      .subtitle { font: 16px Georgia, serif; fill: #5f574c; }
+      .label { font: 700 17px Arial, sans-serif; fill: #302c27; paint-order: stroke; stroke: #f8f1e3; stroke-width: 5px; stroke-linejoin: round; }
+      .small { font: 14px Arial, sans-serif; fill: #3e3932; paint-order: stroke; stroke: #f8f1e3; stroke-width: 4px; stroke-linejoin: round; }
+      .unitBlue { font: 700 15px Arial, sans-serif; fill: #244f79; }
+      .unitRed { font: 700 15px Arial, sans-serif; fill: #7f2f27; }
+      .boxSmall { font: 13px Arial, sans-serif; fill: #3e3932; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="820" fill="#f8f1e3"/>
+  <g filter="url(#paper)">
+    <text x="48" y="48" class="title">Perryville: Bragg selects an exposed target</text>
+    <text x="48" y="75" class="subtitle">Approximate positions from late morning to the 2 p.m. Confederate attack · October 8, 1862 · north up</text>
+
+    <!-- relief -->
+    <path d="M80 222 C215 180 355 202 477 175 C606 147 760 163 930 123" fill="none" stroke="#cabc9d" stroke-width="2" stroke-dasharray="7 7"/>
+    <path d="M65 310 C220 268 363 296 515 253 C675 208 828 240 1030 186" fill="none" stroke="#cabc9d" stroke-width="2" stroke-dasharray="7 7"/>
+    <path d="M76 590 C225 548 390 576 548 539 C706 502 862 529 1085 468" fill="none" stroke="#cabc9d" stroke-width="2" stroke-dasharray="7 7"/>
+    <path d="M96 681 C250 636 408 677 596 630 C770 587 927 620 1115 565" fill="none" stroke="#cabc9d" stroke-width="2" stroke-dasharray="7 7"/>
+
+    <!-- water -->
+    <path d="M850 101 C817 160 866 204 833 263 C802 319 855 359 824 416 C794 472 839 520 810 582 C784 640 822 697 790 770" fill="none" stroke="#6f9fb7" stroke-width="12"/>
+    <path d="M572 782 C551 728 578 681 560 627 C542 573 573 524 550 471" fill="none" stroke="#78a9bf" stroke-width="8"/>
+    <text x="817" y="579" class="label" transform="rotate(82 817 579)">Chaplin River</text>
+    <text x="520" y="674" class="small" transform="rotate(-83 520 674)">Doctors Creek</text>
+    <text x="893" y="132" class="small">Walker’s Bend</text>
+
+    <!-- roads -->
+    <path d="M45 500 C235 489 390 475 562 449 C704 428 845 409 1118 391" fill="none" stroke="#8b7961" stroke-width="10"/>
+    <path d="M174 498 C174 392 189 284 220 132" fill="none" stroke="#8b7961" stroke-width="8"/>
+    <path d="M842 405 C892 315 914 220 936 104" fill="none" stroke="#8b7961" stroke-width="8"/>
+    <path d="M846 424 C950 489 1044 544 1165 607" fill="none" stroke="#8b7961" stroke-width="7"/>
+    <path d="M835 438 C925 555 1000 653 1085 770" fill="none" stroke="#8b7961" stroke-width="7"/>
+    <path d="M565 613 C676 568 754 514 842 426" fill="none" stroke="#8b7961" stroke-width="8"/>
+    <text x="334" y="458" class="label">Mackville Road</text>
+    <text x="122" y="334" class="small" transform="rotate(-82 122 334)">Benton Road</text>
+    <text x="889" y="232" class="small" transform="rotate(-76 889 232)">Harrodsburg Pike</text>
+    <text x="1008" y="523" class="small" transform="rotate(29 1008 523)">Danville Road</text>
+    <text x="984" y="660" class="small" transform="rotate(50 984 660)">Lebanon Pike</text>
+    <text x="654" y="564" class="small" transform="rotate(-28 654 564)">Springfield Pike</text>
+
+    <!-- places and terrain -->
+    <circle cx="176" cy="495" r="8" fill="#2f2a25"/>
+    <text x="64" y="535" class="label">Dixville Crossroads</text>
+    <rect x="207" y="455" width="18" height="16" fill="#65513c"/>
+    <text x="230" y="469" class="small">Russell house · McCook HQ</text>
+    <circle cx="845" cy="414" r="9" fill="#2f2a25"/>
+    <text x="864" y="449" class="label">Perryville</text>
+    <ellipse cx="478" cy="443" rx="129" ry="57" fill="#d9c994" opacity="0.58" stroke="#a79569" stroke-width="2"/>
+    <text x="428" y="404" class="label">Loomis Heights</text>
+    <ellipse cx="328" cy="231" rx="102" ry="58" fill="#d9c994" opacity="0.62" stroke="#a79569" stroke-width="2"/>
+    <text x="287" y="191" class="label">Open Knob</text>
+    <ellipse cx="635" cy="597" rx="101" ry="50" fill="#d9c994" opacity="0.55" stroke="#a79569" stroke-width="2"/>
+    <text x="597" y="632" class="label">Peters Hill</text>
+
+    <!-- United States positions -->
+    <g>
+      <rect x="259" y="222" width="142" height="48" rx="7" fill="#d7e5f0" stroke="#315f8c" stroke-width="3"/>
+      <text x="274" y="242" class="unitBlue">Terrill’s brigade</text>
+      <text x="274" y="260" class="boxSmall">Jackson’s 10th Division</text>
+
+      <rect x="337" y="319" width="145" height="48" rx="7" fill="#d7e5f0" stroke="#315f8c" stroke-width="3"/>
+      <text x="353" y="339" class="unitBlue">Harris’s brigade</text>
+      <text x="353" y="357" class="boxSmall">Rousseau’s 3rd Division</text>
+
+      <rect x="366" y="469" width="144" height="48" rx="7" fill="#d7e5f0" stroke="#315f8c" stroke-width="3"/>
+      <text x="382" y="489" class="unitBlue">Lytle’s brigade</text>
+      <text x="382" y="507" class="boxSmall">astride Mackville Road</text>
+
+      <rect x="82" y="580" width="180" height="48" rx="7" fill="#d7e5f0" stroke="#315f8c" stroke-width="3"/>
+      <text x="98" y="600" class="unitBlue">Webster’s brigade</text>
+      <text x="98" y="618" class="boxSmall">I Corps reserve</text>
+
+      <path d="M107 693 C182 643 248 604 319 554" fill="none" stroke="#315f8c" stroke-width="7" stroke-dasharray="11 8" marker-end="url(#blueArrow)"/>
+      <rect x="54" y="696" width="216" height="50" rx="7" fill="#d7e5f0" stroke="#315f8c" stroke-width="3"/>
+      <text x="70" y="716" class="unitBlue">Starkweather’s brigade</text>
+      <text x="70" y="736" class="boxSmall">delayed behind the I Corps train</text>
+
+      <rect x="407" y="665" width="216" height="50" rx="7" fill="#d7e5f0" stroke="#315f8c" stroke-width="3"/>
+      <text x="423" y="685" class="unitBlue">Gilbert’s III Corps</text>
+      <text x="423" y="705" class="boxSmall">Sheridan and Mitchell forward</text>
+
+      <rect x="717" y="708" width="222" height="48" rx="7" fill="#d7e5f0" stroke="#315f8c" stroke-width="3"/>
+      <text x="733" y="728" class="unitBlue">Crittenden’s II Corps</text>
+      <text x="733" y="746" class="boxSmall">about 20,000 south of town</text>
+    </g>
+
+    <!-- Confederate positions and attack -->
+    <g>
+      <rect x="755" y="157" width="169" height="48" rx="7" fill="#efd2cc" stroke="#963b31" stroke-width="3"/>
+      <text x="771" y="177" class="unitRed">Donaldson’s brigade</text>
+      <text x="771" y="195" class="boxSmall">Cheatham’s lead echelon</text>
+      <path d="M748 183 C641 174 513 194 410 224" fill="none" stroke="#963b31" stroke-width="9" marker-end="url(#redArrow)"/>
+
+      <rect x="925" y="129" width="174" height="58" rx="7" fill="#efd2cc" stroke="#963b31" stroke-width="3"/>
+      <text x="941" y="150" class="unitRed">Maney and Stewart</text>
+      <text x="941" y="169" class="boxSmall">Cheatham’s reserves</text>
+
+      <rect x="675" y="282" width="153" height="48" rx="7" fill="#efd2cc" stroke="#963b31" stroke-width="3"/>
+      <text x="691" y="302" class="unitRed">Anderson’s brigades</text>
+      <text x="691" y="320" class="boxSmall">center echelon</text>
+      <path d="M671 313 C607 320 540 328 485 338" fill="none" stroke="#963b31" stroke-width="8" marker-end="url(#redArrow)"/>
+
+      <rect x="675" y="468" width="153" height="48" rx="7" fill="#efd2cc" stroke="#963b31" stroke-width="3"/>
+      <text x="691" y="488" class="unitRed">Buckner’s division</text>
+      <text x="691" y="506" class="boxSmall">southern echelon</text>
+      <path d="M668 486 C611 481 561 482 514 490" fill="none" stroke="#963b31" stroke-width="8" marker-end="url(#redArrow)"/>
+
+      <rect x="910" y="353" width="228" height="72" rx="8" fill="#efd2cc" stroke="#963b31" stroke-width="3"/>
+      <text x="926" y="375" class="unitRed">Powell · Preston Smith · Wheeler</text>
+      <text x="926" y="395" class="boxSmall">about 3,500 left near Perryville</text>
+      <text x="926" y="413" class="boxSmall">to watch Gilbert and Crittenden</text>
+    </g>
+
+    <!-- interpretive callouts -->
+    <g transform="translate(48 98)">
+      <rect width="538" height="68" rx="8" fill="#fffaf0" stroke="#b5a98f"/>
+      <rect x="16" y="15" width="18" height="18" fill="#d7e5f0" stroke="#315f8c" stroke-width="2"/>
+      <text x="45" y="29" class="small">McCook: about 13,000 — the Confederate target</text>
+      <rect x="16" y="41" width="18" height="18" fill="#efd2cc" stroke="#963b31" stroke-width="2"/>
+      <text x="45" y="55" class="small">Bragg: about 13,000 attacking north-to-south in echelon</text>
+    </g>
+
+    <g transform="translate(940 650)">
+      <rect width="220" height="72" rx="8" fill="#fffaf0" stroke="#b5a98f"/>
+      <text x="14" y="23" class="unitBlue">About 42,000 U.S. troops</text>
+      <text x="14" y="43" class="boxSmall">in Gilbert and Crittenden</text>
+      <text x="14" y="61" class="boxSmall">watched by about 3,500</text>
+    </g>
+
+    <!-- north arrow -->
+    <g transform="translate(1144 92)">
+      <path d="M0 48 L0 2" stroke="#2f2a25" stroke-width="3" marker-end="url(#blueArrow)"/>
+      <text x="-7" y="-7" class="label">N</text>
+    </g>
+
+    <text x="48" y="796" class="small">Schematic: terrain, roads, and unit positions are approximate. Based on the Official Records, U.S. Army staff ride history, and J. B. Work’s battlefield map.</text>
+  </g>
+</svg>
