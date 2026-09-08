@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Close of the Battle of Antietam and immediate aftermath</title>
+  <desc id="desc">Two-panel schematic map. The upper panel shows the final battlefield positions: the Ninth Corps holds the Lower Bridge, and Federal artillery near the Joseph Poffenberger farm blocks Stuart's proposed movement around the Federal right. The lower panel shows Lee's withdrawal from Sharpsburg through Shepherdstown and the medical evacuation route from battlefield hospitals through Middletown to Frederick.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbf4e4"/>
+      <stop offset="1" stop-color="#e4d6b8"/>
+    </linearGradient>
+    <marker id="blueArrow" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 16 16">
+      <path d="M0 0L16 8L0 16Z" fill="#315f8c"/>
+    </marker>
+    <marker id="redArrow" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 16 16">
+      <path d="M0 0L16 8L0 16Z" fill="#963b31"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#paper)"/>
+  <rect x="28" y="28" width="1144" height="744" rx="18" fill="none" stroke="#97896f" stroke-width="2"/>
+  <text x="60" y="70" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#2f2b27">CLOSE OF BATTLE AND IMMEDIATE AFTERMATH</text>
+  <text x="60" y="101" font-family="Arial, sans-serif" font-size="18" fill="#5c5549">September 17–20, 1862 · tactical positions above · regional routes below</text>
+
+  <rect x="48" y="124" width="1104" height="304" rx="10" fill="#e8e4cf" stroke="#b5a78d"/>
+  <text x="72" y="157" font-family="Georgia, serif" font-size="18" font-weight="700" fill="#2f2b27">FINAL BATTLEFIELD POSITIONS · NEAR 5:30 P.M., SEPTEMBER 17</text>
+
+  <path d="M818 169C782 221 815 271 790 323C773 359 782 390 806 420" fill="none" stroke="#56809a" stroke-width="38" opacity="0.84"/>
+  <path d="M818 169C782 221 815 271 790 323C773 359 782 390 806 420" fill="none" stroke="#acd4de" stroke-width="22"/>
+  <rect x="846" y="182" width="177" height="27" rx="6" fill="#fffaf0" opacity="0.92"/>
+  <text x="934" y="201" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#31596d">ANTIETAM CREEK</text>
+
+  <g transform="translate(548 288)" filter="url(#shadow)">
+    <rect x="-83" y="-37" width="166" height="74" rx="8" fill="#efe1ca" stroke="#7d6f5d" stroke-width="2"/>
+    <text x="0" y="-7" text-anchor="middle" font-family="Georgia, serif" font-size="19" font-weight="700" fill="#302b26">SHARPSBURG</text>
+    <text x="0" y="16" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5b544b">Confederate line remains</text>
+  </g>
+
+  <path d="M395 205C452 219 500 229 559 238" fill="none" stroke="#963b31" stroke-width="11" stroke-dasharray="13 8"/>
+  <path d="M390 341C459 353 520 363 590 371" fill="none" stroke="#963b31" stroke-width="11" stroke-dasharray="13 8"/>
+  <text x="362" y="198" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#7a332c">LEE’S LEFT</text>
+  <text x="353" y="366" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#7a332c">HILL AND JONES</text>
+
+  <path d="M210 231C258 202 304 195 351 205" fill="none" stroke="#963b31" stroke-width="9" marker-end="url(#redArrow)"/>
+  <line x1="327" y1="181" x2="358" y2="217" stroke="#312c28" stroke-width="5"/>
+  <line x1="358" y1="181" x2="327" y2="217" stroke="#312c28" stroke-width="5"/>
+  <g transform="translate(187 261)" font-family="Arial, sans-serif" filter="url(#shadow)">
+    <rect x="-112" y="-29" width="224" height="58" rx="8" fill="#f7e8dc" stroke="#963b31" stroke-width="2"/>
+    <text x="0" y="-6" text-anchor="middle" font-size="14" font-weight="700" fill="#7a332c">STUART’S MOVEMENT</text>
+    <text x="0" y="14" text-anchor="middle" font-size="11" fill="#7a332c">abandoned under artillery fire</text>
+  </g>
+
+  <g transform="translate(416 211)" font-family="Arial, sans-serif" filter="url(#shadow)">
+    <rect x="-112" y="-23" width="224" height="46" rx="8" fill="#315f8c"/>
+    <text x="0" y="-2" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">MEADE’S ARTILLERY LINE</text>
+    <text x="0" y="15" text-anchor="middle" font-size="10" fill="#eaf2f8">Joseph Poffenberger farm sector</text>
+  </g>
+  <g stroke="#315f8c" stroke-width="3">
+    <line x1="333" y1="234" x2="319" y2="255"/>
+    <line x1="381" y1="234" x2="376" y2="258"/>
+    <line x1="431" y1="234" x2="436" y2="260"/>
+    <line x1="479" y1="234" x2="493" y2="261"/>
+  </g>
+
+  <path d="M960 370C906 363 860 365 817 382" fill="none" stroke="#315f8c" stroke-width="12"/>
+  <g transform="translate(979 335)" font-family="Arial, sans-serif" filter="url(#shadow)">
+    <rect x="-134" y="-30" width="268" height="60" rx="8" fill="#315f8c"/>
+    <text x="0" y="-7" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">NINTH CORPS BRIDGEHEAD</text>
+    <text x="0" y="14" text-anchor="middle" font-size="11" fill="#eaf2f8">holds the ridge above the Lower Bridge</text>
+  </g>
+  <g transform="translate(790 386)">
+    <path d="M-28 0H28" stroke="#76634e" stroke-width="16"/>
+    <path d="M-28 0H28" stroke="#d8c194" stroke-width="8"/>
+    <path d="M-23 0Q0-21 23 0" fill="none" stroke="#6d5c4a" stroke-width="4"/>
+  </g>
+  <text x="708" y="409" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#654d36">LOWER BRIDGE</text>
+
+  <g transform="translate(1104 171)" font-family="Arial, sans-serif" fill="#2f2b27">
+    <path d="M0 45V0M0 0L-8 16M0 0L8 16" fill="none" stroke="#2f2b27" stroke-width="3"/>
+    <text x="0" y="-8" text-anchor="middle" font-size="17" font-weight="700">N</text>
+  </g>
+
+  <rect x="48" y="448" width="1104" height="290" rx="10" fill="#e8e4cf" stroke="#b5a78d"/>
+  <text x="72" y="481" font-family="Georgia, serif" font-size="18" font-weight="700" fill="#2f2b27">WITHDRAWAL AND MEDICAL EVACUATION · SEPTEMBER 18–20</text>
+
+  <path d="M97 656C184 626 267 637 344 672C412 703 473 704 539 680" fill="none" stroke="#56809a" stroke-width="35" opacity="0.84"/>
+  <path d="M97 656C184 626 267 637 344 672C412 703 473 704 539 680" fill="none" stroke="#acd4de" stroke-width="20"/>
+  <text x="218" y="623" font-family="Georgia, serif" font-size="15" font-weight="700" fill="#31596d">POTOMAC RIVER</text>
+
+  <path d="M249 546C410 546 537 548 665 558C798 568 897 568 1062 574" fill="none" stroke="#a7875c" stroke-width="15"/>
+  <path d="M249 546C410 546 537 548 665 558C798 568 897 568 1062 574" fill="none" stroke="#ead1a2" stroke-width="6"/>
+
+  <g font-family="Arial, sans-serif" filter="url(#shadow)">
+    <g transform="translate(251 544)">
+      <circle r="16" fill="#efe1ca" stroke="#4b4540" stroke-width="3"/>
+      <rect x="-15" y="-45" width="132" height="35" rx="7" fill="#fffaf0" stroke="#8d7c65"/>
+      <text x="51" y="-22" text-anchor="middle" font-size="13" font-weight="700" fill="#332e29">SHARPSBURG</text>
+    </g>
+    <g transform="translate(533 559)">
+      <circle r="13" fill="#efe1ca" stroke="#4b4540" stroke-width="3"/>
+      <rect x="-65" y="-61" width="130" height="34" rx="7" fill="#fffaf0" stroke="#8d7c65"/>
+      <text x="0" y="-38" text-anchor="middle" font-size="13" font-weight="700" fill="#332e29">MIDDLETOWN</text>
+    </g>
+    <g transform="translate(1012 574)">
+      <circle r="17" fill="#efe1ca" stroke="#4b4540" stroke-width="3"/>
+      <rect x="-62" y="-62" width="124" height="35" rx="7" fill="#fffaf0" stroke="#8d7c65"/>
+      <text x="0" y="-39" text-anchor="middle" font-size="13" font-weight="700" fill="#332e29">FREDERICK</text>
+    </g>
+    <g transform="translate(341 685)">
+      <circle r="14" fill="#efe1ca" stroke="#4b4540" stroke-width="3"/>
+      <rect x="-74" y="-60" width="148" height="34" rx="7" fill="#fffaf0" stroke="#8d7c65"/>
+      <text x="0" y="-37" text-anchor="middle" font-size="13" font-weight="700" fill="#332e29">SHEPHERDSTOWN</text>
+    </g>
+  </g>
+
+  <g transform="translate(151 535)" font-family="Arial, sans-serif" filter="url(#shadow)">
+    <rect x="-82" y="-34" width="164" height="68" rx="8" fill="#e8efe2" stroke="#607853" stroke-width="2"/>
+    <text x="0" y="-10" text-anchor="middle" font-size="13" font-weight="700" fill="#3f5538">FIELD HOSPITALS</text>
+    <text x="0" y="10" text-anchor="middle" font-size="10" fill="#4c6443">farms · barns · churches</text>
+    <text x="0" y="25" text-anchor="middle" font-size="10" fill="#4c6443">around the battlefield</text>
+  </g>
+
+  <path d="M281 529C390 510 454 514 502 544C623 612 793 611 978 580" fill="none" stroke="#315f8c" stroke-width="10" marker-end="url(#blueArrow)"/>
+  <rect x="617" y="602" width="311" height="55" rx="8" fill="#eaf2f8" stroke="#315f8c" stroke-width="2" filter="url(#shadow)"/>
+  <text x="772" y="623" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#244e75">WOUNDED TO FREDERICK · FROM SEPT. 20</text>
+  <text x="772" y="642" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#315f8c">ambulances and walking wounded travel through Middletown</text>
+
+  <path d="M227 572C251 617 281 649 322 674" fill="none" stroke="#963b31" stroke-width="10" marker-end="url(#redArrow)"/>
+  <rect x="82" y="676" width="228" height="43" rx="8" fill="#f7e8dc" stroke="#963b31" stroke-width="2" filter="url(#shadow)"/>
+  <text x="196" y="694" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#7a332c">LEE WITHDRAWS AFTER DARK</text>
+  <text x="196" y="710" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7a332c">September 18 · through Boteler’s Ford</text>
+
+  <text x="600" y="764" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#5f574d">Schematic and not to scale · battlefield positions and regional routes generalized from NPS interpretation and official reports</text>
+</svg>
