@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">First two United States assaults at the Lower Bridge</title>
+  <desc id="desc">Schematic map with north at top. The Antietam runs north to south between Confederate defenders on the west bank and United States attackers on the east. The 11th Connecticut advances along the creek, Crook stops upstream, Nagle attacks along the Rohrersville Road, and Rodman searches downstream for Snavely's Ford.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbf4e4"/>
+      <stop offset="1" stop-color="#e5d8bd"/>
+    </linearGradient>
+    <marker id="blueArrow" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 16 16">
+      <path d="M0 0L16 8L0 16Z" fill="#315f8c"/>
+    </marker>
+    <marker id="redArrow" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 16 16">
+      <path d="M0 0L16 8L0 16Z" fill="#963b31"/>
+    </marker>
+    <pattern id="woods" width="38" height="38" patternUnits="userSpaceOnUse">
+      <circle cx="11" cy="15" r="8" fill="#52664a" opacity="0.72"/>
+      <circle cx="27" cy="24" r="7" fill="#6c7954" opacity="0.72"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#paper)"/>
+  <rect x="28" y="28" width="1144" height="744" rx="18" fill="none" stroke="#97896f" stroke-width="2"/>
+  <text x="60" y="75" font-family="Georgia, serif" font-size="31" font-weight="700" fill="#2f2b27">THE FIRST TWO ASSAULTS AT THE LOWER BRIDGE</text>
+  <text x="60" y="106" font-family="Arial, sans-serif" font-size="18" fill="#5c5549">Ninth Corps operations · about 10:00–11:00 a.m. · north is up</text>
+  <rect x="48" y="128" width="1104" height="610" fill="#e9e5cf"/>
+
+  <path d="M572 128C530 234 548 323 522 403C501 469 520 545 487 738" fill="none" stroke="#5d91a8" stroke-width="86" opacity="0.98"/>
+  <path d="M572 128C530 234 548 323 522 403C501 469 520 545 487 738" fill="none" stroke="#b8d6dc" stroke-width="58"/>
+  <path d="M572 128C530 234 548 323 522 403C501 469 520 545 487 738" fill="none" stroke="#eef5f4" stroke-width="3" stroke-dasharray="12 13" opacity="0.8"/>
+  <g transform="translate(548 264) rotate(-78)">
+    <rect x="-84" y="-15" width="168" height="30" rx="7" fill="#fffaf0" opacity="0.95"/>
+    <text x="0" y="6" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-weight="700" fill="#3e6f82">ANTIETAM CREEK</text>
+  </g>
+
+  <rect x="80" y="142" width="390" height="555" rx="18" fill="url(#woods)" opacity="0.66"/>
+  <rect x="82" y="642" width="324" height="43" rx="8" fill="#fffaf0" opacity="0.96"/>
+  <text x="244" y="661" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#3f4d37">STEEP WEST BANK · QUARRY CUTS</text>
+  <text x="244" y="678" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#59634d">stone wall and wooded firing positions</text>
+
+  <path d="M924 738C865 645 800 573 714 516C651 474 599 444 532 416" fill="none" stroke="#a97849" stroke-width="24" stroke-linecap="round"/>
+  <path d="M924 738C865 645 800 573 714 516C651 474 599 444 532 416" fill="none" stroke="#f2d8a4" stroke-width="9" stroke-linecap="round"/>
+  <rect x="781" y="615" width="260" height="32" rx="7" fill="#fffaf0" opacity="0.96"/>
+  <text x="911" y="637" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#664a32">ROHRERSVILLE ROAD</text>
+
+  <g transform="translate(514 414) rotate(-8)" filter="url(#shadow)">
+    <rect x="-70" y="-17" width="140" height="34" rx="5" fill="#c6b18a" stroke="#5b4b3b" stroke-width="3"/>
+    <path d="M-44-17V17M0-17V17M44-17V17" stroke="#6d5b46" stroke-width="4"/>
+  </g>
+  <rect x="414" y="447" width="205" height="34" rx="7" fill="#fffaf0" opacity="0.97"/>
+  <text x="517" y="470" text-anchor="middle" font-family="Georgia, serif" font-size="17" font-weight="700" fill="#5f4936">LOWER BRIDGE</text>
+
+  <g transform="translate(1093 176)" font-family="Arial, sans-serif" fill="#2f2b27">
+    <path d="M0 50V0M0 0L-9 18M0 0L9 18" fill="none" stroke="#2f2b27" stroke-width="3"/>
+    <text x="0" y="-9" text-anchor="middle" font-size="18" font-weight="700">N</text>
+  </g>
+
+  <g font-family="Arial, sans-serif" filter="url(#shadow)">
+    <g transform="translate(303 375)">
+      <rect x="-154" y="-35" width="308" height="70" rx="9" fill="#963b31"/>
+      <text x="0" y="-11" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">BENNING · 2ND &amp; 20TH GEORGIA</text>
+      <text x="0" y="11" text-anchor="middle" font-size="12" fill="#fae9e4">about 400 infantry in the episode</text>
+      <text x="0" y="28" text-anchor="middle" font-size="11" fill="#fae9e4">direct fire across every bridge approach</text>
+    </g>
+    <g transform="translate(271 207)">
+      <rect x="-131" y="-30" width="262" height="60" rx="9" fill="#f7e8dc" stroke="#963b31" stroke-width="2"/>
+      <text x="0" y="-6" text-anchor="middle" font-size="14" font-weight="700" fill="#7a332c">CONFEDERATE ARTILLERY</text>
+      <text x="0" y="16" text-anchor="middle" font-size="12" fill="#7a332c">five batteries on higher ground</text>
+    </g>
+  </g>
+  <g stroke="#963b31" stroke-width="5" stroke-linecap="round" marker-end="url(#redArrow)">
+    <path d="M416 347L493 389"/>
+    <path d="M407 399L482 409"/>
+    <path d="M402 451L480 429"/>
+  </g>
+
+  <g fill="none" stroke="#315f8c" stroke-linecap="round" marker-end="url(#blueArrow)">
+    <path d="M813 538C723 497 645 460 566 429" stroke-width="11"/>
+    <path d="M775 266C685 273 620 302 558 350" stroke-width="11"/>
+    <path d="M956 286C843 307 734 347 633 392" stroke-width="9" stroke-dasharray="14 10"/>
+    <path d="M858 672C759 692 650 699 546 705" stroke-width="10" stroke-dasharray="14 10"/>
+  </g>
+
+  <g font-family="Arial, sans-serif" filter="url(#shadow)">
+    <g transform="translate(902 508)">
+      <rect x="-165" y="-37" width="330" height="74" rx="9" fill="#315f8c"/>
+      <text x="0" y="-13" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">2 · NAGLE'S BRIGADE</text>
+      <text x="0" y="9" text-anchor="middle" font-size="12" fill="#eaf2f8">2nd Maryland leads along the exposed road</text>
+      <text x="0" y="28" text-anchor="middle" font-size="11" fill="#eaf2f8">repulsed before reaching the bridge</text>
+    </g>
+    <g transform="translate(880 233)">
+      <rect x="-160" y="-37" width="320" height="74" rx="9" fill="#315f8c"/>
+      <text x="0" y="-13" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">CROOK'S BRIGADE</text>
+      <text x="0" y="9" text-anchor="middle" font-size="12" fill="#eaf2f8">misdirected about 350 yards upstream</text>
+      <text x="0" y="28" text-anchor="middle" font-size="11" fill="#eaf2f8">pinned opposite the creek</text>
+    </g>
+    <g transform="translate(911 383)">
+      <rect x="-181" y="-37" width="362" height="74" rx="9" fill="#315f8c"/>
+      <text x="0" y="-13" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">1 · 11TH CONNECTICUT</text>
+      <text x="0" y="9" text-anchor="middle" font-size="12" fill="#eaf2f8">skirmish line works toward the east bank</text>
+      <text x="0" y="28" text-anchor="middle" font-size="11" fill="#eaf2f8">Kingsbury mortally wounded · attack fails</text>
+    </g>
+    <g transform="translate(873 692)">
+      <rect x="-205" y="-31" width="410" height="62" rx="9" fill="#eaf2f8" stroke="#315f8c" stroke-width="2"/>
+      <text x="0" y="-7" text-anchor="middle" font-size="15" font-weight="700" fill="#315f8c">RODMAN &amp; EWING SEARCH DOWNSTREAM</text>
+      <text x="0" y="16" text-anchor="middle" font-size="12" fill="#315f8c">the assigned crossing proves unusable; Snavely's Ford lies farther south</text>
+    </g>
+  </g>
+
+  <text x="600" y="764" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#5f574d">Schematic and not to scale · routes and positions are generalized from NPS battlefield interpretation, official reports, and the episode transcript</text>
+</svg>

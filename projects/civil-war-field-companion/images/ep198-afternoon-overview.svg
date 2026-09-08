@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Antietam at midday and early afternoon</title>
+  <desc id="desc">Schematic map with north at top. At the Sunken Road, Richardson's United States division has broken the Confederate center but stops under artillery fire. Farther south, the 51st New York and 51st Pennsylvania capture the Lower Bridge, after which the Ninth Corps crosses and prepares to advance west toward Sharpsburg.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbf4e4"/>
+      <stop offset="1" stop-color="#e4d6b8"/>
+    </linearGradient>
+    <marker id="blueArrow" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 16 16">
+      <path d="M0 0L16 8L0 16Z" fill="#315f8c"/>
+    </marker>
+    <marker id="redArrow" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 16 16">
+      <path d="M0 0L16 8L0 16Z" fill="#963b31"/>
+    </marker>
+    <pattern id="orchard" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="15" cy="15" r="6" fill="#66734f" opacity="0.62"/>
+      <circle cx="15" cy="15" r="2" fill="#36432f" opacity="0.8"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#paper)"/>
+  <rect x="28" y="28" width="1144" height="744" rx="18" fill="none" stroke="#97896f" stroke-width="2"/>
+  <text x="60" y="75" font-family="Georgia, serif" font-size="31" font-weight="700" fill="#2f2b27">TWO CRITICAL SECTORS AT MIDDAY</text>
+  <text x="60" y="106" font-family="Arial, sans-serif" font-size="18" fill="#5c5549">Sunken Road and Lower Bridge · about 12:30–3:00 p.m. · north is up</text>
+  <rect x="48" y="128" width="1104" height="610" fill="#e8e4cf"/>
+
+  <path d="M928 128C900 206 936 275 913 352C889 432 931 517 900 608C884 653 887 698 910 738" fill="none" stroke="#56809a" stroke-width="44" opacity="0.84"/>
+  <path d="M928 128C900 206 936 275 913 352C889 432 931 517 900 608C884 653 887 698 910 738" fill="none" stroke="#a9d0da" stroke-width="25"/>
+  <text x="998" y="237" font-family="Georgia, serif" font-size="19" font-weight="700" fill="#31596d" transform="rotate(82 998 237)">ANTIETAM CREEK</text>
+
+  <path d="M109 250C280 255 421 264 578 276" fill="none" stroke="#8a6d4d" stroke-width="17"/>
+  <path d="M109 250C280 255 421 264 578 276" fill="none" stroke="#d3bd90" stroke-width="7"/>
+  <path d="M490 279C587 310 674 335 767 352" fill="none" stroke="#8a6d4d" stroke-width="9" stroke-dasharray="12 8"/>
+  <rect x="132" y="217" width="226" height="31" rx="6" fill="#fffaf0" opacity="0.96"/>
+  <text x="245" y="239" text-anchor="middle" font-family="Georgia, serif" font-size="17" font-weight="700" fill="#5f4936">SUNKEN ROAD</text>
+
+  <rect x="447" y="164" width="214" height="102" rx="18" fill="url(#orchard)" opacity="0.83"/>
+  <g transform="translate(564 198)" filter="url(#shadow)">
+    <rect x="-21" y="-13" width="42" height="29" fill="#f4e7cf" stroke="#4b4540" stroke-width="2"/>
+    <path d="M-26-13L0-34L26-13Z" fill="#6c5849"/>
+  </g>
+  <rect x="471" y="220" width="171" height="29" rx="6" fill="#fffaf0" opacity="0.95"/>
+  <text x="556" y="241" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#3e4936">PIPER FARM</text>
+
+  <path d="M682 196C717 225 740 265 754 313" fill="none" stroke="#963b31" stroke-width="10" marker-end="url(#redArrow)"/>
+  <g transform="translate(719 179)" font-family="Arial, sans-serif" filter="url(#shadow)">
+    <rect x="-119" y="-27" width="238" height="54" rx="8" fill="#963b31"/>
+    <text x="0" y="-5" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">LONGSTREET'S GUN LINE</text>
+    <text x="0" y="15" text-anchor="middle" font-size="11" fill="#fae9e4">about 20 cannon in the episode</text>
+  </g>
+
+  <path d="M500 327C450 305 404 289 352 277" fill="none" stroke="#315f8c" stroke-width="11" marker-end="url(#blueArrow)"/>
+  <path d="M346 298C399 322 447 339 499 354" fill="none" stroke="#315f8c" stroke-width="7" stroke-dasharray="13 9" marker-end="url(#blueArrow)"/>
+  <g transform="translate(350 356)" font-family="Arial, sans-serif" filter="url(#shadow)">
+    <rect x="-150" y="-34" width="300" height="68" rx="9" fill="#315f8c"/>
+    <text x="0" y="-11" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">RICHARDSON'S DIVISION</text>
+    <text x="0" y="10" text-anchor="middle" font-size="12" fill="#eaf2f8">breakthrough contained by artillery</text>
+    <text x="0" y="27" text-anchor="middle" font-size="11" fill="#eaf2f8">withdraws to defensible ground</text>
+  </g>
+
+  <path d="M96 497C283 487 466 494 635 511C738 521 806 536 880 563" fill="none" stroke="#9c7a52" stroke-width="18"/>
+  <path d="M96 497C283 487 466 494 635 511C738 521 806 536 880 563" fill="none" stroke="#efd4a2" stroke-width="7"/>
+  <rect x="233" y="459" width="265" height="31" rx="6" fill="#fffaf0" opacity="0.96"/>
+  <text x="365" y="481" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#654d36">LOWER-BRIDGE ROAD TO SHARPSBURG</text>
+
+  <g transform="translate(898 568)">
+    <path d="M-33-8H33" stroke="#76634e" stroke-width="18"/>
+    <path d="M-33-8H33" stroke="#d8c194" stroke-width="9"/>
+    <path d="M-27-8Q0-31 27-8" fill="none" stroke="#6d5c4a" stroke-width="4"/>
+  </g>
+  <rect x="813" y="597" width="176" height="31" rx="6" fill="#fffaf0" opacity="0.96"/>
+  <text x="901" y="619" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-weight="700" fill="#554536">LOWER BRIDGE</text>
+
+  <path d="M1032 520C992 538 961 550 925 559" fill="none" stroke="#315f8c" stroke-width="11" marker-end="url(#blueArrow)"/>
+  <path d="M874 574C809 564 752 550 694 531" fill="none" stroke="#315f8c" stroke-width="11" marker-end="url(#blueArrow)"/>
+  <g transform="translate(1020 467)" font-family="Arial, sans-serif" filter="url(#shadow)">
+    <rect x="-111" y="-35" width="222" height="70" rx="9" fill="#315f8c"/>
+    <text x="0" y="-12" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">TWIN 51ST REGIMENTS</text>
+    <text x="0" y="10" text-anchor="middle" font-size="12" fill="#eaf2f8">capture the bridge about 1 p.m.</text>
+    <text x="0" y="27" text-anchor="middle" font-size="11" fill="#eaf2f8">Ninth Corps follows to west bank</text>
+  </g>
+
+  <g transform="translate(225 605)" filter="url(#shadow)">
+    <rect x="-128" y="-37" width="256" height="74" rx="9" fill="#efe1ca" stroke="#7d6f5d" stroke-width="2"/>
+    <text x="0" y="-12" text-anchor="middle" font-family="Georgia, serif" font-size="21" font-weight="700" fill="#302b26">SHARPSBURG</text>
+    <text x="0" y="11" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#5b544b">Confederate right protects the town</text>
+    <text x="0" y="28" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5b544b">and road to Shepherdstown Ford</text>
+  </g>
+
+  <path d="M465 582C405 578 354 583 303 601" fill="none" stroke="#963b31" stroke-width="13" stroke-dasharray="13 9"/>
+  <g transform="translate(521 621)" font-family="Arial, sans-serif" filter="url(#shadow)">
+    <rect x="-141" y="-34" width="282" height="68" rx="9" fill="#963b31"/>
+    <text x="0" y="-10" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">D. R. JONES'S DIVISION</text>
+    <text x="0" y="11" text-anchor="middle" font-size="12" fill="#fae9e4">thin line south of Sharpsburg</text>
+    <text x="0" y="28" text-anchor="middle" font-size="11" fill="#fae9e4">about 2,800 in the episode</text>
+  </g>
+
+  <g transform="translate(1104 171)" font-family="Arial, sans-serif" fill="#2f2b27">
+    <path d="M0 50V0M0 0L-9 18M0 0L9 18" fill="none" stroke="#2f2b27" stroke-width="3"/>
+    <text x="0" y="-9" text-anchor="middle" font-size="18" font-weight="700">N</text>
+  </g>
+
+  <rect x="742" y="675" width="375" height="43" rx="8" fill="#fffaf0" stroke="#93846d" stroke-width="2" opacity="0.97"/>
+  <text x="929" y="693" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#2f2b27">1–3 P.M. · CROSS, RESUPPLY, REFORM</text>
+  <text x="929" y="710" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5b544b">Willcox replaces exhausted Sturgis in the attacking line.</text>
+
+  <text x="600" y="764" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#5f574d">Schematic and not to scale · routes and positions generalized from NPS interpretation, official reports, and the episode transcript</text>
+</svg>
