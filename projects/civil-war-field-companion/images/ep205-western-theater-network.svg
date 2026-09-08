@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="780" viewBox="0 0 1200 780" role="img" aria-labelledby="title desc">
+  <title id="title">Western theater strategic network in mid-1862</title>
+  <desc id="desc">A schematic map showing Union-held places, Confederate-held places, rivers, railroads, Samuel Curtis's route to Helena, Beauregard's retreat to Tupelo, and proposed Union approaches toward Chattanooga and the Deep South.</desc>
+  <defs>
+    <style>
+      .state { fill: #f4efe3; stroke: #c8bfae; stroke-width: 2; }
+      .state-label { fill: #796f61; font: 700 18px Georgia, serif; letter-spacing: 2px; }
+      .water { fill: none; stroke: #4f8cab; stroke-width: 7; stroke-linecap: round; opacity: .8; }
+      .water-label { fill: #356d88; font: italic 15px Georgia, serif; }
+      .rail { fill: none; stroke: #5d5147; stroke-width: 5; stroke-dasharray: 13 8; }
+      .route { fill: none; stroke: #356a9a; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#blue-arrow); }
+      .retreat { fill: none; stroke: #a5483e; stroke-width: 6; stroke-linecap: round; stroke-dasharray: 10 8; marker-end: url(#red-arrow); }
+      .planned { fill: none; stroke: #487b55; stroke-width: 6; stroke-linecap: round; stroke-dasharray: 3 10; marker-end: url(#green-arrow); }
+      .us { fill: #315f8c; stroke: #fff; stroke-width: 3; }
+      .cs { fill: #963b31; stroke: #fff; stroke-width: 3; }
+      .contested { fill: #b8872f; stroke: #fff; stroke-width: 3; }
+      .place { fill: #2c2925; font: 700 17px Arial, sans-serif; paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+      .small { fill: #2c2925; font: 15px Arial, sans-serif; paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; }
+      .label-bg { fill: #fffdf8; fill-opacity: .92; stroke: #c8bfae; stroke-width: 1; }
+      .heading { fill: #24211e; font: 700 28px Georgia, serif; }
+      .subheading { fill: #5b544c; font: 17px Arial, sans-serif; }
+      .legend { fill: #fffdf8; stroke: #c8bfae; stroke-width: 2; }
+      .legend-text { fill: #342f2a; font: 15px Arial, sans-serif; }
+    </style>
+    <marker id="blue-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z" fill="#356a9a"/></marker>
+    <marker id="red-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z" fill="#a5483e"/></marker>
+    <marker id="green-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z" fill="#487b55"/></marker>
+  </defs>
+
+  <rect width="1200" height="780" fill="#e9e2d3"/>
+  <text x="42" y="46" class="heading">Western theater strategic network, mid-1862</text>
+  <text x="42" y="73" class="subheading">Schematic, not to scale · control and movement shown at the point reached in episode 205</text>
+
+  <path class="state" d="M55 105H325V265L270 304 55 270Z"/>
+  <path class="state" d="M55 274L270 307 326 270 402 294 390 590 70 590Z"/>
+  <path class="state" d="M330 105H672L650 260 402 294 326 270Z"/>
+  <path class="state" d="M402 296L650 262 855 285 831 430 400 430Z"/>
+  <path class="state" d="M400 432H610L600 695H425L390 590Z"/>
+  <path class="state" d="M612 432H830L870 695H600Z"/>
+  <path class="state" d="M858 286H1128L1100 500 832 430Z"/>
+  <path class="state" d="M875 503H1100L1125 695H870Z"/>
+
+  <text x="165" y="145" class="state-label">MISSOURI</text>
+  <text x="155" y="390" class="state-label">ARKANSAS</text>
+  <text x="475" y="160" class="state-label">KENTUCKY</text>
+  <text x="595" y="340" class="state-label">TENNESSEE</text>
+  <text x="455" y="650" class="state-label">MISSISSIPPI</text>
+  <text x="665" y="650" class="state-label">ALABAMA</text>
+  <text x="940" y="380" class="state-label">GEORGIA</text>
+
+  <path class="water" d="M330 95C304 150 337 200 312 250S337 350 305 420 322 530 300 704"/>
+  <path class="water" d="M780 300C730 325 690 362 650 385S575 410 514 414 425 400 337 435"/>
+  <path class="water" d="M793 342C733 320 689 285 630 270S515 255 448 236"/>
+  <text x="273" y="535" class="water-label" transform="rotate(-86 273 535)">Mississippi River</text>
+  <text x="557" y="444" class="water-label">Tennessee River</text>
+  <text x="533" y="247" class="water-label">Cumberland River</text>
+
+  <path class="rail" d="M318 328L425 452 555 478 710 442 807 372 960 475"/>
+  <path class="rail" d="M555 478L565 570L585 690"/>
+  <rect x="350" y="365" width="224" height="29" rx="5" class="label-bg"/>
+  <text x="362" y="385" class="small">Memphis &amp; Charleston R.R.</text>
+  <text x="584" y="558" class="small">Mobile &amp; Ohio R.R.</text>
+
+  <path class="route" d="M180 170C128 229 136 298 205 338S256 428 312 493"/>
+  <text x="78" y="247" class="small">Curtis: Pea Ridge → Batesville → Helena</text>
+  <path class="retreat" d="M555 478L565 565"/>
+  <text x="590" y="526" class="small">Beauregard to Tupelo</text>
+  <path class="planned" d="M555 478C639 456 724 425 807 372"/>
+  <rect x="740" y="535" width="218" height="29" rx="5" class="label-bg"/>
+  <text x="752" y="555" class="small">Halleck’s Chattanooga axis</text>
+  <path class="planned" d="M807 372L951 476"/>
+  <text x="861" y="432" class="small">Gateway toward Georgia</text>
+
+  <circle cx="180" cy="170" r="9" class="us"/><text x="194" y="166" class="place">Rolla</text>
+  <circle cx="146" cy="260" r="9" class="us"/><text x="86" y="285" class="place">Pea Ridge</text>
+  <circle cx="205" cy="338" r="9" class="us"/><text x="220" y="334" class="place">Batesville</text>
+  <circle cx="312" cy="493" r="9" class="us"/><text x="225" y="521" class="place">Helena</text>
+  <circle cx="318" cy="328" r="9" class="us"/><text x="267" y="318" class="place">Memphis</text>
+  <circle cx="555" cy="478" r="11" class="us"/><text x="499" y="507" class="place">Corinth</text>
+  <circle cx="565" cy="565" r="9" class="cs"/><text x="578" y="589" class="place">Tupelo</text>
+  <circle cx="519" cy="274" r="9" class="us"/><text x="453" y="302" class="place">Nashville</text>
+  <circle cx="710" cy="442" r="9" class="us"/><text x="680" y="430" class="place">Huntsville</text>
+  <circle cx="807" cy="372" r="11" class="cs"/><text x="821" y="368" class="place">Chattanooga</text>
+  <circle cx="650" cy="260" r="9" class="us"/><text x="665" y="254" class="place">Cumberland Gap</text>
+  <circle cx="300" cy="645" r="9" class="cs"/><text x="215" y="670" class="place">Vicksburg</text>
+
+  <rect x="890" y="96" width="267" height="166" rx="10" class="legend"/>
+  <circle cx="920" cy="128" r="8" class="us"/><text x="940" y="134" class="legend-text">United States control/base</text>
+  <circle cx="920" cy="160" r="8" class="cs"/><text x="940" y="166" class="legend-text">Confederate control/base</text>
+  <path d="M910 194H955" class="route"/><text x="970" y="200" class="legend-text">Curtis movement</text>
+  <path d="M910 226H955" class="planned"/><text x="970" y="232" class="legend-text">Proposed Union axis</text>
+
+  <rect x="42" y="716" width="1116" height="42" rx="8" fill="#fffdf8" stroke="#c8bfae"/>
+  <text x="60" y="742" class="legend-text">The Upper South’s rivers, roads, and railroads supported dispersed occupation; south of Corinth, long distances and thinner transport networks forced narrower campaigns.</text>
+</svg>

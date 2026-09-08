@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Confederate shift from Mississippi and East Tennessee toward Kentucky in summer 1862</title>
+  <desc id="desc">A schematic map shows Bragg moving infantry by rail from Tupelo through Mobile, Montgomery, and Atlanta to Chattanooga, while Price and Van Dorn remain in Mississippi. A second panel shows Buell approaching Chattanooga, George Morgan holding Cumberland Gap, and the separate northward axes contemplated by Bragg and Kirby Smith.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7f1e3"/>
+      <stop offset="1" stop-color="#eee2c8"/>
+    </linearGradient>
+    <marker id="arrow-red" markerUnits="userSpaceOnUse" markerWidth="22" markerHeight="22" refX="20" refY="11" orient="auto">
+      <path d="M0,0 L22,11 L0,22 Z" fill="#9e3b32"/>
+    </marker>
+    <marker id="arrow-blue" markerUnits="userSpaceOnUse" markerWidth="22" markerHeight="22" refX="20" refY="11" orient="auto">
+      <path d="M0,0 L22,11 L0,22 Z" fill="#345f87"/>
+    </marker>
+    <marker id="arrow-gray" markerUnits="userSpaceOnUse" markerWidth="22" markerHeight="22" refX="20" refY="11" orient="auto">
+      <path d="M0,0 L22,11 L0,22 Z" fill="#6c665c"/>
+    </marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#5f5647" flood-opacity="0.18"/>
+    </filter>
+    <style>
+      .heading{font:700 42px Georgia,serif;fill:#2f2b25}.sub{font:22px Georgia,serif;fill:#5d5549}.panel{fill:#fffaf0;stroke:#c6b58f;stroke-width:2;filter:url(#shadow)}.panel-title{font:700 25px Georgia,serif;fill:#373127}.state{fill:#e8ddc5;stroke:#c9b995;stroke-width:2}.state-label{font:700 18px Arial,sans-serif;letter-spacing:3px;fill:#8b806b}.place{fill:#fffdf8;stroke:#5d5549;stroke-width:2}.place-red{fill:#f8e7e2;stroke:#9e3b32;stroke-width:3}.place-blue{fill:#e7f0f7;stroke:#345f87;stroke-width:3}.place-text{font:700 20px Arial,sans-serif;fill:#302d28}.small{font:17px Arial,sans-serif;fill:#49443c}.tiny{font:15px Arial,sans-serif;fill:#5c554b}.rail{fill:none;stroke:#9e3b32;stroke-width:7;stroke-dasharray:15 8;marker-end:url(#arrow-red)}.cs{fill:none;stroke:#9e3b32;stroke-width:8;marker-end:url(#arrow-red)}.us{fill:none;stroke:#345f87;stroke-width:8;marker-end:url(#arrow-blue)}.hold{fill:none;stroke:#6c665c;stroke-width:6;stroke-dasharray:10 8;marker-end:url(#arrow-gray)}.key{font:700 17px Arial,sans-serif}.note{fill:#f5ead0;stroke:#c8ad70;stroke-width:2}.note-text{font:17px Arial,sans-serif;fill:#473f32}
+    </style>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#paper)"/>
+  <text x="80" y="68" class="heading">From Tupelo to the Bluegrass State</text>
+  <text x="80" y="106" class="sub">The strategic shift described in episode 206 · schematic, not to scale</text>
+
+  <rect x="65" y="140" width="710" height="770" rx="18" class="panel"/>
+  <text x="105" y="190" class="panel-title">1 · Bragg concentrates at Chattanooga</text>
+  <text x="105" y="222" class="small">Late June–July 1862</text>
+  <path d="M105 260 H735 V855 H105 Z" class="state"/>
+  <text x="142" y="305" class="state-label">MISSISSIPPI</text>
+  <text x="485" y="795" class="state-label">ALABAMA</text>
+  <text x="585" y="480" class="state-label">GEORGIA</text>
+
+  <rect x="135" y="360" width="150" height="66" rx="10" class="place-red"/>
+  <text x="210" y="387" text-anchor="middle" class="place-text">Tupelo</text>
+  <text x="210" y="411" text-anchor="middle" class="tiny">Army of Mississippi</text>
+  <rect x="315" y="730" width="140" height="60" rx="10" class="place"/>
+  <text x="385" y="767" text-anchor="middle" class="place-text">Mobile</text>
+  <rect x="500" y="655" width="155" height="60" rx="10" class="place"/>
+  <text x="577" y="692" text-anchor="middle" class="place-text">Montgomery</text>
+  <rect x="565" y="510" width="130" height="60" rx="10" class="place"/>
+  <text x="630" y="547" text-anchor="middle" class="place-text">Atlanta</text>
+  <rect x="485" y="330" width="205" height="72" rx="10" class="place-red"/>
+  <text x="588" y="359" text-anchor="middle" class="place-text">Chattanooga</text>
+  <text x="588" y="385" text-anchor="middle" class="tiny">rail junction</text>
+
+  <path d="M245 426 C255 565 305 670 362 730" class="rail"/>
+  <path d="M455 750 C495 732 535 720 560 714" class="rail"/>
+  <path d="M625 655 C652 625 658 595 646 570" class="rail"/>
+  <path d="M603 510 C575 465 565 430 570 402" class="rail"/>
+
+  <rect x="125" y="485" width="190" height="82" rx="10" class="note"/>
+  <text x="220" y="514" text-anchor="middle" class="key" fill="#9e3b32">Price</text>
+  <text x="220" y="539" text-anchor="middle" class="tiny">left near Tupelo</text>
+  <text x="220" y="559" text-anchor="middle" class="tiny">to watch Union forces</text>
+  <rect x="125" y="615" width="190" height="82" rx="10" class="note"/>
+  <text x="220" y="644" text-anchor="middle" class="key" fill="#9e3b32">Van Dorn</text>
+  <text x="220" y="669" text-anchor="middle" class="tiny">assigned to protect</text>
+  <text x="220" y="689" text-anchor="middle" class="tiny">Vicksburg</text>
+  <path d="M202 428 C190 445 187 463 194 485" class="hold"/>
+  <path d="M218 428 C240 492 239 559 224 615" class="hold"/>
+  <text x="420" y="820" text-anchor="middle" class="small">Infantry used several railroads and crossed Mobile Bay;</text>
+  <text x="420" y="846" text-anchor="middle" class="small">cavalry, artillery, wagons, and supplies traveled separately.</text>
+
+  <rect x="825" y="140" width="710" height="770" rx="18" class="panel"/>
+  <text x="865" y="190" class="panel-title">2 · One theater, separate chains of command</text>
+  <text x="865" y="222" class="small">July 31–mid-August 1862</text>
+  <path d="M865 260 H1495 V855 H865 Z" class="state"/>
+  <text x="1300" y="300" class="state-label">KENTUCKY</text>
+  <text x="905" y="685" class="state-label">TENNESSEE</text>
+  <text x="1280" y="820" class="state-label">GEORGIA</text>
+  <line x1="865" y1="520" x2="1495" y2="520" stroke="#c9b995" stroke-width="3"/>
+
+  <rect x="1185" y="690" width="220" height="72" rx="10" class="place-red"/>
+  <text x="1295" y="719" text-anchor="middle" class="place-text">Chattanooga</text>
+  <text x="1295" y="744" text-anchor="middle" class="tiny">Bragg concentrates</text>
+  <rect x="1350" y="560" width="130" height="68" rx="10" class="place-red"/>
+  <text x="1415" y="588" text-anchor="middle" class="place-text">Knoxville</text>
+  <text x="1415" y="612" text-anchor="middle" class="tiny">Kirby Smith</text>
+  <rect x="1315" y="400" width="175" height="70" rx="10" class="place-blue"/>
+  <text x="1403" y="428" text-anchor="middle" class="place-text">Cumberland Gap</text>
+  <text x="1403" y="452" text-anchor="middle" class="tiny">G. Morgan</text>
+  <rect x="955" y="635" width="150" height="68" rx="10" class="place-blue"/>
+  <text x="1030" y="663" text-anchor="middle" class="place-text">Buell</text>
+  <text x="1030" y="687" text-anchor="middle" class="tiny">slow eastward advance</text>
+  <rect x="1055" y="300" width="145" height="60" rx="10" class="place"/>
+  <text x="1128" y="337" text-anchor="middle" class="place-text">Nashville</text>
+  <rect x="1280" y="285" width="160" height="60" rx="10" class="place"/>
+  <text x="1360" y="322" text-anchor="middle" class="place-text">Ohio River</text>
+
+  <path d="M1105 668 C1140 685 1165 700 1185 710" class="us"/>
+  <path d="M1260 690 C1190 600 1135 480 1128 360" class="cs"/>
+  <text x="1082" y="520" transform="rotate(-75 1082 520)" class="small" fill="#9e3b32">Bragg’s initial Middle Tennessee axis</text>
+  <path d="M1400 560 C1392 520 1400 495 1410 470" class="hold"/>
+  <path d="M1445 560 C1475 470 1450 385 1395 345" class="cs"/>
+  <text x="1470" y="475" transform="rotate(-83 1470 475)" class="small" fill="#9e3b32">Smith proposes bypass</text>
+  <path d="M1225 690 C1195 620 1198 515 1240 440 C1270 385 1312 355 1348 345" class="cs" stroke-dasharray="16 10"/>
+  <rect x="1135" y="390" width="160" height="62" rx="8" fill="#fffaf0" stroke="#c8ad70" stroke-width="2"/>
+  <text x="1215" y="416" text-anchor="middle" class="tiny" fill="#9e3b32">Kentucky becomes</text>
+  <text x="1215" y="439" text-anchor="middle" class="tiny" fill="#9e3b32">the common objective</text>
+
+  <rect x="900" y="760" width="260" height="70" rx="10" class="note"/>
+  <text x="1030" y="790" text-anchor="middle" class="key" fill="#345f87">United States problem</text>
+  <text x="1030" y="815" text-anchor="middle" class="tiny">Buell’s vulnerable railroad supply line</text>
+  <rect x="1190" y="775" width="280" height="60" rx="10" class="note"/>
+  <text x="1330" y="801" text-anchor="middle" class="key" fill="#9e3b32">Confederate problem</text>
+  <text x="1330" y="824" text-anchor="middle" class="tiny">cooperation without unified command</text>
+
+  <line x1="85" y1="945" x2="155" y2="945" fill="none" stroke="#9e3b32" stroke-width="7" stroke-dasharray="15 8"/>
+  <text x="170" y="952" class="small">Confederate rail transfer</text>
+  <line x1="455" y1="945" x2="525" y2="945" fill="none" stroke="#9e3b32" stroke-width="8"/>
+  <text x="540" y="952" class="small">Confederate operational axis</text>
+  <line x1="875" y1="945" x2="945" y2="945" fill="none" stroke="#345f87" stroke-width="8"/>
+  <text x="960" y="952" class="small">United States advance or position</text>
+  <text x="800" y="985" text-anchor="middle" class="tiny">Sources: U.S. Army Center of Military History and Library of Congress</text>
+</svg>
