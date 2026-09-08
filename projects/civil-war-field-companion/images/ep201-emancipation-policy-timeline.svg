@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="900" viewBox="0 0 1500 900" role="img" aria-labelledby="title desc">
+  <title id="title">From limited war to emancipation policy, 1860 to 1863</title>
+  <desc id="desc">A chronological timeline showing Lincoln's early assurances, Fort Monroe's freedom seekers, congressional war aims, mounting antislavery pressure, and the preliminary and final Emancipation Proclamations.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#294f61"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#142b35" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="1500" height="900" fill="#f6f1e7"/>
+  <text x="70" y="60" font-family="Georgia, serif" font-size="36" font-weight="700" fill="#183746">From limited war to emancipation policy</text>
+  <text x="70" y="94" font-family="Arial, sans-serif" font-size="20" fill="#4b6069">The episode follows the pressure of war from secession through the final proclamation</text>
+
+  <rect x="60" y="125" width="1380" height="680" rx="22" fill="#fffaf0" stroke="#b8aa82" stroke-width="2"/>
+  <line x1="105" y1="440" x2="1388" y2="440" stroke="#294f61" stroke-width="7" marker-end="url(#arrow)"/>
+
+  <!-- Event 1 -->
+  <line x1="125" y1="425" x2="125" y2="355" stroke="#294f61" stroke-width="3"/>
+  <circle cx="125" cy="440" r="14" fill="#315f8c" stroke="#fff" stroke-width="4"/>
+  <rect x="78" y="180" width="240" height="175" rx="14" fill="#edf3f8" stroke="#315f8c" stroke-width="2" filter="url(#shadow)"/>
+  <text x="98" y="214" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#244b72">Dec. 22, 1860</text>
+  <text x="98" y="245" font-family="Arial, sans-serif" font-size="17" fill="#273b44">
+    <tspan x="98" dy="0">Lincoln assures</tspan>
+    <tspan x="98" dy="24">Alexander H. Stephens</tspan>
+    <tspan x="98" dy="24">that his administration</tspan>
+    <tspan x="98" dy="24">will not interfere with</tspan>
+    <tspan x="98" dy="24">slavery in the states.</tspan>
+  </text>
+
+  <!-- Event 2 -->
+  <line x1="310" y1="455" x2="310" y2="520" stroke="#294f61" stroke-width="3"/>
+  <circle cx="310" cy="440" r="14" fill="#8c6931" stroke="#fff" stroke-width="4"/>
+  <rect x="190" y="520" width="240" height="185" rx="14" fill="#f6efd9" stroke="#8c6931" stroke-width="2" filter="url(#shadow)"/>
+  <text x="210" y="554" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#72511f">April 1861</text>
+  <text x="210" y="585" font-family="Arial, sans-serif" font-size="17" fill="#413a2b">
+    <tspan x="210" dy="0">War begins. Lincoln calls</tspan>
+    <tspan x="210" dy="24">for restoration of federal</tspan>
+    <tspan x="210" dy="24">authority and cautions</tspan>
+    <tspan x="210" dy="24">against interference with</tspan>
+    <tspan x="210" dy="24">Southern property.</tspan>
+  </text>
+
+  <!-- Event 3 -->
+  <line x1="495" y1="425" x2="495" y2="355" stroke="#294f61" stroke-width="3"/>
+  <circle cx="495" cy="440" r="14" fill="#b44b36" stroke="#fff" stroke-width="4"/>
+  <rect x="375" y="180" width="240" height="175" rx="14" fill="#f8e9e4" stroke="#b44b36" stroke-width="2" filter="url(#shadow)"/>
+  <text x="395" y="214" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#8e3728">May 23–24, 1861</text>
+  <text x="395" y="245" font-family="Arial, sans-serif" font-size="17" fill="#47342f">
+    <tspan x="395" dy="0">Baker, Mallory, and</tspan>
+    <tspan x="395" dy="24">Townsend reach Fort</tspan>
+    <tspan x="395" dy="24">Monroe. Butler refuses</tspan>
+    <tspan x="395" dy="24">to return them to their</tspan>
+    <tspan x="395" dy="24">Confederate enslaver.</tspan>
+  </text>
+
+  <!-- Event 4 -->
+  <line x1="680" y1="455" x2="680" y2="520" stroke="#294f61" stroke-width="3"/>
+  <circle cx="680" cy="440" r="14" fill="#6b657f" stroke="#fff" stroke-width="4"/>
+  <rect x="560" y="520" width="240" height="185" rx="14" fill="#eeebf3" stroke="#6b657f" stroke-width="2" filter="url(#shadow)"/>
+  <text x="580" y="554" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#514b66">July 22 &amp; 25, 1861</text>
+  <text x="580" y="585" font-family="Arial, sans-serif" font-size="17" fill="#3f3b48">
+    <tspan x="580" dy="0">House and Senate resolve</tspan>
+    <tspan x="580" dy="24">that the war preserves the</tspan>
+    <tspan x="580" dy="24">Union and does not aim to</tspan>
+    <tspan x="580" dy="24">overthrow state institutions,</tspan>
+    <tspan x="580" dy="24">including slavery.</tspan>
+  </text>
+
+  <!-- Event 5 -->
+  <line x1="865" y1="425" x2="865" y2="355" stroke="#294f61" stroke-width="3"/>
+  <circle cx="865" cy="440" r="14" fill="#315f8c" stroke="#fff" stroke-width="4"/>
+  <rect x="745" y="180" width="240" height="175" rx="14" fill="#edf3f8" stroke="#315f8c" stroke-width="2" filter="url(#shadow)"/>
+  <text x="765" y="214" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#244b72">Dec. 3, 1861</text>
+  <text x="765" y="245" font-family="Arial, sans-serif" font-size="17" fill="#273b44">
+    <tspan x="765" dy="0">Lincoln’s annual message</tspan>
+    <tspan x="765" dy="24">defends a limited war and</tspan>
+    <tspan x="765" dy="24">warns against haste in</tspan>
+    <tspan x="765" dy="24">adopting radical measures.</tspan>
+  </text>
+
+  <!-- Event 6 -->
+  <line x1="1050" y1="455" x2="1050" y2="520" stroke="#294f61" stroke-width="3"/>
+  <circle cx="1050" cy="440" r="14" fill="#47835a" stroke="#fff" stroke-width="4"/>
+  <rect x="930" y="520" width="240" height="185" rx="14" fill="#e9f3ea" stroke="#47835a" stroke-width="2" filter="url(#shadow)"/>
+  <text x="950" y="554" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#316642">Spring–summer 1862</text>
+  <text x="950" y="585" font-family="Arial, sans-serif" font-size="17" fill="#304238">
+    <tspan x="950" dy="0">Self-emancipation, military</tspan>
+    <tspan x="950" dy="24">setbacks, congressional</tspan>
+    <tspan x="950" dy="24">action, and public pressure</tspan>
+    <tspan x="950" dy="24">make slavery a central</tspan>
+    <tspan x="950" dy="24">war-policy question.</tspan>
+  </text>
+
+  <!-- Event 7 -->
+  <line x1="1235" y1="425" x2="1235" y2="355" stroke="#294f61" stroke-width="3"/>
+  <circle cx="1235" cy="440" r="14" fill="#b44b36" stroke="#fff" stroke-width="4"/>
+  <rect x="1115" y="180" width="240" height="175" rx="14" fill="#f8e9e4" stroke="#b44b36" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1135" y="214" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#8e3728">Sept. 22, 1862</text>
+  <text x="1135" y="245" font-family="Arial, sans-serif" font-size="17" fill="#47342f">
+    <tspan x="1135" dy="0">The preliminary</tspan>
+    <tspan x="1135" dy="24">proclamation announces</tspan>
+    <tspan x="1135" dy="24">freedom for people held</tspan>
+    <tspan x="1135" dy="24">enslaved in areas still in</tspan>
+    <tspan x="1135" dy="24">rebellion on January 1.</tspan>
+  </text>
+
+  <!-- Event 8 -->
+  <line x1="1380" y1="455" x2="1380" y2="520" stroke="#294f61" stroke-width="3"/>
+  <circle cx="1380" cy="440" r="14" fill="#183746" stroke="#fff" stroke-width="4"/>
+  <rect x="1190" y="520" width="250" height="185" rx="14" fill="#e7eef0" stroke="#183746" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1210" y="554" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#183746">Jan. 1, 1863</text>
+  <text x="1210" y="585" font-family="Arial, sans-serif" font-size="17" fill="#273b44">
+    <tspan x="1210" dy="0">The final proclamation</tspan>
+    <tspan x="1210" dy="24">takes effect as a war</tspan>
+    <tspan x="1210" dy="24">measure and authorizes</tspan>
+    <tspan x="1210" dy="24">Black enlistment in United</tspan>
+    <tspan x="1210" dy="24">States armed service.</tspan>
+  </text>
+
+  <rect x="80" y="735" width="1340" height="50" rx="10" fill="#183746"/>
+  <text x="750" y="766" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#f7f2e8">The change was incremental: enslaved people’s actions, military necessity, abolitionist argument, public opinion, Congress, and executive policy all mattered.</text>
+  <text x="750" y="853" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#51636b">Source basis: Lincoln Papers, U.S. statutes and congressional documents, National Archives, National Park Service, and episode transcript</text>
+</svg>

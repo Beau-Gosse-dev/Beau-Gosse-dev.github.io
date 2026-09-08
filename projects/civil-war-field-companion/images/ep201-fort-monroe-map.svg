@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="850" viewBox="0 0 1400 850" role="img" aria-labelledby="title desc">
+  <title id="title">Fort Monroe and the first three freedom seekers, May 1861</title>
+  <desc id="desc">Schematic map of Hampton Roads showing the route taken by Frank Baker, Shepard Mallory, and James Townsend from Confederate works at Sewell's Point to Union-held Fort Monroe.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#b44b36"/>
+    </marker>
+    <pattern id="water" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M0 19 Q7 14 14 19 T28 19" fill="none" stroke="#a9c8d4" stroke-width="1.5" opacity="0.7"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#102a36" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="850" fill="#f7f2e8"/>
+  <rect x="42" y="115" width="1316" height="650" rx="20" fill="#dcecf1" stroke="#284f62" stroke-width="3"/>
+  <rect x="45" y="118" width="1310" height="644" rx="18" fill="url(#water)"/>
+
+  <text x="70" y="58" font-family="Georgia, serif" font-size="34" font-weight="700" fill="#183746">Fort Monroe and the first three freedom seekers</text>
+  <text x="70" y="91" font-family="Arial, sans-serif" font-size="19" fill="#425b66">Night of May 23–24, 1861 • Hampton Roads, Virginia • schematic, not to scale</text>
+
+  <!-- Virginia Peninsula -->
+  <path d="M45 118 H805 C916 122 1011 170 1086 245 C1137 296 1180 339 1260 369 L1305 399 L1262 430 C1165 414 1091 376 1015 345 C912 303 796 291 678 301 C529 313 405 352 284 389 L45 448 Z" fill="#d4d0a8" stroke="#6f744b" stroke-width="3"/>
+  <path d="M45 715 H426 C555 715 661 673 751 622 C843 570 920 548 1009 559 C1071 567 1120 593 1160 626 L1094 765 H45 Z" fill="#d4d0a8" stroke="#6f744b" stroke-width="3"/>
+
+  <!-- Fort Monroe point -->
+  <path d="M1194 358 L1260 369 L1305 399 L1262 430 L1199 420 L1170 389 Z" fill="#eee1b7" stroke="#284f62" stroke-width="4" filter="url(#shadow)"/>
+  <path d="M1211 370 L1260 377 L1290 399 L1258 421 L1210 414 L1186 390 Z" fill="none" stroke="#315f8c" stroke-width="6" stroke-linejoin="round"/>
+
+  <!-- Places -->
+  <circle cx="790" cy="294" r="8" fill="#263b32"/>
+  <text x="750" y="268" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#263b32">Hampton</text>
+
+  <circle cx="757" cy="623" r="9" fill="#6b3329"/>
+  <text x="628" y="678" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#6b3329">Sewell’s Point</text>
+  <text x="568" y="705" font-family="Arial, sans-serif" font-size="18" fill="#4d5147">Confederate gun positions under construction</text>
+
+  <circle cx="1238" cy="397" r="10" fill="#315f8c"/>
+  <text x="1111" y="333" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#244b72">Fort Monroe</text>
+  <text x="1098" y="359" font-family="Arial, sans-serif" font-size="18" fill="#244b72">held by United States forces</text>
+
+  <!-- Route -->
+  <path d="M772 607 C850 555 929 508 1015 475 C1091 446 1150 421 1217 404" fill="none" stroke="#fff" stroke-width="15" stroke-linecap="round" opacity="0.9"/>
+  <path d="M772 607 C850 555 929 508 1015 475 C1091 446 1150 421 1217 404" fill="none" stroke="#b44b36" stroke-width="7" stroke-linecap="round" stroke-dasharray="14 11" marker-end="url(#arrow)"/>
+  <rect x="833" y="493" width="305" height="70" rx="12" fill="#fffaf0" stroke="#b44b36" stroke-width="2" filter="url(#shadow)"/>
+  <text x="852" y="521" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#8e3728">Baker • Mallory • Townsend</text>
+  <text x="852" y="548" font-family="Arial, sans-serif" font-size="17" fill="#4a4a42">cross Hampton Roads seeking protection</text>
+
+  <!-- Water labels -->
+  <text x="515" y="520" font-family="Georgia, serif" font-size="30" font-style="italic" fill="#52798a">Hampton Roads</text>
+  <text x="1115" y="175" font-family="Georgia, serif" font-size="25" font-style="italic" fill="#52798a">Chesapeake Bay</text>
+
+  <!-- Decision panel -->
+  <rect x="72" y="480" width="430" height="245" rx="18" fill="#fffaf0" stroke="#284f62" stroke-width="2.5" filter="url(#shadow)"/>
+  <text x="98" y="520" font-family="Georgia, serif" font-size="25" font-weight="700" fill="#183746">May 24: Butler’s decision</text>
+  <line x1="98" y1="537" x2="476" y2="537" stroke="#b8aa82" stroke-width="2"/>
+  <text x="98" y="574" font-family="Arial, sans-serif" font-size="18" fill="#303b3f">
+    <tspan x="98" dy="0">The three men had been forced to work on</tspan>
+    <tspan x="98" dy="27">Confederate defenses. Maj. Gen. Benjamin</tspan>
+    <tspan x="98" dy="27">Butler refused to return them to enslavement</tspan>
+    <tspan x="98" dy="27">and treated their labor as enemy property</tspan>
+    <tspan x="98" dy="27">that could be withheld under the laws of war.</tspan>
+  </text>
+
+  <rect x="72" y="785" width="1256" height="38" rx="8" fill="#183746"/>
+  <text x="700" y="811" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#f8f4e9">Source basis: National Park Service, Fort Monroe National Monument; geography generalized for orientation</text>
+</svg>
