@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Opposing movements toward Sharpsburg on September 15, 1862</title>
+  <desc id="desc">Schematic operational map with north at top. Confederate forces move west from South Mountain through Boonsboro and Keedysville to Sharpsburg while their trains move toward the Potomac. Federal First, Second, and Twelfth Corps pursue on the National Road, and Ninth Corps with Sykes's division follows the Old Sharpsburg Road.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#faf4e5"/>
+      <stop offset="1" stop-color="#e9dcc1"/>
+    </linearGradient>
+    <marker id="blueArrow" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 18 18">
+      <path d="M0 0L18 9L0 18Z" fill="#315f8c"/>
+    </marker>
+    <marker id="redArrow" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 18 18">
+      <path d="M0 0L18 9L0 18Z" fill="#963b31"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+    <style>
+      .place { font: 700 17px Georgia, serif; fill: #2d2a26; }
+      .small { font: 14px Arial, sans-serif; fill: #4e4940; }
+      .unit-blue { font: 700 16px Arial, sans-serif; fill: #244c73; }
+      .unit-red { font: 700 16px Arial, sans-serif; fill: #7a3029; }
+    </style>
+  </defs>
+  <rect width="1200" height="800" fill="url(#paper)"/>
+  <rect x="28" y="28" width="1144" height="744" rx="18" fill="none" stroke="#998a6d" stroke-width="2"/>
+  <text x="58" y="76" font-family="Georgia, serif" font-size="31" font-weight="700" fill="#2d2a26">THE APPROACH TO SHARPSBURG</text>
+  <text x="59" y="106" font-family="Arial, sans-serif" font-size="17" fill="#5e574b">Confederate withdrawal and Federal pursuit · Monday, September 15, 1862</text>
+
+  <rect x="50" y="127" width="1100" height="605" rx="12" fill="#e8e2c8" stroke="#c5b897"/>
+  <path d="M875 127C844 197 883 258 851 325C819 391 860 454 828 521C797 586 833 655 805 732H1017C992 656 1016 589 987 521C961 459 998 393 968 326C940 263 968 196 944 127Z" fill="#667159" opacity="0.9"/>
+  <path d="M875 127C844 197 883 258 851 325C819 391 860 454 828 521C797 586 833 655 805 732H1017C992 656 1016 589 987 521C961 459 998 393 968 326C940 263 968 196 944 127Z" fill="none" stroke="#4d5c48" stroke-width="3"/>
+  <text x="911" y="462" transform="rotate(-88 911 462)" font-family="Georgia, serif" font-size="25" font-weight="700" letter-spacing="4" fill="#f2ead7">SOUTH MOUNTAIN</text>
+
+  <path d="M256 147C241 215 274 275 250 338C226 401 261 468 238 532C216 594 245 658 227 732" fill="none" stroke="#4f88a6" stroke-width="30" opacity="0.9"/>
+  <path d="M256 147C241 215 274 275 250 338C226 401 261 468 238 532C216 594 245 658 227 732" fill="none" stroke="#bce0ea" stroke-width="9"/>
+  <text x="198" y="479" transform="rotate(87 198 479)" font-family="Georgia, serif" font-size="20" font-weight="700" fill="#285e7a">POTOMAC</text>
+
+  <path d="M501 151C477 209 506 269 482 328C456 393 493 453 470 516C447 579 481 648 459 732" fill="none" stroke="#4f88a6" stroke-width="25" opacity="0.9"/>
+  <path d="M501 151C477 209 506 269 482 328C456 393 493 453 470 516C447 579 481 648 459 732" fill="none" stroke="#bce0ea" stroke-width="8"/>
+  <text x="520" y="463" transform="rotate(87 520 463)" font-family="Georgia, serif" font-size="20" font-weight="700" fill="#285e7a">ANTIETAM CREEK</text>
+
+  <path d="M1112 327C1010 324 929 329 855 334C745 342 648 353 557 370C523 376 496 382 474 387C411 401 356 410 310 415" fill="none" stroke="#a6774f" stroke-width="16" stroke-linecap="round"/>
+  <path d="M1112 327C1010 324 929 329 855 334C745 342 648 353 557 370C523 376 496 382 474 387C411 401 356 410 310 415" fill="none" stroke="#f4d6a5" stroke-width="7" stroke-linecap="round"/>
+
+  <path d="M1109 563C1009 544 926 532 848 515C729 489 614 469 484 454" fill="none" stroke="#a6774f" stroke-width="15" stroke-linecap="round"/>
+  <path d="M1109 563C1009 544 926 532 848 515C729 489 614 469 484 454" fill="none" stroke="#f4d6a5" stroke-width="6" stroke-linecap="round"/>
+
+  <path d="M334 402C321 510 279 615 237 700" fill="none" stroke="#a6774f" stroke-width="13" stroke-linecap="round"/>
+  <path d="M334 402C321 510 279 615 237 700" fill="none" stroke="#f4d6a5" stroke-width="5" stroke-linecap="round"/>
+
+  <g fill="#4c4438" stroke="#fffaf0" stroke-width="3">
+    <circle cx="1030" cy="326" r="7"/>
+    <circle cx="786" cy="338" r="7"/>
+    <circle cx="607" cy="361" r="7"/>
+    <circle cx="334" cy="402" r="9"/>
+    <circle cx="237" cy="700" r="8"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="930" y="155" width="136" height="38" rx="7" fill="#fffaf0" stroke="#887a62"/>
+    <text x="998" y="180" text-anchor="middle" class="place">Turner's Gap</text>
+    <rect x="724" y="285" width="126" height="38" rx="7" fill="#fffaf0" stroke="#887a62"/>
+    <text x="787" y="310" text-anchor="middle" class="place">Boonsboro</text>
+    <rect x="543" y="285" width="130" height="38" rx="7" fill="#fffaf0" stroke="#887a62"/>
+    <text x="608" y="310" text-anchor="middle" class="place">Keedysville</text>
+    <rect x="274" y="307" width="121" height="40" rx="7" fill="#fffaf0" stroke="#887a62"/>
+    <text x="334" y="334" text-anchor="middle" class="place">Sharpsburg</text>
+    <rect x="60" y="645" width="160" height="40" rx="7" fill="#fffaf0" stroke="#887a62"/>
+    <text x="140" y="672" text-anchor="middle" class="place">Boteler's Ford</text>
+  </g>
+
+  <path d="M1003 350C879 374 753 388 628 402C522 414 437 414 377 407" fill="none" stroke="#963b31" stroke-width="11" stroke-linecap="round" marker-end="url(#redArrow)"/>
+  <text x="685" y="428" class="unit-red">D. H. Hill · Longstreet</text>
+  <text x="692" y="449" class="small">night withdrawal from South Mountain</text>
+
+  <path d="M389 429C341 502 295 599 248 677" fill="none" stroke="#963b31" stroke-width="8" stroke-dasharray="13 9" stroke-linecap="round" marker-end="url(#redArrow)"/>
+  <text x="278" y="549" transform="rotate(-63 278 549)" class="unit-red">trains toward Potomac</text>
+
+  <path d="M1110 286C1018 234 913 224 819 242C706 263 591 303 497 359" fill="none" stroke="#315f8c" stroke-width="11" stroke-linecap="round" marker-end="url(#blueArrow)"/>
+  <text x="670" y="188" class="unit-blue">I · II · XII CORPS</text>
+  <text x="670" y="210" class="small">National Road through Boonsboro</text>
+
+  <path d="M1101 604C995 596 901 577 812 559C687 534 586 503 502 469" fill="none" stroke="#315f8c" stroke-width="11" stroke-linecap="round" marker-end="url(#blueArrow)"/>
+  <text x="679" y="615" class="unit-blue">IX CORPS · SYKES'S DIVISION</text>
+  <text x="728" y="637" class="small">Old Sharpsburg Road</text>
+
+  <path d="M459 320C431 346 404 370 374 390" fill="none" stroke="#963b31" stroke-width="7" stroke-dasharray="11 8" marker-end="url(#redArrow)"/>
+  <rect x="88" y="174" width="335" height="120" rx="10" fill="#fffaf0" stroke="#887a62" filter="url(#shadow)"/>
+  <text x="108" y="204" font-family="Georgia, serif" font-size="19" font-weight="700" fill="#2d2a26">At midafternoon</text>
+  <text x="108" y="231" class="small">Lee: about 15,000 present west of the creek</text>
+  <text x="108" y="254" class="small">McClellan: more than twice that number at hand</text>
+  <text x="108" y="277" class="small">Jackson and most detached brigades still absent</text>
+
+  <g transform="translate(1112 154)" font-family="Arial, sans-serif">
+    <path d="M0 56V0" stroke="#2d2a26" stroke-width="4"/>
+    <path d="M0 0L-10 20H10Z" fill="#2d2a26"/>
+    <text x="0" y="82" text-anchor="middle" font-size="17" font-weight="700" fill="#2d2a26">N</text>
+  </g>
+  <g transform="translate(744 665)" font-family="Arial, sans-serif">
+    <rect width="374" height="54" rx="9" fill="#fffaf0" stroke="#887a62"/>
+    <path d="M18 19H72" stroke="#315f8c" stroke-width="8" marker-end="url(#blueArrow)"/>
+    <text x="90" y="25" class="small">United States pursuit</text>
+
+    <path d="M18 39H72" stroke="#963b31" stroke-width="8" marker-end="url(#redArrow)"/>
+    <text x="90" y="45" class="small">Confederate withdrawal</text>
+  </g>
+  <text x="1119" y="649" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#5e574b">Schematic · not to scale</text>
+</svg>
