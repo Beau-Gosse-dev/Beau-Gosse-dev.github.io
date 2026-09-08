@@ -23,69 +23,69 @@
   <text x="90" y="104" class="title">The decision takes shape</text>
   <text x="90" y="143" class="subtitle">Congress, the cabinet, the battlefield, and public argument — April 16 to September 22, 1862</text>
 
-  <rect x="90" y="185" width="175" height="680" rx="20" fill="#263f5f"/>
+  <rect x="90" y="185" width="165" height="680" rx="20" fill="#263f5f"/>
   <text x="178" y="252" text-anchor="middle" class="lane">LAW</text>
   <text x="178" y="468" text-anchor="middle" class="lane">DECISION</text>
   <text x="178" y="684" text-anchor="middle" class="lane">PUBLIC</text>
   <text x="178" y="808" text-anchor="middle" class="lane">WAR</text>
 
-  <line x1="335" y1="218" x2="335" y2="862" stroke="#a2763c" stroke-width="8" stroke-linecap="round"/>
-  <circle cx="335" cy="238" r="14" fill="#a2763c"/>
-  <circle cx="335" cy="347" r="14" fill="#a2763c"/>
-  <circle cx="335" cy="456" r="14" fill="#a2763c"/>
-  <circle cx="335" cy="565" r="14" fill="#a2763c"/>
-  <circle cx="335" cy="674" r="14" fill="#a2763c"/>
-  <circle cx="335" cy="783" r="14" fill="#a2763c"/>
-  <circle cx="335" cy="862" r="14" fill="#a2763c"/>
+  <line x1="405" y1="218" x2="405" y2="862" stroke="#a2763c" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="405" cy="238" r="14" fill="#a2763c"/>
+  <circle cx="405" cy="347" r="14" fill="#a2763c"/>
+  <circle cx="405" cy="456" r="14" fill="#a2763c"/>
+  <circle cx="405" cy="565" r="14" fill="#a2763c"/>
+  <circle cx="405" cy="674" r="14" fill="#a2763c"/>
+  <circle cx="405" cy="783" r="14" fill="#a2763c"/>
+  <circle cx="405" cy="862" r="14" fill="#a2763c"/>
 
-  <text x="305" y="244" text-anchor="end" class="date">APR 16</text>
+  <text x="375" y="244" text-anchor="end" class="date">APR 16</text>
   <g filter="url(#shadow)">
-    <rect x="380" y="192" width="1118" height="92" rx="16" fill="#e9f0f7" stroke="#9db1c8"/>
+    <rect x="450" y="192" width="1048" height="92" rx="16" fill="#e9f0f7" stroke="#9db1c8"/>
   </g>
-  <text x="415" y="226" class="event">District of Columbia compensated emancipation</text>
-  <text x="415" y="256" class="body">Congress ends slavery where it has direct legislative authority; Lincoln signs the act.</text>
+  <text x="485" y="226" class="event">District of Columbia compensated emancipation</text>
+  <text x="485" y="256" class="body">Congress ends slavery where it has direct legislative authority; Lincoln signs the act.</text>
 
-  <text x="305" y="353" text-anchor="end" class="date">JUL 7–17</text>
+  <text x="375" y="353" text-anchor="end" class="date">JUL 7–17</text>
   <g filter="url(#shadow)">
-    <rect x="380" y="301" width="1118" height="92" rx="16" fill="#edf4eb" stroke="#a5b99b"/>
+    <rect x="450" y="301" width="1048" height="92" rx="16" fill="#edf4eb" stroke="#a5b99b"/>
   </g>
-  <text x="415" y="335" class="event">Military failure and congressional escalation</text>
-  <text x="415" y="365" class="body">McClellan urges restraint at Harrison's Landing; Congress passes the Second Confiscation Act.</text>
+  <text x="485" y="335" class="event">Military failure and congressional escalation</text>
+  <text x="485" y="365" class="body">McClellan urges restraint at Harrison's Landing; Congress passes the Second Confiscation Act.</text>
 
-  <text x="305" y="462" text-anchor="end" class="date">JUL 13–22</text>
+  <text x="375" y="462" text-anchor="end" class="date">JUL 13–22</text>
   <g filter="url(#shadow)">
-    <rect x="380" y="410" width="1118" height="92" rx="16" fill="#f5eadf" stroke="#c9a98a"/>
+    <rect x="450" y="410" width="1048" height="92" rx="16" fill="#f5eadf" stroke="#c9a98a"/>
   </g>
-  <text x="415" y="444" class="event">Lincoln moves from discussion to a written order</text>
-  <text x="415" y="474" class="body">He raises emancipation with Seward and Welles, then reads his three-sentence draft to the full cabinet.</text>
+  <text x="485" y="444" class="event">Lincoln moves from discussion to a written order</text>
+  <text x="485" y="474" class="body">He raises emancipation with Seward and Welles, then reads his three-sentence draft to the full cabinet.</text>
 
-  <text x="305" y="571" text-anchor="end" class="date">JUL 22–25</text>
+  <text x="375" y="571" text-anchor="end" class="date">JUL 22–25</text>
   <g filter="url(#shadow)">
-    <rect x="380" y="519" width="1118" height="92" rx="16" fill="#f7e9e9" stroke="#caa1a1"/>
+    <rect x="450" y="519" width="1048" height="92" rx="16" fill="#f7e9e9" stroke="#caa1a1"/>
   </g>
-  <text x="415" y="553" class="event">Seward advises delay; other war orders proceed</text>
-  <text x="415" y="583" class="body">Lincoln waits for military success but authorizes seizures, Black labor, recordkeeping, and a statutory warning.</text>
+  <text x="485" y="553" class="event">Seward advises delay; other war orders proceed</text>
+  <text x="485" y="583" class="body">Lincoln waits for military success but authorizes seizures, Black labor, recordkeeping, and a statutory warning.</text>
 
-  <text x="305" y="680" text-anchor="end" class="date">AUG 14–22</text>
+  <text x="375" y="680" text-anchor="end" class="date">AUG 14–22</text>
   <g filter="url(#shadow)">
-    <rect x="380" y="628" width="1118" height="92" rx="16" fill="#eee9f5" stroke="#afa0c4"/>
+    <rect x="450" y="628" width="1048" height="92" rx="16" fill="#eee9f5" stroke="#afa0c4"/>
   </g>
-  <text x="415" y="662" class="event">Lincoln speaks publicly while the draft remains secret</text>
-  <text x="415" y="692" class="body">He urges colonization to a Black delegation and tells Greeley that saving the Union is his official object.</text>
+  <text x="485" y="662" class="event">Lincoln speaks publicly while the draft remains secret</text>
+  <text x="485" y="692" class="body">He urges colonization to a Black delegation and tells Greeley that saving the Union is his official object.</text>
 
-  <text x="305" y="789" text-anchor="end" class="date">SEP 17</text>
+  <text x="375" y="789" text-anchor="end" class="date">SEP 17</text>
   <g filter="url(#shadow)">
-    <rect x="380" y="737" width="1118" height="92" rx="16" fill="#e8f1ed" stroke="#95b2a3"/>
+    <rect x="450" y="737" width="1048" height="92" rx="16" fill="#e8f1ed" stroke="#95b2a3"/>
   </g>
-  <text x="415" y="771" class="event">Antietam supplies the awaited military opening</text>
-  <text x="415" y="801" class="body">Lee's Maryland campaign ends in retreat after the battle; Lincoln treats the result as sufficient.</text>
+  <text x="485" y="771" class="event">Antietam supplies the awaited military opening</text>
+  <text x="485" y="801" class="body">Lee's Maryland campaign ends in retreat after the battle; Lincoln treats the result as sufficient.</text>
 
-  <text x="305" y="868" text-anchor="end" class="date">SEP 22</text>
+  <text x="375" y="868" text-anchor="end" class="date">SEP 22</text>
   <g filter="url(#shadow)">
-    <rect x="380" y="838" width="1118" height="76" rx="16" fill="#263f5f" stroke="#16233a"/>
+    <rect x="450" y="838" width="1048" height="76" rx="16" fill="#263f5f" stroke="#16233a"/>
   </g>
-  <text x="415" y="872" class="event" fill="#ffffff" style="fill:#ffffff">Preliminary Emancipation Proclamation issued</text>
-  <text x="415" y="900" class="body" fill="#ffffff" style="fill:#ffffff">Places still in rebellion on January 1 receive one hundred days' notice of the coming freedom order.</text>
+  <text x="485" y="872" class="event" fill="#ffffff" style="fill:#ffffff">Preliminary Emancipation Proclamation issued</text>
+  <text x="485" y="900" class="body" fill="#ffffff" style="fill:#ffffff">Places still in rebellion on January 1 receive one hundred days' notice of the coming freedom order.</text>
 
-  <text x="90" y="928" class="note">The sequence shows timing, not proof that any single event alone caused Lincoln's decision.</text>
+  <text x="90" y="944" class="note">The sequence shows timing, not proof that any single event alone caused Lincoln's decision.</text>
 </svg>

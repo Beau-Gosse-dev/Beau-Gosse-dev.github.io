@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Legal scope and implementation of the final Emancipation Proclamation</title>
+  <desc id="desc">A three-column diagram showing the places covered by the final Emancipation Proclamation, the places it left unchanged, and how the United States government was to implement freedom through military and naval authority.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbf4e4"/>
+      <stop offset="1" stop-color="#e4d6b8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-opacity="0.16"/>
+    </filter>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 14 14">
+      <path d="M0 0L14 7L0 14Z" fill="#315f8c"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#paper)"/>
+  <rect x="28" y="28" width="1144" height="844" rx="18" fill="none" stroke="#97896f" stroke-width="2"/>
+  <text x="60" y="76" font-family="Georgia, serif" font-size="31" font-weight="700" fill="#2f2b27">THE FINAL PROCLAMATION: SCOPE AND FORCE</text>
+  <text x="60" y="108" font-family="Arial, sans-serif" font-size="18" fill="#5c5549">January 1, 1863 · a commander-in-chief war measure, not nationwide abolition</text>
+
+  <g filter="url(#shadow)">
+    <rect x="58" y="154" width="342" height="464" rx="16" fill="#e4efe5" stroke="#47704f" stroke-width="3"/>
+    <rect x="429" y="154" width="342" height="464" rx="16" fill="#f1e4df" stroke="#963b31" stroke-width="3"/>
+    <rect x="800" y="154" width="342" height="464" rx="16" fill="#e3eaf1" stroke="#315f8c" stroke-width="3"/>
+  </g>
+
+  <g font-family="Georgia, serif" font-size="21" font-weight="700">
+    <text x="229" y="197" text-anchor="middle" fill="#36583d">DESIGNATED IN REBELLION</text>
+    <text x="600" y="197" text-anchor="middle" fill="#7b3029">LEFT UNCHANGED</text>
+    <text x="971" y="197" text-anchor="middle" fill="#294f75">HOW FREEDOM ADVANCED</text>
+  </g>
+
+  <g font-family="Arial, sans-serif" fill="#2f2b27">
+    <text x="82" y="236" font-size="14" font-weight="700">ENTIRE STATES NAMED</text>
+    <text x="82" y="267" font-size="16">Arkansas · Texas · Mississippi</text>
+    <text x="82" y="295" font-size="16">Alabama · Florida · Georgia</text>
+    <text x="82" y="323" font-size="16">South Carolina · North Carolina</text>
+    <line x1="82" y1="345" x2="376" y2="345" stroke="#93aa96"/>
+    <text x="82" y="379" font-size="14" font-weight="700">PARTS OF STATES NAMED</text>
+    <text x="82" y="410" font-size="16">Louisiana outside 13 exempted</text>
+    <text x="82" y="434" font-size="16">parishes, including New Orleans</text>
+    <text x="82" y="473" font-size="16">Virginia outside the 48 counties</text>
+    <text x="82" y="497" font-size="16">designated as West Virginia and</text>
+    <text x="82" y="521" font-size="16">seven additional named counties</text>
+    <text x="82" y="560" font-size="13" fill="#4f4a43">People held as slaves in these designated</text>
+    <text x="82" y="581" font-size="13" fill="#4f4a43">areas were declared “henceforward” free.</text>
+
+    <text x="453" y="236" font-size="14" font-weight="700">LOYAL SLAVE STATES</text>
+    <text x="453" y="267" font-size="16">Delaware · Maryland · Kentucky</text>
+    <text x="453" y="295" font-size="16">Missouri</text>
+    <line x1="453" y1="317" x2="747" y2="317" stroke="#c0a199"/>
+    <text x="453" y="351" font-size="14" font-weight="700">OTHER EXCLUSIONS</text>
+    <text x="453" y="382" font-size="16">Tennessee was not designated.</text>
+    <text x="453" y="421" font-size="16">Thirteen Louisiana parishes and</text>
+    <text x="453" y="445" font-size="16">specified Virginia areas were</text>
+    <text x="453" y="469" font-size="16">expressly exempted.</text>
+    <text x="453" y="508" font-size="16">The District of Columbia had ended</text>
+    <text x="453" y="532" font-size="16">slavery by statute in April 1862.</text>
+    <text x="453" y="571" font-size="13" fill="#4f4a43">These places were left “precisely as if this</text>
+    <text x="453" y="592" font-size="13" fill="#4f4a43">proclamation were not issued.”</text>
+
+    <text x="824" y="236" font-size="14" font-weight="700">EXECUTIVE COMMITMENT</text>
+    <text x="824" y="267" font-size="16">The United States government, Army,</text>
+    <text x="824" y="291" font-size="16">and Navy would recognize and maintain</text>
+    <text x="824" y="315" font-size="16">the freedom the document declared.</text>
+    <line x1="824" y1="337" x2="1118" y2="337" stroke="#93a8bb"/>
+    <text x="824" y="371" font-size="14" font-weight="700">MILITARY IMPLEMENTATION</text>
+    <text x="824" y="402" font-size="16">As United States authority expanded,</text>
+    <text x="824" y="426" font-size="16">the enforceable domain of freedom</text>
+    <text x="824" y="450" font-size="16">expanded with it.</text>
+    <text x="824" y="489" font-size="16">Black men of suitable condition could</text>
+    <text x="824" y="513" font-size="16">enter United States military service.</text>
+    <text x="824" y="552" font-size="13" fill="#4f4a43">The proclamation supplied legal policy and</text>
+    <text x="824" y="573" font-size="13" fill="#4f4a43">military direction; victory made it effective.</text>
+  </g>
+
+  <path d="M229 640V693H600" fill="none" stroke="#315f8c" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M971 640V693H649" fill="none" stroke="#315f8c" stroke-width="4" marker-end="url(#arrow)"/>
+  <g filter="url(#shadow)">
+    <rect x="280" y="679" width="640" height="128" rx="15" fill="#fffaf0" stroke="#67547d" stroke-width="3"/>
+  </g>
+  <text x="600" y="719" text-anchor="middle" font-family="Georgia, serif" font-size="20" font-weight="700" fill="#58456e">NATIONWIDE ABOLITION REQUIRED AN AMENDMENT</text>
+  <text x="600" y="754" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#3f3a44">The Thirteenth Amendment passed Congress on January 31, 1865,</text>
+  <text x="600" y="779" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#3f3a44">and was ratified on December 6, 1865.</text>
+  <text x="1128" y="847" text-anchor="end" font-family="Arial, sans-serif" font-size="11" fill="#5f574d">Schematic legal-scope diagram · not a map of control on a single day</text>
+</svg>
