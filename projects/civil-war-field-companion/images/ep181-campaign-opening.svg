@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Opening movements of the Maryland Campaign, September 3 to 7, 1862</title>
+  <desc id="desc">Schematic regional map showing the Army of Northern Virginia moving from the Second Manassas and Chantilly area through Dranesville and Leesburg, crossing the Potomac at White's Ford, and continuing toward Frederick, Maryland. A dashed blue arrow shows the Army of the Potomac beginning its pursuit from Washington.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8f1df"/>
+      <stop offset="1" stop-color="#eadfc7"/>
+    </linearGradient>
+    <marker id="redArrow" markerWidth="20" markerHeight="20" refX="18" refY="10" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 20 20">
+      <path d="M0,0 L20,10 L0,20 Z" fill="#963b31"/>
+    </marker>
+    <marker id="blueArrow" markerWidth="20" markerHeight="20" refX="18" refY="10" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 20 20">
+      <path d="M0,0 L20,10 L0,20 Z" fill="#315f8c"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#paper)"/>
+  <rect x="28" y="28" width="1144" height="744" rx="18" fill="none" stroke="#9b8d72" stroke-width="2"/>
+  <text x="60" y="78" font-family="Georgia, serif" font-size="32" font-weight="700" fill="#2e2b28">LEE STRIKES NORTH</text>
+  <text x="60" y="111" font-family="Arial, sans-serif" font-size="18" fill="#5d5548">Opening movements of the Maryland Campaign · September 3–7, 1862</text>
+
+  <path d="M48 127 H1152 V744 H48 Z" fill="#efe7d5"/>
+  <path d="M48 127 H1152 V520 C1040 505 950 493 855 500 C760 506 700 486 642 454 C580 419 531 386 490 365 C420 329 337 270 247 222 C173 182 105 157 48 145 Z" fill="#dfe7ce"/>
+  <path d="M48 744 H1152 V520 C1040 505 950 493 855 500 C760 506 700 486 642 454 C580 419 531 386 490 365 C420 329 337 270 247 222 C173 182 105 157 48 145 Z" fill="#ead5c4"/>
+  <text x="930" y="180" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#667154" opacity="0.72">MARYLAND</text>
+  <text x="85" y="700" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#895d52" opacity="0.72">VIRGINIA</text>
+
+  <path d="M48 145 C105 157 173 182 247 222 C337 270 420 329 490 365 C531 386 580 419 642 454 C700 486 760 506 855 500 C950 493 1040 505 1152 520" fill="none" stroke="#4d86a8" stroke-width="25" opacity="0.86"/>
+  <path d="M48 145 C105 157 173 182 247 222 C337 270 420 329 490 365 C531 386 580 419 642 454 C700 486 760 506 855 500 C950 493 1040 505 1152 520" fill="none" stroke="#b7d4df" stroke-width="8" opacity="0.9"/>
+  <text x="675" y="466" transform="rotate(16 675 466)" font-family="Georgia, serif" font-size="20" font-style="italic" fill="#315f8c">Potomac River</text>
+
+  <path d="M420 692 C488 665 545 630 618 579 C576 533 519 496 455 447 C468 415 492 389 515 369 C507 314 506 252 512 191" fill="none" stroke="#963b31" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#redArrow)"/>
+  <path d="M875 622 C803 578 733 523 670 455 C617 398 575 323 526 210" fill="none" stroke="#315f8c" stroke-width="7" stroke-dasharray="16 12" stroke-linecap="round" marker-end="url(#blueArrow)"/>
+
+  <g font-family="Arial, sans-serif">
+    <g transform="translate(404 696)">
+      <circle r="8" fill="#963b31" stroke="#fff" stroke-width="3"/>
+      <rect x="-5" y="14" width="204" height="54" rx="8" fill="#fffaf0" stroke="#9b8d72" filter="url(#shadow)"/>
+      <text x="10" y="36" font-size="17" font-weight="700" fill="#2e2b28">Second Manassas area</text>
+      <text x="10" y="57" font-size="14" fill="#5d5548">Confederate victory, Aug. 30</text>
+    </g>
+    <g transform="translate(620 579)">
+      <circle r="8" fill="#963b31" stroke="#fff" stroke-width="3"/>
+      <rect x="18" y="-29" width="132" height="50" rx="8" fill="#fffaf0" stroke="#9b8d72" filter="url(#shadow)"/>
+      <text x="31" y="-7" font-size="17" font-weight="700" fill="#2e2b28">Chantilly</text>
+      <text x="31" y="12" font-size="14" fill="#5d5548">Sept. 3 movement</text>
+    </g>
+    <g transform="translate(455 447)">
+      <circle r="8" fill="#963b31" stroke="#fff" stroke-width="3"/>
+      <rect x="-168" y="-25" width="150" height="50" rx="8" fill="#fffaf0" stroke="#9b8d72" filter="url(#shadow)"/>
+      <text x="-154" y="-3" font-size="17" font-weight="700" fill="#2e2b28">Dranesville</text>
+      <text x="-154" y="16" font-size="14" fill="#5d5548">Lee writes Davis</text>
+    </g>
+    <g transform="translate(498 382)">
+      <circle r="8" fill="#963b31" stroke="#fff" stroke-width="3"/>
+      <rect x="-171" y="-11" width="145" height="48" rx="8" fill="#fffaf0" stroke="#9b8d72" filter="url(#shadow)"/>
+      <text x="-157" y="10" font-size="17" font-weight="700" fill="#2e2b28">Leesburg</text>
+      <text x="-157" y="29" font-size="14" fill="#5d5548">Virginia staging area</text>
+    </g>
+    <g transform="translate(515 369)">
+      <circle r="10" fill="#f4c35a" stroke="#963b31" stroke-width="4"/>
+      <rect x="26" y="-19" width="186" height="58" rx="8" fill="#fffaf0" stroke="#9b8d72" filter="url(#shadow)"/>
+      <text x="40" y="4" font-size="17" font-weight="700" fill="#2e2b28">White’s Ford</text>
+      <text x="40" y="25" font-size="14" fill="#5d5548">Crossing begins Sept. 4</text>
+    </g>
+    <g transform="translate(512 191)">
+      <circle r="8" fill="#963b31" stroke="#fff" stroke-width="3"/>
+      <rect x="22" y="-27" width="176" height="52" rx="8" fill="#fffaf0" stroke="#9b8d72" filter="url(#shadow)"/>
+      <text x="36" y="-5" font-size="17" font-weight="700" fill="#2e2b28">Frederick</text>
+      <text x="36" y="15" font-size="14" fill="#5d5548">Army gathers by Sept. 7</text>
+    </g>
+    <g transform="translate(875 622)">
+      <circle r="9" fill="#315f8c" stroke="#fff" stroke-width="3"/>
+      <circle r="55" fill="none" stroke="#315f8c" stroke-width="5" stroke-dasharray="7 8" opacity="0.7"/>
+      <rect x="70" y="-33" width="164" height="61" rx="8" fill="#fffaf0" stroke="#9b8d72" filter="url(#shadow)"/>
+      <text x="84" y="-10" font-size="17" font-weight="700" fill="#2e2b28">Washington</text>
+      <text x="84" y="11" font-size="14" fill="#5d5548">Fortified Federal base</text>
+    </g>
+    <g transform="translate(245 222)">
+      <circle r="7" fill="#6b6256" stroke="#fff" stroke-width="2"/>
+      <rect x="-155" y="22" width="170" height="46" rx="8" fill="#fffaf0" stroke="#9b8d72" filter="url(#shadow)"/>
+      <text x="-141" y="43" font-size="17" font-weight="700" fill="#2e2b28">Harpers Ferry</text>
+      <text x="-141" y="61" font-size="14" fill="#5d5548">Federal garrison</text>
+    </g>
+    <g transform="translate(969 250)">
+      <circle r="7" fill="#6b6256" stroke="#fff" stroke-width="2"/>
+      <text x="15" y="6" font-size="17" font-weight="700" fill="#2e2b28">Baltimore</text>
+    </g>
+  </g>
+
+  <g transform="translate(67 625)" font-family="Arial, sans-serif">
+    <rect width="315" height="101" rx="10" fill="#fffaf0" stroke="#9b8d72" filter="url(#shadow)"/>
+    <path d="M20 27 H74" stroke="#963b31" stroke-width="9" marker-end="url(#redArrow)"/>
+    <text x="92" y="33" font-size="15" fill="#2e2b28">Army of Northern Virginia</text>
+    <path d="M20 68 H74" stroke="#315f8c" stroke-width="6" stroke-dasharray="12 8" marker-end="url(#blueArrow)"/>
+    <text x="92" y="74" font-size="15" fill="#2e2b28">Army of the Potomac pursuit</text>
+  </g>
+  <text x="1138" y="729" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#5d5548">Schematic · not to scale</text>
+</svg>

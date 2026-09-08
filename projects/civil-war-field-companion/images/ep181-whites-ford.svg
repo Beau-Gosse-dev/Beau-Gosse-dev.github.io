@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">The Potomac crossing at White's Ford, September 4, 1862</title>
+  <desc id="desc">Schematic local map showing Confederate columns approaching from Leesburg on the Virginia bank, wading north across White's Ford, crossing the Chesapeake and Ohio Canal corridor, and moving toward Poolesville and Frederick in Maryland.</desc>
+  <defs>
+    <linearGradient id="paper2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8f1df"/>
+      <stop offset="1" stop-color="#e9dec6"/>
+    </linearGradient>
+    <pattern id="water" width="32" height="18" patternUnits="userSpaceOnUse">
+      <path d="M0 9 Q8 2 16 9 T32 9" fill="none" stroke="#c5e0e9" stroke-width="3"/>
+    </pattern>
+    <marker id="arrow2" markerWidth="20" markerHeight="20" refX="18" refY="10" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 20 20">
+      <path d="M0 0 L20 10 L0 20 Z" fill="#963b31"/>
+    </marker>
+    <filter id="shadow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#paper2)"/>
+  <rect x="28" y="28" width="1144" height="744" rx="18" fill="none" stroke="#9b8d72" stroke-width="2"/>
+  <text x="60" y="78" font-family="Georgia, serif" font-size="32" font-weight="700" fill="#2e2b28">CROSSING THE POTOMAC AT WHITE’S FORD</text>
+  <text x="60" y="111" font-family="Arial, sans-serif" font-size="18" fill="#5d5548">Army of Northern Virginia · crossing begins September 4, 1862</text>
+
+  <path d="M48 127 H1152 V336 C1048 349 947 363 846 377 C724 394 627 403 516 397 C386 390 269 372 48 349 Z" fill="#dfe7ce"/>
+  <path d="M48 557 C226 531 369 520 499 525 C646 532 776 548 891 564 C1000 579 1081 583 1152 576 V744 H48 Z" fill="#ead5c4"/>
+  <path d="M48 349 C269 372 386 390 516 397 C627 403 724 394 846 377 C947 363 1048 349 1152 336 L1152 576 C1081 583 1000 579 891 564 C776 548 646 532 499 525 C369 520 226 531 48 557 Z" fill="#6fa6c2"/>
+  <path d="M48 349 C269 372 386 390 516 397 C627 403 724 394 846 377 C947 363 1048 349 1152 336 L1152 576 C1081 583 1000 579 891 564 C776 548 646 532 499 525 C369 520 226 531 48 557 Z" fill="url(#water)" opacity="0.85"/>
+  <text x="915" y="455" font-family="Georgia, serif" font-size="24" font-style="italic" fill="#173f59">Potomac River</text>
+  <text x="85" y="183" font-family="Georgia, serif" font-size="29" font-weight="700" fill="#667154" opacity="0.78">MARYLAND</text>
+  <text x="85" y="710" font-family="Georgia, serif" font-size="29" font-weight="700" fill="#895d52" opacity="0.78">VIRGINIA</text>
+
+  <path d="M48 297 C278 316 477 324 654 316 C846 307 1010 286 1152 270" fill="none" stroke="#5485a0" stroke-width="8"/>
+  <path d="M48 278 C274 293 471 301 653 294 C847 286 1004 265 1152 249" fill="none" stroke="#7d6c53" stroke-width="4" stroke-dasharray="14 8"/>
+  <text x="793" y="271" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#4a4339">Chesapeake &amp; Ohio Canal and towpath</text>
+
+  <path d="M256 716 C345 660 445 610 540 565 C584 544 610 522 621 496 C633 467 635 440 628 408 C622 376 632 349 663 313 C717 252 789 214 879 173" fill="none" stroke="#963b31" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow2)"/>
+  <path d="M352 730 C435 674 512 628 581 586 C625 558 653 529 666 501 C681 468 681 438 675 406 C670 376 681 348 711 318" fill="none" stroke="#b86858" stroke-width="8" stroke-linecap="round" stroke-dasharray="17 11" marker-end="url(#arrow2)" opacity="0.9"/>
+
+  <g font-family="Arial, sans-serif">
+    <g transform="translate(621 496)">
+      <ellipse rx="48" ry="23" fill="#f0d88c" opacity="0.75" stroke="#725a36" stroke-width="3"/>
+      <rect x="-102" y="-102" width="204" height="63" rx="9" fill="#fffaf0" stroke="#9b8d72" filter="url(#shadow2)"/>
+      <text x="0" y="-76" text-anchor="middle" font-size="19" font-weight="700" fill="#2e2b28">White’s Ford</text>
+      <text x="0" y="-53" text-anchor="middle" font-size="15" fill="#5d5548">Shallow river crossing</text>
+    </g>
+    <g transform="translate(256 716)">
+      <circle r="8" fill="#963b31" stroke="#fff" stroke-width="3"/>
+      <rect x="-3" y="-72" width="190" height="52" rx="8" fill="#fffaf0" stroke="#9b8d72" filter="url(#shadow2)"/>
+      <text x="12" y="-49" font-size="18" font-weight="700" fill="#2e2b28">Road from Leesburg</text>
+      <text x="12" y="-29" font-size="14" fill="#5d5548">Confederate approach</text>
+    </g>
+    <g transform="translate(879 173)">
+      <circle r="8" fill="#963b31" stroke="#fff" stroke-width="3"/>
+      <rect x="24" y="-30" width="206" height="61" rx="8" fill="#fffaf0" stroke="#9b8d72" filter="url(#shadow2)"/>
+      <text x="39" y="-7" font-size="18" font-weight="700" fill="#2e2b28">Toward Poolesville</text>
+      <text x="39" y="15" font-size="14" fill="#5d5548">Then northwest to Frederick</text>
+    </g>
+    <g transform="translate(100 440)">
+      <rect width="270" height="79" rx="10" fill="#fffaf0" stroke="#9b8d72" filter="url(#shadow2)"/>
+      <text x="18" y="28" font-size="16" font-weight="700" fill="#2e2b28">September 4–7</text>
+      <text x="18" y="51" font-size="15" fill="#5d5548">Infantry, cavalry, artillery,</text>
+      <text x="18" y="70" font-size="15" fill="#5d5548">wagons, horses, and mules cross.</text>
+    </g>
+  </g>
+
+  <g transform="translate(762 651)" font-family="Arial, sans-serif">
+    <rect width="363" height="74" rx="10" fill="#fffaf0" stroke="#9b8d72" filter="url(#shadow2)"/>
+    <path d="M19 27 H83" stroke="#963b31" stroke-width="10" marker-end="url(#arrow2)"/>
+    <text x="102" y="32" font-size="16" fill="#2e2b28">Main Confederate movement</text>
+    <path d="M19 55 H83" stroke="#b86858" stroke-width="7" stroke-dasharray="15 9" marker-end="url(#arrow2)"/>
+    <text x="102" y="61" font-size="16" fill="#2e2b28">Additional columns</text>
+  </g>
+  <text x="1138" y="749" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#5d5548">Schematic · not to scale · routes generalized</text>
+</svg>

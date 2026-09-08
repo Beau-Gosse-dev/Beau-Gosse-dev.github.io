@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Federal retreat from Manassas to the Washington defenses, August 30 to September 2, 1862</title>
+  <desc id="desc">Schematic map showing the Army of Virginia retreating east from Manassas through Centreville, past the Chantilly battlefield and Fairfax Court House, toward Washington and Alexandria, while Lee turns northwest toward Leesburg after the pursuit ends.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7f1df"/><stop offset="1" stop-color="#ddd1b2"/></linearGradient>
+    <marker id="blueArrow" markerWidth="18" markerHeight="14" refX="16" refY="7" orient="auto"><path d="M0 0 18 7 0 14Z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerWidth="18" markerHeight="14" refX="16" refY="7" orient="auto"><path d="M0 0 18 7 0 14Z" fill="#9a3d32"/></marker>
+  </defs>
+  <rect width="1200" height="800" fill="url(#paper)"/>
+  <text x="52" y="58" font-family="Georgia,serif" font-size="32" fill="#2f2a22">Retreat into the Washington defenses</text>
+  <text x="54" y="89" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="1.4" fill="#7b302a">AUGUST 30–SEPTEMBER 2, 1862 · SCHEMATIC · NOT TO SCALE</text>
+
+  <path d="M880 110 C842 185 856 251 895 317 C931 378 927 449 896 521 C874 574 892 644 953 728" fill="none" stroke="#6d93a7" stroke-width="42"/>
+  <path d="M880 110 C842 185 856 251 895 317 C931 378 927 449 896 521 C874 574 892 644 953 728" fill="none" stroke="#d8eef1" stroke-width="6"/>
+  <text x="914" y="443" transform="rotate(82 914 443)" font-family="Georgia,serif" font-size="21" fill="#315e72">Potomac River</text>
+  <path d="M915 195 C1025 217 1080 256 1165 327" fill="none" stroke="#6d93a7" stroke-width="18"/>
+  <text x="1000" y="176" font-family="Georgia,serif" font-size="16" fill="#315e72">Eastern Branch</text>
+
+  <g fill="none" stroke="#806c4f" stroke-linecap="round">
+    <path d="M95 637 C175 608 249 559 324 513 C392 472 455 445 526 431 C602 417 673 389 752 347 C798 323 835 303 878 285" stroke-width="11"/>
+    <path d="M445 438 C526 501 615 550 725 576 C786 591 838 612 895 652" stroke-width="8"/>
+    <path d="M515 424 C484 343 493 273 548 205 C597 145 669 118 753 105" stroke-width="7"/>
+  </g>
+  <text x="176" y="548" font-family="Arial,sans-serif" font-size="17" fill="#654f37">Warrenton Turnpike</text>
+  <text x="575" y="623" font-family="Arial,sans-serif" font-size="16" fill="#654f37">Little River Turnpike</text>
+  <text x="542" y="191" font-family="Arial,sans-serif" font-size="16" fill="#654f37">road toward Leesburg</text>
+
+  <path d="M118 620 C205 588 264 548 327 507 C393 464 455 443 523 431 C608 416 690 377 770 335 C809 315 842 300 870 286" fill="none" stroke="#315f8c" stroke-width="7" marker-end="url(#blueArrow)"/>
+  <path d="M458 448 C529 502 615 548 711 571 C785 588 842 617 886 649" fill="none" stroke="#315f8c" stroke-width="6" marker-end="url(#blueArrow)"/>
+  <path d="M145 664 C252 624 356 545 441 470 C477 438 495 412 507 383" fill="none" stroke="#9a3d32" stroke-width="7" stroke-dasharray="13 9"/>
+  <path d="M507 383 C485 322 501 259 548 206 C598 150 665 121 746 108" fill="none" stroke="#9a3d32" stroke-width="7" marker-end="url(#redArrow)"/>
+
+  <g font-family="Arial,sans-serif">
+    <circle cx="118" cy="620" r="10" fill="#111"/><text x="80" y="603" font-size="22" font-weight="700" fill="#262626">Manassas</text><text x="78" y="645" font-size="15" fill="#4b463d">Aug. 30 defeat</text>
+    <circle cx="327" cy="507" r="10" fill="#111"/><text x="270" y="491" font-size="21" font-weight="700" fill="#262626">Centreville</text><text x="348" y="526" font-size="15" fill="#4b463d">Aug. 31 position</text>
+    <circle cx="507" cy="430" r="11" fill="#111"/><text x="426" y="406" font-size="21" font-weight="700" fill="#262626">Chantilly / Ox Hill</text><text x="532" y="463" font-size="15" fill="#4b463d">Sept. 1 battle</text>
+    <circle cx="650" cy="401" r="9" fill="#111"/><text x="620" y="365" font-size="19" font-weight="700" fill="#262626">Fairfax C.H.</text>
+    <circle cx="869" cy="285" r="10" fill="#111"/><text x="902" y="278" font-size="23" font-weight="700" fill="#262626">Washington</text><text x="903" y="302" font-size="15" fill="#4b463d">fortified capital</text>
+    <circle cx="895" cy="652" r="10" fill="#111"/><text x="921" y="648" font-size="22" font-weight="700" fill="#262626">Alexandria</text>
+    <circle cx="751" cy="107" r="9" fill="#111"/><text x="775" y="112" font-size="21" font-weight="700" fill="#262626">Leesburg</text>
+  </g>
+
+  <g transform="translate(70 704)" font-family="Arial,sans-serif" font-size="16">
+    <line x1="0" y1="0" x2="62" y2="0" stroke="#315f8c" stroke-width="7" marker-end="url(#blueArrow)"/><text x="78" y="6" fill="#30302d">Pope’s army retreats toward the capital</text>
+    <line x1="424" y1="0" x2="486" y2="0" stroke="#9a3d32" stroke-width="7" stroke-dasharray="11 8" marker-end="url(#redArrow)"/><text x="506" y="6" fill="#30302d">Lee pursues, then turns toward Leesburg</text>
+  </g>
+</svg>

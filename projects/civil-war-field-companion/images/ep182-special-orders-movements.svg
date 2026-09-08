@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Special Orders No. 191 in motion, September 10–13, 1862</title>
+  <desc id="desc">Schematic operational map showing Jackson, Longstreet, McLaws, Walker, D. H. Hill, and Stuart moving from Frederick through western Maryland and around Harpers Ferry.</desc>
+  <defs>
+    <marker id="redArrow" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L18 9 L0 18 Z" fill="#9a3d32"/>
+    </marker>
+    <marker id="grayArrow" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L16 8 L0 16 Z" fill="#716b60"/>
+    </marker>
+    <style>
+      .place { font: 600 16px Georgia, serif; fill: #25231f; stroke: #fffaf0; stroke-width: 3px; paint-order: stroke; }
+      .minor { font: 13px Arial, sans-serif; fill: #4d4941; stroke: #fffaf0; stroke-width: 3px; paint-order: stroke; }
+      .route { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .tag { font: 700 13px Arial, sans-serif; letter-spacing: 0.3px; }
+    </style>
+  </defs>
+  <rect width="1200" height="800" fill="#f4eddd"/>
+  <rect x="24" y="22" width="1152" height="756" rx="18" fill="#fbf7ed" stroke="#b7a98d" stroke-width="2"/>
+  <text x="54" y="66" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#25231f">Special Orders No. 191 in motion</text>
+  <text x="55" y="94" font-family="Arial, sans-serif" font-size="16" fill="#5d574c">10–13 September 1862 • solid lines show major movements described in the episode</text>
+
+  <rect x="55" y="120" width="850" height="606" rx="12" fill="#efe5cf" stroke="#cabd9e"/>
+  <path d="M55 520 C180 487 274 524 368 497 C474 467 554 498 635 463 C728 423 808 440 905 398 L905 726 L55 726 Z" fill="#e2d3b7" opacity="0.78"/>
+  <text x="90" y="172" font-family="Georgia, serif" font-size="19" letter-spacing="4" fill="#7b725f">MARYLAND</text>
+  <text x="95" y="690" font-family="Georgia, serif" font-size="18" letter-spacing="4" fill="#7b725f">VIRGINIA</text>
+  <text x="185" y="445" font-family="Georgia, serif" font-size="17" letter-spacing="3" fill="#7b725f">WEST VIRGINIA</text>
+
+  <path d="M62 526 C176 495 266 529 366 503 C478 474 556 505 643 468 C730 431 816 440 896 401" fill="none" stroke="#6693aa" stroke-width="17" opacity="0.85"/>
+  <path d="M62 526 C176 495 266 529 366 503 C478 474 556 505 643 468 C730 431 816 440 896 401" fill="none" stroke="#d9edf3" stroke-width="7"/>
+  <path d="M415 570 C405 603 415 641 448 708" fill="none" stroke="#6693aa" stroke-width="14" opacity="0.85"/>
+  <path d="M415 570 C405 603 415 641 448 708" fill="none" stroke="#d9edf3" stroke-width="6"/>
+  <text x="230" y="538" class="minor" fill="#315f8c" transform="rotate(-5 230 538)">Potomac River</text>
+  <text x="426" y="628" class="minor" fill="#315f8c" transform="rotate(67 426 628)">Shenandoah R.</text>
+
+  <path d="M626 120 L650 726" stroke="#c6ad77" stroke-width="54" opacity="0.27"/>
+  <path d="M548 120 L569 726" stroke="#a9905f" stroke-width="62" opacity="0.30"/>
+  <text x="620" y="285" class="minor" transform="rotate(-88 620 285)">Catoctin Mountain</text>
+  <text x="542" y="288" class="minor" transform="rotate(-88 542 288)">South Mountain</text>
+
+  <!-- Longstreet and Lee: Frederick to Hagerstown -->
+  <path d="M821 393 C745 373 688 357 650 350 C610 343 573 330 528 310 C505 267 487 215 468 158" class="route" stroke="#9a3d32" stroke-width="8" marker-end="url(#redArrow)"/>
+  <rect x="570" y="267" width="154" height="30" rx="7" fill="#fff7f0" stroke="#9a3d32"/>
+  <text x="647" y="287" text-anchor="middle" class="tag" fill="#7e3028">LONGSTREET + LEE</text>
+
+  <!-- Jackson: Frederick to Williamsport, Martinsburg, Bolivar Heights -->
+  <path d="M821 407 C741 392 691 378 650 365 C608 351 565 334 528 318 C462 271 386 215 313 163 C280 220 255 279 257 352 C303 431 363 506 411 577" class="route" stroke="#b55245" stroke-width="7" marker-end="url(#redArrow)"/>
+  <rect x="324" y="210" width="92" height="29" rx="7" fill="#fff7f0" stroke="#9a3d32"/>
+  <text x="370" y="230" text-anchor="middle" class="tag" fill="#7e3028">JACKSON</text>
+
+  <!-- McLaws: Frederick to Maryland Heights -->
+  <path d="M815 418 C747 403 696 391 650 378 C620 409 595 449 568 478 C531 506 490 534 446 555" class="route" stroke="#8c3c32" stroke-width="6" marker-end="url(#redArrow)"/>
+  <rect x="551" y="430" width="91" height="28" rx="7" fill="#fff7f0" stroke="#9a3d32"/>
+  <text x="597" y="449" text-anchor="middle" class="tag" fill="#7e3028">McLAWS</text>
+
+  <!-- Walker: Frederick to Point of Rocks and Loudoun Heights -->
+  <path d="M824 430 C779 464 733 514 682 588 C621 626 549 647 462 620" class="route" stroke="#a4473b" stroke-width="6" marker-end="url(#redArrow)"/>
+  <rect x="679" y="519" width="91" height="28" rx="7" fill="#fff7f2" stroke="#9a3d32"/>
+  <text x="725" y="538" text-anchor="middle" class="tag" fill="#7e3028">WALKER</text>
+
+  <!-- D. H. Hill rear guard -->
+  <path d="M812 385 C746 365 696 346 654 335 C615 322 573 308 537 294" class="route" stroke="#716b60" stroke-width="5" stroke-dasharray="9 8" marker-end="url(#grayArrow)"/>
+  <rect x="720" y="327" width="112" height="28" rx="7" fill="#f6f2e9" stroke="#716b60"/>
+  <text x="776" y="346" text-anchor="middle" class="tag" fill="#555046">D. H. HILL</text>
+
+  <!-- Stuart screen -->
+  <path d="M850 300 C887 346 888 442 855 496" class="route" stroke="#716b60" stroke-width="4" stroke-dasharray="7 7" marker-end="url(#grayArrow)"/>
+  <text x="867" y="382" class="tag" fill="#555046" transform="rotate(77 867 382)">STUART SCREEN</text>
+
+  <g>
+    <circle cx="821" cy="407" r="7" fill="#25231f" stroke="#fffaf0" stroke-width="3"/>
+    <text x="786" y="383" class="place">Frederick</text>
+    <text x="789" y="448" class="minor">order issued • 9 Sep</text>
+
+    <circle cx="650" cy="365" r="6" fill="#25231f" stroke="#fffaf0" stroke-width="3"/>
+    <text x="661" y="389" class="place">Middletown</text>
+
+    <circle cx="528" cy="318" r="6" fill="#25231f" stroke="#fffaf0" stroke-width="3"/>
+    <text x="455" y="347" class="place">Boonsboro</text>
+
+    <circle cx="468" cy="158" r="6" fill="#25231f" stroke="#fffaf0" stroke-width="3"/>
+    <text x="425" y="141" class="place">Hagerstown</text>
+
+    <circle cx="313" cy="163" r="6" fill="#25231f" stroke="#fffaf0" stroke-width="3"/>
+    <text x="257" y="141" class="place">Williamsport</text>
+
+    <circle cx="257" cy="352" r="6" fill="#25231f" stroke="#fffaf0" stroke-width="3"/>
+    <text x="177" y="339" class="place">Martinsburg</text>
+    <text x="178" y="373" class="minor">garrison left • 12 Sep</text>
+
+    <circle cx="418" cy="585" r="7" fill="#25231f" stroke="#fffaf0" stroke-width="3"/>
+    <text x="333" y="580" class="place">Harpers Ferry</text>
+    <text x="330" y="606" class="minor">surrounded • 13 Sep</text>
+
+    <circle cx="446" cy="555" r="5" fill="#7e3028" stroke="#fffaf0" stroke-width="2"/>
+    <text x="456" y="542" class="minor">Maryland Heights</text>
+
+    <circle cx="462" cy="620" r="5" fill="#7e3028" stroke="#fffaf0" stroke-width="2"/>
+    <text x="473" y="640" class="minor">Loudoun Heights</text>
+
+    <circle cx="682" cy="588" r="5" fill="#25231f" stroke="#fffaf0" stroke-width="2"/>
+    <text x="691" y="611" class="minor">Point of Rocks</text>
+
+    <circle cx="411" cy="577" r="5" fill="#7e3028" stroke="#fffaf0" stroke-width="2"/>
+    <text x="336" y="556" class="minor">Bolivar Heights</text>
+  </g>
+
+  <rect x="931" y="120" width="216" height="606" rx="12" fill="#fffdf7" stroke="#cabd9e"/>
+  <text x="953" y="158" font-family="Georgia, serif" font-size="20" font-weight="700" fill="#25231f">The assignments</text>
+  <text x="953" y="193" class="tag" fill="#7e3028">JACKSON</text>
+  <text x="953" y="214" class="minor">Martinsburg, then</text>
+  <text x="953" y="233" class="minor">Harpers Ferry</text>
+
+  <text x="953" y="273" class="tag" fill="#7e3028">LONGSTREET + LEE</text>
+  <text x="953" y="294" class="minor">Boonsboro; later</text>
+  <text x="953" y="313" class="minor">continued to Hagerstown</text>
+
+  <text x="953" y="353" class="tag" fill="#7e3028">McLAWS</text>
+  <text x="953" y="374" class="minor">Maryland Heights</text>
+
+  <text x="953" y="414" class="tag" fill="#7e3028">WALKER</text>
+  <text x="953" y="435" class="minor">Loudoun Heights</text>
+
+  <text x="953" y="475" class="tag" fill="#555046">D. H. HILL</text>
+  <text x="953" y="496" class="minor">Rear guard at Boonsboro</text>
+
+  <text x="953" y="536" class="tag" fill="#555046">STUART</text>
+  <text x="953" y="557" class="minor">Screen the routes and</text>
+  <text x="953" y="576" class="minor">watch McClellan</text>
+
+  <rect x="951" y="604" width="176" height="101" rx="8" fill="#f6f2e9" stroke="#a79d89"/>
+  <text x="965" y="628" class="tag" fill="#555046">AFTER CAPTURE</text>
+  <text x="965" y="651" class="minor">Jackson, McLaws, and Walker</text>
+  <text x="965" y="671" class="minor">were to rejoin at Boonsboro</text>
+  <text x="965" y="691" class="minor">or Hagerstown.</text>
+
+  <text x="55" y="754" font-family="Arial, sans-serif" font-size="13" fill="#6b655a">Sources: U.S. Army Center of Military History, National Park Service, Carman maps, Special Orders No. 191, and episode transcript.</text>
+</svg>
