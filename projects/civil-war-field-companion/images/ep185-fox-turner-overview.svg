@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Fox's Gap and Turner's Gap on the afternoon of September 14, 1862</title>
+  <desc id="desc">Schematic map with north at top. South Mountain runs north to south between Boonsboro on the west and Middletown and Bolivar on the east. United States Ninth Corps arrows approach Fox's Gap on the Old Sharpsburg Road, while First Corps arrows approach Turner's and Frosttown Gaps north of the National Road. Confederate reinforcements approach from Boonsboro and Hagerstown.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8f1df"/>
+      <stop offset="1" stop-color="#e9ddc4"/>
+    </linearGradient>
+    <linearGradient id="mountain" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8e866f"/>
+      <stop offset="0.48" stop-color="#5f684f"/>
+      <stop offset="1" stop-color="#8e866f"/>
+    </linearGradient>
+    <marker id="blueArrow" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 18 18">
+      <path d="M0 0L18 9L0 18Z" fill="#315f8c"/>
+    </marker>
+    <marker id="redArrow" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 18 18">
+      <path d="M0 0L18 9L0 18Z" fill="#963b31"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+    <pattern id="trees" width="38" height="34" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="18" r="8" fill="#536248" opacity="0.34"/>
+      <circle cx="24" cy="11" r="7" fill="#6a7557" opacity="0.3"/>
+      <circle cx="31" cy="27" r="6" fill="#485a43" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#paper)"/>
+  <rect x="28" y="28" width="1144" height="744" rx="18" fill="none" stroke="#9b8d72" stroke-width="2"/>
+  <text x="60" y="77" font-family="Georgia, serif" font-size="32" font-weight="700" fill="#2e2b28">SOUTH MOUNTAIN: THE AFTERNOON FIGHT</text>
+  <text x="60" y="108" font-family="Arial, sans-serif" font-size="18" fill="#5d5548">Fox's, Turner's, and Frosttown Gaps · September 14, 1862</text>
+
+  <rect x="48" y="127" width="1104" height="617" fill="#e9e5cb"/>
+  <path d="M447 127C421 188 461 242 428 304C402 353 431 402 409 462C384 528 425 593 395 661C383 690 388 718 399 744H676C654 688 682 625 650 568C622 518 659 461 637 404C613 343 647 288 620 225C602 183 618 151 632 127Z" fill="url(#mountain)" opacity="0.92"/>
+  <path d="M447 127C421 188 461 242 428 304C402 353 431 402 409 462C384 528 425 593 395 661C383 690 388 718 399 744H676C654 688 682 625 650 568C622 518 659 461 637 404C613 343 647 288 620 225C602 183 618 151 632 127Z" fill="url(#trees)"/>
+  <path d="M535 127C521 190 547 239 519 301C497 351 523 403 501 466C482 522 511 589 489 650C478 683 483 718 490 744" fill="none" stroke="#d9cfb4" stroke-width="7" stroke-dasharray="10 12" opacity="0.74"/>
+  <text x="520" y="470" transform="rotate(-87 520 470)" font-family="Georgia, serif" font-size="27" font-weight="700" letter-spacing="4" fill="#f4ead5" opacity="0.86">SOUTH MOUNTAIN</text>
+
+  <path d="M83 363C270 361 402 366 529 371C685 377 838 365 1114 354" fill="none" stroke="#b78a52" stroke-width="18"/>
+  <path d="M83 363C270 361 402 366 529 371C685 377 838 365 1114 354" fill="none" stroke="#f6e0ae" stroke-width="7"/>
+  <text x="810" y="339" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#6b5337">NATIONAL ROAD</text>
+
+  <path d="M126 697C244 641 345 587 472 532C520 512 552 493 579 458" fill="none" stroke="#a8734e" stroke-width="14"/>
+  <path d="M126 697C244 641 345 587 472 532C520 512 552 493 579 458" fill="none" stroke="#f3d5a9" stroke-width="5"/>
+  <path d="M579 458C687 486 794 528 930 606" fill="none" stroke="#a8734e" stroke-width="14"/>
+  <path d="M579 458C687 486 794 528 930 606" fill="none" stroke="#f3d5a9" stroke-width="5"/>
+  <text x="342" y="585" transform="rotate(-27 342 585)" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#6b5337">OLD SHARPSBURG ROAD</text>
+
+  <path d="M545 235C676 222 799 201 947 170" fill="none" stroke="#9a744e" stroke-width="11"/>
+  <path d="M545 235C676 222 799 201 947 170" fill="none" stroke="#ecd3a8" stroke-width="4"/>
+  <text x="733" y="201" transform="rotate(-10 733 201)" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#6b5337">FROSTTOWN ROAD</text>
+
+  <g font-family="Arial, sans-serif" filter="url(#shadow)">
+    <g transform="translate(525 236)">
+      <circle r="10" fill="#f4c35a" stroke="#2e2b28" stroke-width="3"/>
+      <rect x="-146" y="-52" width="128" height="41" rx="7" fill="#fffaf0" stroke="#877b65"/>
+      <text x="-132" y="-26" font-size="17" font-weight="700" fill="#2e2b28">Frosttown Gap</text>
+    </g>
+    <g transform="translate(535 371)">
+      <circle r="11" fill="#f4c35a" stroke="#2e2b28" stroke-width="3"/>
+      <rect x="20" y="-52" width="147" height="43" rx="7" fill="#fffaf0" stroke="#877b65"/>
+      <text x="34" y="-25" font-size="17" font-weight="700" fill="#2e2b28">Turner's Gap</text>
+    </g>
+    <g transform="translate(579 458)">
+      <circle r="11" fill="#f4c35a" stroke="#2e2b28" stroke-width="3"/>
+      <rect x="20" y="18" width="125" height="43" rx="7" fill="#fffaf0" stroke="#877b65"/>
+      <text x="34" y="45" font-size="17" font-weight="700" fill="#2e2b28">Fox's Gap</text>
+    </g>
+    <g transform="translate(173 346)">
+      <circle r="8" fill="#6b6256" stroke="#fff" stroke-width="3"/>
+      <rect x="-63" y="66" width="126" height="39" rx="7" fill="#fffaf0" stroke="#877b65"/>
+      <text x="0" y="92" text-anchor="middle" font-size="17" font-weight="700" fill="#2e2b28">Boonsboro</text>
+    </g>
+    <g transform="translate(1011 353)">
+      <circle r="8" fill="#6b6256" stroke="#fff" stroke-width="3"/>
+      <rect x="-51" y="20" width="110" height="39" rx="7" fill="#fffaf0" stroke="#877b65"/>
+      <text x="4" y="46" text-anchor="middle" font-size="17" font-weight="700" fill="#2e2b28">Bolivar</text>
+    </g>
+    <g transform="translate(1044 575)">
+      <circle r="8" fill="#6b6256" stroke="#fff" stroke-width="3"/>
+      <rect x="-70" y="20" width="140" height="39" rx="7" fill="#fffaf0" stroke="#877b65"/>
+      <text x="0" y="46" text-anchor="middle" font-size="17" font-weight="700" fill="#2e2b28">Middletown</text>
+    </g>
+  </g>
+
+  <path d="M1008 559C889 526 774 495 630 463" fill="none" stroke="#315f8c" stroke-width="12" stroke-linecap="round" marker-end="url(#blueArrow)"/>
+  <text x="794" y="550" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#244c73">IX Corps</text>
+  <text x="764" y="574" font-family="Arial, sans-serif" font-size="15" fill="#244c73">Cox · Willcox · Sturgis</text>
+
+  <path d="M958 331C830 310 704 284 579 248" fill="none" stroke="#315f8c" stroke-width="12" stroke-linecap="round" marker-end="url(#blueArrow)"/>
+  <path d="M951 341C825 349 714 353 588 365" fill="none" stroke="#315f8c" stroke-width="9" stroke-linecap="round" marker-end="url(#blueArrow)" opacity="0.9"/>
+  <text x="790" y="271" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#244c73">I Corps</text>
+  <text x="753" y="295" font-family="Arial, sans-serif" font-size="15" fill="#244c73">Meade · Hatch · Ricketts</text>
+
+  <path d="M168 310C295 286 398 270 492 251" fill="none" stroke="#963b31" stroke-width="9" stroke-linecap="round" marker-end="url(#redArrow)"/>
+  <path d="M183 385C314 401 422 426 537 453" fill="none" stroke="#963b31" stroke-width="11" stroke-linecap="round" marker-end="url(#redArrow)"/>
+  <text x="216" y="264" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#7a3029">Longstreet's reinforcements</text>
+  <text x="230" y="425" font-family="Arial, sans-serif" font-size="15" fill="#7a3029">D. R. Jones · Hood</text>
+
+  <path d="M552 431C611 412 656 420 698 449" fill="none" stroke="#963b31" stroke-width="7" stroke-dasharray="13 9" stroke-linecap="round" marker-end="url(#redArrow)"/>
+  <path d="M700 449C663 476 622 481 589 467" fill="none" stroke="#963b31" stroke-width="7" stroke-dasharray="13 9" stroke-linecap="round" marker-end="url(#redArrow)"/>
+  <text x="665" y="402" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#7a3029">planned counterattack</text>
+  <text x="683" y="421" font-family="Arial, sans-serif" font-size="14" fill="#7a3029">never coordinated</text>
+
+  <g transform="translate(67 615)" font-family="Arial, sans-serif">
+    <rect width="330" height="111" rx="10" fill="#fffaf0" stroke="#877b65" filter="url(#shadow)"/>
+    <path d="M20 29H80" stroke="#315f8c" stroke-width="9" marker-end="url(#blueArrow)"/>
+    <text x="99" y="35" font-size="15" fill="#2e2b28">United States advance</text>
+    <path d="M20 72H80" stroke="#963b31" stroke-width="9" marker-end="url(#redArrow)"/>
+    <text x="99" y="78" font-size="15" fill="#2e2b28">Confederate movement</text>
+  </g>
+  <g transform="translate(1084 154)" font-family="Arial, sans-serif">
+    <path d="M0 60V0" stroke="#2e2b28" stroke-width="4"/>
+    <path d="M0 0L-10 20H10Z" fill="#2e2b28"/>
+    <text x="0" y="86" text-anchor="middle" font-size="17" font-weight="700" fill="#2e2b28">N</text>
+  </g>
+  <text x="1129" y="724" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#5d5548">Schematic · not to scale</text>
+</svg>
