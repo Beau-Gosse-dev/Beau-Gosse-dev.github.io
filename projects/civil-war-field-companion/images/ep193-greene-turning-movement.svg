@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">George S. Greene turns the Confederate line at Antietam, about 8 to 9 a.m.</title>
+  <desc id="desc">Schematic tactical map with north at top. Gordon fights Colquitt from Miller's pasture. Tyndale pivots west from the East Woods into Colquitt's flank, while Stainrook makes a wider turning movement toward the Mumma farm. McRae retreats from the East Woods, Stephen D. Lee withdraws from the Dunker Church plateau, and the 125th Pennsylvania crosses the turnpike near the church.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#faf3e3"/>
+      <stop offset="1" stop-color="#e8dcc3"/>
+    </linearGradient>
+    <pattern id="trees" width="34" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="8" cy="17" r="8" fill="#43543d" opacity="0.55"/>
+      <circle cx="21" cy="9" r="7" fill="#667257" opacity="0.53"/>
+      <circle cx="29" cy="25" r="6" fill="#354834" opacity="0.48"/>
+    </pattern>
+    <pattern id="corn" width="20" height="28" patternUnits="userSpaceOnUse">
+      <path d="M10 27V5M10 11L4 7M10 15L16 9M10 20L4 15" fill="none" stroke="#87691f" stroke-width="2" opacity="0.7"/>
+    </pattern>
+    <pattern id="furrow" width="26" height="26" patternUnits="userSpaceOnUse" patternTransform="rotate(18)">
+      <line x1="0" y1="0" x2="0" y2="26" stroke="#987c57" stroke-width="3" opacity="0.4"/>
+    </pattern>
+    <marker id="blueArrow" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 16 16">
+      <path d="M0 0L16 8L0 16Z" fill="#315f8c"/>
+    </marker>
+    <marker id="redArrow" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 16 16">
+      <path d="M0 0L16 8L0 16Z" fill="#963b31"/>
+    </marker>
+    <marker id="redRetreat" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 16 16">
+      <path d="M0 0L16 8L0 16Z" fill="#963b31" opacity="0.76"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#paper)"/>
+  <rect x="28" y="28" width="1144" height="744" rx="18" fill="none" stroke="#97896f" stroke-width="2"/>
+  <text x="60" y="77" font-family="Georgia, serif" font-size="32" font-weight="700" fill="#2f2b27">GREENE TURNS THE CONFEDERATE LINE</text>
+  <text x="60" y="108" font-family="Arial, sans-serif" font-size="18" fill="#5c5549">The East Woods, Cornfield, and Dunker Church plateau · approximately 8–9 a.m.</text>
+  <rect x="48" y="128" width="1104" height="613" fill="#e8e5ce"/>
+
+  <g transform="translate(1090 158)" font-family="Arial, sans-serif" fill="#2f2b27">
+    <path d="M0 48V0M0 0L-9 18M0 0L9 18" fill="none" stroke="#2f2b27" stroke-width="3"/>
+    <text x="0" y="-9" text-anchor="middle" font-size="18" font-weight="700">N</text>
+  </g>
+
+  <path d="M438 128C442 249 444 371 449 495C452 588 457 670 460 741" fill="none" stroke="#a97849" stroke-width="17"/>
+  <path d="M438 128C442 249 444 371 449 495C452 588 457 670 460 741" fill="none" stroke="#f1d7a6" stroke-width="6"/>
+  <path d="M460 657C576 570 671 472 778 361C872 262 959 189 1052 139" fill="none" stroke="#a97849" stroke-width="14"/>
+  <path d="M460 657C576 570 671 472 778 361C872 262 959 189 1052 139" fill="none" stroke="#f1d7a6" stroke-width="5"/>
+  <rect x="818" y="279" width="165" height="29" rx="6" fill="#fffaf0" opacity="0.94"/>
+  <text x="900" y="299" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#6b4d31">SMOKETOWN ROAD</text>
+
+  <path d="M249 337Q317 303 435 329L445 683L262 684Q239 612 256 535Q278 458 240 407Q230 368 249 337Z" fill="#647158"/>
+  <path d="M249 337Q317 303 435 329L445 683L262 684Q239 612 256 535Q278 458 240 407Q230 368 249 337Z" fill="url(#trees)"/>
+  <rect x="272" y="512" width="140" height="33" rx="7" fill="#fffaf0" opacity="0.88"/>
+  <text x="342" y="535" text-anchor="middle" font-family="Georgia, serif" font-size="18" font-weight="700" fill="#384535">WEST WOODS</text>
+
+  <path d="M743 318Q836 286 950 335Q982 405 957 483Q940 548 875 624L719 596Q752 526 720 469Q705 390 743 318Z" fill="#647158"/>
+  <path d="M743 318Q836 286 950 335Q982 405 957 483Q940 548 875 624L719 596Q752 526 720 469Q705 390 743 318Z" fill="url(#trees)"/>
+  <rect x="789" y="468" width="140" height="33" rx="7" fill="#fffaf0" opacity="0.88"/>
+  <text x="859" y="491" text-anchor="middle" font-family="Georgia, serif" font-size="18" font-weight="700" fill="#384535">EAST WOODS</text>
+
+  <path d="M470 294Q587 272 713 307L723 523Q601 558 477 526Z" fill="#d3bf63" stroke="#a58b36" stroke-width="3"/>
+  <path d="M470 294Q587 272 713 307L723 523Q601 558 477 526Z" fill="url(#corn)"/>
+  <rect x="522" y="389" width="124" height="55" rx="8" fill="#fff8df" opacity="0.91"/>
+  <text x="584" y="411" text-anchor="middle" font-family="Georgia, serif" font-size="17" font-weight="700" fill="#66501f">MILLER’S</text>
+  <text x="584" y="433" text-anchor="middle" font-family="Georgia, serif" font-size="17" font-weight="700" fill="#66501f">CORNFIELD</text>
+
+  <path d="M713 545Q803 521 911 560L883 679Q788 688 695 649Z" fill="#ad916d" opacity="0.45"/>
+  <path d="M713 545Q803 521 911 560L883 679Q788 688 695 649Z" fill="url(#furrow)"/>
+  <rect x="751" y="620" width="132" height="29" rx="6" fill="#fffaf0" opacity="0.92"/>
+  <text x="817" y="640" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#685442">MUMMA FARM</text>
+
+  <g transform="translate(459 642)" filter="url(#shadow)">
+    <rect x="-15" y="-13" width="30" height="28" fill="#f7f1df" stroke="#4b4540" stroke-width="2"/>
+    <path d="M-19-13L0-28L19-13Z" fill="#60564c"/>
+    <rect x="-5" y="2" width="10" height="13" fill="#776b5c"/>
+  </g>
+  <rect x="280" y="690" width="165" height="29" rx="6" fill="#fffaf0" opacity="0.94"/>
+  <text x="362" y="711" text-anchor="middle" font-family="Georgia, serif" font-size="17" font-weight="700" fill="#342f2b">DUNKER CHURCH</text>
+
+  <g transform="translate(458 450) rotate(-90)">
+    <rect x="-91" y="-14" width="182" height="28" rx="6" fill="#fffaf0" stroke="#d3bea0" stroke-width="1" opacity="0.97"/>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#6b4d31">HAGERSTOWN TURNPIKE</text>
+  </g>
+
+  <path d="M580 195C584 239 586 276 585 310" fill="none" stroke="#315f8c" stroke-width="11" stroke-linecap="round" marker-end="url(#blueArrow)"/>
+  <path d="M860 334C824 357 779 383 708 406" fill="none" stroke="#315f8c" stroke-width="13" stroke-linecap="round" marker-end="url(#blueArrow)"/>
+  <path d="M924 526C867 552 809 578 742 608" fill="none" stroke="#315f8c" stroke-width="12" stroke-linecap="round" marker-end="url(#blueArrow)"/>
+  <path d="M512 612C494 619 476 628 462 638" fill="none" stroke="#315f8c" stroke-width="11" stroke-linecap="round" marker-end="url(#blueArrow)"/>
+
+  <path d="M603 554C602 522 600 492 598 464" fill="none" stroke="#963b31" stroke-width="10" stroke-linecap="round" marker-end="url(#redArrow)"/>
+  <path d="M842 438C913 477 970 526 1016 583" fill="none" stroke="#963b31" stroke-width="10" stroke-dasharray="15 10" stroke-linecap="round" marker-end="url(#redRetreat)" opacity="0.78"/>
+  <path d="M590 638C545 646 509 651 482 652" fill="none" stroke="#963b31" stroke-width="10" stroke-dasharray="15 10" stroke-linecap="round" marker-end="url(#redRetreat)" opacity="0.78"/>
+
+  <g font-family="Arial, sans-serif" filter="url(#shadow)">
+    <g transform="translate(580 206)">
+      <rect x="-66" y="-22" width="132" height="44" rx="8" fill="#315f8c"/>
+      <text x="0" y="5" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">GORDON</text>
+    </g>
+    <g transform="translate(870 350)">
+      <rect x="-72" y="-24" width="144" height="48" rx="8" fill="#315f8c"/>
+      <text x="0" y="-2" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">TYNDALE</text>
+      <text x="0" y="17" text-anchor="middle" font-size="12" fill="#e4eef7">pivots west</text>
+    </g>
+    <g transform="translate(947 523)">
+      <rect x="-78" y="-24" width="156" height="48" rx="8" fill="#315f8c"/>
+      <text x="0" y="-2" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">STAINROOK</text>
+      <text x="0" y="17" text-anchor="middle" font-size="12" fill="#e4eef7">wider turn</text>
+    </g>
+    <g transform="translate(536 590)">
+      <rect x="-72" y="-24" width="144" height="48" rx="8" fill="#315f8c"/>
+      <text x="0" y="-2" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">125th PA.</text>
+      <text x="0" y="17" text-anchor="middle" font-size="12" fill="#e4eef7">toward church</text>
+    </g>
+
+    <g transform="translate(610 520)">
+      <rect x="-67" y="-22" width="134" height="44" rx="8" fill="#963b31"/>
+      <text x="0" y="5" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">COLQUITT</text>
+    </g>
+    <g transform="translate(850 424)">
+      <rect x="-58" y="-22" width="116" height="44" rx="8" fill="#963b31"/>
+      <text x="0" y="5" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">McRAE</text>
+    </g>
+    <g transform="translate(614 650)">
+      <rect x="-78" y="-22" width="156" height="44" rx="8" fill="#963b31"/>
+      <text x="0" y="5" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">S. D. LEE’S GUNS</text>
+    </g>
+  </g>
+
+  <g transform="translate(1074 682)" font-family="Arial, sans-serif">
+    <rect x="-174" y="-64" width="188" height="112" rx="10" fill="#fffaf0" stroke="#93846d" stroke-width="2" opacity="0.96"/>
+    <line x1="-153" y1="-36" x2="-120" y2="-36" stroke="#315f8c" stroke-width="8" marker-end="url(#blueArrow)"/>
+    <text x="-103" y="-31" font-size="14" fill="#2f2b27">Federal attack</text>
+    <line x1="-153" y1="2" x2="-120" y2="2" stroke="#963b31" stroke-width="7" stroke-dasharray="10 7" marker-end="url(#redRetreat)"/>
+    <text x="-103" y="7" font-size="14" fill="#2f2b27">Confed. retreat</text>
+    <text x="-153" y="38" font-size="12" font-style="italic" fill="#5c5549">Schematic · not to scale</text>
+  </g>
+</svg>

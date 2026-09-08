@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Hood's division counterattacks through Miller's Cornfield, about 7 to 7:30 a.m.</title>
+  <desc id="desc">Schematic tactical map with north at top. Hood's two brigades advance north from the West Woods and Dunker Church area on a broad front. Wofford moves through the western Cornfield against Gibbon and Patrick while Law advances through the eastern Cornfield and toward the East Woods against Ricketts and Meade. Battery B fires canister beside the Hagerstown Turnpike. The First Texas reaches the north edge of the Cornfield and suffers catastrophic losses before Hood's attack stalls.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#faf3e3"/>
+      <stop offset="1" stop-color="#e8dcc3"/>
+    </linearGradient>
+    <pattern id="trees" width="34" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="8" cy="17" r="8" fill="#43543d" opacity="0.55"/>
+      <circle cx="21" cy="9" r="7" fill="#667257" opacity="0.53"/>
+      <circle cx="29" cy="25" r="6" fill="#354834" opacity="0.48"/>
+    </pattern>
+    <pattern id="corn" width="20" height="28" patternUnits="userSpaceOnUse">
+      <path d="M10 27V5M10 11L4 7M10 15L16 9M10 20L4 15" fill="none" stroke="#87691f" stroke-width="2" opacity="0.7"/>
+    </pattern>
+    <marker id="blueArrow" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 16 16">
+      <path d="M0 0L16 8L0 16Z" fill="#315f8c"/>
+    </marker>
+    <marker id="redArrow" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 16 16">
+      <path d="M0 0L16 8L0 16Z" fill="#963b31"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#paper)"/>
+  <rect x="28" y="28" width="1144" height="744" rx="18" fill="none" stroke="#97896f" stroke-width="2"/>
+  <text x="60" y="77" font-family="Georgia, serif" font-size="32" font-weight="700" fill="#2f2b27">HOOD’S COUNTERATTACK</text>
+  <text x="60" y="108" font-family="Arial, sans-serif" font-size="18" fill="#5c5549">The Cornfield and Hagerstown Turnpike · approximately 7–7:30 a.m.</text>
+  <rect x="48" y="128" width="1104" height="613" fill="#e8e5ce"/>
+
+  <g transform="translate(1086 154)" font-family="Arial, sans-serif" fill="#2f2b27">
+    <path d="M0 48V0M0 0L-9 18M0 0L9 18" fill="none" stroke="#2f2b27" stroke-width="3"/>
+    <text x="0" y="-9" text-anchor="middle" font-size="18" font-weight="700">N</text>
+  </g>
+
+  <path d="M510 128C508 260 514 377 516 497C520 594 517 671 520 741" fill="none" stroke="#a97849" stroke-width="18"/>
+  <path d="M510 128C508 260 514 377 516 497C520 594 517 671 520 741" fill="none" stroke="#f1d7a6" stroke-width="6"/>
+  <g transform="translate(541 447) rotate(-89)">
+    <rect x="-94" y="-14" width="188" height="28" rx="6" fill="#fffaf0" opacity="0.94"/>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#6b4d31">HAGERSTOWN TURNPIKE</text>
+  </g>
+
+  <path d="M93 294Q226 273 467 307L488 741H92Q65 646 87 560Q110 477 75 414Q60 339 93 294Z" fill="#647158"/>
+  <path d="M93 294Q226 273 467 307L488 741H92Q65 646 87 560Q110 477 75 414Q60 339 93 294Z" fill="url(#trees)"/>
+  <rect x="183" y="545" width="153" height="34" rx="7" fill="#fffaf0" opacity="0.88"/>
+  <text x="259" y="568" text-anchor="middle" font-family="Georgia, serif" font-size="18" font-weight="700" fill="#384535">WEST WOODS</text>
+
+  <path d="M833 343Q937 301 1055 344Q1094 414 1067 493Q1049 561 975 640L817 611Q842 540 810 470Q785 397 833 343Z" fill="#647158"/>
+  <path d="M833 343Q937 301 1055 344Q1094 414 1067 493Q1049 561 975 640L817 611Q842 540 810 470Q785 397 833 343Z" fill="url(#trees)"/>
+  <rect x="892" y="501" width="141" height="34" rx="7" fill="#fffaf0" opacity="0.88"/>
+  <text x="962" y="524" text-anchor="middle" font-family="Georgia, serif" font-size="18" font-weight="700" fill="#384535">EAST WOODS</text>
+
+  <path d="M548 285Q676 257 813 300L825 544Q688 573 557 531Z" fill="#d3bf63" stroke="#a58b36" stroke-width="3"/>
+  <path d="M548 285Q676 257 813 300L825 544Q688 573 557 531Z" fill="url(#corn)"/>
+  <rect x="650" y="389" width="133" height="56" rx="8" fill="#fff8df" opacity="0.92"/>
+  <text x="716" y="412" text-anchor="middle" font-family="Georgia, serif" font-size="17" font-weight="700" fill="#66501f">MILLER’S</text>
+  <text x="716" y="434" text-anchor="middle" font-family="Georgia, serif" font-size="17" font-weight="700" fill="#66501f">CORNFIELD</text>
+
+  <g transform="translate(506 675)" filter="url(#shadow)">
+    <rect x="-15" y="-13" width="30" height="28" fill="#f7f1df" stroke="#4b4540" stroke-width="2"/>
+    <path d="M-19-13L0-28L19-13Z" fill="#60564c"/>
+    <rect x="-5" y="2" width="10" height="13" fill="#776b5c"/>
+  </g>
+  <rect x="424" y="705" width="166" height="27" rx="6" fill="#fffaf0" opacity="0.94"/>
+  <text x="507" y="724" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-weight="700" fill="#342f2b">DUNKER CHURCH</text>
+
+  <path d="M368 667C405 596 445 526 481 464" fill="none" stroke="#963b31" stroke-width="12" stroke-linecap="round" marker-end="url(#redArrow)"/>
+  <path d="M614 667C608 596 612 516 622 446" fill="none" stroke="#963b31" stroke-width="12" stroke-linecap="round" marker-end="url(#redArrow)"/>
+  <path d="M763 667C787 603 801 535 796 471" fill="none" stroke="#963b31" stroke-width="12" stroke-linecap="round" marker-end="url(#redArrow)"/>
+  <path d="M684 539C681 456 681 364 683 267" fill="none" stroke="#963b31" stroke-width="14" stroke-linecap="round" marker-end="url(#redArrow)"/>
+
+  <path d="M410 276C419 332 436 383 468 427" fill="none" stroke="#315f8c" stroke-width="10" stroke-linecap="round" marker-end="url(#blueArrow)"/>
+  <path d="M611 233C613 291 615 337 617 380" fill="none" stroke="#315f8c" stroke-width="10" stroke-linecap="round" marker-end="url(#blueArrow)"/>
+  <path d="M861 261C836 311 818 356 809 399" fill="none" stroke="#315f8c" stroke-width="10" stroke-linecap="round" marker-end="url(#blueArrow)"/>
+
+  <g font-family="Arial, sans-serif" filter="url(#shadow)">
+    <g transform="translate(349 698)">
+      <rect x="-78" y="-23" width="156" height="46" rx="8" fill="#963b31"/>
+      <text x="0" y="5" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">WOFFORD</text>
+    </g>
+    <g transform="translate(730 699)">
+      <rect x="-70" y="-23" width="140" height="46" rx="8" fill="#963b31"/>
+      <text x="0" y="5" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">LAW</text>
+    </g>
+    <g transform="translate(684 575)">
+      <rect x="-81" y="-24" width="162" height="48" rx="8" fill="#7c2925"/>
+      <text x="0" y="-2" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">1ST TEXAS</text>
+      <text x="0" y="17" text-anchor="middle" font-size="12" fill="#f8dedb">surges ahead</text>
+    </g>
+
+    <g transform="translate(385 233)">
+      <rect x="-91" y="-23" width="182" height="46" rx="8" fill="#315f8c"/>
+      <text x="0" y="5" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">PATRICK · GIBBON</text>
+    </g>
+    <g transform="translate(610 190)">
+      <rect x="-88" y="-23" width="176" height="46" rx="8" fill="#315f8c"/>
+      <text x="0" y="5" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">MEADE RESERVE</text>
+    </g>
+    <g transform="translate(880 218)">
+      <rect x="-80" y="-23" width="160" height="46" rx="8" fill="#315f8c"/>
+      <text x="0" y="5" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">RICKETTS</text>
+    </g>
+  </g>
+
+  <g transform="translate(462 353)" font-family="Arial, sans-serif" filter="url(#shadow)">
+    <rect x="-84" y="-28" width="168" height="56" rx="8" fill="#e5edf5" stroke="#315f8c" stroke-width="2"/>
+    <text x="0" y="-3" text-anchor="middle" font-size="14" font-weight="700" fill="#244d76">BATTERY B</text>
+    <text x="0" y="16" text-anchor="middle" font-size="12" fill="#244d76">double canister</text>
+  </g>
+
+  <path d="M594 274L798 285" fill="none" stroke="#5e5143" stroke-width="7" stroke-dasharray="9 6"/>
+  <rect x="627" y="240" width="154" height="25" rx="5" fill="#fffaf0" opacity="0.95"/>
+  <text x="704" y="258" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#5d5144">NORTH FIELD FENCE</text>
+
+  <g transform="translate(1052 688)" font-family="Arial, sans-serif">
+    <rect x="-140" y="-52" width="158" height="94" rx="10" fill="#fffaf0" stroke="#93846d" stroke-width="2" opacity="0.97"/>
+    <line x1="-120" y1="-24" x2="-87" y2="-24" stroke="#315f8c" stroke-width="8" marker-end="url(#blueArrow)"/>
+    <text x="-70" y="-19" font-size="14" fill="#2f2b27">Federal</text>
+    <line x1="-120" y1="14" x2="-87" y2="14" stroke="#963b31" stroke-width="8" marker-end="url(#redArrow)"/>
+    <text x="-70" y="19" font-size="14" fill="#2f2b27">Confederate</text>
+  </g>
+</svg>
