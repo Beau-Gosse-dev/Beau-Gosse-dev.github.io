@@ -98,7 +98,9 @@
     <text x="0" y="-8" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">JACKSON</text>
     <text x="0" y="13" text-anchor="middle" font-size="12" fill="#fae9e4">holds Shenandoah Valley</text>
   </g>
-  <g transform="translate(862 682)" font-family="Arial, sans-serif" filter="url(#shadow)">
+  <path d="M829 650L901 598" fill="none" stroke="#963b31" stroke-width="3"/>
+  <circle cx="901" cy="598" r="5" fill="#963b31"/>
+  <g transform="translate(723 672)" font-family="Arial, sans-serif" filter="url(#shadow)">
     <rect x="-106" y="-34" width="212" height="68" rx="9" fill="#963b31"/>
     <text x="0" y="-9" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">LONGSTREET</text>
     <text x="0" y="13" text-anchor="middle" font-size="12" fill="#fae9e4">moves toward Culpeper</text>
