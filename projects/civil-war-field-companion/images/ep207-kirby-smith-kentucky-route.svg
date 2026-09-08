@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Kirby Smith's advance from Knoxville toward Richmond and Lexington, August 1862</title>
+  <desc id="desc">A schematic route map shows Kirby Smith leaving Knoxville, bypassing the United States garrison at Cumberland Gap through Rogers Gap, moving through Barbourville and London, and advancing by the Old State Road through Big Hill toward Richmond and Lexington. Carter Stevenson remains opposite Cumberland Gap, Henry Heth remains near Barbourville, and Patrick Cleburne and Thomas Churchill continue toward Richmond.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8f2e5"/>
+      <stop offset="1" stop-color="#ede0c6"/>
+    </linearGradient>
+    <marker id="arrow-red" markerUnits="userSpaceOnUse" markerWidth="22" markerHeight="22" refX="20" refY="11" orient="auto">
+      <path d="M0,0 L22,11 L0,22 Z" fill="#9e3b32"/>
+    </marker>
+    <marker id="arrow-red-small" markerUnits="userSpaceOnUse" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto">
+      <path d="M0,0 L16,8 L0,16 Z" fill="#9e3b32"/>
+    </marker>
+    <marker id="arrow-blue" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto">
+      <path d="M0,0 L18,9 L0,18 Z" fill="#345f87"/>
+    </marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#5f5647" flood-opacity="0.18"/>
+    </filter>
+    <style>
+      .heading{font:700 42px Georgia,serif;fill:#2f2b25}.sub{font:22px Georgia,serif;fill:#5d5549}.panel{fill:#fffaf0;stroke:#c6b58f;stroke-width:2;filter:url(#shadow)}.panel-title{font:700 25px Georgia,serif;fill:#373127}.state{fill:#e7dcc3;stroke:#bcae90;stroke-width:2}.state-label{font:700 19px Arial,sans-serif;letter-spacing:4px;fill:#8a7d66}.ridge{fill:none;stroke:#ab9b7c;stroke-width:13;stroke-dasharray:4 13;stroke-linecap:round;opacity:.8}.river{fill:none;stroke:#7899ad;stroke-width:9;opacity:.8}.place{fill:#fffdf8;stroke:#625b50;stroke-width:2}.place-red{fill:#f7e5df;stroke:#9e3b32;stroke-width:3}.place-blue{fill:#e4eef6;stroke:#345f87;stroke-width:3}.place-text{font:700 20px Arial,sans-serif;fill:#302d28}.small{font:17px Arial,sans-serif;fill:#49443c}.tiny{font:15px Arial,sans-serif;fill:#5c554b}.cs{fill:none;stroke:#9e3b32;stroke-width:9;marker-end:url(#arrow-red)}.detach{fill:none;stroke:#9e3b32;stroke-width:6;stroke-dasharray:13 8;marker-end:url(#arrow-red-small)}.us{fill:none;stroke:#345f87;stroke-width:7;stroke-dasharray:12 8;marker-end:url(#arrow-blue)}.date{font:700 16px Arial,sans-serif;fill:#9e3b32}.note{fill:#f5ead0;stroke:#c8ad70;stroke-width:2}.note-title{font:700 18px Arial,sans-serif;fill:#473f32}.note-text{font:16px Arial,sans-serif;fill:#473f32}
+    </style>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#paper)"/>
+  <text x="70" y="68" class="heading">Kirby Smith's road into Kentucky</text>
+  <text x="70" y="106" class="sub">August 14–25, 1862 · operational schematic, not to scale</text>
+
+  <rect x="60" y="140" width="1040" height="785" rx="18" class="panel"/>
+  <text x="100" y="188" class="panel-title">The main advance bypasses Cumberland Gap</text>
+  <path d="M100 220 H1060 V530 H100 Z" class="state"/>
+  <path d="M100 530 H1060 V885 H100 Z" fill="#e2d5b8" stroke="#bcae90" stroke-width="2"/>
+  <text x="130" y="265" class="state-label">KENTUCKY</text>
+  <text x="130" y="850" class="state-label">TENNESSEE</text>
+  <path d="M760 245 C820 325 855 410 875 520 C900 640 940 735 1010 835" class="ridge"/>
+  <path d="M635 220 C620 290 635 355 690 420 C760 500 765 590 730 665" class="river"/>
+  <text x="625" y="278" class="tiny" fill="#52788f">Kentucky River</text>
+
+  <rect x="690" y="790" width="180" height="68" rx="10" class="place-red"/>
+  <text x="780" y="819" text-anchor="middle" class="place-text">Knoxville</text>
+  <text x="780" y="843" text-anchor="middle" class="tiny">Army of Kentucky</text>
+  <rect x="850" y="590" width="160" height="68" rx="10" class="place"/>
+  <text x="930" y="619" text-anchor="middle" class="place-text">Rogers Gap</text>
+  <text x="930" y="643" text-anchor="middle" class="tiny">mountain crossing</text>
+  <rect x="820" y="420" width="170" height="68" rx="10" class="place-red"/>
+  <text x="905" y="449" text-anchor="middle" class="place-text">Barbourville</text>
+  <text x="905" y="473" text-anchor="middle" class="tiny">Heth halts here</text>
+  <rect x="650" y="390" width="130" height="58" rx="10" class="place"/>
+  <text x="715" y="426" text-anchor="middle" class="place-text">London</text>
+  <rect x="545" y="315" width="130" height="58" rx="10" class="place"/>
+  <text x="610" y="351" text-anchor="middle" class="place-text">Big Hill</text>
+  <rect x="390" y="235" width="145" height="66" rx="10" class="place-red"/>
+  <text x="462" y="263" text-anchor="middle" class="place-text">Richmond</text>
+  <text x="462" y="287" text-anchor="middle" class="tiny">next objective</text>
+  <rect x="190" y="230" width="150" height="60" rx="10" class="place"/>
+  <text x="265" y="267" text-anchor="middle" class="place-text">Lexington</text>
+
+  <rect x="870" y="675" width="175" height="78" rx="10" class="place-blue"/>
+  <text x="958" y="707" text-anchor="middle" class="place-text">Cumberland</text>
+  <text x="958" y="734" text-anchor="middle" class="place-text">Gap</text>
+  <text x="390" y="735" class="small" fill="#345f87">George W. Morgan · about 9,000 U.S. troops</text>
+
+  <path d="M780 790 C815 742 855 691 910 654" class="cs"/>
+  <text x="790" y="708" class="date">Aug. 14–16</text>
+  <path d="M915 590 C920 555 914 522 906 488" class="cs"/>
+  <text x="940" y="545" class="date">Aug. 16–18</text>
+  <path d="M820 454 C790 438 780 430 780 421" class="cs"/>
+  <path d="M650 407 C625 395 615 384 612 373" class="cs"/>
+  <path d="M545 337 C525 320 515 305 510 299" class="cs"/>
+  <path d="M390 261 C370 259 355 259 340 260" class="cs"/>
+  <text x="685" y="370" class="date">Aug. 20</text>
+  <text x="545" y="395" class="date">Aug. 23</text>
+  <text x="235" y="405" class="date">Main advance resumes Aug. 25</text>
+
+  <path d="M825 790 C860 765 892 751 920 748" class="detach"/>
+  <path d="M937 675 C932 668 930 662 930 658" class="detach"/>
+  <path d="M240 305 C335 325 390 335 444 328" class="us"/>
+  <text x="195" y="355" class="small" fill="#345f87">New U.S. forces move south from Lexington</text>
+  <path d="M820 720 C760 680 730 625 734 570 C737 520 780 485 820 470" class="us"/>
+  <text x="650" y="580" class="small" fill="#345f87">Morgan's supply line cut</text>
+
+  <rect x="1135" y="140" width="405" height="785" rx="18" class="panel"/>
+  <text x="1175" y="188" class="panel-title">Command split</text>
+  <text x="1175" y="221" class="small">Smith's force divides as it enters Kentucky</text>
+
+  <rect x="1175" y="260" width="325" height="112" rx="12" class="note"/>
+  <text x="1200" y="294" class="note-title">Carter L. Stevenson</text>
+  <text x="1200" y="322" class="note-text">1st Division · roughly 9,000</text>
+  <text x="1200" y="347" class="note-text">Left to contain Cumberland Gap</text>
+
+  <rect x="1175" y="395" width="325" height="112" rx="12" class="note"/>
+  <text x="1200" y="429" class="note-title">Henry Heth</text>
+  <text x="1200" y="457" class="note-text">2nd Division · roughly 6,000</text>
+  <text x="1200" y="482" class="note-text">Remained near Barbourville</text>
+
+  <rect x="1175" y="530" width="325" height="150" rx="12" class="note"/>
+  <text x="1200" y="564" class="note-title">Thomas J. Churchill</text>
+  <text x="1200" y="592" class="note-text">3rd Division · roughly 3,000</text>
+  <text x="1200" y="626" class="note-title">Patrick R. Cleburne</text>
+  <text x="1200" y="654" class="note-text">4th Division · roughly 3,000</text>
+
+  <rect x="1175" y="705" width="325" height="112" rx="12" class="note"/>
+  <text x="1200" y="739" class="note-title">Col. John S. Scott</text>
+  <text x="1200" y="767" class="note-text">About 1,000 cavalry</text>
+  <text x="1200" y="792" class="note-text">Scouted the Old State Road</text>
+
+  <text x="1175" y="858" class="small" fill="#9e3b32">Main column after Aug. 25:</text>
+  <text x="1175" y="884" class="small">Churchill + Cleburne + Scott</text>
+  <text x="800" y="970" text-anchor="middle" class="tiny">Sources: U.S. Army staff ride handbook, National Park Service, Kentucky Historical Society, and episode transcript</text>
+</svg>
