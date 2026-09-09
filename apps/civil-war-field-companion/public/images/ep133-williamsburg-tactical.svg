@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Battle of Williamsburg tactical movements, May 5, 1862</title>
+  <desc id="desc">Schematic tactical map showing Fort Magruder, the Confederate redoubt line, Hooker's attack west of the road, Kearny's reinforcement, Hancock's movement across Cub Creek, and Early's failed counterattack.</desc>
+  <defs>
+    <marker id="usArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#315f8c"/></marker>
+    <marker id="csArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#9a3d32"/></marker>
+    <style>
+      .label{font:600 20px Georgia,serif;fill:#1f2933}.small{font:16px Arial,sans-serif;fill:#334155}.tiny{font:14px Arial,sans-serif;fill:#475569}.water{font:italic 18px Georgia,serif;fill:#2e638d}.place{fill:#fff;stroke:#17212b;stroke-width:3}.us{fill:none;stroke:#315f8c;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}.cs{fill:none;stroke:#9a3d32;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}.road{fill:none;stroke:#a98656;stroke-width:10;stroke-linecap:round}.earthwork{fill:#9a3d32;stroke:#68261f;stroke-width:2}
+    </style>
+  </defs>
+  <rect width="1200" height="800" fill="#e8eddd"/>
+  <path d="M80 140 C280 106 480 121 655 155 C822 188 990 164 1135 121" fill="none" stroke="#83b8d1" stroke-width="34"/>
+  <path d="M91 653 C273 628 406 580 517 514 C614 457 665 360 674 176" fill="none" stroke="#83b8d1" stroke-width="38"/>
+  <text x="309" y="117" class="water">Queen's Creek</text>
+  <text x="493" y="582" class="water" transform="rotate(-40 493 582)">College Creek</text>
+  <path d="M893 93 C845 180 825 275 817 377" fill="none" stroke="#83b8d1" stroke-width="24"/>
+  <text x="851" y="244" class="water" transform="rotate(-76 851 244)">Cub Creek</text>
+  <path d="M825 310h58" stroke="#6b4d2f" stroke-width="12"/><text x="884" y="315" class="tiny">dam</text>
+
+  <path d="M271 676 C394 554 515 464 633 379 C704 328 765 283 839 218" class="road"/>
+  <path d="M496 714 C522 606 563 505 633 379" class="road"/>
+  <text x="329" y="586" class="small">Hampton / Lee's Mill Road</text>
+  <text x="501" y="650" class="small">Yorktown Road</text>
+
+  <path d="M354 226 C498 259 619 291 741 338 C814 366 900 391 1015 402" fill="none" stroke="#9a3d32" stroke-width="8" stroke-dasharray="8 10"/>
+  <g class="earthwork">
+    <path d="M402 238l15-20 15 20-15 20Z"/><path d="M482 257l15-20 15 20-15 20Z"/><path d="M559 280l15-20 15 20-15 20Z"/>
+    <path d="M620 326l28-39 28 39-28 39Z"/><path d="M731 339l15-20 15 20-15 20Z"/><path d="M812 367l15-20 15 20-15 20Z"/><path d="M904 389l15-20 15 20-15 20Z"/>
+  </g>
+  <text x="309" y="196" class="small" fill="#9a3d32">Confederate fortified line</text>
+  <text x="664" y="288" class="label">Fort Magruder</text>
+  <text x="669" y="309" class="tiny">controls the road junction</text>
+
+  <path d="M457 624 C486 547 523 472 598 393" class="us" marker-end="url(#usArrow)"/>
+  <text x="285" y="527" class="small" fill="#315f8c">Hooker attacks</text>
+  <text x="285" y="549" class="tiny" fill="#315f8c">morning through afternoon</text>
+  <path d="M312 681 C359 630 410 586 468 548" class="us" marker-end="url(#usArrow)"/>
+  <text x="164" y="705" class="small" fill="#315f8c">Kearny arrives about 2:30 p.m.</text>
+
+  <path d="M607 352 C568 410 536 472 516 535" class="cs" marker-end="url(#csArrow)"/>
+  <text x="531" y="449" class="small" fill="#9a3d32">Longstreet's counterattacks</text>
+  <text x="565" y="471" class="tiny" fill="#9a3d32">temporarily reach Lee's Mill Road</text>
+
+  <path d="M711 501 C770 455 813 393 849 318 C878 258 914 229 974 205" class="us" marker-end="url(#usArrow)"/>
+  <text x="791" y="503" class="small" fill="#315f8c">Hancock crosses Cub Creek</text>
+  <text x="824" y="525" class="tiny" fill="#315f8c">about 3,400 men and eight guns</text>
+  <path d="M981 208 C962 244 955 278 957 316" class="us" stroke-width="5"/>
+  <path d="M1016 252 C993 282 978 318 970 355" class="us" stroke-width="5"/>
+  <text x="991" y="187" class="small" fill="#315f8c">occupied redoubts</text>
+
+  <path d="M725 226 C805 231 875 259 943 318" class="cs" marker-end="url(#csArrow)"/>
+  <path d="M704 201 C776 182 860 200 947 306" class="cs" stroke-dasharray="11 9" marker-end="url(#csArrow)"/>
+  <text x="678" y="66" class="small" fill="#9a3d32">Early and D. H. Hill through woods</text>
+  <text x="706" y="88" class="tiny" fill="#9a3d32">units lose alignment; only two regiments attack</text>
+  <path d="M947 321 C1011 341 1041 373 1064 419" class="us" marker-end="url(#usArrow)"/>
+  <text x="956" y="453" class="small" fill="#315f8c">Hancock counterattacks</text>
+
+  <g transform="translate(213 194)"><circle r="10" class="place"/><text x="-66" y="36" class="label">Williamsburg</text></g>
+  <g transform="translate(632 381)"><circle r="8" class="place"/></g>
+  <text x="103" y="632" class="tiny">toward Yorktown</text>
+  <text x="192" y="161" class="tiny">road toward Richmond</text>
+
+  <rect x="67" y="735" width="1066" height="45" rx="10" fill="#fff" fill-opacity=".92" stroke="#94a3b8"/>
+  <text x="90" y="763" class="tiny">Schematic; directions and relative positions follow contemporary maps, but distances and earthworks are simplified.</text>
+  <text x="1100" y="80" class="label">N</text><path d="M1108 92v45" stroke="#17212b" stroke-width="4"/><path d="M1108 81l-10 20h20Z" fill="#17212b"/>
+</svg>

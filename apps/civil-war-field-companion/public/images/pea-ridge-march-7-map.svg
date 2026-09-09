@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">Pea Ridge on March 7, 1862: Elkhorn Tavern and Leetown</title>
+  <desc id="desc">A schematic map showing Van Dorn and Price attacking south along Telegraph Road at Elkhorn Tavern while McCulloch and Hebert attack United States forces under Osterhaus and Davis near Leetown.</desc>
+  <defs>
+    <marker id="usa" markerWidth="15" markerHeight="15" refX="12" refY="7.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L15 7.5 0 15Z" fill="#245f8a"/></marker>
+    <marker id="csa" markerWidth="15" markerHeight="15" refX="12" refY="7.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L15 7.5 0 15Z" fill="#9b3d35"/></marker>
+    <pattern id="woods" width="42" height="42" patternUnits="userSpaceOnUse"><circle cx="10" cy="12" r="9" fill="#c8cfb1"/><circle cx="29" cy="27" r="11" fill="#b7c39d"/></pattern>
+  </defs>
+  <rect width="1200" height="820" fill="#f4eddd"/>
+  <rect x="45" y="45" width="1110" height="690" rx="8" fill="none" stroke="#b8aa8c" stroke-width="2"/>
+  <path d="M810 48C820 170 810 245 822 340C836 450 824 560 838 735" fill="none" stroke="#60584c" stroke-width="11" opacity=".22"/>
+  <path d="M810 48C820 170 810 245 822 340C836 450 824 560 838 735" fill="none" stroke="#514a40" stroke-width="3"/>
+  <text x="867" y="555" transform="rotate(84 867 555)" font-family="Arial,sans-serif" font-size="19" letter-spacing="3" fill="#514a40">TELEGRAPH ROAD</text>
+  <path d="M190 250C365 236 515 242 690 300C750 320 790 332 820 340" fill="none" stroke="#635b50" stroke-width="4"/>
+  <text x="330" y="223" font-family="Arial,sans-serif" font-size="19" letter-spacing="3" fill="#514a40">FORD ROAD</text>
+  <path d="M430 365C430 480 420 610 425 730" fill="none" stroke="#635b50" stroke-width="4"/>
+  <text x="395" y="535" transform="rotate(90 395 535)" font-family="Arial,sans-serif" font-size="19" letter-spacing="3" fill="#514a40">LEETOWN ROAD</text>
+  <rect x="185" y="322" width="370" height="206" fill="#e7d8b8" stroke="#9c8864" stroke-width="2"/>
+  <text x="220" y="510" font-family="Georgia,serif" font-size="25" fill="#6c5d44">Oberson's Field</text>
+  <rect x="555" y="310" width="185" height="260" fill="url(#woods)" opacity=".9"/>
+  <text x="587" y="455" font-family="Georgia,serif" font-size="22" fill="#46543d">Morgan's</text><text x="605" y="482" font-family="Georgia,serif" font-size="22" fill="#46543d">Woods</text>
+  <path d="M75 105C210 58 380 74 520 118" fill="none" stroke="#9b3d35" stroke-width="11" marker-end="url(#csa)"/>
+  <text x="82" y="66" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#9b3d35">McCulloch's column leaves the detour</text>
+  <path d="M810 80C820 145 817 205 820 275" fill="none" stroke="#9b3d35" stroke-width="11" marker-end="url(#csa)"/>
+  <text x="850" y="128" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#9b3d35">Van Dorn and Price</text><text x="850" y="155" font-family="Arial,sans-serif" font-size="18" fill="#9b3d35">advance south</text>
+  <path d="M815 360C810 330 812 310 816 283" fill="none" stroke="#245f8a" stroke-width="11" marker-end="url(#usa)"/>
+  <text x="850" y="345" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#245f8a">Carr and Dodge</text><text x="850" y="372" font-family="Arial,sans-serif" font-size="18" fill="#245f8a">hold near the tavern</text>
+  <path d="M270 270C278 300 285 322 293 345" fill="none" stroke="#9b3d35" stroke-width="11" marker-end="url(#csa)"/>
+  <text x="105" y="274" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#9b3d35">McCulloch</text>
+  <path d="M660 286C655 334 648 376 642 412" fill="none" stroke="#9b3d35" stroke-width="11" marker-end="url(#csa)"/>
+  <text x="655" y="270" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#9b3d35">Hébert</text>
+  <line x1="230" y1="504" x2="530" y2="504" stroke="#245f8a" stroke-width="15"/>
+  <text x="245" y="558" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#245f8a">Osterhaus; Greusel's infantry</text>
+  <path d="M695 610C645 570 610 535 566 512" fill="none" stroke="#245f8a" stroke-width="11" marker-end="url(#usa)"/>
+  <text x="655" y="648" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#245f8a">Davis reinforces</text>
+  <circle cx="300" cy="332" r="12" fill="#211f1b"/><text x="320" y="338" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#211f1b">McCulloch and McIntosh killed</text>
+  <circle cx="820" cy="327" r="10" fill="#211f1b"/><text x="845" y="310" font-family="Georgia,serif" font-size="24" font-weight="700" fill="#211f1b">Elkhorn Tavern</text>
+  <circle cx="430" cy="638" r="10" fill="#211f1b"/><text x="450" y="646" font-family="Georgia,serif" font-size="24" font-weight="700" fill="#211f1b">Leetown</text>
+  <path d="M250 735C420 718 625 721 840 735" fill="none" stroke="#76a6be" stroke-width="16" opacity=".8"/>
+  <text x="455" y="782" font-family="Georgia,serif" font-size="25" fill="#356881">Little Sugar Creek</text>
+  <text x="930" y="708" font-family="Georgia,serif" font-size="20" fill="#6a5d49">Schematic; not to scale</text>
+</svg>

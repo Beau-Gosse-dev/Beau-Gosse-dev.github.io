@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">French's three attacks on the Sunken Road</title>
+  <desc id="desc">Schematic tactical diagram with north at top. Weber, Morris, and Kimball advance south in sequence over the ridge toward Rodes and George B. Anderson in the Sunken Road. The diagram marks the point-blank Confederate volley, Weber's wound, Oakford's death, and the Federal fallback behind the ridge.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbf4e4"/>
+      <stop offset="1" stop-color="#e5d8bd"/>
+    </linearGradient>
+    <marker id="blueArrow" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 16 16">
+      <path d="M0 0L16 8L0 16Z" fill="#315f8c"/>
+    </marker>
+    <marker id="redArrow" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 16 16">
+      <path d="M0 0L16 8L0 16Z" fill="#963b31"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#paper)"/>
+  <rect x="28" y="28" width="1144" height="744" rx="18" fill="none" stroke="#97896f" stroke-width="2"/>
+  <text x="60" y="75" font-family="Georgia, serif" font-size="32" font-weight="700" fill="#2f2b27">THREE FEDERAL WAVES AT THE SUNKEN ROAD</text>
+  <text x="60" y="106" font-family="Arial, sans-serif" font-size="18" fill="#5c5549">French's division attacks south across open ground · about 9:30–10:30 a.m. · north is up</text>
+  <rect x="48" y="128" width="1104" height="610" fill="#e9e5cf"/>
+
+  <g transform="translate(1135 300)" font-family="Arial, sans-serif" fill="#2f2b27">
+    <path d="M0 50V0M0 0L-9 18M0 0L9 18" fill="none" stroke="#2f2b27" stroke-width="3"/>
+    <text x="0" y="-9" text-anchor="middle" font-size="18" font-weight="700">N</text>
+  </g>
+
+  <path d="M67 470C250 435 434 443 603 455C792 468 968 450 1133 478" fill="none" stroke="#95856f" stroke-width="6" stroke-dasharray="13 9"/>
+  <rect x="425" y="426" width="350" height="31" rx="7" fill="#fffaf0" opacity="0.96"/>
+  <text x="600" y="448" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#665d52">RIDGE CREST · ABOUT 80–100 YARDS FROM ROAD</text>
+
+  <path d="M58 612C276 591 481 594 636 604C817 616 975 602 1142 625" fill="none" stroke="#876c4d" stroke-width="42" stroke-linecap="round"/>
+  <path d="M58 612C276 591 481 594 636 604C817 616 975 602 1142 625" fill="none" stroke="#cbb68c" stroke-width="17" stroke-linecap="round"/>
+  <path d="M58 612C276 591 481 594 636 604C817 616 975 602 1142 625" fill="none" stroke="#6e553d" stroke-width="3" stroke-dasharray="9 8"/>
+  <text x="600" y="675" text-anchor="middle" font-family="Georgia, serif" font-size="19" font-weight="700" fill="#5f4936">SUNKEN ROAD · FENCE-RAIL BREASTWORK</text>
+
+  <g font-family="Arial, sans-serif" filter="url(#shadow)">
+    <g transform="translate(321 581)">
+      <rect x="-123" y="-23" width="246" height="46" rx="8" fill="#963b31"/>
+      <text x="0" y="-2" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">RODES · ALABAMA</text>
+      <text x="0" y="16" text-anchor="middle" font-size="11" fill="#fae9e4">Gordon's 6th Alabama at right</text>
+    </g>
+    <g transform="translate(823 600)">
+      <rect x="-151" y="-23" width="302" height="46" rx="8" fill="#963b31"/>
+      <text x="0" y="-2" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">G. B. ANDERSON · NORTH CAROLINA</text>
+      <text x="0" y="16" text-anchor="middle" font-size="11" fill="#fae9e4">2nd · 14th · 4th · 30th N.C.</text>
+    </g>
+  </g>
+
+  <g stroke="#963b31" stroke-width="5" stroke-linecap="round">
+    <line x1="190" y1="555" x2="173" y2="520" marker-end="url(#redArrow)"/>
+    <line x1="330" y1="550" x2="315" y2="514" marker-end="url(#redArrow)"/>
+    <line x1="470" y1="553" x2="458" y2="516" marker-end="url(#redArrow)"/>
+    <line x1="655" y1="566" x2="645" y2="524" marker-end="url(#redArrow)"/>
+    <line x1="815" y1="570" x2="807" y2="530" marker-end="url(#redArrow)"/>
+    <line x1="975" y1="579" x2="969" y2="538" marker-end="url(#redArrow)"/>
+  </g>
+  <rect x="74" y="503" width="322" height="35" rx="7" fill="#f7e8dc" stroke="#963b31" stroke-width="2"/>
+  <text x="235" y="526" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#7a332c">FIRE WITHHELD UNTIL CLOSE RANGE</text>
+
+  <g stroke="#315f8c" stroke-width="10" stroke-linecap="round" marker-end="url(#blueArrow)">
+    <path d="M248 219C255 287 266 352 285 426"/>
+    <path d="M574 213C577 285 579 348 580 426"/>
+    <path d="M906 222C891 293 879 356 873 432"/>
+  </g>
+
+  <g font-family="Arial, sans-serif" filter="url(#shadow)">
+    <g transform="translate(238 199)">
+      <rect x="-164" y="-37" width="328" height="74" rx="9" fill="#315f8c"/>
+      <text x="0" y="-13" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">1 · WEBER'S BRIGADE</text>
+      <text x="0" y="9" text-anchor="middle" font-size="12" fill="#eaf2f8">1st Delaware · 5th Maryland · 4th New York</text>
+      <text x="0" y="27" text-anchor="middle" font-size="11" fill="#eaf2f8">line bows as the 5th Maryland lags</text>
+    </g>
+    <g transform="translate(574 199)">
+      <rect x="-152" y="-37" width="304" height="74" rx="9" fill="#315f8c"/>
+      <text x="0" y="-13" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">2 · MORRIS'S BRIGADE</text>
+      <text x="0" y="9" text-anchor="middle" font-size="12" fill="#eaf2f8">108th N.Y. · 130th Pa. · 14th Conn.</text>
+      <text x="0" y="27" text-anchor="middle" font-size="11" fill="#eaf2f8">three regiments in their first battle</text>
+    </g>
+    <g transform="translate(923 199)">
+      <rect x="-178" y="-37" width="356" height="74" rx="9" fill="#315f8c"/>
+      <text x="0" y="-13" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">3 · KIMBALL'S BRIGADE</text>
+      <text x="0" y="9" text-anchor="middle" font-size="12" fill="#eaf2f8">14th Ind. · 8th Ohio · 7th Va. (U.S.) · 132nd Pa.</text>
+      <text x="0" y="27" text-anchor="middle" font-size="11" fill="#eaf2f8">shifts east before advancing</text>
+    </g>
+  </g>
+
+  <g font-family="Arial, sans-serif">
+    <g transform="translate(187 363)">
+      <circle r="28" fill="#fffaf0" stroke="#963b31" stroke-width="3"/>
+      <text x="0" y="7" text-anchor="middle" font-size="22" font-weight="700" fill="#963b31">1</text>
+      <rect x="38" y="-30" width="229" height="60" rx="8" fill="#fffaf0" stroke="#93846d" stroke-width="2"/>
+      <text x="52" y="-7" font-size="13" font-weight="700" fill="#2f2b27">WEBER SEVERELY WOUNDED</text>
+      <text x="52" y="14" font-size="12" fill="#5a544b">Brigade stops under massed volleys.</text>
+    </g>
+    <g transform="translate(517 303)">
+      <circle r="28" fill="#fffaf0" stroke="#963b31" stroke-width="3"/>
+      <text x="0" y="7" text-anchor="middle" font-size="22" font-weight="700" fill="#963b31">2</text>
+      <rect x="38" y="-30" width="249" height="60" rx="8" fill="#fffaf0" stroke="#93846d" stroke-width="2"/>
+      <text x="52" y="-7" font-size="13" font-weight="700" fill="#2f2b27">FRIENDLY FIRE IN THE CONFUSION</text>
+      <text x="52" y="14" font-size="12" fill="#5a544b">14th Connecticut fires into 1st Delaware.</text>
+    </g>
+    <g transform="translate(852 367)">
+      <circle r="28" fill="#fffaf0" stroke="#963b31" stroke-width="3"/>
+      <text x="0" y="7" text-anchor="middle" font-size="22" font-weight="700" fill="#963b31">3</text>
+      <rect x="38" y="-30" width="230" height="60" rx="8" fill="#fffaf0" stroke="#93846d" stroke-width="2"/>
+      <text x="52" y="-7" font-size="13" font-weight="700" fill="#2f2b27">OAKFORD KILLED</text>
+      <text x="52" y="14" font-size="12" fill="#5a544b">132nd Pennsylvania is checked.</text>
+    </g>
+  </g>
+
+  <text x="600" y="764" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#5f574d">Schematic and not to scale · attacks shown in sequence, not simultaneously · based on NPS interpretation, official reports, and the episode transcript</text>
+</svg>

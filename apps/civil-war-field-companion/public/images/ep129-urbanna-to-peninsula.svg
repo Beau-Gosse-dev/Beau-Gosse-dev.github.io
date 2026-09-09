@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Change from the Urbanna plan to the Peninsula plan in March 1862</title>
+  <desc id="desc">Schematic map of eastern Virginia showing McClellan's abandoned water route from Alexandria to Urbanna and Richmond, and the adopted route from Alexandria to Fort Monroe and up the Virginia Peninsula toward Richmond. The Confederate position along the Rappahannock and Hampton Roads are also shown.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7efd9"/>
+      <stop offset="1" stop-color="#e5d2aa"/>
+    </linearGradient>
+    <marker id="blueArrow" markerWidth="38" markerHeight="38" refX="35" refY="19" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L38,19 L0,38 Z" fill="#285f88"/>
+    </marker>
+    <marker id="grayArrow" markerWidth="38" markerHeight="38" refX="35" refY="19" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L38,19 L0,38 Z" fill="#77756d"/>
+    </marker>
+    <style>
+      .title { font: 700 42px Georgia, serif; fill: #292720; }
+      .subtitle { font: 21px Georgia, serif; fill: #514a3d; }
+      .place { font: 700 22px Arial, sans-serif; fill: #2f2c25; paint-order: stroke; stroke: #f4ead2; stroke-width: 6px; stroke-linejoin: round; }
+      .water { font: italic 21px Georgia, serif; fill: #346f89; letter-spacing: 1px; }
+      .legend { font: 700 20px Arial, sans-serif; fill: #2f2c25; }
+      .note { font: 18px Arial, sans-serif; fill: #494338; }
+      .route { font: 700 18px Arial, sans-serif; paint-order: stroke; stroke: #f4ead2; stroke-width: 5px; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#paper)"/>
+  <path d="M1040 62 C1120 125 1090 235 1172 304 C1260 379 1228 478 1304 556 C1360 615 1334 744 1410 912 L1600 912 L1600 62 Z" fill="#96becd"/>
+  <path d="M1030 60 C1118 130 1082 235 1162 309 C1245 384 1218 477 1294 561 C1345 620 1323 748 1400 920" fill="none" stroke="#477584" stroke-width="4"/>
+  <path d="M575 150 C685 215 830 222 990 250 C1105 270 1160 326 1178 374" fill="none" stroke="#88b3c4" stroke-width="46" stroke-linecap="round"/>
+  <path d="M575 150 C685 215 830 222 990 250 C1105 270 1160 326 1178 374" fill="none" stroke="#477584" stroke-width="3"/>
+  <path d="M1215 465 C1085 475 987 500 900 540 C845 565 800 570 755 565" fill="none" stroke="#88b3c4" stroke-width="38" stroke-linecap="round"/>
+  <path d="M1215 465 C1085 475 987 500 900 540 C845 565 800 570 755 565" fill="none" stroke="#477584" stroke-width="3"/>
+  <path d="M1392 865 C1288 850 1195 828 1107 805" fill="none" stroke="#88b3c4" stroke-width="50" stroke-linecap="round"/>
+  <path d="M1392 865 C1240 850 1110 858 980 830 C840 800 720 750 620 710" fill="none" stroke="#88b3c4" stroke-width="34" stroke-linecap="round"/>
+  <path d="M1270 760 C1145 738 1015 700 895 655 C850 640 818 633 785 630" fill="none" stroke="#88b3c4" stroke-width="25" stroke-linecap="round"/>
+
+  <path d="M615 184 C780 204 954 238 1110 295 C1205 330 1235 391 1195 457 C1130 535 1015 530 900 540 C800 565 700 640 620 710" fill="none" stroke="#77756d" stroke-width="15" stroke-dasharray="24 15" stroke-linecap="round" marker-end="url(#grayArrow)" opacity="0.92"/>
+  <path d="M615 184 C800 210 1000 242 1180 318 C1320 378 1340 548 1350 690 C1357 770 1308 820 1210 825" fill="none" stroke="#285f88" stroke-width="17" stroke-linecap="round" marker-end="url(#blueArrow)"/>
+  <path d="M1202 824 C1070 800 958 755 860 720 C770 688 690 690 620 710" fill="none" stroke="#285f88" stroke-width="17" stroke-linecap="round" marker-end="url(#blueArrow)"/>
+  <path d="M790 535 C735 525 680 535 625 565" fill="none" stroke="#98453b" stroke-width="13" stroke-dasharray="16 12" opacity="0.9"/>
+
+  <g fill="#292720" stroke="#f4ead2" stroke-width="5" paint-order="stroke">
+    <circle cx="615" cy="184" r="12"/>
+    <circle cx="900" cy="540" r="10"/>
+    <circle cx="620" cy="710" r="12"/>
+    <circle cx="1210" cy="825" r="12"/>
+    <circle cx="1270" cy="760" r="10"/>
+  </g>
+
+  <text x="642" y="216" class="place">ALEXANDRIA / WASHINGTON</text>
+  <text x="918" y="531" class="place">URBANNA</text>
+  <text x="515" y="682" class="place">RICHMOND</text>
+  <text x="1128" y="858" class="place">FORT MONROE</text>
+  <text x="1288" y="755" class="place">HAMPTON ROADS</text>
+  <text x="1216" y="490" class="water">RAPPAHANNOCK</text>
+  <text x="1260" y="330" class="water" transform="rotate(74 1260 330)">CHESAPEAKE BAY</text>
+  <text x="930" y="690" class="water" transform="rotate(18 930 690)">YORK RIVER</text>
+  <text x="855" y="850" class="water" transform="rotate(9 855 850)">JAMES RIVER</text>
+  <text x="1030" y="610" class="route" fill="#77756d">URBANNA ROUTE — ABANDONED</text>
+  <text x="1120" y="720" class="route" fill="#285f88">PENINSULA ROUTE — ADOPTED</text>
+  <text x="560" y="515" class="route" fill="#98453b">JOHNSTON'S NEW POSITION</text>
+
+  <rect x="62" y="50" width="1000" height="120" rx="15" fill="#faf3e3" stroke="#8d7b5c" stroke-width="2" opacity="0.97"/>
+  <text x="94" y="99" class="title">From Urbanna to Fort Monroe</text>
+  <text x="95" y="138" class="subtitle">How Johnston's withdrawal changed McClellan's waterborne plan</text>
+
+  <rect x="68" y="736" width="500" height="196" rx="16" fill="#faf3e3" stroke="#8d7b5c" stroke-width="2" opacity="0.97"/>
+  <line x1="105" y1="792" x2="202" y2="792" stroke="#77756d" stroke-width="14" stroke-dasharray="24 15" marker-end="url(#grayArrow)"/>
+  <text x="233" y="799" class="legend">Original Urbanna route</text>
+  <line x1="105" y1="851" x2="202" y2="851" stroke="#285f88" stroke-width="14" marker-end="url(#blueArrow)"/>
+  <text x="233" y="858" class="legend">Adopted Fort Monroe route</text>
+  <line x1="105" y1="905" x2="202" y2="905" stroke="#98453b" stroke-width="11" stroke-dasharray="16 12"/>
+  <text x="233" y="912" class="legend">Confederate Rappahannock line</text>
+
+  <text x="1130" y="960" class="note">Schematic; positions are approximate</text>
+</svg>

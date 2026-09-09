@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">Grant's final defensive line near Pittsburg Landing on April 6, 1862</title>
+  <desc id="desc">Map shows the United States line curving west and north from the Tennessee River, Webster's massed artillery near the Corinth Road, Hurlbut in support, McClernand and Sherman on the right, Dill Branch below the left flank, and the gunboats Tyler and Lexington in the river.</desc>
+  <defs>
+    <marker id="usa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10z" fill="#315f8c"/></marker>
+    <marker id="csa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10z" fill="#9a3d32"/></marker>
+  </defs>
+  <rect width="1200" height="820" fill="#f3eedf"/>
+  <path d="M955 0C900 145 995 300 930 445S1010 680 925 820H1200V0Z" fill="#b6cfcd"/>
+  <text x="1070" y="410" fill="#385f64" font-family="Georgia,serif" font-size="25" text-anchor="middle" transform="rotate(87 1070 410)">TENNESSEE RIVER</text>
+  <path d="M565 810L650 120" stroke="#665746" stroke-width="9"/>
+  <text x="645" y="430" fill="#514438" font-family="Arial,sans-serif" font-size="17" transform="rotate(-83 645 430)">Corinth Road to Pittsburg Landing</text>
+  <path d="M205 730C285 615 360 500 475 390C590 280 725 220 905 215" fill="none" stroke="#315f8c" stroke-width="24"/>
+  <text x="500" y="335" text-anchor="middle" fill="#234b73" font-family="Georgia,serif" font-size="24" font-weight="700">GRANT'S FINAL LINE · ABOUT 2,500 YARDS</text>
+  <text x="500" y="370" text-anchor="middle" fill="#234b73" font-family="Arial,sans-serif" font-size="18">about 18,000 men in the podcast · NPS: nearly 20,000 before Buell landed</text>
+  <path d="M688 310L705 205" stroke="#315f8c" stroke-width="16"/>
+  <g fill="#315f8c">
+    <circle cx="590" cy="410" r="12"/><circle cx="625" cy="385" r="12"/><circle cx="660" cy="360" r="12"/><circle cx="695" cy="335" r="12"/><circle cx="730" cy="315" r="12"/><circle cx="765" cy="295" r="12"/>
+  </g>
+  <text x="700" y="455" text-anchor="middle" fill="#234b73" font-family="Arial,sans-serif" font-size="19" font-weight="700">WEBSTER · MASSED ARTILLERY</text>
+  <text x="700" y="482" text-anchor="middle" fill="#234b73" font-family="Arial,sans-serif" font-size="16">five 24-pounder siege guns plus collected field batteries</text>
+  <text x="755" y="255" text-anchor="middle" fill="#234b73" font-family="Arial,sans-serif" font-size="18" font-weight="700">HURLBUT + ESCAPED UNITS</text>
+  <text x="365" y="505" text-anchor="middle" fill="#234b73" font-family="Arial,sans-serif" font-size="18" font-weight="700">McCLERNAND</text>
+  <text x="220" y="655" text-anchor="middle" fill="#234b73" font-family="Arial,sans-serif" font-size="18" font-weight="700">SHERMAN · RIGHT FLANK</text>
+  <path d="M790 645Q850 580 925 625" fill="none" stroke="#6e8a64" stroke-width="20"/>
+  <text x="860" y="685" text-anchor="middle" fill="#4e684a" font-family="Arial,sans-serif" font-size="18" font-weight="700">DILL BRANCH RAVINE</text>
+  <text x="860" y="710" text-anchor="middle" fill="#4e684a" font-family="Arial,sans-serif" font-size="15">steep, brush-filled, flooded</text>
+  <g fill="#6d5848" stroke="#263332" stroke-width="3">
+    <path d="M1010 520h105l-20 32h-72z"/><path d="M1033 502h48v18h-48z"/>
+    <path d="M1015 635h100l-18 31h-68z"/><path d="M1036 617h45v18h-45z"/>
+  </g>
+  <text x="1060" y="490" text-anchor="middle" fill="#385f64" font-family="Arial,sans-serif" font-size="18" font-weight="700">TYLER</text>
+  <text x="1060" y="603" text-anchor="middle" fill="#385f64" font-family="Arial,sans-serif" font-size="18" font-weight="700">LEXINGTON</text>
+  <path d="M1015 540C960 555 915 580 870 620" fill="none" stroke="#315f8c" stroke-width="6" stroke-dasharray="10 8" marker-end="url(#usa)"/>
+  <path d="M1015 650C960 650 915 640 875 625" fill="none" stroke="#315f8c" stroke-width="6" stroke-dasharray="10 8" marker-end="url(#usa)"/>
+  <path d="M480 735C555 665 650 620 770 590" fill="none" stroke="#9a3d32" stroke-width="12" marker-end="url(#csa)"/>
+  <path d="M650 760C720 700 790 665 850 630" fill="none" stroke="#9a3d32" stroke-width="12" marker-end="url(#csa)"/>
+  <text x="570" y="780" text-anchor="middle" fill="#7c3029" font-family="Arial,sans-serif" font-size="18" font-weight="700">CONFEDERATE APPROACHES</text>
+  <circle cx="925" cy="205" r="9" fill="#263332"/><text x="940" y="185" fill="#263332" font-family="Arial,sans-serif" font-size="17" font-weight="700">PITTSBURG LANDING</text>
+  <text x="40" y="50" fill="#263332" font-family="Georgia,serif" font-size="31" font-weight="700">Grant's final defensive line</text>
+  <text x="40" y="84" fill="#4b5856" font-family="Arial,sans-serif" font-size="18">April 6, 1862 · formed from about 2:30 p.m. · simplified orientation · not to scale</text>
+  <rect x="45" y="690" width="20" height="20" fill="#315f8c"/><text x="77" y="707" fill="#263332" font-family="Arial,sans-serif" font-size="16">United States</text>
+  <rect x="45" y="724" width="20" height="20" fill="#9a3d32"/><text x="77" y="741" fill="#263332" font-family="Arial,sans-serif" font-size="16">Confederacy</text>
+  <path d="M1120 82V137" stroke="#263332" stroke-width="5" marker-end="url(#usa)"/><text x="1120" y="62" text-anchor="middle" fill="#263332" font-family="Arial,sans-serif" font-size="20" font-weight="700">N</text>
+</svg>

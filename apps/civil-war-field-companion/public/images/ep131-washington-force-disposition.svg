@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Forces listed for the defense of Washington on April 1 and 2, 1862</title>
+  <desc id="desc">Operational schematic showing Washington, Manassas, Warrenton, the lower Potomac, and the Shenandoah Valley with the figures in George McClellan's April 1 report. It distinguishes the 18,000 men McClellan proposed for Washington from James Wadsworth's April 2 report of approximately 19,000 men immediately under his command and notes that the wider total depended on distant, overlapping, or proposed forces.</desc>
+  <defs>
+    <linearGradient id="paper2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8f2e2"/><stop offset="1" stop-color="#e8d8b9"/></linearGradient>
+    <marker id="hold" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#315f8c"/></marker>
+    <style>
+      .title{font:700 40px Georgia,serif;fill:#29271f}.subtitle{font:20px system-ui,sans-serif;fill:#514b40}.place{font:700 22px system-ui,sans-serif;fill:#29271f}.count{font:700 34px Georgia,serif;fill:#315f8c}.label{font:18px system-ui,sans-serif;fill:#444038}.small{font:16px system-ui,sans-serif;fill:#514c43}.total{font:700 27px system-ui,sans-serif;fill:#29271f}.warn{font:700 18px system-ui,sans-serif;fill:#8b3f35}.date{font:700 17px system-ui,sans-serif;fill:#315f8c}
+    </style>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#paper2)"/>
+  <path d="M0 0H1600V1000H0Z" fill="none" stroke="#756c5d" stroke-width="13" opacity=".13"/>
+  <rect x="57" y="48" width="1485" height="116" rx="14" fill="#fffaf0" stroke="#887a61" stroke-width="2"/>
+  <text x="90" y="96" class="title">What counted as defending Washington?</text>
+  <text x="92" y="136" class="subtitle">McClellan’s April 1 accounting and Wadsworth’s April 2 warning</text>
+
+  <path d="M299 375C492 390 669 376 827 327C980 280 1108 258 1258 281" fill="none" stroke="#8db6c4" stroke-width="32" stroke-linecap="round"/>
+  <text x="846" y="308" class="small" fill="#326b7d">POTOMAC RIVER</text>
+  <path d="M211 226C270 294 309 372 325 465C340 560 379 632 451 713" fill="none" stroke="#8db6c4" stroke-width="24" stroke-linecap="round"/>
+
+  <g>
+    <rect x="1058" y="218" width="412" height="196" rx="18" fill="#eef3f5" stroke="#315f8c" stroke-width="5"/>
+    <text x="1087" y="258" class="place">WASHINGTON</text>
+    <text x="1088" y="310" class="count">18,000 proposed</text>
+    <text x="1088" y="343" class="label">for garrisons and the city’s front</text>
+    <text x="1088" y="377" class="warn">Wadsworth reported about 19,000</text>
+    <text x="1088" y="401" class="small">immediately under his command on April 2</text>
+  </g>
+  <g>
+    <rect x="742" y="455" width="330" height="147" rx="16" fill="#fffaf0" stroke="#6c6558" stroke-width="3"/>
+    <text x="772" y="492" class="place">MANASSAS</text><text x="772" y="542" class="count">10,859</text><text x="772" y="575" class="small">in the April 1 listing</text>
+  </g>
+  <g>
+    <rect x="473" y="603" width="330" height="147" rx="16" fill="#fffaf0" stroke="#6c6558" stroke-width="3"/>
+    <text x="503" y="640" class="place">WARRENTON</text><text x="503" y="690" class="count">7,780</text><text x="503" y="723" class="small">in the April 1 listing</text>
+  </g>
+  <g>
+    <rect x="96" y="264" width="400" height="174" rx="16" fill="#fffaf0" stroke="#6c6558" stroke-width="3"/>
+    <text x="126" y="303" class="place">SHENANDOAH VALLEY</text><text x="126" y="354" class="count">35,467</text><text x="126" y="387" class="small">Banks, Shields, Blenker, cavalry,</text><text x="126" y="412" class="small">and railroad guards as McClellan counted them</text>
+  </g>
+  <g>
+    <rect x="896" y="687" width="365" height="139" rx="16" fill="#fffaf0" stroke="#6c6558" stroke-width="3"/>
+    <text x="926" y="724" class="place">LOWER POTOMAC</text><text x="926" y="773" class="count">1,350</text><text x="926" y="805" class="small">proposed regiment and cavalry</text>
+  </g>
+
+  <path d="M1416 459C1350 529 1298 584 1227 640" fill="none" stroke="#315f8c" stroke-width="12" marker-end="url(#hold)"/>
+  <rect x="1200" y="478" width="326" height="112" rx="14" fill="#eef3f5" stroke="#315f8c" stroke-width="3"/>
+  <text x="1227" y="516" class="date">APRIL 5 DECISION</text><text x="1227" y="548" class="label">McDowell’s I Corps retained</text><text x="1227" y="574" class="small">for Washington’s security</text>
+
+  <rect x="70" y="846" width="1460" height="102" rx="14" fill="#fffaf0" stroke="#887a61" stroke-width="2"/>
+  <text x="98" y="887" class="total">McClellan’s stated total: 73,456</text>
+  <text x="575" y="886" class="label">The total was not a count of troops physically in Washington’s forts.</text>
+  <text x="98" y="922" class="small">The April 2 review noted that some movements were only proposed and left open whether Banks’s distant corps was available for the capital’s immediate defense.</text>
+  <text x="1340" y="975" class="small">Schematic</text>
+</svg>

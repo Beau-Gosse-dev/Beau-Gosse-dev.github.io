@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Tyler's attack on the Sandy Ridge stone wall at First Kernstown</title>
+  <desc id="desc">Schematic map with north at top showing Tyler's deep United States column advancing south through woods, the Confederate line at an east-west stone wall, Confederate reinforcements, Sandy Ridge, Pritchard's Hill, and the Valley Turnpike.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8f2e2"/><stop offset="1" stop-color="#e9ddc2"/></linearGradient>
+    <pattern id="ridge" width="34" height="26" patternUnits="userSpaceOnUse"><path d="M1 23 L10 7 L19 21 L27 9 L34 23" fill="none" stroke="#7d8d69" stroke-width="2" opacity=".48"/></pattern>
+    <pattern id="woods" width="31" height="31" patternUnits="userSpaceOnUse"><circle cx="8" cy="10" r="6" fill="#83946c" opacity=".5"/><circle cx="22" cy="20" r="8" fill="#687d58" opacity=".43"/></pattern>
+    <pattern id="stone" width="32" height="18" patternUnits="userSpaceOnUse"><rect width="32" height="18" fill="#8c8172"/><path d="M0 9 H32 M8 0 V9 M23 9 V18" stroke="#d7ccba" stroke-width="2"/></pattern>
+    <marker id="blueArrow" markerWidth="18" markerHeight="18" refX="11" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12"><path d="M0 0 L12 6 L0 12 Z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerWidth="18" markerHeight="18" refX="11" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12"><path d="M0 0 L12 6 L0 12 Z" fill="#9a3d32"/></marker>
+    <style>.label{font:700 23px Georgia,serif;fill:#292621}.small{font:18px Arial,sans-serif;fill:#3f3a33}.tiny{font:15px Arial,sans-serif;fill:#554f46}.blue{fill:#315f8c}.red{fill:#9a3d32}.box{fill:#fffaf0;stroke:#8a7b66;stroke-width:2}.road{fill:none;stroke:#9a7a50;stroke-width:10;stroke-linecap:round}</style>
+  </defs>
+  <rect width="1200" height="760" fill="url(#paper)"/>
+  <text x="31" y="47" class="label" font-size="32">FIRST KERNSTOWN • SANDY RIDGE • ABOUT 4 P.M.</text>
+  <text x="31" y="78" class="small">Phase diagram • schematic geography, not to scale or exact frontage</text>
+
+  <path d="M80 100 C127 179 111 278 148 368 C189 468 155 591 117 724 L769 724 C731 610 705 505 749 398 C786 305 754 189 804 100 Z" fill="url(#ridge)" opacity=".72"/>
+  <text x="88" y="438" class="label" fill="#647653" transform="rotate(-84 88 438)">SANDY RIDGE</text>
+  <path d="M890 112 C858 210 879 320 849 420 C824 508 847 605 882 708 L1060 708 C1022 603 1013 510 1040 419 C1072 310 1044 207 1070 112 Z" fill="url(#ridge)" opacity=".65"/>
+  <text x="900" y="444" class="label" fill="#647653" transform="rotate(-84 900 444)">PRITCHARD'S HILL</text>
+  <path class="road" d="M1122 96 C1115 223 1124 371 1118 503 C1112 590 1119 660 1133 732"/>
+  <text x="1152" y="530" class="tiny" transform="rotate(88 1152 530)">VALLEY TURNPIKE</text>
+
+  <path d="M250 107 C334 84 474 91 590 121 C653 137 693 182 684 251 C675 316 611 348 531 349 C447 350 373 321 294 335 C226 347 178 301 178 230 C178 174 204 126 250 107 Z" fill="url(#woods)" stroke="#687d58" stroke-width="2"/>
+  <text x="306" y="139" class="label" fill="#546748">WOODS: TYLER'S APPROACH</text>
+
+  <rect x="190" y="397" width="626" height="24" rx="5" fill="url(#stone)" stroke="#5c554c" stroke-width="3"/>
+  <text x="330" y="455" class="label">EAST–WEST STONE WALL • ABOUT 500 YARDS</text>
+
+  <path d="M467 135 C466 192 467 255 468 349" fill="none" stroke="#315f8c" stroke-width="25" marker-end="url(#blueArrow)"/>
+  <line x1="428" y1="173" x2="506" y2="173" stroke="#dce6ef" stroke-width="4"/>
+  <line x1="428" y1="203" x2="506" y2="203" stroke="#dce6ef" stroke-width="4"/>
+  <line x1="428" y1="233" x2="506" y2="233" stroke="#dce6ef" stroke-width="4"/>
+  <line x1="428" y1="263" x2="506" y2="263" stroke="#dce6ef" stroke-width="4"/>
+  <line x1="428" y1="293" x2="506" y2="293" stroke="#dce6ef" stroke-width="4"/>
+  <rect x="547" y="158" width="281" height="119" rx="10" class="box"/>
+  <text x="567" y="188" class="label blue">Tyler's Third Brigade</text>
+  <text x="567" y="217" class="small">Close column of divisions</text>
+  <text x="567" y="242" class="tiny">about 75 yards wide</text>
+  <text x="567" y="265" class="tiny">five regiments stacked in depth</text>
+
+  <line x1="326" y1="383" x2="455" y2="383" stroke="#9a3d32" stroke-width="15"/>
+  <text x="283" y="373" class="tiny red">27th Va.</text>
+  <line x1="468" y1="383" x2="570" y2="383" stroke="#9a3d32" stroke-width="15"/>
+  <text x="476" y="373" class="tiny red">21st Va.</text>
+  <path d="M850 590 C772 538 713 493 650 427" fill="none" stroke="#9a3d32" stroke-width="11" marker-end="url(#redArrow)"/>
+  <text x="720" y="563" class="small red">33rd &amp; 4th Va.</text>
+  <path d="M198 590 C246 530 287 480 342 425" fill="none" stroke="#9a3d32" stroke-width="11" marker-end="url(#redArrow)"/>
+  <text x="139" y="621" class="small red">Fulkerson</text>
+  <text x="139" y="645" class="tiny red">23rd &amp; 37th Va.</text>
+
+  <path d="M377 337 C323 339 268 357 242 382" fill="none" stroke="#315f8c" stroke-width="10" stroke-dasharray="16 9" marker-end="url(#blueArrow)"/>
+  <text x="169" y="316" class="small blue">Thoburn's flank attempt</text>
+  <text x="188" y="339" class="tiny blue">1st Virginia stopped at wall</text>
+
+  <line x1="174" y1="676" x2="280" y2="676" stroke="#9a3d32" stroke-width="14"/><text x="298" y="683" class="small red">Confederate infantry</text>
+  <line x1="552" y1="676" x2="658" y2="676" stroke="#315f8c" stroke-width="14"/><text x="676" y="683" class="small blue">United States infantry</text>
+
+  <line x1="907" y1="321" x2="1014" y2="321" stroke="#315f8c" stroke-width="14"/><circle cx="933" cy="321" r="8" fill="#f8f2e2"/><circle cx="966" cy="321" r="8" fill="#f8f2e2"/><circle cx="999" cy="321" r="8" fill="#f8f2e2"/>
+  <text x="885" y="291" class="small blue">Federal guns</text>
+  <text x="882" y="346" class="tiny blue">on Pritchard's Hill</text>
+
+  <path d="M1148 98 L1148 158" stroke="#292621" stroke-width="4"/><path d="M1148 79 L1135 107 L1161 107 Z" fill="#292621"/><text x="1139" y="68" class="label">N</text>
+</svg>

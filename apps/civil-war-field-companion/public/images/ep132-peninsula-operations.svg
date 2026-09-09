@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Peninsula Campaign operational setting, April and May 1862</title>
+  <desc id="desc">Schematic map showing Richmond, West Point, Williamsburg, Yorktown, Gloucester Point, Fort Monroe, Norfolk, the York and James Rivers, the United States advance, and Confederate reinforcement and retreat routes.</desc>
+  <defs>
+    <marker id="usArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 10 5 0 10Z" fill="#315f8c"/>
+    </marker>
+    <marker id="csArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 10 5 0 10Z" fill="#9a3d32"/>
+    </marker>
+    <marker id="planArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 10 5 0 10Z" fill="#315f8c"/>
+    </marker>
+    <style>
+      .label{font:600 20px Georgia,serif;fill:#1f2933}.small{font:16px Arial,sans-serif;fill:#334155}.tiny{font:14px Arial,sans-serif;fill:#475569}.water{font:italic 19px Georgia,serif;fill:#2e638d}.place{fill:#fff;stroke:#17212b;stroke-width:3}.us{fill:none;stroke:#315f8c;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}.cs{fill:none;stroke:#9a3d32;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}.plan{fill:none;stroke:#315f8c;stroke-width:5;stroke-dasharray:14 10;stroke-linecap:round}.road{fill:none;stroke:#a98656;stroke-width:4;stroke-dasharray:7 8}.rail{fill:none;stroke:#393939;stroke-width:3;stroke-dasharray:13 5 3 5}
+    </style>
+  </defs>
+  <rect width="1200" height="760" fill="#dceef7"/>
+  <path d="M70 80H1130V680H70Z" fill="#dceef7"/>
+  <path d="M100 120 C240 105 355 120 480 156 C640 202 766 250 970 316 L1110 410 L1060 584 C865 560 720 526 565 485 C420 446 290 414 120 400Z" fill="#efe5c9" stroke="#7f765e" stroke-width="4"/>
+  <path d="M95 114 C285 96 462 140 625 198 C790 256 918 300 1110 400" fill="none" stroke="#80b8d7" stroke-width="55"/>
+  <path d="M96 406 C270 420 408 458 567 500 C739 546 900 590 1070 602" fill="none" stroke="#80b8d7" stroke-width="64"/>
+  <path d="M624 197 C650 235 661 275 653 314" fill="none" stroke="#80b8d7" stroke-width="25"/>
+  <path d="M955 325 C978 359 989 393 986 427" fill="none" stroke="#80b8d7" stroke-width="22"/>
+
+  <text x="475" y="115" class="water" transform="rotate(15 475 115)">York River</text>
+  <text x="420" y="568" class="water" transform="rotate(15 420 568)">James River</text>
+  <text x="1033" y="685" class="water">Hampton Roads</text>
+
+  <path d="M170 290 C340 294 470 315 600 340 C745 368 860 402 1000 472" class="road"/>
+  <path d="M170 290 C322 270 435 250 585 232" class="rail"/>
+  <text x="286" y="260" class="tiny">Richmond &amp; York River Railroad</text>
+
+  <path d="M1070 560 C1010 510 976 475 947 424 C913 370 882 346 826 330" class="us" marker-end="url(#usArrow)"/>
+  <text x="635" y="562" class="small" fill="#315f8c">Army of the Potomac</text>
+  <text x="635" y="584" class="tiny">April 4–5 advance from Fort Monroe</text>
+
+  <path d="M820 335 C740 314 680 290 604 255 C515 215 410 190 300 190" class="cs" marker-end="url(#csArrow)"/>
+  <text x="248" y="222" class="small" fill="#9a3d32">Johnston’s May 3–4 withdrawal</text>
+
+  <path d="M255 155 C360 170 487 191 756 300" class="cs" stroke-dasharray="12 10" marker-end="url(#csArrow)"/>
+  <text x="244" y="136" class="tiny" fill="#9a3d32">Confederate reinforcements to the Peninsula</text>
+
+  <path d="M990 365 C900 270 770 220 612 207" class="plan" marker-end="url(#planArrow)"/>
+  <text x="708" y="226" class="small" fill="#315f8c">Franklin’s planned water movement</text>
+  <text x="742" y="248" class="tiny">toward West Point</text>
+
+  <g transform="translate(178 292)"><circle r="10" class="place"/><text x="-62" y="32" class="label">Richmond</text></g>
+  <g transform="translate(606 207)"><rect x="-66" y="-48" width="132" height="30" rx="5" fill="#efe5c9" fill-opacity=".94"/><circle r="10" class="place"/><text x="-52" y="-25" class="label">West Point</text></g>
+  <g transform="translate(700 305)"><circle r="10" class="place"/><text x="-55" y="38" class="label">Williamsburg</text></g>
+  <g transform="translate(835 335)"><rect x="12" y="-46" width="112" height="30" rx="5" fill="#efe5c9" fill-opacity=".94"/><circle r="10" class="place"/><text x="20" y="-23" class="label">Yorktown</text></g>
+  <g transform="translate(870 286)"><circle r="9" class="place"/><text x="10" y="-6" class="small">Gloucester Point</text></g>
+  <g transform="translate(958 429)"><circle r="9" class="place"/><text x="-90" y="34" class="small">Lee’s Mill</text></g>
+  <g transform="translate(1068 560)"><rect x="-128" y="-50" width="132" height="30" rx="5" fill="#efe5c9" fill-opacity=".94"/><circle r="10" class="place"/><text x="-120" y="-27" class="label">Fort Monroe</text></g>
+  <g transform="translate(1018 620)"><circle r="10" class="place"/><text x="-72" y="38" class="label">Norfolk</text></g>
+
+  <g transform="translate(90 615)">
+    <rect width="550" height="108" rx="12" fill="#fff" fill-opacity=".9" stroke="#94a3b8"/>
+    <path d="M24 31H82" class="us" marker-end="url(#usArrow)"/><text x="100" y="37" class="small">United States advance</text>
+    <path d="M302 31H360" class="cs" marker-end="url(#csArrow)"/><text x="378" y="37" class="small">Confederate retreat</text>
+    <path d="M24 75H82" class="plan" marker-end="url(#planArrow)"/><text x="100" y="81" class="small">Planned amphibious move</text>
+    <text x="302" y="81" class="tiny">Schematic; positions approximate</text>
+  </g>
+  <text x="1100" y="88" class="label">N</text>
+  <path d="M1108 102V150" stroke="#17212b" stroke-width="4"/>
+  <path d="M1108 92l-10 20h20Z" fill="#17212b"/>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Second Manassas positions before the 3 p.m. Federal assault, August 30, 1862</title>
+  <desc id="desc">Schematic north-up battlefield map showing Stonewall Jackson behind the unfinished railroad, James Longstreet south of the Warrenton Turnpike, Fitz John Porter and John Hatch east of the railroad, Franz Sigel on Dogan Ridge, John Reynolds on Chinn Ridge, and Henry Hill to the east.</desc>
+  <defs>
+    <pattern id="woods" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M8 29l7-13 7 13M4 31h22" fill="none" stroke="#91aa86" stroke-width="2" opacity=".42"/></pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity=".18"/></filter>
+    <marker id="usaArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0l10 5-10 5z" fill="#235d9f"/></marker>
+  </defs>
+  <rect width="1200" height="800" fill="#f4eedf"/>
+  <path d="M0 0h1200v126c-165 35-304 28-418-20-117-49-276-37-477 37C198 177 96 180 0 161z" fill="url(#woods)"/>
+  <path d="M0 548c152-53 285-56 399-9 151 62 297 58 438-13 96-48 217-43 363 18v256H0z" fill="url(#woods)"/>
+  <path d="M100 205c192-47 363-48 512-3 67 20 139 18 216-7" fill="none" stroke="#65594e" stroke-width="17" stroke-dasharray="24 11"/>
+  <path d="M100 205c192-47 363-48 512-3 67 20 139 18 216-7" fill="none" stroke="#d7cdbd" stroke-width="4" stroke-dasharray="24 11"/>
+  <text x="105" y="149" font-family="Georgia,serif" font-size="23" font-weight="700" fill="#463c34">Unfinished railroad</text>
+  <text x="498" y="175" font-family="Georgia,serif" font-size="18" fill="#463c34">Deep Cut</text>
+  <path d="M30 426c235-9 457 0 671 2 187 2 343-7 469-22" fill="none" stroke="#a57b4c" stroke-width="19"/>
+  <path d="M30 426c235-9 457 0 671 2 187 2 343-7 469-22" fill="none" stroke="#f1d9a9" stroke-width="9"/>
+  <text x="45" y="394" font-family="Georgia,serif" font-size="23" font-weight="700" fill="#64492f">Warrenton Turnpike</text>
+  <text x="45" y="460" font-family="Arial,sans-serif" font-size="16" fill="#64492f">west to Gainesville</text>
+  <text x="1000" y="382" font-family="Arial,sans-serif" font-size="16" fill="#64492f">east to Centreville</text>
+  <path d="M706 244c67 49 92 105 75 167-16 60-5 128 33 204" fill="none" stroke="#73a9be" stroke-width="10" opacity=".82"/>
+  <path d="M1082 95c-79 91-141 184-187 278-52 104-69 217-50 339" fill="none" stroke="#987858" stroke-width="9" stroke-dasharray="4 9"/>
+  <text x="985" y="230" font-family="Georgia,serif" font-size="18" fill="#5f4934" transform="rotate(-59 985 230)">Sudley Road</text>
+  <path d="M744 447c50 56 92 112 126 170" fill="none" stroke="#987858" stroke-width="7" stroke-dasharray="4 9"/>
+  <text x="765" y="500" font-family="Arial,sans-serif" font-size="16" fill="#5f4934" transform="rotate(48 765 500)">Groveton–Sudley Road</text>
+  <ellipse cx="937" cy="342" rx="147" ry="44" fill="#627747" opacity=".16"/>
+  <text x="890" y="309" font-family="Georgia,serif" font-size="21" font-weight="700" fill="#50613e">Dogan Ridge</text>
+  <ellipse cx="955" cy="620" rx="168" ry="67" fill="#627747" opacity=".18"/>
+  <text x="918" y="687" font-family="Georgia,serif" font-size="21" font-weight="700" fill="#50613e">Chinn Ridge</text>
+  <ellipse cx="1080" cy="523" rx="92" ry="48" fill="#627747" opacity=".16"/>
+  <text x="1028" y="505" font-family="Georgia,serif" font-size="20" font-weight="700" fill="#50613e">Henry Hill</text>
+  <g filter="url(#shadow)">
+    <rect x="105" y="242" width="278" height="64" rx="10" fill="#a9493f"/><text x="244" y="267" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="white">JACKSON’S LEFT WING</text><text x="244" y="291" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="white">behind the railroad grade</text>
+    <rect x="432" y="242" width="260" height="64" rx="10" fill="#a9493f"/><text x="562" y="267" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="white">STARKE’S DIVISION</text><text x="562" y="291" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="white">Deep Cut and the Dump</text>
+    <rect x="627" y="337" width="238" height="65" rx="10" fill="#235d9f"/><text x="746" y="363" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="white">PORTER + HATCH</text><text x="746" y="387" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="white">about 10,000 attackers</text>
+    <rect x="899" y="418" width="220" height="63" rx="10" fill="#235d9f"/><text x="1009" y="444" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="white">SIGEL’S CORPS</text><text x="1009" y="467" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="white">on Dogan Ridge</text>
+    <rect x="120" y="510" width="300" height="65" rx="10" fill="#a9493f"/><text x="270" y="536" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="white">LONGSTREET’S RIGHT WING</text><text x="270" y="560" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="white">five divisions south of the road</text>
+    <rect x="826" y="704" width="250" height="62" rx="10" fill="#235d9f"/><text x="951" y="730" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="white">REYNOLDS</text><text x="951" y="753" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="white">Pennsylvania Reserves</text>
+  </g>
+  <path d="M740 332C744 290 752 252 760 220" fill="none" stroke="#235d9f" stroke-width="9" marker-end="url(#usaArrow)"/>
+  <text x="793" y="263" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#183f6d">3 p.m. attack</text>
+  <circle cx="702" cy="426" r="8" fill="#27231f"/><text x="635" y="459" font-family="Georgia,serif" font-size="19" font-weight="700" fill="#27231f">Groveton</text>
+  <circle cx="524" cy="417" r="7" fill="#27231f"/><text x="538" y="407" font-family="Georgia,serif" font-size="18" fill="#27231f">Brawner farm</text>
+  <g transform="translate(1080 52)"><circle r="30" fill="#fffaf0" stroke="#6b604f" stroke-width="2"/><path d="M0 22V-20M0-20l-8 14h16z" fill="#493f34"/><text x="0" y="-31" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#493f34">N</text></g>
+  <g transform="translate(42 687)"><rect width="650" height="78" rx="10" fill="#fffaf0" stroke="#b7aa92"/><rect x="18" y="15" width="28" height="18" rx="3" fill="#235d9f"/><text x="57" y="30" font-family="Arial,sans-serif" font-size="16" fill="#29251f">United States</text><rect x="201" y="15" width="28" height="18" rx="3" fill="#a9493f"/><text x="240" y="30" font-family="Arial,sans-serif" font-size="16" fill="#29251f">Confederacy</text><text x="18" y="58" font-family="Arial,sans-serif" font-size="15" fill="#5f574c">Generalized relationships • not to scale • modern north-up orientation</text></g>
+</svg>

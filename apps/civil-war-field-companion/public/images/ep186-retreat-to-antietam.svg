@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">From South Mountain to Antietam Creek, September 14 to 15, 1862</title>
+  <desc id="desc">Schematic operational map with north at top. Confederate forces under Hill and Longstreet withdraw west from Turner's and Fox's Gaps through Boonsboro, halt near Keedysville, and form behind Antietam Creek near Sharpsburg. McLaws remains south in Pleasant Valley after the Union seizure of Crampton's Gap. Harpers Ferry surrenders, opening the route for McLaws and Jackson to join Lee.</desc>
+  <defs>
+    <linearGradient id="paper2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8f1df"/>
+      <stop offset="1" stop-color="#e8dcc2"/>
+    </linearGradient>
+    <pattern id="ridge2" width="34" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="7" cy="16" r="7" fill="#3f583f" opacity="0.32"/>
+      <circle cx="20" cy="9" r="7" fill="#64765b" opacity="0.35"/>
+      <circle cx="29" cy="24" r="6" fill="#354d37" opacity="0.28"/>
+    </pattern>
+    <marker id="blueArrow2" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 18 18">
+      <path d="M0 0L18 9L0 18Z" fill="#315f8c"/>
+    </marker>
+    <marker id="redArrow2" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 18 18">
+      <path d="M0 0L18 9L0 18Z" fill="#963b31"/>
+    </marker>
+    <filter id="shadow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#paper2)"/>
+  <rect x="28" y="28" width="1144" height="744" rx="18" fill="none" stroke="#9b8d72" stroke-width="2"/>
+  <text x="60" y="76" font-family="Georgia, serif" font-size="32" font-weight="700" fill="#2e2b28">FROM SOUTH MOUNTAIN TO ANTIETAM CREEK</text>
+  <text x="60" y="108" font-family="Arial, sans-serif" font-size="18" fill="#5d5548">Night of September 14–15 and morning of September 15, 1862</text>
+
+  <rect x="48" y="127" width="1104" height="617" fill="#e6dfb8"/>
+  <path d="M889 127C857 201 881 260 850 330C823 389 847 451 819 515C790 579 814 657 776 744H1152V127Z" fill="#718064"/>
+  <path d="M889 127C857 201 881 260 850 330C823 389 847 451 819 515C790 579 814 657 776 744H1152V127Z" fill="url(#ridge2)"/>
+  <text x="1018" y="315" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-style="italic" font-weight="700" fill="#f6f0dd">South Mountain</text>
+
+  <path d="M540 127C507 194 534 252 503 319C476 377 501 442 469 508C438 573 467 652 428 744" fill="none" stroke="#6b9aab" stroke-width="18"/>
+  <path d="M540 127C507 194 534 252 503 319C476 377 501 442 469 508C438 573 467 652 428 744" fill="none" stroke="#bfe1e9" stroke-width="7"/>
+  <text x="527" y="365" transform="rotate(76 527 365)" font-family="Georgia, serif" font-size="18" font-style="italic" fill="#376878">Antietam Creek</text>
+
+  <path d="M105 686C279 684 401 701 550 711C706 721 864 706 1105 680" fill="none" stroke="#6b9aab" stroke-width="26"/>
+  <path d="M105 686C279 684 401 701 550 711C706 721 864 706 1105 680" fill="none" stroke="#bfe1e9" stroke-width="10"/>
+  <text x="156" y="669" font-family="Georgia, serif" font-size="18" font-style="italic" fill="#376878">Potomac River</text>
+
+  <path d="M1040 271C905 292 789 309 677 324C562 340 444 370 309 416" fill="none" stroke="#b88750" stroke-width="18"/>
+  <path d="M1040 271C905 292 789 309 677 324C562 340 444 370 309 416" fill="none" stroke="#f6dfa8" stroke-width="6"/>
+  <text x="657" y="310" transform="rotate(-10 657 310)" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#60492f">BOONSBORO–SHARPSBURG ROAD</text>
+
+  <path d="M304 414C273 502 249 575 239 665" fill="none" stroke="#b88750" stroke-width="16"/>
+  <path d="M304 414C273 502 249 575 239 665" fill="none" stroke="#f6dfa8" stroke-width="5"/>
+  <text x="196" y="555" transform="rotate(-76 196 555)" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#60492f">SHEPHERDSTOWN ROAD</text>
+
+  <path d="M905 454C853 512 810 570 756 655" fill="none" stroke="#b88750" stroke-width="15"/>
+  <path d="M905 454C853 512 810 570 756 655" fill="none" stroke="#f6dfa8" stroke-width="5"/>
+  <g font-family="Arial, sans-serif" filter="url(#shadow2)">
+    <g transform="translate(938 287)"><circle r="10" fill="#f4c35a" stroke="#2e2b28" stroke-width="3"/><rect x="-62" y="-88" width="124" height="38" rx="7" fill="#fffaf0" stroke="#877b65"/><text x="0" y="-63" text-anchor="middle" font-size="16" font-weight="700" fill="#2e2b28">Boonsboro</text></g>
+    <g transform="translate(628 345)"><circle r="10" fill="#f4c35a" stroke="#2e2b28" stroke-width="3"/><rect x="-59" y="-58" width="118" height="38" rx="7" fill="#fffaf0" stroke="#877b65"/><text x="0" y="-33" text-anchor="middle" font-size="16" font-weight="700" fill="#2e2b28">Keedysville</text></g>
+    <g transform="translate(305 415)"><circle r="10" fill="#f4c35a" stroke="#2e2b28" stroke-width="3"/><rect x="-57" y="20" width="114" height="38" rx="7" fill="#fffaf0" stroke="#877b65"/><text x="0" y="45" text-anchor="middle" font-size="16" font-weight="700" fill="#2e2b28">Sharpsburg</text></g>
+    <g transform="translate(907 455)"><circle r="10" fill="#f4c35a" stroke="#2e2b28" stroke-width="3"/><rect x="-77" y="20" width="154" height="38" rx="7" fill="#fffaf0" stroke="#877b65"/><text x="0" y="45" text-anchor="middle" font-size="16" font-weight="700" fill="#2e2b28">Crampton's Gap</text></g>
+    <g transform="translate(739 659)"><circle r="10" fill="#f4c35a" stroke="#2e2b28" stroke-width="3"/><rect x="20" y="-56" width="130" height="38" rx="7" fill="#fffaf0" stroke="#877b65"/><text x="85" y="-31" text-anchor="middle" font-size="16" font-weight="700" fill="#2e2b28">Harpers Ferry</text></g>
+  </g>
+
+  <path d="M1067 240C967 250 884 270 791 302C731 322 689 330 654 339" fill="none" stroke="#963b31" stroke-width="11" marker-end="url(#redArrow2)"/>
+  <path d="M626 385C548 392 463 403 335 414" fill="none" stroke="#963b31" stroke-width="11" marker-end="url(#redArrow2)"/>
+  <rect x="568" y="180" width="288" height="66" rx="9" fill="#fff4e9" stroke="#963b31" filter="url(#shadow2)"/>
+  <text x="712" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#762d28">Hill + Longstreet withdraw</text>
+  <text x="712" y="228" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#762d28">10 p.m.–4 a.m. through Boonsboro</text>
+
+  <path d="M603 376C568 411 535 437 491 456" fill="none" stroke="#963b31" stroke-width="7" stroke-dasharray="10 8" marker-end="url(#redArrow2)"/>
+  <rect x="428" y="461" width="246" height="72" rx="9" fill="#fff4e9" stroke="#963b31" filter="url(#shadow2)"/>
+  <text x="551" y="486" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#762d28">Lee selects high ground</text>
+  <text x="551" y="508" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#762d28">west of Antietam Creek</text>
+
+  <path d="M842 500C787 517 738 531 681 541" fill="none" stroke="#963b31" stroke-width="12" stroke-linecap="round"/>
+  <rect x="848" y="538" width="276" height="69" rx="9" fill="#fff4e9" stroke="#963b31" filter="url(#shadow2)"/>
+  <text x="986" y="562" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#762d28">McLaws holds Pleasant Valley</text>
+  <text x="986" y="584" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#762d28">boxed in until Harpers Ferry falls</text>
+
+  <path d="M806 646C720 612 626 571 523 516" fill="none" stroke="#963b31" stroke-width="9" stroke-dasharray="11 8" marker-end="url(#redArrow2)"/>
+  <rect x="407" y="597" width="293" height="70" rx="9" fill="#fff4e9" stroke="#963b31" filter="url(#shadow2)"/>
+  <text x="553" y="623" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#762d28">Jackson + McLaws can rejoin Lee</text>
+  <text x="553" y="647" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#762d28">after the September 15 surrender</text>
+
+  <path d="M1092 340C1002 353 943 370 890 402" fill="none" stroke="#315f8c" stroke-width="10" marker-end="url(#blueArrow2)"/>
+  <text x="1110" y="375" text-anchor="end" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#dceaf2">VI Corps holds gap</text>
+  <path d="M1080 168C1010 162 950 163 890 172" fill="none" stroke="#315f8c" stroke-width="10" marker-end="url(#blueArrow2)"/>
+  <text x="1079" y="153" text-anchor="end" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#dceaf2">Federal pursuit</text>
+
+  <g transform="translate(68 600)" font-family="Arial, sans-serif">
+    <rect x="0" y="0" width="332" height="75" rx="9" fill="#fffaf0" stroke="#877b65" filter="url(#shadow2)" opacity="0.97"/>
+    <path d="M20 25H79" stroke="#315f8c" stroke-width="8" marker-end="url(#blueArrow2)"/>
+    <text x="96" y="31" font-size="14" fill="#2e2b28">United States movement</text>
+    <path d="M20 55H79" stroke="#963b31" stroke-width="8" marker-end="url(#redArrow2)"/>
+    <text x="96" y="61" font-size="14" fill="#2e2b28">Confederate movement</text>
+  </g>
+  <g transform="translate(1093 151)" font-family="Arial, sans-serif">
+    <path d="M0 58V0" stroke="#2e2b28" stroke-width="4"/>
+    <path d="M0 0L-10 20H10Z" fill="#2e2b28"/>
+    <text x="0" y="84" text-anchor="middle" font-size="17" font-weight="700" fill="#2e2b28">N</text>
+  </g>
+  <text x="1128" y="719" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#f4eedc">Schematic · not to scale</text>
+</svg>

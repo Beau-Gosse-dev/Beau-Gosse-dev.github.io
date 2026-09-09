@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">A. P. Hill strikes the Ninth Corps left</title>
+  <desc id="desc">Schematic tactical map with north at top. The 8th Connecticut has advanced toward the Harpers Ferry Road, leaving the 16th Connecticut and 4th Rhode Island behind in Otto's 40-acre cornfield. Gregg, Archer, and Branch attack from the south and southwest. Scammon's Ohio regiments change front while the Ninth Corps withdraws east toward the Lower Bridge.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbf4e4"/>
+      <stop offset="1" stop-color="#e4d6b8"/>
+    </linearGradient>
+    <pattern id="corn" width="26" height="26" patternUnits="userSpaceOnUse">
+      <path d="M13 24V7M13 12L7 8M13 16L19 11" fill="none" stroke="#7a8447" stroke-width="2" opacity="0.72"/>
+      <ellipse cx="13" cy="5" rx="3" ry="5" fill="#9a944d" opacity="0.72"/>
+    </pattern>
+    <marker id="blueArrow" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 16 16">
+      <path d="M0 0L16 8L0 16Z" fill="#315f8c"/>
+    </marker>
+    <marker id="redArrow" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 16 16">
+      <path d="M0 0L16 8L0 16Z" fill="#963b31"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#paper)"/>
+  <rect x="28" y="28" width="1144" height="744" rx="18" fill="none" stroke="#97896f" stroke-width="2"/>
+  <text x="60" y="75" font-family="Georgia, serif" font-size="31" font-weight="700" fill="#2f2b27">A. P. HILL STRIKES THE NINTH CORPS LEFT</text>
+  <text x="60" y="106" font-family="Arial, sans-serif" font-size="18" fill="#5c5549">Otto farm and 40-acre cornfield · about 4:00–5:30 p.m. · north is up</text>
+  <rect x="48" y="128" width="1104" height="610" fill="#e8e4cf"/>
+
+  <path d="M1040 128C1014 226 1053 332 1028 431C1003 527 1037 638 1008 738" fill="none" stroke="#56809a" stroke-width="45" opacity="0.85"/>
+  <path d="M1040 128C1014 226 1053 332 1028 431C1003 527 1037 638 1008 738" fill="none" stroke="#acd4de" stroke-width="26"/>
+  <text x="1091" y="390" font-family="Georgia, serif" font-size="18" font-weight="700" fill="#31596d" transform="rotate(82 1091 390)">ANTIETAM CREEK</text>
+
+  <path d="M251 128C268 255 277 397 287 738" fill="none" stroke="#8a6d4d" stroke-width="18"/>
+  <path d="M251 128C268 255 277 397 287 738" fill="none" stroke="#d7c092" stroke-width="7"/>
+  <rect x="110" y="493" width="310" height="31" rx="6" fill="#fffaf0" opacity="0.96"/>
+  <text x="265" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#654d36">HARPERS FERRY ROAD · TO SHEPHERDSTOWN</text>
+
+  <path d="M284 277C476 301 676 327 851 373C915 390 963 408 1014 431" fill="none" stroke="#9c7a52" stroke-width="15"/>
+  <path d="M284 277C476 301 676 327 851 373C915 390 963 408 1014 431" fill="none" stroke="#efd4a2" stroke-width="6"/>
+  <rect x="530" y="294" width="256" height="29" rx="6" fill="#fffaf0" opacity="0.96"/>
+  <text x="658" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#654d36">LOWER-BRIDGE ROAD</text>
+
+  <g transform="translate(164 205)" filter="url(#shadow)">
+    <rect x="-86" y="-43" width="172" height="86" rx="9" fill="#efe1ca" stroke="#7d6f5d" stroke-width="2"/>
+    <text x="0" y="-10" text-anchor="middle" font-family="Georgia, serif" font-size="20" font-weight="700" fill="#302b26">SHARPSBURG</text>
+    <text x="0" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5b544b">Ninth Corps advance</text>
+    <text x="0" y="31" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5b544b">had reached the outskirts</text>
+  </g>
+
+  <path d="M457 404C570 376 755 390 875 457C928 487 937 619 843 690C713 725 533 696 465 620C425 575 417 463 457 404Z" fill="#d7d29b" stroke="#8c8653" stroke-width="3"/>
+  <path d="M457 404C570 376 755 390 875 457C928 487 937 619 843 690C713 725 533 696 465 620C425 575 417 463 457 404Z" fill="url(#corn)"/>
+  <rect x="585" y="646" width="208" height="34" rx="7" fill="#fffaf0" opacity="0.96"/>
+  <text x="689" y="669" text-anchor="middle" font-family="Georgia, serif" font-size="15" font-weight="700" fill="#4c5031">OTTO’S 40-ACRE CORNFIELD</text>
+
+  <g font-family="Arial, sans-serif" filter="url(#shadow)">
+    <g transform="translate(397 332)">
+      <rect x="-89" y="-31" width="178" height="62" rx="8" fill="#315f8c"/>
+      <text x="0" y="-8" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">8TH CONNECTICUT</text>
+      <text x="0" y="13" text-anchor="middle" font-size="11" fill="#eaf2f8">ahead · battery captured</text>
+    </g>
+    <g transform="translate(625 476)">
+      <rect x="-103" y="-31" width="206" height="62" rx="8" fill="#315f8c"/>
+      <text x="0" y="-8" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">16TH CONNECTICUT</text>
+      <text x="0" y="13" text-anchor="middle" font-size="11" fill="#eaf2f8">new regiment · in the corn</text>
+    </g>
+    <g transform="translate(821 534)">
+      <rect x="-94" y="-31" width="188" height="62" rx="8" fill="#315f8c"/>
+      <text x="0" y="-8" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">4TH R. I.</text>
+      <text x="0" y="13" text-anchor="middle" font-size="11" fill="#eaf2f8">Harland’s brigade</text>
+    </g>
+    <g transform="translate(735 247)">
+      <rect x="-103" y="-31" width="206" height="62" rx="8" fill="#315f8c"/>
+      <text x="0" y="-8" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">FAIRCHILD</text>
+      <text x="0" y="13" text-anchor="middle" font-size="11" fill="#eaf2f8">farther forward</text>
+    </g>
+    <g transform="translate(890 360)">
+      <rect x="-102" y="-31" width="204" height="62" rx="8" fill="#315f8c"/>
+      <text x="0" y="-8" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">SCAMMON</text>
+      <text x="0" y="13" text-anchor="middle" font-size="11" fill="#eaf2f8">12th · 23rd · 30th Ohio</text>
+    </g>
+  </g>
+
+  <g fill="none" stroke="#963b31" stroke-width="12" marker-end="url(#redArrow)">
+    <path d="M383 699C433 650 490 600 553 530"/>
+    <path d="M301 646C344 588 403 515 485 444"/>
+    <path d="M209 592C240 510 285 420 342 362"/>
+  </g>
+  <g font-family="Arial, sans-serif" filter="url(#shadow)">
+    <g transform="translate(422 707)">
+      <rect x="-77" y="-25" width="154" height="50" rx="8" fill="#963b31"/>
+      <text x="0" y="-3" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">GREGG</text>
+      <text x="0" y="15" text-anchor="middle" font-size="10" fill="#fae9e4">South Carolinians</text>
+    </g>
+    <g transform="translate(266 650)">
+      <rect x="-69" y="-25" width="138" height="50" rx="8" fill="#963b31"/>
+      <text x="0" y="-3" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">ARCHER</text>
+      <text x="0" y="15" text-anchor="middle" font-size="10" fill="#fae9e4">center attack</text>
+    </g>
+    <g transform="translate(153 558)">
+      <rect x="-70" y="-25" width="140" height="50" rx="8" fill="#963b31"/>
+      <text x="0" y="-3" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">BRANCH</text>
+      <text x="0" y="15" text-anchor="middle" font-size="10" fill="#fae9e4">drives north</text>
+    </g>
+  </g>
+
+  <g fill="none" stroke="#315f8c" stroke-width="8" stroke-dasharray="13 9" marker-end="url(#blueArrow)">
+    <path d="M432 364C569 351 705 365 827 405"/>
+    <path d="M636 520C743 522 841 500 942 458"/>
+    <path d="M826 575C882 560 927 528 970 483"/>
+  </g>
+  <rect x="831" y="596" width="283" height="65" rx="9" fill="#eaf2f8" stroke="#315f8c" stroke-width="2" filter="url(#shadow)"/>
+  <text x="972" y="620" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#244e75">COX WITHDRAWS THE CORPS EAST</text>
+  <text x="972" y="641" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#315f8c">final line on the ridge above the Lower Bridge</text>
+
+  <circle cx="487" cy="411" r="11" fill="#f5f0df" stroke="#372f2a" stroke-width="3"/>
+  <path d="M480 404L494 418M494 404L480 418" stroke="#963b31" stroke-width="3"/>
+  <rect x="330" y="373" width="150" height="31" rx="6" fill="#fffaf0" stroke="#8d7c65"/>
+  <text x="405" y="394" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#4f463c">RODMAN WOUNDED</text>
+
+  <g transform="translate(1110 171)" font-family="Arial, sans-serif" fill="#2f2b27">
+    <path d="M0 50V0M0 0L-9 18M0 0L9 18" fill="none" stroke="#2f2b27" stroke-width="3"/>
+    <text x="0" y="-9" text-anchor="middle" font-size="18" font-weight="700">N</text>
+  </g>
+
+  <text x="600" y="764" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#5f574d">Schematic and not to scale · sequential movements combined · positions generalized from NPS interpretation and official reports</text>
+</svg>

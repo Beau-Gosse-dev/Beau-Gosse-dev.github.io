@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Baylor's advance to Mesilla and the capture of Fort Fillmore, 1861</title>
+  <desc id="desc">Schematic map showing the route from San Antonio across Texas to Fort Bliss, Mesilla and Fort Fillmore, the United States evacuation toward Fort Stanton, and the surrender near San Augustine Springs.</desc>
+  <defs>
+    <pattern id="paper" width="30" height="30" patternUnits="userSpaceOnUse"><rect width="30" height="30" fill="#f1e8d5"/><circle cx="7" cy="9" r="1" fill="#85765b" opacity=".13"/></pattern>
+    <marker id="red" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto"><path d="M0 0L18 9 0 18z" fill="#9c3d32"/></marker>
+    <marker id="blue" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto"><path d="M0 0L18 9 0 18z" fill="#315f8c"/></marker>
+  </defs>
+  <rect width="1400" height="900" fill="url(#paper)"/>
+  <path d="M0 215 L430 175 L520 300 L760 285 L900 365 L1025 350 L1140 445 L1400 440 L1400 900 L0 900 Z" fill="#dfcfae" opacity=".55"/>
+  <path d="M430 85 L430 715 M1010 86 L1010 710" stroke="#756a59" stroke-width="4" stroke-dasharray="14 12"/>
+  <path d="M430 715 L600 790 L1010 710" fill="none" stroke="#756a59" stroke-width="4" stroke-dasharray="14 12"/>
+  <g font-family="Georgia,serif" font-size="38" fill="#615846" text-anchor="middle"><text x="215" y="150">NEW MEXICO TERRITORY</text><text x="725" y="150">TEXAS</text><text x="1200" y="150">LOUISIANA</text></g>
+  <path d="M520 80 C500 180 520 290 535 390 C550 480 532 598 500 720" fill="none" stroke="#78a8b8" stroke-width="28" opacity=".78"/>
+  <text x="565" y="330" transform="rotate(83 565 330)" font-family="Arial,sans-serif" font-size="22" fill="#376579" letter-spacing="3">RIO GRANDE</text>
+  <path d="M1190 510 C1040 518 890 530 755 570 C660 598 582 630 510 665" fill="none" stroke="#9c3d32" stroke-width="18" marker-end="url(#red)"/>
+  <text x="815" y="480" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#7d3028">May–July 1861: Baylor marches west</text>
+  <g font-family="Arial,sans-serif" fill="#37342e">
+    <circle cx="1190" cy="510" r="14" fill="#9c3d32"/><text x="1190" y="555" font-size="26" font-weight="700" text-anchor="middle">San Antonio</text>
+    <circle cx="835" cy="550" r="12" fill="#9c3d32"/><text x="835" y="600" font-size="23" font-weight="700" text-anchor="middle">Fort Davis</text>
+    <circle cx="505" cy="665" r="14" fill="#9c3d32"/><text x="475" y="710" font-size="24" font-weight="700" text-anchor="end">Fort Bliss / El Paso</text>
+    <circle cx="505" cy="495" r="14" fill="#9c3d32"/><text x="465" y="480" font-size="25" font-weight="700" text-anchor="end">Mesilla</text>
+    <circle cx="552" cy="430" r="14" fill="#315f8c"/><text x="500" y="405" font-size="25" font-weight="700" text-anchor="end">Fort Fillmore</text>
+    <circle cx="725" cy="315" r="14" fill="#315f8c"/><text x="755" y="290" font-size="25" font-weight="700">Fort Stanton</text>
+    <circle cx="620" cy="365" r="13" fill="#8a6a22"/><text x="655" y="345" font-size="24" font-weight="700">San Augustine Springs</text>
+  </g>
+  <path d="M505 650 C492 590 493 540 505 505" fill="none" stroke="#9c3d32" stroke-width="13" marker-end="url(#red)"/>
+  <text x="305" y="570" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#7d3028">July 23–25: fewer than 300 Texans</text>
+  <text x="305" y="600" font-family="Arial,sans-serif" font-size="23" fill="#7d3028">enter New Mexico and occupy Mesilla</text>
+  <path d="M548 435 C535 458 520 475 510 492" fill="none" stroke="#315f8c" stroke-width="13" marker-end="url(#blue)"/>
+  <text x="650" y="465" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#294f75">July 25: Lynde attacks Mesilla, then returns</text>
+  <path d="M560 425 C625 400 680 360 715 320" fill="none" stroke="#315f8c" stroke-width="14" stroke-dasharray="20 12" marker-end="url(#blue)"/>
+  <text x="790" y="305" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#294f75">July 27: Fort Fillmore evacuated</text>
+  <path d="M700 332 C675 350 650 361 625 365" fill="none" stroke="#9c3d32" stroke-width="12" marker-end="url(#red)"/>
+  <text x="805" y="360" font-family="Arial,sans-serif" font-size="21" fill="#7d3028">Baylor pursues; U.S. column surrenders</text>
+  <rect x="58" y="720" width="610" height="125" rx="10" fill="#fffaf0" stroke="#b5a586" stroke-width="3"/>
+  <line x1="90" y1="760" x2="165" y2="760" stroke="#9c3d32" stroke-width="13"/><text x="185" y="769" font-family="Arial,sans-serif" font-size="22">Confederate movement</text>
+  <line x1="90" y1="806" x2="165" y2="806" stroke="#315f8c" stroke-width="13" stroke-dasharray="18 10"/><text x="185" y="815" font-family="Arial,sans-serif" font-size="22">U.S. evacuation toward Fort Stanton</text>
+  <text x="55" y="55" font-family="Georgia,serif" font-size="34" font-weight="700" fill="#252b27">BAYLOR’S “BUFFALO HUNT,” 1861</text>
+  <text x="56" y="91" font-family="Arial,sans-serif" font-size="20" fill="#5f5a50">Schematic orientation; distances are not to scale.</text>
+  <g transform="translate(1290 55)" font-family="Arial,sans-serif" fill="#3c3933" text-anchor="middle"><path d="M30 70V0M30 0L18 24M30 0L42 24" stroke="#3c3933" stroke-width="5" fill="none"/><text x="30" y="98" font-size="22" font-weight="700">N</text></g>
+</svg>

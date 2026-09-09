@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="650" viewBox="0 0 1000 650" role="img" aria-labelledby="title desc">
+  <title id="title">Peninsula Campaign context for Savage's Station</title>
+  <desc id="desc">Schematic map locating Richmond and Savage's Station between the York and James Rivers and showing the Army of the Potomac's change of base toward Harrison's Landing.</desc>
+  <defs>
+    <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#315f8c"/>
+    </marker>
+    <style>
+      .label{font:600 20px Georgia,serif;fill:#24211d}.small{font:15px Arial,sans-serif;fill:#34312d}.tiny{font:13px Arial,sans-serif;fill:#514d47}.water{fill:none;stroke:#5e9bbd;stroke-width:18;stroke-linecap:round}.road{fill:none;stroke:#8c7458;stroke-width:5;stroke-dasharray:12 8}.rail{fill:none;stroke:#3d3d3d;stroke-width:5}.movement{fill:none;stroke:#315f8c;stroke-width:8;stroke-linecap:round;marker-end:url(#arrowBlue)}
+    </style>
+  </defs>
+  <rect width="1000" height="650" fill="#f4edda"/>
+  <rect x="24" y="24" width="952" height="602" rx="16" fill="#fbf7ea" stroke="#8c806c" stroke-width="2"/>
+  <text x="55" y="66" class="label" font-size="27">Savage's Station in the Peninsula Campaign</text>
+  <text x="55" y="92" class="small">June 29, 1862 · SCHEMATIC — NOT TO SCALE</text>
+
+  <path class="water" d="M70 190 C220 150 350 165 500 210 C650 255 770 230 930 188"/>
+  <text x="95" y="150" class="label" fill="#356a89">Pamunkey and York River corridor</text>
+  <path class="water" d="M65 538 C250 575 390 565 520 510 C650 455 790 478 935 430"/>
+  <text x="700" y="510" class="label" fill="#356a89">James River</text>
+  <path d="M410 270 C520 220 635 245 730 285" fill="none" stroke="#6aa7c3" stroke-width="11" stroke-linecap="round"/>
+  <text x="505" y="242" class="small" fill="#356a89">Chickahominy River</text>
+
+  <path class="rail" d="M165 185 L750 335"/>
+  <path d="M180 177 L205 185 M230 190 L255 198 M280 203 L305 211 M330 216 L355 224 M380 229 L405 237 M430 242 L455 250 M480 255 L505 263 M530 268 L555 276 M580 281 L605 289 M630 294 L655 302 M680 307 L705 315" stroke="#f4edda" stroke-width="2"/>
+  <text x="220" y="170" class="small">Richmond &amp; York River Railroad</text>
+  <path class="road" d="M245 330 C420 320 575 335 750 365"/>
+  <text x="330" y="360" class="small">Williamsburg Road</text>
+  <path class="road" d="M655 353 C650 420 610 468 570 520"/>
+  <text x="614" y="445" class="small" transform="rotate(-63 614 445)">White Oak Swamp Road</text>
+
+  <circle cx="195" cy="306" r="9" fill="#9a3d32"/><text x="160" y="290" class="label">Richmond</text>
+  <circle cx="538" cy="300" r="9" fill="#315f8c"/><text x="486" y="283" class="label">Fair Oaks</text>
+  <circle cx="675" cy="345" r="11" fill="#315f8c"/><text x="695" y="340" class="label">Savage's Station</text>
+  <circle cx="573" cy="521" r="9" fill="#315f8c"/><text x="470" y="550" class="label">Glendale</text>
+  <circle cx="745" cy="474" r="9" fill="#315f8c"/><text x="760" y="469" class="label">Malvern Hill</text>
+  <circle cx="855" cy="455" r="9" fill="#315f8c"/><text x="760" y="405" class="label">Harrison's Landing</text>
+  <circle cx="150" cy="190" r="9" fill="#315f8c"/><text x="70" y="228" class="label">White House Landing</text>
+
+  <path class="movement" d="M515 304 C585 320 625 332 660 342"/>
+  <path class="movement" d="M680 365 C675 420 625 470 585 510"/>
+  <path class="movement" d="M600 520 C680 535 780 500 840 463"/>
+  <text x="685" y="392" class="small" fill="#315f8c">Army of the Potomac</text>
+  <text x="685" y="413" class="small" fill="#315f8c">change of base</text>
+
+  <rect x="55" y="390" width="330" height="122" rx="10" fill="#eee5cf" stroke="#a99c83"/>
+  <text x="75" y="420" class="small" font-weight="700">Operational relationship</text>
+  <text x="75" y="447" class="tiny">Savage's Station lay east of Richmond on the</text>
+  <text x="75" y="467" class="tiny">railroad and north of the White Oak Swamp route.</text>
+  <text x="75" y="487" class="tiny">The rear guard fought there while the army and</text>
+  <text x="75" y="507" class="tiny">wagon trains moved toward the James River.</text>
+</svg>

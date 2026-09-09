@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Fort Donelson breakout and Forrest escape, February 15–16, 1862</title>
+  <desc id="desc">Schematic map showing Confederate earthworks at Fort Donelson and Dover, Union divisions around them, the February 15 attack along Forge Road, Union counterattacks, and Forrest's February 16 escape east across Lick Creek.</desc>
+  <defs>
+    <pattern id="paper" width="28" height="28" patternUnits="userSpaceOnUse">
+      <rect width="28" height="28" fill="#f3ecdc"/>
+      <circle cx="5" cy="7" r="0.8" fill="#9e8f70" opacity=".18"/>
+      <circle cx="21" cy="18" r="0.7" fill="#9e8f70" opacity=".12"/>
+    </pattern>
+    <marker id="redArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#a33d32"/>
+    </marker>
+    <marker id="blueArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#315f8c"/>
+    </marker>
+    <marker id="goldArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#9b6b19"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-opacity=".18"/>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="900" fill="url(#paper)"/>
+  <path d="M905 -20 C875 100 940 174 1035 230 C1145 294 1245 261 1425 330 L1425 -20 Z" fill="#bdd5dc" stroke="#688d99" stroke-width="4"/>
+  <text x="1110" y="115" transform="rotate(20 1110 115)" font-family="Georgia,serif" font-size="30" fill="#376579" letter-spacing="4">CUMBERLAND RIVER</text>
+  <path d="M1110 620 C1175 655 1220 724 1252 930" fill="none" stroke="#98c2cf" stroke-width="65" opacity=".72"/>
+  <path d="M1110 620 C1175 655 1220 724 1252 930" fill="none" stroke="#4f899c" stroke-width="3"/>
+  <text x="1175" y="750" transform="rotate(69 1175 750)" font-family="Georgia,serif" font-size="25" fill="#376579" letter-spacing="3">LICK CREEK</text>
+
+  <g fill="none" stroke="#6a6357" stroke-width="7" stroke-linecap="round">
+    <path d="M270 665 C450 590 625 595 810 620 C930 637 1028 621 1120 590"/>
+    <path d="M812 620 C865 699 984 735 1110 700 C1170 684 1234 639 1365 555"/>
+    <path d="M740 430 C870 424 1020 460 1140 525"/>
+  </g>
+  <g font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#454138">
+    <text x="300" y="710">Forge Road</text>
+    <text x="1128" y="665">Old Charlotte Road</text>
+    <text x="862" y="408">Road through Dover</text>
+  </g>
+
+  <path d="M550 225 C650 190 798 205 880 260 L945 355 L910 455 L790 510 L622 500 L535 430 Z" fill="#bd654e" opacity=".11" stroke="#963a31" stroke-width="14" stroke-dasharray="28 13"/>
+  <text x="638" y="330" font-family="Georgia,serif" font-size="36" font-weight="700" fill="#77302b">CONFEDERATE</text>
+  <text x="662" y="372" font-family="Arial,sans-serif" font-size="25" fill="#77302b">earthworks and garrison</text>
+
+  <g fill="#315f8c" stroke="#f3ecdc" stroke-width="8" filter="url(#shadow)">
+    <rect x="165" y="355" width="230" height="75" rx="10"/>
+    <rect x="310" y="110" width="230" height="75" rx="10"/>
+    <rect x="665" y="70" width="230" height="75" rx="10"/>
+  </g>
+  <g fill="#fff" font-family="Arial,sans-serif" font-size="24" font-weight="700" text-anchor="middle">
+    <text x="280" y="388">McClernand</text><text x="280" y="416" font-size="19">U.S. right</text>
+    <text x="425" y="143">Lew Wallace</text><text x="425" y="171" font-size="19">U.S. center</text>
+    <text x="780" y="103">C. F. Smith</text><text x="780" y="131" font-size="19">U.S. left</text>
+  </g>
+
+  <g fill="#a33d32" stroke="#f3ecdc" stroke-width="8" filter="url(#shadow)">
+    <rect x="610" y="560" width="210" height="74" rx="10"/>
+    <rect x="838" y="535" width="210" height="74" rx="10"/>
+  </g>
+  <g fill="#fff" font-family="Arial,sans-serif" font-size="23" font-weight="700" text-anchor="middle">
+    <text x="715" y="592">Pillow &amp; Johnson</text><text x="715" y="619" font-size="18">Confederate infantry</text>
+    <text x="943" y="566">Forrest</text><text x="943" y="594" font-size="18">Confederate cavalry</text>
+  </g>
+
+  <path d="M715 555 C615 515 500 470 390 415" fill="none" stroke="#a33d32" stroke-width="18" marker-end="url(#redArrow)"/>
+  <path d="M920 530 C795 485 640 445 425 405" fill="none" stroke="#a33d32" stroke-width="13" marker-end="url(#redArrow)"/>
+  <text x="430" y="540" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#7c3028">Feb. 15: attack opens the road</text>
+
+  <path d="M410 330 C540 315 650 292 750 270" fill="none" stroke="#315f8c" stroke-width="13" marker-end="url(#blueArrow)"/>
+  <path d="M780 155 C805 200 830 234 855 270" fill="none" stroke="#315f8c" stroke-width="13" marker-end="url(#blueArrow)"/>
+  <text x="245" y="283" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#294f75">Afternoon: U.S. counterattacks</text>
+
+  <path d="M920 645 C1000 680 1060 720 1110 752 C1158 783 1220 747 1285 680" fill="none" stroke="#9b6b19" stroke-width="16" stroke-dasharray="22 12" marker-end="url(#goldArrow)"/>
+  <circle cx="1162" cy="777" r="18" fill="#9b6b19" stroke="#f3ecdc" stroke-width="7"/>
+  <text x="955" y="820" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#795215">Feb. 16: Forrest crosses flooded Lick Creek</text>
+  <text x="1177" y="852" font-family="Arial,sans-serif" font-size="20" fill="#62533c">then rides toward Nashville</text>
+
+  <g transform="translate(1090 335)">
+    <rect width="165" height="115" rx="8" fill="#eee4ce" stroke="#6e604d" stroke-width="3"/>
+    <path d="M32 70 L82 28 L133 70 M46 63 V99 H119 V62 M73 99 V72 H94 V99" fill="none" stroke="#6e604d" stroke-width="7"/>
+    <text x="82" y="138" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#454138">Dover</text>
+  </g>
+  <g transform="translate(900 190)">
+    <path d="M0 32 L25 0 L50 32 L41 65 L9 65 Z" fill="#a33d32" stroke="#762c25" stroke-width="3"/>
+    <text x="65" y="35" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#454138">Fort Donelson</text>
+  </g>
+
+  <g transform="translate(55 755)" font-family="Arial,sans-serif">
+    <rect width="420" height="105" rx="10" fill="#fffaf0" stroke="#b4a587" stroke-width="2"/>
+    <line x1="25" y1="30" x2="93" y2="30" stroke="#a33d32" stroke-width="12"/><text x="110" y="38" font-size="20">Confederate movement</text>
+    <line x1="25" y1="70" x2="93" y2="70" stroke="#315f8c" stroke-width="12"/><text x="110" y="78" font-size="20">United States counterattack</text>
+  </g>
+  <g transform="translate(1265 65)" font-family="Arial,sans-serif" fill="#3c3933" text-anchor="middle">
+    <path d="M35 72 L35 0 M35 0 L22 25 M35 0 L48 25" stroke="#3c3933" stroke-width="5" fill="none"/>
+    <text x="35" y="98" font-size="22" font-weight="700">N</text>
+  </g>
+  <text x="55" y="55" font-family="Georgia,serif" font-size="34" font-weight="700" fill="#252b27">FORT DONELSON: BREAKOUT AND ESCAPE</text>
+  <text x="56" y="91" font-family="Arial,sans-serif" font-size="20" fill="#5f5a50">Schematic orientation based on NPS and U.S. Army maps; distances are not to scale.</text>
+</svg>

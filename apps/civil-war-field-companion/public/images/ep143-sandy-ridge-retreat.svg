@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Confederate withdrawal from Sandy Ridge at First Kernstown</title>
+  <desc id="desc">Schematic map with north at top showing United States troops reaching the stone wall, Confederate units withdrawing south, units cut off near the Glass farm, late Confederate reserves forming a rear guard, and the route toward the Valley Turnpike.</desc>
+  <defs>
+    <linearGradient id="paper2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8f2e2"/><stop offset="1" stop-color="#e9ddc2"/></linearGradient>
+    <pattern id="ridge2" width="34" height="26" patternUnits="userSpaceOnUse"><path d="M1 23 L10 7 L19 21 L27 9 L34 23" fill="none" stroke="#7d8d69" stroke-width="2" opacity=".48"/></pattern>
+    <pattern id="woods2" width="31" height="31" patternUnits="userSpaceOnUse"><circle cx="8" cy="10" r="6" fill="#83946c" opacity=".5"/><circle cx="22" cy="20" r="8" fill="#687d58" opacity=".43"/></pattern>
+    <pattern id="stone2" width="32" height="18" patternUnits="userSpaceOnUse"><rect width="32" height="18" fill="#8c8172"/><path d="M0 9 H32 M8 0 V9 M23 9 V18" stroke="#d7ccba" stroke-width="2"/></pattern>
+    <marker id="blueArrow2" markerWidth="18" markerHeight="18" refX="11" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12"><path d="M0 0 L12 6 L0 12 Z" fill="#315f8c"/></marker>
+    <marker id="redArrow2" markerWidth="18" markerHeight="18" refX="11" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12"><path d="M0 0 L12 6 L0 12 Z" fill="#9a3d32"/></marker>
+    <style>.label{font:700 23px Georgia,serif;fill:#292621}.small{font:18px Arial,sans-serif;fill:#3f3a33}.tiny{font:15px Arial,sans-serif;fill:#554f46}.blue{fill:#315f8c}.red{fill:#9a3d32}.box{fill:#fffaf0;stroke:#8a7b66;stroke-width:2}.road{fill:none;stroke:#9a7a50;stroke-width:10;stroke-linecap:round}</style>
+  </defs>
+  <rect width="1200" height="760" fill="url(#paper2)"/>
+  <text x="31" y="47" class="label" font-size="32">FIRST KERNSTOWN • WITHDRAWAL • ABOUT 6 P.M.</text>
+  <text x="31" y="78" class="small">Phase diagram • schematic geography, not to scale or exact movement timing</text>
+
+  <path d="M78 103 C115 188 99 282 140 374 C181 469 150 590 112 725 L786 725 C745 611 728 512 765 405 C802 302 775 194 813 103 Z" fill="url(#ridge2)" opacity=".72"/>
+  <text x="86" y="438" class="label" fill="#647653" transform="rotate(-84 86 438)">SANDY RIDGE</text>
+  <path class="road" d="M1046 95 C1038 221 1045 352 1041 480 C1038 580 1045 657 1062 731"/>
+  <text x="1073" y="526" class="tiny" transform="rotate(88 1073 526)">VALLEY TURNPIKE</text>
+  <path d="M150 196 C200 148 288 146 350 182 C380 227 359 300 306 329 C242 348 170 327 135 278 C122 247 128 217 150 196 Z" fill="url(#woods2)" stroke="#687d58" stroke-width="2"/>
+  <text x="179" y="222" class="small" fill="#546748">GLASS FARM AREA</text>
+  <text x="180" y="246" class="tiny">fences, mill pond, cavalry</text>
+
+  <rect x="209" y="353" width="635" height="24" rx="5" fill="url(#stone2)" stroke="#5c554c" stroke-width="3"/>
+  <text x="351" y="414" class="label">STONE WALL • MAIN LINE VACATED</text>
+
+  <path d="M683 188 C677 236 675 287 673 333" fill="none" stroke="#315f8c" stroke-width="15" marker-end="url(#blueArrow2)"/>
+  <text x="705" y="202" class="small blue">14th Indiana</text><text x="705" y="225" class="tiny blue">reaches wall near 6 p.m.</text>
+  <path d="M519 173 C519 227 518 279 517 335" fill="none" stroke="#315f8c" stroke-width="12" marker-end="url(#blueArrow2)"/>
+  <text x="385" y="153" class="small blue">Tyler's mixed regiments</text>
+  <path d="M825 190 C812 236 788 282 756 330" fill="none" stroke="#315f8c" stroke-width="11" stroke-dasharray="15 8" marker-end="url(#blueArrow2)"/>
+  <text x="839" y="180" class="small blue">13th Indiana follows</text>
+
+  <path d="M650 391 C666 460 713 521 804 579" fill="none" stroke="#9a3d32" stroke-width="12" marker-end="url(#redArrow2)"/>
+  <text x="685" y="463" class="small red">Garnett's main withdrawal</text>
+  <text x="706" y="487" class="tiny red">27th, 33rd, most of 4th Va.</text>
+  <path d="M411 390 C377 457 313 510 236 548" fill="none" stroke="#9a3d32" stroke-width="11" stroke-dasharray="15 8" marker-end="url(#redArrow2)"/>
+  <text x="155" y="594" class="small red">Fulkerson &amp; part of 4th Va.</text>
+  <text x="155" y="618" class="tiny red">order missed • driven west</text>
+
+  <line x1="199" y1="281" x2="302" y2="281" stroke="#315f8c" stroke-width="15"/>
+  <text x="146" y="307" class="small blue">1st Ohio cavalry</text>
+  <text x="146" y="330" class="tiny blue">captures stragglers</text>
+
+  <line x1="642" y1="612" x2="811" y2="612" stroke="#9a3d32" stroke-width="16"/>
+  <text x="627" y="650" class="label red">5th &amp; 42nd Virginia rear guard</text>
+  <text x="652" y="675" class="tiny">forms after sunset and covers escape</text>
+  <path d="M834 615 C905 605 960 573 1014 526" fill="none" stroke="#9a3d32" stroke-width="11" marker-end="url(#redArrow2)"/>
+  <text x="864" y="565" class="small red">Toward Valley Pike</text>
+  <text x="890" y="590" class="tiny red">and Newtown</text>
+
+  <rect x="838" y="320" width="324" height="101" rx="10" class="box"/>
+  <text x="859" y="351" class="label">Why the line failed</text>
+  <text x="859" y="378" class="small">Ammunition exhausted</text>
+  <text x="859" y="402" class="small">Casualties • disorder • flank threat</text>
+
+  <path d="M1150 98 L1150 158" stroke="#292621" stroke-width="4"/><path d="M1150 79 L1137 107 L1163 107 Z" fill="#292621"/><text x="1141" y="68" class="label">N</text>
+</svg>

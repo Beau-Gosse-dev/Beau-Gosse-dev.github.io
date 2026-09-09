@@ -1,0 +1,1282 @@
+{
+  "version": 1,
+  "defaultStatus": "queued",
+  "statusOrder": [
+    "queued",
+    "transcribed",
+    "drafted",
+    "fact_checked",
+    "published"
+  ],
+  "episodes": {
+    "538-the-atlanta-campaign-peach-tree-creek": {
+      "number": 538,
+      "status": "published",
+      "transcript": "data/transcripts/538-the-atlanta-campaign-peach-tree-creek.json"
+    },
+    "537-the-atlanta-campaign-peach-tree-creek": {
+      "number": 537,
+      "status": "published"
+    },
+    "536-the-atlanta-campaign-peach-tree-creek": {
+      "number": 536,
+      "status": "published",
+      "transcript": "data/transcripts/536-the-atlanta-campaign-peach-tree-creek.json",
+      "updatedAt": "2026-09-02T15:15:29.407761+00:00"
+    },
+    "535-the-atlanta-campaign-hood-s-daunting-task": {
+      "number": 535,
+      "status": "published",
+      "transcript": "data/transcripts/535-the-atlanta-campaign-hood-s-daunting-task.json",
+      "updatedAt": "2026-09-02T15:18:14.207254+00:00"
+    },
+    "534-the-atlanta-campaign-hood-takes-command": {
+      "number": 534,
+      "status": "published",
+      "transcript": "data/transcripts/534-the-atlanta-campaign-hood-takes-command.json",
+      "updatedAt": "2026-09-02T15:21:34.532956+00:00"
+    },
+    "533-the-atlanta-campaign-part-the-thirty-first": {
+      "number": 533,
+      "status": "published",
+      "transcript": "data/transcripts/533-the-atlanta-campaign-part-the-thirty-first.json",
+      "updatedAt": "2026-09-03T04:26:50.330367+00:00"
+    },
+    "532-the-atlanta-campaign-part-the-thirtieth": {
+      "number": 532,
+      "status": "published",
+      "transcript": "data/transcripts/532-the-atlanta-campaign-part-the-thirtieth.json",
+      "updatedAt": "2026-09-03T04:30:21.722710+00:00"
+    },
+    "531-the-atlanta-campaign-part-the-twenty-ninth": {
+      "number": 531,
+      "status": "published",
+      "transcript": "data/transcripts/531-the-atlanta-campaign-part-the-twenty-ninth.json",
+      "updatedAt": "2026-09-03T04:33:54.393142+00:00"
+    },
+    "530-the-atlanta-campaign-part-the-twenty-eighth": {
+      "number": 530,
+      "status": "published",
+      "transcript": "data/transcripts/530-the-atlanta-campaign-part-the-twenty-eighth.json",
+      "updatedAt": "2026-09-03T04:36:45.340330+00:00"
+    },
+    "529-the-atlanta-campaign-part-the-twenty-seventh": {
+      "number": 529,
+      "status": "published",
+      "transcript": "data/transcripts/529-the-atlanta-campaign-part-the-twenty-seventh.json",
+      "updatedAt": "2026-09-03T04:40:26.235746+00:00"
+    },
+    "528-joe-wheeler-in-blue-and-gray": {
+      "number": 528,
+      "status": "published",
+      "transcript": "data/transcripts/528-joe-wheeler-in-blue-and-gray.json",
+      "updatedAt": "2026-09-03T04:45:25.931398+00:00"
+    },
+    "527-the-atlanta-campaign-part-the-twenty-sixth": {
+      "number": 527,
+      "status": "published",
+      "transcript": "data/transcripts/527-the-atlanta-campaign-part-the-twenty-sixth.json",
+      "updatedAt": "2026-09-03T04:49:15.547567+00:00"
+    },
+    "526-the-atlanta-campaign-part-the-twenty-fifth": {
+      "number": 526,
+      "status": "published",
+      "transcript": "data/transcripts/526-the-atlanta-campaign-part-the-twenty-fifth.json",
+      "updatedAt": "2026-09-03T04:52:20.544566+00:00"
+    },
+    "525-the-atlanta-campaign-part-the-twenty-fourth": {
+      "number": 525,
+      "status": "published",
+      "transcript": "data/transcripts/525-the-atlanta-campaign-part-the-twenty-fourth.json",
+      "updatedAt": "2026-09-03T04:58:11.356020+00:00"
+    },
+    "524-the-atlanta-campaign-part-the-twenty-third": {
+      "number": 524,
+      "status": "published",
+      "transcript": "data/transcripts/524-the-atlanta-campaign-part-the-twenty-third.json",
+      "updatedAt": "2026-09-03T05:02:33.212977+00:00"
+    },
+    "523-the-atlanta-campaign-part-the-twenty-second": {
+      "number": 523,
+      "status": "published",
+      "transcript": "data/transcripts/523-the-atlanta-campaign-part-the-twenty-second.json",
+      "updatedAt": "2026-09-03T05:07:23.330919+00:00"
+    },
+    "522-the-atlanta-campaign-part-the-twenty-first": {
+      "number": 522,
+      "status": "published",
+      "transcript": "data/transcripts/522-the-atlanta-campaign-part-the-twenty-first.json",
+      "updatedAt": "2026-09-03T05:10:52.912636+00:00"
+    },
+    "521-the-atlanta-campaign-part-the-twentieth": {
+      "number": 521,
+      "status": "published",
+      "transcript": "data/transcripts/521-the-atlanta-campaign-part-the-twentieth.json",
+      "updatedAt": "2026-09-03T05:15:06.793188+00:00"
+    },
+    "520-the-atlanta-campaign-part-the-nineteenth": {
+      "number": 520,
+      "status": "published",
+      "transcript": "data/transcripts/520-the-atlanta-campaign-part-the-nineteenth.json",
+      "updatedAt": "2026-09-03T05:17:57.142304+00:00"
+    },
+    "519-the-atlanta-campaign-part-the-eighteenth": {
+      "number": 519,
+      "status": "published",
+      "transcript": "data/transcripts/519-the-atlanta-campaign-part-the-eighteenth.json",
+      "updatedAt": "2026-09-03T05:22:40.837723+00:00"
+    },
+    "518-the-atlanta-campaign-part-the-seventeenth": {
+      "number": 518,
+      "status": "published",
+      "transcript": "data/transcripts/518-the-atlanta-campaign-part-the-seventeenth.json",
+      "updatedAt": "2026-09-03T05:26:42.221745+00:00"
+    },
+    "517-the-atlanta-campaign-part-the-sixteenth": {
+      "number": 517,
+      "status": "published",
+      "transcript": "data/transcripts/517-the-atlanta-campaign-part-the-sixteenth.json",
+      "updatedAt": "2026-09-03T09:32:10.480515+00:00"
+    },
+    "516-the-atlanta-campaign-part-the-fifteenth": {
+      "number": 516,
+      "status": "published",
+      "transcript": "data/transcripts/516-the-atlanta-campaign-part-the-fifteenth.json",
+      "updatedAt": "2026-09-03T09:37:03.946908+00:00"
+    },
+    "515-the-atlanta-campaign-part-the-fourteenth": {
+      "number": 515,
+      "status": "published",
+      "transcript": "data/transcripts/515-the-atlanta-campaign-part-the-fourteenth.json",
+      "updatedAt": "2026-09-03T09:40:31.229623+00:00"
+    },
+    "514-the-atlanta-campaign-part-the-thirteenth": {
+      "number": 514,
+      "status": "published",
+      "transcript": "data/transcripts/514-the-atlanta-campaign-part-the-thirteenth.json",
+      "updatedAt": "2026-09-03T09:44:54.674615+00:00"
+    },
+    "513-the-atlanta-campaign-part-the-twelfth": {
+      "number": 513,
+      "status": "published",
+      "transcript": "data/transcripts/513-the-atlanta-campaign-part-the-twelfth.json",
+      "updatedAt": "2026-09-03T09:49:12.210856+00:00"
+    },
+    "512-the-atlanta-campaign-part-the-eleventh": {
+      "number": 512,
+      "status": "published",
+      "transcript": "data/transcripts/512-the-atlanta-campaign-part-the-eleventh.json",
+      "updatedAt": "2026-09-03T09:53:14.236287+00:00"
+    },
+    "511-the-atlanta-campaign-part-the-tenth": {
+      "number": 511,
+      "status": "published",
+      "transcript": "data/transcripts/511-the-atlanta-campaign-part-the-tenth.json",
+      "updatedAt": "2026-09-03T11:42:00.000000+00:00"
+    },
+    "510-the-atlanta-campaign-part-the-ninth": {
+      "number": 510,
+      "status": "published",
+      "transcript": "data/transcripts/510-the-atlanta-campaign-part-the-ninth.json",
+      "updatedAt": "2026-09-03T11:54:00.000000+00:00"
+    },
+    "509-the-atlanta-campaign-part-the-eighth": {
+      "number": 509,
+      "status": "published",
+      "transcript": "data/transcripts/509-the-atlanta-campaign-part-the-eighth.json",
+      "updatedAt": "2026-09-03T12:04:00.000000+00:00"
+    },
+    "508-the-atlanta-campaign-part-the-seventh": {
+      "number": 508,
+      "status": "published",
+      "transcript": "data/transcripts/508-the-atlanta-campaign-part-the-seventh.json",
+      "updatedAt": "2026-09-03T14:31:00.000000+00:00"
+    },
+    "507-the-atlanta-campaign-part-the-sixth": {
+      "number": 507,
+      "status": "published",
+      "transcript": "data/transcripts/507-the-atlanta-campaign-part-the-sixth.json",
+      "updatedAt": "2026-09-03T14:41:00.000000+00:00"
+    },
+    "506-the-atlanta-campaign-part-the-fifth": {
+      "number": 506,
+      "status": "published",
+      "transcript": "data/transcripts/506-the-atlanta-campaign-part-the-fifth.json",
+      "updatedAt": "2026-09-03T14:49:00.000000+00:00"
+    },
+    "505-the-atlanta-campaign-part-the-fourth": {
+      "number": 505,
+      "status": "published",
+      "transcript": "data/transcripts/505-the-atlanta-campaign-part-the-fourth.json",
+      "updatedAt": "2026-09-03T15:46:00.000000+00:00"
+    },
+    "504-the-atlanta-campaign-part-the-third": {
+      "number": 504,
+      "status": "published",
+      "transcript": "data/transcripts/504-the-atlanta-campaign-part-the-third.json",
+      "updatedAt": "2026-09-03T16:42:00.000000+00:00"
+    },
+    "503-the-atlanta-campaign-part-the-second": {
+      "number": 503,
+      "status": "published",
+      "transcript": "data/transcripts/503-the-atlanta-campaign-part-the-second.json",
+      "updatedAt": "2026-09-03T19:41:00.000000+00:00"
+    },
+    "502-the-atlanta-campaign-part-the-first": {
+      "number": 502,
+      "status": "published",
+      "transcript": "data/transcripts/502-the-atlanta-campaign-part-the-first.json",
+      "updatedAt": "2026-09-03T20:05:00.000000+00:00"
+    },
+    "501-the-overland-campaign-a-conclusion": {
+      "number": 501,
+      "status": "published",
+      "transcript": "data/transcripts/501-the-overland-campaign-a-conclusion.json",
+      "updatedAt": "2026-09-03T20:18:00.000000+00:00"
+    },
+    "500-cold-harbor-part-the-third": {
+      "number": 500,
+      "status": "published",
+      "transcript": "data/transcripts/500-cold-harbor-part-the-third.json",
+      "updatedAt": "2026-09-03T20:34:00.000000+00:00"
+    },
+    "499-cold-harbor-part-the-second": {
+      "number": 499,
+      "status": "published",
+      "transcript": "data/transcripts/499-cold-harbor-part-the-second.json",
+      "updatedAt": "2026-09-03T20:45:00.000000+00:00"
+    },
+    "498-cold-harbor-part-the-first": {
+      "number": 498,
+      "status": "published",
+      "transcript": "data/transcripts/498-cold-harbor-part-the-first.json",
+      "updatedAt": "2026-09-03T20:46:00.000000+00:00"
+    },
+    "497-the-president-thinks-very-highly-of-what-grant-has-done": {
+      "number": 497,
+      "status": "published",
+      "transcript": "data/transcripts/497-the-president-thinks-very-highly-of-what-grant-has-done.json",
+      "updatedAt": "2026-09-03T21:43:00.000000+00:00"
+    },
+    "496-stepping-into-hell-the-soldier-s-ordeal-during-the-overland-campaign": {
+      "number": 496,
+      "status": "published",
+      "transcript": "data/transcripts/496-stepping-into-hell-the-soldier-s-ordeal-during-the-overland-campaign.json",
+      "updatedAt": "2026-09-03T21:47:26.1705148Z"
+    },
+    "495-the-overland-campaign-s-wounded-prisoners-and-dead": {
+      "number": 495,
+      "status": "published",
+      "transcript": "data/transcripts/495-the-overland-campaign-s-wounded-prisoners-and-dead.json",
+      "updatedAt": "2026-09-03T21:57:26.2666107Z"
+    },
+    "494-totopotomoy-creek": {
+      "number": 494,
+      "status": "published",
+      "transcript": "data/transcripts/494-totopotomoy-creek.json",
+      "updatedAt": "2026-09-03T22:06:19.3068159Z"
+    },
+    "493-i-feel-that-our-success-over-lee-s-army-is-already-assured": {
+      "number": 493,
+      "status": "published",
+      "transcript": "data/transcripts/493-i-feel-that-our-success-over-lee-s-army-is-already-assured.json",
+      "updatedAt": "2026-09-03T22:14:15.6570525Z"
+    },
+    "492-to-the-north-anna-part-the-second": {
+      "number": 492,
+      "status": "published",
+      "transcript": "data/transcripts/492-to-the-north-anna-part-the-second.json",
+      "updatedAt": "2026-09-03T22:21:20.6180961Z"
+    },
+    "491-to-the-north-anna-part-the-first": {
+      "number": 491,
+      "status": "published",
+      "transcript": "data/transcripts/491-to-the-north-anna-part-the-first.json",
+      "updatedAt": "2026-09-03T22:30:08.3820336Z"
+    },
+    "490-the-collapse-of-grant-s-peripheral-strategy-part-the-third": {
+      "number": 490,
+      "status": "published",
+      "transcript": "data/transcripts/490-the-collapse-of-grant-s-peripheral-strategy-part-the-third.json",
+      "updatedAt": "2026-09-03T22:44:00.000000Z"
+    },
+    "489-battle-of-yellow-tavern": {
+      "number": 489,
+      "status": "published",
+      "transcript": "data/transcripts/489-battle-of-yellow-tavern.json",
+      "updatedAt": "2026-09-03T22:53:00.000000Z"
+    },
+    "488-the-collapse-of-grant-s-peripheral-strategy-part-the-second": {
+      "number": 488,
+      "status": "published",
+      "transcript": "data/transcripts/488-the-collapse-of-grant-s-peripheral-strategy-part-the-second.json",
+      "updatedAt": "2026-09-03T23:04:00.000000Z"
+    },
+    "487-the-collapse-of-grant-s-peripheral-strategy-part-the-first": {
+      "number": 487,
+      "status": "published",
+      "transcript": "data/transcripts/487-the-collapse-of-grant-s-peripheral-strategy-part-the-first.json",
+      "updatedAt": "2026-09-03T23:08:00.308769+00:00"
+    },
+    "486-spotsylvania-part-the-third": {
+      "number": 486,
+      "status": "published",
+      "transcript": "data/transcripts/486-spotsylvania-part-the-third.json",
+      "updatedAt": "2026-09-03T23:22:16.042921+00:00"
+    },
+    "485-spotsylvania-part-the-second": {
+      "number": 485,
+      "status": "published",
+      "transcript": "data/transcripts/485-spotsylvania-part-the-second.json",
+      "updatedAt": "2026-09-03T23:35:09.436079+00:00"
+    },
+    "484-spotsylvania-part-the-first": {
+      "number": 484,
+      "status": "published",
+      "transcript": "data/transcripts/484-spotsylvania-part-the-first.json",
+      "updatedAt": "2026-09-03T23:45:49.790482+00:00"
+    },
+    "483-the-wilderness-part-the-fifth": {
+      "number": 483,
+      "status": "published",
+      "transcript": "data/transcripts/483-the-wilderness-part-the-fifth.json",
+      "updatedAt": "2026-09-03T23:56:55.151312+00:00"
+    },
+    "482-the-wilderness-part-the-fourth": {
+      "number": 482,
+      "status": "published",
+      "transcript": "data/transcripts/482-the-wilderness-part-the-fourth.json",
+      "updatedAt": "2026-09-04T00:11:08.249947+00:00"
+    },
+    "481-the-wilderness-part-the-third": {
+      "number": 481,
+      "status": "published",
+      "transcript": "data/transcripts/481-the-wilderness-part-the-third.json",
+      "updatedAt": "2026-09-04T00:21:33.604382+00:00"
+    },
+    "480-the-wilderness-part-the-second": {
+      "number": 480,
+      "status": "published",
+      "transcript": "data/transcripts/480-the-wilderness-part-the-second.json",
+      "updatedAt": "2026-09-04T00:31:23.550669+00:00"
+    },
+    "479-the-wilderness-part-the-first": {
+      "number": 479,
+      "status": "published",
+      "transcript": "data/transcripts/479-the-wilderness-part-the-first.json",
+      "updatedAt": "2026-09-04T00:42:29.924412+00:00"
+    },
+    "478-all-out-war": {
+      "number": 478,
+      "status": "published",
+      "transcript": "data/transcripts/478-all-out-war.json",
+      "updatedAt": "2026-09-04T00:50:47.995787+00:00"
+    },
+    "477-grant-conquers-washington": {
+      "number": 477,
+      "status": "published",
+      "transcript": "data/transcripts/477-grant-conquers-washington.json",
+      "updatedAt": "2026-09-04T01:01:19.055715+00:00"
+    },
+    "476-red-river-campaign-part-the-tenth": {
+      "number": 476,
+      "status": "published",
+      "transcript": "data/transcripts/476-red-river-campaign-part-the-tenth.json",
+      "updatedAt": "2026-09-04T01:21:00.000000+00:00"
+    },
+    "475-red-river-campaign-part-the-ninth": {
+      "number": 475,
+      "status": "published",
+      "transcript": "data/transcripts/475-red-river-campaign-part-the-ninth.json",
+      "updatedAt": "2026-09-04T01:31:00.000000+00:00"
+    },
+    "474-red-river-campaign-part-the-eighth": {
+      "number": 474,
+      "status": "published",
+      "transcript": "data/transcripts/474-red-river-campaign-part-the-eighth.json",
+      "updatedAt": "2026-09-04T02:04:00.000000+00:00"
+    },
+    "473-red-river-campaign-part-the-seventh": {
+      "number": 473,
+      "status": "transcribed",
+      "transcript": "data/transcripts/473-red-river-campaign-part-the-seventh.json",
+      "updatedAt": "2026-09-04T02:10:26.858394+00:00"
+    },
+    "95-postscript-forrest-s-breakout": {
+      "number": 95,
+      "status": "published",
+      "transcript": "data/transcripts/95-postscript-forrest-s-breakout.json",
+      "updatedAt": "2026-09-04T03:12:25.4965260Z"
+    },
+    "96-sibley-s-new-mexico-campaign-part-the-first": {
+      "number": 96,
+      "status": "published",
+      "transcript": "data/transcripts/96-sibley-s-new-mexico-campaign-part-the-first.json",
+      "updatedAt": "2026-09-04T03:28:21.2112112Z"
+    },
+    "97-sibley-s-new-mexico-campaign-part-the-second": {
+      "number": 97,
+      "status": "published",
+      "transcript": "data/transcripts/97-sibley-s-new-mexico-campaign-part-the-second.json",
+      "updatedAt": "2026-09-04T04:31:28.7129972Z"
+    },
+    "98-sibley-s-new-mexico-campaign-part-the-third": {
+      "number": 98,
+      "status": "published",
+      "transcript": "data/transcripts/98-sibley-s-new-mexico-campaign-part-the-third.json",
+      "updatedAt": "2026-09-04T04:43:20.8491382Z"
+    },
+    "99-sibley-s-new-mexico-campaign-part-the-fourth": {
+      "number": 99,
+      "status": "published",
+      "transcript": "data/transcripts/99-sibley-s-new-mexico-campaign-part-the-fourth.json",
+      "updatedAt": "2026-09-04T04:52:39.9363148Z"
+    },
+    "100-again-the-music-episode": {
+      "number": 100,
+      "status": "published",
+      "transcript": "data/transcripts/100-again-the-music-episode.json",
+      "updatedAt": "2026-09-04T05:35:32.7710535Z"
+    },
+    "100-music-special-songs-of-the-civil-war": {
+      "number": 100,
+      "status": "published",
+      "transcript": "data/transcripts/100-music-special-songs-of-the-civil-war.json",
+      "updatedAt": "2026-09-04T05:53:28.3979885Z"
+    },
+    "101-pea-ridge-part-the-first": {
+      "number": 101,
+      "status": "published",
+      "transcript": "data/transcripts/101-pea-ridge-part-the-first.json",
+      "updatedAt": "2026-09-04T06:30:00.4080866+00:00"
+    },
+    "102-pea-ridge-part-the-second": {
+      "number": 102,
+      "status": "published",
+      "transcript": "data/transcripts/102-pea-ridge-part-the-second.json",
+      "updatedAt": "2026-09-04T06:40:11.4050128+00:00"
+    },
+    "103-pea-ridge-part-the-third": {
+      "number": 103,
+      "status": "published",
+      "transcript": "data/transcripts/103-pea-ridge-part-the-third.json",
+      "updatedAt": "2026-09-04T07:23:13.3953722+00:00"
+    },
+    "104-pea-ridge-part-the-fourth": {
+      "number": 104,
+      "status": "published",
+      "transcript": "data/transcripts/104-pea-ridge-part-the-fourth.json",
+      "updatedAt": "2026-09-04T07:33:12.9392583+00:00"
+    },
+    "105-clash-of-the-ironclads-part-the-first": {
+      "number": 105,
+      "status": "published",
+      "transcript": "data/transcripts/105-clash-of-the-ironclads-part-the-first.json",
+      "updatedAt": "2026-09-04T08:25:22.0776019Z"
+    },
+    "106-clash-of-the-ironclads-part-the-second": {
+      "number": 106,
+      "status": "published",
+      "transcript": "data/transcripts/106-clash-of-the-ironclads-part-the-second.json",
+      "updatedAt": "2026-09-04T08:36:19.7618333Z"
+    },
+    "107-clash-of-the-ironclads-part-the-third": {
+      "number": 107,
+      "status": "published",
+      "transcript": "data/transcripts/107-clash-of-the-ironclads-part-the-third.json",
+      "updatedAt": "2026-09-04T08:48:57.6014738Z"
+    },
+    "108-clash-of-the-ironclads-part-the-fourth": {
+      "number": 108,
+      "status": "published",
+      "transcript": "data/transcripts/108-clash-of-the-ironclads-part-the-fourth.json",
+      "updatedAt": "2026-09-04T09:00:38.6337758Z"
+    },
+    "109-the-burnside-expedition-part-the-first": {
+      "number": 109,
+      "status": "published",
+      "transcript": "data/transcripts/109-the-burnside-expedition-part-the-first.json",
+      "updatedAt": "2026-09-04T09:10:43.7293619Z"
+    },
+    "110-the-burnside-expedition-part-the-second": {
+      "number": 110,
+      "status": "published",
+      "transcript": "data/transcripts/110-the-burnside-expedition-part-the-second.json",
+      "updatedAt": "2026-09-04T09:35:00.0000000Z"
+    },
+    "111-shiloh-part-the-first": {
+      "number": 111,
+      "status": "published",
+      "transcript": "data/transcripts/111-shiloh-part-the-first.json",
+      "updatedAt": "2026-09-04T09:45:00.0000000Z"
+    },
+    "112-shiloh-part-the-second": {
+      "number": 112,
+      "status": "published",
+      "transcript": "data/transcripts/112-shiloh-part-the-second.json",
+      "updatedAt": "2026-09-04T09:56:00.0000000Z"
+    },
+    "113-shiloh-part-the-third": {
+      "number": 113,
+      "status": "published",
+      "transcript": "data/transcripts/113-shiloh-part-the-third.json",
+      "updatedAt": "2026-09-04T10:07:00.0000000Z"
+    },
+    "114-shiloh-part-the-fourth": {
+      "number": 114,
+      "status": "published",
+      "transcript": "data/transcripts/114-shiloh-part-the-fourth.json",
+      "updatedAt": "2026-09-04T10:17:00.0000000Z"
+    },
+    "115-shiloh-part-the-fifth": {
+      "number": 115,
+      "status": "published",
+      "transcript": "data/transcripts/115-shiloh-part-the-fifth.json",
+      "updatedAt": "2026-09-04T10:34:00.0000000Z"
+    },
+    "116-shiloh-part-the-sixth": {
+      "number": 116,
+      "status": "published",
+      "transcript": "data/transcripts/116-shiloh-part-the-sixth.json",
+      "updatedAt": "2026-09-04T10:45:00.0000000Z"
+    },
+    "117-shiloh-death-of-albert-sidney-johnston": {
+      "number": 117,
+      "status": "published",
+      "transcript": "data/transcripts/117-shiloh-death-of-albert-sidney-johnston.json",
+      "updatedAt": "2026-09-04T10:57:00.0000000Z"
+    },
+    "118-shiloh-part-the-eighth": {
+      "number": 118,
+      "status": "published",
+      "transcript": "data/transcripts/118-shiloh-part-the-eighth.json",
+      "updatedAt": "2026-09-04T11:08:00.0000000Z"
+    },
+    "119-shiloh-part-the-ninth": {
+      "number": 119,
+      "status": "published",
+      "transcript": "data/transcripts/119-shiloh-part-the-ninth.json",
+      "updatedAt": "2026-09-04T11:18:00.0000000Z"
+    },
+    "120-shiloh-part-the-tenth": {
+      "number": 120,
+      "status": "published",
+      "transcript": "data/transcripts/120-shiloh-part-the-tenth.json",
+      "updatedAt": "2026-09-04T11:26:00.0000000Z"
+    },
+    "121-shiloh-part-the-eleventh": {
+      "number": 121,
+      "status": "published",
+      "transcript": "data/transcripts/121-shiloh-part-the-eleventh.json",
+      "updatedAt": "2026-09-04T11:36:00.0000000Z"
+    },
+    "122-shiloh-part-the-twelfth": {
+      "number": 122,
+      "status": "published",
+      "transcript": "data/transcripts/122-shiloh-part-the-twelfth.json",
+      "updatedAt": "2026-09-04T11:44:00.0000000Z"
+    },
+    "123-shiloh-part-the-thirteenth": {
+      "number": 123,
+      "status": "published",
+      "transcript": "data/transcripts/123-shiloh-part-the-thirteenth.json",
+      "updatedAt": "2026-09-04T11:52:00.0000000Z"
+    },
+    "124-shiloh-part-the-fourteenth": {
+      "number": 124,
+      "status": "published",
+      "transcript": "data/transcripts/124-shiloh-part-the-fourteenth.json",
+      "updatedAt": "2026-09-04T12:20:00.0000000Z"
+    },
+    "125-shiloh-part-the-fifteenth": {
+      "number": 125,
+      "status": "published",
+      "transcript": "data/transcripts/125-shiloh-part-the-fifteenth.json",
+      "updatedAt": "2026-09-04T12:35:00.0000000Z"
+    },
+    "126-meanwhile-back-east": {
+      "number": 126,
+      "status": "published",
+      "transcript": "data/transcripts/126-meanwhile-back-east.json",
+      "updatedAt": "2026-09-04T12:56:00.0000000Z"
+    },
+    "127-the-bottom-is-out-of-the-tub": {
+      "number": 127,
+      "status": "published",
+      "transcript": "data/transcripts/127-the-bottom-is-out-of-the-tub.json",
+      "updatedAt": "2026-09-04T13:12:00.0000000Z"
+    },
+    "128-i-shall-gladly-yield-my-plan-to-yours": {
+      "number": 128,
+      "status": "published",
+      "transcript": "data/transcripts/128-i-shall-gladly-yield-my-plan-to-yours.json",
+      "updatedAt": "2026-09-04T13:12:00.0000000Z"
+    },
+    "129-do-you-smell-bacon": {
+      "number": 129,
+      "status": "published",
+      "transcript": "data/transcripts/129-do-you-smell-bacon.json",
+      "updatedAt": "2026-09-04T13:15:08.541961+00:00"
+    },
+    "130-peninsula-campaign-part-the-first": {
+      "number": 130,
+      "status": "published",
+      "transcript": "data/transcripts/130-peninsula-campaign-part-the-first.json",
+      "updatedAt": "2026-09-04T13:21:26.617524+00:00"
+    },
+    "131-peninsula-campaign-part-the-second": {
+      "number": 131,
+      "status": "published",
+      "transcript": "data/transcripts/131-peninsula-campaign-part-the-second.json",
+      "updatedAt": "2026-09-04T13:26:26.090203+00:00"
+    },
+    "132-peninsula-campaign-part-the-third": {
+      "number": 132,
+      "status": "published",
+      "transcript": "data/transcripts/132-peninsula-campaign-part-the-third.json",
+      "updatedAt": "2026-09-04T13:31:49.533458+00:00"
+    },
+    "133-peninsula-campaign-part-the-fourth": {
+      "number": 133,
+      "status": "published",
+      "transcript": "data/transcripts/133-peninsula-campaign-part-the-fourth.json",
+      "updatedAt": "2026-09-04T13:39:53.988146+00:00"
+    },
+    "134-peninsula-campaign-part-the-fifth": {
+      "number": 134,
+      "status": "published",
+      "transcript": "data/transcripts/134-peninsula-campaign-part-the-fifth.json",
+      "updatedAt": "2026-09-04T13:46:23.184238+00:00"
+    },
+    "135-peninsula-campaign-part-the-sixth": {
+      "number": 135,
+      "status": "published",
+      "transcript": "data/transcripts/135-peninsula-campaign-part-the-sixth.json",
+      "updatedAt": "2026-09-04T13:51:11.000250+00:00"
+    },
+    "136-peninsula-campaign-fair-oaks-part-the-first": {
+      "number": 136,
+      "status": "published",
+      "transcript": "data/transcripts/136-peninsula-campaign-fair-oaks-part-the-first.json",
+      "updatedAt": "2026-09-04T14:02:05.121432+00:00"
+    },
+    "137-peninsula-campaign-fair-oaks-part-the-second": {
+      "number": 137,
+      "status": "published",
+      "transcript": "data/transcripts/137-peninsula-campaign-fair-oaks-part-the-second.json",
+      "updatedAt": "2026-09-04T14:17:37.169680+00:00"
+    },
+    "138-stonewall-jackson-part-the-first": {
+      "number": 138,
+      "status": "published",
+      "transcript": "data/transcripts/138-stonewall-jackson-part-the-first.json",
+      "updatedAt": "2026-09-04T14:27:43.388302+00:00"
+    },
+    "139-stonewall-jackson-part-the-second": {
+      "number": 139,
+      "status": "published",
+      "transcript": "data/transcripts/139-stonewall-jackson-part-the-second.json",
+      "updatedAt": "2026-09-04T14:35:18.750135+00:00"
+    },
+    "140-stonewall-in-the-valley-the-romney-expedition": {
+      "number": 140,
+      "status": "published",
+      "transcript": "data/transcripts/140-stonewall-in-the-valley-the-romney-expedition.json",
+      "updatedAt": "2026-09-04T14:44:30.319216+00:00"
+    },
+    "141-stonewall-in-the-valley-kernstown-part-the-first": {
+      "number": 141,
+      "status": "published",
+      "transcript": "data/transcripts/141-stonewall-in-the-valley-kernstown-part-the-first.json",
+      "updatedAt": "2026-09-04T14:53:05.406462+00:00"
+    },
+    "142-stonewall-in-the-valley-kernstown-part-the-second": {
+      "number": 142,
+      "status": "published",
+      "transcript": "data/transcripts/142-stonewall-in-the-valley-kernstown-part-the-second.json",
+      "updatedAt": "2026-09-04T15:01:47.316884+00:00"
+    },
+    "143-stonewall-in-the-valley-kernstown-part-the-third": {
+      "number": 143,
+      "status": "published",
+      "transcript": "data/transcripts/143-stonewall-in-the-valley-kernstown-part-the-third.json",
+      "updatedAt": "2026-09-04T15:14:14.692974+00:00"
+    },
+    "144-stonewall-in-the-valley-rude-s-hill-interlude": {
+      "number": 144,
+      "status": "published",
+      "transcript": "data/transcripts/144-stonewall-in-the-valley-rude-s-hill-interlude.json",
+      "updatedAt": "2026-09-04T15:23:49.644346+00:00"
+    },
+    "145-stonewall-in-the-valley-mcdowell-part-the-first": {
+      "number": 145,
+      "status": "published",
+      "transcript": "data/transcripts/145-stonewall-in-the-valley-mcdowell-part-the-first.json",
+      "updatedAt": "2026-09-04T15:49:00.000000+00:00"
+    },
+    "146-stonewall-in-the-valley-mcdowell-part-the-second": {
+      "number": 146,
+      "status": "published",
+      "transcript": "data/transcripts/146-stonewall-in-the-valley-mcdowell-part-the-second.json",
+      "updatedAt": "2026-09-04T15:58:00.000000+00:00"
+    },
+    "147-stonewall-in-the-valley-front-royal-and-winchester-part-the-first": {
+      "number": 147,
+      "status": "published",
+      "transcript": "data/transcripts/147-stonewall-in-the-valley-front-royal-and-winchester-part-the-first.json",
+      "updatedAt": "2026-09-04T16:07:00.000000+00:00"
+    },
+    "148-stonewall-in-the-valley-front-royal-and-winchester-part-the-second": {
+      "number": 148,
+      "status": "published",
+      "transcript": "data/transcripts/148-stonewall-in-the-valley-front-royal-and-winchester-part-the-second.json",
+      "updatedAt": "2026-09-04T16:18:00.000000+00:00"
+    },
+    "149-stonewall-in-the-valley-a-day-of-missed-opportunities": {
+      "number": 149,
+      "status": "published",
+      "transcript": "data/transcripts/149-stonewall-in-the-valley-a-day-of-missed-opportunities.json",
+      "updatedAt": "2026-09-04T16:25:00.000000+00:00"
+    },
+    "150-stonewall-in-the-valley-front-royal-and-winchester-part-the-fourth": {
+      "number": 150,
+      "status": "published",
+      "transcript": "data/transcripts/150-stonewall-in-the-valley-front-royal-and-winchester-part-the-fourth.json",
+      "updatedAt": "2026-09-04T16:35:00.000000+00:00"
+    },
+    "151-stonewall-in-the-valley-the-hunter-becomes-the-hunted": {
+      "number": 151,
+      "status": "published",
+      "transcript": "data/transcripts/151-stonewall-in-the-valley-the-hunter-becomes-the-hunted.json",
+      "updatedAt": "2026-09-04T16:45:00.000000+00:00"
+    },
+    "152-stonewall-in-the-valley-our-god-has-been-my-guide-and-saved-me-from-their-": {
+      "number": 152,
+      "status": "published",
+      "transcript": "data/transcripts/152-stonewall-in-the-valley-our-god-has-been-my-guide-and-saved-me-from-their-.json",
+      "updatedAt": "2026-09-04T16:50:00.000000+00:00"
+    },
+    "153-stonewall-in-the-valley-cross-keys-and-port-republic-part-the-first": {
+      "number": 153,
+      "status": "published",
+      "transcript": "data/transcripts/153-stonewall-in-the-valley-cross-keys-and-port-republic-part-the-first.json",
+      "updatedAt": "2026-09-04T17:05:00.000000+00:00"
+    },
+    "154-stonewall-in-the-valley-cross-keys-and-port-republic-part-the-second": {
+      "number": 154,
+      "status": "published",
+      "transcript": "data/transcripts/154-stonewall-in-the-valley-cross-keys-and-port-republic-part-the-second.json",
+      "updatedAt": "2026-09-04T17:20:00.000000+00:00"
+    },
+    "155-stonewall-in-the-valley-conclusion": {
+      "number": 155,
+      "status": "published",
+      "transcript": "data/transcripts/155-stonewall-in-the-valley-conclusion.json",
+      "updatedAt": "2026-09-04T17:35:00.000000+00:00"
+    },
+    "156-back-to-the-peninsula": {
+      "number": 156,
+      "status": "published",
+      "transcript": "data/transcripts/156-back-to-the-peninsula.json",
+      "updatedAt": "2026-09-04T17:50:00.000000+00:00"
+    },
+    "157-lee-takes-command": {
+      "number": 157,
+      "status": "published",
+      "transcript": "data/transcripts/157-lee-takes-command.json",
+      "updatedAt": "2026-09-04T18:10:00.000000+00:00"
+    },
+    "158-seven-days-battles-oak-grove-and-mechanicsville": {
+      "number": 158,
+      "status": "published",
+      "transcript": "data/transcripts/158-seven-days-battles-oak-grove-and-mechanicsville.json",
+      "updatedAt": "2026-09-04T18:30:00.000000+00:00"
+    },
+    "159-seven-days-battles-gaines-s-mill-part-the-first": {
+      "number": 159,
+      "status": "published",
+      "transcript": "data/transcripts/159-seven-days-battles-gaines-s-mill-part-the-first.json",
+      "updatedAt": "2026-09-04T18:50:00.000000+00:00"
+    },
+    "160-seven-days-battles-gaines-s-mill-part-the-second": {
+      "number": 160,
+      "status": "published",
+      "transcript": "data/transcripts/160-seven-days-battles-gaines-s-mill-part-the-second.json",
+      "updatedAt": "2026-09-04T19:05:00.000000+00:00"
+    },
+    "161-seven-days-battles-gaines-s-mill-part-the-third": {
+      "number": 161,
+      "status": "published",
+      "transcript": "data/transcripts/161-seven-days-battles-gaines-s-mill-part-the-third.json",
+      "updatedAt": "2026-09-04T19:15:00.000000+00:00"
+    },
+    "162-seven-days-battles-retreat-to-the-james": {
+      "number": 162,
+      "status": "published",
+      "transcript": "data/transcripts/162-seven-days-battles-retreat-to-the-james.json",
+      "updatedAt": "2026-09-04T19:25:00.000000+00:00"
+    },
+    "163-seven-days-battles-savage-s-station": {
+      "number": 163,
+      "status": "published",
+      "transcript": "data/transcripts/163-seven-days-battles-savage-s-station.json",
+      "updatedAt": "2026-09-04T19:40:00.000000+00:00"
+    },
+    "164-seven-days-battles-glendale-part-the-first": {
+      "number": 164,
+      "status": "published",
+      "transcript": "data/transcripts/164-seven-days-battles-glendale-part-the-first.json",
+      "updatedAt": "2026-09-04T19:55:00.000000+00:00"
+    },
+    "165-seven-days-battles-glendale-part-the-second": {
+      "number": 165,
+      "status": "published",
+      "transcript": "data/transcripts/165-seven-days-battles-glendale-part-the-second.json",
+      "updatedAt": "2026-09-04T20:15:00.000000+00:00"
+    },
+    "166-seven-days-battles-malvern-hill-part-the-first": {
+      "number": 166,
+      "status": "published",
+      "transcript": "data/transcripts/166-seven-days-battles-malvern-hill-part-the-first.json",
+      "updatedAt": "2026-09-04T18:36:42.2802773+00:00"
+    },
+    "167-seven-days-battles-malvern-hill-part-the-second": {
+      "number": 167,
+      "status": "published",
+      "transcript": "data/transcripts/167-seven-days-battles-malvern-hill-part-the-second.json",
+      "updatedAt": "2026-09-04T18:44:50.6287432+00:00"
+    },
+    "168-it-is-determined-to-withdraw-your-army-from-the-peninsula": {
+      "number": 168,
+      "status": "published",
+      "transcript": "data/transcripts/168-it-is-determined-to-withdraw-your-army-from-the-peninsula.json",
+      "updatedAt": "2026-09-04T18:52:10.0636906+00:00"
+    },
+    "169-a-new-war": {
+      "number": 169,
+      "status": "published",
+      "transcript": "data/transcripts/169-a-new-war.json",
+      "updatedAt": "2026-09-04T19:03:18.6573749+00:00"
+    },
+    "170-i-have-come-to-you-from-the-west": {
+      "number": 170,
+      "status": "published",
+      "transcript": "data/transcripts/170-i-have-come-to-you-from-the-west.json",
+      "updatedAt": "2026-09-04T19:09:55.1319961+00:00"
+    },
+    "171-cedar-mountain-part-the-first": {
+      "number": 171,
+      "status": "published",
+      "transcript": "data/transcripts/171-cedar-mountain-part-the-first.json",
+      "updatedAt": "2026-09-04T19:15:53.4669128+00:00"
+    },
+    "172-cedar-mountain-part-the-second": {
+      "number": 172,
+      "status": "published",
+      "transcript": "data/transcripts/172-cedar-mountain-part-the-second.json",
+      "updatedAt": "2026-09-04T19:23:24.3348348+00:00"
+    },
+    "173-stalemate-along-the-rappahannock": {
+      "number": 173,
+      "status": "published",
+      "transcript": "data/transcripts/173-stalemate-along-the-rappahannock.json",
+      "updatedAt": "2026-09-04T19:36:46.1768200+00:00"
+    },
+    "174-jackson-on-the-loose-part-the-first": {
+      "number": 174,
+      "status": "published",
+      "transcript": "data/transcripts/174-jackson-on-the-loose-part-the-first.json",
+      "updatedAt": "2026-09-04T19:42:47.2913939+00:00"
+    },
+    "175-jackson-on-the-loose-part-the-second": {
+      "number": 175,
+      "status": "published",
+      "transcript": "data/transcripts/175-jackson-on-the-loose-part-the-second.json",
+      "updatedAt": "2026-09-04T19:58:09.6051116+00:00"
+    },
+    "176-second-manassas-part-the-first": {
+      "number": 176,
+      "status": "published",
+      "transcript": "data/transcripts/176-second-manassas-part-the-first.json",
+      "updatedAt": "2026-09-04T20:02:13.3708307+00:00"
+    },
+    "177-second-manassas-part-the-second": {
+      "number": 177,
+      "status": "published",
+      "transcript": "data/transcripts/177-second-manassas-part-the-second.json",
+      "updatedAt": "2026-09-04T20:11:10.3204018+00:00"
+    },
+    "178-second-manassas-part-the-third": {
+      "number": 178,
+      "status": "published",
+      "transcript": "data/transcripts/178-second-manassas-part-the-third.json",
+      "updatedAt": "2026-09-04T20:20:08.5796485+00:00"
+    },
+    "179-second-manassas-part-the-fourth": {
+      "number": 179,
+      "status": "published",
+      "transcript": "data/transcripts/179-second-manassas-part-the-fourth.json",
+      "updatedAt": "2026-09-04T20:23:03.8405809+00:00"
+    },
+    "180-boys-mcclellan-is-back-in-command-of-the-army-again": {
+      "number": 180,
+      "status": "published",
+      "transcript": "data/transcripts/180-boys-mcclellan-is-back-in-command-of-the-army-again.json",
+      "updatedAt": "2026-09-08T01:40:00Z"
+    },
+    "181-lee-strikes-north": {
+      "number": 181,
+      "status": "published",
+      "transcript": "data/transcripts/181-lee-strikes-north.json",
+      "updatedAt": "2026-09-08T01:40:00Z"
+    },
+    "182-lee-s-special-orders-no-191": {
+      "number": 182,
+      "status": "published",
+      "transcript": "data/transcripts/182-lee-s-special-orders-no-191.json",
+      "updatedAt": "2026-09-08T01:40:00Z"
+    },
+    "183-south-mountain-part-the-first": {
+      "number": 183,
+      "status": "published",
+      "transcript": "data/transcripts/183-south-mountain-part-the-first.json",
+      "updatedAt": "2026-09-08T08:00:00Z"
+    },
+    "184-south-mountain-part-the-second": {
+      "number": 184,
+      "status": "published",
+      "transcript": "data/transcripts/184-south-mountain-part-the-second.json",
+      "updatedAt": "2026-09-08T08:00:00Z"
+    },
+    "185-south-mountain-part-the-third": {
+      "number": 185,
+      "status": "published",
+      "transcript": "data/transcripts/185-south-mountain-part-the-third.json",
+      "updatedAt": "2026-09-08T08:00:00Z"
+    },
+    "186-south-mountain-part-the-fourth-antietam-part-the-first": {
+      "number": 186,
+      "status": "published",
+      "transcript": "data/transcripts/186-south-mountain-part-the-fourth-antietam-part-the-first.json",
+      "updatedAt": "2026-09-08T08:05:00Z"
+    },
+    "187-antietam-part-the-second": {
+      "number": 187,
+      "status": "published",
+      "transcript": "data/transcripts/187-antietam-part-the-second.json",
+      "updatedAt": "2026-09-08T08:05:00Z"
+    },
+    "188-antietam-part-the-third": {
+      "number": 188,
+      "status": "published",
+      "transcript": "data/transcripts/188-antietam-part-the-third.json",
+      "updatedAt": "2026-09-08T08:05:00Z"
+    },
+    "189-antietam-part-the-fourth": {
+      "number": 189,
+      "status": "published",
+      "transcript": "data/transcripts/189-antietam-part-the-fourth.json",
+      "updatedAt": "2026-09-08T08:25:00Z"
+    },
+    "190-antietam-part-the-fifth": {
+      "number": 190,
+      "status": "published",
+      "transcript": "data/transcripts/190-antietam-part-the-fifth.json",
+      "updatedAt": "2026-09-08T08:25:00Z"
+    },
+    "191-antietam-part-the-sixth": {
+      "number": 191,
+      "status": "published",
+      "transcript": "data/transcripts/191-antietam-part-the-sixth.json",
+      "updatedAt": "2026-09-08T08:25:00Z"
+    },
+    "192-antietam-part-the-seventh": {
+      "number": 192,
+      "status": "published",
+      "transcript": "data/transcripts/192-antietam-part-the-seventh.json",
+      "updatedAt": "2026-09-08T09:00:00Z"
+    },
+    "193-antietam-part-the-eighth": {
+      "number": 193,
+      "status": "published",
+      "transcript": "data/transcripts/193-antietam-part-the-eighth.json",
+      "updatedAt": "2026-09-08T09:00:00Z"
+    },
+    "194-antietam-part-the-ninth": {
+      "number": 194,
+      "status": "published",
+      "transcript": "data/transcripts/194-antietam-part-the-ninth.json",
+      "updatedAt": "2026-09-08T09:00:00Z"
+    },
+    "195-antietam-part-the-tenth": {
+      "number": 195,
+      "status": "published",
+      "transcript": "data/transcripts/195-antietam-part-the-tenth.json",
+      "updatedAt": "2026-09-08T09:30:00Z"
+    },
+    "196-antietam-part-the-eleventh": {
+      "number": 196,
+      "status": "published",
+      "transcript": "data/transcripts/196-antietam-part-the-eleventh.json",
+      "updatedAt": "2026-09-08T09:30:00Z"
+    },
+    "197-antietam-part-the-twelfth": {
+      "number": 197,
+      "status": "published",
+      "transcript": "data/transcripts/197-antietam-part-the-twelfth.json",
+      "updatedAt": "2026-09-08T10:30:00Z"
+    },
+    "198-antietam-part-the-thirteenth": {
+      "number": 198,
+      "status": "published",
+      "transcript": "data/transcripts/198-antietam-part-the-thirteenth.json",
+      "updatedAt": "2026-09-08T10:30:00Z"
+    },
+    "199-antietam-part-the-fourteenth": {
+      "number": 199,
+      "status": "published",
+      "transcript": "data/transcripts/199-antietam-part-the-fourteenth.json",
+      "updatedAt": "2026-09-08T11:30:00Z"
+    },
+    "200-antietam-epilogue-and-emancipation-proclamation-prologue": {
+      "number": 200,
+      "status": "published",
+      "transcript": "data/transcripts/200-antietam-epilogue-and-emancipation-proclamation-prologue.json",
+      "updatedAt": "2026-09-08T12:00:00Z"
+    },
+    "201-emancipation-proclamation-part-the-first": {
+      "number": 201,
+      "status": "published",
+      "transcript": "data/transcripts/201-emancipation-proclamation-part-the-first.json",
+      "updatedAt": "2026-09-08T15:30:00Z"
+    },
+    "202-emancipation-proclamation-part-the-second": {
+      "number": 202,
+      "status": "published",
+      "transcript": "data/transcripts/202-emancipation-proclamation-part-the-second.json",
+      "updatedAt": "2026-09-08T15:30:00Z"
+    },
+    "203-emancipation-proclamation-part-the-third": {
+      "number": 203,
+      "status": "published",
+      "transcript": "data/transcripts/203-emancipation-proclamation-part-the-third.json",
+      "updatedAt": "2026-09-08T17:02:00Z"
+    },
+    "204-emancipation-proclamation-part-the-fourth": {
+      "number": 204,
+      "status": "published",
+      "transcript": "data/transcripts/204-emancipation-proclamation-part-the-fourth.json",
+      "updatedAt": "2026-09-08T17:02:00Z"
+    },
+    "205-meanwhile-out-west": {
+      "number": 205,
+      "status": "published",
+      "transcript": "data/transcripts/205-meanwhile-out-west.json",
+      "updatedAt": "2026-09-08T18:32:00Z"
+    },
+    "206-bluegrass-state-or-bust": {
+      "number": 206,
+      "status": "published",
+      "transcript": "data/transcripts/206-bluegrass-state-or-bust.json",
+      "updatedAt": "2026-09-08T18:32:00Z"
+    },
+    "207-kentucky-s-siren-song-of-glory": {
+      "number": 207,
+      "status": "published",
+      "transcript": "data/transcripts/207-kentucky-s-siren-song-of-glory.json",
+      "updatedAt": "2026-09-08T19:57:00Z"
+    },
+    "208-battle-of-richmond-kentucky": {
+      "number": 208,
+      "status": "published",
+      "transcript": "data/transcripts/208-battle-of-richmond-kentucky.json",
+      "updatedAt": "2026-09-08T19:57:00Z"
+    },
+    "209-missed-opportunity-at-munfordville": {
+      "number": 209,
+      "status": "published",
+      "transcript": "data/transcripts/209-missed-opportunity-at-munfordville.json",
+      "updatedAt": "2026-09-08T20:22:00Z"
+    },
+    "210-mountain-trek-from-cumberland-gap": {
+      "number": 210,
+      "status": "published",
+      "transcript": "data/transcripts/210-mountain-trek-from-cumberland-gap.json",
+      "updatedAt": "2026-09-08T20:22:00Z"
+    },
+    "211-perryville-part-the-first": {
+      "number": 211,
+      "status": "published",
+      "transcript": "data/transcripts/211-perryville-part-the-first.json",
+      "updatedAt": "2026-09-08T20:37:00Z"
+    },
+    "212-perryville-part-the-second": {
+      "number": 212,
+      "status": "published",
+      "transcript": "data/transcripts/212-perryville-part-the-second.json",
+      "updatedAt": "2026-09-08T20:37:00Z"
+    },
+    "213-perryville-part-the-third": {
+      "number": 213,
+      "status": "transcribed",
+      "transcript": "data/transcripts/213-perryville-part-the-third.json",
+      "updatedAt": "2026-09-08T10:23:27.152240+00:00"
+    },
+    "214-perryville-part-the-fourth": {
+      "number": 214,
+      "status": "transcribed",
+      "transcript": "data/transcripts/214-perryville-part-the-fourth.json",
+      "updatedAt": "2026-09-08T10:31:59.840752+00:00"
+    },
+    "215-perryville-part-the-fifth": {
+      "number": 215,
+      "status": "transcribed",
+      "transcript": "data/transcripts/215-perryville-part-the-fifth.json",
+      "updatedAt": "2026-09-08T10:41:31.230752+00:00"
+    },
+    "216-meanwhile-back-in-mississippi": {
+      "number": 216,
+      "status": "transcribed",
+      "transcript": "data/transcripts/216-meanwhile-back-in-mississippi.json",
+      "updatedAt": "2026-09-08T10:48:22.772624+00:00"
+    },
+    "217-iuka": {
+      "number": 217,
+      "status": "transcribed",
+      "transcript": "data/transcripts/217-iuka.json",
+      "updatedAt": "2026-09-08T11:02:49.161452+00:00"
+    },
+    "218-corinth-part-the-first": {
+      "number": 218,
+      "status": "transcribed",
+      "transcript": "data/transcripts/218-corinth-part-the-first.json",
+      "updatedAt": "2026-09-08T11:07:43.590516+00:00"
+    },
+    "219-corinth-part-the-second": {
+      "number": 219,
+      "status": "transcribed",
+      "transcript": "data/transcripts/219-corinth-part-the-second.json",
+      "updatedAt": "2026-09-08T11:11:17.781390+00:00"
+    },
+    "220-corinth-part-the-third": {
+      "number": 220,
+      "status": "transcribed",
+      "transcript": "data/transcripts/220-corinth-part-the-third.json",
+      "updatedAt": "2026-09-08T11:16:57.826738+00:00"
+    },
+    "221-davis-bridge": {
+      "number": 221,
+      "status": "transcribed",
+      "transcript": "data/transcripts/221-davis-bridge.json",
+      "updatedAt": "2026-09-08T11:23:53.769145+00:00"
+    },
+    "222-prairie-grove-part-the-first": {
+      "number": 222,
+      "status": "transcribed",
+      "transcript": "data/transcripts/222-prairie-grove-part-the-first.json",
+      "updatedAt": "2026-09-08T11:37:52.569275+00:00"
+    },
+    "223-prairie-grove-part-the-second": {
+      "number": 223,
+      "status": "transcribed",
+      "transcript": "data/transcripts/223-prairie-grove-part-the-second.json",
+      "updatedAt": "2026-09-08T11:48:38.494702+00:00"
+    },
+    "224-prairie-grove-part-the-third": {
+      "number": 224,
+      "status": "transcribed",
+      "transcript": "data/transcripts/224-prairie-grove-part-the-third.json",
+      "updatedAt": "2026-09-08T11:57:39.030906+00:00"
+    },
+    "225-prairie-grove-part-the-fourth": {
+      "number": 225,
+      "status": "transcribed",
+      "transcript": "data/transcripts/225-prairie-grove-part-the-fourth.json",
+      "updatedAt": "2026-09-08T12:09:45.212290+00:00"
+    },
+    "226-an-auger-too-dull-to-take-hold-little-mac-is-sacked": {
+      "number": 226,
+      "status": "transcribed",
+      "transcript": "data/transcripts/226-an-auger-too-dull-to-take-hold-little-mac-is-sacked.json",
+      "updatedAt": "2026-09-08T12:17:22.140691+00:00"
+    },
+    "227-poor-burn-feels-dreadfully-burnside-takes-command": {
+      "number": 227,
+      "status": "transcribed",
+      "transcript": "data/transcripts/227-poor-burn-feels-dreadfully-burnside-takes-command.json",
+      "updatedAt": "2026-09-08T12:25:37.805050+00:00"
+    },
+    "228-fredericksburg-part-the-first": {
+      "number": 228,
+      "status": "transcribed",
+      "transcript": "data/transcripts/228-fredericksburg-part-the-first.json",
+      "updatedAt": "2026-09-08T12:36:28.015268+00:00"
+    },
+    "229-fredericksburg-part-the-second": {
+      "number": 229,
+      "status": "transcribed",
+      "transcript": "data/transcripts/229-fredericksburg-part-the-second.json",
+      "updatedAt": "2026-09-08T12:41:20.794021+00:00"
+    },
+    "230-fredericksburg-part-the-third": {
+      "number": 230,
+      "status": "transcribed",
+      "transcript": "data/transcripts/230-fredericksburg-part-the-third.json",
+      "updatedAt": "2026-09-08T12:50:10.112165+00:00"
+    },
+    "231-fredericksburg-part-the-fourth": {
+      "number": 231,
+      "status": "transcribed",
+      "transcript": "data/transcripts/231-fredericksburg-part-the-fourth.json",
+      "updatedAt": "2026-09-08T13:02:00.843950+00:00"
+    },
+    "232-fredericksburg-part-the-fifth": {
+      "number": 232,
+      "status": "transcribed",
+      "transcript": "data/transcripts/232-fredericksburg-part-the-fifth.json",
+      "updatedAt": "2026-09-08T13:07:45.788538+00:00"
+    },
+    "233-fredericksburg-part-the-sixth": {
+      "number": 233,
+      "status": "transcribed",
+      "transcript": "data/transcripts/233-fredericksburg-part-the-sixth.json",
+      "updatedAt": "2026-09-08T13:12:45.151240+00:00"
+    },
+    "234-fredericksburg-part-the-seventh": {
+      "number": 234,
+      "status": "transcribed",
+      "transcript": "data/transcripts/234-fredericksburg-part-the-seventh.json",
+      "updatedAt": "2026-09-08T13:20:52.447855+00:00"
+    },
+    "235-fredericksburg-part-the-eighth": {
+      "number": 235,
+      "status": "transcribed",
+      "transcript": "data/transcripts/235-fredericksburg-part-the-eighth.json",
+      "updatedAt": "2026-09-08T13:27:02.329170+00:00"
+    },
+    "236-fredericksburg-part-the-ninth": {
+      "number": 236,
+      "status": "transcribed",
+      "transcript": "data/transcripts/236-fredericksburg-part-the-ninth.json",
+      "updatedAt": "2026-09-08T13:34:11.126366+00:00"
+    },
+    "237-fredericksburg-part-the-tenth": {
+      "number": 237,
+      "status": "transcribed",
+      "transcript": "data/transcripts/237-fredericksburg-part-the-tenth.json",
+      "updatedAt": "2026-09-08T13:41:55.013150+00:00"
+    },
+    "238-the-saddest-hour": {
+      "number": 238,
+      "status": "transcribed",
+      "transcript": "data/transcripts/238-the-saddest-hour.json",
+      "updatedAt": "2026-09-08T13:46:21.850947+00:00"
+    },
+    "239-the-mud-march": {
+      "number": 239,
+      "status": "transcribed",
+      "transcript": "data/transcripts/239-the-mud-march.json",
+      "updatedAt": "2026-09-08T14:01:16.764196+00:00"
+    }
+  }
+}

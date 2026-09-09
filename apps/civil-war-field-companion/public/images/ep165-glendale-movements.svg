@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Generalized troop movements in the main Battle of Glendale, June 30, 1862</title>
+  <desc id="desc">Schematic map of the United States line west of Willis Church Road and the Confederate attacks by Jenkins, Kemper, Branch, Strange, Wilcox, Pryor, Featherston, Field, Pender, Archer, and Anderson.</desc>
+  <defs>
+    <linearGradient id="paper2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f6efdc"/><stop offset="1" stop-color="#d9cdae"/></linearGradient>
+    <pattern id="woods" width="34" height="34" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="8" fill="#668052" opacity=".25"/><circle cx="26" cy="26" r="7" fill="#789363" opacity=".22"/></pattern>
+    <marker id="redArrow" markerWidth="18" markerHeight="14" refX="16" refY="7" orient="auto"><path d="M0 0 18 7 0 14Z" fill="#9a3d32"/></marker>
+    <marker id="blueArrow" markerWidth="18" markerHeight="14" refX="16" refY="7" orient="auto"><path d="M0 0 18 7 0 14Z" fill="#315f8c"/></marker>
+  </defs>
+  <rect width="1200" height="800" fill="url(#paper2)"/>
+  <rect x="0" y="0" width="1200" height="800" fill="url(#woods)"/>
+  <text x="54" y="58" font-family="Georgia,serif" font-size="32" fill="#2f2a22">Main action west of the Glendale crossroads</text>
+  <text x="56" y="90" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="1.4" fill="#7b302a">SCHEMATIC — NOT TO SCALE</text>
+
+  <g fill="none" stroke="#806c4f" stroke-linecap="round">
+    <path d="M40 380 C280 374 474 378 710 393 C885 403 1015 402 1170 395" stroke-width="12"/>
+    <path d="M932 80 C925 244 930 384 944 744" stroke-width="12"/>
+    <path d="M710 393 C792 328 853 247 889 100" stroke-width="7"/>
+  </g>
+  <text x="330" y="358" font-family="Arial,sans-serif" font-size="20" fill="#654f37">Long Bridge Road</text>
+  <text x="968" y="530" transform="rotate(88 968 530)" font-family="Arial,sans-serif" font-size="20" fill="#654f37">Willis Church Road to Malvern Hill</text>
+  <text x="767" y="250" transform="rotate(-55 767 250)" font-family="Arial,sans-serif" font-size="17" fill="#654f37">road toward Glendale</text>
+
+  <circle cx="928" cy="395" r="12" fill="#111"/>
+  <text x="955" y="380" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#111">Glendale crossroads</text>
+  <rect x="722" y="506" width="23" height="19" fill="#6c4f37"/>
+  <text x="754" y="522" font-family="Arial,sans-serif" font-size="17" fill="#41392f">Whitlock house / clearing</text>
+  <rect x="850" y="448" width="23" height="19" fill="#6c4f37"/>
+  <text x="879" y="462" font-family="Arial,sans-serif" font-size="16" fill="#41392f">Frayser farm area</text>
+
+  <g stroke="#315f8c" stroke-width="12" stroke-linecap="round">
+    <path d="M720 250 L856 260"/>
+    <path d="M690 320 L850 329"/>
+    <path d="M682 415 L848 418"/>
+    <path d="M708 492 L850 500"/>
+    <path d="M735 578 L870 586"/>
+  </g>
+  <g fill="#274f78" font-family="Arial,sans-serif" font-size="17" font-weight="700">
+    <text x="715" y="232">Kearny / Robinson</text>
+    <text x="684" y="302">McCall: Seymour</text>
+    <text x="676" y="397">McCall: Meade</text>
+    <text x="702" y="474">McCall: Simmons</text>
+    <text x="729" y="560">Hooker</text>
+  </g>
+  <path d="M1000 175 C955 215 914 244 865 270" fill="none" stroke="#315f8c" stroke-width="6" marker-end="url(#blueArrow)"/>
+  <text x="978" y="150" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#315f8c">Taylor brigade</text>
+  <text x="977" y="172" font-family="Arial,sans-serif" font-size="15" fill="#315f8c">from Slocum</text>
+  <path d="M1044 636 C996 592 941 561 871 536" fill="none" stroke="#315f8c" stroke-width="6" marker-end="url(#blueArrow)"/>
+  <text x="985" y="672" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#315f8c">Dana and Sully</text>
+  <text x="985" y="693" font-family="Arial,sans-serif" font-size="15" fill="#315f8c">Sedgwick division</text>
+
+  <g fill="none" stroke="#9a3d32" stroke-width="7" marker-end="url(#redArrow)">
+    <path d="M250 345 C410 338 540 345 675 351"/>
+    <path d="M226 445 C400 454 530 470 685 493"/>
+    <path d="M266 520 C420 531 560 539 715 542"/>
+    <path d="M175 240 C360 244 520 254 690 271"/>
+    <path d="M155 300 C340 298 510 304 665 320"/>
+    <path d="M215 606 C410 604 585 598 730 584"/>
+    <path d="M120 676 C350 676 560 655 738 616"/>
+  </g>
+  <g fill="#7d302a" font-family="Arial,sans-serif" font-size="17" font-weight="700">
+    <text x="250" y="330">Jenkins → Cooper’s battery</text>
+    <text x="225" y="432">Kemper → Whitlock clearing</text>
+    <text x="266" y="511">Branch and Strange</text>
+    <text x="175" y="226">Pryor / Featherston / Gregg</text>
+    <text x="155" y="286">Wilcox → Randol’s battery</text>
+    <text x="215" y="592">Field and Pender</text>
+    <text x="120" y="662">Archer</text>
+  </g>
+  <path d="M360 392 C485 390 585 392 690 402" fill="none" stroke="#9a3d32" stroke-width="7" marker-end="url(#redArrow)"/>
+  <text x="373" y="419" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#7d302a">Anderson after dark</text>
+
+  <g transform="translate(54 720)" font-family="Arial,sans-serif" font-size="16">
+    <line x1="0" y1="0" x2="60" y2="0" stroke="#315f8c" stroke-width="10"/><text x="72" y="6" fill="#30302d">United States defensive sectors and reinforcements</text>
+    <line x1="438" y1="0" x2="498" y2="0" stroke="#9a3d32" stroke-width="7" marker-end="url(#redArrow)"/><text x="515" y="6" fill="#30302d">Generalized Confederate attacks</text>
+  </g>
+</svg>

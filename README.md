@@ -26,6 +26,12 @@ A searchable visual companion to *The Civil War & Reconstruction* podcast, with 
 
 - [View the Civil War Field Companion project](https://beau-gosse-dev.github.io/projects/civil-war-field-companion/)
 
+- Editable source: [`apps/civil-war-field-companion`](apps/civil-war-field-companion/)
+- Generated site: `projects/civil-war-field-companion/` (replaced when publishing)
+- Episode transcripts stay local in the app's ignored `data/transcripts/` folder and are not included in this repository.
+
+To work on the companion, run `pnpm install --frozen-lockfile` and `pnpm dev` from its source directory. Commit source changes, then run `pnpm publish:github` there to build and publish through this repository.
+
 This project was 100% vibe-coded with Cursor.
 
 ## Development

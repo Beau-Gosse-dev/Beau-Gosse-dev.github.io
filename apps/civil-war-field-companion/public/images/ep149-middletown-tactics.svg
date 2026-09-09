@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">Middletown breakthrough and delay, May 24, 1862</title>
+  <desc id="desc">Schematic tactical diagram showing the Federal column moving north, Jackson's force entering from Chapel Road, Confederate artillery firing along the road, a small Federal rear guard south of Middletown, Jackson's mistaken southward turn, and the renewed northward pursuit.</desc>
+  <defs>
+    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3eddc"/>
+      <stop offset="1" stop-color="#dfd3b9"/>
+    </linearGradient>
+    <pattern id="field" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M0 20L20 0M-5 5L5-5M15 25L25 15" stroke="#b7a57f" stroke-width="1" opacity=".22"/>
+    </pattern>
+    <marker id="blueArrow" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0L18 9L0 18Z" fill="#315f8c"/>
+    </marker>
+    <marker id="redArrow" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0L18 9L0 18Z" fill="#9a3d32"/>
+    </marker>
+    <marker id="amberArrow" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0L18 9L0 18Z" fill="#a36a1d"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#302820" flood-opacity=".24"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="820" rx="22" fill="url(#ground)"/>
+  <rect x="18" y="18" width="1164" height="784" rx="16" fill="none" stroke="#6d604b" stroke-width="2"/>
+  <rect x="35" y="135" width="1130" height="640" fill="url(#field)"/>
+  <text x="54" y="63" font-family="Georgia,serif" font-size="31" font-weight="700" fill="#2d2922">MIDDLETOWN · BREAKTHROUGH, WRONG TURN, PURSUIT</text>
+  <text x="55" y="98" font-family="Arial,sans-serif" font-size="17" fill="#5c5242">TACTICAL SCHEMATIC — small-unit positions and phase boundaries are approximate</text>
+
+  <!-- roads and town -->
+  <path d="M495 770C500 645 505 520 510 390C515 285 520 203 530 130" fill="none" stroke="#575044" stroke-width="50"/>
+  <path d="M495 770C500 645 505 520 510 390C515 285 520 203 530 130" fill="none" stroke="#d9cdae" stroke-width="38"/>
+  <path d="M1140 350C910 356 731 361 512 382" fill="none" stroke="#665c4b" stroke-width="34"/>
+  <path d="M1140 350C910 356 731 361 512 382" fill="none" stroke="#d7c9a7" stroke-width="24"/>
+  <g fill="#765e43" stroke="#4f4030" stroke-width="2">
+    <rect x="430" y="402" width="45" height="34" transform="rotate(3 452 419)"/>
+    <rect x="538" y="392" width="52" height="39" transform="rotate(-4 564 411)"/>
+    <rect x="441" y="463" width="55" height="36" transform="rotate(2 468 481)"/>
+    <rect x="532" y="452" width="47" height="42" transform="rotate(-3 555 473)"/>
+    <rect x="432" y="523" width="50" height="34"/>
+    <rect x="535" y="518" width="55" height="36"/>
+  </g>
+  <text x="615" y="482" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#2d2922">MIDDLETOWN</text>
+  <text x="615" y="508" font-family="Arial,sans-serif" font-size="15" fill="#5c5242">Valley Turnpike runs north–south</text>
+
+  <!-- wagon column -->
+  <g transform="translate(388 145)" fill="#315f8c" stroke="#173b60" stroke-width="2">
+    <rect x="0" y="0" width="37" height="18" rx="2"/><circle cx="8" cy="22" r="5"/><circle cx="29" cy="22" r="5"/>
+    <rect x="63" y="46" width="37" height="18" rx="2"/><circle cx="71" cy="68" r="5"/><circle cx="92" cy="68" r="5"/>
+    <rect x="3" y="94" width="37" height="18" rx="2"/><circle cx="11" cy="116" r="5"/><circle cx="32" cy="116" r="5"/>
+  </g>
+  <path d="M455 350C460 287 465 227 476 158" fill="none" stroke="#315f8c" stroke-width="9" stroke-dasharray="12 8" marker-end="url(#blueArrow)"/>
+  <text x="210" y="166" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#315f8c">BANKS’S TRAINS AND MAIN BODY</text>
+  <text x="210" y="190" font-family="Arial,sans-serif" font-size="15" fill="#315f8c">Most are already north of the interception</text>
+
+  <!-- Confederate entry -->
+  <path d="M1115 350C895 354 708 360 545 377" fill="none" stroke="#9a3d32" stroke-width="16" stroke-linecap="round" marker-end="url(#redArrow)"/>
+  <text x="832" y="324" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#9a3d32">TAYLOR · ASHBY · HOTCHKISS</text>
+  <text x="854" y="386" font-family="Arial,sans-serif" font-size="14" fill="#6f3029">from Cedarville on Chapel Road</text>
+
+  <!-- Stone wall and infantry -->
+  <path d="M560 326L693 320" stroke="#6a6258" stroke-width="12" stroke-dasharray="18 5"/>
+  <g fill="#9a3d32" stroke="#68251f" stroke-width="2">
+    <circle cx="583" cy="298" r="9"/><circle cx="612" cy="297" r="9"/><circle cx="641" cy="295" r="9"/><circle cx="670" cy="294" r="9"/>
+  </g>
+  <text x="704" y="303" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#9a3d32">8th Louisiana</text>
+  <text x="704" y="324" font-family="Arial,sans-serif" font-size="13" fill="#5c5242">approximate stone-wall position</text>
+
+  <!-- artillery -->
+  <g transform="translate(612 238)" fill="#9a3d32" stroke="#68251f" stroke-width="3">
+    <circle cx="0" cy="0" r="12" fill="none"/><circle cx="38" cy="0" r="12" fill="none"/>
+    <path d="M0 0L58 38M38 0L58 38M58 38L93 55" fill="none" stroke-width="6"/>
+  </g>
+  <text x="720" y="250" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#9a3d32">Chew and Poague</text>
+  <path d="M680 265L493 231" stroke="#9a3d32" stroke-width="3" stroke-dasharray="9 6"/>
+  <path d="M684 273L488 277" stroke="#9a3d32" stroke-width="3" stroke-dasharray="9 6"/>
+
+  <!-- cavalry charge -->
+  <path d="M510 235C513 267 513 302 512 340" fill="none" stroke="#315f8c" stroke-width="12" marker-end="url(#blueArrow)"/>
+  <text x="535" y="207" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#315f8c">1st Maine Cavalry charge</text>
+  <text x="535" y="229" font-family="Arial,sans-serif" font-size="14" fill="#315f8c">short-range artillery and musket fire</text>
+
+  <!-- federal rear guard -->
+  <path d="M365 650L668 643" stroke="#315f8c" stroke-width="12" stroke-dasharray="22 8"/>
+  <g fill="#315f8c" stroke="#173b60" stroke-width="2">
+    <circle cx="395" cy="620" r="10"/><circle cx="438" cy="618" r="10"/><circle cx="481" cy="617" r="10"/><circle cx="524" cy="616" r="10"/><circle cx="567" cy="615" r="10"/>
+  </g>
+  <text x="705" y="624" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#315f8c">SMALL FEDERAL REAR GUARD</text>
+  <text x="705" y="648" font-family="Arial,sans-serif" font-size="14" fill="#315f8c">five guns; about 50 artillerymen,</text>
+  <text x="705" y="668" font-family="Arial,sans-serif" font-size="14" fill="#315f8c">75 infantry, and scattered cavalry</text>
+
+  <!-- wrong turn and reversal -->
+  <path d="M565 405C566 476 553 550 529 602" fill="none" stroke="#a36a1d" stroke-width="17" stroke-linecap="round" marker-end="url(#amberArrow)"/>
+  <text x="705" y="540" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#a36a1d">ABOUT 4:00–5:45 P.M.</text>
+  <text x="705" y="564" font-family="Arial,sans-serif" font-size="15" fill="#6f4a17">Jackson turns south, believing a large</text>
+  <text x="705" y="586" font-family="Arial,sans-serif" font-size="15" fill="#6f4a17">part of Banks’s army may be cut off.</text>
+  <path d="M545 586C577 518 593 440 566 393C546 357 537 297 541 226" fill="none" stroke="#9a3d32" stroke-width="10" stroke-dasharray="15 9" marker-end="url(#redArrow)"/>
+  <text x="74" y="552" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#9a3d32">5:45 P.M. REVERSAL</text>
+  <text x="74" y="577" font-family="Arial,sans-serif" font-size="15" fill="#6f3029">Jackson resumes the northward pursuit.</text>
+  <text x="74" y="599" font-family="Arial,sans-serif" font-size="15" fill="#6f3029">Banks has gained roughly two hours.</text>
+
+  <!-- fire and blocked point -->
+  <g transform="translate(505 353)" filter="url(#shadow)">
+    <path d="M0-24L7-8L24-14L14 1L29 9L11 12L12 30L0 16L-13 30L-11 12L-29 8L-14 0L-25-15L-7-8Z" fill="#d18a2b" stroke="#8f4f18" stroke-width="3"/>
+  </g>
+  <text x="95" y="369" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#2d2922">COLUMN PIERCED</text>
+  <text x="95" y="392" font-family="Arial,sans-serif" font-size="14" fill="#5c5242">Confederate fire catches cavalry</text>
+  <text x="95" y="412" font-family="Arial,sans-serif" font-size="14" fill="#5c5242">and wagons on the turnpike.</text>
+
+  <!-- bottom legend -->
+  <g transform="translate(60 757)" font-family="Arial,sans-serif" font-size="15">
+    <line x1="0" y1="0" x2="58" y2="0" stroke="#315f8c" stroke-width="9" marker-end="url(#blueArrow)"/>
+    <text x="76" y="5" fill="#2d2922">United States</text>
+    <line x1="220" y1="0" x2="278" y2="0" stroke="#9a3d32" stroke-width="9" marker-end="url(#redArrow)"/>
+    <text x="296" y="5" fill="#2d2922">Confederacy</text>
+    <line x1="430" y1="0" x2="488" y2="0" stroke="#a36a1d" stroke-width="9" marker-end="url(#amberArrow)"/>
+    <text x="506" y="5" fill="#2d2922">wrong-way phase</text>
+  </g>
+  <path d="M1124 90v-44m0 0-12 20m12-20 12 20" fill="none" stroke="#2d2922" stroke-width="3"/>
+  <text x="1124" y="113" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#2d2922">NORTH</text>
+</svg>

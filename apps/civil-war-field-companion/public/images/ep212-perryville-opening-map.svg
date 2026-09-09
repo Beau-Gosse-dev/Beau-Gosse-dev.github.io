@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Opening positions at Perryville, October 7–8, 1862</title>
+  <desc id="desc">Schematic north-up map of Perryville, the Springfield Pike, Doctors Creek, Peters Hill, Bottom Hill, the United States advance under Daniel McCook, and nearby Confederate formations.</desc>
+  <defs>
+    <marker id="blueArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#315f8c"/>
+    </marker>
+    <marker id="redArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#963b31"/>
+    </marker>
+    <filter id="paper" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="8" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 0.035"/></feComponentTransfer>
+      <feBlend in="SourceGraphic" mode="multiply"/>
+    </filter>
+    <style>
+      .title { font: 700 30px Georgia, serif; fill: #2b2722; }
+      .subtitle { font: 16px Georgia, serif; fill: #5f574c; }
+      .label { font: 700 17px Arial, sans-serif; fill: #302c27; paint-order: stroke; stroke: #f8f1e3; stroke-width: 5px; stroke-linejoin: round; }
+      .small { font: 14px Arial, sans-serif; fill: #3e3932; paint-order: stroke; stroke: #f8f1e3; stroke-width: 4px; stroke-linejoin: round; }
+      .unitBlue { font: 700 15px Arial, sans-serif; fill: #244f79; paint-order: stroke; stroke: #f8f1e3; stroke-width: 5px; stroke-linejoin: round; }
+      .unitRed { font: 700 15px Arial, sans-serif; fill: #7f2f27; paint-order: stroke; stroke: #f8f1e3; stroke-width: 5px; stroke-linejoin: round; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="760" fill="#f8f1e3"/>
+  <g filter="url(#paper)">
+    <text x="55" y="52" class="title">Perryville: the struggle for water begins</text>
+    <text x="55" y="79" class="subtitle">Evening of October 7 to about 4 a.m. on October 8, 1862 · schematic, north up</text>
+
+    <!-- Soft relief -->
+    <path d="M125 260 C265 210 390 235 500 210 C610 183 750 195 870 165" fill="none" stroke="#cabd9e" stroke-width="2" stroke-dasharray="7 7"/>
+    <path d="M105 315 C250 270 390 300 515 265 C650 228 790 250 960 205" fill="none" stroke="#cabd9e" stroke-width="2" stroke-dasharray="7 7"/>
+    <path d="M130 655 C280 610 415 655 565 615 C700 578 860 605 1035 555" fill="none" stroke="#cabd9e" stroke-width="2" stroke-dasharray="7 7"/>
+
+    <!-- Water -->
+    <path d="M1010 100 C975 175 1037 245 1005 315 C978 375 1028 430 1000 505 C975 570 1018 633 980 710" fill="none" stroke="#6f9fb7" stroke-width="12" opacity="0.9"/>
+    <path d="M520 700 C500 642 540 590 515 535 C490 481 520 430 500 370 C490 340 500 310 515 282" fill="none" stroke="#78a9bf" stroke-width="9"/>
+    <text x="1035" y="250" class="label" transform="rotate(79 1035 250)">Chaplin River</text>
+    <text x="455" y="465" class="label" transform="rotate(-83 455 465)">Doctors Creek</text>
+
+    <!-- Roads -->
+    <path d="M55 550 C230 543 365 534 520 520 C705 503 865 487 1135 464" fill="none" stroke="#8b7961" stroke-width="10"/>
+    <path d="M1005 410 C960 335 935 258 910 110" fill="none" stroke="#8b7961" stroke-width="8"/>
+    <path d="M1010 450 C1080 370 1122 295 1160 210" fill="none" stroke="#8b7961" stroke-width="7"/>
+    <path d="M1020 465 C1100 495 1140 530 1180 575" fill="none" stroke="#8b7961" stroke-width="7"/>
+    <text x="150" y="527" class="label">Springfield Pike</text>
+    <text x="846" y="205" class="small" transform="rotate(-73 846 205)">Harrodsburg Pike</text>
+    <text x="1060" y="352" class="small" transform="rotate(-53 1060 352)">Danville Road</text>
+
+    <!-- Hills -->
+    <ellipse cx="630" cy="447" rx="112" ry="63" fill="#d9c994" opacity="0.6" stroke="#a79569" stroke-width="2"/>
+    <ellipse cx="805" cy="405" rx="108" ry="70" fill="#d9c994" opacity="0.62" stroke="#a79569" stroke-width="2"/>
+    <text x="592" y="376" class="label">Peters Hill</text>
+    <text x="772" y="326" class="label">Bottom Hill</text>
+
+    <!-- Places -->
+    <circle cx="1012" cy="430" r="9" fill="#2f2a25"/>
+    <text x="1028" y="430" class="label">Perryville</text>
+    <text x="1028" y="451" class="small">Merchants Row</text>
+
+    <!-- United States formations and movement -->
+    <rect x="178" y="573" width="190" height="56" rx="8" fill="#d7e5f0" stroke="#315f8c" stroke-width="3"/>
+    <text x="195" y="596" class="unitBlue">Sheridan’s 11th Division</text>
+    <text x="195" y="617" class="small">night bivouac west of the creek</text>
+    <path d="M365 565 C430 542 505 518 575 487" fill="none" stroke="#315f8c" stroke-width="8" marker-end="url(#blueArrow)"/>
+    <text x="190" y="455" class="unitBlue">Daniel McCook · 3 a.m. advance</text>
+    <rect x="570" y="458" width="108" height="25" rx="4" fill="#c7dbea" stroke="#315f8c" stroke-width="2"/>
+    <text x="580" y="476" class="unitBlue">52nd Ohio</text>
+    <rect x="566" y="493" width="113" height="25" rx="4" fill="#c7dbea" stroke="#315f8c" stroke-width="2"/>
+    <text x="575" y="511" class="unitBlue">85th Illinois</text>
+    <rect x="445" y="558" width="130" height="25" rx="4" fill="#d9e7f1" stroke="#315f8c" stroke-width="2"/>
+    <text x="454" y="576" class="unitBlue">125th Illinois</text>
+
+    <!-- Confederate formations and withdrawal -->
+    <rect x="641" y="408" width="105" height="25" rx="4" fill="#efd2cc" stroke="#963b31" stroke-width="2"/>
+    <text x="652" y="426" class="unitRed">7th Arkansas</text>
+    <path d="M740 438 C770 425 790 420 807 418" fill="none" stroke="#963b31" stroke-width="7" marker-end="url(#redArrow)"/>
+    <text x="687" y="466" class="unitRed">falls back before dawn</text>
+    <rect x="809" y="379" width="150" height="48" rx="7" fill="#efd2cc" stroke="#963b31" stroke-width="3"/>
+    <text x="825" y="399" class="unitRed">Liddell’s brigade</text>
+    <text x="825" y="418" class="small">main position</text>
+    <rect x="690" y="238" width="157" height="45" rx="7" fill="#efd2cc" stroke="#963b31" stroke-width="3"/>
+    <text x="705" y="258" class="unitRed">Anderson’s division</text>
+    <text x="705" y="277" class="small">northwest of town</text>
+    <rect x="850" y="273" width="147" height="45" rx="7" fill="#efd2cc" stroke="#963b31" stroke-width="3"/>
+    <text x="866" y="293" class="unitRed">Buckner’s division</text>
+    <text x="866" y="312" class="small">west of town</text>
+    <rect x="876" y="113" width="195" height="48" rx="7" fill="#efd2cc" stroke="#963b31" stroke-width="3"/>
+    <text x="892" y="134" class="unitRed">Cheatham’s division</text>
+    <text x="892" y="153" class="small">arriving on Harrodsburg Pike</text>
+
+    <!-- North arrow and legend -->
+    <g transform="translate(1090 92)">
+      <path d="M0 48 L0 2" stroke="#2f2a25" stroke-width="3" marker-end="url(#blueArrow)"/>
+      <text x="-7" y="-6" class="label">N</text>
+    </g>
+    <g transform="translate(55 115)">
+      <rect width="500" height="100" rx="8" fill="#fffaf0" stroke="#b5a98f"/>
+      <line x1="18" y1="28" x2="60" y2="28" stroke="#315f8c" stroke-width="7" marker-end="url(#blueArrow)"/>
+      <text x="75" y="34" class="small">United States movement</text>
+      <line x1="270" y1="28" x2="312" y2="28" stroke="#963b31" stroke-width="7" marker-end="url(#redArrow)"/>
+      <text x="327" y="34" class="small">Confederate movement</text>
+      <line x1="18" y1="66" x2="60" y2="66" stroke="#78a9bf" stroke-width="8"/>
+      <text x="75" y="72" class="small">scarce water</text>
+      <line x1="270" y1="66" x2="312" y2="66" stroke="#8b7961" stroke-width="9"/>
+      <text x="327" y="72" class="small">road</text>
+    </g>
+
+    <text x="55" y="724" class="small">Positions and road traces are approximate. Based on J. B. Work’s battlefield map, Daniel McCook’s official report, and U.S. Army and NPS histories.</text>
+  </g>
+</svg>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Schematic operational map of the Valley Campaign, May 30 to June 7, 1862</title>
+  <desc id="desc">Jackson retreats south from Winchester through Strasburg and Harrisonburg to Port Republic while Fremont pursues west of Massanutten and Shields advances through the Luray Valley east of the mountain.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6f0df"/>
+      <stop offset="1" stop-color="#e8dcc1"/>
+    </linearGradient>
+    <marker id="redArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#9a3d32"/>
+    </marker>
+    <marker id="blueArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#315f8c"/>
+    </marker>
+    <filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity=".22"/></filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#paper)"/>
+  <path d="M540 60 C500 165 535 250 500 350 C465 455 500 560 445 742 L655 742 C700 610 655 500 700 390 C745 280 700 165 745 60 Z" fill="#aab58b" opacity=".82"/>
+  <path d="M570 75 C545 190 575 285 545 370 C515 470 545 575 500 720" fill="none" stroke="#7b8965" stroke-width="9" opacity=".55"/>
+  <text x="625" y="235" font-family="Georgia,serif" font-size="26" fill="#4d573e" text-anchor="middle" transform="rotate(-8 625 235)">MASSANUTTEN MOUNTAIN</text>
+  <path d="M350 70 C365 175 335 285 360 390 C380 480 345 595 365 735" fill="none" stroke="#5c84a8" stroke-width="10" opacity=".75"/>
+  <path d="M845 80 C820 185 855 295 825 410 C800 520 835 625 795 735" fill="none" stroke="#5c84a8" stroke-width="10" opacity=".75"/>
+  <text x="294" y="375" font-family="Arial,sans-serif" font-size="18" fill="#315f8c" transform="rotate(-82 294 375)">North Fork Shenandoah</text>
+  <text x="890" y="390" font-family="Arial,sans-serif" font-size="18" fill="#315f8c" transform="rotate(81 890 390)">South Fork Shenandoah</text>
+  <path d="M405 68 L420 165 L415 262 L425 350 L430 440 L435 535 L455 630 L650 705" fill="none" stroke="#675d4c" stroke-width="7"/>
+  <path d="M905 180 L870 275 L850 370 L835 480 L800 590 L650 705" fill="none" stroke="#7b7060" stroke-width="5" stroke-dasharray="12 9"/>
+  <text x="328" y="420" font-family="Arial,sans-serif" font-size="18" fill="#4f473a" transform="rotate(84 328 420)">Valley Turnpike</text>
+  <text x="918" y="430" font-family="Arial,sans-serif" font-size="18" fill="#4f473a" transform="rotate(79 918 430)">Luray Road</text>
+  <g fill="#2d2923" font-family="Arial,sans-serif" font-size="20">
+    <circle cx="405" cy="68" r="7"/><text x="425" y="73">Winchester</text>
+    <circle cx="420" cy="165" r="7"/><text x="440" y="170">Newtown</text>
+    <circle cx="415" cy="262" r="7"/><text x="435" y="267">Strasburg</text>
+    <circle cx="425" cy="350" r="7"/><text x="445" y="355">Woodstock</text>
+    <circle cx="430" cy="440" r="7"/><text x="450" y="445">Mount Jackson</text>
+    <circle cx="435" cy="535" r="7"/><text x="455" y="540">New Market</text>
+    <circle cx="455" cy="630" r="7"/><text x="475" y="635">Harrisonburg</text>
+    <circle cx="650" cy="705" r="7"/><text x="670" y="711">Port Republic</text>
+    <circle cx="570" cy="668" r="7"/><text x="490" y="696">Cross Keys</text>
+    <circle cx="905" cy="180" r="7"/><text x="925" y="185">Front Royal</text>
+    <circle cx="850" cy="370" r="7"/><text x="870" y="375">Luray</text>
+    <circle cx="800" cy="590" r="7"/><text x="820" y="595">Conrad’s Store</text>
+  </g>
+  <path d="M402 86 C395 160 405 215 415 245 C430 330 415 410 430 505 C440 560 445 600 458 620 C505 650 570 680 625 700" fill="none" stroke="#9a3d32" stroke-width="12" marker-end="url(#redArrow)"/>
+  <path d="M155 175 C245 190 325 220 392 257 C350 305 355 390 405 455 C425 505 425 560 445 610" fill="none" stroke="#315f8c" stroke-width="11" stroke-dasharray="18 10" marker-end="url(#blueArrow)"/>
+  <path d="M1085 118 C1015 130 955 155 920 177 C895 260 875 335 850 395 C830 480 815 540 795 575 C755 625 710 665 675 695" fill="none" stroke="#315f8c" stroke-width="11" stroke-dasharray="18 10" marker-end="url(#blueArrow)"/>
+  <g font-family="Arial,sans-serif" filter="url(#shadow)">
+    <rect x="45" y="36" width="1110" height="72" rx="10" fill="#fffaf0" opacity=".95"/>
+    <text x="600" y="67" font-family="Georgia,serif" font-size="30" font-weight="700" fill="#2d2923" text-anchor="middle">THE FAILED TRAP AND RETREAT TO PORT REPUBLIC</text>
+    <text x="600" y="94" font-size="17" fill="#5f574b" text-anchor="middle">May 30–June 7, 1862 · schematic routes and positions</text>
+    <rect x="57" y="650" width="345" height="112" rx="10" fill="#fffaf0" opacity=".94"/>
+    <line x1="78" y1="682" x2="142" y2="682" stroke="#9a3d32" stroke-width="10"/><text x="158" y="688" font-size="18" fill="#2d2923">Jackson: retreat south</text>
+    <line x1="78" y1="719" x2="142" y2="719" stroke="#315f8c" stroke-width="9" stroke-dasharray="14 8"/><text x="158" y="725" font-size="18" fill="#2d2923">Federal pursuit</text>
+    <text x="600" y="776" font-size="16" font-weight="700" fill="#6d4a35" text-anchor="middle">SCHEMATIC — routes, dates, distances, and force locations are approximate</text>
+  </g>
+  <g font-family="Arial,sans-serif" font-size="17" font-weight="700">
+    <rect x="240" y="220" width="210" height="52" rx="8" fill="#fff" opacity=".9"/><text x="345" y="242" fill="#9a3d32" text-anchor="middle">June 1: Jackson clears</text><text x="345" y="262" fill="#9a3d32" text-anchor="middle">Strasburg at noon</text>
+    <rect x="76" y="275" width="230" height="52" rx="8" fill="#fff" opacity=".9"/><text x="191" y="297" fill="#315f8c" text-anchor="middle">Frémont presses from west</text><text x="191" y="317" fill="#315f8c" text-anchor="middle">and follows the pike</text>
+    <rect x="894" y="449" width="245" height="54" rx="8" fill="#fff" opacity=".9"/><text x="1016" y="472" fill="#315f8c" text-anchor="middle">Shields moves south</text><text x="1016" y="492" fill="#315f8c" text-anchor="middle">through the Luray Valley</text>
+    <rect x="514" y="582" width="245" height="52" rx="8" fill="#fff" opacity=".9"/><text x="636" y="604" fill="#9a3d32" text-anchor="middle">June 5–7: turn east</text><text x="636" y="624" fill="#9a3d32" text-anchor="middle">toward Port Republic</text>
+  </g>
+</svg>

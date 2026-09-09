@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">Confederate approach and opening contact at Shiloh, April 3 to 6, 1862</title>
+  <desc id="desc">Simplified map showing the Confederate march from Corinth along the Ridge and Monterey roads, the four battle lines south of the Union camps, and Peabody's patrol meeting Hardcastle's Mississippi battalion in Fraley Field before dawn on April 6.</desc>
+  <defs>
+    <marker id="blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10z" fill="#315f8c"/></marker>
+    <marker id="red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10z" fill="#9a3d32"/></marker>
+  </defs>
+  <rect width="1200" height="820" fill="#f3eedf"/>
+  <path d="M1040 0C1010 130 1070 240 1030 360S1080 630 1015 820H1200V0Z" fill="#b6cfcd"/>
+  <text x="1090" y="405" fill="#385f64" font-family="Georgia,serif" font-size="27" text-anchor="middle" transform="rotate(88 1090 405)">Tennessee River</text>
+  <path d="M130 210C175 275 160 345 110 430" fill="none" stroke="#91a48d" stroke-width="36"/>
+  <text x="95" y="335" fill="#5b7057" font-family="Arial,sans-serif" font-size="20" transform="rotate(-75 95 335)">Owl Creek</text>
+  <path d="M880 190C840 260 875 330 930 390" fill="none" stroke="#91a48d" stroke-width="34"/>
+  <text x="925" y="300" fill="#5b7057" font-family="Arial,sans-serif" font-size="20" transform="rotate(63 925 300)">Snake Creek</text>
+  <circle cx="880" cy="205" r="15" fill="#315f8c"/><text x="905" y="200" fill="#234b73" font-family="Arial,sans-serif" font-size="21" font-weight="700">Pittsburg Landing</text>
+  <rect x="260" y="190" width="245" height="70" rx="9" fill="#d7e0e8" stroke="#315f8c" stroke-width="4"/><text x="382" y="220" text-anchor="middle" fill="#234b73" font-family="Arial,sans-serif" font-size="21" font-weight="700">SHERMAN'S CAMPS</text><text x="382" y="245" text-anchor="middle" fill="#234b73" font-family="Arial,sans-serif" font-size="17">Shiloh Church and Ray Field</text>
+  <rect x="535" y="205" width="225" height="64" rx="9" fill="#d7e0e8" stroke="#315f8c" stroke-width="4"/><text x="647" y="235" text-anchor="middle" fill="#234b73" font-family="Arial,sans-serif" font-size="21" font-weight="700">PRENTISS'S CAMPS</text><text x="647" y="257" text-anchor="middle" fill="#234b73" font-family="Arial,sans-serif" font-size="16">Peabody's brigade</text>
+  <rect x="330" y="365" width="230" height="80" rx="6" fill="#d8b88a" opacity=".9"/><text x="445" y="401" text-anchor="middle" fill="#553e28" font-family="Arial,sans-serif" font-size="22" font-weight="700">FRALEY FIELD</text><text x="445" y="428" text-anchor="middle" fill="#553e28" font-family="Arial,sans-serif" font-size="16">first shots about 5 a.m.</text>
+  <path d="M640 280C610 325 555 365 500 390" fill="none" stroke="#315f8c" stroke-width="10" stroke-dasharray="15 9" marker-end="url(#blue)"/>
+  <text x="620" y="330" fill="#234b73" font-family="Arial,sans-serif" font-size="18">Powell's patrol · about 400</text>
+  <path d="M448 510V450" fill="none" stroke="#9a3d32" stroke-width="10" marker-end="url(#red)"/><text x="475" y="494" fill="#7c3029" font-family="Arial,sans-serif" font-size="18">Hardcastle's Mississippi battalion</text>
+  <path d="M195 530H920" stroke="#9a3d32" stroke-width="17"/><text x="205" y="519" fill="#7c3029" font-family="Arial,sans-serif" font-size="19" font-weight="700">HARDEE · FIRST LINE</text>
+  <path d="M195 585H920" stroke="#a94f43" stroke-width="17"/><text x="205" y="574" fill="#7c3029" font-family="Arial,sans-serif" font-size="19" font-weight="700">BRAGG · SECOND LINE</text>
+  <path d="M195 640H920" stroke="#b8665b" stroke-width="17"/><text x="205" y="629" fill="#7c3029" font-family="Arial,sans-serif" font-size="19" font-weight="700">POLK · THIRD LINE</text>
+  <path d="M335 695H785" stroke="#c57c73" stroke-width="17"/><text x="345" y="684" fill="#7c3029" font-family="Arial,sans-serif" font-size="18" font-weight="700">BRECKINRIDGE · RESERVE</text>
+  <path d="M480 790C420 750 365 725 305 710M705 790C770 748 815 720 850 690" fill="none" stroke="#6f4937" stroke-width="8" stroke-dasharray="16 10" marker-end="url(#red)"/>
+  <text x="455" y="785" text-anchor="end" fill="#5f3f33" font-family="Arial,sans-serif" font-size="17">Ridge Road from Corinth</text>
+  <text x="735" y="785" fill="#5f3f33" font-family="Arial,sans-serif" font-size="17">Monterey Road from Corinth</text>
+  <text x="40" y="52" fill="#263332" font-family="Georgia,serif" font-size="31" font-weight="700">Approach march and first contact</text>
+  <text x="40" y="86" fill="#4b5856" font-family="Arial,sans-serif" font-size="18">April 3–6, 1862 · simplified orientation · not to scale</text>
+  <path d="M1120 80V135" stroke="#263332" stroke-width="5" marker-end="url(#red)"/><text x="1120" y="62" text-anchor="middle" fill="#263332" font-family="Arial,sans-serif" font-size="20" font-weight="700">N</text>
+</svg>

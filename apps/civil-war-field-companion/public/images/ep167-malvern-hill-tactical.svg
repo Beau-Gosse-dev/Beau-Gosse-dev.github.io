@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">Schematic troop positions and attacks at Malvern Hill</title>
+  <desc id="desc">Generalized map of Union artillery and infantry on Malvern Hill and the piecemeal Confederate attacks from the north on July 1, 1862.</desc>
+  <defs>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d8e0c8"/>
+      <stop offset=".62" stop-color="#eef0df"/>
+      <stop offset="1" stop-color="#d9ceb4"/>
+    </linearGradient>
+    <pattern id="woods" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="7" cy="8" r="5" fill="#55704c" opacity=".7"/>
+      <circle cx="19" cy="18" r="6" fill="#476441" opacity=".68"/>
+    </pattern>
+    <marker id="attack" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#9a3d32"/>
+    </marker>
+    <marker id="withdraw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#315f8c"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="820" fill="#f7f0df"/>
+  <rect x="28" y="26" width="1144" height="768" rx="18" fill="url(#ground)" stroke="#6d604d" stroke-width="2"/>
+  <text x="64" y="73" font-family="Georgia, serif" font-size="31" font-weight="700" fill="#2f2a23">Malvern Hill: artillery contest and infantry assaults</text>
+  <text x="64" y="103" font-family="Arial, sans-serif" font-size="17" fill="#5e5548">Generalized positions and movements, July 1, 1862</text>
+
+  <path d="M42 127 C138 161 214 123 316 154 C411 182 494 127 593 157 C690 187 779 132 872 165 C963 197 1055 146 1158 173 L1158 315 C1038 287 936 329 829 297 C724 266 644 311 533 280 C422 249 323 302 213 269 C126 243 84 260 42 246Z" fill="url(#woods)" opacity=".88"/>
+  <text x="75" y="147" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#31442d">WOODLAND AND CONFEDERATE APPROACHES</text>
+
+  <path d="M592 124 C584 270 590 405 612 764" fill="none" stroke="#8b7e69" stroke-width="10"/>
+  <path d="M592 124 C584 270 590 405 612 764" fill="none" stroke="#f4ead5" stroke-width="5" stroke-dasharray="17 12"/>
+  <text x="617" y="276" font-family="Arial, sans-serif" font-size="15" fill="#5e5140" transform="rotate(87 617 276)">Willis Church Road</text>
+
+  <path d="M61 708 C235 679 354 730 521 703 C696 674 856 727 1144 684" fill="none" stroke="#4e8295" stroke-width="18"/>
+  <text x="1010" y="749" text-anchor="middle" font-family="Georgia, serif" font-size="18" font-style="italic" fill="#315f74">Western approaches to the James River</text>
+
+  <path d="M180 473 C357 435 496 454 618 430 C776 398 920 418 1084 460" fill="none" stroke="#315f8c" stroke-width="18" stroke-linecap="round"/>
+  <path d="M180 473 C357 435 496 454 618 430 C776 398 920 418 1084 460" fill="none" stroke="#d7e3ef" stroke-width="4" stroke-dasharray="10 12"/>
+  <text x="70" y="392" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#244c72">UNION LINE ON THE PLATEAU</text>
+
+  <g font-family="Arial, sans-serif">
+    <g fill="#f3f7fb" stroke="#315f8c" stroke-width="3">
+      <rect x="176" y="430" width="142" height="44" rx="7"/>
+      <rect x="330" y="410" width="146" height="44" rx="7"/>
+      <rect x="676" y="386" width="142" height="44" rx="7"/>
+      <rect x="832" y="402" width="178" height="44" rx="7"/>
+    </g>
+    <g fill="#244c72" font-size="15" font-weight="700" text-anchor="middle">
+      <text x="247" y="457">Morell / Griffin</text>
+      <text x="403" y="437">Morell / Martindale</text>
+      <text x="747" y="413">Couch</text>
+      <text x="921" y="429">reinforcing divisions</text>
+    </g>
+
+    <g fill="#315f8c">
+      <circle cx="225" cy="500" r="8"/><circle cx="260" cy="492" r="8"/><circle cx="299" cy="487" r="8"/>
+      <circle cx="351" cy="476" r="8"/><circle cx="390" cy="472" r="8"/><circle cx="430" cy="470" r="8"/>
+      <circle cx="700" cy="455" r="8"/><circle cx="740" cy="454" r="8"/><circle cx="780" cy="456" r="8"/>
+      <circle cx="850" cy="470" r="8"/><circle cx="895" cy="476" r="8"/><circle cx="940" cy="480" r="8"/>
+    </g>
+    <text x="184" y="526" font-size="14" fill="#244c72">massed Federal artillery</text>
+
+    <rect x="474" y="456" width="104" height="52" rx="6" fill="#eee1c5" stroke="#6b5c49" stroke-width="2"/>
+    <text x="526" y="477" text-anchor="middle" font-size="14" font-weight="700" fill="#463b2e">Crew house</text>
+    <text x="526" y="496" text-anchor="middle" font-size="12" fill="#635646">general area</text>
+
+    <rect x="752" y="514" width="126" height="50" rx="6" fill="#eee1c5" stroke="#6b5c49" stroke-width="2"/>
+    <text x="815" y="535" text-anchor="middle" font-size="14" font-weight="700" fill="#463b2e">slave cabins</text>
+    <text x="815" y="553" text-anchor="middle" font-size="12" fill="#635646">and barn area</text>
+
+    <rect x="698" y="173" width="177" height="48" rx="7" fill="#f8eded" stroke="#9a3d32" stroke-width="3"/>
+    <text x="786" y="193" text-anchor="middle" font-size="14" font-weight="700" fill="#7b2f29">Jackson / Whiting</text>
+    <text x="786" y="211" text-anchor="middle" font-size="12" fill="#7b2f29">piecemeal batteries</text>
+
+    <rect x="390" y="190" width="156" height="48" rx="7" fill="#f8eded" stroke="#9a3d32" stroke-width="3"/>
+    <text x="468" y="210" text-anchor="middle" font-size="14" font-weight="700" fill="#7b2f29">Magruder's sector</text>
+    <text x="468" y="228" text-anchor="middle" font-size="12" fill="#7b2f29">west of the road</text>
+
+    <rect x="891" y="216" width="150" height="48" rx="7" fill="#f8eded" stroke="#9a3d32" stroke-width="3"/>
+    <text x="966" y="236" text-anchor="middle" font-size="14" font-weight="700" fill="#7b2f29">D. H. Hill</text>
+    <text x="966" y="254" text-anchor="middle" font-size="12" fill="#7b2f29">division in woods</text>
+  </g>
+
+  <g fill="none" stroke="#9a3d32" stroke-width="8" stroke-linecap="round" marker-end="url(#attack)">
+    <path d="M432 255 C406 318 421 365 458 416"/>
+    <path d="M500 257 C526 316 535 361 534 421"/>
+    <path d="M865 270 C824 323 812 368 802 447"/>
+    <path d="M954 285 C930 333 925 367 926 405"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#7b2f29">
+    <text x="291" y="332">Wright / Mahone</text>
+    <text x="430" y="349">Armistead / Cobb</text>
+    <text x="690" y="312">Barksdale / Semmes / Kershaw</text>
+    <text x="947" y="312">Hill's brigades</text>
+  </g>
+
+  <path d="M210 589 C355 612 492 623 611 698" fill="none" stroke="#315f8c" stroke-width="6" stroke-dasharray="11 9" marker-end="url(#withdraw)"/>
+  <text x="224" y="617" font-family="Arial, sans-serif" font-size="15" fill="#315f8c">Army of the Potomac withdrew toward Harrison's Landing after dark</text>
+
+  <g transform="translate(62 750)" font-family="Arial, sans-serif">
+    <text x="0" y="0" font-size="13" fill="#554a3d">Arrows show broad attack sectors, not exact regimental routes, timing, or frontage.</text>
+    <text x="0" y="25" font-size="16" font-weight="700" fill="#7d372f">SCHEMATIC — NOT TO SCALE</text>
+  </g>
+  <g transform="translate(915 625)" font-family="Arial, sans-serif" font-size="13">
+    <rect x="-16" y="-22" width="224" height="72" rx="8" fill="#f7f0df" stroke="#8f8068"/>
+    <circle cx="0" cy="0" r="7" fill="#315f8c"/>
+    <text x="14" y="5" fill="#443c31">United States</text>
+    <line x1="0" y1="29" x2="48" y2="29" stroke="#9a3d32" stroke-width="7" marker-end="url(#attack)"/>
+    <text x="60" y="34" fill="#443c31">Confederate attack</text>
+  </g>
+</svg>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Schematic tactical map of the First Battle of Winchester, May 25, 1862</title>
+  <desc id="desc">North-up diagram showing the United States line from Bowers Hill to Camp Hill, Ewell's repulsed eastern attack, Winder's advance, Taylor's decisive attack against the western flank, and the retreat through Winchester.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#faf5e8"/><stop offset="1" stop-color="#eadfc7"/></linearGradient>
+    <pattern id="hachure" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(20)"><path d="M1 0V18" stroke="#59654f" stroke-width="2" opacity=".3"/></pattern>
+    <marker id="blueArrow" markerUnits="userSpaceOnUse" markerWidth="28" markerHeight="28" refX="11" refY="6" orient="auto" viewBox="0 0 12 12"><path d="M0 0 12 6 0 12Z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerUnits="userSpaceOnUse" markerWidth="28" markerHeight="28" refX="11" refY="6" orient="auto" viewBox="0 0 12 12"><path d="M0 0 12 6 0 12Z" fill="#9a3d32"/></marker>
+    <style>.head{font:700 29px Georgia,serif;fill:#292621}.label{font:700 18px Georgia,serif;fill:#292621}.small{font:16px Arial,sans-serif;fill:#3f3a33}.tiny{font:14px Arial,sans-serif;fill:#554f46}.blue{fill:#315f8c}.red{fill:#9a3d32}.unitU{fill:#eaf1f7;stroke:#315f8c;stroke-width:3}.unitC{fill:#f7e7e2;stroke:#9a3d32;stroke-width:3}.box{fill:#fffaf0;stroke:#8a7b66;stroke-width:2}.road{fill:none;stroke:#a07a4f;stroke-width:13;stroke-linecap:round}</style>
+  </defs>
+  <rect width="1200" height="760" fill="url(#paper)"/>
+  <text x="30" y="44" class="head">FIRST BATTLE OF WINCHESTER • MAY 25, 1862</text>
+  <text x="30" y="75" class="small">Tactical phase diagram • north is up • schematic roads, terrain, units, distances, and timing</text>
+
+  <path class="road" d="M555 736C552 650 554 567 558 487C563 391 569 281 574 90"/>
+  <text x="508" y="639" class="tiny" transform="rotate(-88 508 639)">Valley Turnpike from Strasburg</text>
+  <text x="596" y="139" class="tiny">Martinsburg Road north</text>
+  <path class="road" d="M1082 733C983 640 893 560 812 493C737 430 675 384 613 344"/>
+  <text x="831" y="607" class="tiny" transform="rotate(39 831 607)">Front Royal Road</text>
+  <path d="M44 522C183 494 328 501 449 519C600 541 775 535 949 509C1035 497 1105 490 1170 496" fill="none" stroke="#5b8ea0" stroke-width="28"/>
+  <path d="M44 522C183 494 328 501 449 519C600 541 775 535 949 509C1035 497 1105 490 1170 496" fill="none" stroke="#d9edf3" stroke-width="5"/>
+  <text x="88" y="486" class="tiny" fill="#376f84">ABRAM’S CREEK</text>
+
+  <path d="M94 307C191 259 305 252 405 289L427 420C305 400 192 405 92 443Z" fill="url(#hachure)"/>
+  <text x="139" y="337" class="label">BOWERS HILL</text>
+  <path d="M812 318C916 276 1023 290 1129 356L1117 457C1006 420 919 417 822 444Z" fill="url(#hachure)"/>
+  <text x="893" y="350" class="label">CAMP HILL</text>
+  <path d="M356 437C428 406 500 399 554 411L554 503C476 494 409 488 347 481Z" fill="url(#hachure)" opacity=".86"/>
+  <text x="379" y="462" class="tiny">Winder’s first ridge</text>
+
+  <rect x="430" y="174" width="296" height="155" rx="18" fill="#e4dac1" stroke="#8a7b66" stroke-width="3"/>
+  <path d="M449 200h68v38h70v-33h115M459 266h92v42M625 184v125M698 244h-72" fill="none" stroke="#9b8d78" stroke-width="9"/>
+  <text x="489" y="259" class="head">WINCHESTER</text>
+
+  <rect x="104" y="350" width="282" height="44" rx="8" class="unitU"/><text x="120" y="378" class="small blue">Gordon • four regiments + guns</text>
+  <rect x="827" y="365" width="285" height="44" rx="8" class="unitU"/><text x="843" y="393" class="small blue">Donnelly • three regiments + guns</text>
+  <path d="M385 372C533 353 679 356 827 385" fill="none" stroke="#315f8c" stroke-width="7" stroke-dasharray="14 9"/>
+
+  <rect x="391" y="555" width="214" height="42" rx="7" class="unitC"/><text x="408" y="582" class="small red">Winder • Stonewall Bde.</text>
+  <rect x="94" y="617" width="241" height="42" rx="7" class="unitC"/><text x="110" y="644" class="small red">Taylor • Louisiana Bde.</text>
+  <rect x="847" y="612" width="247" height="42" rx="7" class="unitC"/><text x="864" y="639" class="small red">Ewell / Trimble • “two 21s”</text>
+
+  <path d="M498 551C489 511 473 473 448 441" fill="none" stroke="#9a3d32" stroke-width="11" marker-end="url(#redArrow)"/>
+  <text x="485" y="533" class="tiny red">about 5:40–7:00</text>
+  <path d="M214 609C182 551 165 493 173 415" fill="none" stroke="#9a3d32" stroke-width="13" marker-end="url(#redArrow)"/>
+  <path d="M293 611C335 547 361 485 354 412" fill="none" stroke="#9a3d32" stroke-width="13" marker-end="url(#redArrow)"/>
+  <text x="52" y="580" class="label red">TAYLOR • about 7:30</text>
+  <text x="52" y="601" class="tiny red">decisive attack on the Federal right</text>
+  <path d="M958 606C944 548 937 493 950 426" fill="none" stroke="#9a3d32" stroke-width="12" marker-end="url(#redArrow)"/>
+  <path d="M1014 465 1075 414" stroke="#315f8c" stroke-width="9"/>
+  <path d="M1014 414 1075 465" stroke="#315f8c" stroke-width="9"/>
+  <text x="865" y="682" class="small red">initial attack repulsed;</text><text x="865" y="705" class="small red">later shift threatened the flank</text>
+
+  <path d="M339 338C403 286 454 259 482 248" fill="none" stroke="#315f8c" stroke-width="10" stroke-dasharray="15 9" marker-end="url(#blueArrow)"/>
+  <path d="M842 352C765 301 706 275 679 259" fill="none" stroke="#315f8c" stroke-width="10" stroke-dasharray="15 9" marker-end="url(#blueArrow)"/>
+  <path d="M579 178C577 143 576 120 575 101" fill="none" stroke="#315f8c" stroke-width="10" stroke-dasharray="15 9" marker-end="url(#blueArrow)"/>
+  <text x="710" y="193" class="small blue">withdrawal through town, then north</text>
+
+  <rect x="36" y="100" width="345" height="137" rx="12" class="box"/>
+  <text x="57" y="133" class="label">BATTLE SEQUENCE</text>
+  <text x="57" y="162" class="small">1 • Ewell’s Camp Hill attack is repulsed</text>
+  <text x="57" y="188" class="small">2 • Winder fixes Gordon west of the Pike</text>
+  <text x="57" y="214" class="small">3 • Taylor turns Bowers Hill; Banks retreats</text>
+  <path d="M1150 111V171" stroke="#292621" stroke-width="4"/><path d="M1150 86 1136 117 1164 117Z" fill="#292621"/><text x="1140" y="73" class="head">N</text>
+</svg>

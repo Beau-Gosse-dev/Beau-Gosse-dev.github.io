@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">USS Monitor's maiden voyage from New York to Hampton Roads</title>
+  <desc id="desc">Schematic map showing Monitor leaving Brooklyn on March 6, 1862, passing Sandy Hook and Atlantic City, surviving a gale, entering Chesapeake Bay between Cape Charles and Cape Henry, and reaching Hampton Roads on March 8.</desc>
+  <defs>
+    <marker id="blueArrow" markerWidth="16" markerHeight="16" refX="13" refY="8" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L16,8 L0,16 Z" fill="#245f8a"/></marker>
+  </defs>
+  <rect width="1200" height="760" fill="#d9e8ec"/>
+  <path d="M0 0H755C735 38 724 74 733 105C745 147 711 172 693 214C676 252 685 297 674 340C665 375 624 402 617 449C609 505 649 560 628 604C604 652 541 675 508 760H0Z" fill="#eee5cf" stroke="#8e846d" stroke-width="4"/>
+  <path d="M628 604C675 629 720 661 754 705L706 760H508C541 675 604 652 628 604Z" fill="#eee5cf" stroke="#8e846d" stroke-width="4"/>
+  <path d="M668 595C711 590 743 608 769 643C795 679 811 719 816 760" fill="none" stroke="#8e846d" stroke-width="4"/>
+  <g font-family="Georgia,serif" fill="#50676e" font-style="italic">
+    <text x="880" y="325" font-size="34">Atlantic Ocean</text>
+    <text x="712" y="687" font-size="24" transform="rotate(55 712 687)">Chesapeake Bay</text>
+  </g>
+  <path d="M742 80C812 149 821 241 774 334C728 425 698 493 724 570C740 616 725 656 682 697" fill="none" stroke="#245f8a" stroke-width="10" stroke-linecap="round" marker-end="url(#blueArrow)"/>
+  <g font-family="Arial,sans-serif" fill="#17241e">
+    <circle cx="733" cy="75" r="9"/><text x="458" y="58" font-size="25" font-weight="700">Brooklyn Navy Yard</text><text x="508" y="84" font-size="18">departed March 6</text>
+    <circle cx="733" cy="132" r="8"/><text x="522" y="137" font-size="23" font-weight="700">Sandy Hook</text>
+    <circle cx="684" cy="304" r="8"/><text x="425" y="311" font-size="23" font-weight="700">Atlantic City</text><text x="382" y="336" font-size="17">about six miles offshore early March 7</text>
+    <circle cx="628" cy="511" r="8"/><text x="350" y="500" font-size="23" font-weight="700">Delaware coast</text><text x="325" y="525" font-size="17">towed toward shore after flooding and fumes</text>
+    <circle cx="649" cy="610" r="8"/><text x="410" y="601" font-size="23" font-weight="700">Cape Charles</text><text x="397" y="626" font-size="17">sighted at noon March 8</text>
+    <circle cx="682" cy="697" r="8"/><text x="430" y="681" font-size="23" font-weight="700">Cape Henry</text><text x="380" y="706" font-size="17">gunfire visible to the west</text>
+    <circle cx="616" cy="734" r="9"/><text x="335" y="744" font-size="25" font-weight="700">Hampton Roads</text>
+  </g>
+  <g font-family="Arial,sans-serif">
+    <path d="M787 229C874 256 911 314 896 378" fill="none" stroke="#9b3d35" stroke-width="4" stroke-dasharray="11 10"/>
+    <text x="874" y="222" font-size="20" font-weight="700" fill="#9b3d35">Gale, March 7</text>
+    <text x="873" y="249" font-size="17" fill="#50483b">Turret and vents leaked;</text>
+    <text x="873" y="271" font-size="17" fill="#50483b">ventilation failed;</text>
+    <text x="873" y="293" font-size="17" fill="#50483b">engine room evacuated</text>
+  </g>
+  <g font-family="Arial,sans-serif" font-size="18" fill="#50483b">
+    <line x1="850" y1="620" x2="937" y2="620" stroke="#245f8a" stroke-width="9" marker-end="url(#blueArrow)"/>
+    <text x="966" y="627" font-size="20" font-weight="700" fill="#245f8a">Monitor and escorts</text>
+    <text x="850" y="665">Escort: tug Seth Low and</text>
+    <text x="850" y="688">gunboats Sachem and Currituck</text>
+    <text x="949" y="731" font-family="Georgia,serif">Schematic; not to scale</text>
+  </g>
+</svg>

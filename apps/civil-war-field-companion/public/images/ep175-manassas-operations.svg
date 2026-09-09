@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Manassas Station operations, August 27 and 28, 1862</title>
+  <desc id="desc">Three generalized panels show the junction, Kettle Run rear-guard action, and night withdrawal.</desc>
+  <defs>
+    <linearGradient id="p" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8f2e1"/><stop offset="1" stop-color="#ddd1b4"/></linearGradient>
+    <marker id="r" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0 0 9 3.5 0 7Z" fill="#9a3d32"/></marker>
+    <marker id="b" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0 0 9 3.5 0 7Z" fill="#315f8c"/></marker>
+  </defs>
+  <rect width="1200" height="800" fill="url(#p)"/>
+  <text x="52" y="54" font-family="Georgia,serif" font-size="31" fill="#2f2a22">Manassas Station operations</text>
+  <text x="54" y="84" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="1.3" fill="#7b302a">AUGUST 27–28, 1862 · GENERALIZED · NOT TO SCALE</text>
+  <g font-family="Arial,sans-serif">
+    <rect x="45" y="120" width="350" height="570" rx="15" fill="#fbf8ee" stroke="#887d69" stroke-width="2"/>
+    <text x="70" y="158" font-family="Georgia,serif" font-size="23" fill="#2f2a22">1 · Manassas Junction</text>
+    <text x="70" y="185" font-size="15" fill="#5a5144">Morning and evening, August 27</text>
+    <path d="M82 445 H358" stroke="#4a463f" stroke-width="8"/><path d="M82 445 H358" stroke="#fbf8ee" stroke-width="2" stroke-dasharray="14 9"/>
+    <circle cx="226" cy="445" r="10" fill="#222"/><text x="226" y="420" text-anchor="middle" font-size="18" font-weight="700">Depot</text>
+    <path d="M330 290 L265 380" fill="none" stroke="#315f8c" stroke-width="6" marker-end="url(#b)"/>
+    <text x="254" y="250" text-anchor="middle" font-size="16" font-weight="700" fill="#315f8c">Waagner and Taylor</text>
+    <text x="254" y="274" text-anchor="middle" font-size="15" fill="#315f8c">from Bull Run Bridge</text>
+    <line x1="120" y1="355" x2="210" y2="355" stroke="#9a3d32" stroke-width="12"/>
+    <text x="165" y="330" text-anchor="middle" font-size="16" font-weight="700" fill="#7d302a">A. P. Hill</text>
+    <path d="M182 495 C190 545 199 579 213 610" fill="none" stroke="#c46825" stroke-width="6" stroke-dasharray="10 8"/>
+    <text x="230" y="550" font-size="15" fill="#8d481c">Stores burned</text>
+    <text x="70" y="646" font-size="15" fill="#4b453b">Hill defeated Taylor; Jackson</text>
+    <text x="70" y="668" font-size="15" fill="#4b453b">destroyed stores he could not move.</text>
+  </g>
+  <g font-family="Arial,sans-serif">
+    <rect x="425" y="120" width="350" height="570" rx="15" fill="#fbf8ee" stroke="#887d69" stroke-width="2"/>
+    <text x="450" y="158" font-family="Georgia,serif" font-size="23" fill="#2f2a22">2 · Kettle Run</text>
+    <text x="450" y="185" font-size="15" fill="#5a5144">Afternoon, August 27</text>
+    <path d="M465 470 H737" stroke="#4a463f" stroke-width="8"/>
+    <path d="M465 470 H737" stroke="#fbf8ee" stroke-width="2" stroke-dasharray="14 9"/>
+    <path d="M610 235 C585 340 585 502 615 610" fill="none" stroke="#6e96a7" stroke-width="22"/>
+    <text x="646" y="286" font-size="17" fill="#315e72">Kettle Run</text>
+    <line x1="625" y1="375" x2="710" y2="375" stroke="#9a3d32" stroke-width="12"/>
+    <text x="668" y="348" text-anchor="middle" font-size="16" font-weight="700" fill="#7d302a">Ewell</text>
+    <path d="M480 535 C516 491 548 455 575 420" fill="none" stroke="#315f8c" stroke-width="6" marker-end="url(#b)"/>
+    <text x="490" y="565" font-size="16" font-weight="700" fill="#315f8c">Hooker from the southwest</text>
+    <path d="M665 408 C694 435 708 473 719 515" fill="none" stroke="#9a3d32" stroke-width="6" marker-end="url(#r)"/>
+    <text x="450" y="620" font-size="15" fill="#4b453b">Ewell delayed Hooker, burned the bridge,</text>
+    <text x="450" y="642" font-size="15" fill="#4b453b">then retired toward Manassas Junction.</text>
+  </g>
+  <g font-family="Arial,sans-serif">
+    <rect x="805" y="120" width="350" height="570" rx="15" fill="#fbf8ee" stroke="#887d69" stroke-width="2"/>
+    <text x="830" y="158" font-family="Georgia,serif" font-size="23" fill="#2f2a22">3 · Withdrawal</text>
+    <text x="830" y="185" font-size="15" fill="#5a5144">Night, August 27–28</text>
+    <circle cx="980" cy="580" r="10" fill="#222"/>
+    <rect x="900" y="602" width="160" height="32" rx="8" fill="#eee5d0"/>
+    <text x="980" y="624" text-anchor="middle" font-size="17" font-weight="700">Manassas Junction</text>
+    <circle cx="918" cy="280" r="9" fill="#222"/>
+    <rect x="842" y="222" width="152" height="32" rx="8" fill="#eee5d0"/>
+    <text x="918" y="244" text-anchor="middle" font-size="17" font-weight="700">Stony Ridge</text>
+    <circle cx="1080" cy="350" r="8" fill="#222"/>
+    <rect x="1010" y="294" width="140" height="32" rx="8" fill="#eee5d0"/>
+    <text x="1080" y="316" text-anchor="middle" font-size="16" font-weight="700">Centreville</text>
+    <path d="M962 558 C938 486 923 392 919 296" fill="none" stroke="#9a3d32" stroke-width="6" marker-end="url(#r)"/>
+    <path d="M1004 558 C1064 520 1110 451 1084 369 C1042 325 992 295 939 285" fill="none" stroke="#9a3d32" stroke-width="5" stroke-dasharray="12 8" marker-end="url(#r)"/>
+    <text x="830" y="430" font-size="16" font-weight="700" fill="#7d302a">Taliaferro: direct</text>
+    <text x="830" y="470" font-size="16" font-weight="700" fill="#7d302a">Hill and Ewell:</text>
+    <text x="830" y="491" font-size="15" fill="#7d302a">Centreville detour</text>
+    <text x="830" y="668" font-size="15" fill="#4b453b">All three divisions reached the old</text>
+    <text x="830" y="686" font-size="15" fill="#4b453b">battlefield and concealed positions.</text>
+  </g>
+  <text x="600" y="747" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#5a5144">Arrows and formation bars show approximate relationships, not surveyed routes or frontages.</text>
+</svg>

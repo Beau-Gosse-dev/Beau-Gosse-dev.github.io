@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Generalized movements at Mechanicsville and Beaver Dam Creek, June 26, 1862</title>
+  <desc id="desc">Schematic map showing A. P. Hill crossing at Meadow Bridge, United States troops withdrawing from Mechanicsville to Beaver Dam Creek, Jackson reaching Hundley's Corner late, and Confederate attacks along the creek and near Ellerson's Mill.</desc>
+  <defs>
+    <marker id="blueArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6 0 12Z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6 0 12Z" fill="#9a3d32"/></marker>
+    <style>
+      .label{font:600 20px Georgia,serif;fill:#202729}.small{font:16px Arial,sans-serif;fill:#2d3639}.tiny{font:14px Arial,sans-serif;fill:#3b4548}.river{fill:none;stroke:#67a2c4;stroke-width:22;stroke-linecap:round}.creek{fill:none;stroke:#76acc7;stroke-width:15;stroke-linecap:round}.road{fill:none;stroke:#a99b7b;stroke-width:5;stroke-dasharray:10 8}.moveCs{fill:none;stroke:#9a3d32;stroke-width:8;marker-end:url(#redArrow)}.moveUs{fill:none;stroke:#315f8c;stroke-width:7;marker-end:url(#blueArrow)}.usline{fill:none;stroke:#315f8c;stroke-width:12;stroke-dasharray:18 10}.csbox{fill:#f8e8e3;stroke:#9a3d32;stroke-width:3}.usbox{fill:#e4eef6;stroke:#315f8c;stroke-width:3}
+    </style>
+  </defs>
+  <rect width="1200" height="720" fill="#f3eedf"/>
+  <path d="M-20 607C163 572 321 626 487 604S811 567 1220 625" class="river"/>
+  <text x="804" y="667" class="label" fill="#396e91">Chickahominy River</text>
+  <path d="M826 -15C803 104 840 195 813 301S767 503 795 618" class="creek"/>
+  <text x="842" y="207" class="label" fill="#396e91">Beaver Dam Creek</text>
+  <path d="M121 454L420 414 729 378 1060 378" class="road"/>
+  <path d="M412 413L588 500 787 510 1018 526" class="road"/>
+  <path d="M399 105L578 198 794 248 1039 239" class="road"/>
+  <text x="873" y="363" class="small">Old Cold Harbor Road</text>
+  <circle cx="416" cy="414" r="10" fill="#24292a"/><text x="304" y="392" class="label">Mechanicsville</text>
+  <circle cx="802" cy="514" r="9" fill="#24292a"/><text x="827" y="522" class="label">Ellerson's Mill</text>
+  <circle cx="768" cy="89" r="9" fill="#24292a"/><text x="791" y="97" class="label">Hundley's Corner</text>
+  <line x1="264" y1="588" x2="275" y2="622" stroke="#4c4440" stroke-width="9"/><text x="173" y="659" class="small">Meadow Bridge</text>
+  <line x1="416" y1="589" x2="427" y2="623" stroke="#4c4440" stroke-width="9"/><text x="365" y="681" class="small">Mechanicsville Bridge</text>
+  <path d="M906 112C900 227 889 367 851 554" class="usline"/>
+  <rect x="905" y="129" width="255" height="83" rx="14" class="usbox"/>
+  <text x="925" y="162" class="label" fill="#315f8c">McCall's division</text>
+  <text x="925" y="188" class="small">prepared east-bank position</text>
+  <path d="M211 520C248 483 301 446 375 423" class="moveCs"/>
+  <path d="M381 423C521 389 626 388 729 383" class="moveCs"/>
+  <rect x="58" y="445" width="213" height="72" rx="13" class="csbox"/>
+  <text x="79" y="477" class="label" fill="#9a3d32">A. P. Hill</text>
+  <text x="79" y="501" class="small">crosses about 3 p.m.</text>
+  <path d="M519 346C601 350 683 357 753 371" class="moveUs"/>
+  <text x="465" y="321" class="small" fill="#315f8c">Federal outposts retire to the creek</text>
+  <path d="M752 92C690 117 668 149 675 204" class="moveCs"/>
+  <rect x="404" y="42" width="305" height="83" rx="13" class="csbox"/>
+  <text x="425" y="75" class="label" fill="#9a3d32">Jackson arrives late</text>
+  <text x="425" y="101" class="small">reaches this area late; halts for the night</text>
+  <path d="M697 246C746 272 774 304 792 347" class="moveCs"/>
+  <path d="M624 432C695 446 746 476 778 499" class="moveCs"/>
+  <rect x="353" y="213" width="284" height="76" rx="13" class="csbox"/>
+  <text x="374" y="244" class="label" fill="#9a3d32">A. P. Hill's brigades</text>
+  <text x="374" y="270" class="small">engage along the creek</text>
+  <rect x="449" y="496" width="264" height="74" rx="13" class="csbox"/>
+  <text x="470" y="527" class="label" fill="#9a3d32">Pender and Ripley</text>
+  <text x="470" y="552" class="small">attack near Ellerson's Mill</text>
+  <rect x="905" y="430" width="255" height="89" rx="14" class="usbox"/>
+  <text x="925" y="462" class="label" fill="#315f8c">Seymour's brigade</text>
+  <text x="925" y="487" class="small">infantry and artillery defend</text>
+  <text x="925" y="509" class="small">the lower creek sector</text>
+  <text x="23" y="699" class="tiny">Schematic; not to scale. Arrows show generalized movement and attack relationships, not exact routes, formations, frontage, or troop geometry.</text>
+</svg>

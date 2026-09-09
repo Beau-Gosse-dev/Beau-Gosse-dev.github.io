@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">The Federal pincer and Jackson's withdrawal, May 26 to 30, 1862</title>
+  <desc id="desc">Schematic operational map of the Lower Shenandoah Valley and approaches. Federal forces under Fremont move from the west toward Strasburg, while Shields moves from Fredericksburg through Manassas toward Front Royal and Strasburg. Jackson withdraws south from Harpers Ferry through Halltown, Charles Town, and Winchester.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5ecd8"/><stop offset="1" stop-color="#e7d7b8"/></linearGradient>
+    <pattern id="hatch" width="13" height="13" patternUnits="userSpaceOnUse" patternTransform="rotate(26)"><line x1="0" y1="0" x2="0" y2="13" stroke="#846f52" stroke-width="3" opacity=".2"/></pattern>
+    <marker id="blueArrow" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto"><path d="M0 0L18 9L0 18Z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto"><path d="M0 0L18 9L0 18Z" fill="#9a3d32"/></marker>
+    <marker id="goldArrow" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto"><path d="M0 0L18 9L0 18Z" fill="#755d1d"/></marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity=".22"/></filter>
+    <style>
+      .town{font:700 18px Georgia,serif;fill:#27231e}.small{font:14px Arial,sans-serif;fill:#3d3830}.label{font:700 16px Arial,sans-serif}.route{fill:none;stroke-linecap:round;stroke-linejoin:round}.node{fill:#fff8e9;stroke:#3e392f;stroke-width:2}.date{font:700 13px Arial,sans-serif;letter-spacing:.4px}.legend{font:15px Arial,sans-serif;fill:#25221e}
+    </style>
+  </defs>
+  <rect width="1200" height="800" fill="url(#paper)"/>
+  <path d="M0 90 Q120 140 75 265 T105 480 T45 750 L0 800Z" fill="url(#hatch)"/>
+  <text x="24" y="205" class="small" transform="rotate(-76 24 205)">ALLEGHENY MOUNTAINS</text>
+  <path d="M970 70 Q900 210 955 330 T940 565 T1010 800 L1120 800 Q1050 620 1080 500 T1050 250 T1110 70Z" fill="url(#hatch)"/>
+  <text x="1080" y="455" class="small" transform="rotate(79 1080 455)">BLUE RIDGE</text>
+  <path d="M1080 75 C1040 130 1000 170 980 220 C950 285 900 330 865 410 C840 470 815 535 765 615" fill="none" stroke="#5c89a4" stroke-width="10" opacity=".8"/>
+  <path d="M1015 130 C985 170 970 205 980 220" fill="none" stroke="#5c89a4" stroke-width="8"/>
+  <text x="1015" y="112" class="small" fill="#355d77">Potomac R.</text>
+  <text x="828" y="500" class="small" fill="#355d77" transform="rotate(68 828 500)">Shenandoah R.</text>
+
+  <path d="M100 715 C150 670 175 625 235 575 C325 535 430 585 540 620" class="route" stroke="#315f8c" stroke-width="8" stroke-dasharray="18 10" marker-end="url(#blueArrow)"/>
+  <path d="M1095 665 C1070 610 1045 555 1010 520 C965 535 930 565 885 590 C790 610 690 615 555 620" class="route" stroke="#315f8c" stroke-width="8" marker-end="url(#blueArrow)"/>
+  <path d="M990 160 C950 225 900 270 825 305 C765 350 705 390 650 435 C620 505 585 565 548 615" class="route" stroke="#9a3d32" stroke-width="9" marker-end="url(#redArrow)"/>
+  <path d="M870 95 C825 155 760 220 715 320" class="route" stroke="#315f8c" stroke-width="5" stroke-dasharray="10 9" marker-end="url(#blueArrow)"/>
+  <path d="M995 158 C1040 140 1075 132 1110 135" class="route" stroke="#755d1d" stroke-width="4" stroke-dasharray="8 8" marker-end="url(#goldArrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="68" y="682" width="105" height="50" rx="8" class="node"/><text x="120" y="704" text-anchor="middle" class="town">Franklin</text><text x="120" y="721" text-anchor="middle" class="small">Frémont starts</text>
+    <rect x="180" y="548" width="108" height="50" rx="8" class="node"/><text x="234" y="570" text-anchor="middle" class="town">Moorefield</text><text x="234" y="588" text-anchor="middle" class="small">May 27</text>
+    <rect x="487" y="596" width="112" height="50" rx="8" class="node"/><text x="543" y="619" text-anchor="middle" class="town">Strasburg</text><text x="543" y="638" text-anchor="middle" class="small">trap objective</text>
+    <rect x="600" y="407" width="106" height="52" rx="8" class="node"/><text x="653" y="431" text-anchor="middle" class="town">Winchester</text><text x="653" y="450" text-anchor="middle" class="small">May 30 night</text>
+    <rect x="828" y="562" width="114" height="52" rx="8" class="node"/><text x="885" y="586" text-anchor="middle" class="town">Front Royal</text><text x="885" y="605" text-anchor="middle" class="small">retaken May 30</text>
+    <rect x="774" y="278" width="109" height="48" rx="8" class="node"/><text x="828" y="301" text-anchor="middle" class="town">Charles Town</text><text x="828" y="319" text-anchor="middle" class="small">rail to Winchester</text>
+    <rect x="930" y="135" width="140" height="52" rx="8" class="node"/><text x="1000" y="159" text-anchor="middle" class="town">Harpers Ferry</text><text x="1000" y="178" text-anchor="middle" class="small">Saxton holds</text>
+    <rect x="1034" y="642" width="152" height="48" rx="8" class="node"/><text x="1110" y="664" text-anchor="middle" class="town">Fredericksburg</text><text x="1110" y="682" text-anchor="middle" class="small">McDowell</text>
+    <rect x="956" y="491" width="108" height="48" rx="8" class="node"/><text x="1010" y="514" text-anchor="middle" class="town">Manassas</text><text x="1010" y="532" text-anchor="middle" class="small">railhead</text>
+    <rect x="820" y="69" width="106" height="46" rx="8" class="node"/><text x="873" y="91" text-anchor="middle" class="town">Williamsport</text><text x="873" y="108" text-anchor="middle" class="small">Banks</text>
+  </g>
+
+  <g><rect x="25" y="22" width="745" height="86" rx="12" fill="#fff9ec" opacity=".95" stroke="#89795c"/><text x="48" y="55" font-family="Georgia,serif" font-size="27" font-weight="700" fill="#26221c">The Federal pincer and Jackson's withdrawal</text><text x="48" y="84" class="label" fill="#5b4b35">May 26–30, 1862 · operational diagram · not to scale</text></g>
+  <g transform="translate(28 290)"><rect width="380" height="220" rx="12" fill="#fff9ec" opacity=".96" stroke="#89795c"/><text x="20" y="32" class="label" fill="#27231e">MOVEMENT KEY</text><path d="M22 61H105" stroke="#9a3d32" stroke-width="8" marker-end="url(#redArrow)"/><text x="125" y="67" class="legend">Jackson's withdrawal route</text><path d="M22 96H105" stroke="#315f8c" stroke-width="8" marker-end="url(#blueArrow)"/><text x="125" y="102" class="legend">Shields / McDowell approach</text><path d="M22 131H105" stroke="#315f8c" stroke-width="8" stroke-dasharray="16 9" marker-end="url(#blueArrow)"/><text x="125" y="137" class="legend">Frémont's mountain route</text><path d="M22 166H105" stroke="#315f8c" stroke-width="5" stroke-dasharray="10 8" marker-end="url(#blueArrow)"/><text x="125" y="172" class="legend">Banks's possible return</text><text x="20" y="202" class="small">Routes and positions are approximate.</text></g>
+  <g transform="translate(705 663)"><rect width="466" height="107" rx="12" fill="#fff9ec" opacity=".96" stroke="#89795c"/><text x="18" y="28" class="label" fill="#27231e">WHY STRASBURG MATTERED</text><text x="18" y="54" class="small">It sat on Jackson's southward escape route. Frémont approached</text><text x="18" y="75" class="small">from the west while Shields approached from Front Royal.</text><text x="18" y="96" class="small">The episode ends before either jaw reaches the turnpike.</text></g>
+</svg>

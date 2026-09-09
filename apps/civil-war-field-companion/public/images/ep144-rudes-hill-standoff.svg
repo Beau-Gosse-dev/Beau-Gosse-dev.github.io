@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Rude's Hill and Stony Creek operational standoff, early April 1862</title>
+  <desc id="desc">Schematic north-up map showing Banks north of flooded Stony Creek, Ashby's cavalry screening the crossings, Jackson's army at Rude's Hill south of Mount Jackson, and the Valley Turnpike through the North Fork corridor.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8f2e2"/><stop offset="1" stop-color="#eadfc7"/></linearGradient>
+    <pattern id="mountains" width="42" height="34" patternUnits="userSpaceOnUse"><path d="M1 31 12 9 22 29 31 13 41 31" fill="none" stroke="#697a59" stroke-width="2" opacity=".55"/></pattern>
+    <marker id="blueArrow" markerWidth="14" markerHeight="14" refX="11" refY="6" orient="auto" viewBox="0 0 12 12"><path d="M0 0 12 6 0 12Z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerWidth="14" markerHeight="14" refX="11" refY="6" orient="auto" viewBox="0 0 12 12"><path d="M0 0 12 6 0 12Z" fill="#9a3d32"/></marker>
+    <style>.head{font:700 31px Georgia,serif;fill:#292621}.label{font:700 22px Georgia,serif;fill:#292621}.small{font:18px Arial,sans-serif;fill:#3f3a33}.tiny{font:15px Arial,sans-serif;fill:#554f46}.blue{fill:#315f8c}.red{fill:#9a3d32}.box{fill:#fffaf0;stroke:#8a7b66;stroke-width:2}.road{fill:none;stroke:#a07a4f;stroke-width:11;stroke-linecap:round}</style>
+  </defs>
+  <rect width="1200" height="760" fill="url(#paper)"/>
+  <text x="30" y="46" class="head">RUDE'S HILL INTERLUDE • APRIL 2–16, 1862</text>
+  <text x="30" y="77" class="small">Operational diagram • north is up • schematic geography and distances</text>
+
+  <path d="M45 100H235V730H45Z" fill="url(#mountains)" opacity=".8"/>
+  <text x="75" y="428" class="label" fill="#617052" transform="rotate(-90 75 428)">GREAT NORTH MOUNTAIN</text>
+  <path d="M940 100H1160V730H940Z" fill="url(#mountains)" opacity=".8"/>
+  <text x="1105" y="500" class="label" fill="#617052" transform="rotate(-90 1105 500)">MASSANUTTEN MOUNTAIN</text>
+
+  <path class="road" d="M594 101C578 210 607 310 588 418C572 510 595 622 574 730"/>
+  <text x="620" y="430" class="small" transform="rotate(87 620 430)">VALLEY TURNPIKE</text>
+  <path d="M300 105C385 179 356 242 447 302C521 351 485 413 550 466C620 523 547 599 664 702" fill="none" stroke="#5895ad" stroke-width="19" opacity=".9"/>
+  <path d="M300 105C385 179 356 242 447 302C521 351 485 413 550 466C620 523 547 599 664 702" fill="none" stroke="#d8edf3" stroke-width="4"/>
+  <text x="280" y="342" class="small" fill="#376f84" transform="rotate(48 280 342)">NORTH FORK SHENANDOAH</text>
+
+  <path d="M270 244C414 218 565 274 789 235C884 218 935 232 1000 252" fill="none" stroke="#5895ad" stroke-width="24"/>
+  <path d="M270 244C414 218 565 274 789 235C884 218 935 232 1000 252" fill="none" stroke="#d8edf3" stroke-width="5"/>
+  <text x="680" y="205" class="label" fill="#376f84">STONY CREEK • BRIDGE BURNED</text>
+
+  <rect x="332" y="112" width="352" height="94" rx="12" class="box"/>
+  <text x="355" y="143" class="label blue">BANKS • DEPARTMENT OF THE SHENANDOAH</text>
+  <text x="355" y="173" class="small">Two divisions; advance delayed by water, weather,</text>
+  <text x="355" y="197" class="small">supplies, shoes, and uncertainty about Jackson</text>
+  <path d="M560 207V227" stroke="#315f8c" stroke-width="12" marker-end="url(#blueArrow)"/>
+
+  <path d="M515 267C475 290 463 317 476 345" fill="none" stroke="#9a3d32" stroke-width="11" marker-end="url(#redArrow)"/>
+  <rect x="258" y="291" width="210" height="72" rx="10" class="box"/>
+  <text x="278" y="319" class="label red">ASHBY'S SCREEN</text>
+  <text x="278" y="347" class="small">Aggressive cavalry outposts</text>
+
+  <circle cx="585" cy="405" r="13" fill="#292621"/><text x="614" y="413" class="label">MOUNT JACKSON</text>
+  <path d="M583 461C607 485 615 514 598 545" fill="none" stroke="#9a3d32" stroke-width="13" marker-end="url(#redArrow)"/>
+  <rect x="333" y="548" width="535" height="112" rx="12" class="box"/>
+  <text x="356" y="580" class="label red">JACKSON'S VALLEY ARMY • RUDE'S HILL</text>
+  <text x="356" y="609" class="small">Strong ground inside a bend of the North Fork</text>
+  <text x="356" y="636" class="small">Rest, drill, reorganization, and Hotchkiss map work</text>
+
+  <circle cx="570" cy="704" r="13" fill="#292621"/><text x="600" y="711" class="label">NEW MARKET</text>
+  <path d="M1168 101V166" stroke="#292621" stroke-width="4"/><path d="M1168 79 1154 108 1182 108Z" fill="#292621"/><text x="1158" y="66" class="head">N</text>
+  <rect x="781" y="112" width="343" height="63" rx="10" class="box"/><text x="802" y="139" class="small">Rude's Hill lay several miles south</text><text x="802" y="162" class="small">of Mount Jackson; positions approximate.</text>
+</svg>

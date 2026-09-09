@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Front Royal bridge action on May 30, 1862</title>
+  <desc id="desc">Schematic tactical diagram showing Nathan Kimball's United States brigade advancing from the east into Front Royal, the Confederate 12th Georgia falling back, the road bridge burning, and the railroad bridge remaining usable.</desc>
+  <defs>
+    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#efe5ca"/><stop offset="1" stop-color="#d9c89f"/></linearGradient>
+    <pattern id="ridge" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(28)"><line x1="0" y1="0" x2="0" y2="18" stroke="#74684f" stroke-width="5" opacity=".18"/></pattern>
+    <marker id="blue" markerUnits="userSpaceOnUse" markerWidth="20" markerHeight="20" refX="18" refY="10" orient="auto"><path d="M0 0L20 10L0 20Z" fill="#315f8c"/></marker>
+    <marker id="red" markerUnits="userSpaceOnUse" markerWidth="20" markerHeight="20" refX="18" refY="10" orient="auto"><path d="M0 0L20 10L0 20Z" fill="#9a3d32"/></marker>
+    <style>.title{font:700 28px Georgia,serif;fill:#27231e}.town{font:700 22px Georgia,serif;fill:#27231e}.label{font:700 16px Arial,sans-serif}.small{font:14px Arial,sans-serif;fill:#38332c}.road{fill:none;stroke:#705f45;stroke-width:18;stroke-linecap:round}.rail{fill:none;stroke:#3e3a33;stroke-width:7;stroke-dasharray:3 11;stroke-linecap:round}</style>
+  </defs>
+  <rect width="1200" height="760" fill="url(#ground)"/>
+  <path d="M900 0 Q850 120 925 235 T900 480 T1010 760H1200V0Z" fill="url(#ridge)"/>
+  <text x="1087" y="360" class="small" transform="rotate(78 1087 360)">BLUE RIDGE / MANASSAS GAP APPROACH</text>
+  <path d="M735 -20 C680 90 760 170 700 270 C650 360 735 440 680 535 C640 610 670 690 625 780" fill="none" stroke="#568aa7" stroke-width="46"/>
+  <path d="M735 -20 C680 90 760 170 700 270 C650 360 735 440 680 535 C640 610 670 690 625 780" fill="none" stroke="#b7d4df" stroke-width="28" opacity=".75"/>
+  <text x="718" y="170" class="label" fill="#30576f" transform="rotate(86 718 170)">SOUTH FORK SHENANDOAH</text>
+  <path d="M1200 345 C1040 345 900 360 730 382 C600 400 455 398 270 380" class="road"/>
+  <path d="M1200 455 C1020 452 890 455 710 470 C560 482 420 495 250 520" class="rail"/>
+  <path d="M360 390 C300 310 250 245 205 150" class="road" stroke-width="14"/>
+  <text x="905" y="327" class="small">road from Manassas Gap</text><text x="900" y="486" class="small">Manassas Gap Railroad</text><text x="150" y="130" class="small">road toward Winchester</text>
+
+  <rect x="648" y="361" width="96" height="40" rx="5" fill="#806b48" stroke="#3f3425" stroke-width="3"/><text x="696" y="353" text-anchor="middle" class="label" fill="#7b2d24">ROAD BRIDGE</text>
+  <g stroke="#b13225" stroke-width="8"><path d="M666 350L727 412"/><path d="M727 350L666 412"/></g>
+  <path d="M677 336 C650 314 678 300 663 278 C700 293 689 318 713 329 C731 349 712 361 700 368Z" fill="#d56922" stroke="#9d321e" stroke-width="3"/>
+  <rect x="648" y="451" width="86" height="38" rx="4" fill="#4d493f" stroke="#292722" stroke-width="3"/><text x="691" y="512" text-anchor="middle" class="label" fill="#296142">RAIL BRIDGE INTACT</text>
+
+  <g opacity=".95"><path d="M1100 360 C970 355 865 365 760 382" fill="none" stroke="#315f8c" stroke-width="15" marker-end="url(#blue)"/><path d="M1050 445 C930 442 840 449 750 466" fill="none" stroke="#315f8c" stroke-width="12" marker-end="url(#blue)"/><rect x="930" y="276" width="218" height="66" rx="10" fill="#eaf2f7" stroke="#315f8c" stroke-width="3"/><text x="1039" y="301" text-anchor="middle" class="label" fill="#244c72">KIMBALL'S BRIGADE</text><text x="1039" y="323" text-anchor="middle" class="small">arrives about 11:30 a.m.</text></g>
+  <g><path d="M575 355 C480 315 365 270 250 205" fill="none" stroke="#9a3d32" stroke-width="14" marker-end="url(#red)"/><path d="M565 465 C480 430 395 410 305 390" fill="none" stroke="#9a3d32" stroke-width="10" marker-end="url(#red)"/><rect x="338" y="540" width="270" height="70" rx="10" fill="#f7e7e2" stroke="#9a3d32" stroke-width="3"/><text x="473" y="568" text-anchor="middle" class="label" fill="#7e2e27">12TH GEORGIA · Z. T. CONNER</text><text x="473" y="590" text-anchor="middle" class="small">withdraws toward Winchester</text></g>
+
+  <g><rect x="45" y="28" width="750" height="91" rx="12" fill="#fff9ec" opacity=".96" stroke="#89795c"/><text x="70" y="62" class="title">Front Royal: the bridges and the open flank</text><text x="70" y="91" class="label" fill="#5b4b35">Late morning, May 30, 1862 · tactical diagram · not to scale</text></g>
+  <g transform="translate(50 145)"><rect width="285" height="135" rx="12" fill="#fff9ec" opacity=".96" stroke="#89795c"/><text x="18" y="29" class="label" fill="#27231e">SEQUENCE</text><text x="18" y="55" class="small">1 · Kimball approaches from the east.</text><text x="18" y="78" class="small">2 · Conner abandons Front Royal.</text><text x="18" y="101" class="small">3 · Road bridge is fired.</text><text x="18" y="124" class="small">4 · Railroad bridge is left unburned.</text></g>
+  <g transform="translate(795 565)"><rect width="365" height="158" rx="12" fill="#fff9ec" opacity=".96" stroke="#89795c"/><text x="18" y="29" class="label" fill="#27231e">LIMITS OF THE DIAGRAM</text><text x="18" y="56" class="small">The transcript gives the sequence, not precise</text><text x="18" y="77" class="small">unit footprints or firing lines. Bridge spacing,</text><text x="18" y="98" class="small">roads, river course, and formation widths are</text><text x="18" y="119" class="small">schematic. Conner reported no men killed;</text><text x="18" y="140" class="small">the episode supplies no complete casualty return.</text></g>
+  <g transform="translate(56 658)"><rect width="430" height="65" rx="12" fill="#fff9ec" opacity=".96" stroke="#89795c"/><circle cx="24" cy="23" r="8" fill="#315f8c"/><text x="42" y="28" class="small">United States movement</text><circle cx="214" cy="23" r="8" fill="#9a3d32"/><text x="232" y="28" class="small">Confederate withdrawal</text><text x="18" y="51" class="small">Front Royal lies west of the South Fork.</text></g>
+  <text x="420" y="338" class="town">FRONT ROYAL</text>
+</svg>

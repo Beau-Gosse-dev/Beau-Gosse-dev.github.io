@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">McClellan's intended sequence and initial Union deployment at Antietam</title>
+  <desc id="desc">Schematic map with north at top. Hooker's First Corps and Mansfield's Twelfth Corps are north of the Union center and positioned to attack Lee's left. Burnside's Ninth Corps faces the lower bridge and Lee's right. Sumner's Second Corps, Porter's Fifth Corps, Pleasonton's cavalry, and arriving elements of Franklin's Sixth Corps are massed near the middle bridge as McClellan's center and reserve. Solid arrows show the flank attacks described in McClellan's reports; a dashed arrow marks a conditional attack on Lee's center.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#faf3e3"/>
+      <stop offset="1" stop-color="#e8dcc3"/>
+    </linearGradient>
+    <pattern id="trees" width="32" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="8" cy="17" r="7" fill="#4f6046" opacity="0.43"/>
+      <circle cx="21" cy="10" r="6" fill="#6a7658" opacity="0.42"/>
+      <circle cx="27" cy="23" r="5" fill="#40513d" opacity="0.38"/>
+    </pattern>
+    <marker id="blueArrow" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 18 18">
+      <path d="M0 0L18 9L0 18Z" fill="#315f8c"/>
+    </marker>
+    <marker id="redArrow" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 18 18">
+      <path d="M0 0L18 9L0 18Z" fill="#963b31"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#paper)"/>
+  <rect x="28" y="28" width="1144" height="744" rx="18" fill="none" stroke="#97896f" stroke-width="2"/>
+  <text x="60" y="77" font-family="Georgia, serif" font-size="32" font-weight="700" fill="#2f2b27">McCLELLAN'S BATTLE PLAN</text>
+  <text x="60" y="108" font-family="Arial, sans-serif" font-size="18" fill="#5c5548">Intended sequence and initial deployment for September 17, 1862</text>
+
+  <rect x="48" y="128" width="1104" height="613" fill="#e9e6cf"/>
+
+  <path d="M737 128C715 190 744 248 718 307C693 365 726 425 700 484C673 545 707 606 681 666C671 689 670 714 676 741" fill="none" stroke="#5d899e" stroke-width="34"/>
+  <path d="M737 128C715 190 744 248 718 307C693 365 726 425 700 484C673 545 707 606 681 666C671 689 670 714 676 741" fill="none" stroke="#b9d5dd" stroke-width="11"/>
+  <text x="765" y="500" transform="rotate(-86 765 500)" font-family="Georgia, serif" font-size="22" font-style="italic" fill="#365c70">Antietam Creek</text>
+
+  <path d="M451 130C460 247 453 348 466 453C477 536 464 622 451 716" fill="none" stroke="#ad7e4f" stroke-width="17"/>
+  <path d="M451 130C460 247 453 348 466 453C477 536 464 622 451 716" fill="none" stroke="#f1d8a8" stroke-width="6"/>
+  <rect x="262" y="436" width="186" height="34" rx="7" fill="#fffaf0" opacity="0.9"/>
+  <text x="355" y="459" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#6c5133">HAGERSTOWN TURNPIKE</text>
+
+  <path d="M463 282C560 266 632 257 711 253" fill="none" stroke="#ad7e4f" stroke-width="12"/>
+  <path d="M463 282C560 266 632 257 711 253" fill="none" stroke="#f1d8a8" stroke-width="4"/>
+  <path d="M474 480C567 465 621 454 696 441" fill="none" stroke="#ad7e4f" stroke-width="12"/>
+  <path d="M474 480C567 465 621 454 696 441" fill="none" stroke="#f1d8a8" stroke-width="4"/>
+  <path d="M470 570C548 591 604 619 683 657" fill="none" stroke="#ad7e4f" stroke-width="12"/>
+  <path d="M470 570C548 591 604 619 683 657" fill="none" stroke="#f1d8a8" stroke-width="4"/>
+
+  <path d="M319 148C346 196 326 244 349 289C372 334 354 379 335 412L436 430C451 385 449 340 428 302C401 252 420 197 397 148Z" fill="#667458"/>
+  <path d="M319 148C346 196 326 244 349 289C372 334 354 379 335 412L436 430C451 385 449 340 428 302C401 252 420 197 397 148Z" fill="url(#trees)"/>
+  <text x="365" y="369" text-anchor="middle" font-family="Georgia, serif" font-size="17" font-weight="700" fill="#f5ecd7">WEST WOODS</text>
+  <path d="M514 167C583 153 642 174 656 226C665 261 651 302 625 329L525 316C544 275 539 230 505 202Z" fill="#667458"/>
+  <path d="M514 167C583 153 642 174 656 226C665 261 651 302 625 329L525 316C544 275 539 230 505 202Z" fill="url(#trees)"/>
+  <rect x="523" y="288" width="129" height="32" rx="7" fill="#fffaf0" opacity="0.86"/>
+  <text x="588" y="310" text-anchor="middle" font-family="Georgia, serif" font-size="17" font-weight="700" fill="#3f4d39">EAST WOODS</text>
+
+  <g stroke="#8a6847" stroke-width="8">
+    <path d="M705 254H740"/>
+    <path d="M687 441H722"/>
+    <path d="M672 657H707"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#5f482f">
+    <text x="619" y="337">Upper Bridge</text>
+    <text x="600" y="407">Middle Bridge</text>
+    <text x="544" y="683">Lower Bridge</text>
+  </g>
+
+  <g transform="translate(455 506)" font-family="Arial, sans-serif" filter="url(#shadow)">
+    <circle r="10" fill="#514b45" stroke="#fffaf0" stroke-width="3"/>
+    <rect x="-69" y="17" width="138" height="39" rx="7" fill="#fffaf0" stroke="#8d806a"/>
+    <text x="0" y="43" text-anchor="middle" font-size="18" font-weight="700" fill="#2f2b27">Sharpsburg</text>
+  </g>
+
+  <path d="M275 227C329 244 376 268 419 302M420 302C456 319 486 342 510 367M513 371C550 397 579 421 596 448M595 450C570 490 555 527 558 565M558 566C591 590 621 615 645 650" fill="none" stroke="#963b31" stroke-width="14" stroke-linecap="round"/>
+  <g font-family="Arial, sans-serif" font-weight="700" fill="#7a3029">
+    <text x="195" y="214" font-size="17">Jackson</text>
+    <text x="302" y="290" font-size="16">Hood</text>
+    <text x="520" y="389" font-size="16">D. H. Hill</text>
+    <text x="607" y="475" font-size="17">Longstreet</text>
+    <text x="299" y="581" font-size="16">Confederate right</text>
+  </g>
+
+  <g font-family="Arial, sans-serif" filter="url(#shadow)">
+    <g transform="translate(900 186)">
+      <rect width="216" height="58" rx="10" fill="#e8f0f7" stroke="#315f8c" stroke-width="2"/>
+      <text x="16" y="25" font-size="17" font-weight="700" fill="#244c73">I Corps · Hooker</text>
+      <text x="16" y="47" font-size="14" fill="#244c73">about 14,000 in 3 divisions</text>
+    </g>
+    <g transform="translate(892 266)">
+      <rect width="224" height="58" rx="10" fill="#e8f0f7" stroke="#315f8c" stroke-width="2"/>
+      <text x="16" y="25" font-size="17" font-weight="700" fill="#244c73">XII Corps · Mansfield</text>
+      <text x="16" y="47" font-size="14" fill="#244c73">supporting Hooker's attack</text>
+    </g>
+    <g transform="translate(870 367)">
+      <rect width="246" height="58" rx="10" fill="#e8f0f7" stroke="#315f8c" stroke-width="2"/>
+      <text x="16" y="25" font-size="17" font-weight="700" fill="#244c73">II Corps · Sumner</text>
+      <text x="16" y="47" font-size="14" fill="#244c73">about 18,000 · army center</text>
+    </g>
+    <g transform="translate(878 445)">
+      <rect width="238" height="58" rx="10" fill="#e8f0f7" stroke="#315f8c" stroke-width="2"/>
+      <text x="16" y="25" font-size="17" font-weight="700" fill="#244c73">V Corps · Porter</text>
+      <text x="16" y="47" font-size="14" fill="#244c73">two divisions in reserve</text>
+    </g>
+    <g transform="translate(908 523)">
+      <rect width="208" height="58" rx="10" fill="#e8f0f7" stroke="#315f8c" stroke-width="2"/>
+      <text x="16" y="25" font-size="16" font-weight="700" fill="#244c73">Cavalry · Pleasonton</text>
+      <text x="16" y="47" font-size="14" fill="#244c73">about 4,300 in center</text>
+    </g>
+    <g transform="translate(882 632)">
+      <rect width="234" height="58" rx="10" fill="#e8f0f7" stroke="#315f8c" stroke-width="2"/>
+      <text x="16" y="25" font-size="17" font-weight="700" fill="#244c73">IX Corps · Burnside</text>
+      <text x="16" y="47" font-size="14" fill="#244c73">about 13,000 on the left</text>
+    </g>
+  </g>
+
+  <path d="M893 216C818 209 755 207 685 221C621 234 558 249 488 255" fill="none" stroke="#315f8c" stroke-width="11" stroke-linecap="round" marker-end="url(#blueArrow)"/>
+  <rect x="735" y="149" width="147" height="44" rx="8" fill="#fffaf0" opacity="0.94"/>
+  <text x="808" y="168" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#244c73">1 · MAIN ATTACK</text>
+  <text x="808" y="186" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#244c73">turn Lee's left</text>
+
+  <path d="M880 660C812 650 763 638 718 618C675 599 631 587 582 573" fill="none" stroke="#315f8c" stroke-width="11" stroke-linecap="round" marker-end="url(#blueArrow)"/>
+  <rect x="728" y="686" width="170" height="42" rx="8" fill="#fffaf0" opacity="0.94"/>
+  <text x="813" y="704" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#244c73">2 · ATTACK / DIVERSION</text>
+  <text x="813" y="721" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#244c73">against Lee's right</text>
+
+  <path d="M867 397C806 400 759 408 721 424C671 444 627 461 573 474" fill="none" stroke="#315f8c" stroke-width="9" stroke-dasharray="15 10" stroke-linecap="round" marker-end="url(#blueArrow)"/>
+  <rect x="742" y="336" width="131" height="43" rx="8" fill="#fffaf0" opacity="0.94"/>
+  <text x="807" y="354" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#244c73">3 · CONDITIONAL</text>
+  <text x="807" y="372" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#244c73">strike the center</text>
+
+  <path d="M1117 608C1064 606 1011 599 958 585" fill="none" stroke="#315f8c" stroke-width="8" stroke-dasharray="12 9" stroke-linecap="round" marker-end="url(#blueArrow)"/>
+  <g font-family="Arial, sans-serif">
+    <rect x="724" y="525" width="172" height="52" rx="8" fill="#fffaf0" opacity="0.94"/>
+    <text x="810" y="547" text-anchor="middle" font-size="14" font-weight="700" fill="#244c73">VI Corps · Franklin</text>
+    <text x="810" y="567" text-anchor="middle" font-size="13" fill="#244c73">approaching the reserve</text>
+  </g>
+
+  <g transform="translate(70 598)" font-family="Arial, sans-serif">
+    <rect width="328" height="119" rx="10" fill="#fffaf0" stroke="#8d806a" filter="url(#shadow)"/>
+    <path d="M19 27H75" stroke="#315f8c" stroke-width="9" marker-end="url(#blueArrow)"/>
+    <text x="91" y="33" font-size="14" fill="#2f2b27">planned United States attack</text>
+    <path d="M19 63H75" stroke="#315f8c" stroke-width="8" stroke-dasharray="12 8" marker-end="url(#blueArrow)"/>
+    <text x="91" y="69" font-size="14" fill="#2f2b27">conditional center attack</text>
+    <path d="M19 98H75" stroke="#963b31" stroke-width="11" stroke-linecap="round"/>
+    <text x="91" y="104" font-size="14" fill="#2f2b27">Confederate defensive line</text>
+  </g>
+
+  <g transform="translate(1138 158)" font-family="Arial, sans-serif">
+    <path d="M0 60V0" stroke="#2f2b27" stroke-width="4"/>
+    <path d="M0 0L-10 20H10Z" fill="#2f2b27"/>
+    <text x="0" y="87" text-anchor="middle" font-size="17" font-weight="700" fill="#2f2b27">N</text>
+  </g>
+  <text x="1128" y="720" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#5c5548">Schematic · not to scale</text>
+</svg>

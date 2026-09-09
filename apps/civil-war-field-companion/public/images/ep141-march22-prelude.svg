@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">The March 22, 1862 approach to Kernstown and Winchester</title>
+  <desc id="desc">Schematic local map showing Winchester, Kernstown, Newtown, Cedar Creek, and Strasburg, with Ashby's cavalry skirmish and retreat, Jackson's forced march north, Shields's wounding, and Nathan Kimball taking field command.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8f2e2"/><stop offset="1" stop-color="#e9ddc2"/></linearGradient>
+    <pattern id="ridge" width="36" height="28" patternUnits="userSpaceOnUse"><path d="M1 25 L11 8 L20 22 L28 10 L35 25" fill="none" stroke="#7d8d69" stroke-width="2" opacity=".55"/></pattern>
+    <marker id="blueArrow" markerWidth="18" markerHeight="18" refX="11" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12"><path d="M0 0 L12 6 L0 12 Z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerWidth="18" markerHeight="18" refX="11" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12"><path d="M0 0 L12 6 L0 12 Z" fill="#9a3d32"/></marker>
+    <style>.label{font:700 23px Georgia,serif;fill:#292621}.small{font:18px Arial,sans-serif;fill:#3f3a33}.tiny{font:15px Arial,sans-serif;fill:#554f46}.blue{fill:#315f8c}.red{fill:#9a3d32}.box{fill:#fffaf0;stroke:#8a7b66;stroke-width:2}.road{fill:none;stroke:#9a7a50;stroke-width:9;stroke-linecap:round}</style>
+  </defs>
+  <rect width="1200" height="760" fill="url(#paper)"/>
+  <path d="M65 0 C112 132 95 246 134 362 C168 468 132 616 183 760 L353 760 C307 625 326 495 287 374 C250 254 267 126 233 0 Z" fill="url(#ridge)"/>
+  <path d="M886 0 C844 143 866 281 833 415 C804 537 804 651 837 760 L1041 760 C1009 628 1022 508 1052 380 C1081 250 1054 112 1090 0 Z" fill="url(#ridge)"/>
+  <text x="142" y="506" class="small" fill="#647653" transform="rotate(-82 142 506)">NORTH MOUNTAIN</text>
+  <text x="938" y="532" class="small" fill="#647653" transform="rotate(-82 938 532)">BLUE RIDGE</text>
+  <path class="road" d="M580 111 C569 207 567 301 576 399 C587 497 602 609 630 735"/>
+  <text x="615" y="501" class="tiny" transform="rotate(81 615 501)">VALLEY TURNPIKE</text>
+  <path d="M515 408 C486 451 464 506 449 574" fill="none" stroke="#9a7a50" stroke-width="5" stroke-dasharray="13 8"/>
+
+  <text x="31" y="47" class="label" font-size="32">MARCH 22 PRELUDE TO FIRST KERNSTOWN</text>
+  <text x="31" y="78" class="small">Schematic local geography • not a tactical map of the March 23 battle</text>
+
+  <g>
+    <circle cx="580" cy="111" r="12" fill="#292621"/><rect x="633" y="96" width="313" height="77" rx="10" class="box"/><text x="652" y="126" class="label">Winchester</text><text x="652" y="151" class="small">Shields's division remains nearby</text>
+    <circle cx="572" cy="250" r="12" fill="#292621"/><rect x="643" y="220" width="333" height="76" rx="10" class="box"/><text x="662" y="250" class="label">Kernstown</text><text x="662" y="276" class="small">March 22 cavalry-artillery skirmish</text>
+    <circle cx="576" cy="401" r="11" fill="#292621"/><rect x="637" y="377" width="288" height="69" rx="10" class="box"/><text x="656" y="407" class="label">Newtown</text><text x="656" y="431" class="tiny">Ashby retires south; sends report</text>
+    <circle cx="600" cy="579" r="9" fill="#292621"/><text x="629" y="586" class="small">Cedar Creek</text>
+    <circle cx="630" cy="735" r="12" fill="#292621"/><rect x="715" y="671" width="320" height="70" rx="10" class="box"/><text x="734" y="701" class="label">Strasburg</text><text x="734" y="726" class="small">Jackson's headquarters that night</text>
+  </g>
+
+  <path d="M576 407 C567 354 566 307 571 269" fill="none" stroke="#9a3d32" stroke-width="12" stroke-linecap="round" marker-end="url(#redArrow)"/>
+  <text x="282" y="326" class="small red">Ashby presses north with cavalry</text>
+  <path d="M570 270 C566 311 568 354 575 388" fill="none" stroke="#9a3d32" stroke-width="10" stroke-dasharray="18 10" marker-end="url(#redArrow)"/>
+  <text x="257" y="375" class="small red">Driven back by Union artillery</text>
+  <path d="M579 245 C579 199 579 164 580 127" fill="none" stroke="#315f8c" stroke-width="13" stroke-linecap="round" marker-end="url(#blueArrow)"/>
+  <text x="296" y="190" class="small blue">Union supports enter the skirmish</text>
+  <path d="M626 710 C611 651 600 609 590 559" fill="none" stroke="#9a3d32" stroke-width="14" stroke-linecap="round" marker-end="url(#redArrow)"/>
+  <text x="737" y="584" class="small red">Jackson's infantry marches north</text>
+
+  <rect x="50" y="436" width="480" height="150" rx="10" class="box"/>
+  <text x="71" y="468" class="label">Command change at Kernstown</text>
+  <text x="71" y="501" class="small">A shell fragment fractures James Shields's</text>
+  <text x="71" y="527" class="small">left arm. He returns to Winchester and Colonel</text>
+  <text x="71" y="553" class="small">Nathan Kimball takes field command.</text>
+
+  <rect x="49" y="621" width="488" height="105" rx="10" class="box"/>
+  <text x="70" y="652" class="label">The intelligence failure</text>
+  <text x="70" y="683" class="small">Ashby reports only four Union regiments remain.</text>
+  <text x="70" y="708" class="small">In fact, Shields's full division is around Winchester.</text>
+  <path d="M1126 90 L1126 150" stroke="#292621" stroke-width="4"/><path d="M1126 72 L1113 99 L1139 99 Z" fill="#292621"/><text x="1117" y="63" class="label">N</text>
+</svg>

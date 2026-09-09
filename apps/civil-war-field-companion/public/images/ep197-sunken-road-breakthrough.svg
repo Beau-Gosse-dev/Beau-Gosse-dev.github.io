@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Richardson's division breaks the Sunken Road position</title>
+  <desc id="desc">Schematic tactical map with north at top. Meagher and Caldwell press south toward the Sunken Road. Barlow reaches a knoll east of the bend and fires west along the Confederate line. Posey's failed counterattack and a mistaken order in Rodes's brigade cause retreats toward the Piper farm. Brooke turns west to defeat Cook's attack from the direction of the West Woods.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbf4e4"/>
+      <stop offset="1" stop-color="#e5d8bd"/>
+    </linearGradient>
+    <marker id="blueArrow" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 16 16">
+      <path d="M0 0L16 8L0 16Z" fill="#315f8c"/>
+    </marker>
+    <marker id="redArrow" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 16 16">
+      <path d="M0 0L16 8L0 16Z" fill="#963b31"/>
+    </marker>
+    <marker id="grayArrow" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 16 16">
+      <path d="M0 0L16 8L0 16Z" fill="#665f58"/>
+    </marker>
+    <pattern id="corn" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M12 22V5M12 11L6 7M12 15L19 10" fill="none" stroke="#8d8d45" stroke-width="2" opacity="0.68"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#paper)"/>
+  <rect x="28" y="28" width="1144" height="744" rx="18" fill="none" stroke="#97896f" stroke-width="2"/>
+  <text x="60" y="75" font-family="Georgia, serif" font-size="27" font-weight="700" fill="#2f2b27">THE CONFEDERATE CENTER BREAKS AT THE SUNKEN ROAD</text>
+  <text x="60" y="106" font-family="Arial, sans-serif" font-size="18" fill="#5c5549">Richardson's division and Hill's defenders · near noon to about 12:30 p.m. · north is up</text>
+  <rect x="48" y="128" width="1104" height="610" fill="#e9e5cf"/>
+
+  <path d="M151 128C148 287 146 518 154 738" fill="none" stroke="#a97849" stroke-width="18"/>
+  <path d="M151 128C148 287 146 518 154 738" fill="none" stroke="#f2d8a4" stroke-width="7"/>
+  <g transform="translate(111 428) rotate(-90)">
+    <rect x="-92" y="-14" width="184" height="28" rx="6" fill="#fffaf0" opacity="0.95"/>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#664a32">HAGERSTOWN TURNPIKE</text>
+  </g>
+
+  <rect x="293" y="545" width="796" height="170" rx="24" fill="url(#corn)" opacity="0.8"/>
+  <rect x="794" y="700" width="276" height="30" rx="7" fill="#fffaf0" opacity="0.96"/>
+  <text x="932" y="721" text-anchor="middle" font-family="Georgia, serif" font-size="15" font-weight="700" fill="#5f6234">PIPER CORNFIELD &amp; ORCHARD</text>
+
+  <path d="M156 520C331 505 490 510 642 523C762 534 846 557 1002 649" fill="none" stroke="#876c4d" stroke-width="42" stroke-linecap="round"/>
+  <path d="M156 520C331 505 490 510 642 523C762 534 846 557 1002 649" fill="none" stroke="#cbb68c" stroke-width="17" stroke-linecap="round"/>
+  <path d="M156 520C331 505 490 510 642 523C762 534 846 557 1002 649" fill="none" stroke="#6e553d" stroke-width="3" stroke-dasharray="9 8"/>
+  <rect x="432" y="558" width="307" height="34" rx="7" fill="#fffaf0" opacity="0.97"/>
+  <text x="586" y="581" text-anchor="middle" font-family="Georgia, serif" font-size="17" font-weight="700" fill="#5f4936">SUNKEN ROAD / BLOODY LANE</text>
+
+  <g transform="translate(1101 172)" font-family="Arial, sans-serif" fill="#2f2b27">
+    <path d="M0 50V0M0 0L-9 18M0 0L9 18" fill="none" stroke="#2f2b27" stroke-width="3"/>
+    <text x="0" y="-9" text-anchor="middle" font-size="18" font-weight="700">N</text>
+  </g>
+
+  <g font-family="Arial, sans-serif" filter="url(#shadow)">
+    <g transform="translate(427 492)">
+      <rect x="-137" y="-25" width="274" height="50" rx="8" fill="#963b31"/>
+      <text x="0" y="-4" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">RODES · FIVE ALABAMA REGIMENTS</text>
+      <text x="0" y="16" text-anchor="middle" font-size="11" fill="#fae9e4">Gordon's 6th Alabama on the right</text>
+    </g>
+    <g transform="translate(814 548)">
+      <rect x="-158" y="-25" width="316" height="50" rx="8" fill="#963b31"/>
+      <text x="0" y="-4" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">G. B. ANDERSON · NORTH CAROLINA</text>
+      <text x="0" y="16" text-anchor="middle" font-size="11" fill="#fae9e4">brigade command disrupted by mortal wounds</text>
+    </g>
+  </g>
+
+  <g fill="none" stroke="#315f8c" stroke-linecap="round" marker-end="url(#blueArrow)">
+    <path d="M504 240C510 318 523 385 547 454" stroke-width="11"/>
+    <path d="M722 241C716 326 718 400 731 475" stroke-width="11"/>
+    <path d="M947 299C910 360 880 423 850 492" stroke-width="11"/>
+    <path d="M975 454C901 466 832 477 755 496" stroke-width="8"/>
+    <path d="M352 388C300 391 249 403 207 425" stroke-width="10"/>
+  </g>
+  <g font-family="Arial, sans-serif" filter="url(#shadow)">
+    <g transform="translate(478 205)">
+      <rect x="-158" y="-35" width="316" height="70" rx="9" fill="#315f8c"/>
+      <text x="0" y="-11" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">MEAGHER'S IRISH BRIGADE</text>
+      <text x="0" y="10" text-anchor="middle" font-size="12" fill="#eaf2f8">attacks first; survivors hold near the crest</text>
+      <text x="0" y="28" text-anchor="middle" font-size="11" fill="#eaf2f8">63rd, 69th, 88th N.Y. · 29th Mass.</text>
+    </g>
+    <g transform="translate(745 205)">
+      <rect x="-140" y="-35" width="280" height="70" rx="9" fill="#315f8c"/>
+      <text x="0" y="-11" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">CALDWELL'S BRIGADE</text>
+      <text x="0" y="10" text-anchor="middle" font-size="12" fill="#eaf2f8">extends Richardson's line eastward</text>
+      <text x="0" y="28" text-anchor="middle" font-size="11" fill="#eaf2f8">fresh infantry presses the road</text>
+    </g>
+    <g transform="translate(995 264)">
+      <rect x="-134" y="-35" width="268" height="70" rx="9" fill="#315f8c"/>
+      <text x="0" y="-11" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">BARLOW'S TWO REGIMENTS</text>
+      <text x="0" y="10" text-anchor="middle" font-size="12" fill="#eaf2f8">61st &amp; 64th New York reach a knoll</text>
+      <text x="0" y="28" text-anchor="middle" font-size="11" fill="#eaf2f8">enfilade fire runs west along the road</text>
+    </g>
+    <g transform="translate(352 353)">
+      <rect x="-144" y="-34" width="288" height="68" rx="9" fill="#315f8c"/>
+      <text x="0" y="-10" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">BROOKE'S BRIGADE TURNS WEST</text>
+      <text x="0" y="11" text-anchor="middle" font-size="12" fill="#eaf2f8">blocks Cook's attack against the Federal right</text>
+      <text x="0" y="28" text-anchor="middle" font-size="11" fill="#eaf2f8">Cook retreats beyond the turnpike</text>
+    </g>
+  </g>
+
+  <path d="M114 225C176 239 232 267 289 313" fill="none" stroke="#963b31" stroke-width="10" stroke-linecap="round" marker-end="url(#redArrow)"/>
+  <g transform="translate(222 191)" font-family="Arial, sans-serif" filter="url(#shadow)">
+    <rect x="-126" y="-31" width="252" height="62" rx="9" fill="#f7e8dc" stroke="#963b31" stroke-width="2"/>
+    <text x="0" y="-7" text-anchor="middle" font-size="15" font-weight="700" fill="#7a332c">COOK · 27TH N.C. &amp; 3RD ARK.</text>
+    <text x="0" y="16" text-anchor="middle" font-size="11" fill="#7a332c">675 men in the episode; attack from northwest</text>
+  </g>
+
+  <path d="M888 668C843 627 802 603 746 584" fill="none" stroke="#963b31" stroke-width="10" stroke-linecap="round" marker-end="url(#redArrow)"/>
+  <g transform="translate(1014 659)" font-family="Arial, sans-serif" filter="url(#shadow)">
+    <rect x="-119" y="-32" width="238" height="64" rx="9" fill="#f7e8dc" stroke="#963b31" stroke-width="2"/>
+    <text x="0" y="-8" text-anchor="middle" font-size="15" font-weight="700" fill="#7a332c">POSEY COUNTERATTACKS</text>
+    <text x="0" y="14" text-anchor="middle" font-size="11" fill="#7a332c">repulsed north of the road</text>
+  </g>
+
+  <g fill="none" stroke="#665f58" stroke-width="8" stroke-linecap="round" stroke-dasharray="13 9" marker-end="url(#grayArrow)">
+    <path d="M508 549C499 606 491 651 482 706"/>
+    <path d="M790 588C776 631 754 669 724 709"/>
+  </g>
+  <g font-family="Arial, sans-serif">
+    <rect x="293" y="678" width="230" height="37" rx="7" fill="#fffaf0" stroke="#665f58" stroke-width="2"/>
+    <text x="408" y="702" text-anchor="middle" font-size="13" font-weight="700" fill="#514b45">RODES RETREATS · ORDER ERROR</text>
+    <rect x="532" y="681" width="218" height="37" rx="7" fill="#fffaf0" stroke="#665f58" stroke-width="2"/>
+    <text x="641" y="705" text-anchor="middle" font-size="13" font-weight="700" fill="#514b45">RIGHT FLANK ALSO COLLAPSES</text>
+  </g>
+
+  <text x="600" y="764" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#5f574d">Schematic and not to scale · sequential actions are combined · based on NPS interpretation, official reports, and the episode transcript</text>
+</svg>

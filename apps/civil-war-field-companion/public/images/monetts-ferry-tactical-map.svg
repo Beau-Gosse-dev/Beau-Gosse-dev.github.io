@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Union flank at Monett's Ferry, April 23, 1864</title>
+  <desc id="desc">Schematic battle map showing Emory's main Union force north of Cane River, Hamilton Bee's Confederate position on the wooded bluff south of the ferry, and Henry Birge's Union brigade crossing an unguarded ford to attack the Confederate rear.</desc>
+  <defs>
+    <marker id="blue" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#315f8c"/></marker>
+    <marker id="red" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#9a3d32"/></marker>
+    <pattern id="woods" width="36" height="28" patternUnits="userSpaceOnUse"><circle cx="8" cy="10" r="7" fill="#78906f"/><circle cx="24" cy="17" r="8" fill="#677e5f"/></pattern>
+  </defs>
+  <rect width="1200" height="720" fill="#f3eddf"/>
+  <path d="M-30 356 C180 303 344 395 548 346 C756 296 958 374 1230 318" fill="none" stroke="#8bb7c3" stroke-width="92" opacity=".82"/>
+  <text x="525" y="370" font-family="Georgia,serif" font-size="26" fill="#3f6872" transform="rotate(-5 525 370)">Cane River</text>
+  <path d="M0 475 C240 438 415 507 590 468 C790 424 940 475 1200 423 L1200 720 L0 720Z" fill="url(#woods)" opacity=".88"/>
+  <text x="490" y="672" font-family="Arial,sans-serif" font-size="19" fill="#3c4f38">Wooded bluff south of the crossing</text>
+
+  <path d="M430 230 L500 318" stroke="#315f8c" stroke-width="10" stroke-dasharray="17 11" marker-end="url(#blue)"/>
+  <path d="M825 232 C934 266 1005 333 1000 410 C992 497 850 532 727 521" fill="none" stroke="#315f8c" stroke-width="11" marker-end="url(#blue)"/>
+  <path d="M690 505 L589 470" stroke="#315f8c" stroke-width="10" marker-end="url(#blue)"/>
+
+  <g font-family="Arial,sans-serif" fill="#172725">
+    <text x="165" y="106" font-size="30" font-weight="700">Banks's column on the island</text>
+    <text x="165" y="139" font-size="20">Rear guard still closing up from Grand Ecore</text>
+    <rect x="330" y="197" width="230" height="45" rx="7" fill="#315f8c"/>
+    <text x="445" y="227" text-anchor="middle" fill="white" font-size="21" font-weight="700">Emory's main force</text>
+
+    <circle cx="512" cy="344" r="13" fill="#172725"/>
+    <text x="384" y="410" font-size="23" font-weight="700">Monett's Ferry</text>
+    <text x="357" y="436" font-size="17">Artillery and infantry feint</text>
+
+    <circle cx="990" cy="353" r="12" fill="#172725"/>
+    <text x="933" y="300" font-size="23" font-weight="700">Unguarded ford</text>
+    <text x="927" y="324" font-size="17">Located with local guidance</text>
+
+    <rect x="763" y="184" width="180" height="44" rx="7" fill="#315f8c"/>
+    <text x="853" y="213" text-anchor="middle" fill="white" font-size="20" font-weight="700">Birge's brigade</text>
+    <text x="924" y="523" font-size="19" fill="#315f8c">Flanking march</text>
+
+    <rect x="478" y="493" width="250" height="48" rx="7" fill="#9a3d32"/>
+    <text x="603" y="524" text-anchor="middle" fill="white" font-size="20" font-weight="700">Bee: 1,600 cavalry + artillery</text>
+    <text x="448" y="571" font-size="18">Confederate line faced the ferry</text>
+    <text x="448" y="596" font-size="18">and withdrew when threatened from the rear</text>
+  </g>
+
+  <g transform="translate(1110 75)" font-family="Arial,sans-serif" text-anchor="middle" fill="#172725"><text y="-15" font-size="18" font-weight="700">N</text><path d="M0 0 L-12 36 L0 28 L12 36z"/></g>
+  <text x="600" y="700" text-anchor="middle" fill="#665d4d" font-family="Arial,sans-serif" font-size="16">Schematic guide — positions and routes are simplified from the episode narrative</text>
+</svg>

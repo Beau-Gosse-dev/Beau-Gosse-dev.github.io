@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Schematic tactical map of the Battle of Front Royal, May 23, 1862</title>
+  <desc id="desc">North-up diagram showing the Confederate advance into Front Royal, Kenly's stands on Richardson's Hill and Guard Hill, the crossings of the South and North Forks of the Shenandoah, and Flournoy's cavalry pursuit toward Cedarville.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#faf5e8"/><stop offset="1" stop-color="#eadfc7"/></linearGradient>
+    <pattern id="hachure" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(20)"><path d="M1 0V18" stroke="#59654f" stroke-width="2" opacity=".28"/></pattern>
+    <marker id="blueArrow" markerWidth="16" markerHeight="16" refX="11" refY="6" orient="auto" viewBox="0 0 12 12"><path d="M0 0 12 6 0 12Z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerWidth="16" markerHeight="16" refX="11" refY="6" orient="auto" viewBox="0 0 12 12"><path d="M0 0 12 6 0 12Z" fill="#9a3d32"/></marker>
+    <style>.head{font:700 29px Georgia,serif;fill:#292621}.label{font:700 19px Georgia,serif;fill:#292621}.small{font:16px Arial,sans-serif;fill:#3f3a33}.tiny{font:14px Arial,sans-serif;fill:#554f46}.blue{fill:#315f8c}.red{fill:#9a3d32}.unitU{fill:#eaf1f7;stroke:#315f8c;stroke-width:3}.unitC{fill:#f7e7e2;stroke:#9a3d32;stroke-width:3}.box{fill:#fffaf0;stroke:#8a7b66;stroke-width:2}</style>
+  </defs>
+  <rect width="1200" height="760" fill="url(#paper)"/>
+  <text x="30" y="45" class="head">BATTLE OF FRONT ROYAL • MAY 23, 1862</text>
+  <text x="30" y="76" class="small">Tactical phase diagram • north is up • schematic unit locations, river courses, roads, distances, and timing</text>
+
+  <path d="M505 725C516 654 529 590 545 527C561 462 563 386 548 329" fill="none" stroke="#5b8ea0" stroke-width="34"/>
+  <path d="M548 329C518 287 480 254 437 227" fill="none" stroke="#5b8ea0" stroke-width="34"/>
+  <path d="M548 329C586 289 642 261 712 243" fill="none" stroke="#5b8ea0" stroke-width="34"/>
+  <path d="M505 725C516 654 529 590 545 527C561 462 563 386 548 329M548 329C518 287 480 254 437 227M548 329C586 289 642 261 712 243" fill="none" stroke="#d9edf3" stroke-width="6"/>
+  <text x="572" y="498" class="tiny" fill="#376f84" transform="rotate(-78 572 498)">South Fork Shenandoah</text>
+  <text x="580" y="284" class="tiny" fill="#376f84">North Fork Shenandoah</text>
+
+  <path d="M696 735C654 642 616 567 580 499C550 441 516 381 479 318C451 270 429 223 419 180C408 140 405 111 407 92" fill="none" stroke="#a07a4f" stroke-width="14" stroke-linecap="round"/>
+  <text x="691" y="650" class="tiny" transform="rotate(-67 691 650)">Gooney Manor Road</text><text x="327" y="157" class="tiny">Front Royal–Winchester Turnpike</text>
+  <path d="M443 410H795" stroke="#6a6258" stroke-width="5" stroke-dasharray="12 8"/><text x="685" y="396" class="tiny">Manassas Gap Railroad</text>
+
+  <path d="M730 515C843 490 1025 484 1160 500V700H784C757 626 738 571 730 515Z" fill="url(#hachure)" opacity=".88"/><text x="886" y="677" class="label">DICKEY RIDGE</text>
+  <path d="M253 454C328 411 401 395 482 399L512 489C401 499 325 518 268 556Z" fill="url(#hachure)"/><text x="271" y="474" class="label">RICHARDSON'S / CAMP HILL</text>
+  <path d="M744 205C833 172 929 178 1003 224L964 313C871 282 809 281 743 303Z" fill="url(#hachure)"/><text x="808" y="245" class="label">GUARD HILL</text>
+
+  <rect x="565" y="512" width="175" height="91" rx="14" fill="#e4dac1" stroke="#8a7b66" stroke-width="3"/><text x="590" y="548" class="label">FRONT ROYAL</text><text x="591" y="576" class="small">overrun about 2:30</text>
+  <circle cx="415" cy="145" r="8" fill="#292621"/><text x="435" y="151" class="label">CEDARVILLE / FAIRVIEW</text>
+
+  <rect x="288" y="413" width="183" height="42" rx="7" class="unitU"/><text x="304" y="440" class="small blue">Kenly • about 600</text>
+  <rect x="779" y="230" width="198" height="42" rx="7" class="unitU"/><text x="793" y="257" class="small blue">Kenly • about 800</text>
+  <rect x="327" y="96" width="187" height="42" rx="7" class="unitU"/><text x="342" y="123" class="small blue">final roadblock</text>
+
+  <rect x="649" y="655" width="210" height="42" rx="7" class="unitC"/><text x="663" y="682" class="small red">1st Md. + Wheat</text>
+  <rect x="760" y="563" width="193" height="42" rx="7" class="unitC"/><text x="775" y="590" class="small red">6th La. arrives</text>
+  <rect x="894" y="516" width="192" height="42" rx="7" class="unitC"/><text x="909" y="543" class="small red">8th La. flanks</text>
+  <rect x="79" y="314" width="234" height="42" rx="7" class="unitC"/><text x="94" y="341" class="small red">Flournoy's cavalry</text>
+
+  <path d="M675 650C611 578 544 512 466 458" fill="none" stroke="#9a3d32" stroke-width="11" marker-end="url(#redArrow)"/>
+  <path d="M786 557C691 514 585 474 479 443" fill="none" stroke="#9a3d32" stroke-width="10" marker-end="url(#redArrow)"/>
+  <path d="M902 510C790 458 680 409 576 345" fill="none" stroke="#9a3d32" stroke-width="9" marker-end="url(#redArrow)"/>
+  <path d="M451 400C508 350 590 304 762 258" fill="none" stroke="#315f8c" stroke-width="10" stroke-dasharray="15 9" marker-end="url(#blueArrow)"/>
+  <path d="M775 217C659 177 549 153 506 132" fill="none" stroke="#315f8c" stroke-width="10" stroke-dasharray="15 9" marker-end="url(#blueArrow)"/>
+  <path d="M263 308C318 259 368 206 405 155" fill="none" stroke="#9a3d32" stroke-width="11" marker-end="url(#redArrow)"/>
+
+  <rect x="31" y="568" width="361" height="147" rx="12" class="box"/><text x="52" y="600" class="label">THREE UNITED STATES POSITIONS</text><text x="52" y="632" class="small">1 • Richardson's Hill, about 2:30–4:30</text><text x="52" y="659" class="small">2 • Guard Hill after both river crossings</text><text x="52" y="686" class="small">3 • Cedarville roadblock broken by cavalry</text>
+  <text x="999" y="332" class="small red">bridges fired,</text><text x="999" y="353" class="small red">then extinguished</text>
+  <path d="M1149 111V171" stroke="#292621" stroke-width="4"/><path d="M1149 86 1135 117 1163 117Z" fill="#292621"/><text x="1139" y="73" class="head">N</text>
+</svg>

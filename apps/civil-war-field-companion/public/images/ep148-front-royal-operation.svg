@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Front Royal operation, May 21 to 23, 1862</title>
+  <desc id="desc">North-up schematic map showing Jackson crossing Massanutten Mountain at New Market Gap, joining Ewell in the Luray Valley, marching north to Front Royal, and turning the flank of Banks at Strasburg.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#faf5e8"/><stop offset="1" stop-color="#eadfc7"/></linearGradient>
+    <pattern id="mountains" width="46" height="36" patternUnits="userSpaceOnUse"><path d="M1 33 13 8 24 32 35 12 45 33" fill="none" stroke="#65735c" stroke-width="2" opacity=".55"/></pattern>
+    <marker id="blueArrow" markerWidth="16" markerHeight="16" refX="11" refY="6" orient="auto" viewBox="0 0 12 12"><path d="M0 0 12 6 0 12Z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerWidth="16" markerHeight="16" refX="11" refY="6" orient="auto" viewBox="0 0 12 12"><path d="M0 0 12 6 0 12Z" fill="#9a3d32"/></marker>
+    <style>.head{font:700 30px Georgia,serif;fill:#292621}.label{font:700 20px Georgia,serif;fill:#292621}.small{font:17px Arial,sans-serif;fill:#3f3a33}.tiny{font:14px Arial,sans-serif;fill:#554f46}.blue{fill:#315f8c}.red{fill:#9a3d32}.box{fill:#fffaf0;stroke:#8a7b66;stroke-width:2}.road{fill:none;stroke:#a07a4f;stroke-width:10;stroke-linecap:round}.rail{fill:none;stroke:#5c554c;stroke-width:5;stroke-dasharray:13 8}</style>
+  </defs>
+  <rect width="1200" height="760" fill="url(#paper)"/>
+  <text x="30" y="45" class="head">FRONT ROYAL OPERATION • MAY 21–23, 1862</text>
+  <text x="30" y="76" class="small">Operational diagram • north is up • schematic routes, positions, terrain bands, and distances</text>
+
+  <path d="M493 102H680V724H493Z" fill="url(#mountains)" opacity=".86"/>
+  <text x="548" y="683" class="label" fill="#617052" transform="rotate(-90 548 683)">MASSANUTTEN MOUNTAIN</text>
+  <text x="270" y="122" class="small">MAIN SHENANDOAH VALLEY</text>
+  <text x="780" y="122" class="small">LURAY / PAGE VALLEY</text>
+
+  <path class="road" d="M272 695C302 575 315 445 334 330C348 244 361 171 390 111"/>
+  <text x="199" y="530" class="tiny" transform="rotate(-82 199 530)">Valley Turnpike</text>
+  <path class="road" d="M735 690C752 589 770 500 789 405C807 316 824 231 849 139"/>
+  <text x="873" y="530" class="tiny" transform="rotate(-79 873 530)">Luray–Front Royal road</text>
+  <path class="road" d="M306 538C413 536 506 532 585 528C650 525 702 546 750 575"/>
+  <text x="442" y="513" class="tiny">New Market Gap</text>
+  <path class="rail" d="M335 257C487 260 649 254 836 226"/>
+  <text x="478" y="244" class="tiny">Manassas Gap Railroad and road</text>
+
+  <circle cx="306" cy="538" r="10" fill="#292621"/><text x="210" y="566" class="label">NEW MARKET</text>
+  <circle cx="750" cy="575" r="8" fill="#292621"/><text x="770" y="582" class="small">Luray</text>
+  <circle cx="789" cy="405" r="8" fill="#292621"/><text x="808" y="412" class="small">Bentonville</text>
+  <circle cx="836" cy="226" r="12" fill="#292621"/><text x="855" y="233" class="label">FRONT ROYAL</text>
+  <circle cx="335" cy="257" r="12" fill="#292621"/><text x="232" y="237" class="label">STRASBURG</text>
+  <circle cx="369" cy="116" r="10" fill="#292621"/><text x="285" y="104" class="label">WINCHESTER</text>
+
+  <rect x="131" y="276" width="245" height="82" rx="10" class="box"/><text x="151" y="308" class="label blue">BANKS • about 6,000</text><text x="151" y="337" class="small blue">main force near Strasburg</text>
+  <rect x="856" y="177" width="270" height="76" rx="10" class="box"/><text x="876" y="208" class="label blue">KENLY • about 1,100</text><text x="876" y="237" class="small blue">isolated Front Royal post</text>
+
+  <path d="M317 522C405 509 502 516 574 526C641 535 701 557 738 570" fill="none" stroke="#9a3d32" stroke-width="13" marker-end="url(#redArrow)"/>
+  <text x="357" y="596" class="label red">JACKSON crosses New Market Gap</text><text x="357" y="621" class="small red">May 21–22 • joins Ewell east of Massanutten</text>
+  <path d="M754 559C776 470 802 357 830 249" fill="none" stroke="#9a3d32" stroke-width="13" marker-end="url(#redArrow)"/>
+  <text x="864" y="419" class="label red">COMBINED ADVANCE</text><text x="864" y="444" class="small red">May 22–23</text>
+  <path d="M745 371C656 337 548 304 367 268" fill="none" stroke="#9a3d32" stroke-width="9" stroke-dasharray="16 10" marker-end="url(#redArrow)"/>
+  <text x="480" y="360" class="small red">Ashby / Flournoy cut communications</text>
+  <path d="M319 240C298 203 307 158 350 127" fill="none" stroke="#315f8c" stroke-width="9" stroke-dasharray="13 9" marker-end="url(#blueArrow)"/>
+  <text x="62" y="176" class="small blue">Front Royal’s fall forces Banks</text><text x="62" y="199" class="small blue">to prepare a retreat toward Winchester</text>
+
+  <rect x="42" y="610" width="300" height="105" rx="12" class="box"/>
+  <text x="62" y="642" class="label">OPERATIONAL EFFECT</text><text x="62" y="674" class="small">Jackson entered Banks’s flank and rear.</text><text x="62" y="701" class="small">The battle did not yet destroy Banks.</text>
+  <path d="M1149 111V171" stroke="#292621" stroke-width="4"/><path d="M1149 86 1135 117 1163 117Z" fill="#292621"/><text x="1139" y="73" class="head">N</text>
+</svg>

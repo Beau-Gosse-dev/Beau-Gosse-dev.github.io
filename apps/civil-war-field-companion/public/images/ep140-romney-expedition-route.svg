@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Romney Expedition operational route, December 1861 to January 1862</title>
+  <desc id="desc">Schematic map of Jackson's movements from Winchester to Dam Number 5, then from Winchester through Unger's Store to Bath and Hancock, back through Unger's Store and Bloomery Gap to Romney, and finally back to Winchester.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7f1df"/><stop offset="1" stop-color="#e4d7ba"/></linearGradient>
+    <pattern id="ridge" width="42" height="32" patternUnits="userSpaceOnUse"><path d="M1 29 12 9 22 27 31 12 41 29" fill="none" stroke="#718064" stroke-width="2" opacity=".48"/></pattern>
+    <marker id="red" markerWidth="18" markerHeight="18" refX="11" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12"><path d="M0 0 12 6 0 12Z" fill="#963d35"/></marker>
+    <marker id="gray" markerWidth="18" markerHeight="18" refX="11" refY="6" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 12 12"><path d="M0 0 12 6 0 12Z" fill="#625a50"/></marker>
+    <style>.title{font:700 29px Georgia,serif;fill:#29251f}.label{font:700 21px Georgia,serif;fill:#29251f}.small{font:17px Arial,sans-serif;fill:#3e3932}.tiny{font:14px Arial,sans-serif;fill:#514a41}.box{fill:#fffaf0;stroke:#847662;stroke-width:2}.road{fill:none;stroke:#9b7a4c;stroke-width:9;stroke-linecap:round}.route{fill:none;stroke:#963d35;stroke-width:12;stroke-linecap:round;stroke-linejoin:round}.return{fill:none;stroke:#625a50;stroke-width:7;stroke-dasharray:14 10;stroke-linecap:round}.rail{fill:none;stroke:#292929;stroke-width:5;stroke-dasharray:16 9}</style>
+  </defs>
+  <rect width="1200" height="760" fill="url(#paper)"/>
+  <path d="M0 92 C210 117 337 79 491 101 C671 127 791 77 978 98 C1071 108 1138 99 1200 85" fill="none" stroke="#6194b0" stroke-width="24"/>
+  <text x="785" y="69" class="small" fill="#315f8c">POTOMAC RIVER</text>
+  <path d="M570 0 C535 132 556 277 522 405 C487 540 485 647 506 760 L737 760 C706 638 728 519 759 393 C790 267 771 131 811 0Z" fill="url(#ridge)" opacity=".8"/>
+  <text x="642" y="476" class="small" fill="#58684e" transform="rotate(-78 642 476)">ALLEGHENY RIDGES</text>
+  <path class="rail" d="M50 112 C318 132 508 109 682 112 S980 125 1160 106"/>
+  <text x="52" y="151" class="small">BALTIMORE &amp; OHIO RAILROAD</text>
+  <path d="M40 76 C307 95 505 71 690 73 S990 91 1170 67" fill="none" stroke="#5187a4" stroke-width="6"/>
+  <text x="943" y="52" class="tiny" fill="#315f8c">C&amp;O CANAL</text>
+
+  <text x="30" y="205" class="title">THE ROMNEY EXPEDITION • 1861–1862</text>
+  <text x="31" y="235" class="small">Schematic operational geography • routes and positions are approximate • not to scale</text>
+
+  <path class="road" d="M920 592 C804 497 699 389 622 268 C560 170 507 129 446 112"/>
+  <path class="road" d="M622 268 C560 331 474 415 351 544"/>
+  <path class="road" d="M351 544 C235 520 146 513 74 492"/>
+  <path class="road" d="M920 592 C757 620 581 597 351 544"/>
+
+  <path d="M920 592 C822 493 724 385 622 268 C567 202 516 161 451 120" class="route" marker-end="url(#red)"/>
+  <path d="M449 118 C520 148 575 197 622 268 C590 339 474 437 351 544 C243 522 156 510 78 493" class="route" marker-end="url(#red)"/>
+  <path d="M81 505 C272 586 564 646 912 604" class="return" marker-end="url(#gray)"/>
+  <path d="M918 573 C927 425 965 286 1028 123" class="route" opacity=".83" marker-end="url(#red)"/>
+
+  <g>
+    <circle cx="920" cy="592" r="11" fill="#29251f"/><rect x="824" y="629" width="250" height="70" rx="9" class="box"/><text x="843" y="658" class="label">Winchester</text><text x="843" y="682" class="small">Jackson's headquarters</text>
+    <circle cx="1029" cy="118" r="10" fill="#29251f"/><rect x="946" y="258" width="226" height="68" rx="9" class="box"/><text x="965" y="286" class="label">Dam No. 5</text><text x="965" y="310" class="small">Dec. 17–21 raid</text><line x1="1051" y1="258" x2="1029" y2="131" stroke="#756958" stroke-width="2"/>
+    <circle cx="622" cy="268" r="10" fill="#29251f"/><rect x="658" y="247" width="223" height="70" rx="9" class="box"/><text x="677" y="276" class="label">Unger’s Store</text><text x="677" y="300" class="small">Jan. 2–3 and 7–13</text>
+    <circle cx="449" cy="116" r="10" fill="#29251f"/><rect x="700" y="146" width="213" height="65" rx="9" class="box"/><text x="719" y="174" class="label">Bath</text><text x="719" y="197" class="small">captured Jan. 4</text><line x1="700" y1="177" x2="458" y2="121" stroke="#756958" stroke-width="2"/>
+    <circle cx="398" cy="76" r="10" fill="#315f8c"/><rect x="209" y="257" width="259" height="66" rx="9" class="box"/><text x="228" y="285" class="label">Hancock, Md.</text><text x="228" y="308" class="small">bombarded Jan. 5–6</text><line x1="398" y1="88" x2="365" y2="257" stroke="#756958" stroke-width="2"/>
+    <circle cx="351" cy="544" r="9" fill="#29251f"/><rect x="381" y="501" width="222" height="67" rx="9" class="box"/><text x="400" y="529" class="label">Bloomery Gap</text><text x="400" y="552" class="small">road toward Romney</text>
+    <circle cx="75" cy="492" r="11" fill="#29251f"/><rect x="26" y="376" width="244" height="73" rx="9" class="box"/><text x="45" y="406" class="label">Romney</text><text x="45" y="431" class="small">occupied Jan. 14</text>
+    <circle cx="1110" cy="356" r="9" fill="#29251f"/><text x="953" y="374" class="label">Martinsburg</text>
+  </g>
+
+  <rect x="28" y="676" width="708" height="57" rx="9" class="box"/>
+  <line x1="51" y1="705" x2="116" y2="705" class="route" marker-end="url(#red)"/><text x="138" y="711" class="small">advance / Dam No. 5 raid</text>
+  <line x1="391" y1="705" x2="456" y2="705" class="return" marker-end="url(#gray)"/><text x="478" y="711" class="small">return to Winchester</text>
+  <path d="M1132 566v62" stroke="#29251f" stroke-width="4"/><path d="M1132 550 1119 577 1145 577Z" fill="#29251f"/><text x="1123" y="542" class="label">N</text>
+</svg>

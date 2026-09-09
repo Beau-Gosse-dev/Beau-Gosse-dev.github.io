@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Banks's April 17 advance and Jackson's withdrawal from Rude's Hill</title>
+  <desc id="desc">Schematic north-up operational map showing United States columns advancing through Mount Jackson toward Rude's Hill and New Market while Jackson withdraws south to Harrisonburg and then east to Conrad's Store at Swift Run Gap.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8f2e2"/><stop offset="1" stop-color="#eadfc7"/></linearGradient>
+    <pattern id="mountains" width="42" height="34" patternUnits="userSpaceOnUse"><path d="M1 31 12 9 22 29 31 13 41 31" fill="none" stroke="#697a59" stroke-width="2" opacity=".55"/></pattern>
+    <marker id="blueArrow" markerWidth="15" markerHeight="15" refX="11" refY="6" orient="auto" viewBox="0 0 12 12"><path d="M0 0 12 6 0 12Z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerWidth="15" markerHeight="15" refX="11" refY="6" orient="auto" viewBox="0 0 12 12"><path d="M0 0 12 6 0 12Z" fill="#9a3d32"/></marker>
+    <style>.head{font:700 31px Georgia,serif;fill:#292621}.label{font:700 21px Georgia,serif;fill:#292621}.small{font:18px Arial,sans-serif;fill:#3f3a33}.tiny{font:15px Arial,sans-serif;fill:#554f46}.blue{fill:#315f8c}.red{fill:#9a3d32}.box{fill:#fffaf0;stroke:#8a7b66;stroke-width:2}.road{fill:none;stroke:#a07a4f;stroke-width:10;stroke-linecap:round}</style>
+  </defs>
+  <rect width="1200" height="760" fill="url(#paper)"/>
+  <text x="30" y="46" class="head">BANKS ADVANCES • JACKSON YIELDS RUDE'S HILL • APRIL 17–19</text>
+  <text x="30" y="77" class="small">Operational diagram • north is up • schematic routes, spacing, and column locations</text>
+  <path d="M35 100H202V730H35Z" fill="url(#mountains)" opacity=".8"/>
+  <path d="M790 100H1117V730H790Z" fill="url(#mountains)" opacity=".8"/>
+  <text x="1077" y="475" class="label" fill="#617052" transform="rotate(-90 1077 475)">MASSANUTTEN MOUNTAIN</text>
+  <path class="road" d="M478 102C463 207 491 323 470 432C454 527 482 632 465 728"/>
+  <text x="510" y="392" class="small" transform="rotate(87 510 392)">VALLEY TURNPIKE</text>
+  <path class="road" d="M305 115C294 222 318 333 306 442" stroke-width="7"/>
+  <text x="273" y="315" class="tiny" transform="rotate(-87 273 315)">BACK ROAD</text>
+  <path d="M230 207C350 183 473 229 644 201C719 189 781 199 820 219" fill="none" stroke="#5895ad" stroke-width="20"/>
+  <path d="M230 207C350 183 473 229 644 201C719 189 781 199 820 219" fill="none" stroke="#d8edf3" stroke-width="4"/>
+  <text x="614" y="177" class="small" fill="#376f84">STONY CREEK</text>
+
+  <circle cx="474" cy="295" r="12" fill="#292621"/><text x="504" y="302" class="label">MOUNT JACKSON</text>
+  <path d="M520 325C599 342 668 358 718 393" fill="none" stroke="#5895ad" stroke-width="18"/>
+  <path d="M520 325C599 342 668 358 718 393" fill="none" stroke="#d8edf3" stroke-width="4"/>
+  <text x="589" y="330" class="tiny" fill="#376f84">North Fork bridge saved</text>
+  <circle cx="476" cy="403" r="12" fill="#292621"/><text x="505" y="410" class="label">RUDE'S HILL</text>
+  <circle cx="470" cy="501" r="12" fill="#292621"/><text x="500" y="508" class="label">NEW MARKET</text>
+  <circle cx="463" cy="674" r="12" fill="#292621"/><text x="493" y="681" class="label">HARRISONBURG</text>
+  <circle cx="942" cy="657" r="12" fill="#292621"/><text x="966" y="646" class="label">CONRAD'S STORE</text><text x="966" y="674" class="small">near Swift Run Gap</text>
+
+  <path d="M468 106V260" stroke="#315f8c" stroke-width="13" marker-end="url(#blueArrow)"/>
+  <text x="510" y="128" class="label blue">KIMBALL</text><text x="510" y="153" class="small blue">turnpike column</text>
+  <path d="M308 110V255C311 309 356 346 423 378" fill="none" stroke="#315f8c" stroke-width="12" marker-end="url(#blueArrow)"/>
+  <text x="224" y="128" class="label blue">CARROLL</text><text x="224" y="152" class="small blue">Back Road</text>
+  <path d="M592 275C655 310 674 356 613 425" fill="none" stroke="#315f8c" stroke-width="10" stroke-dasharray="18 10" marker-end="url(#blueArrow)"/>
+  <text x="642" y="276" class="small blue">Federal turning columns</text>
+
+  <path d="M470 392C447 438 448 470 468 481" fill="none" stroke="#9a3d32" stroke-width="14" marker-end="url(#redArrow)"/>
+  <path d="M469 518C463 566 460 610 463 649" fill="none" stroke="#9a3d32" stroke-width="14" marker-end="url(#redArrow)"/>
+  <path d="M486 674C621 683 759 667 914 659" fill="none" stroke="#9a3d32" stroke-width="14" marker-end="url(#redArrow)"/>
+  <rect x="586" y="532" width="407" height="87" rx="10" class="box"/>
+  <text x="608" y="562" class="label red">JACKSON WITHDRAWS WITHOUT BATTLE</text>
+  <text x="608" y="590" class="small">Rude's Hill → New Market → Harrisonburg</text>
+  <text x="608" y="613" class="small">→ Conrad's Store on April 19</text>
+
+  <rect x="760" y="106" width="356" height="95" rx="10" class="box"/>
+  <text x="783" y="136" class="label">APRIL 17 RESULT</text>
+  <text x="783" y="164" class="small">Banks occupied Mount Jackson and</text>
+  <text x="783" y="188" class="small">New Market; Jackson preserved his army.</text>
+  <path d="M1168 101V166" stroke="#292621" stroke-width="4"/><path d="M1168 79 1154 108 1182 108Z" fill="#292621"/><text x="1158" y="66" class="head">N</text>
+</svg>

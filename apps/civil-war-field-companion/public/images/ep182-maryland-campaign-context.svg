@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Invasion of Maryland and the Federal response, September 4–13, 1862</title>
+  <desc id="desc">Schematic map showing the Confederate crossing into Maryland, concentration at Frederick, movement toward Hagerstown, and the United States three-wing advance from Washington.</desc>
+  <defs>
+    <marker id="redArrow" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L18 9 L0 18 Z" fill="#9a3d32"/>
+    </marker>
+    <marker id="blueArrow" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L18 9 L0 18 Z" fill="#315f8c"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.18"/>
+    </filter>
+    <style>
+      .label { font: 600 17px Georgia, serif; fill: #25231f; }
+      .small { font: 14px Arial, sans-serif; fill: #3e3b35; }
+      .route { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .place { fill: #25231f; stroke: #fffaf0; stroke-width: 3; paint-order: stroke; }
+    </style>
+  </defs>
+  <rect width="1200" height="760" fill="#f4eddd"/>
+  <rect x="24" y="22" width="1152" height="716" rx="18" fill="#fbf7ed" stroke="#b7a98d" stroke-width="2"/>
+  <text x="54" y="68" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#25231f">Invasion of Maryland and the Federal response</text>
+  <text x="55" y="96" font-family="Arial, sans-serif" font-size="16" fill="#5d574c">3–13 September 1862 • schematic, not to scale</text>
+
+  <rect x="55" y="122" width="828" height="568" rx="12" fill="#efe5cf" stroke="#cabd9e"/>
+  <path d="M55 548 C170 520 254 553 349 530 C456 504 536 536 618 501 C706 464 791 475 883 430 L883 690 L55 690 Z" fill="#e2d3b7" opacity="0.8"/>
+  <text x="92" y="180" font-family="Georgia, serif" font-size="21" letter-spacing="4" fill="#7b725f">MARYLAND</text>
+  <text x="610" y="650" font-family="Georgia, serif" font-size="19" letter-spacing="4" fill="#7b725f">VIRGINIA</text>
+
+  <path d="M68 513 C165 482 245 520 335 494 C419 470 498 501 583 468 C662 437 747 447 864 395" fill="none" stroke="#6693aa" stroke-width="18" opacity="0.82"/>
+  <path d="M68 513 C165 482 245 520 335 494 C419 470 498 501 583 468 C662 437 747 447 864 395" fill="none" stroke="#d9edf3" stroke-width="7"/>
+  <text x="332" y="520" class="small" fill="#315f8c" transform="rotate(-7 332 520)">Potomac River</text>
+
+  <path d="M287 142 L310 690" stroke="#c6ad77" stroke-width="52" opacity="0.26"/>
+  <path d="M412 142 L433 690" stroke="#a9905f" stroke-width="61" opacity="0.29"/>
+  <text x="282" y="270" class="small" transform="rotate(-88 282 270)">Catoctin Mountain</text>
+  <text x="408" y="290" class="small" transform="rotate(-88 408 290)">South Mountain</text>
+
+  <path d="M135 487 C145 438 218 368 357 336 C476 309 557 300 655 302" class="route" stroke="#9a3d32" stroke-width="7" marker-end="url(#redArrow)"/>
+  <path d="M655 302 C555 269 466 230 388 192" class="route" stroke="#9a3d32" stroke-width="7" marker-end="url(#redArrow)"/>
+  <text x="164" y="422" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#7e3028" transform="rotate(-22 164 422)">LEE • 4–7 SEP</text>
+  <text x="465" y="245" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#7e3028" transform="rotate(20 465 245)">WESTWARD TURN</text>
+
+  <path d="M817 577 C741 497 733 404 668 326" class="route" stroke="#315f8c" stroke-width="6" marker-end="url(#blueArrow)"/>
+  <path d="M817 577 C687 538 603 430 642 329" class="route" stroke="#315f8c" stroke-width="6" marker-end="url(#blueArrow)"/>
+  <path d="M817 577 C654 590 522 508 604 340" class="route" stroke="#315f8c" stroke-width="6" marker-end="url(#blueArrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="706" y="377" width="150" height="46" rx="8" fill="#edf4fa" stroke="#315f8c"/>
+    <text x="781" y="397" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#315f8c">BURNSIDE</text>
+    <text x="781" y="414" text-anchor="middle" class="small">right wing</text>
+    <rect x="563" y="441" width="150" height="46" rx="8" fill="#edf4fa" stroke="#315f8c"/>
+    <text x="638" y="461" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#315f8c">SUMNER</text>
+    <text x="638" y="478" text-anchor="middle" class="small">center wing</text>
+    <rect x="456" y="563" width="150" height="46" rx="8" fill="#edf4fa" stroke="#315f8c"/>
+    <text x="531" y="583" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#315f8c">FRANKLIN</text>
+    <text x="531" y="600" text-anchor="middle" class="small">left wing</text>
+  </g>
+
+  <g>
+    <circle cx="135" cy="487" r="6" class="place"/>
+    <text x="79" y="471" class="label">Leesburg</text>
+    <text x="78" y="491" class="small">Potomac crossing area</text>
+
+    <circle cx="655" cy="302" r="7" class="place"/>
+    <text x="671" y="296" class="label">Frederick</text>
+    <text x="671" y="316" class="small">Lee concentrated here • 7 Sep</text>
+
+    <circle cx="388" cy="192" r="7" class="place"/>
+    <text x="327" y="170" class="label">Hagerstown</text>
+
+    <circle cx="817" cy="577" r="8" class="place"/>
+    <text x="732" y="612" class="label">WASHINGTON</text>
+
+    <circle cx="838" cy="239" r="7" class="place"/>
+    <text x="752" y="225" class="label">Baltimore</text>
+
+    <path d="M520 415 L530 405 L540 415 L530 425 Z" fill="#4d6d45" stroke="#fffaf0" stroke-width="2"/>
+    <text x="448" y="400" class="label">Sugarloaf Mtn.</text>
+    <text x="456" y="442" class="small">signal station</text>
+  </g>
+
+  <rect x="909" y="122" width="238" height="568" rx="12" fill="#fffdf7" stroke="#cabd9e"/>
+  <text x="935" y="164" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#25231f">Reading the map</text>
+  <line x1="937" y1="203" x2="1010" y2="203" stroke="#9a3d32" stroke-width="7" marker-end="url(#redArrow)"/>
+  <text x="935" y="236" class="small">Confederate advance:</text>
+  <text x="935" y="257" class="small">Potomac → Frederick</text>
+  <text x="935" y="278" class="small">→ western Maryland</text>
+
+  <line x1="937" y1="326" x2="1010" y2="326" stroke="#315f8c" stroke-width="6" marker-end="url(#blueArrow)"/>
+  <text x="935" y="359" class="small">United States advance:</text>
+  <text x="935" y="380" class="small">three wings from the</text>
+  <text x="935" y="401" class="small">Washington defenses</text>
+
+  <rect x="936" y="448" width="28" height="45" fill="#c6ad77" opacity="0.35"/>
+  <text x="979" y="468" class="small">Mountain</text>
+  <text x="979" y="489" class="small">barriers</text>
+
+  <text x="935" y="550" font-family="Georgia, serif" font-size="17" font-weight="700" fill="#25231f">Strategic problem</text>
+  <text x="935" y="579" class="small">Lee moved west to open</text>
+  <text x="935" y="600" class="small">his Shenandoah supply</text>
+  <text x="935" y="621" class="small">route while McClellan</text>
+  <text x="935" y="642" class="small">closed on Frederick.</text>
+  <text x="55" y="720" font-family="Arial, sans-serif" font-size="13" fill="#6b655a">Sources: U.S. Army Center of Military History, National Park Service, Ezra A. Carman campaign maps, and episode transcript.</text>
+</svg>

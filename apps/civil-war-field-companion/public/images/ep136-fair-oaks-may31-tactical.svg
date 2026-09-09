@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Opening Confederate attacks at Fair Oaks and Seven Pines on May 31, 1862</title>
+  <desc id="desc">Schematic tactical map comparing Johnston's intended three-road advance with the delayed and redirected movements of Longstreet, Hill, Huger, Whiting, Anderson, Jenkins, Casey, Couch, and Kearny through late afternoon.</desc>
+  <defs>
+    <marker id="cs-arrow" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="18" refX="16" refY="8" orient="auto"><path d="M0,0 L17,8 L0,16 Z" fill="#9a3d32"/></marker>
+    <marker id="us-arrow" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="18" refX="16" refY="8" orient="auto"><path d="M0,0 L17,8 L0,16 Z" fill="#315f8c"/></marker>
+    <pattern id="woods" width="34" height="34" patternUnits="userSpaceOnUse"><circle cx="8" cy="10" r="6" fill="#76976b"/><circle cx="25" cy="23" r="7" fill="#63855c"/><path d="M8 16v10M25 30v4" stroke="#4e6d48" stroke-width="2"/></pattern>
+    <pattern id="swamp" width="28" height="18" patternUnits="userSpaceOnUse"><path d="M2 14 Q8 4 14 14 T26 14" fill="none" stroke="#719985" stroke-width="2"/></pattern>
+  </defs>
+  <rect width="1200" height="760" fill="#f5f0e4"/>
+  <rect x="660" y="500" width="510" height="205" rx="25" fill="url(#swamp)" stroke="#729380" stroke-width="3"/>
+  <text x="970" y="679" fill="#426350" font-family="Georgia,serif" font-size="25" font-style="italic">White Oak Swamp</text>
+
+  <path d="M112 181 C350 177 578 182 802 207 C893 218 949 278 991 369" fill="none" stroke="#b49c7b" stroke-width="34" stroke-linecap="round"/>
+  <path d="M112 181 C350 177 578 182 802 207 C893 218 949 278 991 369" fill="none" stroke="#f8efdf" stroke-width="25" stroke-linecap="round"/>
+  <text x="430" y="166" fill="#6b553e" font-family="Arial,sans-serif" font-size="20">Nine Mile Road</text>
+  <path d="M112 391 C365 390 668 396 1014 405" fill="none" stroke="#b49c7b" stroke-width="36" stroke-linecap="round"/>
+  <path d="M112 391 C365 390 668 396 1014 405" fill="none" stroke="#f8efdf" stroke-width="27" stroke-linecap="round"/>
+  <text x="420" y="379" fill="#6b553e" font-family="Arial,sans-serif" font-size="20">Williamsburg Road</text>
+  <path d="M111 563 C360 556 604 548 864 539" fill="none" stroke="#b49c7b" stroke-width="36" stroke-linecap="round"/>
+  <path d="M111 563 C360 556 604 548 864 539" fill="none" stroke="#f8efdf" stroke-width="27" stroke-linecap="round"/>
+  <text x="405" y="535" fill="#6b553e" font-family="Arial,sans-serif" font-size="20">Charles City Road</text>
+  <path d="M102 119 C370 125 620 159 891 239" fill="none" stroke="#b56e2c" stroke-width="6" stroke-dasharray="15 8"/>
+  <text x="557" y="128" fill="#774619" font-family="Arial,sans-serif" font-size="18" transform="rotate(9 557 128)">Richmond &amp; York River Railroad</text>
+
+  <rect x="74" y="260" width="170" height="87" rx="12" fill="#cfb69a" stroke="#816447" stroke-width="3"/>
+  <text x="159" y="294" text-anchor="middle" fill="#702a23" font-family="Arial,sans-serif" font-size="27" font-weight="700">RICHMOND</text>
+  <text x="159" y="323" text-anchor="middle" fill="#5f342d" font-family="Arial,sans-serif" font-size="17">Confederate start</text>
+
+  <circle cx="887" cy="235" r="12" fill="#272727"/>
+  <text x="902" y="222" fill="#272727" font-family="Arial,sans-serif" font-size="21" font-weight="700">Fair Oaks Station</text>
+  <circle cx="998" cy="400" r="12" fill="#272727"/>
+  <text x="1009" y="383" fill="#272727" font-family="Arial,sans-serif" font-size="21" font-weight="700">Seven Pines</text>
+  <polygon points="815,374 837,361 859,374 854,400 820,400" fill="#8d7359" stroke="#4e3b2d" stroke-width="3"/>
+  <text x="572" y="340" fill="#333" font-family="Arial,sans-serif" font-size="19" font-weight="700">Casey’s Redoubt</text>
+
+  <path d="M245 180 C440 180 635 187 802 215" fill="none" stroke="#9a3d32" stroke-width="7" stroke-dasharray="16 10" marker-end="url(#cs-arrow)"/>
+  <path d="M245 390 C435 390 615 392 781 392" fill="none" stroke="#9a3d32" stroke-width="7" stroke-dasharray="16 10" marker-end="url(#cs-arrow)"/>
+  <path d="M245 560 C460 555 625 548 760 541 C804 538 837 506 855 459" fill="none" stroke="#9a3d32" stroke-width="7" stroke-dasharray="16 10" marker-end="url(#cs-arrow)"/>
+  <text x="302" y="221" fill="#702a23" font-family="Arial,sans-serif" font-size="17">planned: Longstreet + Whiting</text>
+  <text x="307" y="430" fill="#702a23" font-family="Arial,sans-serif" font-size="17">planned: D. H. Hill</text>
+  <text x="318" y="603" fill="#702a23" font-family="Arial,sans-serif" font-size="17">planned: Huger, then turn north</text>
+
+  <path d="M259 255 C330 288 355 345 402 382" fill="none" stroke="#9a3d32" stroke-width="13" marker-end="url(#cs-arrow)"/>
+  <text x="300" y="273" fill="#702a23" font-family="Arial,sans-serif" font-size="19" font-weight="700">Longstreet takes the wrong road</text>
+  <path d="M404 393 C554 393 686 394 818 391" fill="none" stroke="#9a3d32" stroke-width="13" marker-end="url(#cs-arrow)"/>
+  <text x="427" y="462" fill="#702a23" font-family="Arial,sans-serif" font-size="18" font-weight="700">Hill attacks about 1 p.m.</text>
+  <path d="M286 556 C410 554 528 551 631 548" fill="none" stroke="#9a3d32" stroke-width="13"/>
+  <line x1="623" y1="526" x2="655" y2="570" stroke="#702a23" stroke-width="7"/>
+  <line x1="655" y1="526" x2="623" y2="570" stroke="#702a23" stroke-width="7"/>
+  <text x="461" y="636" fill="#702a23" font-family="Arial,sans-serif" font-size="18" font-weight="700">Huger delayed behind Longstreet</text>
+
+  <rect x="849" y="365" width="88" height="31" rx="5" fill="#dce9f2" stroke="#315f8c" stroke-width="3"/>
+  <text x="893" y="387" text-anchor="middle" fill="#234866" font-family="Arial,sans-serif" font-size="16" font-weight="700">Casey</text>
+  <rect x="921" y="427" width="94" height="31" rx="5" fill="#dce9f2" stroke="#315f8c" stroke-width="3"/>
+  <text x="968" y="449" text-anchor="middle" fill="#234866" font-family="Arial,sans-serif" font-size="16" font-weight="700">Couch</text>
+  <path d="M1050 512 C1005 486 958 471 907 459" fill="none" stroke="#315f8c" stroke-width="12" marker-end="url(#us-arrow)"/>
+  <text x="916" y="551" fill="#234866" font-family="Arial,sans-serif" font-size="18" font-weight="700">Kearny counterattacks</text>
+  <text x="957" y="575" fill="#234866" font-family="Arial,sans-serif" font-size="17">about 3 p.m.</text>
+
+  <path d="M733 393 C771 341 820 302 873 284 C916 269 954 286 978 323" fill="none" stroke="#9a3d32" stroke-width="11" marker-end="url(#cs-arrow)"/>
+  <text x="708" y="292" fill="#702a23" font-family="Arial,sans-serif" font-size="18" font-weight="700">Anderson / Jenkins split the line</text>
+  <text x="748" y="318" fill="#702a23" font-family="Arial,sans-serif" font-size="17">about 4 p.m.</text>
+  <path d="M523 188 C640 190 722 196 802 210" fill="none" stroke="#9a3d32" stroke-width="11" marker-end="url(#cs-arrow)"/>
+  <text x="542" y="244" fill="#702a23" font-family="Arial,sans-serif" font-size="18" font-weight="700">Johnston leads Whiting forward late</text>
+
+  <rect x="676" y="424" width="165" height="81" rx="12" fill="url(#woods)" stroke="#66805f" stroke-width="2"/>
+  <text x="759" y="487" text-anchor="middle" fill="#334c31" font-family="Arial,sans-serif" font-size="17" font-weight="700">woods / abatis</text>
+
+  <text x="42" y="54" fill="#2c2925" font-family="Georgia,serif" font-size="34" font-weight="700">Fair Oaks / Seven Pines: plan and execution</text>
+  <text x="44" y="88" fill="#5c574f" font-family="Arial,sans-serif" font-size="20">May 31, 1862, through late afternoon • schematic, not to scale</text>
+  <rect x="44" y="666" width="603" height="58" rx="10" fill="#fffaf0" stroke="#b8aa94"/>
+  <line x1="69" y1="695" x2="134" y2="695" stroke="#9a3d32" stroke-width="7" stroke-dasharray="14 8" marker-end="url(#cs-arrow)"/>
+  <text x="151" y="702" font-family="Arial,sans-serif" font-size="18" fill="#292929">intended Confederate route</text>
+  <line x1="394" y1="695" x2="459" y2="695" stroke="#9a3d32" stroke-width="10" marker-end="url(#cs-arrow)"/>
+  <text x="478" y="702" font-family="Arial,sans-serif" font-size="18" fill="#292929">actual movement</text>
+</svg>

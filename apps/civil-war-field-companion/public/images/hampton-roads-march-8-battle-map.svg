@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">The March 8, 1862 fighting at Hampton Roads</title>
+  <desc id="desc">Schematic tactical map showing CSS Virginia moving past USS Congress, ramming and sinking USS Cumberland, turning back to force Congress to surrender and burn, firing toward grounded USS Minnesota, and withdrawing to Sewell's Point.</desc>
+  <defs>
+    <marker id="redArrow" markerWidth="16" markerHeight="16" refX="13" refY="8" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L16,8 L0,16 Z" fill="#9b3d35"/></marker>
+    <marker id="grayArrow" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L14,7 L0,14 Z" fill="#6f6659"/></marker>
+  </defs>
+  <rect width="1200" height="760" fill="#d9e8ec"/>
+  <path d="M0 0H400C425 119 394 215 335 286C280 352 172 386 0 403Z" fill="#eee5cf" stroke="#8e846d" stroke-width="3"/>
+  <path d="M0 760V643C154 618 281 621 385 661C449 685 499 719 532 760Z" fill="#eee5cf" stroke="#8e846d" stroke-width="3"/>
+  <path d="M1200 0H1020C1002 104 1015 196 1064 281C1110 360 1160 395 1200 413Z" fill="#eee5cf" stroke="#8e846d" stroke-width="3"/>
+  <g font-family="Arial,sans-serif" fill="#17241e">
+    <text x="55" y="70" font-size="29" font-weight="700">Newport News Point</text>
+    <text x="1000" y="70" font-size="27" font-weight="700">Fort Monroe</text>
+    <text x="919" y="684" font-size="27" font-weight="700">Sewell's Point</text>
+    <text x="995" y="715" font-size="17">Virginia anchored here</text>
+  </g>
+  <g font-family="Arial,sans-serif" font-weight="700">
+    <rect x="210" y="264" width="54" height="18" rx="4" fill="#245f8a" transform="rotate(-15 237 273)"/><text x="91" y="250" font-size="21" fill="#245f8a">USS Cumberland</text>
+    <rect x="314" y="380" width="54" height="18" rx="4" fill="#245f8a" transform="rotate(-15 341 389)"/><text x="194" y="425" font-size="21" fill="#245f8a">USS Congress</text>
+    <rect x="705" y="305" width="60" height="18" rx="4" fill="#245f8a"/><text x="656" y="286" font-size="21" fill="#245f8a">USS Minnesota</text><text x="665" y="346" font-size="16" fill="#50483b">grounded</text>
+    <rect x="812" y="240" width="54" height="18" rx="4" fill="#245f8a"/><text x="788" y="219" font-size="19" fill="#245f8a">St. Lawrence</text><text x="797" y="280" font-size="16" fill="#50483b">grounded, then freed</text>
+    <rect x="972" y="151" width="54" height="18" rx="4" fill="#245f8a"/><text x="936" y="132" font-size="19" fill="#245f8a">USS Roanoke</text>
+  </g>
+  <path d="M952 637C817 595 664 562 532 526C400 490 279 426 254 350C235 292 247 261 287 263" fill="none" stroke="#9b3d35" stroke-width="11" stroke-linecap="round" marker-end="url(#redArrow)"/>
+  <path d="M300 286C372 305 435 339 470 389C506 441 457 470 390 432" fill="none" stroke="#9b3d35" stroke-width="11" stroke-linecap="round" marker-end="url(#redArrow)"/>
+  <path d="M399 436C520 461 618 451 714 365" fill="none" stroke="#9b3d35" stroke-width="8" stroke-dasharray="13 10" marker-end="url(#redArrow)"/>
+  <path d="M701 382C758 465 821 537 929 614" fill="none" stroke="#6f6659" stroke-width="7" stroke-dasharray="13 10" marker-end="url(#grayArrow)"/>
+  <g font-family="Arial,sans-serif" font-weight="700">
+    <g><circle cx="770" cy="570" r="22" fill="#9b3d35"/><text x="763" y="578" font-size="22" fill="white">1</text><text x="796" y="576" font-size="20" fill="#9b3d35">11 a.m.–2 p.m.: Virginia approaches</text></g>
+    <g><circle cx="277" cy="319" r="22" fill="#9b3d35"/><text x="270" y="327" font-size="22" fill="white">2</text><text x="32" y="333" font-size="18" fill="#9b3d35">3 p.m.: ram strikes Cumberland</text></g>
+    <g><circle cx="465" cy="345" r="22" fill="#9b3d35"/><text x="458" y="353" font-size="22" fill="white">3</text><text x="494" y="351" font-size="18" fill="#9b3d35">Virginia turns for about 30 minutes</text></g>
+    <g><circle cx="397" cy="420" r="22" fill="#9b3d35"/><text x="390" y="428" font-size="22" fill="white">4</text><text x="421" y="415" font-size="18" fill="#9b3d35">4–4:30 p.m.: Congress surrenders</text></g>
+    <g><circle cx="632" cy="426" r="22" fill="#9b3d35"/><text x="625" y="434" font-size="22" fill="white">5</text><text x="659" y="432" font-size="18" fill="#9b3d35">Long-range fire at Minnesota</text></g>
+    <g><circle cx="880" cy="525" r="22" fill="#6f6659"/><text x="873" y="533" font-size="22" fill="white">6</text><text x="905" y="531" font-size="18" fill="#50483b">6:30 p.m.: withdrawal</text></g>
+  </g>
+  <g font-family="Arial,sans-serif" font-size="17" fill="#50483b">
+    <text x="35" y="692">Blue rectangles show principal United States warships. Red arrows show Virginia's attacks.</text>
+    <text x="35" y="720">The Confederate gunboats Patrick Henry, Jamestown, and Teaser supported the attack from the James River.</text>
+    <text x="948" y="748" font-family="Georgia,serif">Schematic; not to scale</text>
+  </g>
+</svg>

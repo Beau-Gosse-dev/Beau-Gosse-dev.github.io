@@ -1,0 +1,42 @@
+.command-tree-heading { margin-bottom: 28px; }
+.command-tree-eyebrow { color: var(--rust); font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.command-tree-heading h3 { margin: 10px 0; font-size: clamp(24px, 3vw, 32px); }
+.command-tree-heading p, .other-people-intro { max-width: 780px; color: var(--muted); font-size: 13px; line-height: 1.7; }
+.command-tree-armies { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px; }
+.command-tree-army { --army-color: #315e78; min-width: 0; border-top: 3px solid var(--army-color); }
+.command-tree-army.confederate { --army-color: var(--rust); }
+.command-tree-army > h3 { margin: 0; padding: 18px 0; color: var(--army-color); font-size: 26px; }
+.command-tree-army ul { list-style: none; padding: 0; margin: 0; }
+.command-tree-branch { position: relative; min-width: 0; }
+.command-tree-branch > ul { margin: 0 0 0 24px; padding: 16px 0 0 24px; }
+.command-tree-branch > ul > li { padding-bottom: 16px; }
+.command-tree-branch > ul > li:last-child { padding-bottom: 0; }
+.command-tree-branch > ul > li::before { content: ''; position: absolute; left: -25px; top: -16px; bottom: 0; border-left: 1px solid var(--army-color); opacity: .5; }
+.command-tree-branch > ul > li:last-child::before { height: 65px; bottom: auto; }
+.command-tree-branch > ul > li::after { content: ''; position: absolute; left: -25px; top: 49px; width: 25px; border-top: 1px solid var(--army-color); opacity: .5; }
+.people-person.person-card { display: grid; grid-template-columns: 76px minmax(0, 1fr); min-height: 108px; border: 1px solid var(--rule); background: var(--paper); }
+.people-person.person-card > img, .people-person .portrait-placeholder { display: block; width: 76px; height: 100%; min-height: 108px; max-height: 152px; object-fit: cover; object-position: center 22%; }
+.people-person .portrait-placeholder { display: grid; place-items: center; font-size: 24px; }
+.people-person.person-card > .people-person-copy { padding: 14px 16px; min-width: 0; }
+.people-person .side { display: block; font-size: 9px; line-height: 1.5; }
+.people-person h4 { margin: 5px 0 6px; font-size: 23px; line-height: 1.12; }
+.people-person.person-card p { font-size: 12px; line-height: 1.6; }
+.command-tree-note { margin-top: 26px; padding: 17px 20px; border-left: 3px solid var(--rule); background: rgba(255, 253, 247, .5); }
+.command-tree-note strong { font-size: 11px; text-transform: uppercase; letter-spacing: .06em; }
+.command-tree-note p { margin: 7px 0 0; color: var(--muted); font-size: 12px; line-height: 1.7; }
+.other-people { margin-top: 38px; }
+.other-people .subsection-title { margin-bottom: 10px; }
+.other-people-intro { margin: 0 0 18px; }
+.other-people-list { padding: 0; margin: 0; list-style: none; display: grid; gap: 12px; }
+.other-people-list .people-person { grid-template-columns: 64px minmax(0, 1fr); min-height: 88px; }
+.other-people-list .people-person > img, .other-people-list .portrait-placeholder { width: 64px; min-height: 88px; max-height: 110px; }
+@media (max-width: 1000px) { .command-tree-armies { grid-template-columns: minmax(0, 1fr); gap: 32px; } }
+@media (max-width: 520px) {
+  .command-tree-branch > ul { margin-left: 10px; padding-left: 12px; }
+  .command-tree-branch > ul > li::before, .command-tree-branch > ul > li::after { left: -13px; }
+  .command-tree-branch > ul > li::after { width: 13px; }
+  .people-person.person-card { grid-template-columns: 58px minmax(0, 1fr); }
+  .people-person.person-card > img, .people-person .portrait-placeholder { width: 58px; max-height: 180px; }
+  .people-person.person-card > .people-person-copy { padding: 12px; }
+  .people-person h4 { font-size: 21px; }
+}

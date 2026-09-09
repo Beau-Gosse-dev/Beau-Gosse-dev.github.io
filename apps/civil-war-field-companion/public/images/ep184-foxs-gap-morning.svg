@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Morning fighting at Fox's Gap, September 14, 1862</title>
+  <desc id="desc">Two-panel schematic tactical map. The left panel shows the 23rd and 30th Ohio advancing west against Samuel Garland's extended North Carolina brigade near the Daniel Wise farm around 9 a.m. The right panel shows United States troops pressing the Confederate front and flanks around 11:30 a.m., forcing Garland's brigade to withdraw and leaving Cox's division in possession of Fox's Gap shortly after noon.</desc>
+  <defs>
+    <linearGradient id="paper2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8f2e3"/>
+      <stop offset="1" stop-color="#eadfc7"/>
+    </linearGradient>
+    <pattern id="trees" width="46" height="42" patternUnits="userSpaceOnUse">
+      <circle cx="11" cy="18" r="9" fill="#81906b" opacity="0.42"/>
+      <circle cx="27" cy="12" r="10" fill="#677a58" opacity="0.35"/>
+      <circle cx="37" cy="29" r="9" fill="#728260" opacity="0.38"/>
+    </pattern>
+    <marker id="blueArrow2" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 18 18">
+      <path d="M0 0 L18 9 L0 18 Z" fill="#315f8c"/>
+    </marker>
+    <marker id="redArrow2" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 18 18">
+      <path d="M0 0 L18 9 L0 18 Z" fill="#963b31"/>
+    </marker>
+    <filter id="shadow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#paper2)"/>
+  <rect x="28" y="28" width="1144" height="744" rx="18" fill="none" stroke="#978a71" stroke-width="2"/>
+  <text x="60" y="76" font-family="Georgia, serif" font-size="31" font-weight="700" fill="#2e2b28">FOX'S GAP: THE MORNING FIGHT</text>
+  <text x="60" y="108" font-family="Arial, sans-serif" font-size="18" fill="#5d5548">Cox's Kanawha Division against Garland's brigade · September 14, 1862</text>
+
+  <g transform="translate(52 142)">
+    <rect width="530" height="535" rx="12" fill="#e4ead6" stroke="#978a71" stroke-width="2"/>
+    <rect width="530" height="535" rx="12" fill="url(#trees)"/>
+    <text x="24" y="40" font-family="Georgia, serif" font-size="23" font-weight="700" fill="#2e2b28">1 · About 9:00 a.m.</text>
+    <text x="24" y="66" font-family="Arial, sans-serif" font-size="15" fill="#5d5548">First contact and Federal attack from the east</text>
+
+    <path d="M340 82 C315 154 355 216 332 280 C307 350 350 413 325 505" fill="none" stroke="#776f5c" stroke-width="40" opacity="0.42"/>
+    <path d="M340 82 C315 154 355 216 332 280 C307 350 350 413 325 505" fill="none" stroke="#8e846c" stroke-width="5" stroke-dasharray="10 9"/>
+    <text x="363" y="165" transform="rotate(78 363 165)" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#514c41">Mountain crest</text>
+
+    <path d="M38 333 C146 326 247 319 334 310 C407 302 465 292 509 278" fill="none" stroke="#9c7e50" stroke-width="12" opacity="0.78"/>
+    <path d="M38 333 C146 326 247 319 334 310 C407 302 465 292 509 278" fill="none" stroke="#fff4d8" stroke-width="4"/>
+    <text x="381" y="335" font-family="Arial, sans-serif" font-size="14" fill="#5d5548">Old Sharpsburg Road</text>
+
+    <rect x="347" y="245" width="58" height="39" fill="#d6be8a" stroke="#614f39" stroke-width="2"/>
+    <path d="M341 245 L376 219 L411 245 Z" fill="#8d4f3e" stroke="#614f39" stroke-width="2"/>
+    <text x="419" y="241" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#2e2b28">Wise farm</text>
+    <text x="419" y="259" font-family="Arial, sans-serif" font-size="13" fill="#5d5548">Fox's Gap</text>
+
+    <path d="M346 148 C390 164 424 188 453 221" fill="none" stroke="#963b31" stroke-width="10" stroke-linecap="round"/>
+    <path d="M331 190 C385 207 423 230 456 263" fill="none" stroke="#963b31" stroke-width="10" stroke-linecap="round"/>
+    <path d="M333 281 C391 291 427 309 462 338" fill="none" stroke="#963b31" stroke-width="10" stroke-linecap="round"/>
+    <path d="M326 357 C378 369 420 390 455 424" fill="none" stroke="#963b31" stroke-width="10" stroke-linecap="round"/>
+    <path d="M321 414 C365 427 401 447 432 475" fill="none" stroke="#963b31" stroke-width="10" stroke-linecap="round"/>
+    <text x="355" y="125" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#963b31">Garland's brigade</text>
+    <text x="355" y="144" font-family="Arial, sans-serif" font-size="13" fill="#963b31">five N.C. regiments · line extended</text>
+
+    <path d="M72 252 C151 250 232 248 307 267" fill="none" stroke="#315f8c" stroke-width="13" stroke-linecap="round" marker-end="url(#blueArrow2)"/>
+    <path d="M72 382 C151 379 228 364 306 335" fill="none" stroke="#315f8c" stroke-width="13" stroke-linecap="round" marker-end="url(#blueArrow2)"/>
+    <text x="64" y="222" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#315f8c">23rd Ohio</text>
+    <text x="64" y="416" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#315f8c">30th Ohio</text>
+    <text x="65" y="450" font-family="Arial, sans-serif" font-size="14" fill="#315f8c">Scammon's brigade</text>
+
+    <g transform="translate(35 468)" font-family="Arial, sans-serif">
+      <rect width="250" height="49" rx="8" fill="#fffaf0" stroke="#978a71" filter="url(#shadow2)"/>
+      <text x="14" y="21" font-size="14" font-weight="700" fill="#2e2b28">Hayes wounded during the attack</text>
+      <text x="14" y="39" font-size="13" fill="#5d5548">Garland killed while directing defense</text>
+    </g>
+  </g>
+
+  <g transform="translate(618 142)">
+    <rect width="530" height="535" rx="12" fill="#e4ead6" stroke="#978a71" stroke-width="2"/>
+    <rect width="530" height="535" rx="12" fill="url(#trees)"/>
+    <text x="24" y="40" font-family="Georgia, serif" font-size="23" font-weight="700" fill="#2e2b28">2 · 11:30 a.m. to shortly after noon</text>
+    <text x="24" y="66" font-family="Arial, sans-serif" font-size="15" fill="#5d5548">Garland's line gives way; Cox occupies the gap</text>
+
+    <path d="M340 82 C315 154 355 216 332 280 C307 350 350 413 325 505" fill="none" stroke="#776f5c" stroke-width="40" opacity="0.42"/>
+    <path d="M340 82 C315 154 355 216 332 280 C307 350 350 413 325 505" fill="none" stroke="#8e846c" stroke-width="5" stroke-dasharray="10 9"/>
+    <path d="M38 333 C146 326 247 319 334 310 C407 302 465 292 509 278" fill="none" stroke="#9c7e50" stroke-width="12" opacity="0.78"/>
+    <path d="M38 333 C146 326 247 319 334 310 C407 302 465 292 509 278" fill="none" stroke="#fff4d8" stroke-width="4"/>
+    <text x="381" y="335" font-family="Arial, sans-serif" font-size="14" fill="#5d5548">Old Sharpsburg Road</text>
+
+    <rect x="347" y="245" width="58" height="39" fill="#d6be8a" stroke="#614f39" stroke-width="2"/>
+    <path d="M341 245 L376 219 L411 245 Z" fill="#8d4f3e" stroke="#614f39" stroke-width="2"/>
+    <text x="419" y="241" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#2e2b28">Wise farm</text>
+    <text x="419" y="259" font-family="Arial, sans-serif" font-size="13" fill="#5d5548">Fox's Gap</text>
+
+    <path d="M82 252 C164 243 244 242 317 269" fill="none" stroke="#315f8c" stroke-width="13" stroke-linecap="round" marker-end="url(#blueArrow2)"/>
+    <path d="M77 365 C161 361 236 347 316 321" fill="none" stroke="#315f8c" stroke-width="13" stroke-linecap="round" marker-end="url(#blueArrow2)"/>
+    <path d="M148 150 C216 151 275 176 332 217" fill="none" stroke="#315f8c" stroke-width="10" stroke-linecap="round" marker-end="url(#blueArrow2)"/>
+    <path d="M145 447 C211 426 269 396 326 354" fill="none" stroke="#315f8c" stroke-width="10" stroke-linecap="round" marker-end="url(#blueArrow2)"/>
+    <text x="72" y="222" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#315f8c">Federal pressure</text>
+    <text x="72" y="397" font-family="Arial, sans-serif" font-size="14" fill="#315f8c">front and flanks</text>
+
+    <path d="M356 176 C395 195 420 213 449 237" fill="none" stroke="#963b31" stroke-width="9" stroke-dasharray="12 8" marker-end="url(#redArrow2)" opacity="0.82"/>
+    <path d="M355 233 C408 257 441 281 469 313" fill="none" stroke="#963b31" stroke-width="9" stroke-dasharray="12 8" marker-end="url(#redArrow2)" opacity="0.82"/>
+    <path d="M349 320 C404 344 438 371 467 402" fill="none" stroke="#963b31" stroke-width="9" stroke-dasharray="12 8" marker-end="url(#redArrow2)" opacity="0.82"/>
+    <path d="M345 392 C390 417 418 444 441 475" fill="none" stroke="#963b31" stroke-width="9" stroke-dasharray="12 8" marker-end="url(#redArrow2)" opacity="0.82"/>
+    <text x="328" y="119" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#963b31">Garland's brigade</text>
+    <text x="328" y="138" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#963b31">withdraws west</text>
+    <text x="328" y="156" font-family="Arial, sans-serif" font-size="13" fill="#963b31">McRae assumes command</text>
+
+    <g transform="translate(36 466)" font-family="Arial, sans-serif">
+      <rect width="274" height="51" rx="8" fill="#fffaf0" stroke="#978a71" filter="url(#shadow2)"/>
+      <text x="14" y="22" font-size="14" font-weight="700" fill="#2e2b28">Cox holds Fox's Gap after noon</text>
+      <text x="14" y="40" font-size="13" fill="#5d5548">Division pauses and awaits support</text>
+    </g>
+  </g>
+
+  <g transform="translate(60 701)" font-family="Arial, sans-serif">
+    <path d="M0 14 H57" stroke="#315f8c" stroke-width="9" marker-end="url(#blueArrow2)"/>
+    <text x="75" y="20" font-size="15" fill="#2e2b28">United States advance</text>
+    <path d="M276 14 H333" stroke="#963b31" stroke-width="8"/>
+    <text x="350" y="20" font-size="15" fill="#2e2b28">Confederate defensive line</text>
+    <path d="M611 14 H668" stroke="#963b31" stroke-width="8" stroke-dasharray="11 7" marker-end="url(#redArrow2)"/>
+    <text x="685" y="20" font-size="15" fill="#2e2b28">Confederate withdrawal</text>
+  </g>
+  <text x="1128" y="750" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#5d5548">Schematic · not to scale · unit positions generalized</text>
+</svg>

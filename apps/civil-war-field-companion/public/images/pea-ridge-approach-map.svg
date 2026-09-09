@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Curtis pursues Price from central Missouri into northwest Arkansas</title>
+  <desc id="desc">Schematic map showing the Telegraph Road from Rolla through Lebanon, Springfield, the Arkansas border, Cross Hollow, Fayetteville, and Strickler Station. Blue arrows show the United States advance south. Red arrows show the Missouri State Guard retreat south.</desc>
+  <defs>
+    <marker id="blueArrow" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L14,7 L0,14 Z" fill="#245f8a"/></marker>
+    <marker id="redArrow" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L14,7 L0,14 Z" fill="#9b3d35"/></marker>
+    <filter id="paper"><feTurbulence baseFrequency=".5" numOctaves="2" seed="9" type="fractalNoise" result="noise"/><feBlend in="SourceGraphic" in2="noise" mode="soft-light"/></filter>
+  </defs>
+  <rect width="1200" height="760" fill="#f2ead8"/>
+  <path d="M0 515 C210 496 360 540 560 515 C770 489 940 530 1200 500" fill="none" stroke="#6b573c" stroke-width="3" stroke-dasharray="12 10"/>
+  <text x="60" y="493" font-family="Georgia,serif" font-size="25" fill="#5d4b34">Missouri</text>
+  <text x="60" y="552" font-family="Georgia,serif" font-size="25" fill="#5d4b34">Arkansas</text>
+  <path d="M430 65 C460 145 445 200 478 270 C508 330 500 405 545 474 C570 515 565 575 604 646" fill="none" stroke="#695f50" stroke-width="12" opacity=".25"/>
+  <path d="M430 65 C460 145 445 200 478 270 C508 330 500 405 545 474 C570 515 565 575 604 646" fill="none" stroke="#4d463c" stroke-width="3"/>
+  <text x="642" y="335" transform="rotate(72 642 335)" font-family="Arial,sans-serif" font-size="18" letter-spacing="3" fill="#665c4d">TELEGRAPH ROAD</text>
+  <path d="M282 70 C300 170 352 250 420 326 C468 380 494 428 530 476 C566 526 579 579 600 642" fill="none" stroke="#245f8a" stroke-width="9" stroke-linecap="round" marker-end="url(#blueArrow)"/>
+  <path d="M770 294 C704 342 630 382 550 425 C530 438 522 456 532 477 C548 514 579 570 604 642" fill="none" stroke="#9b3d35" stroke-width="9" stroke-linecap="round" marker-end="url(#redArrow)"/>
+  <g font-family="Arial,sans-serif" fill="#17241e">
+    <circle cx="430" cy="65" r="9" fill="#17241e"/><text x="455" y="73" font-size="25" font-weight="700">Rolla</text><text x="455" y="98" font-size="17">railhead and Curtis's headquarters</text>
+    <circle cx="465" cy="190" r="9" fill="#17241e"/><text x="490" y="198" font-size="25" font-weight="700">Lebanon</text><text x="490" y="223" font-size="17">Army of the Southwest organized here</text>
+    <circle cx="478" cy="300" r="9" fill="#17241e"/><text x="503" y="308" font-size="25" font-weight="700">Springfield</text><text x="503" y="333" font-size="17">Price withdrew on February 12</text>
+    <circle cx="545" cy="474" r="9" fill="#17241e"/><text x="570" y="467" font-size="24" font-weight="700">Arkansas border</text><text x="570" y="492" font-size="17">Little Sugar Creek fighting, February 17</text>
+    <circle cx="568" cy="548" r="9" fill="#17241e"/><text x="593" y="556" font-size="24" font-weight="700">Cross Hollow</text>
+    <circle cx="586" cy="597" r="9" fill="#17241e"/><text x="611" y="605" font-size="24" font-weight="700">Fayetteville</text>
+    <circle cx="604" cy="646" r="9" fill="#17241e"/><text x="629" y="654" font-size="24" font-weight="700">Strickler Station</text><text x="629" y="679" font-size="17">Price and McCulloch concentrated nearby</text>
+  </g>
+  <g font-family="Arial,sans-serif" font-size="20" font-weight="700">
+    <line x1="70" y1="680" x2="150" y2="680" stroke="#245f8a" stroke-width="9" marker-end="url(#blueArrow)"/><text x="175" y="687" fill="#245f8a">Curtis advances</text>
+    <line x1="70" y1="720" x2="150" y2="720" stroke="#9b3d35" stroke-width="9" marker-end="url(#redArrow)"/><text x="175" y="727" fill="#9b3d35">Price retreats</text>
+  </g>
+  <text x="930" y="62" font-family="Georgia,serif" font-size="21" fill="#5d4b34">Schematic; not to scale</text>
+</svg>

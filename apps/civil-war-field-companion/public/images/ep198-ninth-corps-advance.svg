@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Ninth Corps advances toward Sharpsburg</title>
+  <desc id="desc">Schematic tactical map with north at top. Willcox's division advances on the right along the Lower Bridge road, while Rodman's division advances on the left and begins turning north. Crook and Scammon support the two wings; Sturgis remains in reserve. Fairchild's brigade breaks Kemper and Drayton near the Harpers Ferry Road. A dashed Confederate arrow marks A. P. Hill approaching from the south but not yet attacking during this episode.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbf4e4"/>
+      <stop offset="1" stop-color="#e4d6b8"/>
+    </linearGradient>
+    <marker id="blueArrow" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 16 16">
+      <path d="M0 0L16 8L0 16Z" fill="#315f8c"/>
+    </marker>
+    <marker id="redArrow" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 16 16">
+      <path d="M0 0L16 8L0 16Z" fill="#963b31"/>
+    </marker>
+    <pattern id="orchard" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="15" cy="15" r="6" fill="#65734f" opacity="0.62"/>
+      <circle cx="15" cy="15" r="2" fill="#35432f" opacity="0.8"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#paper)"/>
+  <rect x="28" y="28" width="1144" height="744" rx="18" fill="none" stroke="#97896f" stroke-width="2"/>
+  <text x="60" y="75" font-family="Georgia, serif" font-size="31" font-weight="700" fill="#2f2b27">NINTH CORPS ADVANCES ON SHARPSBURG</text>
+  <text x="60" y="106" font-family="Arial, sans-serif" font-size="18" fill="#5c5549">Willcox on the right · Rodman on the left · about 3:00–3:30 p.m. · north is up</text>
+  <rect x="48" y="128" width="1104" height="610" fill="#e8e4cf"/>
+
+  <path d="M1053 128C1018 232 1048 344 1012 448C984 530 1008 631 982 738" fill="none" stroke="#56809a" stroke-width="44" opacity="0.84"/>
+  <path d="M1053 128C1018 232 1048 344 1012 448C984 530 1008 631 982 738" fill="none" stroke="#a9d0da" stroke-width="25"/>
+  <text x="1085" y="380" font-family="Georgia, serif" font-size="18" font-weight="700" fill="#31596d" transform="rotate(83 1085 380)">ANTIETAM CREEK</text>
+
+  <path d="M125 271C323 293 527 318 721 361C830 385 916 410 999 453" fill="none" stroke="#9c7a52" stroke-width="18"/>
+  <path d="M125 271C323 293 527 318 721 361C830 385 916 410 999 453" fill="none" stroke="#efd4a2" stroke-width="7"/>
+  <rect x="552" y="318" width="294" height="31" rx="6" fill="#fffaf0" opacity="0.96"/>
+  <text x="699" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#654d36">LOWER-BRIDGE ROAD</text>
+
+  <path d="M206 166C223 291 227 430 242 706" fill="none" stroke="#8a6d4d" stroke-width="17"/>
+  <path d="M206 166C223 291 227 430 242 706" fill="none" stroke="#d3bd90" stroke-width="7"/>
+  <rect x="86" y="497" width="244" height="31" rx="6" fill="#fffaf0" opacity="0.96"/>
+  <text x="208" y="519" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#654d36">HARPERS FERRY ROAD</text>
+
+  <g transform="translate(145 219)" filter="url(#shadow)">
+    <rect x="-78" y="-41" width="156" height="82" rx="9" fill="#efe1ca" stroke="#7d6f5d" stroke-width="2"/>
+    <text x="0" y="-10" text-anchor="middle" font-family="Georgia, serif" font-size="20" font-weight="700" fill="#302b26">SHARPSBURG</text>
+    <text x="0" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5b544b">town and road to</text>
+    <text x="0" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5b544b">Shepherdstown Ford</text>
+  </g>
+
+  <rect x="681" y="184" width="210" height="112" rx="18" fill="url(#orchard)" opacity="0.82"/>
+  <text x="786" y="246" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#34412e">SHERRICK FARM</text>
+  <rect x="623" y="535" width="228" height="125" rx="20" fill="url(#orchard)" opacity="0.82"/>
+  <text x="737" y="601" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#34412e">OTTO FARM</text>
+
+  <path d="M280 234C301 302 309 392 303 487" fill="none" stroke="#963b31" stroke-width="14"/>
+  <path d="M304 511C296 573 284 628 270 682" fill="none" stroke="#963b31" stroke-width="14"/>
+  <g font-family="Arial, sans-serif" filter="url(#shadow)">
+    <g transform="translate(368 251)">
+      <rect x="-82" y="-24" width="164" height="48" rx="8" fill="#963b31"/>
+      <text x="0" y="-3" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">KEMPER</text>
+      <text x="0" y="15" text-anchor="middle" font-size="11" fill="#fae9e4">Virginia brigade</text>
+    </g>
+    <g transform="translate(375 558)">
+      <rect x="-82" y="-24" width="164" height="48" rx="8" fill="#963b31"/>
+      <text x="0" y="-3" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">DRAYTON</text>
+      <text x="0" y="15" text-anchor="middle" font-size="11" fill="#fae9e4">Ga. and S.C. brigade</text>
+    </g>
+  </g>
+
+  <g transform="translate(452 156)" font-family="Arial, sans-serif" filter="url(#shadow)">
+    <rect x="-151" y="-22" width="302" height="44" rx="8" fill="#f7e8dc" stroke="#963b31" stroke-width="2"/>
+    <text x="0" y="-2" text-anchor="middle" font-size="13" font-weight="700" fill="#7a332c">CONFEDERATE ARTILLERY ON HIGH GROUND</text>
+    <text x="0" y="15" text-anchor="middle" font-size="11" fill="#7a332c">cross-fire over the Federal approach</text>
+  </g>
+  <g stroke="#963b31" stroke-width="4" marker-end="url(#redArrow)">
+    <line x1="398" y1="184" x2="498" y2="287"/>
+    <line x1="489" y1="184" x2="575" y2="332"/>
+  </g>
+
+  <path d="M898 318C774 295 648 287 504 283" fill="none" stroke="#315f8c" stroke-width="12" marker-end="url(#blueArrow)"/>
+  <path d="M885 473C746 462 616 427 484 376" fill="none" stroke="#315f8c" stroke-width="12" marker-end="url(#blueArrow)"/>
+  <path d="M860 613C698 598 567 549 462 476" fill="none" stroke="#315f8c" stroke-width="12" marker-end="url(#blueArrow)"/>
+  <path d="M462 476C399 432 353 385 325 329" fill="none" stroke="#315f8c" stroke-width="9" marker-end="url(#blueArrow)"/>
+
+  <g font-family="Arial, sans-serif" filter="url(#shadow)">
+    <g transform="translate(806 280)">
+      <rect x="-105" y="-30" width="210" height="60" rx="8" fill="#315f8c"/>
+      <text x="0" y="-7" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">WILLCOX'S DIVISION</text>
+      <text x="0" y="13" text-anchor="middle" font-size="11" fill="#eaf2f8">right · directly toward town</text>
+    </g>
+    <g transform="translate(792 442)">
+      <rect x="-96" y="-30" width="192" height="60" rx="8" fill="#315f8c"/>
+      <text x="0" y="-7" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">CROOK SUPPORTS</text>
+      <text x="0" y="13" text-anchor="middle" font-size="11" fill="#eaf2f8">Kanawha brigade</text>
+    </g>
+    <g transform="translate(792 570)">
+      <rect x="-103" y="-30" width="206" height="60" rx="8" fill="#315f8c"/>
+      <text x="0" y="-7" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">RODMAN'S DIVISION</text>
+      <text x="0" y="13" text-anchor="middle" font-size="11" fill="#eaf2f8">left · then wheels north</text>
+    </g>
+    <g transform="translate(524 585)">
+      <rect x="-93" y="-30" width="186" height="60" rx="8" fill="#315f8c"/>
+      <text x="0" y="-7" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">FAIRCHILD</text>
+      <text x="0" y="13" text-anchor="middle" font-size="11" fill="#eaf2f8">New Yorkers break the line</text>
+    </g>
+  </g>
+
+  <g transform="translate(960 687)" font-family="Arial, sans-serif" filter="url(#shadow)">
+    <rect x="-126" y="-28" width="252" height="56" rx="8" fill="#315f8c" opacity="0.9"/>
+    <text x="0" y="-6" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">STURGIS IN RESERVE</text>
+    <text x="0" y="14" text-anchor="middle" font-size="11" fill="#eaf2f8">near the bridge after resupply</text>
+  </g>
+
+  <path d="M393 715C367 678 341 638 315 600" fill="none" stroke="#963b31" stroke-width="10" stroke-dasharray="14 9" marker-end="url(#redArrow)"/>
+  <g transform="translate(532 692)" font-family="Arial, sans-serif" filter="url(#shadow)">
+    <rect x="-141" y="-30" width="282" height="60" rx="8" fill="#f7e8dc" stroke="#963b31" stroke-width="2"/>
+    <text x="0" y="-8" text-anchor="middle" font-size="14" font-weight="700" fill="#7a332c">A. P. HILL APPROACHES</text>
+    <text x="0" y="13" text-anchor="middle" font-size="11" fill="#7a332c">from Harpers Ferry · not yet engaged</text>
+  </g>
+
+  <g transform="translate(1113 171)" font-family="Arial, sans-serif" fill="#2f2b27">
+    <path d="M0 50V0M0 0L-9 18M0 0L9 18" fill="none" stroke="#2f2b27" stroke-width="3"/>
+    <text x="0" y="-9" text-anchor="middle" font-size="18" font-weight="700">N</text>
+  </g>
+
+  <text x="600" y="764" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#5f574d">Schematic and not to scale · positions and routes generalized from NPS interpretation, Cox's report, and the episode transcript</text>
+</svg>

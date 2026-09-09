@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Sharpsburg, Antietam Creek, and the road to Boteler's Ford</title>
+  <desc id="desc">Schematic map with north at top. Sharpsburg lies between the Potomac River on the west and Antietam Creek on the east. The Hagerstown Pike runs north, the Boonsboro Turnpike crosses the creek at Middle Bridge, the Rohrersville Road crosses at Rohrbach Bridge, and a road runs south to Boteler's Ford.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#faf4e5"/>
+      <stop offset="1" stop-color="#e9dcc1"/>
+    </linearGradient>
+    <pattern id="fields" width="54" height="54" patternUnits="userSpaceOnUse" patternTransform="rotate(16)">
+      <path d="M0 9H54M0 27H54M0 45H54" stroke="#bcae8f" stroke-width="2" opacity="0.3"/>
+    </pattern>
+    <marker id="redArrow" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 18 18">
+      <path d="M0 0L18 9L0 18Z" fill="#963b31"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+    <style>
+      .road-edge { fill: none; stroke: #a6774f; stroke-width: 14; stroke-linecap: round; stroke-linejoin: round; }
+      .road { fill: none; stroke: #f4d6a5; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+      .road-label { font: 700 15px Arial, sans-serif; fill: #674d35; paint-order: stroke; stroke: #f7eedb; stroke-width: 5; }
+      .place { font: 700 17px Georgia, serif; fill: #2d2a26; }
+      .small { font: 14px Arial, sans-serif; fill: #4e4940; }
+    </style>
+  </defs>
+  <rect width="1200" height="800" fill="url(#paper)"/>
+  <rect x="28" y="28" width="1144" height="744" rx="18" fill="none" stroke="#998a6d" stroke-width="2"/>
+  <text x="58" y="76" font-family="Georgia, serif" font-size="31" font-weight="700" fill="#2d2a26">SHARPSBURG AND LEE'S LIFELINE</text>
+  <text x="59" y="106" font-family="Arial, sans-serif" font-size="17" fill="#5e574b">Roads and water crossings on the eve of Antietam · September 15, 1862</text>
+
+  <rect x="50" y="127" width="1100" height="605" rx="12" fill="#e8e2c8" stroke="#c5b897"/>
+  <rect x="86" y="145" width="980" height="568" fill="url(#fields)" opacity="0.68"/>
+
+  <path d="M88 144C118 205 95 262 125 324C156 390 110 451 139 516C165 577 130 644 165 712" fill="none" stroke="#4f88a6" stroke-width="38" opacity="0.92"/>
+  <path d="M88 144C118 205 95 262 125 324C156 390 110 451 139 516C165 577 130 644 165 712" fill="none" stroke="#bce0ea" stroke-width="12"/>
+  <text x="91" y="382" transform="rotate(82 91 382)" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#285e7a">POTOMAC RIVER</text>
+
+  <path d="M905 145C876 199 915 249 887 301C853 364 909 414 879 473C843 544 906 613 867 712" fill="none" stroke="#4f88a6" stroke-width="32" opacity="0.92"/>
+  <path d="M905 145C876 199 915 249 887 301C853 364 909 414 879 473C843 544 906 613 867 712" fill="none" stroke="#bce0ea" stroke-width="10"/>
+  <text x="923" y="475" transform="rotate(86 923 475)" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#285e7a">ANTIETAM CREEK</text>
+
+  <path d="M554 170C548 259 554 349 561 437" class="road-edge"/>
+  <path d="M554 170C548 259 554 349 561 437" class="road"/>
+  <text x="514" y="280" transform="rotate(-88 514 280)" class="road-label">HAGERSTOWN PIKE</text>
+
+  <path d="M1124 317C1035 327 968 339 892 347C786 358 686 376 561 398" class="road-edge"/>
+  <path d="M1124 317C1035 327 968 339 892 347C786 358 686 376 561 398" class="road"/>
+  <text x="945" y="302" transform="rotate(-7 945 302)" class="road-label">BOONSBORO TURNPIKE</text>
+
+  <path d="M1123 522C1017 503 958 493 879 489C755 482 671 475 567 465" class="road-edge"/>
+  <path d="M1123 522C1017 503 958 493 879 489C755 482 671 475 567 465" class="road"/>
+  <text x="960" y="548" transform="rotate(8 960 548)" class="road-label">ROHRERSVILLE ROAD</text>
+
+  <path d="M558 426C490 489 405 555 312 622C259 660 216 684 169 701" class="road-edge"/>
+  <path d="M558 426C490 489 405 555 312 622C259 660 216 684 169 701" class="road"/>
+
+  <path d="M885 210L940 207" stroke="#f2d29a" stroke-width="13"/>
+  <path d="M888 346L948 339" stroke="#f2d29a" stroke-width="13"/>
+  <path d="M879 489L939 495" stroke="#f2d29a" stroke-width="13"/>
+  <path d="M869 654L929 664" stroke="#f2d29a" stroke-width="13"/>
+  <g fill="#4c4438" stroke="#fffaf0" stroke-width="3">
+    <circle cx="913" cy="209" r="7"/>
+    <circle cx="918" cy="343" r="7"/>
+    <circle cx="909" cy="492" r="7"/>
+    <circle cx="899" cy="659" r="7"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="948" y="185" width="146" height="43" rx="7" fill="#fffaf0" stroke="#887a62"/>
+    <text x="1021" y="212" text-anchor="middle" class="place">Upper Bridge</text>
+    <rect x="950" y="320" width="154" height="43" rx="7" fill="#fffaf0" stroke="#887a62"/>
+    <text x="1027" y="347" text-anchor="middle" class="place">Middle Bridge</text>
+    <rect x="949" y="468" width="174" height="43" rx="7" fill="#fffaf0" stroke="#887a62"/>
+    <text x="1036" y="495" text-anchor="middle" class="place">Rohrbach Bridge</text>
+    <rect x="949" y="638" width="145" height="43" rx="7" fill="#fffaf0" stroke="#887a62"/>
+    <text x="1021" y="656" text-anchor="middle" class="small">Bridge near</text>
+    <text x="1021" y="674" text-anchor="middle" class="small">creek mouth</text>
+  </g>
+
+  <g transform="translate(562 427)" filter="url(#shadow)">
+    <circle r="11" fill="#5b5245" stroke="#fffaf0" stroke-width="4"/>
+    <rect x="-88" y="17" width="176" height="50" rx="8" fill="#fffaf0" stroke="#887a62"/>
+    <text x="0" y="49" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#2d2a26">SHARPSBURG</text>
+  </g>
+  <g transform="translate(169 701)" filter="url(#shadow)">
+    <circle r="10" fill="#f0bf4b" stroke="#2d2a26" stroke-width="3"/>
+    <rect x="-80" y="-110" width="174" height="48" rx="8" fill="#fffaf0" stroke="#887a62"/>
+    <text x="7" y="-80" text-anchor="middle" class="place">Boteler's Ford</text>
+  </g>
+
+  <path d="M522 500C443 561 352 628 205 691" fill="none" stroke="#963b31" stroke-width="11" stroke-linecap="round" marker-end="url(#redArrow)"/>
+  <rect x="193" y="506" width="280" height="65" rx="9" fill="#fff8ec" stroke="#963b31" filter="url(#shadow)"/>
+  <text x="333" y="533" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#7a3029">CONFEDERATE ESCAPE ROUTE</text>
+  <text x="333" y="556" text-anchor="middle" class="small">Sharpsburg → Potomac → Virginia</text>
+
+  <g transform="translate(1081 155)" font-family="Arial, sans-serif">
+    <path d="M0 56V0" stroke="#2d2a26" stroke-width="4"/>
+    <path d="M0 0L-10 20H10Z" fill="#2d2a26"/>
+    <text x="0" y="82" text-anchor="middle" font-size="17" font-weight="700" fill="#2d2a26">N</text>
+  </g>
+  <text x="1125" y="716" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#5e574b">Schematic · not to scale</text>
+</svg>

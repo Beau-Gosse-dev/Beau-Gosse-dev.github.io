@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Antietam’s immediate strategic consequences</title>
+  <desc id="desc">A three-lane chronology from September 17 to November 5, 1862. The military lane shows Lee's withdrawal and McClellan's delayed advance. The emancipation lane shows Lincoln's September 22 preliminary proclamation. The diplomatic lane shows British mediation debate receding after Antietam while Gladstone speaks for Confederate nationhood as an individual cabinet member.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbf4e4"/>
+      <stop offset="1" stop-color="#e4d6b8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.18"/>
+    </filter>
+    <marker id="grayArrow" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 14 14">
+      <path d="M0 0L14 7L0 14Z" fill="#71695d"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#paper)"/>
+  <rect x="28" y="28" width="1144" height="744" rx="18" fill="none" stroke="#97896f" stroke-width="2"/>
+  <text x="60" y="75" font-family="Georgia, serif" font-size="31" font-weight="700" fill="#2f2b27">ANTIETAM: STRATEGIC CONSEQUENCES</text>
+  <text x="60" y="106" font-family="Arial, sans-serif" font-size="18" fill="#5c5549">September 17–November 5, 1862 · three linked paths</text>
+
+  <rect x="52" y="136" width="1096" height="568" rx="16" fill="#f7f1e3" stroke="#aa9b83" stroke-width="2"/>
+  <rect x="71" y="157" width="1058" height="156" rx="12" fill="#e8edf2"/>
+  <rect x="71" y="333" width="1058" height="156" rx="12" fill="#eee6d5"/>
+  <rect x="71" y="509" width="1058" height="174" rx="12" fill="#e9e6ee"/>
+
+  <g font-family="Georgia, serif" font-size="17" font-weight="700">
+    <rect x="89" y="176" width="154" height="39" rx="8" fill="#315f8c"/>
+    <text x="166" y="202" text-anchor="middle" fill="#fff">MILITARY</text>
+    <rect x="89" y="352" width="154" height="39" rx="8" fill="#8b5b25"/>
+    <text x="166" y="378" text-anchor="middle" fill="#fff">EMANCIPATION</text>
+    <rect x="89" y="528" width="154" height="39" rx="8" fill="#67547d"/>
+    <text x="166" y="554" text-anchor="middle" fill="#fff">DIPLOMACY</text>
+  </g>
+
+  <g font-family="Arial, sans-serif" filter="url(#shadow)">
+    <g transform="translate(356 229)">
+      <rect x="-99" y="-67" width="198" height="134" rx="10" fill="#fff" stroke="#315f8c" stroke-width="3"/>
+      <text x="0" y="-39" text-anchor="middle" font-size="14" font-weight="700" fill="#315f8c">SEPTEMBER 17</text>
+      <text x="0" y="-13" text-anchor="middle" font-size="16" font-weight="700" fill="#2f2b27">Antietam</text>
+      <text x="0" y="12" text-anchor="middle" font-size="12" fill="#4f4a43">tactically inconclusive</text>
+      <text x="0" y="31" text-anchor="middle" font-size="12" fill="#4f4a43">nearly 23,000 casualties</text>
+      <text x="0" y="50" text-anchor="middle" font-size="12" fill="#4f4a43">Lee’s invasion checked</text>
+    </g>
+    <path d="M462 229H513" fill="none" stroke="#71695d" stroke-width="4" marker-end="url(#grayArrow)"/>
+    <g transform="translate(627 229)">
+      <rect x="-99" y="-67" width="198" height="134" rx="10" fill="#fff" stroke="#963b31" stroke-width="3"/>
+      <text x="0" y="-39" text-anchor="middle" font-size="14" font-weight="700" fill="#963b31">SEPTEMBER 18–20</text>
+      <text x="0" y="-13" text-anchor="middle" font-size="16" font-weight="700" fill="#2f2b27">Lee withdraws</text>
+      <text x="0" y="12" text-anchor="middle" font-size="12" fill="#4f4a43">crosses the Potomac</text>
+      <text x="0" y="31" text-anchor="middle" font-size="12" fill="#4f4a43">checks pursuit</text>
+      <text x="0" y="50" text-anchor="middle" font-size="12" fill="#4f4a43">at Shepherdstown</text>
+    </g>
+    <path d="M733 229H784" fill="none" stroke="#71695d" stroke-width="4" marker-end="url(#grayArrow)"/>
+    <g transform="translate(899 229)">
+      <rect x="-99" y="-67" width="198" height="134" rx="10" fill="#fff" stroke="#315f8c" stroke-width="3"/>
+      <text x="0" y="-39" text-anchor="middle" font-size="14" font-weight="700" fill="#315f8c">OCT. 26–NOV. 5</text>
+      <text x="0" y="-13" text-anchor="middle" font-size="16" font-weight="700" fill="#2f2b27">Late Federal advance</text>
+      <text x="0" y="12" text-anchor="middle" font-size="12" fill="#4f4a43">McClellan crosses</text>
+      <text x="0" y="31" text-anchor="middle" font-size="12" fill="#4f4a43">into Virginia, then</text>
+      <text x="0" y="50" text-anchor="middle" font-size="12" fill="#4f4a43">is relieved</text>
+    </g>
+
+    <g transform="translate(356 405)">
+      <rect x="-99" y="-55" width="198" height="110" rx="10" fill="#fff" stroke="#8b5b25" stroke-width="3"/>
+      <text x="0" y="-27" text-anchor="middle" font-size="14" font-weight="700" fill="#8b5b25">JULY 22</text>
+      <text x="0" y="-2" text-anchor="middle" font-size="16" font-weight="700" fill="#2f2b27">Cabinet draft</text>
+      <text x="0" y="22" text-anchor="middle" font-size="12" fill="#4f4a43">Seward advises waiting</text>
+      <text x="0" y="40" text-anchor="middle" font-size="12" fill="#4f4a43">for a military success</text>
+    </g>
+    <path d="M462 405H513" fill="none" stroke="#71695d" stroke-width="4" marker-end="url(#grayArrow)"/>
+    <g transform="translate(627 405)">
+      <rect x="-99" y="-55" width="198" height="110" rx="10" fill="#fff" stroke="#8b5b25" stroke-width="3"/>
+      <text x="0" y="-27" text-anchor="middle" font-size="14" font-weight="700" fill="#8b5b25">SEPTEMBER 22</text>
+      <text x="0" y="-2" text-anchor="middle" font-size="16" font-weight="700" fill="#2f2b27">Preliminary proclamation</text>
+      <text x="0" y="22" text-anchor="middle" font-size="12" fill="#4f4a43">January 1 deadline for</text>
+      <text x="0" y="40" text-anchor="middle" font-size="12" fill="#4f4a43">areas still in rebellion</text>
+    </g>
+    <path d="M733 405H784" fill="none" stroke="#71695d" stroke-width="4" marker-end="url(#grayArrow)"/>
+    <g transform="translate(899 405)">
+      <rect x="-99" y="-55" width="198" height="110" rx="10" fill="#fff" stroke="#8b5b25" stroke-width="3"/>
+      <text x="0" y="-27" text-anchor="middle" font-size="14" font-weight="700" fill="#8b5b25">JANUARY 1, 1863</text>
+      <text x="0" y="-2" text-anchor="middle" font-size="16" font-weight="700" fill="#2f2b27">Final proclamation</text>
+      <text x="0" y="22" text-anchor="middle" font-size="12" fill="#4f4a43">Federal war policy joins</text>
+      <text x="0" y="40" text-anchor="middle" font-size="12" fill="#4f4a43">Union and emancipation</text>
+    </g>
+
+    <g transform="translate(356 593)">
+      <rect x="-99" y="-65" width="198" height="130" rx="10" fill="#fff" stroke="#67547d" stroke-width="3"/>
+      <text x="0" y="-37" text-anchor="middle" font-size="14" font-weight="700" fill="#67547d">SEPTEMBER 17</text>
+      <text x="0" y="-11" text-anchor="middle" font-size="16" font-weight="700" fill="#2f2b27">Mediation discussed</text>
+      <text x="0" y="14" text-anchor="middle" font-size="12" fill="#4f4a43">Russell reacts to news</text>
+      <text x="0" y="33" text-anchor="middle" font-size="12" fill="#4f4a43">of Second Manassas</text>
+      <text x="0" y="52" text-anchor="middle" font-size="12" fill="#4f4a43">before Antietam news arrives</text>
+    </g>
+    <path d="M462 593H513" fill="none" stroke="#71695d" stroke-width="4" marker-end="url(#grayArrow)"/>
+    <g transform="translate(627 593)">
+      <rect x="-99" y="-65" width="198" height="130" rx="10" fill="#fff" stroke="#67547d" stroke-width="3"/>
+      <text x="0" y="-37" text-anchor="middle" font-size="14" font-weight="700" fill="#67547d">OCTOBER 2</text>
+      <text x="0" y="-11" text-anchor="middle" font-size="16" font-weight="700" fill="#2f2b27">Palmerston waits</text>
+      <text x="0" y="14" text-anchor="middle" font-size="12" fill="#4f4a43">Maryland battles have</text>
+      <text x="0" y="33" text-anchor="middle" font-size="12" fill="#4f4a43">improved the North’s position;</text>
+      <text x="0" y="52" text-anchor="middle" font-size="12" fill="#4f4a43">more events are needed</text>
+    </g>
+    <path d="M733 593H784" fill="none" stroke="#71695d" stroke-width="4" marker-end="url(#grayArrow)"/>
+    <g transform="translate(899 593)">
+      <rect x="-99" y="-65" width="198" height="130" rx="10" fill="#fff" stroke="#67547d" stroke-width="3"/>
+      <text x="0" y="-37" text-anchor="middle" font-size="14" font-weight="700" fill="#67547d">OCTOBER 7–24</text>
+      <text x="0" y="-11" text-anchor="middle" font-size="16" font-weight="700" fill="#2f2b27">Cabinet holds neutrality</text>
+      <text x="0" y="14" text-anchor="middle" font-size="12" fill="#4f4a43">Gladstone speaks for himself;</text>
+      <text x="0" y="33" text-anchor="middle" font-size="12" fill="#4f4a43">colleagues reject a change</text>
+      <text x="0" y="52" text-anchor="middle" font-size="12" fill="#4f4a43">in British policy</text>
+    </g>
+  </g>
+
+  <path d="M627 296V345" fill="none" stroke="#8b5b25" stroke-width="4" stroke-dasharray="8 7" marker-end="url(#grayArrow)"/>
+  <path d="M627 472V521" fill="none" stroke="#67547d" stroke-width="4" stroke-dasharray="8 7" marker-end="url(#grayArrow)"/>
+
+  <rect x="79" y="720" width="1042" height="32" rx="7" fill="#fffaf0" stroke="#93846d"/>
+  <text x="600" y="741" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#5f574d">Antietam changed the military and political context; European intervention remained a live debate later in 1862.</text>
+</svg>

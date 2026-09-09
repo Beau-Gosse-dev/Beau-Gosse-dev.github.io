@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="850" viewBox="0 0 1200 850" role="img" aria-labelledby="title desc">
+  <title id="title">Manning's assault and Greene's counteradvance at the Dunker Church</title>
+  <desc id="desc">Schematic tactical map with north at top. Manning's three Confederate regiments charge east from the West Woods across the Hagerstown Turnpike. Greene's two Federal brigades and Tompkins's battery stop the charge, then advance west past the Dunker Church into the West Woods.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#faf4e6"/><stop offset="1" stop-color="#e7dcc6"/></linearGradient>
+    <pattern id="trees" width="38" height="34" patternUnits="userSpaceOnUse"><circle cx="9" cy="18" r="9" fill="#40513b" opacity=".59"/><circle cx="25" cy="9" r="7" fill="#68775b" opacity=".55"/><circle cx="31" cy="28" r="6" fill="#304631" opacity=".49"/></pattern>
+    <marker id="blueArrow" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 16 16"><path d="M0 0L16 8L0 16Z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 16 16"><path d="M0 0L16 8L0 16Z" fill="#963b31"/></marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity=".18"/></filter>
+  </defs>
+  <rect width="1200" height="850" fill="url(#paper)"/>
+  <rect x="28" y="28" width="1144" height="794" rx="18" fill="none" stroke="#97896f" stroke-width="2"/>
+  <text x="60" y="76" font-family="Georgia,serif" font-size="31" font-weight="700" fill="#2f2b27">MANNING’S ASSAULT AT THE DUNKER CHURCH</text>
+  <text x="60" y="108" font-family="Arial,sans-serif" font-size="18" fill="#5c5549">Federal fire stops the charge; Greene then advances west · about 10:00 a.m.</text>
+  <rect x="48" y="130" width="1104" height="646" fill="#e9e6d2"/>
+
+  <path d="M110 130C74 250 92 364 112 475C132 590 92 680 120 776H565V130Z" fill="#58684d"/>
+  <path d="M110 130C74 250 92 364 112 475C132 590 92 680 120 776H565V130Z" fill="url(#trees)"/>
+  <path d="M910 130C870 222 887 308 930 383C967 448 965 548 918 618C882 671 889 727 915 776H1152V130Z" fill="#68765b" opacity=".8"/>
+  <path d="M910 130C870 222 887 308 930 383C967 448 965 548 918 618C882 671 889 727 915 776H1152V130Z" fill="url(#trees)" opacity=".82"/>
+  <rect x="215" y="154" width="174" height="36" rx="7" fill="#fffaf0" opacity=".92"/><text x="302" y="178" text-anchor="middle" font-family="Georgia,serif" font-size="19" font-weight="700" fill="#384535">WEST WOODS</text>
+  <rect x="946" y="154" width="153" height="36" rx="7" fill="#fffaf0" opacity=".92"/><text x="1022" y="178" text-anchor="middle" font-family="Georgia,serif" font-size="19" font-weight="700" fill="#384535">EAST WOODS</text>
+
+  <path d="M645 130C650 270 653 405 650 535C647 630 650 706 656 776" fill="none" stroke="#a97849" stroke-width="22"/>
+  <path d="M645 130C650 270 653 405 650 535C647 630 650 706 656 776" fill="none" stroke="#f1d7a6" stroke-width="7"/>
+  <g transform="translate(684 375) rotate(-89)"><rect x="-96" y="-15" width="192" height="30" rx="6" fill="#fffaf0" opacity=".95"/><text x="0" y="5" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#6b4d31">HAGERSTOWN TURNPIKE</text></g>
+  <path d="M610 342L690 342M610 514L690 514" stroke="#705c43" stroke-width="4" stroke-dasharray="11 7"/>
+  <text x="707" y="346" font-family="Arial,sans-serif" font-size="12" fill="#665747">post-and-rail fences</text>
+
+  <g transform="translate(612 430)" filter="url(#shadow)"><rect x="-17" y="-14" width="34" height="30" fill="#f8f2e0" stroke="#4b4540" stroke-width="2"/><path d="M-22-14L0-32L22-14Z" fill="#5f564c"/><rect x="-5" y="2" width="10" height="14" fill="#776b5c"/></g>
+  <rect x="486" y="461" width="156" height="31" rx="6" fill="#fffaf0" opacity=".95"/><text x="564" y="483" text-anchor="middle" font-family="Georgia,serif" font-size="17" font-weight="700" fill="#342f2b">DUNKER CHURCH</text>
+
+  <g font-family="Arial,sans-serif" filter="url(#shadow)">
+    <g transform="translate(790 330)"><rect x="-91" y="-24" width="182" height="48" rx="8" fill="#315f8c"/><text x="0" y="-2" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">TYNDALE’S BRIGADE</text><text x="0" y="16" text-anchor="middle" font-size="11" fill="#e8f2fa">Federal right</text></g>
+    <g transform="translate(790 570)"><rect x="-98" y="-24" width="196" height="48" rx="8" fill="#315f8c"/><text x="0" y="-2" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">STAINROOK’S BRIGADE</text><text x="0" y="16" text-anchor="middle" font-size="11" fill="#e8f2fa">Federal left</text></g>
+    <g transform="translate(862 449)"><rect x="-98" y="-25" width="196" height="50" rx="8" fill="#e5edf5" stroke="#315f8c" stroke-width="2"/><text x="0" y="-3" text-anchor="middle" font-size="14" font-weight="700" fill="#244d76">TOMPKINS’S BATTERY</text><text x="0" y="16" text-anchor="middle" font-size="11" fill="#244d76">musketry and canister</text></g>
+  </g>
+  <g stroke="#315f8c" stroke-width="13" stroke-linecap="round"><line x1="700" y1="365" x2="884" y2="365"/><line x1="700" y1="535" x2="884" y2="535"/></g>
+
+  <path d="M280 292C390 306 500 321 674 333" fill="none" stroke="#963b31" stroke-width="12" stroke-linecap="round" marker-end="url(#redArrow)"/>
+  <path d="M270 424C393 424 511 425 673 427" fill="none" stroke="#963b31" stroke-width="12" stroke-linecap="round" marker-end="url(#redArrow)"/>
+  <path d="M278 556C394 544 510 531 674 520" fill="none" stroke="#963b31" stroke-width="12" stroke-linecap="round" marker-end="url(#redArrow)"/>
+  <g font-family="Arial,sans-serif" filter="url(#shadow)">
+    <g transform="translate(274 254)"><rect x="-72" y="-21" width="144" height="42" rx="8" fill="#963b31"/><text x="0" y="5" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">46th N.C.</text></g>
+    <g transform="translate(263 385)"><rect x="-72" y="-21" width="144" height="42" rx="8" fill="#963b31"/><text x="0" y="5" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">30th VIRGINIA</text></g>
+    <g transform="translate(274 597)"><rect x="-72" y="-21" width="144" height="42" rx="8" fill="#963b31"/><text x="0" y="5" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">48th N.C.</text></g>
+  </g>
+  <rect x="128" y="657" width="302" height="58" rx="9" fill="#f7e8d4" stroke="#963b31" stroke-width="2"/><text x="279" y="681" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#7c342d">1 · MANNING’S ATTACK</text><text x="279" y="702" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#7c342d">checked about 70 yards from Greene</text>
+
+  <path d="M737 626C660 644 582 648 500 627C425 608 359 570 298 516" fill="none" stroke="#315f8c" stroke-width="11" stroke-linecap="round" stroke-dasharray="17 11" marker-end="url(#blueArrow)"/>
+  <path d="M732 683C650 706 553 707 460 675" fill="none" stroke="#315f8c" stroke-width="9" stroke-linecap="round" stroke-dasharray="17 11" marker-end="url(#blueArrow)"/>
+  <rect x="682" y="666" width="225" height="66" rx="9" fill="#e5edf5" stroke="#315f8c" stroke-width="2"/><text x="794" y="691" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#244d76">2 · GREENE ADVANCES</text><text x="794" y="712" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#244d76">past the church into the woods</text>
+
+  <g transform="translate(1100 224)" font-family="Arial,sans-serif" fill="#2f2b27"><path d="M0 48V0M0 0L-9 18M0 0L9 18" fill="none" stroke="#2f2b27" stroke-width="3"/><text x="0" y="-9" text-anchor="middle" font-size="18" font-weight="700">N</text></g>
+  <g transform="translate(1088 748)" font-family="Arial,sans-serif"><rect x="-170" y="-93" width="177" height="97" rx="10" fill="#fffaf0" stroke="#93846d" stroke-width="2"/><line x1="-150" y1="-66" x2="-115" y2="-66" stroke="#963b31" stroke-width="8" marker-end="url(#redArrow)"/><text x="-98" y="-61" font-size="13" fill="#2f2b27">Confederate</text><line x1="-150" y1="-28" x2="-115" y2="-28" stroke="#315f8c" stroke-width="8" stroke-dasharray="10 7" marker-end="url(#blueArrow)"/><text x="-98" y="-23" font-size="13" fill="#2f2b27">Federal</text></g>
+</svg>

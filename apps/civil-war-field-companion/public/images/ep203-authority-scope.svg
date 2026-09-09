@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1040" viewBox="0 0 1600 1040" role="img" aria-labelledby="title desc">
+  <title id="title">Comparing three federal emancipation measures in 1862</title>
+  <desc id="desc">A three-column comparison of the District of Columbia Compensated Emancipation Act, the Second Confiscation Act, and the preliminary Emancipation Proclamation by authority, reach, trigger, and limits.</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#172033" flood-opacity="0.18"/>
+    </filter>
+    <style>
+      .title { font: 700 42px Georgia, serif; fill: #16233a; }
+      .subtitle { font: 21px Arial, sans-serif; fill: #4b596b; }
+      .head { font: 700 25px Georgia, serif; fill: #ffffff; }
+      .date { font: 700 18px Arial, sans-serif; fill: #e8eef6; letter-spacing: 1px; }
+      .label { font: 700 18px Arial, sans-serif; fill: #735429; letter-spacing: 1px; }
+      .body { font: 19px Arial, sans-serif; fill: #263449; }
+      .foot { font: italic 17px Georgia, serif; fill: #586476; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="1040" fill="#f4efe5"/>
+  <rect x="45" y="42" width="1510" height="950" rx="30" fill="#fffdf8" stroke="#c8b99d" stroke-width="2"/>
+  <text x="90" y="105" class="title">Three measures, three legal paths</text>
+  <text x="90" y="144" class="subtitle">Federal emancipation policy expanded in reach while changing the authority and trigger used</text>
+
+  <g filter="url(#shadow)">
+    <rect x="90" y="192" width="445" height="720" rx="22" fill="#f8fbfe" stroke="#9db1c8"/>
+    <rect x="578" y="192" width="445" height="720" rx="22" fill="#fbfaf6" stroke="#b8aa8c"/>
+    <rect x="1066" y="192" width="445" height="720" rx="22" fill="#faf7fb" stroke="#ad9cbd"/>
+  </g>
+
+  <path d="M90 214a22 22 0 0 1 22-22h401a22 22 0 0 1 22 22v125H90z" fill="#315f8c"/>
+  <path d="M578 214a22 22 0 0 1 22-22h401a22 22 0 0 1 22 22v125H578z" fill="#7a5a2d"/>
+  <path d="M1066 214a22 22 0 0 1 22-22h401a22 22 0 0 1 22 22v125h-445z" fill="#604a78"/>
+
+  <text x="123" y="235" class="date">APRIL 16</text>
+  <text x="123" y="274" class="head">D.C. compensated</text>
+  <text x="123" y="307" class="head">emancipation</text>
+
+  <text x="611" y="235" class="date">JULY 17</text>
+  <text x="611" y="274" class="head">Second</text>
+  <text x="611" y="307" class="head">Confiscation Act</text>
+
+  <text x="1099" y="235" class="date">SEPTEMBER 22</text>
+  <text x="1099" y="274" class="head">Preliminary</text>
+  <text x="1099" y="307" class="head">proclamation</text>
+
+  <text x="123" y="382" class="label">AUTHORITY</text>
+  <text x="123" y="416" class="body">Congress's direct legislative</text>
+  <text x="123" y="443" class="body">power over the District;</text>
+  <text x="123" y="470" class="body">approved by the president</text>
+  <line x1="123" y1="496" x2="502" y2="496" stroke="#d7dee7"/>
+  <text x="123" y="532" class="label">REACH</text>
+  <text x="123" y="566" class="body">People held in slavery in</text>
+  <text x="123" y="593" class="body">Washington, D.C.</text>
+  <line x1="123" y1="619" x2="502" y2="619" stroke="#d7dee7"/>
+  <text x="123" y="655" class="label">TRIGGER</text>
+  <text x="123" y="689" class="body">The act itself made them free;</text>
+  <text x="123" y="716" class="body">loyal claimants could seek</text>
+  <text x="123" y="743" class="body">up to $300 compensation</text>
+  <line x1="123" y1="769" x2="502" y2="769" stroke="#d7dee7"/>
+  <text x="123" y="805" class="label">LIMIT</text>
+  <text x="123" y="839" class="body">It did not abolish slavery</text>
+  <text x="123" y="866" class="body">outside the District</text>
+
+  <text x="611" y="382" class="label">AUTHORITY</text>
+  <text x="611" y="416" class="body">Congress's power to punish</text>
+  <text x="611" y="443" class="body">treason and suppress rebellion</text>
+  <line x1="611" y1="496" x2="990" y2="496" stroke="#ded9cc"/>
+  <text x="611" y="532" class="label">REACH</text>
+  <text x="611" y="566" class="body">People enslaved by persons</text>
+  <text x="611" y="593" class="body">within statutory categories</text>
+  <text x="611" y="620" class="body">of rebellion or disloyalty</text>
+  <line x1="611" y1="646" x2="990" y2="646" stroke="#ded9cc"/>
+  <text x="611" y="682" class="label">TRIGGER</text>
+  <text x="611" y="716" class="body">Owner conduct plus escape,</text>
+  <text x="611" y="743" class="body">capture, or federal occupation;</text>
+  <text x="611" y="770" class="body">some sections required judgment</text>
+  <line x1="611" y1="796" x2="990" y2="796" stroke="#ded9cc"/>
+  <text x="611" y="832" class="label">LIMIT</text>
+  <text x="611" y="866" class="body">No simple nationwide process;</text>
+  <text x="611" y="893" class="body">individual status could be hard to prove</text>
+
+  <text x="1099" y="382" class="label">AUTHORITY CLAIMED</text>
+  <text x="1099" y="416" class="body">President's commander-in-chief</text>
+  <text x="1099" y="443" class="body">war power during rebellion</text>
+  <line x1="1099" y1="496" x2="1478" y2="496" stroke="#ddd7e3"/>
+  <text x="1099" y="532" class="label">REACH ANNOUNCED</text>
+  <text x="1099" y="566" class="body">All people held as slaves in</text>
+  <text x="1099" y="593" class="body">places still in rebellion on</text>
+  <text x="1099" y="620" class="body">January 1, regardless of owner loyalty</text>
+  <line x1="1099" y1="646" x2="1478" y2="646" stroke="#ddd7e3"/>
+  <text x="1099" y="682" class="label">TRIGGER</text>
+  <text x="1099" y="716" class="body">Geographic rebellion status</text>
+  <text x="1099" y="743" class="body">on January 1, 1863, after</text>
+  <text x="1099" y="770" class="body">one hundred days' notice</text>
+  <line x1="1099" y1="796" x2="1478" y2="796" stroke="#ddd7e3"/>
+  <text x="1099" y="832" class="label">LIMIT</text>
+  <text x="1099" y="866" class="body">The September text was notice;</text>
+  <text x="1099" y="893" class="body">the final order would name the areas</text>
+
+  <text x="90" y="951" class="foot">This comparison describes the 1862 measures in the episode; the final proclamation of January 1, 1863 refined the geographic exceptions and added military-enlistment language.</text>
+</svg>

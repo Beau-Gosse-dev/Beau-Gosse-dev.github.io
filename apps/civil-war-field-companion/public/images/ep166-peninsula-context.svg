@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Malvern Hill in the Peninsula Campaign</title>
+  <desc id="desc">Schematic regional map of eastern Virginia showing Richmond, Washington, the Virginia Peninsula, Fort Monroe, Yorktown, Glendale, Malvern Hill, Harrison's Landing, and the broad movement of the Army of the Potomac.</desc>
+  <defs>
+    <marker id="blueArrow" markerUnits="userSpaceOnUse" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto"><path d="M0 0L16 8 0 16Z" fill="#315f8c"/></marker>
+    <style>
+      .label{font:600 21px Georgia,serif;fill:#202729}.small{font:16px Arial,sans-serif;fill:#2d3639}.tiny{font:14px Arial,sans-serif;fill:#3b4548}.water{fill:#cfe6ef;stroke:#5d99b6;stroke-width:3}.river{fill:none;stroke:#67a2c4;stroke-width:18;stroke-linecap:round}.route{fill:none;stroke:#315f8c;stroke-width:9;stroke-dasharray:18 10;marker-end:url(#blueArrow)}.site{fill:#fffaf0;stroke:#625b4d;stroke-width:3}.battle{fill:#9a3d32;stroke:#fffaf0;stroke-width:3}.city{fill:#24292a}.callout{fill:#e4eef6;stroke:#315f8c;stroke-width:3}
+    </style>
+  </defs>
+  <rect width="1200" height="720" fill="#f3eedf"/>
+  <path d="M810 -20C840 70 866 142 920 206S1036 319 1220 364V740H881C837 650 806 577 777 515S721 389 688 300 692 118 656 -20Z" class="water"/>
+  <text x="975" y="226" class="label" fill="#396e91">Chesapeake Bay</text>
+  <path d="M80 362C253 359 372 383 506 408S711 450 878 492" class="river"/>
+  <text x="452" y="451" class="label" fill="#396e91">James River</text>
+  <path d="M566 202C683 224 790 255 918 313" class="river"/>
+  <text x="703" y="234" class="label" fill="#396e91">York River</text>
+  <path d="M309 167C420 199 486 240 566 286" fill="none" stroke="#76acc7" stroke-width="13" stroke-linecap="round"/>
+  <text x="279" y="140" class="small" fill="#396e91">Chickahominy River</text>
+  <path d="M885 73C910 113 932 151 949 190" fill="none" stroke="#9da4a2" stroke-width="4" stroke-dasharray="8 7"/>
+  <circle cx="884" cy="72" r="9" class="city"/><text x="904" y="77" class="label">Washington</text>
+  <circle cx="235" cy="324" r="11" class="city"/><text x="136" y="304" class="label">Richmond</text>
+  <circle cx="741" cy="318" r="9" class="city"/><text x="755" y="309" class="small">Williamsburg</text>
+  <circle cx="882" cy="336" r="9" class="city"/><text x="901" y="342" class="label">Yorktown</text>
+  <circle cx="1005" cy="455" r="9" class="city"/><text x="1019" y="462" class="small">Fort Monroe</text>
+  <circle cx="370" cy="351" r="9" class="battle"/><text x="385" y="338" class="small">Glendale</text>
+  <circle cx="433" cy="383" r="11" class="battle"/><text x="448" y="377" class="label">Malvern Hill</text>
+  <circle cx="607" cy="442" r="9" class="city"/><text x="622" y="468" class="small">Harrison's Landing</text>
+  <path d="M995 426C886 397 789 355 703 318S530 270 397 289 278 308 248 320" class="route"/>
+  <path d="M250 331C295 347 333 355 364 354" class="route"/>
+  <path d="M378 362C398 370 412 377 424 381" class="route"/>
+  <path d="M446 391C499 414 551 430 595 440" class="route"/>
+  <rect x="53" y="506" width="460" height="116" rx="16" class="callout"/>
+  <text x="76" y="542" class="label" fill="#315f8c">Army of the Potomac, spring–summer 1862</text>
+  <text x="76" y="574" class="small">Advanced northwest along the Peninsula toward Richmond;</text>
+  <text x="76" y="599" class="small">moved southeast during the Seven Days toward the James.</text>
+  <g transform="translate(654 536)">
+    <rect width="464" height="84" rx="14" class="site"/>
+    <circle cx="26" cy="28" r="9" class="battle"/>
+    <text x="48" y="34" class="small">Battle site</text>
+    <path d="M169 28H254" class="route"/>
+    <text x="271" y="34" class="small">Broad Federal movement</text>
+    <text x="20" y="66" class="small">Waterways and coastlines are generalized.</text>
+  </g>
+  <text x="24" y="697" class="tiny">Schematic; not to scale. Locations, shorelines, routes, and distances are generalized.</text>
+</svg>

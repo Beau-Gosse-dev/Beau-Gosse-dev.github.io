@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Schematic tactical map of the Battle of McDowell on Sitlington Hill</title>
+  <desc id="desc">North-up schematic showing McDowell west of Bull Pasture River, the Staunton-Parkersburg Turnpike, Hall's Hill and Cedar Knob north of the road, Sitlington Hill south of it, United States regiments crossing the river and attacking eastward, and Confederate regiments defending the ridge.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#faf5e8"/><stop offset="1" stop-color="#eadfc7"/></linearGradient>
+    <linearGradient id="slope" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8cba9"/><stop offset=".55" stop-color="#a9b290"/><stop offset="1" stop-color="#728065"/></linearGradient>
+    <pattern id="hachure" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(18)"><path d="M1 0V18" stroke="#59654f" stroke-width="2" opacity=".35"/></pattern>
+    <marker id="blueArrow" markerWidth="16" markerHeight="16" refX="11" refY="6" orient="auto" viewBox="0 0 12 12"><path d="M0 0 12 6 0 12Z" fill="#315f8c"/></marker>
+    <marker id="redArrow" markerWidth="16" markerHeight="16" refX="11" refY="6" orient="auto" viewBox="0 0 12 12"><path d="M0 0 12 6 0 12Z" fill="#9a3d32"/></marker>
+    <style>.head{font:700 30px Georgia,serif;fill:#292621}.label{font:700 20px Georgia,serif;fill:#292621}.small{font:17px Arial,sans-serif;fill:#3f3a33}.tiny{font:14px Arial,sans-serif;fill:#554f46}.blue{fill:#315f8c}.red{fill:#9a3d32}.unitU{fill:#eaf1f7;stroke:#315f8c;stroke-width:3}.unitC{fill:#f7e7e2;stroke:#9a3d32;stroke-width:3}.box{fill:#fffaf0;stroke:#8a7b66;stroke-width:2}</style>
+  </defs>
+  <rect width="1200" height="760" fill="url(#paper)"/>
+  <text x="30" y="46" class="head">BATTLE OF McDOWELL • SITLINGTON HILL • MAY 8, 1862</text>
+  <text x="30" y="77" class="small">Tactical diagram • north is up • schematic unit fronts, distances, terrain, and movement arrows</text>
+
+  <path d="M520 112C490 220 507 325 485 430C466 524 482 631 461 727" fill="none" stroke="#5790a7" stroke-width="38"/>
+  <path d="M520 112C490 220 507 325 485 430C466 524 482 631 461 727" fill="none" stroke="#d7edf4" stroke-width="7"/>
+  <text x="432" y="625" class="label" fill="#376f84" transform="rotate(-81 432 625)">BULL PASTURE RIVER</text>
+
+  <path d="M545 98C699 123 852 129 1158 122L1158 289C936 277 750 289 553 326Z" fill="url(#slope)" opacity=".88"/>
+  <path d="M545 98C699 123 852 129 1158 122L1158 289C936 277 750 289 553 326Z" fill="url(#hachure)"/>
+  <text x="815" y="184" class="label">HALL'S HILL</text><text x="610" y="265" class="small">Cedar Knob</text>
+
+  <path d="M540 382C700 332 879 340 1158 349L1158 730H516C527 627 510 507 540 382Z" fill="url(#slope)" opacity=".9"/>
+  <path d="M540 382C700 332 879 340 1158 349L1158 730H516C527 627 510 507 540 382Z" fill="url(#hachure)"/>
+  <text x="835" y="706" class="label">SITLINGTON HILL • steep west-facing slope</text>
+
+  <path d="M35 341C238 350 386 353 505 354C716 355 938 331 1180 315" fill="none" stroke="#a07a4f" stroke-width="15" stroke-linecap="round"/>
+  <text x="60" y="329" class="small">to Franklin</text><text x="802" y="308" class="small">Staunton–Parkersburg Turnpike →</text>
+  <rect x="68" y="400" width="290" height="140" rx="16" fill="#e5dcc5" stroke="#8a7b66" stroke-width="3"/>
+  <text x="132" y="446" class="head">McDOWELL</text>
+  <text x="101" y="482" class="small">United States camps and reserve</text>
+  <text x="122" y="510" class="small">west of the river</text>
+
+  <g>
+    <rect x="730" y="423" width="120" height="39" rx="6" class="unitC"/><text x="747" y="449" class="small red">52d Va.</text>
+    <rect x="861" y="449" width="120" height="39" rx="6" class="unitC"/><text x="877" y="475" class="small red">58th Va.</text>
+    <rect x="984" y="495" width="126" height="39" rx="6" class="unitC"/><text x="998" y="521" class="small red">44th Va.</text>
+    <rect x="819" y="565" width="132" height="39" rx="6" class="unitC"/><text x="831" y="591" class="small red">12th Ga.</text>
+    <rect x="987" y="598" width="126" height="39" rx="6" class="unitC"/><text x="1001" y="624" class="small red">25th Va.</text>
+    <text x="812" y="635" class="tiny red">forward salient</text>
+    <rect x="680" y="370" width="124" height="39" rx="6" class="unitC"/><text x="692" y="396" class="small red">31st Va.</text>
+    <text x="651" y="350" class="tiny red">turnpike skirmishers</text>
+    <rect x="1040" y="405" width="112" height="39" rx="6" class="unitC"/><text x="1052" y="431" class="small red">10th Va.</text>
+    <rect x="1020" y="547" width="132" height="39" rx="6" class="unitC"/><text x="1030" y="573" class="small red">23d / 37th</text>
+    <rect x="788" y="615" width="126" height="39" rx="6" class="unitC"/><text x="803" y="641" class="small red">48th Va.</text>
+  </g>
+
+  <g>
+    <rect x="370" y="574" width="122" height="39" rx="6" class="unitU"/><text x="383" y="600" class="small blue">75th Ohio</text>
+    <rect x="342" y="643" width="122" height="39" rx="6" class="unitU"/><text x="355" y="669" class="small blue">25th Ohio</text>
+    <rect x="329" y="488" width="122" height="39" rx="6" class="unitU"/><text x="342" y="514" class="small blue">32d Ohio</text>
+    <rect x="323" y="421" width="122" height="39" rx="6" class="unitU"/><text x="336" y="447" class="small blue">82d Ohio</text>
+    <rect x="326" y="287" width="118" height="39" rx="6" class="unitU"/><text x="340" y="313" class="small blue">3d W. Va.</text>
+  </g>
+
+  <path d="M455 594C560 591 666 583 798 582" fill="none" stroke="#315f8c" stroke-width="11" marker-end="url(#blueArrow)"/>
+  <path d="M454 661C585 656 689 637 776 625" fill="none" stroke="#315f8c" stroke-width="11" marker-end="url(#blueArrow)"/>
+  <path d="M448 506C588 509 739 525 964 604" fill="none" stroke="#315f8c" stroke-width="10" marker-end="url(#blueArrow)"/>
+  <path d="M443 440C592 439 734 457 965 510" fill="none" stroke="#315f8c" stroke-width="10" marker-end="url(#blueArrow)"/>
+  <path d="M442 307C527 310 593 321 663 364" fill="none" stroke="#315f8c" stroke-width="9" marker-end="url(#blueArrow)"/>
+  <path d="M1128 468C1080 470 1038 477 994 493" fill="none" stroke="#9a3d32" stroke-width="8" stroke-dasharray="12 8" marker-end="url(#redArrow)"/>
+
+  <rect x="37" y="103" width="386" height="147" rx="12" class="box"/>
+  <text x="58" y="135" class="label">ABOUT THE DIAGRAM</text>
+  <text x="58" y="168" class="small">Five United States regiments attacked.</text>
+  <text x="58" y="196" class="small">Confederate regiments arrived in sequence.</text>
+  <text x="58" y="224" class="small">Artillery remained west of the river.</text>
+
+  <path d="M1154 106V166" stroke="#292621" stroke-width="4"/><path d="M1154 84 1140 113 1168 113Z" fill="#292621"/><text x="1144" y="72" class="head">N</text>
+</svg>

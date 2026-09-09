@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Steele's retreat from Camden and the battle of Jenkins' Ferry</title>
+  <desc id="desc">Two-part schematic showing the Union retreat from Camden through Jenkins' Ferry to Little Rock and Confederate attacks against Union breastworks west of the flooded Saline River.</desc>
+  <defs>
+    <marker id="blue" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#315f8c"/></marker>
+    <marker id="red" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#9a3d32"/></marker>
+    <pattern id="wet" width="32" height="18" patternUnits="userSpaceOnUse"><path d="M0 9 Q8 2 16 9 T32 9" fill="none" stroke="#82aeb5" stroke-width="2" opacity=".55"/></pattern>
+  </defs>
+  <rect width="1200" height="760" fill="#f3eddf"/>
+  <line x1="600" y1="42" x2="600" y2="718" stroke="#c8baa0" stroke-width="2"/>
+
+  <g font-family="Arial,sans-serif">
+    <text x="300" y="72" text-anchor="middle" font-size="29" font-weight="700" fill="#172725">Campaign route, April 16–May 3</text>
+    <path d="M194 618 C251 541 316 466 371 388 C424 313 458 225 493 122" fill="none" stroke="#315f8c" stroke-width="10" stroke-dasharray="18 11" marker-end="url(#blue)"/>
+    <path d="M414 210 C362 248 327 295 300 352" fill="none" stroke="#9a3d32" stroke-width="8" marker-end="url(#red)"/>
+    <circle cx="194" cy="618" r="12" fill="#172725"/><text x="218" y="614" font-size="25" font-weight="700">Camden</text><text x="218" y="641" font-size="17">Evacuated April 26</text>
+    <circle cx="371" cy="388" r="12" fill="#172725"/><text x="395" y="382" font-size="24" font-weight="700">Jenkins' Ferry</text><text x="395" y="409" font-size="17">Battle and crossing, April 30</text>
+    <circle cx="493" cy="122" r="12" fill="#172725"/><text x="364" y="113" font-size="25" font-weight="700">Little Rock</text><text x="364" y="140" font-size="17">Reached May 3</text>
+    <circle cx="88" cy="555" r="11" fill="#9a3d32"/><text x="48" y="521" font-size="22" font-weight="700">Poison Spring</text><text x="48" y="546" font-size="16">April 18</text>
+    <circle cx="484" cy="514" r="11" fill="#9a3d32"/><text x="425" y="555" font-size="22" font-weight="700">Marks' Mills</text><text x="451" y="579" font-size="16">April 25</text>
+    <text x="44" y="700" font-size="17" fill="#665d4d">Blue: Steele's withdrawal • Red: Confederate pursuit</text>
+  </g>
+
+  <g transform="translate(620 0)" font-family="Arial,sans-serif">
+    <text x="290" y="72" text-anchor="middle" font-size="29" font-weight="700" fill="#172725">Jenkins' Ferry, April 30</text>
+    <path d="M490 92 C447 203 528 306 480 430 C447 514 483 612 530 720" fill="none" stroke="#86b3be" stroke-width="78" opacity=".82"/>
+    <text x="530" y="300" fill="#416d76" font-size="22" transform="rotate(75 530 300)">Saline River</text>
+    <rect x="110" y="270" width="345" height="290" fill="url(#wet)" stroke="#b7c8c4" stroke-width="2"/>
+    <text x="215" y="537" fill="#4f7377" font-size="17">Flooded fields and mud</text>
+    <path d="M398 244 L398 578" stroke="#315f8c" stroke-width="14" stroke-dasharray="8 10"/>
+    <text x="417" y="232" fill="#315f8c" font-size="19" font-weight="700">Union breastworks and abatis</text>
+    <path d="M50 320 L355 320" stroke="#9a3d32" stroke-width="10" marker-end="url(#red)"/>
+    <path d="M50 407 L355 407" stroke="#9a3d32" stroke-width="10" marker-end="url(#red)"/>
+    <path d="M50 494 L355 494" stroke="#9a3d32" stroke-width="10" marker-end="url(#red)"/>
+    <text x="45" y="286" fill="#9a3d32" font-size="20" font-weight="700">Confederate attacks</text>
+    <text x="44" y="592" fill="#71332c" font-size="17">Churchill, Parsons, and Walker</text>
+    <text x="44" y="616" fill="#71332c" font-size="17">advanced in separate assaults</text>
+    <path d="M411 650 C455 637 473 610 489 570" fill="none" stroke="#315f8c" stroke-width="9" marker-end="url(#blue)"/>
+    <text x="296" y="680" fill="#315f8c" font-size="18">Steele crossed after repulsing the attacks</text>
+  </g>
+  <text x="600" y="744" text-anchor="middle" fill="#665d4d" font-family="Arial,sans-serif" font-size="15">Schematic guide — positions and routes are simplified from the episode and National Park Service documentation</text>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Williamsburg and Eltham's Landing operations, May 4 to 7, 1862</title>
+  <desc id="desc">Schematic operational map of the Virginia Peninsula showing the Confederate retreat from Yorktown through Williamsburg toward Richmond, the United States pursuit, and Franklin's water movement to Eltham's Landing near West Point.</desc>
+  <defs>
+    <marker id="usArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#315f8c"/></marker>
+    <marker id="csArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#9a3d32"/></marker>
+    <style>
+      .label{font:600 21px Georgia,serif;fill:#1f2933}.small{font:17px Arial,sans-serif;fill:#334155}.tiny{font:14px Arial,sans-serif;fill:#475569}.water{font:italic 20px Georgia,serif;fill:#2e638d}.place{fill:#fff;stroke:#17212b;stroke-width:3}.us{fill:none;stroke:#315f8c;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}.cs{fill:none;stroke:#9a3d32;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}.road{fill:none;stroke:#9d7b4f;stroke-width:5;stroke-dasharray:8 7}.rail{fill:none;stroke:#3f3f46;stroke-width:4;stroke-dasharray:14 5 3 5}
+    </style>
+  </defs>
+  <rect width="1200" height="760" fill="#dceef7"/>
+  <path d="M68 116 C275 91 456 116 628 175 C795 232 950 277 1138 360 L1088 609 C889 584 714 544 544 497 C362 448 223 412 78 418Z" fill="#efe5c9" stroke="#7f765e" stroke-width="4"/>
+  <path d="M66 108 C276 86 457 111 628 168 C807 227 948 271 1140 353" fill="none" stroke="#80b8d7" stroke-width="62"/>
+  <path d="M70 424 C234 430 382 466 547 514 C713 562 890 611 1096 628" fill="none" stroke="#80b8d7" stroke-width="68"/>
+  <text x="360" y="90" class="water" transform="rotate(11 360 90)">Pamunkey River</text>
+  <text x="815" y="234" class="water" transform="rotate(18 815 234)">York River</text>
+  <text x="420" y="582" class="water" transform="rotate(15 420 582)">James River</text>
+
+  <path d="M166 303 C340 313 498 337 673 368 C820 394 951 424 1047 467" class="road"/>
+  <path d="M171 284 C340 257 493 239 641 219" class="rail"/>
+  <text x="278" y="246" class="tiny">Richmond &amp; York River Railroad</text>
+  <text x="356" y="366" class="tiny">principal road toward Richmond</text>
+
+  <path d="M1014 401 C904 390 811 375 706 356 C579 332 439 314 250 306" class="cs" marker-end="url(#csArrow)"/>
+  <text x="416" y="292" class="small" fill="#9a3d32">Johnston's retreat, May 4-7</text>
+  <text x="431" y="316" class="tiny" fill="#9a3d32">Longstreet delays the pursuit at Williamsburg</text>
+
+  <path d="M1060 500 C964 449 867 416 733 385" class="us" marker-end="url(#usArrow)"/>
+  <text x="815" y="470" class="small" fill="#315f8c">United States land pursuit</text>
+  <text x="854" y="493" class="tiny" fill="#315f8c">May 4-5</text>
+
+  <path d="M1015 344 C939 254 825 205 690 196 C659 194 637 202 622 219" class="us" stroke-dasharray="14 10" marker-end="url(#usArrow)"/>
+  <text x="790" y="178" class="small" fill="#315f8c">Franklin by transport</text>
+  <text x="790" y="201" class="tiny" fill="#315f8c">May 6-7: Eltham's Landing</text>
+
+  <path d="M639 226 C577 238 526 256 478 281" class="us" stroke-width="5" marker-end="url(#usArrow)"/>
+  <path d="M433 302 C482 271 544 248 612 231" class="cs" stroke-width="5" marker-end="url(#csArrow)"/>
+  <text x="240" y="176" class="tiny">Hood checks the bridgehead;</text>
+  <text x="240" y="195" class="tiny">Franklin does not reach the retreat road</text>
+
+  <g transform="translate(169 303)"><circle r="10" class="place"/><text x="-54" y="35" class="label">Richmond</text></g>
+  <g transform="translate(647 219)"><circle r="10" class="place"/><text x="-47" y="-23" class="label">West Point</text><text x="17" y="28" class="small">Eltham's Landing</text></g>
+  <g transform="translate(699 370)"><circle r="10" class="place"/><text x="-58" y="38" class="label">Williamsburg</text></g>
+  <g transform="translate(1018 401)"><circle r="10" class="place"/><text x="-35" y="-24" class="label">Yorktown</text></g>
+  <g transform="translate(1061 501)"><circle r="9" class="place"/><text x="-94" y="39" class="small">Lee's Mill</text></g>
+  <g transform="translate(1120 605)"><circle r="10" class="place"/><text x="-118" y="-24" class="label">Fort Monroe</text></g>
+
+  <rect x="68" y="627" width="798" height="91" rx="12" fill="#fff" fill-opacity=".92" stroke="#94a3b8"/>
+  <path d="M96 659h64" class="cs" marker-end="url(#csArrow)"/><text x="181" y="665" class="small">Confederate retreat</text>
+  <path d="M388 659h64" class="us" marker-end="url(#usArrow)"/><text x="473" y="665" class="small">United States pursuit</text>
+  <path d="M670 659h64" class="us" stroke-dasharray="14 10" marker-end="url(#usArrow)"/><text x="755" y="665" class="small">Water move</text>
+  <text x="96" y="698" class="tiny">Schematic; routes and positions are approximate. The York and Pamunkey rivers meet at West Point.</text>
+  <text x="1107" y="103" class="label">N</text><path d="M1115 116v49" stroke="#17212b" stroke-width="4"/><path d="M1115 104l-11 22h22Z" fill="#17212b"/>
+</svg>

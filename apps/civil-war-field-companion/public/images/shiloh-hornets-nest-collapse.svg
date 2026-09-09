@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">Collapse of the Hornet's Nest at Shiloh, 4 p.m. to 5:30 p.m. April 6, 1862</title>
+  <desc id="desc">Map shows Ruggles's Confederate artillery line south of the Hornet's Nest, Sherman and McClernand withdrawing from the west, Hurlbut withdrawing from the east, Confederate forces closing around Wallace and Prentiss, and escape and capture routes toward Pittsburg Landing.</desc>
+  <defs>
+    <marker id="usa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10z" fill="#315f8c"/></marker>
+    <marker id="csa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10z" fill="#9a3d32"/></marker>
+  </defs>
+  <rect width="1200" height="820" fill="#f3eedf"/>
+  <path d="M1060 0C1010 150 1080 285 1035 430S1085 675 1020 820H1200V0Z" fill="#b6cfcd"/>
+  <text x="1122" y="420" fill="#385f64" font-family="Georgia,serif" font-size="25" text-anchor="middle" transform="rotate(88 1122 420)">TENNESSEE RIVER</text>
+  <path d="M515 795L520 100" stroke="#665746" stroke-width="8"/>
+  <text x="548" y="390" fill="#514438" font-family="Arial,sans-serif" font-size="17" transform="rotate(-89 548 390)">Corinth Road</text>
+  <path d="M845 795L815 100" stroke="#756551" stroke-width="7"/>
+  <text x="850" y="395" fill="#514438" font-family="Arial,sans-serif" font-size="16" transform="rotate(-87 850 395)">Hamburg–Savannah Road</text>
+  <rect x="255" y="410" width="270" height="120" rx="8" fill="#d8b88a"/>
+  <text x="390" y="458" text-anchor="middle" fill="#553e28" font-family="Arial,sans-serif" font-size="22" font-weight="700">DUNCAN FIELD</text>
+  <text x="390" y="490" text-anchor="middle" fill="#553e28" font-family="Arial,sans-serif" font-size="16">Ruggles's artillery south edge</text>
+  <path d="M240 320L735 300" stroke="#315f8c" stroke-width="19"/>
+  <text x="488" y="260" text-anchor="middle" fill="#234b73" font-family="Arial,sans-serif" font-size="22" font-weight="700">W. H. L. WALLACE · PRENTISS</text>
+  <text x="488" y="346" text-anchor="middle" fill="#234b73" font-family="Arial,sans-serif" font-size="16">Hornet's Nest and farm lane</text>
+  <g fill="#9a3d32">
+    <circle cx="265" cy="548" r="11"/><circle cx="310" cy="548" r="11"/><circle cx="355" cy="548" r="11"/><circle cx="400" cy="548" r="11"/><circle cx="445" cy="548" r="11"/><circle cx="490" cy="548" r="11"/><circle cx="535" cy="548" r="11"/><circle cx="580" cy="548" r="11"/><circle cx="625" cy="548" r="11"/><circle cx="670" cy="548" r="11"/><circle cx="715" cy="548" r="11"/>
+  </g>
+  <text x="490" y="586" text-anchor="middle" fill="#7c3029" font-family="Arial,sans-serif" font-size="19" font-weight="700">RUGGLES · 11 BATTERIES · AS MANY AS 53 GUNS</text>
+  <text x="490" y="612" text-anchor="middle" fill="#7c3029" font-family="Arial,sans-serif" font-size="15">bombardment began about 4 p.m.</text>
+  <path d="M280 525L300 340M390 525L410 335M500 525L510 330M610 525L605 325M700 525L690 318" fill="none" stroke="#9a3d32" stroke-width="5" stroke-dasharray="8 8" marker-end="url(#csa)"/>
+  <path d="M205 610C150 520 155 405 240 330" fill="none" stroke="#9a3d32" stroke-width="13" marker-end="url(#csa)"/>
+  <text x="112" y="565" fill="#7c3029" font-family="Arial,sans-serif" font-size="17" font-weight="700">CONFEDERATE</text><text x="112" y="587" fill="#7c3029" font-family="Arial,sans-serif" font-size="17" font-weight="700">RIGHT CLOSES</text>
+  <path d="M790 610C855 515 825 390 730 310" fill="none" stroke="#9a3d32" stroke-width="13" marker-end="url(#csa)"/>
+  <text x="830" y="565" fill="#7c3029" font-family="Arial,sans-serif" font-size="17" font-weight="700">CONFEDERATE</text><text x="830" y="587" fill="#7c3029" font-family="Arial,sans-serif" font-size="17" font-weight="700">LEFT CLOSES</text>
+  <path d="M155 365C120 300 170 230 265 205" fill="none" stroke="#315f8c" stroke-width="10" stroke-dasharray="14 10" marker-end="url(#usa)"/>
+  <text x="95" y="280" fill="#234b73" font-family="Arial,sans-serif" font-size="16" font-weight="700">SHERMAN + McCLERNAND</text><text x="95" y="302" fill="#234b73" font-family="Arial,sans-serif" font-size="15">withdraw about 4 p.m.</text>
+  <path d="M820 370C900 320 925 245 940 170" fill="none" stroke="#315f8c" stroke-width="10" stroke-dasharray="14 10" marker-end="url(#usa)"/>
+  <text x="876" y="340" fill="#234b73" font-family="Arial,sans-serif" font-size="17" font-weight="700">HURLBUT WITHDRAWS</text>
+  <path d="M470 295C520 245 610 205 790 165" fill="none" stroke="#315f8c" stroke-width="10" stroke-dasharray="14 10" marker-end="url(#usa)"/>
+  <text x="565" y="205" fill="#234b73" font-family="Arial,sans-serif" font-size="16" font-weight="700">escape toward Pittsburg Landing</text>
+  <circle cx="540" cy="248" r="18" fill="#f3eedf" stroke="#9a3d32" stroke-width="7"/>
+  <path d="M528 236L552 260M552 236L528 260" stroke="#9a3d32" stroke-width="5"/>
+  <text x="540" y="220" text-anchor="middle" fill="#7c3029" font-family="Arial,sans-serif" font-size="15" font-weight="700">WALLACE WOUNDED</text>
+  <ellipse cx="500" cy="323" rx="245" ry="85" fill="none" stroke="#9a3d32" stroke-width="6" stroke-dasharray="13 9"/>
+  <text x="500" y="385" text-anchor="middle" fill="#7c3029" font-family="Arial,sans-serif" font-size="17" font-weight="700">about 2,200 captured · about 5:30 p.m.</text>
+  <path d="M880 130L1005 105" stroke="#315f8c" stroke-width="18"/>
+  <text x="942" y="78" text-anchor="middle" fill="#234b73" font-family="Arial,sans-serif" font-size="18" font-weight="700">GRANT'S LAST LINE</text>
+  <text x="942" y="158" text-anchor="middle" fill="#234b73" font-family="Arial,sans-serif" font-size="15">siege guns above the landing</text>
+  <text x="40" y="50" fill="#263332" font-family="Georgia,serif" font-size="31" font-weight="700">Collapse of the Hornet's Nest</text>
+  <text x="40" y="84" fill="#4b5856" font-family="Arial,sans-serif" font-size="18">April 6, 1862 · about 4–5:30 p.m. · simplified orientation · not to scale</text>
+  <rect x="45" y="690" width="20" height="20" fill="#315f8c"/><text x="77" y="707" fill="#263332" font-family="Arial,sans-serif" font-size="16">United States</text>
+  <rect x="45" y="724" width="20" height="20" fill="#9a3d32"/><text x="77" y="741" fill="#263332" font-family="Arial,sans-serif" font-size="16">Confederacy</text>
+  <path d="M1120 82V137" stroke="#263332" stroke-width="5" marker-end="url(#usa)"/><text x="1120" y="62" text-anchor="middle" fill="#263332" font-family="Arial,sans-serif" font-size="20" font-weight="700">N</text>
+</svg>

@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">May 24, 1862 operational triangle</title>
+  <desc id="desc">Schematic map showing Banks retreating from Strasburg to Winchester, Jackson crossing from Cedarville to Middletown, Steuart scouting Newtown, and Ewell advancing on the Front Royal to Winchester Turnpike.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6f0df"/>
+      <stop offset="1" stop-color="#e6dcc4"/>
+    </linearGradient>
+    <pattern id="hatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(32)">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#b7aa8d" stroke-width="3" opacity=".22"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#332b22" flood-opacity=".22"/>
+    </filter>
+    <marker id="blueArrow" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0L18 9L0 18Z" fill="#315f8c"/>
+    </marker>
+    <marker id="redArrow" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0L18 9L0 18Z" fill="#9a3d32"/>
+    </marker>
+    <marker id="amberArrow" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0L18 9L0 18Z" fill="#a36a1d"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="820" rx="22" fill="url(#paper)"/>
+  <rect x="18" y="18" width="1164" height="784" rx="16" fill="none" stroke="#6d604b" stroke-width="2"/>
+  <path d="M35 140H1165V785H35Z" fill="url(#hatch)"/>
+
+  <text x="54" y="64" font-family="Georgia,serif" font-size="32" font-weight="700" fill="#2d2922">MAY 24, 1862 · THE OPERATIONAL TRIANGLE</text>
+  <text x="55" y="99" font-family="Arial,sans-serif" font-size="17" fill="#5c5242">SCHEMATIC — positions, road curves, distances, and timing are approximate</text>
+
+  <!-- terrain -->
+  <path d="M825 720C850 650 849 586 874 530C896 480 886 420 919 364C944 320 943 251 972 194" fill="none" stroke="#a58e65" stroke-width="72" opacity=".18"/>
+  <path d="M825 720C850 650 849 586 874 530C896 480 886 420 919 364C944 320 943 251 972 194" fill="none" stroke="#8b7651" stroke-width="3" stroke-dasharray="8 8" opacity=".65"/>
+  <text x="936" y="495" transform="rotate(-72 936 495)" font-family="Arial,sans-serif" font-size="16" letter-spacing="2" fill="#756344">MASSANUTTEN MOUNTAIN</text>
+
+  <!-- main roads -->
+  <path d="M300 690C330 609 335 533 350 455C366 371 396 287 525 165" fill="none" stroke="#564c3e" stroke-width="10"/>
+  <path d="M935 686C880 595 814 502 746 420C675 334 613 250 525 165" fill="none" stroke="#564c3e" stroke-width="9"/>
+  <path d="M300 690C455 735 722 745 935 686" fill="none" stroke="#7a6c56" stroke-width="6" stroke-dasharray="14 8"/>
+  <path d="M746 420C625 442 492 448 350 455" fill="none" stroke="#78664d" stroke-width="7"/>
+
+  <!-- railroad -->
+  <path d="M300 715C465 764 732 770 942 712" fill="none" stroke="#3f3b35" stroke-width="3"/>
+  <path d="M300 715C465 764 732 770 942 712" fill="none" stroke="#f6f0df" stroke-width="9" stroke-dasharray="3 14"/>
+
+  <!-- movements -->
+  <path d="M302 668C330 600 332 538 347 476C363 391 391 301 506 181" fill="none" stroke="#315f8c" stroke-width="13" stroke-linecap="round" marker-end="url(#blueArrow)" opacity=".92"/>
+  <path d="M745 402C630 423 508 429 372 435" fill="none" stroke="#9a3d32" stroke-width="13" stroke-linecap="round" marker-end="url(#redArrow)"/>
+  <path d="M911 664C861 581 804 501 751 439C688 361 623 272 547 185" fill="none" stroke="#9a3d32" stroke-width="12" stroke-linecap="round" marker-end="url(#redArrow)" opacity=".82"/>
+  <path d="M760 435C675 379 582 336 445 296" fill="none" stroke="#9a3d32" stroke-width="8" stroke-dasharray="12 8" marker-end="url(#redArrow)"/>
+  <path d="M350 454C337 507 338 541 347 572" fill="none" stroke="#a36a1d" stroke-width="8" marker-end="url(#amberArrow)"/>
+  <path d="M355 568C354 477 380 356 499 190" fill="none" stroke="#9a3d32" stroke-width="8" stroke-dasharray="14 9" marker-end="url(#redArrow)"/>
+
+  <!-- nodes -->
+  <g filter="url(#shadow)" font-family="Arial,sans-serif">
+    <g transform="translate(525 165)">
+      <circle r="17" fill="#fffaf0" stroke="#2d2922" stroke-width="4"/>
+      <text x="0" y="-30" text-anchor="middle" font-size="24" font-weight="700" fill="#2d2922">WINCHESTER</text>
+      <text x="0" y="37" text-anchor="middle" font-size="15" fill="#5a5042">northern apex</text>
+    </g>
+    <g transform="translate(300 690)">
+      <circle r="15" fill="#fffaf0" stroke="#2d2922" stroke-width="4"/>
+      <text x="-4" y="-27" text-anchor="middle" font-size="23" font-weight="700" fill="#2d2922">STRASBURG</text>
+    </g>
+    <g transform="translate(935 686)">
+      <circle r="15" fill="#fffaf0" stroke="#2d2922" stroke-width="4"/>
+      <text x="0" y="-28" text-anchor="middle" font-size="23" font-weight="700" fill="#2d2922">FRONT ROYAL</text>
+    </g>
+    <g transform="translate(350 455)">
+      <circle r="12" fill="#fffaf0" stroke="#2d2922" stroke-width="3"/>
+      <text x="-26" y="5" text-anchor="end" font-size="20" font-weight="700" fill="#2d2922">MIDDLETOWN</text>
+      <text x="-26" y="26" text-anchor="end" font-size="14" fill="#5a5042">Jackson cuts the pike</text>
+    </g>
+    <g transform="translate(420 305)">
+      <circle r="10" fill="#fffaf0" stroke="#2d2922" stroke-width="3"/>
+      <text x="-20" y="3" text-anchor="end" font-size="19" font-weight="700" fill="#2d2922">NEWTOWN</text>
+      <text x="-20" y="23" text-anchor="end" font-size="13" fill="#5a5042">present-day Stephens City</text>
+    </g>
+    <g transform="translate(746 420)">
+      <circle r="10" fill="#fffaf0" stroke="#2d2922" stroke-width="3"/>
+      <text x="18" y="-12" font-size="19" font-weight="700" fill="#2d2922">CEDARVILLE</text>
+    </g>
+    <g transform="translate(670 323)">
+      <circle r="9" fill="#fffaf0" stroke="#2d2922" stroke-width="3"/>
+      <text x="20" y="7" font-size="16" font-weight="700" fill="#2d2922">DOUBLE TOLLGATE</text>
+      <text x="20" y="26" font-size="13" fill="#5a5042">Ewell’s long halt</text>
+    </g>
+    <g transform="translate(455 225)">
+      <circle r="8" fill="#fffaf0" stroke="#2d2922" stroke-width="3"/>
+      <text x="18" y="5" font-size="16" font-weight="700" fill="#2d2922">KERNSTOWN</text>
+      <text x="18" y="24" font-size="13" fill="#5a5042">3 a.m. halt</text>
+    </g>
+  </g>
+
+  <!-- route labels -->
+  <text x="205" y="388" transform="rotate(-76 205 388)" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#4f4538">VALLEY TURNPIKE · about 18 miles</text>
+  <text x="775" y="540" transform="rotate(-52 775 540)" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#4f4538">FRONT ROYAL–WINCHESTER TURNPIKE · about 19 miles</text>
+  <text x="518" y="420" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#4f4538">CHAPEL ROAD</text>
+  <text x="578" y="788" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#4f4538">dirt road and Manassas Gap Railroad · about 13 miles</text>
+
+  <!-- callouts -->
+  <g font-family="Arial,sans-serif">
+    <rect x="52" y="126" width="355" height="111" rx="12" fill="#f9f5ea" stroke="#315f8c" stroke-width="2"/>
+    <text x="72" y="153" font-size="17" font-weight="700" fill="#315f8c">BANKS · UNITED STATES</text>
+    <text x="72" y="179" font-size="15" fill="#312d27">Wagons move overnight; infantry leaves</text>
+    <text x="72" y="201" font-size="15" fill="#312d27">Strasburg about 9:15 a.m. Main body</text>
+    <text x="72" y="223" font-size="15" fill="#312d27">reaches Winchester before Jackson.</text>
+
+    <rect x="805" y="124" width="343" height="133" rx="12" fill="#f9f5ea" stroke="#9a3d32" stroke-width="2"/>
+    <text x="825" y="151" font-size="17" font-weight="700" fill="#9a3d32">CONFEDERATE MOVEMENTS</text>
+    <text x="825" y="177" font-size="15" fill="#312d27">Steuart scouts Newtown. Jackson crosses</text>
+    <text x="825" y="199" font-size="15" fill="#312d27">to Middletown. Ewell waits on the eastern</text>
+    <text x="825" y="221" font-size="15" fill="#312d27">road, then advances after sunset.</text>
+    <text x="825" y="243" font-size="15" fill="#312d27">Amber = Jackson’s costly southward turn.</text>
+  </g>
+
+  <!-- legend -->
+  <g transform="translate(65 746)" font-family="Arial,sans-serif" font-size="15">
+    <line x1="0" y1="0" x2="56" y2="0" stroke="#315f8c" stroke-width="9" marker-end="url(#blueArrow)"/>
+    <text x="72" y="5" fill="#2d2922">Banks north</text>
+    <line x1="180" y1="0" x2="236" y2="0" stroke="#9a3d32" stroke-width="9" marker-end="url(#redArrow)"/>
+    <text x="252" y="5" fill="#2d2922">Confederate movement</text>
+    <line x1="460" y1="0" x2="516" y2="0" stroke="#a36a1d" stroke-width="8" marker-end="url(#amberArrow)"/>
+    <text x="532" y="5" fill="#2d2922">wrong-way turn</text>
+  </g>
+  <path d="M1115 82v-38m0 0-12 20m12-20 12 20" fill="none" stroke="#2d2922" stroke-width="3"/>
+  <text x="1115" y="104" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#2d2922">NORTH</text>
+</svg>
