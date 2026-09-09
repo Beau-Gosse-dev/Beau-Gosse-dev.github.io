@@ -57,8 +57,20 @@
       "_framework-xGPblSfj.js"
     ]
   },
+  "components/feedback-form.tsx": {
+    "file": "projects/civil-war-field-companion/_next/static/chunks/feedback-form-jh_QrcpD.js",
+    "name": "feedback-form",
+    "src": "components/feedback-form.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-BJmPJcde.js",
+      "_site-CT2gpuoI.js",
+      "_createLucideIcon-D41-D6oq.js",
+      "_framework-xGPblSfj.js"
+    ]
+  },
   "components/portrait-viewer.tsx": {
-    "file": "projects/civil-war-field-companion/_next/static/chunks/portrait-viewer-Ds9C41z4.js",
+    "file": "projects/civil-war-field-companion/_next/static/chunks/portrait-viewer-DurAan78.js",
     "name": "portrait-viewer",
     "src": "components/portrait-viewer.tsx",
     "isDynamicEntry": true,
@@ -70,7 +82,7 @@
     ]
   },
   "node_modules/.pnpm/vinext@1.0.0-beta.5_@vitejs_00faf19e5ba4318f3329433d3b787334/node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js": {
-    "file": "projects/civil-war-field-companion/_next/static/chunks/app-route-prefetch-policy-31VfM9j9.js",
+    "file": "projects/civil-war-field-companion/_next/static/chunks/app-route-prefetch-policy-D1whzDvV.js",
     "name": "app-route-prefetch-policy",
     "src": "node_modules/.pnpm/vinext@1.0.0-beta.5_@vitejs_00faf19e5ba4318f3329433d3b787334/node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js",
     "isDynamicEntry": true,
@@ -79,7 +91,7 @@
     ]
   },
   "node_modules/.pnpm/vinext@1.0.0-beta.5_@vitejs_00faf19e5ba4318f3329433d3b787334/node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "projects/civil-war-field-companion/_next/static/chunks/layout-segment-context-DB9ftk2H.js",
+    "file": "projects/civil-war-field-companion/_next/static/chunks/layout-segment-context-BIroLe9b.js",
     "name": "layout-segment-context",
     "src": "node_modules/.pnpm/vinext@1.0.0-beta.5_@vitejs_00faf19e5ba4318f3329433d3b787334/node_modules/vinext/dist/shims/layout-segment-context.js",
     "isDynamicEntry": true,
@@ -90,7 +102,7 @@
     ]
   },
   "node_modules/.pnpm/vinext@1.0.0-beta.5_@vitejs_00faf19e5ba4318f3329433d3b787334/node_modules/vinext/dist/shims/streamed-icons.js": {
-    "file": "projects/civil-war-field-companion/_next/static/chunks/streamed-icons-EnfWU_A_.js",
+    "file": "projects/civil-war-field-companion/_next/static/chunks/streamed-icons-B2PmgELp.js",
     "name": "streamed-icons",
     "src": "node_modules/.pnpm/vinext@1.0.0-beta.5_@vitejs_00faf19e5ba4318f3329433d3b787334/node_modules/vinext/dist/shims/streamed-icons.js",
     "isDynamicEntry": true,
@@ -100,7 +112,7 @@
     ]
   },
   "virtual:vinext-app-browser-entry": {
-    "file": "projects/civil-war-field-companion/_next/static/chunks/index-gTpJhWsw.js",
+    "file": "projects/civil-war-field-companion/_next/static/chunks/index-Ciqs01Sz.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
@@ -116,6 +128,7 @@
       "components/episode-browser.tsx",
       "node_modules/.pnpm/vinext@1.0.0-beta.5_@vitejs_00faf19e5ba4318f3329433d3b787334/node_modules/vinext/dist/shims/layout-segment-context.js",
       "components/portrait-viewer.tsx",
+      "components/feedback-form.tsx",
       "components/battle-flow.tsx"
     ]
   }
