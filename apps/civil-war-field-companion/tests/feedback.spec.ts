@@ -17,8 +17,9 @@ for (const javascript of [true, false]) {
         const panel = page.locator('#feedback');
         await panel.scrollIntoViewIfNeeded();
         await expect(panel).toBeVisible();
-        await expect(panel).toContainText('GitHub sign-in required; suggestions are public.');
-        const link = panel.getByRole('link', { name: 'Suggest a change' });
+        await expect(panel).toContainText('No account needed.');
+        await expect(panel.locator('.feedback-context strong')).toHaveText(expected);
+        const link = panel.getByRole('link', { name: 'Use the GitHub form instead' });
         const url = new URL((await link.getAttribute('href'))!);
         expect(url.origin).toBe('https://github.com');
         expect(url.pathname).toBe('/Beau-Gosse-dev/Beau-Gosse-dev.github.io/issues/new');
@@ -34,3 +35,41 @@ for (const javascript of [true, false]) {
     } finally { await context.close(); }
   });
 }
+
+test('submits anonymously with page context and shows the resulting issue', async ({ page }) => {
+  let submission: Record<string, string> = {};
+  await page.route('https://civil-war-feedback.the-bog.chatgpt.site/api/feedback', async (route) => {
+    submission = route.request().postDataJSON();
+    await route.fulfill({ status: 201, contentType: 'application/json', body: JSON.stringify({ issueUrl: 'https://github.com/Beau-Gosse-dev/Beau-Gosse-dev.github.io/issues/123' }) });
+  });
+  await page.goto('episodes/95-postscript-forrest-s-breakout#feedback');
+  await page.getByLabel('Kind of suggestion').selectOption('Historical correction');
+  await page.getByLabel('Short summary').fill('Clarify a battle description');
+  await page.getByLabel('Your suggestion', { exact: true }).fill('Please explain which troops this number includes.');
+  await page.getByRole('button', { name: 'Send suggestion', exact: true }).click();
+  await expect(page.getByRole('status')).toContainText('Your suggestion has been submitted.');
+  expect(submission.path).toBe('/episodes/95-postscript-forrest-s-breakout');
+  expect(submission.id).toMatch(/^[0-9a-f-]{36}$/);
+  expect(submission.details).toBe('Please explain which troops this number includes.');
+  expect(submission).not.toHaveProperty('token');
+  await expect(page.getByRole('link', { name: 'View your suggestion' })).toHaveAttribute('href', /\/issues\/123$/);
+});
+
+test('errors preserve the draft and retries keep the same submission ID', async ({ page }) => {
+  const ids: string[] = [];
+  await page.route('https://civil-war-feedback.the-bog.chatgpt.site/api/feedback', async (route) => {
+    ids.push(route.request().postDataJSON().id);
+    await route.fulfill({ status: ids.length === 1 ? 503 : 201, contentType: 'application/json', body: JSON.stringify(ids.length === 1 ? { error: 'Please retry shortly.' } : { issueUrl: 'https://github.com/Beau-Gosse-dev/Beau-Gosse-dev.github.io/issues/124' }) });
+  });
+  await page.goto('people/ulysses-s-grant#feedback');
+  await page.getByLabel('Kind of suggestion').selectOption('Image or map suggestion');
+  await page.getByLabel('Short summary').fill('Add another portrait');
+  await page.getByLabel('Your suggestion', { exact: true }).fill('There is another useful portrait in this collection.');
+  await page.getByRole('button', { name: 'Send suggestion', exact: true }).click();
+  await expect(page.getByRole('alert')).toHaveText('Please retry shortly.');
+  await expect(page.getByLabel('Your suggestion', { exact: true })).toHaveValue('There is another useful portrait in this collection.');
+  await page.getByRole('button', { name: 'Send suggestion', exact: true }).click();
+  await expect(page.getByRole('status')).toContainText('Your suggestion has been submitted.');
+  expect(ids).toHaveLength(2); expect(ids[0]).toBe(ids[1]);
+  await expect(page.locator('body')).not.toContainText(/episode/i);
+});

@@ -1,6 +1,7 @@
 import { SITE_URL } from './site';
 
 export const FEEDBACK_REPOSITORY = 'Beau-Gosse-dev/Beau-Gosse-dev.github.io';
+export const FEEDBACK_ENDPOINT = 'https://civil-war-feedback.the-bog.chatgpt.site/api/feedback';
 export type FeedbackContext = { title: string; path: string };
 
 export function feedbackUrl(context: FeedbackContext) {

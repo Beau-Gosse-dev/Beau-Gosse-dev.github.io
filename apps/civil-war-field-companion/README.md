@@ -44,6 +44,8 @@ Run the build before Playwright tests. The test server serves the static export 
 
 ## Suggestions
 
-The "Suggest a change" panel opens the repository's GitHub issue form with the current page title and URL already filled in. Visitors sign in to GitHub and submit there; suggestions and replies are public. The shared link builder is `lib/feedback.ts`, and the form is `.github/ISSUE_TEMPLATE/field-companion.yml` at the repository root. It works without client JavaScript and never includes a GitHub token in the site.
+The "Suggest a change" form accepts suggestions without a GitHub account. It automatically supplies the page context to the separate feedback service, which creates the issue. Suggestions and replies are public. The form preserves input on errors and reuses a submission ID on retries to prevent duplicate issues. The repository's GitHub issue form remains an alternative, including for visitors without JavaScript.
+
+`components/feedback-form.tsx` implements the form and `lib/feedback.ts` holds the public endpoint. Backend source is in `C:\Users\beaub\Documents\civil-war-feedback-service`, hosted independently through Sites; GitHub Pages still hosts this frontend. Runtime credentials are protected backend secrets and are never part of the frontend build. Update the backend's page allowlist whenever publishing new pages. No visitor email, password, or GitHub account is collected.
 
 A recurring Codex review checks suggestions every six hours, responds to actionable feedback, and publishes verified small fixes. The computer must be on and the app running. See `docs/suggestion-review.md` for scope, source checking, duplicate-response handling, and publishing requirements.

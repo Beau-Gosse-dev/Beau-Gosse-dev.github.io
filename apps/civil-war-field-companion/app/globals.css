@@ -42,7 +42,27 @@
 /* Episode summaries use structured fields; military figures are optional. */
 .episode-glance{padding:24px 0 0;border-bottom:1px solid var(--rule)}
 .episode-glance>h2{margin:0 0 4px;font-size:26px;letter-spacing:-.02em}
-.feedback-panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(240px,.7fr);align-items:center;gap:32px;border-top:1px solid var(--rule);padding:30px 0;margin-top:32px}
+.feedback-panel{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);align-items:start;gap:40px;border-top:1px solid var(--rule);padding:30px 0;margin-top:32px;scroll-margin-top:90px}
+.feedback-form{min-width:0;display:grid;gap:18px}
+.feedback-form label{display:block;font-size:12px;font-weight:600;line-height:1.6}
+.feedback-form input,.feedback-form select,.feedback-form textarea{display:block;margin-top:7px;width:100%;min-height:44px;padding:11px 12px;border:1px solid var(--rule);border-radius:2px;background:var(--white);color:var(--ink);font:inherit;font-size:13px;font-weight:400}
+.feedback-form textarea{resize:vertical}
+.feedback-form :is(input,select,textarea):focus-visible{outline:2px solid var(--rust);outline-offset:2px}
+.feedback-form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.feedback-context{border-left:3px solid var(--rust);padding:4px 0 4px 12px;display:grid;gap:6px;overflow-wrap:anywhere}
+.feedback-context span{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.feedback-context strong{font-size:13px}
+.feedback-secondary{margin-top:24px}
+.feedback-optional{font-weight:400;color:var(--muted)}
+.feedback-honeypot{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.feedback-form button{cursor:pointer;min-height:48px}
+.feedback-form button:disabled{opacity:.6;cursor:wait;transform:none}
+.feedback-panel .feedback-hint{font-size:11px!important}
+.feedback-panel .feedback-error{padding:12px;color:#8a2d1c!important;border:1px solid #b87464;background:#fff3eb}
+.feedback-success{padding:24px;border:1px solid var(--rule);background:var(--paper-deep)}
+.feedback-success h3{font-size:26px;margin:0 0 14px;line-height:1.2}
+.feedback-success a{display:inline-flex;align-items:center;gap:6px;margin:16px 0}
+@media(max-width:700px){.feedback-form-row{grid-template-columns:1fr}}
 .feedback-panel h2{font-size:clamp(27px,3vw,36px);line-height:1.1;margin:0 0 12px}
 .feedback-panel p:not(.kicker){color:var(--muted);font-size:13px;line-height:1.7;margin:0;max-width:550px}
 .feedback-actions{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
