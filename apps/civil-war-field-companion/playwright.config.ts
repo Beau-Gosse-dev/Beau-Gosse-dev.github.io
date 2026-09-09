@@ -7,7 +7,7 @@ export default defineConfig({
   outputDir: './test-results',
   reporter: 'line',
   use: {
-    baseURL: externalBaseURL ?? 'http://127.0.0.1:4173/',
+    baseURL: externalBaseURL ?? 'http://127.0.0.1:4173/projects/civil-war-field-companion/',
     channel: 'chrome',
     headless: true,
     screenshot: 'only-on-failure',
@@ -23,7 +23,7 @@ export default defineConfig({
     },
   ],
   webServer: externalBaseURL ? undefined : {
-    command: 'node_modules\\.bin\\vinext.cmd start --host 127.0.0.1 --port 4173',
+    command: 'node scripts/serve-export.mjs',
     url: 'http://127.0.0.1:4173',
     reuseExistingServer: false,
     timeout: 60_000,

@@ -7,7 +7,8 @@ import './episode-people.css';
 function PersonCard({ reference, command }: { reference: Person; command?: string }) {
   const person = reference.personId ? getPerson(reference.personId) : reference;
   const alt = reference.personId ? getPerson(reference.personId).imageAlt : `Portrait of ${person.name}`;
-  return <article className="person-card people-person" data-person-id={reference.personId}>
+  const Card = reference.personId ? 'a' : 'article';
+  return <Card className="person-card people-person" data-person-id={reference.personId} href={reference.personId ? siteHref(`/people/${reference.personId}`) : undefined}>
     {person.image
       ? <img src={siteHref(person.image)} alt={alt ?? `Portrait of ${person.name}`} width={80} height={100} loading="lazy" />
       : <div className="portrait-placeholder" aria-label={`No portrait available for ${person.name}`}><span>{person.name.split(' ').map((part) => part[0]).join('').slice(0, 2)}</span></div>}
@@ -15,8 +16,9 @@ function PersonCard({ reference, command }: { reference: Person; command?: strin
       <span className={`side ${person.side === 'United States' ? 'union' : 'confederate'}`}>{command ?? person.side}</span>
       <h4>{person.name}</h4>
       <p>{reference.role}</p>
+      {reference.personId && <span className="person-details-link">View profile & portrait →</span>}
     </div>
-  </article>;
+  </Card>;
 }
 
 function CommandBranch({ node }: { node: CommandNode }) {

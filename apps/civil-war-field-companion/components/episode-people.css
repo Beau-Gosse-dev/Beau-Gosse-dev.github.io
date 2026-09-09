@@ -40,3 +40,5 @@
   .people-person.person-card > .people-person-copy { padding: 12px; }
   .people-person h4 { font-size: 21px; }
 }
+
+.people-person[href]{color:inherit;text-decoration:none;transition:border-color .15s,box-shadow .15s}.people-person[href]:hover{border-color:var(--rust);box-shadow:0 2px 8px #0001}.people-person[href]:focus-visible{outline:3px solid var(--rust);outline-offset:3px}.person-details-link{display:inline-block;margin-top:8px;color:var(--rust);font-size:10px;font-weight:700}

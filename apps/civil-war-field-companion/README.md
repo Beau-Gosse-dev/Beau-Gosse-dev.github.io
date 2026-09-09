@@ -35,3 +35,9 @@ For newly revised guides, populate `atAGlance` using the `EpisodeGlance` type in
 - Store unknown numbers as `null`, never zero. Zero means a source explicitly reports none. Preserve combined missing/captured categories when a source does not separate them; do not invent a split or total.
 - Topic episodes (music, politics, biography, etc.): use `kind: 'topic'` with period, location, featured subject, optional key people, historical context, and sources. These do not render a military table.
 - This section is saved editorial content, not generated or selected at page load. Check sources and scope when updating it.
+
+## Person profiles
+
+People in published guides have pages at /people/<person-id>, using the shared catalog and their episode-specific roles and command relationships. Person cards link to those pages; portraits open in a keyboard-accessible viewer with zoom, touch pinch, drag-to-pan, and the original image link. Only published episodes appear on profiles.
+
+Run the build before Playwright tests. The test server serves the static export under the same project URL prefix as GitHub Pages so image loads and navigation are checked against the deployed layout.
