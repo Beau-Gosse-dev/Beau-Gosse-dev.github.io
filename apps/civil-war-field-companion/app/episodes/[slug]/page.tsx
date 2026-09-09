@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { ArrowLeft, ArrowUpRight, CalendarDays, Clock3, Headphones } from 'lucide-react';
-import { AudioTimestamp } from '@/components/audio-timestamp';
 import { BattleFlow } from '@/components/battle-flow';
 import { getBattleFlow } from '@/data/battle-flows';
 import { getPerson } from '@/data/people';
@@ -73,7 +72,7 @@ export default async function EpisodePage({ params }: { params: Promise<{ slug: 
           <h1>{episode.title.replace(/^#?\d+\s*[-–]?\s*/i, '')}</h1>
           <span className="result-label">{guide.result}</span>
         </div>
-        <audio id="episode-audio" controls preload="none" src={episode.audioUrl}>Your browser does not support audio playback.</audio>
+        <a className="primary-button" href={episode.episodeUrl} target="_blank" rel="noreferrer"><Headphones size={16} /> Listen on the official episode page <ArrowUpRight size={16} /></a>
       </header>
 
       <section className="battle-facts" aria-label="Battle facts">
@@ -105,7 +104,7 @@ export default async function EpisodePage({ params }: { params: Promise<{ slug: 
       {SHOW_EVENT_SUMMARIES && <section className="reference-section" id="events">
         <h2>What happened</h2>
         <div className="timeline factual-timeline">
-          {guide.moments.map((moment) => <div className="moment" key={moment.title}>{moment.audioTime === undefined ? <span>{moment.time}</span> : <AudioTimestamp seconds={moment.audioTime} label={moment.time} />}<div><h3>{moment.title}</h3><p>{moment.detail}</p></div></div>)}
+          {guide.moments.map((moment) => <div className="moment" key={moment.title}><span>{moment.time}</span><div><h3>{moment.title}</h3><p>{moment.detail}</p></div></div>)}
         </div>
       </section>}
 
@@ -141,9 +140,8 @@ export default async function EpisodePage({ params }: { params: Promise<{ slug: 
       <p>Episode {episode.number ?? 'special'}</p>
       <h1>{episode.title.replace(/^#?\d+\s*[-–]?\s*/i, '')}</h1>
       <div className="episode-meta large"><span><CalendarDays size={16} /> {formatDate(episode.publishedAt)}</span><span><Clock3 size={16} /> {formatDuration(episode.durationSeconds)}</span></div>
-      <audio controls preload="none" src={episode.audioUrl}>Your browser does not support audio playback.</audio>
       <p className="unenriched-lead">This episode does not have a completed reference guide yet.</p>
-      <a className="primary-button" href={episode.audioUrl}><Headphones size={16} /> Open episode audio</a>
+      <a className="primary-button" href={episode.episodeUrl} target="_blank" rel="noreferrer"><Headphones size={16} /> Listen on the official episode page <ArrowUpRight size={16} /></a>
     </section>}
   </main>;
 }

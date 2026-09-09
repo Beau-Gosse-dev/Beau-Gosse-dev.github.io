@@ -6,7 +6,6 @@ import * as maplibregl from 'maplibre-gl';
 import type { GeoJSONSource, Map as MapLibreMap, Marker } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import type { BattleFlow as BattleFlowData, BattleFlowSide } from '@/data/battle-flows/types';
-import { AudioTimestamp } from '@/components/audio-timestamp';
 
 const sideLabel: Record<BattleFlowSide, string> = {
   union: 'United States',
@@ -204,7 +203,7 @@ export function BattleFlow({ flow }: { flow: BattleFlowData }) {
         <time>{frame.time}</time>
         <h3>{frame.title}</h3>
         <p className="battle-flow-summary">{frame.summary}</p>
-        <AudioTimestamp seconds={frame.audioTime} label={`Listen at ${frame.audioLabel}`} />
+        <p className="battle-flow-audio-reference">Episode timestamp: {frame.audioLabel}</p>
         <div className={`battle-flow-confidence ${frame.confidenceTone}`}><span>Map confidence</span><strong>{frame.confidence}</strong></div>
         <p className="battle-flow-evidence"><strong>Evidence used:</strong> {frame.evidence}</p>
       </article>
