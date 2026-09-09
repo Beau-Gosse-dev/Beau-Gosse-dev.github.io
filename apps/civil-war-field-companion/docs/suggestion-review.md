@@ -2,7 +2,7 @@
 
 The site links to `.github/ISSUE_TEMPLATE/field-companion.yml`. GitHub hosts the form, signs visitors in, and creates the issue when they submit. The URL fills the `page-context` and `page-url` fields, including an episode number and title on episode pages. Profiles pass only the person's name and profile URL. No tokens, anonymous submission endpoint, or paid AI API are part of the website.
 
-The recurring Codex task checks every six hours in the existing conversation. It requires this computer to be on and the app running. Review uses the signed-in Codex session and the existing GitHub connection, rather than a GitHub Actions AI API key. Replies appear under the authenticated GitHub account and must identify themselves as an automated Field Companion review.
+The recurring Codex task checks every six hours in the existing conversation. It requires this computer to be on and the app running. Review uses the signed-in Codex session rather than a GitHub Actions AI API key. For GitHub, use `node scripts/github-issues.mjs` from the app directory: `status`, `list`, `comments NUMBER`, `comment NUMBER --body-file PATH`, or `close NUMBER`. This repository-scoped helper uses the existing Git credential manager, checks that the account is `Beau-Gosse-dev`, and never prints or stores credentials. The separate GitHub connector is signed into a different account with read-only repository permissions; use this helper for owner replies and issue closure. Replies must identify themselves as an automated Field Companion review.
 
 ## Review procedure
 
