@@ -73,7 +73,7 @@ export default async function EpisodePage({ params }: { params: Promise<{ slug: 
           <h1>{episode.title.replace(/^#?\d+\s*[-–]?\s*/i, '')}</h1>
           <span className="result-label">{guide.result}</span>
         </div>
-        <a className="primary-button" href={episode.episodeUrl} target="_blank" rel="noreferrer"><Headphones size={16} /> Listen on the official episode page <ArrowUpRight size={16} /></a>
+        <a className="primary-button" href="https://civilwarpodcast.org/" target="_blank" rel="noreferrer"><Headphones size={16} /> Visit the official podcast website <ArrowUpRight size={16} /></a>
       </header>
 
       <EpisodeGlance guide={guide} />
@@ -140,7 +140,7 @@ export default async function EpisodePage({ params }: { params: Promise<{ slug: 
       <h1>{episode.title.replace(/^#?\d+\s*[-–]?\s*/i, '')}</h1>
       <div className="episode-meta large"><span><CalendarDays size={16} /> {formatDate(episode.publishedAt)}</span><span><Clock3 size={16} /> {formatDuration(episode.durationSeconds)}</span></div>
       <p className="unenriched-lead">This episode does not have a completed reference guide yet.</p>
-      <a className="primary-button" href={episode.episodeUrl} target="_blank" rel="noreferrer"><Headphones size={16} /> Listen on the official episode page <ArrowUpRight size={16} /></a>
+      <a className="primary-button" href="https://civilwarpodcast.org/" target="_blank" rel="noreferrer"><Headphones size={16} /> Visit the official podcast website <ArrowUpRight size={16} /></a>
     </section>}
   </main>;
 }

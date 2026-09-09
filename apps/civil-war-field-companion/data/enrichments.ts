@@ -3188,7 +3188,7 @@ export const enrichments: Record<string, Enrichment> = {
       },
     ],
     sources: [
-      { label: 'Civil War Podcast episode 95', url: 'https://civilwarpodcast.libsyn.com/95-postscript-forrests-breakout' },
+      { label: 'Civil War Podcast — official website (episode 95)', url: 'https://civilwarpodcast.org/' },
       { label: 'National Park Service: Battle of Fort Donelson', url: 'https://www.nps.gov/fodo/planyourvisit/thebattleforfortdonelson.htm' },
       { label: 'National Park Service: Forge Road and the Confederate breakout', url: 'https://www.nps.gov/places/forge-road.htm' },
       { label: 'National Park Service: Fort Donelson battlefield map', url: 'https://www.nps.gov/fodo/learn/photosmultimedia/virtualtour.htm' },

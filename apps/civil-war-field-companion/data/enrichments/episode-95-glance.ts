@@ -9,7 +9,7 @@ export const episode95Glance: EpisodeGlance = {
     label: 'Forrest’s escaping column',
     value: 'About 500 mounted men',
     note: 'The episode’s count for Forrest’s column, not the full Confederate force. The episode also covers his earlier life and the journey to Nashville.',
-    source: { label: 'Episode 95', url: 'https://civilwarpodcast.libsyn.com/95-postscript-forrests-breakout' },
+    source: { label: 'Episode 95 — official podcast website', url: 'https://civilwarpodcast.org/' },
   },
   battle: {
     scope: 'Entire Battle of Fort Donelson · February 13–16, 1862',

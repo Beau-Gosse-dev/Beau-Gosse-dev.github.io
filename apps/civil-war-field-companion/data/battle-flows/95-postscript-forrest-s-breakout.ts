@@ -325,7 +325,7 @@ export const fortDonelsonBattleFlow: BattleFlow = {
     },
   ],
   sources: [
-    { id: 'episode-transcript', label: 'Episode 95 transcript and audio', url: 'https://civilwarpodcast.libsyn.com/95-postscript-forrests-breakout' },
+    { id: 'episode-transcript', label: 'Civil War Podcast — official website (episode 95)', url: 'https://civilwarpodcast.org/' },
     { id: 'nps-battle', label: 'National Park Service: The Battle of Fort Donelson', url: 'https://www.nps.gov/fodo/planyourvisit/thebattleforfortdonelson.htm' },
     { id: 'nps-forge-road', label: 'National Park Service: Forge Road', url: 'https://www.nps.gov/places/forge-road.htm' },
     { id: 'nps-park-map', label: 'National Park Service: Fort Donelson battlefield map', url: 'https://www.nps.gov/fodo/planyourvisit/maps.htm' },
