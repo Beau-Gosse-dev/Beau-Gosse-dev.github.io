@@ -1,10 +1,11 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useId, useRef, useState } from 'react';
 import { Maximize2, Minus, Plus, RotateCcw, X } from 'lucide-react';
 import { siteHref } from '@/lib/site';
 
-export function PortraitViewer({ image, alt, name, source }: { image: string; alt: string; name: string; source?: string }) {
+export function PortraitViewer({ image, alt, name, source, caption, credit }: { image: string; alt: string; name: string; source?: string; caption?: string; credit?: string }) {
+  const titleId = useId();
   const dialogRef = useRef<HTMLDialogElement>(null);
   const viewportRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
@@ -33,14 +34,14 @@ export function PortraitViewer({ image, alt, name, source }: { image: string; al
   }
 
   return <figure className="profile-portrait">
-    <button ref={triggerRef} className="portrait-open" type="button" onClick={() => { reset(); setOpen(true); }} aria-label={`Enlarge portrait of ${name}`}>
+    <button ref={triggerRef} className="portrait-open" type="button" onClick={() => { reset(); setOpen(true); }} aria-label={caption ? `Enlarge image: ${caption}` : `Enlarge portrait of ${name}`}>
       <img src={siteHref(image)} alt={alt} onLoad={(event) => setNatural({ width: event.currentTarget.naturalWidth, height: event.currentTarget.naturalHeight })} />
-      <span><Maximize2 size={17} /> Enlarge portrait</span>
+      <span><Maximize2 size={17} /> {caption ? 'Enlarge image' : 'Enlarge portrait'}</span>
     </button>
-    <figcaption>{alt}{source && <> · <a href={source} target="_blank" rel="noreferrer">Image source and credits</a></>}</figcaption>
-    <dialog ref={dialogRef} className="portrait-dialog" aria-labelledby="portrait-dialog-title" onClose={() => { setOpen(false); pointers.current.clear(); triggerRef.current?.focus(); }} onClick={(event) => { if (event.target === event.currentTarget) dialogRef.current?.close(); }}>
+    <figcaption>{caption ?? alt}{credit && <small>{credit}</small>}{source && <> · <a href={source} target="_blank" rel="noreferrer">Image source and credits</a></>}</figcaption>
+    <dialog ref={dialogRef} className="portrait-dialog" aria-labelledby={titleId} onClose={() => { setOpen(false); pointers.current.clear(); triggerRef.current?.focus(); }} onClick={(event) => { if (event.target === event.currentTarget) dialogRef.current?.close(); }}>
       <div className="portrait-dialog-shell">
-        <header><h2 id="portrait-dialog-title">{name}</h2><button type="button" aria-label="Close portrait viewer" onClick={() => dialogRef.current?.close()}><X size={20} /></button></header>
+        <header><h2 id={titleId}>{name}</h2><button type="button" aria-label="Close portrait viewer" onClick={() => dialogRef.current?.close()}><X size={20} /></button></header>
         <div className="portrait-toolbar" aria-label="Image zoom controls">
           <button type="button" aria-label="Zoom out" disabled={zoom <= 1} onClick={() => changeZoom(zoom - .5)}><Minus size={18} /></button>
           <output aria-live="polite">{Math.round(zoom * 100)}%</output>

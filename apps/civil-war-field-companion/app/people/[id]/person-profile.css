@@ -18,7 +18,19 @@
 .profile-details li{margin-bottom:8px}
 .profile-details .profile-kicker{font-size:10px;margin-top:0}
 .profile-details .profile-scope{color:var(--muted);font-size:12px}
-.profile-episode-link{display:inline-block;margin-top:12px;font-size:13px;font-weight:700}
+.profile-portrait figcaption small{display:block;margin:6px 0;font-size:11px}
+.profile-gallery{border-top:1px solid var(--rule);padding-top:28px;margin-top:32px}
+.profile-gallery h2{font-size:30px;margin:0 0 24px}
+.profile-gallery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.profile-gallery .portrait-open>img{height:420px;object-fit:contain}
+.people-directory{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.people-directory a{display:block;border:1px solid var(--rule);height:100%;color:var(--ink);text-decoration:none;background:var(--paper-deep)}
+.people-directory a:hover,.people-directory a:focus-visible{outline:2px solid var(--rust)}
+.people-directory img{width:100%;height:260px;object-fit:contain;display:block}
+.people-directory a>div{padding:18px}
+.people-directory h2{font-size:23px;margin:0 0 8px}
+.people-directory p{color:var(--muted);margin:0;font-size:14px}
+@media(max-width:700px){.profile-gallery-grid,.people-directory{grid-template-columns:minmax(0,1fr)}.profile-gallery .portrait-open>img{height:auto;max-height:500px}}
 .profile-sources li{font-size:12px}
 .portrait-dialog{padding:0;border:1px solid var(--rule);background:var(--paper);color:var(--ink);width:min(1100px,calc(100vw - 24px));height:calc(100dvh - 24px);max-width:none;max-height:none;overflow:hidden}
 .portrait-dialog::backdrop{background:rgba(15,20,19,.88)}

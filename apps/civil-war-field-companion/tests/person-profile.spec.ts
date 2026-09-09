@@ -1,20 +1,31 @@
 import { expect, test } from '@playwright/test';
 import { people } from '../data/people';
+import galleries from '../data/person-gallery.json' with { type: 'json' };
 
-test('all episode people have a profile, portrait, and episode context', async ({ page }) => {
+test('all people have standalone biographies and working images without episode references', async ({ page }) => {
   await page.goto('episodes/95-postscript-forrest-s-breakout#people');
   await expect(page.locator('#people a.person-card')).toHaveCount(10);
   await page.locator('a[data-person-id="ulysses-s-grant"]').click();
   await expect(page.getByRole('heading', { name: 'Ulysses S. Grant', exact: true, level: 1 })).toBeVisible();
-  await page.getByRole('link', { name: 'John A. McClernand', exact: true }).click();
+  await page.getByRole('link', { name: 'All people' }).click();
+  await expect(page.getByRole('heading', { name: 'People of the Civil War', level: 1 })).toBeVisible();
+  await expect(page.locator('.people-directory a')).toHaveCount(10);
+  await page.getByRole('link', { name: 'John A. McClernand 1812–1900' }).click();
   await expect(page.getByRole('heading', { name: 'John A. McClernand', exact: true, level: 1 })).toBeVisible();
   for (const [id, person] of Object.entries(people)) {
     await page.goto(`people/${id}`);
     await expect(page.getByRole('heading', { name: person.name, exact: true, level: 1 })).toBeVisible();
     await expect(page.getByText(person.lifespan, { exact: true })).toBeVisible();
     await expect(page.getByRole('button', { name: `Enlarge portrait of ${person.name}` })).toBeVisible();
-    await expect.poll(() => page.locator('.portrait-open img').evaluate((image: HTMLImageElement) => image.naturalWidth)).toBeGreaterThan(0);
-    await expect(page.getByRole('link', { name: 'View episode 95 guide' })).toHaveAttribute('href', /episodes\/95-postscript-forrest-s-breakout#people$/);
+    await expect(page.getByRole('heading', { name: 'Biography sources' })).toBeVisible();
+    await expect(page.locator('body')).not.toContainText(/episode/i);
+    await expect(page.locator('a[href*="/episodes/"]')).toHaveCount(0);
+    const images = page.locator('.portrait-open img');
+    await expect(images).toHaveCount(1 + ((galleries as Record<string, unknown[]>)[id]?.length ?? 0));
+    for (const image of await images.all()) {
+      await image.scrollIntoViewIfNeeded();
+      await expect.poll(() => image.evaluate((element: HTMLImageElement) => element.naturalWidth)).toBeGreaterThan(0);
+    }
   }
 });
 
@@ -49,6 +60,16 @@ test('portrait viewer zooms, pans, resets, and restores keyboard focus', async (
   await trigger.click();
   await viewer.getByRole('button', { name: 'Close portrait viewer' }).click();
   await expect(viewer).not.toBeVisible();
+  const extraTrigger = page.getByRole('button', { name: 'Enlarge image: Grant at his headquarters at Cold Harbor, Virginia, June 1864.' });
+  await extraTrigger.click();
+  await expect(viewer).toBeVisible();
+  await expect(viewer.locator('img')).toHaveAttribute('src', /ulysses-s-grant-loc-2018667429.jpg$/);
+  await viewer.getByRole('button', { name: 'Zoom in', exact: true }).click();
+  await expect(viewer.locator('output')).toHaveText('150%');
+  await page.keyboard.press('Escape');
+  await expect(extraTrigger).toBeFocused();
+  const ids = await page.locator('[id]').evaluateAll((elements) => elements.map((element) => element.id));
+  expect(new Set(ids).size).toBe(ids.length);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   await page.screenshot({ path: testInfo.outputPath('person-profile.png'), fullPage: true });
 });

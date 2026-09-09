@@ -38,6 +38,6 @@ For newly revised guides, populate `atAGlance` using the `EpisodeGlance` type in
 
 ## Person profiles
 
-People in published guides have pages at /people/<person-id>, using the shared catalog and their episode-specific roles and command relationships. Person cards link to those pages; portraits open in a keyboard-accessible viewer with zoom, touch pinch, drag-to-pan, and the original image link. Only published episodes appear on profiles.
+People in published guides have standalone pages at /people/<person-id>, with general biographies, source links, and additional archival photographs where available. Profiles contain no episode references or episode links; /people provides a directory. Person cards link to profiles, and every image opens in a keyboard-accessible viewer with zoom, touch pinch, drag-to-pan, and a full-size image link. Biography content lives in data/person-biographies.ts and supplemental image credits in data/person-gallery.json.
 
 Run the build before Playwright tests. The test server serves the static export under the same project URL prefix as GitHub Pages so image loads and navigation are checked against the deployed layout.
