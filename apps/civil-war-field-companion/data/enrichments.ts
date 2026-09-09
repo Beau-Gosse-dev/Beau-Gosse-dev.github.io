@@ -1,5 +1,6 @@
 import { episodeEnrichments } from './enrichments/episodes/index';
 import type { Enrichment } from './enrichments/types';
+import { episode95Glance } from './enrichments/episode-95-glance';
 
 export type { Enrichment, Person } from './enrichments/types';
 
@@ -3075,6 +3076,7 @@ export const enrichments: Record<string, Enrichment> = {
     ],
   },
   '95-postscript-forrest-s-breakout': {
+    atAGlance: episode95Glance,
     date: 'July 1821–February 25, 1862',
     place: 'Tennessee and Mississippi; Fort Donelson, Dover, and Nashville, Tennessee',
     result: 'Nathan Bedford Forrest rose from a Tennessee and Mississippi businessman and slave trader to lieutenant colonel of Confederate cavalry. At Fort Donelson, his cavalry helped open Forge Road during the Confederate attack on February 15, 1862. The senior commanders then ordered the troops back into their defenses. Before the surrender on February 16, Forrest led roughly 500 mounted men out on the old Charlotte Road, crossed flooded Lick Creek, and reached Nashville on February 18',

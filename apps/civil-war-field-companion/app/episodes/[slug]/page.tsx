@@ -6,6 +6,7 @@ import { getBattleFlow } from '@/data/battle-flows';
 import { getPerson } from '@/data/people';
 import { getCommandTree, flattenCommandNodes } from '@/data/command-trees';
 import { EpisodePeople } from '@/components/episode-people';
+import { EpisodeGlance } from '@/components/episode-glance';
 import { episodes, formatDate, formatDuration, getEnrichment, getEpisode } from '@/lib/episodes';
 import { siteHref } from '@/lib/site';
 
@@ -75,9 +76,7 @@ export default async function EpisodePage({ params }: { params: Promise<{ slug: 
         <a className="primary-button" href={episode.episodeUrl} target="_blank" rel="noreferrer"><Headphones size={16} /> Listen on the official episode page <ArrowUpRight size={16} /></a>
       </header>
 
-      <section className="battle-facts" aria-label="Battle facts">
-        {guide.facts.map((fact) => <div key={fact.label}><span>{fact.label}</span><strong>{fact.value}</strong>{fact.note && <small>{fact.note}</small>}</div>)}
-      </section>
+      <EpisodeGlance guide={guide} />
 
       <nav className="reference-nav" aria-label="Episode guide sections">
         {battleFlow && <a href="#battle-flow">Battle Flow</a>}{visibleMaps.length > 0 && <a href="#maps">Maps</a>}{SHOW_EVENT_SUMMARIES && <a href="#events">What happened</a>}<a href="#people">People and command</a>{guide.losses.length > 0 && <a href="#losses">Leader losses</a>}<a href="#images">Images</a>

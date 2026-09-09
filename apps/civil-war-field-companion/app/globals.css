@@ -38,3 +38,22 @@
 .battle-flow-map-tools svg{display:block;width:16px!important;height:16px!important;min-height:0!important;max-width:16px;flex:0 0 16px}
 .battle-flow-map .battle-flow-map-canvas.maplibregl-map{height:clamp(530px,58vw,680px)}
 @media(max-width:720px){.battle-flow-map .battle-flow-map-canvas.maplibregl-map{height:520px}}
+
+/* Episode summaries use structured fields; military figures are optional. */
+.episode-glance{padding:24px 0 0;border-bottom:1px solid var(--rule)}
+.episode-glance>h2{margin:0 0 4px;font-size:26px;letter-spacing:-.02em}
+.episode-glance .battle-facts{border-bottom:0}
+.episode-glance .battle-facts small{font-size:12px;line-height:1.5}
+.glance-sources{margin:6px 0 0;font-size:11px;line-height:1.5;color:var(--rust)}
+.glance-sources a{text-decoration:underline;text-underline-offset:3px}
+.glance-forces{padding:20px 0 24px;border-top:1px solid var(--rule)}
+.glance-forces h3{margin:0;font-size:23px}
+.glance-scope{margin:6px 0 16px;font-size:13px;font-weight:600;color:var(--forest)}
+.glance-forces table{border-collapse:collapse;width:100%;table-layout:fixed;font-size:14px}
+.glance-forces caption{text-align:left;color:var(--muted);font-size:12px;padding-bottom:10px}
+.glance-forces th,.glance-forces td{padding:10px 12px;text-align:right;border-bottom:1px solid var(--rule);overflow-wrap:anywhere;font-variant-numeric:tabular-nums}
+.glance-forces th:first-child{text-align:left;padding-left:0;width:40%}
+.glance-forces thead th{font-size:12px;color:var(--muted)}
+.glance-forces tbody th{font-weight:500}
+.glance-note{margin:12px 0 0;color:var(--muted);font-size:12px;line-height:1.5}
+@media(max-width:700px){.glance-forces th,.glance-forces td{padding:10px 6px;font-size:12px}.glance-forces th:first-child{width:38%}.episode-glance .battle-facts>div:first-child{border-top:0}}

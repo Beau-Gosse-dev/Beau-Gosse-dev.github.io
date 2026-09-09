@@ -25,3 +25,13 @@ Commit source edits before publishing. The script locates the parent repository 
 `data/transcripts/` contains machine transcripts used for research. It is intentionally ignored by Git and must never be force-added or copied into the public export. Existing transcripts remain on the local machine after migration; a fresh clone does not include them. Building the published guides does not require the transcripts.
 
 Audio and other working files under `work/`, unfinished assets under `data/work-in-progress-assets/`, dependencies, and build caches are also local-only. The original companion Git history was not imported into this public repository.
+
+## Episode at a glance
+
+For newly revised guides, populate `atAGlance` using the `EpisodeGlance` type in `data/enrichments/types.ts`. Episode 95 is the current published example; legacy `facts` remain available for unrevised, hidden guides.
+
+- Battle episodes: provide the featured action dates, location, and outcome. Use `episodeContext` for a sourced, clearly scoped subset such as an escaping column.
+- Add the optional `battle` table only when military figures apply and sources are available. State the event and date range covered by the figures, especially when this is broader than the episode. Cite the sources beside the table and label estimates.
+- Store unknown numbers as `null`, never zero. Zero means a source explicitly reports none. Preserve combined missing/captured categories when a source does not separate them; do not invent a split or total.
+- Topic episodes (music, politics, biography, etc.): use `kind: 'topic'` with period, location, featured subject, optional key people, historical context, and sources. These do not render a military table.
+- This section is saved editorial content, not generated or selected at page load. Check sources and scope when updating it.
