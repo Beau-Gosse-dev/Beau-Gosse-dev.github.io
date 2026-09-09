@@ -1,13 +1,12 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { ChevronLeft, ChevronRight, Layers3, MapPinned, Pause, Play, X } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Pause, Play } from 'lucide-react';
 import * as maplibregl from 'maplibre-gl';
 import type { GeoJSONSource, Map as MapLibreMap, Marker } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import type { BattleFlow as BattleFlowData, BattleFlowSide } from '@/data/battle-flows/types';
 import { AudioTimestamp } from '@/components/audio-timestamp';
-import { siteHref } from '@/lib/site';
 
 const sideLabel: Record<BattleFlowSide, string> = {
   union: 'United States',
@@ -25,14 +24,11 @@ export function BattleFlow({ flow }: { flow: BattleFlowData }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [mapReady, setMapReady] = useState(false);
-  const [showHistoricOverlay, setShowHistoricOverlay] = useState(true);
-  const [showReferenceMap, setShowReferenceMap] = useState(false);
   const frame = flow.frames[activeIndex];
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const mapContainerRef = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
   const dynamicMarkersRef = useRef<Marker[]>([]);
-  const landmarkMarkersRef = useRef<Marker[]>([]);
 
   const selectFrame = (index: number) => {
     setIsPlaying(false);
@@ -91,42 +87,6 @@ export function BattleFlow({ flow }: { flow: BattleFlowData }) {
     map.addControl(new maplibregl.AttributionControl({ compact: true }), 'bottom-right');
 
     map.on('load', () => {
-      const historicFeatures = flow.map.layers.map((layer) => ({
-        type: 'Feature' as const,
-        properties: { id: layer.id, label: layer.label, kind: layer.kind, confidence: layer.confidence },
-        geometry: { type: 'LineString' as const, coordinates: layer.coordinates },
-      }));
-
-      map.addSource('historic-features', { type: 'geojson', data: featureCollection(historicFeatures) });
-      map.addLayer({
-        id: 'historic-road-casing',
-        type: 'line',
-        source: 'historic-features',
-        filter: ['in', ['get', 'kind'], ['literal', ['historic-road', 'escape-route']]],
-        paint: { 'line-color': '#fffaf0', 'line-width': 7, 'line-opacity': 0.88 },
-      });
-      map.addLayer({
-        id: 'historic-roads',
-        type: 'line',
-        source: 'historic-features',
-        filter: ['in', ['get', 'kind'], ['literal', ['historic-road', 'escape-route']]],
-        paint: { 'line-color': ['match', ['get', 'kind'], 'escape-route', '#a47a25', '#6f6658'], 'line-width': 3, 'line-dasharray': [2, 1.6] },
-      });
-      map.addLayer({
-        id: 'historic-earthworks',
-        type: 'line',
-        source: 'historic-features',
-        filter: ['==', ['get', 'kind'], 'earthwork'],
-        paint: { 'line-color': '#883f31', 'line-width': 6, 'line-dasharray': [1.4, 0.8], 'line-opacity': 0.9 },
-      });
-      map.addLayer({
-        id: 'historic-crossing',
-        type: 'line',
-        source: 'historic-features',
-        filter: ['==', ['get', 'kind'], 'water-crossing'],
-        paint: { 'line-color': '#356577', 'line-width': 8, 'line-opacity': 0.72 },
-      });
-
       map.addSource('movements-solid', { type: 'geojson', data: featureCollection([]) });
       map.addSource('movements-dashed', { type: 'geojson', data: featureCollection([]) });
       map.addLayer({
@@ -144,23 +104,13 @@ export function BattleFlow({ flow }: { flow: BattleFlowData }) {
         layout: { 'line-cap': 'round', 'line-join': 'round' },
       });
 
-      flow.map.landmarks.forEach((landmark) => {
-        const element = document.createElement('div');
-        element.className = `battle-flow-landmark-marker ${landmark.kind}`;
-        element.innerHTML = `<i aria-hidden="true"></i><span>${landmark.label}</span>`;
-        element.setAttribute('aria-label', landmark.label);
-        landmarkMarkersRef.current.push(new maplibregl.Marker({ element, anchor: 'left' }).setLngLat(landmark.position).addTo(map));
-      });
-
       setMapReady(true);
     });
 
     mapRef.current = map;
     return () => {
       dynamicMarkersRef.current.forEach((marker) => marker.remove());
-      landmarkMarkersRef.current.forEach((marker) => marker.remove());
       dynamicMarkersRef.current = [];
-      landmarkMarkersRef.current = [];
       map.remove();
       mapRef.current = null;
       setMapReady(false);
@@ -213,17 +163,6 @@ export function BattleFlow({ flow }: { flow: BattleFlowData }) {
     map.easeTo({ center: camera.center, zoom: camera.zoom, duration: reduceMotion ? 0 : 850 });
   }, [flow, frame, mapReady]);
 
-  useEffect(() => {
-    const map = mapRef.current;
-    if (!map || !mapReady) return;
-    ['historic-road-casing', 'historic-roads', 'historic-earthworks', 'historic-crossing'].forEach((id) => {
-      map.setLayoutProperty(id, 'visibility', showHistoricOverlay ? 'visible' : 'none');
-    });
-    landmarkMarkersRef.current.forEach((marker) => {
-      marker.getElement().classList.toggle('historic-hidden', !showHistoricOverlay);
-    });
-  }, [mapReady, showHistoricOverlay]);
-
   return <section className="battle-flow" aria-labelledby="battle-flow-title">
     <header className="battle-flow-header">
       <div>
@@ -252,16 +191,6 @@ export function BattleFlow({ flow }: { flow: BattleFlowData }) {
     <div className="battle-flow-stage">
       <div className="battle-flow-map">
         <section className="battle-flow-map-canvas" ref={mapContainerRef} aria-label={`${frame.title}. ${frame.summary}`} />
-        <div className="battle-flow-map-tools" aria-label="Map layers">
-          <button type="button" aria-pressed={showHistoricOverlay} onClick={() => setShowHistoricOverlay((current) => !current)}><Layers3 size={15} /> Historic overlay</button>
-          {flow.map.referenceMap && <button type="button" aria-expanded={showReferenceMap} onClick={() => setShowReferenceMap((current) => !current)}><MapPinned size={15} /> Source map</button>}
-        </div>
-        {showReferenceMap && flow.map.referenceMap && <aside className="battle-flow-reference" aria-label={flow.map.referenceMap.label}>
-          <button className="battle-flow-reference-close" type="button" onClick={() => setShowReferenceMap(false)} aria-label="Close source map"><X size={17} /></button>
-          {/* oxlint-disable-next-line next/no-img-element -- sourced static reference map; dimensions are responsive */}
-          <img src={siteHref(flow.map.referenceMap.image)} alt={flow.map.referenceMap.label} width={1720} height={1056} />
-          <div><strong>{flow.map.referenceMap.label}</strong><p>{flow.map.referenceMap.note}</p><a href={flow.map.referenceMap.sourceUrl} target="_blank" rel="noreferrer">Open source</a></div>
-        </aside>}
         <div className="battle-flow-legend" aria-hidden="true">
           <span><i className="union" /> United States</span>
           <span><i className="confederate" /> Confederacy</span>

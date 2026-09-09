@@ -37,6 +37,8 @@ export default async function EpisodePage({ params }: { params: Promise<{ slug: 
   const episode = getEpisode(slug);
   if (!episode) notFound();
   const guide = getEnrichment(slug);
+  // Retain the custom schematic data, but show only the other reference maps.
+  const visibleMaps = guide?.maps.filter((map) => map.image !== '/images/fort-donelson-breakout-map.svg') ?? [];
   const battleFlow = getBattleFlow(slug);
   const commandTree = getCommandTree(slug);
   const sources = guide
@@ -79,11 +81,25 @@ export default async function EpisodePage({ params }: { params: Promise<{ slug: 
       </section>
 
       <nav className="reference-nav" aria-label="Episode guide sections">
-        {battleFlow && <a href="#battle-flow">Battle Flow</a>}{SHOW_EVENT_SUMMARIES && <a href="#events">What happened</a>}<a href="#people">People and command</a>{guide.losses.length > 0 && <a href="#losses">Leader losses</a>}<a href="#images">Images</a>
+        {battleFlow && <a href="#battle-flow">Battle Flow</a>}{visibleMaps.length > 0 && <a href="#maps">Maps</a>}{SHOW_EVENT_SUMMARIES && <a href="#events">What happened</a>}<a href="#people">People and command</a>{guide.losses.length > 0 && <a href="#losses">Leader losses</a>}<a href="#images">Images</a>
       </nav>
 
       {battleFlow && <section className="reference-section battle-flow-section" id="battle-flow">
         <BattleFlow flow={battleFlow} />
+      </section>}
+
+      {visibleMaps.length > 0 && <section className="reference-section maps-section" id="maps">
+        <h2>Maps</h2>
+        <div className="maps-grid">
+          {visibleMaps.map((map) => <figure className="reference-map" key={map.title}>
+            <div className={`map-frame ${map.image ? 'static-map-frame' : 'interactive-map-frame'}`}>
+              {map.embed
+                ? <iframe src={map.embed} title={map.title} loading="lazy" />
+                : <a className="map-image-link" href={siteHref(map.image!)} target="_blank" rel="noreferrer" aria-label={`Open ${map.title} at full size`}><img src={siteHref(map.image!)} alt={map.alt!} width={1600} height={1200} loading="lazy" /></a>}
+            </div>
+            <figcaption><strong>{map.title}</strong><span>{map.caption}</span><span className="map-actions">{map.image && <a href={siteHref(map.image)} target="_blank" rel="noreferrer">Open full-size map <ArrowUpRight size={13} /></a>}<a href={map.source} target="_blank" rel="noreferrer">Map source <ArrowUpRight size={13} /></a></span>{map.embed && <small>Interactive map: drag to pan and use the +/− controls to zoom.</small>}</figcaption>
+          </figure>)}
+        </div>
       </section>}
 
       {SHOW_EVENT_SUMMARIES && <section className="reference-section" id="events">

@@ -29,7 +29,7 @@ export const fortDonelsonBattleFlow: BattleFlow = {
   description:
     'Step through the Confederate breakout, the United States counterattacks, and Forrest’s escape on a geographic reference map. Documented locations are distinguished from approximate unit footprints and routes.',
   mapNote:
-    'Modern geography comes from OpenStreetMap. Historic roads, earthworks, unit centers, and the escape track are reconstructed from National Park Service, Library of Congress, U.S. Army, and American Battlefield Trust sources. They show general relationships, not exact frontage.',
+    'Modern geography comes from OpenStreetMap. Unit centers and movement routes are reconstructed from National Park Service, Library of Congress, U.S. Army, and American Battlefield Trust sources. They show general relationships, not exact frontage.',
   map: {
     center: [-87.852, 36.4805],
     zoom: 13,
