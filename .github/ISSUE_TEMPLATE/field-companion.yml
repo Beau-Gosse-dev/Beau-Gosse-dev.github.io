@@ -1,0 +1,52 @@
+name: Civil War Field Companion suggestion
+description: Suggest a correction, report a problem, or share an idea for the Field Companion.
+title: "[Field Companion] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the Civil War Field Companion. Suggestions are public. Please leave out personal or sensitive information.
+        If you arrived from the site, the page details are already filled in below.
+  - type: input
+    id: page-context
+    attributes:
+      label: Page
+      description: The page this suggestion is about.
+      placeholder: Episode number and title, person name, or general site feedback
+    validations:
+      required: true
+  - type: input
+    id: page-url
+    attributes:
+      label: Page link
+      placeholder: https://beau-gosse-dev.github.io/projects/civil-war-field-companion/
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Kind of suggestion
+      options:
+        - Historical correction
+        - Website problem
+        - Image or map suggestion
+        - New feature or other idea
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What should change?
+      description: Tell us what you noticed and what you would like changed. For a website problem, include what you did and what happened.
+      placeholder: Describe your suggestion here.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Supporting sources or screenshots
+      description: Optional. Links, book titles and page numbers, or screenshots help us check a correction. For images, include the original collection or source.
+  - type: markdown
+    attributes:
+      value: |
+        Submitting this form creates a GitHub issue where you can follow the discussion. An AI assistant helps review suggestions; historical corrections are checked against sources before publication.

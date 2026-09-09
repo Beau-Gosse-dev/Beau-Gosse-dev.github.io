@@ -41,3 +41,9 @@ For newly revised guides, populate `atAGlance` using the `EpisodeGlance` type in
 People in published guides have standalone pages at /people/<person-id>, with general biographies, source links, and additional archival photographs where available. Profiles contain no episode references or episode links; /people provides a directory. Person cards link to profiles, and every image opens in a keyboard-accessible viewer with zoom, touch pinch, drag-to-pan, and a full-size image link. Biography content lives in data/person-biographies.ts and supplemental image credits in data/person-gallery.json.
 
 Run the build before Playwright tests. The test server serves the static export under the same project URL prefix as GitHub Pages so image loads and navigation are checked against the deployed layout.
+
+## Suggestions
+
+The "Suggest a change" panel opens the repository's GitHub issue form with the current page title and URL already filled in. Visitors sign in to GitHub and submit there; suggestions and replies are public. The shared link builder is `lib/feedback.ts`, and the form is `.github/ISSUE_TEMPLATE/field-companion.yml` at the repository root. It works without client JavaScript and never includes a GitHub token in the site.
+
+A recurring Codex review checks suggestions every six hours, responds to actionable feedback, and publishes verified small fixes. The computer must be on and the app running. See `docs/suggestion-review.md` for scope, source checking, duplicate-response handling, and publishing requirements.

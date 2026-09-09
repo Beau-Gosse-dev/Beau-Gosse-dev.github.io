@@ -5,6 +5,7 @@ import { personBiographies } from '@/data/person-biographies';
 import galleries from '@/data/person-gallery.json';
 import { findPublishedPerson, publishedPersonIds } from '@/lib/person-profiles';
 import { PortraitViewer } from '@/components/portrait-viewer';
+import { FeedbackSection } from '@/components/feedback-section';
 import { siteHref } from '@/lib/site';
 import './person-profile.css';
 
@@ -40,6 +41,7 @@ export default async function PersonPage({ params }: { params: Promise<{ id: str
         <h2 id="profile-gallery-title">More images</h2>
         <div className="profile-gallery-grid">{extraImages.map((item) => <PortraitViewer key={item.image} image={item.image} alt={item.caption} caption={item.caption} credit={item.credit} name={person.name} source={item.source} />)}</div>
       </section>}
+      <FeedbackSection context={{ title: person.name, path: `/people/${id}` }} />
     </article>
   </main>;
 }

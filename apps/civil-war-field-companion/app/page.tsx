@@ -2,6 +2,7 @@ import { EpisodeBrowser } from '@/components/episode-browser';
 import { enrichments } from '@/data/enrichments';
 import { episodes } from '@/lib/episodes';
 import { siteHref } from '@/lib/site';
+import { FeedbackSection } from '@/components/feedback-section';
 
 export default function Home() {
   const parsedEpisodes = episodes
@@ -38,6 +39,7 @@ export default function Home() {
         </nav>
       </header>
       <EpisodeBrowser episodes={parsedEpisodes} />
+      <div className="home-feedback"><FeedbackSection context={{ title: 'General site feedback', path: '/' }} /></div>
       <footer>
         <p>
           An independent, best-effort listening companion built with automated

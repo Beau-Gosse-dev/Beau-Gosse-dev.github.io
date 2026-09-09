@@ -7,6 +7,7 @@ import { getPerson } from '@/data/people';
 import { getCommandTree, flattenCommandNodes } from '@/data/command-trees';
 import { EpisodePeople } from '@/components/episode-people';
 import { EpisodeGlance } from '@/components/episode-glance';
+import { FeedbackSection } from '@/components/feedback-section';
 import { episodes, formatDate, formatDuration, getEnrichment, getEpisode } from '@/lib/episodes';
 import { siteHref } from '@/lib/site';
 
@@ -37,6 +38,7 @@ export default async function EpisodePage({ params }: { params: Promise<{ slug: 
   const episode = getEpisode(slug);
   if (!episode) notFound();
   const guide = getEnrichment(slug);
+  const feedbackContext = { title: `Episode ${episode.number ?? 'special'}: ${episode.title.replace(/^#?\d+\s*[-–]?\s*/i, '')}`, path: `/episodes/${slug}` };
   // Retain the custom schematic data, but show only the other reference maps.
   const visibleMaps = guide?.maps.filter((map) => map.image !== '/images/fort-donelson-breakout-map.svg') ?? [];
   const battleFlow = getBattleFlow(slug);
@@ -79,7 +81,7 @@ export default async function EpisodePage({ params }: { params: Promise<{ slug: 
       <EpisodeGlance guide={guide} />
 
       <nav className="reference-nav" aria-label="Episode guide sections">
-        {battleFlow && <a href="#battle-flow">Battle Flow</a>}{visibleMaps.length > 0 && <a href="#maps">Maps</a>}{SHOW_EVENT_SUMMARIES && <a href="#events">What happened</a>}<a href="#people">People and command</a>{guide.losses.length > 0 && <a href="#losses">Leader losses</a>}<a href="#images">Images</a>
+        {battleFlow && <a href="#battle-flow">Battle Flow</a>}{visibleMaps.length > 0 && <a href="#maps">Maps</a>}{SHOW_EVENT_SUMMARIES && <a href="#events">What happened</a>}<a href="#people">People and command</a>{guide.losses.length > 0 && <a href="#losses">Leader losses</a>}<a href="#images">Images</a><a href="#feedback">Suggest a change</a>
       </nav>
 
       {battleFlow && <section className="reference-section battle-flow-section" id="battle-flow">
@@ -134,12 +136,14 @@ export default async function EpisodePage({ params }: { params: Promise<{ slug: 
         <summary>Sources and image credits</summary>
         <ul>{sources.map((source) => <li key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.label} <ArrowUpRight size={12} /></a></li>)}</ul>
       </details>
-      <aside className="automation-note"><strong>Best-effort automated guide</strong><p>This guide was drafted from machine transcription and automated research, then checked before publication. Errors may remain. A public correction and suggestion workflow is planned.</p></aside>
+      <aside className="automation-note"><strong>Best-effort automated guide</strong><p>This guide was drafted from machine transcription and automated research, then checked before publication. Errors may remain. Please suggest a correction if you spot one.</p></aside>
+      <FeedbackSection context={feedbackContext} />
     </article> : <section className="unenriched plain-episode">
       <p>Episode {episode.number ?? 'special'}</p>
       <h1>{episode.title.replace(/^#?\d+\s*[-–]?\s*/i, '')}</h1>
       <div className="episode-meta large"><span><CalendarDays size={16} /> {formatDate(episode.publishedAt)}</span><span><Clock3 size={16} /> {formatDuration(episode.durationSeconds)}</span></div>
       <p className="unenriched-lead">This episode does not have a completed reference guide yet.</p>
+      <FeedbackSection context={feedbackContext} />
       <a className="primary-button" href="https://civilwarpodcast.org/" target="_blank" rel="noreferrer"><Headphones size={16} /> Visit the official podcast website <ArrowUpRight size={16} /></a>
     </section>}
   </main>;

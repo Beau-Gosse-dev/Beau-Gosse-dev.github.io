@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { getPerson } from '@/data/people';
 import { publishedPersonIds } from '@/lib/person-profiles';
 import { siteHref } from '@/lib/site';
+import { FeedbackSection } from '@/components/feedback-section';
 import './[id]/person-profile.css';
 
 export const metadata: Metadata = { title: 'People of the Civil War · Field Companion' };
@@ -20,6 +21,7 @@ export default function PeoplePage() {
           <div><h2>{person.name}</h2><p>{person.lifespan}</p></div>
         </a></li>;
       })}</ul>
+      <FeedbackSection context={{ title: 'People of the Civil War', path: '/people' }} />
     </div>
   </main>;
 }
