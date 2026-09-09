@@ -1,0 +1,1 @@
+var e=`/projects/civil-war-field-companion`;`${e}`;function t(t=`/`){return`${e}${t.startsWith(`/`)?t:`/${t}`}`}export{t};
