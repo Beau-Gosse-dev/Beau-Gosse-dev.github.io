@@ -10,6 +10,9 @@ import { EpisodePeople } from '@/components/episode-people';
 import { episodes, formatDate, formatDuration, getEnrichment, getEpisode } from '@/lib/episodes';
 import { siteHref } from '@/lib/site';
 
+// Temporarily hide event summaries while retaining the guide data and rendering.
+const SHOW_EVENT_SUMMARIES = false;
+
 export function generateStaticParams() {
   return episodes.filter((episode) => Boolean(getEnrichment(episode.slug))).map((episode) => ({ slug: episode.slug }));
 }
@@ -76,7 +79,7 @@ export default async function EpisodePage({ params }: { params: Promise<{ slug: 
       </section>
 
       <nav className="reference-nav" aria-label="Episode guide sections">
-        {battleFlow && <a href="#battle-flow">Battle Flow</a>}<a href="#maps">Maps</a><a href="#events">What happened</a><a href="#people">People and command</a>{guide.losses.length > 0 && <a href="#losses">Leader losses</a>}<a href="#images">Images</a>
+        {battleFlow && <a href="#battle-flow">Battle Flow</a>}<a href="#maps">Maps</a>{SHOW_EVENT_SUMMARIES && <a href="#events">What happened</a>}<a href="#people">People and command</a>{guide.losses.length > 0 && <a href="#losses">Leader losses</a>}<a href="#images">Images</a>
       </nav>
 
       {battleFlow && <section className="reference-section battle-flow-section" id="battle-flow">
@@ -97,12 +100,12 @@ export default async function EpisodePage({ params }: { params: Promise<{ slug: 
         </div>
       </section>
 
-      <section className="reference-section" id="events">
+      {SHOW_EVENT_SUMMARIES && <section className="reference-section" id="events">
         <h2>What happened</h2>
         <div className="timeline factual-timeline">
           {guide.moments.map((moment) => <div className="moment" key={moment.title}>{moment.audioTime === undefined ? <span>{moment.time}</span> : <AudioTimestamp seconds={moment.audioTime} label={moment.time} />}<div><h3>{moment.title}</h3><p>{moment.detail}</p></div></div>)}
         </div>
-      </section>
+      </section>}
 
       <section className="reference-section" id="people">
         <h2>People and command</h2>
