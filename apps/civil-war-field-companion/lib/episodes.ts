@@ -1,9 +1,8 @@
 import episodesData from '@/data/episodes.json';
 import { enrichments } from '@/data/enrichments';
 export type Episode = (typeof episodesData)[number];
-// Keep all source data, but expose only episode 95 while guides are in development.
-// This also limits static routes and direct episode lookups, not just the archive.
-export const episodes = (episodesData as Episode[]).filter((episode) => episode.number === 95);
+// Publish researched guides through the shared template; retain the rest of the feed locally.
+export const episodes = (episodesData as Episode[]).filter((episode) => Boolean(enrichments[episode.slug]));
 export const getEpisode = (slug: string) => episodes.find((episode) => episode.slug === slug);
 export const getEnrichment = (slug: string) => enrichments[slug];
 export function formatDuration(seconds: number | null) { if (!seconds) return 'Duration unavailable'; const hours = Math.floor(seconds / 3600); const minutes = Math.floor((seconds % 3600) / 60); return hours ? `${hours} hr ${minutes} min` : `${minutes} min`; }

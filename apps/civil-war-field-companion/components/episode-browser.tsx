@@ -17,7 +17,7 @@ export function EpisodeBrowser({ episodes }: { episodes: Episode[] }) {
             .includes(term),
         )
       : episodes;
-    return showAll || term ? results.slice(0, 80) : results.slice(0, 9);
+    return showAll || term ? results : results.slice(0, 9);
   }, [episodes, query, showAll]);
   return (
     <section className="archive" id="archive">

@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { ArrowLeft, ArrowUpRight, CalendarDays, Clock3, Headphones } from 'lucide-react';
 import { BattleFlow } from '@/components/battle-flow';
+import { EpisodeFlow } from '@/components/episode-flow';
+import { PortraitViewer } from '@/components/portrait-viewer';
+import '@/app/people/[id]/person-profile.css';
 import { getBattleFlow } from '@/data/battle-flows';
 import { getPerson } from '@/data/people';
 import { getCommandTree, flattenCommandNodes } from '@/data/command-trees';
@@ -39,8 +42,8 @@ export default async function EpisodePage({ params }: { params: Promise<{ slug: 
   if (!episode) notFound();
   const guide = getEnrichment(slug);
   const feedbackContext = { title: `Episode ${episode.number ?? 'special'}: ${episode.title.replace(/^#?\d+\s*[-–]?\s*/i, '')}`, path: `/episodes/${slug}` };
-  // Retain the custom schematic data, but show only the other reference maps.
-  const visibleMaps = guide?.maps.filter((map) => map.image !== '/images/fort-donelson-breakout-map.svg') ?? [];
+  // Retain custom schematics in source; show live and archival reference maps.
+  const visibleMaps = guide?.maps.filter((map) => !map.image?.endsWith('.svg')) ?? [];
   const battleFlow = getBattleFlow(slug);
   const commandTree = getCommandTree(slug);
   const sources = guide
@@ -78,15 +81,15 @@ export default async function EpisodePage({ params }: { params: Promise<{ slug: 
         <a className="primary-button" href="https://civilwarpodcast.org/" target="_blank" rel="noreferrer"><Headphones size={16} /> Visit the official podcast website <ArrowUpRight size={16} /></a>
       </header>
 
-      <EpisodeGlance guide={guide} />
+      <EpisodeGlance guide={guide} topic={[100, 138, 139, 200, 201, 202, 203, 204, 495, 496, 528].includes(episode.number ?? -1)} />
 
       <nav className="reference-nav" aria-label="Episode guide sections">
-        {battleFlow && <a href="#battle-flow">Battle Flow</a>}{visibleMaps.length > 0 && <a href="#maps">Maps</a>}{SHOW_EVENT_SUMMARIES && <a href="#events">What happened</a>}<a href="#people">People and command</a>{guide.losses.length > 0 && <a href="#losses">Leader losses</a>}<a href="#images">Images</a><a href="#feedback">Suggest a change</a>
+        <a href="#battle-flow">{battleFlow ? 'Battle Flow' : 'Episode flow'}</a>{visibleMaps.length > 0 && <a href="#maps">Maps</a>}{SHOW_EVENT_SUMMARIES && <a href="#events">What happened</a>}<a href="#people">People and command</a>{guide.losses.length > 0 && <a href="#losses">Leader losses</a>}<a href="#images">Images</a><a href="#feedback">Suggest a change</a>
       </nav>
 
-      {battleFlow && <section className="reference-section battle-flow-section" id="battle-flow">
-        <BattleFlow flow={battleFlow} />
-      </section>}
+      <section className="reference-section battle-flow-section" id="battle-flow">
+        {battleFlow ? <BattleFlow flow={battleFlow} /> : <EpisodeFlow guide={guide} />}
+      </section>
 
       {visibleMaps.length > 0 && <section className="reference-section maps-section" id="maps">
         <h2>Maps</h2>
@@ -97,7 +100,7 @@ export default async function EpisodePage({ params }: { params: Promise<{ slug: 
                 ? <iframe src={map.embed} title={map.title} loading="lazy" />
                 : <a className="map-image-link" href={siteHref(map.image!)} target="_blank" rel="noreferrer" aria-label={`Open ${map.title} at full size`}><img src={siteHref(map.image!)} alt={map.alt!} width={1600} height={1200} loading="lazy" /></a>}
             </div>
-            <figcaption><strong>{map.title}</strong><span>{map.caption}</span><span className="map-actions">{map.image && <a href={siteHref(map.image)} target="_blank" rel="noreferrer">Open full-size map <ArrowUpRight size={13} /></a>}<a href={map.source} target="_blank" rel="noreferrer">Map source <ArrowUpRight size={13} /></a></span>{map.embed && <small>Interactive map: drag to pan and use the +/− controls to zoom.</small>}</figcaption>
+            <figcaption><strong>{map.title}</strong><span>{map.caption}</span><span className="map-actions">{map.image && <a href={siteHref(map.image)} target="_blank" rel="noreferrer">Open full-size map <ArrowUpRight size={13} /></a>}{/^https?:\/\//.test(map.source) ? <a href={map.source} target="_blank" rel="noreferrer">Map source <ArrowUpRight size={13} /></a> : <small>{map.source}</small>}</span>{map.embed && <small>Interactive map: drag to pan and use the +/− controls to zoom.</small>}</figcaption>
           </figure>)}
         </div>
       </section>}
@@ -128,7 +131,7 @@ export default async function EpisodePage({ params }: { params: Promise<{ slug: 
       <section className="reference-section" id="images">
         <h2>Historical images</h2>
         <div className="history-gallery">
-          {guide.gallery.map((item) => <figure key={item.image}><img src={siteHref(item.image)} alt={item.alt} width={1280} height={820} loading="lazy" /><figcaption>{item.caption}</figcaption></figure>)}
+          {guide.gallery.filter((item) => !item.image.endsWith('.svg')).map((item) => <PortraitViewer key={item.image} image={item.image} alt={item.alt} caption={item.caption} name={item.alt} source={/^https?:\/\//.test(item.source) ? item.source : undefined} credit={!/^https?:\/\//.test(item.source) ? item.source : undefined} />)}
         </div>
       </section>
 

@@ -9,7 +9,7 @@ function PersonCard({ reference, command }: { reference: Person; command?: strin
   const alt = reference.personId ? getPerson(reference.personId).imageAlt : `Portrait of ${person.name}`;
   const Card = reference.personId ? 'a' : 'article';
   return <Card className="person-card people-person" data-person-id={reference.personId} href={reference.personId ? siteHref(`/people/${reference.personId}`) : undefined}>
-    {person.image
+    {person.image && !person.image.endsWith('.svg')
       ? <img src={siteHref(person.image)} alt={alt ?? `Portrait of ${person.name}`} width={80} height={100} loading="lazy" />
       : <div className="portrait-placeholder" aria-label={`No portrait available for ${person.name}`}><span>{person.name.split(' ').map((part) => part[0]).join('').slice(0, 2)}</span></div>}
     <div className="people-person-copy">

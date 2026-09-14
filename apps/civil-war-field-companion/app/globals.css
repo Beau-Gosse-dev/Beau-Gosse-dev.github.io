@@ -85,3 +85,18 @@
 .glance-forces tbody th{font-weight:500}
 .glance-note{margin:12px 0 0;color:var(--muted);font-size:12px;line-height:1.5}
 @media(max-width:700px){.glance-forces th,.glance-forces td{padding:10px 6px;font-size:12px}.glance-forces th:first-child{width:38%}.episode-glance .battle-facts>div:first-child{border-top:0}}
+.episode-step-layout { display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:28px;align-items:start; }
+.episode-step-flow > header { margin-bottom:24px; }
+.episode-step-flow > header p { max-width:75ch; }
+.episode-step-detail { min-width:0;padding:24px;border:1px solid var(--border,#cfc7b8); }
+.episode-step-detail h3 { font-size:1.55rem;line-height:1.25; }
+.episode-step-detail p { line-height:1.7; }
+.episode-step-controls { display:flex;gap:12px;margin:24px 0; }
+.episode-step-controls button:disabled { opacity:.45;cursor:default; }
+.episode-step-detail label { display:grid;gap:8px;font-size:.85rem; }
+.episode-step-detail select { width:100%;min-width:0;padding:12px;background:#fffdf7;border:1px solid #cfc7b8;color:inherit; }
+.episode-step-flow .map-frame img { width:100%;height:100%;object-fit:contain; }
+.episode-step-flow .map-frame { height:450px; }
+.episode-step-flow .map-frame iframe { width:100%;height:100%;border:0; }
+.episode-glance .battle-facts strong { overflow-wrap:anywhere; }
+@media(max-width:760px) { .episode-step-layout { grid-template-columns:1fr; } .episode-step-flow .map-frame { height:300px; } .episode-step-detail { padding:18px; } }

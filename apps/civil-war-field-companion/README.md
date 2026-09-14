@@ -49,3 +49,9 @@ The "Suggest a change" form accepts suggestions without a GitHub account. It aut
 `components/feedback-form.tsx` implements the form and `lib/feedback.ts` holds the public endpoint. Backend source is in `C:\Users\beaub\Documents\civil-war-feedback-service`, hosted independently through Sites; GitHub Pages still hosts this frontend. Runtime credentials are protected backend secrets and are never part of the frontend build. Update the backend's page allowlist whenever publishing new pages. No visitor email, password, or GitHub account is collected.
 
 A recurring Codex review checks suggestions every six hours, responds to actionable feedback, and publishes verified small fixes. The computer must be on and the app running. See `docs/suggestion-review.md` for scope, source checking, duplicate-response handling, and publishing requirements.
+
+## Archive rollout
+
+All 184 existing reference guides are now published with the shared layout. Feed entries without guide data remain unpublished. Episode 95 retains its individually researched animated Battle Flow; other guides use saved discussion steps with their existing reference maps. These steps do not infer geographic troop positions. Custom SVG schematics remain in source but are not displayed. Historical gallery images share the zoom viewer.
+
+For older guides, the glance section consistently shows period, location, and historical context. Reported military figures retain their original text and scope, without invented totals or casualty splits. Fully researched `atAGlance` records (such as episode 95) take precedence. Standalone biographies remain available for cataloged people; expanding the biography catalog and researching additional animated battle maps are separate editorial work.

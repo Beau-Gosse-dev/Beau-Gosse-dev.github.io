@@ -6,9 +6,11 @@ function Sources({ sources }: { sources: GlanceSource[] }) {
   return <p className="glance-sources">{sources.map((source, index) => <a key={source.url} href={source.url} target="_blank" rel="noreferrer">{index > 0 ? ' · ' : 'Source: '}{source.label}</a>)}</p>;
 }
 
-export function EpisodeGlance({ guide }: { guide: Enrichment }) {
+export function EpisodeGlance({ guide, topic = false }: { guide: Enrichment; topic?: boolean }) {
   const glance = guide.atAGlance;
   const battle = glance?.kind === 'battle' ? glance.battle : undefined;
+  // Preserve the original scope and wording; do not infer totals or split combined losses.
+  const reportedFigures = !glance && !topic ? guide.facts.filter((fact) => /\d/.test(fact.value) && /\b(men|soldiers|troops|casualties|killed|wounded|missing|prisoners)\b/i.test(`${fact.label} ${fact.value}`)) : [];
   const rows: { label: string; value: (side: BattleSideFigures) => string }[] = [
     { label: 'Soldiers involved', value: (side) => count(side.soldiers) },
     { label: 'Killed', value: (side) => count(side.killed) },
@@ -38,9 +40,19 @@ export function EpisodeGlance({ guide }: { guide: Enrichment }) {
           {glance.people && <div><span>Key people</span><strong>{glance.people}</strong></div>}
           <div><span>Historical context</span><strong>{glance.context}</strong></div>
         </>}
-      </> : guide.facts.map((fact) => <div key={fact.label}><span>{fact.label}</span><strong>{fact.value}</strong>{fact.note && <small>{fact.note}</small>}</div>)}
+      </> : <>
+        <div><span>Period covered</span><strong>{guide.date}</strong></div>
+        <div><span>Location</span><strong>{guide.place}</strong></div>
+        <div><span>Historical context</span><strong>{guide.result}</strong></div>
+      </>}
     </div>
     {glance?.kind === 'topic' && glance.sources.length > 0 && <Sources sources={glance.sources} />}
+    {reportedFigures.length > 0 && <div className="glance-forces">
+      <h3>Forces and losses</h3>
+      <p className="glance-scope">Reported figures retain the scope and estimates of the existing guide. They may cover different units or periods; missing breakdowns are not inferred.</p>
+      <table><caption>Figures reported in this guide</caption><thead><tr><th scope="col">Scope</th><th scope="col">Reported figure</th></tr></thead><tbody>{reportedFigures.map((fact) => <tr key={fact.label}><th scope="row">{fact.label}</th><td>{fact.value}{fact.note && <small style={{ display: 'block' }}>{fact.note}</small>}</td></tr>)}</tbody></table>
+      <Sources sources={guide.sources} />
+    </div>}
     {battle && <div className="glance-forces">
       <h3>Forces and losses</h3>
       <p className="glance-scope">{battle.scope}</p>
