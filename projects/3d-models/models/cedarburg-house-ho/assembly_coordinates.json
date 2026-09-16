@@ -1,0 +1,30 @@
+{
+  "house_walls": {
+    "original_minimum_xyz_mm": [
+      -5.0,
+      -10.5,
+      0.0
+    ]
+  },
+  "house_roof": {
+    "original_minimum_xyz_mm": [
+      -5.0,
+      -5.5,
+      35.0344827586207
+    ]
+  },
+  "garage_walls": {
+    "original_minimum_xyz_mm": [
+      0.0,
+      -0.9,
+      0.0
+    ]
+  },
+  "garage_roof": {
+    "original_minimum_xyz_mm": [
+      -1.3,
+      -1.3,
+      28.027586206896544
+    ]
+  }
+}

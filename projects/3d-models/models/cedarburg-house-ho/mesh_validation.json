@@ -1,0 +1,92 @@
+[
+  {
+    "file": "01_house_walls.stl",
+    "dimensions_mm": [
+      128.12,
+      120.75,
+      43.93
+    ],
+    "triangles": 19968,
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "connected_components": 1,
+    "fits_MK3_5": true,
+    "volume_cm3": 34.89
+  },
+  {
+    "file": "02_house_roof.stl",
+    "dimensions_mm": [
+      128.12,
+      105.6,
+      49.54
+    ],
+    "triangles": 8512,
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "connected_components": 1,
+    "fits_MK3_5": true,
+    "volume_cm3": 76.79
+  },
+  {
+    "file": "03_garage_walls.stl",
+    "dimensions_mm": [
+      78.23,
+      85.68,
+      28.03
+    ],
+    "triangles": 7260,
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "connected_components": 1,
+    "fits_MK3_5": true,
+    "volume_cm3": 14.95
+  },
+  {
+    "file": "04_garage_roof.stl",
+    "dimensions_mm": [
+      79.68,
+      86.68,
+      32.83
+    ],
+    "triangles": 1132,
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "connected_components": 1,
+    "fits_MK3_5": true,
+    "volume_cm3": 28.03
+  },
+  {
+    "file": "house_assembled_reference.stl",
+    "dimensions_mm": [
+      128.12,
+      120.75,
+      84.56
+    ],
+    "triangles": 28572,
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "connected_components": 1,
+    "fits_MK3_5": true,
+    "volume_cm3": 111.66
+  },
+  {
+    "file": "garage_assembled_reference.stl",
+    "dimensions_mm": [
+      79.68,
+      86.68,
+      60.84
+    ],
+    "triangles": 8404,
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "connected_components": 1,
+    "fits_MK3_5": true,
+    "volume_cm3": 42.97
+  }
+]

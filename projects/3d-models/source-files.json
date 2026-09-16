@@ -1,0 +1,233 @@
+{
+  "imported": "2026-09-16",
+  "files": [
+    {
+      "path": "models/cedarburg-house-ho/01_walls_plate.3mf",
+      "bytes": 252523,
+      "sha256": "6b035e32c1803f36858e7a168266319f406f24db797ba286d56d1d4f8da230d7",
+      "source": "private-models"
+    },
+    {
+      "path": "models/cedarburg-house-ho/02_roofs_plate.3mf",
+      "bytes": 85703,
+      "sha256": "32ca88cb6c43e76712e8ac8efb7bf1077b92723ae3c4228ed09ef0b3e36bef13",
+      "source": "private-models"
+    },
+    {
+      "path": "models/cedarburg-house-ho/Cedarburg_HO_Print_Kit.zip",
+      "bytes": 1065212,
+      "sha256": "68f29bf93766d621d6e4d8a50a1ac3249ab31f164be93f9d4ddd784428865d15",
+      "source": "private-models"
+    },
+    {
+      "path": "models/cedarburg-house-ho/PRINT_GUIDE.md",
+      "bytes": 7102,
+      "sha256": "b1c861c0e64364905bb641b092b7180a59c2c08f12afe7776adce81309309bed",
+      "source": "private-models"
+    },
+    {
+      "path": "models/cedarburg-house-ho/README.md",
+      "bytes": 2839,
+      "sha256": "695ce4879672e87ff46839d22af32f9e276be4a08f597db8b06b94d9700a827c",
+      "source": "private-models"
+    },
+    {
+      "path": "models/cedarburg-house-ho/STL/01_house_walls.stl",
+      "bytes": 998484,
+      "sha256": "90c0e604010b3ded2b254cfcc6910b9bcd7b944d5951332416d333445e4a83fc",
+      "source": "private-models"
+    },
+    {
+      "path": "models/cedarburg-house-ho/STL/02_house_roof.stl",
+      "bytes": 425684,
+      "sha256": "89b12cc92d46bbe2ec75ca96bee8d8f263e84aa096c8784958d497076276af42",
+      "source": "private-models"
+    },
+    {
+      "path": "models/cedarburg-house-ho/STL/03_garage_walls.stl",
+      "bytes": 363084,
+      "sha256": "b68c51325c52c955d902a19fe7522b2f27ccfc9febb721d30fb1e6d4741a791c",
+      "source": "private-models"
+    },
+    {
+      "path": "models/cedarburg-house-ho/STL/04_garage_roof.stl",
+      "bytes": 56684,
+      "sha256": "f9140e05eb2b4c0e4664bd2607fa87535d4b2b1163e29b96f8371666b414b08f",
+      "source": "private-models"
+    },
+    {
+      "path": "models/cedarburg-house-ho/STL/garage_assembled_reference.stl",
+      "bytes": 420284,
+      "sha256": "03fa34d3fbb40dd091d9b33a45b70d2740815d7b60b134e6e808bafdba56d7fb",
+      "source": "private-models"
+    },
+    {
+      "path": "models/cedarburg-house-ho/STL/house_assembled_reference.stl",
+      "bytes": 1428684,
+      "sha256": "9dc88311c70f73cab65c4c5f7a9ee5c56a3d75b388778184c6cd173da0156502",
+      "source": "private-models"
+    },
+    {
+      "path": "models/cedarburg-house-ho/assembly_coordinates.json",
+      "bytes": 447,
+      "sha256": "39004e07ab730202b6fff325887e82be460c933a8e26521c94a3d3a9d8884448",
+      "source": "private-models"
+    },
+    {
+      "path": "models/cedarburg-house-ho/build_model.py",
+      "bytes": 17802,
+      "sha256": "e955aee9a941b444a1705b3fa97a459c598ed9b353dc38d75256267df268a47c",
+      "source": "private-models"
+    },
+    {
+      "path": "models/cedarburg-house-ho/dimensions.json",
+      "bytes": 448,
+      "sha256": "e040a7328fe06f9c457e8f64d9357a3283c18e3096cc981b1591fa7fc6b0ee36",
+      "source": "private-models"
+    },
+    {
+      "path": "models/cedarburg-house-ho/mesh_validation.json",
+      "bytes": 1912,
+      "sha256": "159cccba726ed9acd4b1a44a179e0d38c17baa9df3f4c017de4398ff7557b111",
+      "source": "private-models"
+    },
+    {
+      "path": "models/cedarburg-house-ho/preview_exploded.png",
+      "bytes": 60092,
+      "sha256": "b3e2830460bf2614e159b7f5add7045c3f0bf63ee12e9fd9400bafe1b1628936",
+      "source": "private-models"
+    },
+    {
+      "path": "models/cedarburg-house-ho/preview_front.png",
+      "bytes": 56694,
+      "sha256": "61bdd64e8af3f6d07189fe97f28c10e5475222ec21c5a712d8f77bfdc86a4f74",
+      "source": "private-models"
+    },
+    {
+      "path": "models/cedarburg-house-ho/preview_rear.png",
+      "bytes": 61514,
+      "sha256": "a4719b989d6552063d22f36f18697dee03994d74910a172c89529f5b681327ff",
+      "source": "private-models"
+    },
+    {
+      "path": "models/cedarburg-house-ho/requirements.txt",
+      "bytes": 57,
+      "sha256": "c3c4c6f81ee888e357645a7040806c5c6e3db7640a6787eca128ea6113a9edff",
+      "source": "private-models"
+    },
+    {
+      "path": "models/cedarburg-house-ho/slicing_validation.json",
+      "bytes": 2087,
+      "sha256": "056f30d46f2d70c48bdf71add7d33c6e7c04e4b4f476cc307ee8eace1f7b4aa5",
+      "source": "private-models"
+    },
+    {
+      "path": "models/watch-band-bracelet-sizer-cone/README.md",
+      "bytes": 1064,
+      "sha256": "9c65af75583f09c8e9c0587de832384c4528f313214648092a252ac02d2a122e",
+      "source": "private-models"
+    },
+    {
+      "path": "models/watch-band-bracelet-sizer-cone/bracelet_cone_inches_arrows.3mf",
+      "bytes": 1401452,
+      "sha256": "7078ed8191e20f0cad777539a22403874b5ca3d80695f23f682efd8f8ba05748",
+      "source": "private-models"
+    },
+    {
+      "path": "models/watch-band-bracelet-sizer-cone/bracelet_cone_inches_arrows.stl",
+      "bytes": 4233584,
+      "sha256": "e988798bd975597a06b17ba54798e054873378f539b77eb253aaf958cb7da263",
+      "source": "private-models"
+    },
+    {
+      "path": "models/watch-band-bracelet-sizer-cone/bracelet_cone_inches_oval.3mf",
+      "bytes": 1146090,
+      "sha256": "27898390dc9317443eb113d0466239b7559c79d8f7c89a2b2b660db1566f888d",
+      "source": "private-models"
+    },
+    {
+      "path": "models/watch-band-bracelet-sizer-cone/bracelet_cone_inches_oval.stl",
+      "bytes": 4285684,
+      "sha256": "ed9cbef97294685f37f6fd635b8bd06dd2bc7c2a679c13b6b7fae85ec691eaea",
+      "source": "private-models"
+    },
+    {
+      "path": "models/watch-band-bracelet-sizer-cone/bracelet_cone_inches_oval_1.3mf",
+      "bytes": 1146090,
+      "sha256": "27898390dc9317443eb113d0466239b7559c79d8f7c89a2b2b660db1566f888d",
+      "source": "private-models"
+    },
+    {
+      "path": "models/watch-band-bracelet-sizer-cone/bracelet_cone_inches_round.3mf",
+      "bytes": 1102069,
+      "sha256": "2c7341b977886c17066d30660022ec36f6787d6d2a9cf9b89953804cfbbffb26",
+      "source": "private-models"
+    },
+    {
+      "path": "models/watch-band-bracelet-sizer-cone/bracelet_cone_inches_round.stl",
+      "bytes": 4119984,
+      "sha256": "dad87462dab1cababe4ab26c13abd0d06b5eb667ee9d86eb2fffbf4d32c07186",
+      "source": "private-models"
+    },
+    {
+      "path": "models/watch-band-bracelet-sizer-cone/bracelet_sizing_cone.stl",
+      "bytes": 2522584,
+      "sha256": "4dca2d8c17d69f065e48743e9b3c9f02bd46e086c564a8f37b4364ae79d77379",
+      "source": "private-models"
+    },
+    {
+      "path": "models/watch-band-bracelet-sizer-cone/bracelet_sizing_cone_inches.stl",
+      "bytes": 2939584,
+      "sha256": "2f4ada6d7d88a438a6e62de5da48c82812c65014a7fb40ec44d0a916a0f11bf3",
+      "source": "private-models"
+    },
+    {
+      "path": "models/band-stretcher-stronger/drum.stl",
+      "bytes": 2414260,
+      "sha256": "2b148f0e899adab4b046cbec084479c9b9e77cf111216fd9ba2c290dfb4b289d",
+      "source": "band-stretcher-revision-3"
+    },
+    {
+      "path": "models/band-stretcher-stronger/expansion_band_stretcher.scad",
+      "bytes": 5256,
+      "sha256": "4e04d0fb0be62f75a5545d65b2beb0d99cd0fa1fd7ce04628afe5c606c0cffb1",
+      "source": "band-stretcher-revision-3"
+    },
+    {
+      "path": "models/band-stretcher-stronger/mesh_check.json",
+      "bytes": 1025,
+      "sha256": "0eab96e4b1845d2d1cec775f4e2488f82f43067b9b039bf23c90a3b4acf63afb",
+      "source": "band-stretcher-revision-3"
+    },
+    {
+      "path": "models/band-stretcher-stronger/preview.png",
+      "bytes": 348507,
+      "sha256": "bf4fcebf228004cad4be9337ed927412119bf1af940ff7e0f89003a185089fad",
+      "source": "band-stretcher-revision-3"
+    },
+    {
+      "path": "models/band-stretcher-stronger/README.md",
+      "bytes": 3525,
+      "sha256": "ce86de6833d8b4a69bdb7d2c2eceaf7cfd25b57a8d52497562551bd5348ec755",
+      "source": "band-stretcher-revision-3"
+    },
+    {
+      "path": "models/band-stretcher-stronger/README.txt",
+      "bytes": 6456,
+      "sha256": "6261579472722d8c9a1b8a6d15b71937a14c8daa85c3a1f4410e1b2183f813bb",
+      "source": "band-stretcher-revision-3"
+    },
+    {
+      "path": "models/band-stretcher-stronger/slot_inserts_16-20mm.stl",
+      "bytes": 2221482,
+      "sha256": "5f280018d1dde9aa438f2a2332da22fda6023715a12571346b817748eaea0378",
+      "source": "band-stretcher-revision-3"
+    },
+    {
+      "path": "models/band-stretcher-stronger/slot_inserts_19mm.stl",
+      "bytes": 446024,
+      "sha256": "94205ec3421098efd0c5a19fb89c4b825ee97f9a64cd4132784b1274b9b0b061",
+      "source": "band-stretcher-revision-3"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "physical_print_tested": false,
+  "nozzle_025_slice_tested": false,
+  "note": "House roof organic support generation reported potentially lost branches; snug support regeneration completed cleanly. Timing is a slicer estimate for the validation material and settings only.",
+  "parts": [
+    {
+      "part": "house_walls",
+      "slicer": "PrusaSlicer 2.9.4",
+      "printer": "Original Prusa MK3.5 & MK3.5S 0.4 nozzle",
+      "layer_height_mm": 0.1,
+      "material_for_validation": "AmazonBasics PLA",
+      "support_style": "organic",
+      "completed": true,
+      "estimated_time": null,
+      "estimated_filament_g": null,
+      "stl_sha256": "90c0e604010b3ded2b254cfcc6910b9bcd7b944d5951332416d333445e4a83fc"
+    },
+    {
+      "part": "house_roof",
+      "slicer": "PrusaSlicer 2.9.4",
+      "printer": "Original Prusa MK3.5 & MK3.5S 0.4 nozzle",
+      "layer_height_mm": 0.1,
+      "material_for_validation": "AmazonBasics PLA",
+      "support_style": "snug",
+      "completed": true,
+      "estimated_time": null,
+      "estimated_filament_g": null,
+      "stl_sha256": "89b12cc92d46bbe2ec75ca96bee8d8f263e84aa096c8784958d497076276af42"
+    },
+    {
+      "part": "garage_walls",
+      "slicer": "PrusaSlicer 2.9.4",
+      "printer": "Original Prusa MK3.5 & MK3.5S 0.4 nozzle",
+      "layer_height_mm": 0.1,
+      "material_for_validation": "AmazonBasics PLA",
+      "support_style": "organic",
+      "completed": true,
+      "estimated_time": null,
+      "estimated_filament_g": null,
+      "stl_sha256": "b68c51325c52c955d902a19fe7522b2f27ccfc9febb721d30fb1e6d4741a791c"
+    },
+    {
+      "part": "garage_roof",
+      "slicer": "PrusaSlicer 2.9.4",
+      "printer": "Original Prusa MK3.5 & MK3.5S 0.4 nozzle",
+      "layer_height_mm": 0.1,
+      "material_for_validation": "AmazonBasics PLA",
+      "support_style": "organic",
+      "completed": true,
+      "estimated_time": null,
+      "estimated_filament_g": null,
+      "stl_sha256": "f9140e05eb2b4c0e4664bd2607fa87535d4b2b1163e29b96f8371666b414b08f"
+    }
+  ]
+}

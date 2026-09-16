@@ -1,0 +1,72 @@
+[
+  {
+    "slug": "band-stretcher-stronger",
+    "title": "Expansion-band stretcher",
+    "category": "Watch tools",
+    "edition": "Revision 3",
+    "summary": "An open cleaning drum with reinforced sockets, diagonal braces, and interchangeable band-retaining inserts.",
+    "bundle": "band_stretcher_stronger.zip",
+    "formats": "STL · OpenSCAD",
+    "aiAssisted": true,
+    "printables": null,
+    "images": [{"file":"preview.png","label":"Assembly & reinforced socket"}],
+    "facts": [["Drum diameter","88.20 mm"],["Overall footprint","96.77 × 88.20 mm"],["Height","34 mm"],["Insert sizes","16–20 mm + 19 mm pair"]],
+    "sections": [
+      {"title":"A stronger drum for the same inserts","text":"Revision 3 supports 23 mm of the insert spine in stepped sockets, with 26 mm rear walls and 4 mm side walls. The low front wall leaves the largest band opening clear. The diagonal frame and thicker rims carry over from Revision 2. Existing inserts still fit: only the drum needs a new print."},
+      {"title":"Choose your files","text":"Print drum.stl upright as supplied. Use slot_inserts_19mm.stl for one matching 19 mm pair, or slot_inserts_16-20mm.stl for all five pairs. The editable OpenSCAD file opens as an assembly; export the separate parts for printing."},
+      {"title":"Printing & use","text":"Start with 0.2 mm layers, four perimeters, and solid inserts. Inspect the upper-rim bridges and brace junctions in your slicer. Match the slot to the band body and wider end fittings, smooth every contact edge, and check bath clearance and filament compatibility. The 254 mm reference arc is not a guaranteed stretched band length."}
+    ],
+    "status": "Prototype. Revision 3 passed the supplied mesh and CAD clearance checks but has not been physically tested. Strength, fit, and cleaning performance still need confirmation.",
+    "featuredFiles": ["drum.stl","slot_inserts_19mm.stl","slot_inserts_16-20mm.stl","expansion_band_stretcher.scad","README.txt"],
+    "legacy": true
+  },
+  {
+    "slug": "watch-band-bracelet-sizer-cone",
+    "title": "Bracelet sizing cones",
+    "category": "Watch tools",
+    "edition": "5 STL variants",
+    "summary": "Tapered sizing tools for watch bands and bracelets, with arrows, oval, round, and original variants.",
+    "bundle": "bracelet-sizer-cones.zip",
+    "formats": "STL · 3MF",
+    "aiAssisted": false,
+    "printables": null,
+    "images": [
+      {"file":"preview_arrows.png","label":"Arrows"},
+      {"file":"preview_oval.png","label":"Oval"},
+      {"file":"preview_round.png","label":"Round"},
+      {"file":"preview_inches.png","label":"Inches"},
+      {"file":"preview_original.png","label":"Original"}
+    ],
+    "facts": [["Mesh files","5 STL variants"],["Project files","4 original 3MFs"],["Preview source","Actual STL geometry"],["Design","Made without AI"]],
+    "sections": [
+      {"title":"Pick the variant that suits your bench","text":"The collection includes the arrows, oval, and round inch variants, an inch sizing cone, and the original sizing cone. All nine original model files are preserved, including the additional oval 3MF copy."},
+      {"title":"Before printing","text":"Open an STL or 3MF in your slicer and review orientation, scale, printer, and filament settings. Variant names come from the source filenames. Measurement accuracy and print settings have not been validated; check against a known measurement before using the cone for sizing."}
+    ],
+    "status": "Original model collection. Preview images are mesh renders, not photographs of finished prints. Dimensions and sizing calibration have not been validated.",
+    "featuredFiles": ["bracelet_cone_inches_arrows.stl","bracelet_cone_inches_oval.stl","bracelet_cone_inches_round.stl","bracelet_sizing_cone_inches.stl","bracelet_sizing_cone.stl"]
+  },
+  {
+    "slug": "cedarburg-house-ho",
+    "title": "Cedarburg house & garage",
+    "category": "Scale models",
+    "edition": "HO · 1:87",
+    "summary": "A photo-interpreted house and detached garage, split into printable walls and roofs for a model railway or diorama.",
+    "bundle": "cedarburg-ho-models.zip",
+    "formats": "STL · 3MF · Python source",
+    "aiAssisted": true,
+    "printables": null,
+    "images": [
+      {"file":"preview_front.png","label":"Front"},
+      {"file":"preview_rear.png","label":"Rear"},
+      {"file":"preview_exploded.png","label":"Exploded assembly"}
+    ],
+    "facts": [["Scale","HO · 1:87"],["House, approx.","128 × 121 × 85 mm"],["Garage, approx.","80 × 87 × 61 mm"],["Print parts","4 walls / roof parts"]],
+    "sections": [
+      {"title":"Two buildings, four printable parts","text":"Print the four numbered STL parts or use the two geometry-only 3MF plates. The roofs lift off for painting and assembly. The rear house entry sits beneath the balcony. Assembled-reference STLs are included for digital inspection; they are not additional kit parts."},
+      {"title":"Printing & assembly","text":"Import in millimeters at 100% scale; the parts are already HO size. Select your own printer and filament profiles. The documented MK3.5 validation used a 0.4 mm nozzle, 0.10 mm layers, three perimeters, and 10% infill. Use snug supports for the house roof. Follow PRINT_GUIDE.md for supports, dry-fitting, and painting."},
+      {"title":"Editable, photo-based architecture","text":"The Python generator and dimensions.json are included. Building dimensions were estimated from photographs with assumed garage-door dimensions as a scale reference. Windows and doors are recessed closed surfaces for painting, and fine features are thickened for FDM printing."}
+    ],
+    "status": "The supplied validation records report watertight meshes and successful MK3.5 slicing. No physical print has been tested. Dimensions are photo-estimated, not surveyed.",
+    "featuredFiles": ["01_walls_plate.3mf","02_roofs_plate.3mf","STL/01_house_walls.stl","STL/02_house_roof.stl","STL/03_garage_walls.stl","STL/04_garage_roof.stl","PRINT_GUIDE.md"]
+  }
+]

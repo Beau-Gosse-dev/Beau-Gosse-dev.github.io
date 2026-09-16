@@ -8,6 +8,14 @@ You can access the live website here: [https://beau-gosse-dev.github.io/](https:
 
 ## Projects
 
+### 3D Models
+
+Printable watch tools and scale models, with previews, printing notes, and downloadable files.
+
+- [Browse the 3D Models gallery](https://beau-gosse-dev.github.io/projects/3d-models/)
+- [Model files and gallery source](projects/3d-models/)
+- Includes bracelet sizing cones, the Cedarburg HO house and garage, and the stronger Revision 3 expansion-band stretcher.
+
 ### Face Country Guessing Game
 
 Test your knowledge of facial characteristics across different countries. Can you guess which country a person is from based on their appearance?
@@ -60,7 +68,7 @@ Then open your browser and visit: `http://localhost:8000`
 
 ## License
 
-This project is licensed under the terms of the license included in the repository.
+Website code uses the repository's MIT license. Model files, model source, documentation, and previews under `projects/3d-models/models/` use [CC BY-NC-SA 4.0](projects/3d-models/models/LICENSE.txt).
 
 ## Contact
 

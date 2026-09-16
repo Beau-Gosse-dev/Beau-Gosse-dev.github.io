@@ -1,0 +1,5 @@
+numpy
+manifold3d==3.5.3
+trimesh==5.1.0
+matplotlib
+pillow

@@ -1,0 +1,14 @@
+Copyright (c) 2026 Beau Gosse
+
+The 3D models, editable model source, model documentation, and previews in this
+folder are licensed under Creative Commons Attribution-NonCommercial-ShareAlike
+4.0 International (CC BY-NC-SA 4.0).
+
+License: https://creativecommons.org/licenses/by-nc-sa/4.0/
+Legal code: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+
+Please credit Beau Gosse and link to the model's page at:
+https://beau-gosse-dev.github.io/projects/3d-models/
+
+This model-specific license applies instead of the website repository's MIT
+license. Website code outside the model folders retains its existing license.

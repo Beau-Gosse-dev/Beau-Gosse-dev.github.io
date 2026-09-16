@@ -1,0 +1,62 @@
+{
+  "revision": 3,
+  "drum": {
+    "triangles": 13582,
+    "closed_edge_manifold": true,
+    "components": 1,
+    "bounds_mm": [
+      [
+        -44.1004,
+        -44.1003,
+        0.0
+      ],
+      [
+        52.6672,
+        44.1003,
+        34.0
+      ]
+    ]
+  },
+  "inserts": {
+    "triangles": 13824,
+    "closed_edge_manifold": true,
+    "components": 10,
+    "bounds_mm": [
+      [
+        0.0,
+        7.62939e-07,
+        0.0
+      ],
+      [
+        90.0,
+        66.8,
+        4.0
+      ]
+    ]
+  },
+  "19mm_pair": {
+    "triangles": 2776,
+    "closed_edge_manifold": true,
+    "components": 2,
+    "bounds_mm": [
+      [
+        0.0,
+        7.62939e-07,
+        0.0
+      ],
+      [
+        14.0,
+        66.8,
+        4.0
+      ]
+    ]
+  },
+  "socket_clearance_checks": {
+    "largest_insert_mm": 20,
+    "socket_vs_insert_intersection": "empty",
+    "socket_vs_band_opening_intersection": "empty",
+    "front_vertical_margin_mm": 0.6,
+    "rear_radial_margin_mm": 1.5,
+    "rear_engagement_depth_mm": 23
+  }
+}
