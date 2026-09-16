@@ -9,7 +9,7 @@ document.querySelectorAll('[data-gallery]').forEach((gallery) => {
       image.src = link.href;
       image.alt = link.dataset.alt;
       full.href = link.href;
-      caption.textContent = `${link.dataset.label} · Model render. Select the image to enlarge.`;
+      caption.textContent = link.dataset.captionText;
       gallery.querySelectorAll('[data-image]').forEach((item) => item.setAttribute('aria-current', String(item === link)));
     });
   });

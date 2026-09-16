@@ -1,6 +1,7 @@
 # Preserve downloaded model packages and source documents byte for byte.
 models/** -text whitespace=cr-at-eol
 models/**/*.stl binary
+models/**/*.step binary
 models/**/*.3mf binary
 models/**/*.zip binary
 models/**/*.png binary

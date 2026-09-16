@@ -9,15 +9,52 @@
     "formats": "STL · OpenSCAD",
     "aiAssisted": true,
     "printables": null,
-    "images": [{"file":"preview.png","label":"Assembly & reinforced socket"}],
-    "facts": [["Drum diameter","88.20 mm"],["Overall footprint","96.77 × 88.20 mm"],["Height","34 mm"],["Insert sizes","16–20 mm + 19 mm pair"]],
+    "images": [
+      {
+        "file": "preview.png",
+        "label": "Assembly & reinforced socket"
+      }
+    ],
+    "facts": [
+      [
+        "Drum diameter",
+        "88.20 mm"
+      ],
+      [
+        "Overall footprint",
+        "96.77 × 88.20 mm"
+      ],
+      [
+        "Height",
+        "34 mm"
+      ],
+      [
+        "Insert sizes",
+        "16–20 mm + 19 mm pair"
+      ]
+    ],
     "sections": [
-      {"title":"A stronger drum for the same inserts","text":"Revision 3 supports 23 mm of the insert spine in stepped sockets, with 26 mm rear walls and 4 mm side walls. The low front wall leaves the largest band opening clear. The diagonal frame and thicker rims carry over from Revision 2. Existing inserts still fit: only the drum needs a new print."},
-      {"title":"Choose your files","text":"Print drum.stl upright as supplied. Use slot_inserts_19mm.stl for one matching 19 mm pair, or slot_inserts_16-20mm.stl for all five pairs. The editable OpenSCAD file opens as an assembly; export the separate parts for printing."},
-      {"title":"Printing & use","text":"Start with 0.2 mm layers, four perimeters, and solid inserts. Inspect the upper-rim bridges and brace junctions in your slicer. Match the slot to the band body and wider end fittings, smooth every contact edge, and check bath clearance and filament compatibility. The 254 mm reference arc is not a guaranteed stretched band length."}
+      {
+        "title": "A stronger drum for the same inserts",
+        "text": "Revision 3 supports 23 mm of the insert spine in stepped sockets, with 26 mm rear walls and 4 mm side walls. The low front wall leaves the largest band opening clear. The diagonal frame and thicker rims carry over from Revision 2. Existing inserts still fit: only the drum needs a new print."
+      },
+      {
+        "title": "Choose your files",
+        "text": "Print drum.stl upright as supplied. Use slot_inserts_19mm.stl for one matching 19 mm pair, or slot_inserts_16-20mm.stl for all five pairs. The editable OpenSCAD file opens as an assembly; export the separate parts for printing."
+      },
+      {
+        "title": "Printing & use",
+        "text": "Start with 0.2 mm layers, four perimeters, and solid inserts. Inspect the upper-rim bridges and brace junctions in your slicer. Match the slot to the band body and wider end fittings, smooth every contact edge, and check bath clearance and filament compatibility. The 254 mm reference arc is not a guaranteed stretched band length."
+      }
     ],
     "status": "Prototype. Revision 3 passed the supplied mesh and CAD clearance checks but has not been physically tested. Strength, fit, and cleaning performance still need confirmation.",
-    "featuredFiles": ["drum.stl","slot_inserts_19mm.stl","slot_inserts_16-20mm.stl","expansion_band_stretcher.scad","README.txt"],
+    "featuredFiles": [
+      "drum.stl",
+      "slot_inserts_19mm.stl",
+      "slot_inserts_16-20mm.stl",
+      "expansion_band_stretcher.scad",
+      "README.txt"
+    ],
     "legacy": true
   },
   {
@@ -31,19 +68,63 @@
     "aiAssisted": false,
     "printables": null,
     "images": [
-      {"file":"preview_arrows.png","label":"Arrows"},
-      {"file":"preview_oval.png","label":"Oval"},
-      {"file":"preview_round.png","label":"Round"},
-      {"file":"preview_inches.png","label":"Inches"},
-      {"file":"preview_original.png","label":"Original"}
+      {
+        "file": "preview_arrows.png",
+        "label": "Arrows"
+      },
+      {
+        "file": "preview_oval.png",
+        "label": "Oval"
+      },
+      {
+        "file": "preview_round.png",
+        "label": "Round"
+      },
+      {
+        "file": "preview_inches.png",
+        "label": "Inches"
+      },
+      {
+        "file": "preview_original.png",
+        "label": "Original"
+      }
     ],
-    "facts": [["Mesh files","5 STL variants"],["Project files","4 original 3MFs"],["Preview source","Actual STL geometry"],["Design","Made without AI"]],
+    "facts": [
+      [
+        "Mesh files",
+        "5 STL variants"
+      ],
+      [
+        "Project files",
+        "4 original 3MFs"
+      ],
+      [
+        "Preview source",
+        "Actual STL geometry"
+      ],
+      [
+        "Design",
+        "Made without AI"
+      ]
+    ],
     "sections": [
-      {"title":"Pick the variant that suits your bench","text":"The collection includes the arrows, oval, and round inch variants, an inch sizing cone, and the original sizing cone. All nine original model files are preserved, including the additional oval 3MF copy."},
-      {"title":"Before printing","text":"Open an STL or 3MF in your slicer and review orientation, scale, printer, and filament settings. Variant names come from the source filenames. Measurement accuracy and print settings have not been validated; check against a known measurement before using the cone for sizing."}
+      {
+        "title": "Pick the variant that suits your bench",
+        "text": "The collection includes the arrows, oval, and round inch variants, an inch sizing cone, and the original sizing cone. All nine original model files are preserved, including the additional oval 3MF copy."
+      },
+      {
+        "title": "Before printing",
+        "text": "Open an STL or 3MF in your slicer and review orientation, scale, printer, and filament settings. Variant names come from the source filenames. Measurement accuracy and print settings have not been validated; check against a known measurement before using the cone for sizing."
+      }
     ],
     "status": "Original model collection. Preview images are mesh renders, not photographs of finished prints. Dimensions and sizing calibration have not been validated.",
-    "featuredFiles": ["bracelet_cone_inches_arrows.stl","bracelet_cone_inches_oval.stl","bracelet_cone_inches_round.stl","bracelet_sizing_cone_inches.stl","bracelet_sizing_cone.stl"]
+    "featuredFiles": [
+      "bracelet_cone_inches_arrows.stl",
+      "bracelet_cone_inches_oval.stl",
+      "bracelet_cone_inches_round.stl",
+      "bracelet_sizing_cone_inches.stl",
+      "bracelet_sizing_cone.stl"
+    ]
   },
   {
     "slug": "cedarburg-house-ho",
@@ -56,17 +137,218 @@
     "aiAssisted": true,
     "printables": null,
     "images": [
-      {"file":"preview_front.png","label":"Front"},
-      {"file":"preview_rear.png","label":"Rear"},
-      {"file":"preview_exploded.png","label":"Exploded assembly"}
+      {
+        "file": "preview_front.png",
+        "label": "Front"
+      },
+      {
+        "file": "preview_rear.png",
+        "label": "Rear"
+      },
+      {
+        "file": "preview_exploded.png",
+        "label": "Exploded assembly"
+      }
     ],
-    "facts": [["Scale","HO · 1:87"],["House, approx.","128 × 121 × 85 mm"],["Garage, approx.","80 × 87 × 61 mm"],["Print parts","4 walls / roof parts"]],
+    "facts": [
+      [
+        "Scale",
+        "HO · 1:87"
+      ],
+      [
+        "House, approx.",
+        "128 × 121 × 85 mm"
+      ],
+      [
+        "Garage, approx.",
+        "80 × 87 × 61 mm"
+      ],
+      [
+        "Print parts",
+        "4 walls / roof parts"
+      ]
+    ],
     "sections": [
-      {"title":"Two buildings, four printable parts","text":"Print the four numbered STL parts or use the two geometry-only 3MF plates. The roofs lift off for painting and assembly. The rear house entry sits beneath the balcony. Assembled-reference STLs are included for digital inspection; they are not additional kit parts."},
-      {"title":"Printing & assembly","text":"Import in millimeters at 100% scale; the parts are already HO size. Select your own printer and filament profiles. The documented MK3.5 validation used a 0.4 mm nozzle, 0.10 mm layers, three perimeters, and 10% infill. Use snug supports for the house roof. Follow PRINT_GUIDE.md for supports, dry-fitting, and painting."},
-      {"title":"Editable, photo-based architecture","text":"The Python generator and dimensions.json are included. Building dimensions were estimated from photographs with assumed garage-door dimensions as a scale reference. Windows and doors are recessed closed surfaces for painting, and fine features are thickened for FDM printing."}
+      {
+        "title": "Two buildings, four printable parts",
+        "text": "Print the four numbered STL parts or use the two geometry-only 3MF plates. The roofs lift off for painting and assembly. The rear house entry sits beneath the balcony. Assembled-reference STLs are included for digital inspection; they are not additional kit parts."
+      },
+      {
+        "title": "Printing & assembly",
+        "text": "Import in millimeters at 100% scale; the parts are already HO size. Select your own printer and filament profiles. The documented MK3.5 validation used a 0.4 mm nozzle, 0.10 mm layers, three perimeters, and 10% infill. Use snug supports for the house roof. Follow PRINT_GUIDE.md for supports, dry-fitting, and painting."
+      },
+      {
+        "title": "Editable, photo-based architecture",
+        "text": "The Python generator and dimensions.json are included. Building dimensions were estimated from photographs with assumed garage-door dimensions as a scale reference. Windows and doors are recessed closed surfaces for painting, and fine features are thickened for FDM printing."
+      }
     ],
     "status": "The supplied validation records report watertight meshes and successful MK3.5 slicing. No physical print has been tested. Dimensions are photo-estimated, not surveyed.",
-    "featuredFiles": ["01_walls_plate.3mf","02_roofs_plate.3mf","STL/01_house_walls.stl","STL/02_house_roof.stl","STL/03_garage_walls.stl","STL/04_garage_roof.stl","PRINT_GUIDE.md"]
+    "featuredFiles": [
+      "01_walls_plate.3mf",
+      "02_roofs_plate.3mf",
+      "STL/01_house_walls.stl",
+      "STL/02_house_roof.stl",
+      "STL/03_garage_walls.stl",
+      "STL/04_garage_roof.stl",
+      "PRINT_GUIDE.md"
+    ]
+  },
+  {
+    "slug": "watch-cleaning-baskets",
+    "title": "Watch-cleaning baskets",
+    "category": "Watch tools",
+    "edition": "Credited remix",
+    "summary": "A basket, rotor, spindle, and tray collection, with Beau’s added holes and extra spacer plate.",
+    "byline": "Originals: gpraceman, based on muddtt. Modifications: Beau Gosse.",
+    "bundle": "watch-cleaning-baskets.zip",
+    "formats": "STL · 3MF · STEP",
+    "aiAssisted": null,
+    "printables": null,
+    "preserveLicense": true,
+    "license": {
+      "name": "Originals: CC BY-NC 4.0 · Modifications: CC BY-NC-SA 4.0",
+      "file": "ATTRIBUTION.md",
+      "summary": "Credit gpraceman, muddtt, and Beau Gosse; noncommercial use. Original notices are preserved."
+    },
+    "images": [
+      {
+        "file": "images/bf16d6c2-4ab4-4d9d-97df-ff9bb4fb0330.jpg",
+        "label": "Original basket collection",
+        "credit": "Photo by gpraceman · CC BY-NC 4.0"
+      },
+      {
+        "file": "preview_basket.png",
+        "label": "Original V3 basket",
+        "credit": "Render of gpraceman’s STL · CC BY-NC 4.0"
+      }
+    ],
+    "facts": [
+      [
+        "Original creator",
+        "gpraceman / muddtt"
+      ],
+      [
+        "Beau’s changes",
+        "More holes + spacer"
+      ],
+      [
+        "Original meshes",
+        "13 STL files"
+      ],
+      [
+        "Local projects",
+        "4 × 3MF + STEP"
+      ]
+    ],
+    "sections": [
+      {
+        "title": "Original design and Beau’s changes",
+        "text": "gpraceman’s Watch Cleaning Baskets refines muddtt’s Pearl watch-cleaning designs. Beau added more holes and an extra spacer plate. The download keeps the original set, source images, README, and license alongside Beau’s local 3MF and STEP working files. The main photograph shows gpraceman’s original set."
+      },
+      {
+        "title": "Choose original meshes or modified projects",
+        "text": "The files folder holds all 13 original STL meshes: basket variants, compartment trays, mini-basket holders, rotor, spindle, jar holder, and fan parts. The four 3MF projects and half-basket-meshed4.step are Beau’s supplied working files. Some projects contain both original and modified parts. The original Thingiverse ZIP is also available separately."
+      },
+      {
+        "title": "Open the 3MF projects in a compatible slicer",
+        "text": "Some local projects use negative volumes to make holes. Inspect the sliced result: a plain STL export can omit those cutouts. Use bottom plate.3mf for the supplied spacer-plate project, and review the other projects before selecting the parts you need."
+      },
+      {
+        "title": "Original designer’s printing notes",
+        "text": "gpraceman lists ABS, 0.2 mm layers, 25% infill, no supports, and a brim as starting settings, with higher infill for the extension spindle. The rotor uses a 3 mm threaded insert and screw. The mini-basket holder is sized around 24 × 22 mm baskets. These are the original designer’s settings, not a validation of Beau’s modified parts."
+      },
+      {
+        "title": "Meshed tray bottoms need slicer settings",
+        "text": "For applicable trays, the original Cura recipe uses zero top and bottom layers, triangles infill, 3.0 mm line distance, line multiplier 2, and connected infill lines and polygons. Follow the original listing and inspect toolpaths; downloading the STL alone does not reproduce those settings."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Watch Cleaning Baskets — gpraceman on Thingiverse",
+        "url": "https://www.thingiverse.com/thing:5905166"
+      },
+      {
+        "label": "Original Pearl rotor — muddtt on Printables",
+        "url": "https://www.printables.com/model/301422-rotor-for-pearl-watch-cleaning-machine"
+      },
+      {
+        "label": "Original Pearl basket — muddtt on Printables",
+        "url": "https://www.printables.com/model/301419-pearl-supreme-watch-cleaning-basket"
+      },
+      {
+        "label": "Original license: CC BY-NC 4.0",
+        "url": "https://creativecommons.org/licenses/by-nc/4.0/"
+      },
+      {
+        "label": "Beau’s contribution license: CC BY-NC-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      }
+    ],
+    "status": "Check machine fit, moving-part clearance, and material compatibility with your cleaner before use. Beau’s modified files have not been physically validated as part of this publication. Original photos show the source designer’s prints.",
+    "featuredFiles": [
+      "watch cleaning.3mf",
+      "watchprop.3mf",
+      "watch cylidar pole.3mf",
+      "bottom plate.3mf",
+      "half-basket-meshed4.step",
+      "files/Basket_v3_Tear_Drop.stl",
+      "ATTRIBUTION.md"
+    ]
+  },
+  {
+    "slug": "mahjong-line-reader-aid",
+    "title": "Mahjong line reader aid",
+    "category": "Game aids",
+    "edition": "Original design",
+    "summary": "A slim reading aid with a long line opening and a recessed face, saved as an editable PrusaSlicer project.",
+    "byline": "Design: Beau Gosse",
+    "bundle": "mahjong-line-reader-aid.zip",
+    "formats": "3MF",
+    "aiAssisted": false,
+    "printables": null,
+    "images": [
+      {
+        "file": "preview.png",
+        "label": "Line opening and recessed face",
+        "credit": "3MF geometry with negative volumes applied"
+      }
+    ],
+    "facts": [
+      [
+        "Saved dimensions",
+        "165 × 90 × 8 mm"
+      ],
+      [
+        "Line opening",
+        "140 × 6 mm"
+      ],
+      [
+        "Model format",
+        "PrusaSlicer 3MF"
+      ],
+      [
+        "Design",
+        "Made without AI"
+      ]
+    ],
+    "sections": [
+      {
+        "title": "Keep your place on a Mahjong card",
+        "text": "Beau’s original design uses a long, narrow opening to isolate a line while reading. The file contains the base and two subtractive boxes that form the opening and recessed region."
+      },
+      {
+        "title": "Print from the original 3MF",
+        "text": "Open Mahjong Line Reader Aid.3mf in PrusaSlicer or a slicer that supports its negative volumes. Check the sliced preview to confirm the opening and recess are present. The original 3MF is provided because a plain STL export can lose the subtractive features."
+      },
+      {
+        "title": "Check card fit before printing",
+        "text": "The saved project is approximately 165 × 90 × 8 mm, with a 140 × 6 mm line opening. Those dimensions come from the file geometry. Review your card’s layout, the project’s printer and filament settings, and the first layer before printing."
+      }
+    ],
+    "status": "The preview shows the actual box geometry after applying both negative volumes. It is a model render, not a photograph of a print. Physical print performance and fit to a particular Mahjong card have not been validated.",
+    "featuredFiles": [
+      "Mahjong Line Reader Aid.3mf",
+      "README.txt"
+    ]
   }
 ]

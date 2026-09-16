@@ -228,6 +228,228 @@
       "bytes": 446024,
       "sha256": "94205ec3421098efd0c5a19fb89c4b825ee97f9a64cd4132784b1274b9b0b061",
       "source": "band-stretcher-revision-3"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/bottom plate.3mf",
+      "bytes": 142605,
+      "sha256": "71ebfd40a9c1e1835645c5d4beaa4f20960e1abc1d39c336cd0816229aa52b62",
+      "source": "beau-gosse-basket-modifications"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/files/Basket_for_3_small_baskets.stl",
+      "bytes": 341584,
+      "sha256": "1524890e611192133d7a9b654131349b972cabb7ac133e3d13a6c15a9b21d7c6",
+      "source": "gpraceman-thingiverse-5905166"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/files/Basket_for_4_small_baskets.stl",
+      "bytes": 544684,
+      "sha256": "13581b21f6a377651505da2755f2a112099430cb1196ca9a147319056b0c8f52",
+      "source": "gpraceman-thingiverse-5905166"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/files/Basket_for_large_mainplate_and_mainspring.stl",
+      "bytes": 191584,
+      "sha256": "c3657071c306f5ae53094992f0c1d005074a378bf945be3db585325a91cfffe7",
+      "source": "gpraceman-thingiverse-5905166"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/files/Basket_for_small_mainplate_and_mainspring.stl",
+      "bytes": 189484,
+      "sha256": "68689c0cb848642d35c8466a51ced76715311bbd9ef4f9be9d6df955233eca53",
+      "source": "gpraceman-thingiverse-5905166"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/files/Basket_v2_Tear_Drop.stl",
+      "bytes": 619884,
+      "sha256": "216f27543a6fdb3f216334558a5b6d0e962653823921e67cbbd8d5dc5cabf907",
+      "source": "gpraceman-thingiverse-5905166"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/files/Basket_v3_Tear_Drop.stl",
+      "bytes": 739784,
+      "sha256": "d5066890b9b1ee590489e01b48726860bfb2fcb5ddfb4d36da535bbf088632a8",
+      "source": "gpraceman-thingiverse-5905166"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/files/Half_Basket_Meshed3.stl",
+      "bytes": 127684,
+      "sha256": "6b83489cba4d233e567485808b72e80bae5d3dfd14ffec97196fa92efe12a0ae",
+      "source": "gpraceman-thingiverse-5905166"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/files/Half_Basket_Meshed4.stl",
+      "bytes": 126584,
+      "sha256": "0b3d60186df28818232a66cb70754013f9b5274e7bc24b13fa56332510f02b4f",
+      "source": "gpraceman-thingiverse-5905166"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/files/pearl_rotor_3.stl",
+      "bytes": 317684,
+      "sha256": "b17a3b5140152c1cb6c4e96b3ae13d0dacf7e21d408608d4ac3fd55bce993402",
+      "source": "gpraceman-thingiverse-5905166"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/files/Spindle.stl",
+      "bytes": 164384,
+      "sha256": "e30c64eac157f7055ac5ad3795a0704eb86a9d208cba92df7090795263948614",
+      "source": "gpraceman-thingiverse-5905166"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/files/Watch_Cleaner_Fan_Exhaust_v2.stl",
+      "bytes": 251284,
+      "sha256": "7383045dab73c49581be5800a5b79e8ae6463d409e33bbb35e846d3d8aca918e",
+      "source": "gpraceman-thingiverse-5905166"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/files/Watch_Cleaner_Fan_Intake.stl",
+      "bytes": 177684,
+      "sha256": "468c4f56cee335e590b29b69dd62eb213c167733f620fc76d64d3ded2cbebfe8",
+      "source": "gpraceman-thingiverse-5905166"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/files/Watch_Cleaner_Jar_Holder.stl",
+      "bytes": 66984,
+      "sha256": "9f85d1840b9e65f552956199ec0dd6c5893c35f754bee674ba5b0e4275be7d9e",
+      "source": "gpraceman-thingiverse-5905166"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/half-basket-meshed4.step",
+      "bytes": 351283,
+      "sha256": "d5de2037f55f23c2fb2eb5673412b5d3636b44ac8ef6a31c4b1c8255c489517e",
+      "source": "beau-gosse-basket-modifications"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/images/0dd82937-21e5-473f-849e-f1126e88d8ea.png",
+      "bytes": 216257,
+      "sha256": "22f7f60d663ff1340d44ca4d96c3cd278f1240119a4bc3708fd3aabf1bdbc2bb",
+      "source": "gpraceman-thingiverse-5905166"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/images/34adde57-e199-48b3-999e-a031d067e568.png",
+      "bytes": 267535,
+      "sha256": "985b4b0bc4efca7c39a1e843a581b73867bfa21545b175820785d4d2f726b565",
+      "source": "gpraceman-thingiverse-5905166"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/images/3a37c3c2-237a-4acb-afe2-0381e9af3059.png",
+      "bytes": 258165,
+      "sha256": "fde164b6dab536a4233d8ddd25e0882c2bf9d8e901312cec5e31d5adca2f35df",
+      "source": "gpraceman-thingiverse-5905166"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/images/43407f53-0f01-4b1b-ab59-b1da3288b546.png",
+      "bytes": 215098,
+      "sha256": "610d96104ad4fb94f9002ae72fc18978e2fbc48a866c4206e5a83a4822944bb1",
+      "source": "gpraceman-thingiverse-5905166"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/images/480f3650-4a79-4ba7-b8ce-0c7c10a77472.png",
+      "bytes": 216750,
+      "sha256": "0fd7fb986401f0e79960371f12333a1c713f840c9078b5b0246e14363c4cd9fa",
+      "source": "gpraceman-thingiverse-5905166"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/images/4b9c6371-ffb2-43f0-95ec-08323ce3dfb2.png",
+      "bytes": 231551,
+      "sha256": "bc3e159fa369d538a2f9ff337a3dd24ce6fc9c47784eb1b089b00eea9afb85f0",
+      "source": "gpraceman-thingiverse-5905166"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/images/5467ccc2-e40f-43f6-a0f5-fced028b1e26.png",
+      "bytes": 288193,
+      "sha256": "679f303e7c324b99bd5cb6d48037dd3b0f9b3bff675d2666e5253ec676594054",
+      "source": "gpraceman-thingiverse-5905166"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/images/7f874b30-e367-4f22-8d57-505bc5aeadec.png",
+      "bytes": 292074,
+      "sha256": "5c59d1736a6dc2d18e738c0247da506e3d1175a6c9c4fb40e8439594e8c6a45f",
+      "source": "gpraceman-thingiverse-5905166"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/images/86d89a79-e651-482b-b14b-3fd1140da38d.png",
+      "bytes": 141061,
+      "sha256": "83a499725723dd92b7e10422c297fe4b8b03e97585831d7f33945944fe502c1d",
+      "source": "gpraceman-thingiverse-5905166"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/images/aac2661a-8625-4751-946d-3b74a77adb10.png",
+      "bytes": 266827,
+      "sha256": "90e0b53c0a4aa9cefc1bab8c55ecc978889431dd290aed49733614d41b745541",
+      "source": "gpraceman-thingiverse-5905166"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/images/adf65238-af53-41c3-a097-db0349ddb22b.jpg",
+      "bytes": 494267,
+      "sha256": "0e751681080b8be42d55141ef9252d015dded2c4a532d52888765370c442d842",
+      "source": "gpraceman-thingiverse-5905166"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/images/b691b202-559f-4ac4-a40e-1d31e7954c92.png",
+      "bytes": 232241,
+      "sha256": "d9079cfba93cb19fafbc3bfd67c4e209bf773073dbebc4115079b86a79576b0a",
+      "source": "gpraceman-thingiverse-5905166"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/images/bf16d6c2-4ab4-4d9d-97df-ff9bb4fb0330.jpg",
+      "bytes": 781859,
+      "sha256": "a0b8b847af6b8bd5ba7d663c044e04121c52b99424ac259734c14dce64cb7e69",
+      "source": "gpraceman-thingiverse-5905166"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/images/f5de1faa-bcce-44d8-ac57-95471e1bbb89.png",
+      "bytes": 211605,
+      "sha256": "439c78f6a5d92ffce6676ee5a51bc7eea5558b99457944d05a95c5c5e4bf7677",
+      "source": "gpraceman-thingiverse-5905166"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/images/f93fc134-544d-45cb-943b-c774770a238f.png",
+      "bytes": 285736,
+      "sha256": "b1e28e63b945d010835432f5dfec5bc42502acc28a5e2bbc6948b67e35a589c4",
+      "source": "gpraceman-thingiverse-5905166"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/LICENSE.txt",
+      "bytes": 123,
+      "sha256": "c562785301d45bb21b43e23b87f26a5d6cae4ec45a5558768f8f1a03ecc3acdf",
+      "source": "gpraceman-thingiverse-5905166"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/README.txt",
+      "bytes": 1146,
+      "sha256": "5060405da7fd398040f7f0954463a2b524f3abf83cdc3a65e3c7ea94afe627bb",
+      "source": "gpraceman-thingiverse-5905166"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/Watch Cleaning Baskets - 5905166.zip",
+      "bytes": 8264584,
+      "sha256": "36cc90005e78ea0ec88848678318968cf2efa9ed545a4ccd1a1eff90c968d2db",
+      "source": "gpraceman-thingiverse-5905166"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/watch cleaning.3mf",
+      "bytes": 421406,
+      "sha256": "0317b64044566bf33dd634224692697ddb57eb6ecdd3cf676fa11f4a3f8fca23",
+      "source": "beau-gosse-basket-modifications"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/watch cylidar pole.3mf",
+      "bytes": 62728,
+      "sha256": "a6e5b32237ac67ed82cf00a80689052835415ed7a7fc28bb529a267208483bef",
+      "source": "beau-gosse-basket-modifications"
+    },
+    {
+      "path": "models/watch-cleaning-baskets/watchprop.3mf",
+      "bytes": 719458,
+      "sha256": "5c8cb4af836757babec20e0046e20823937f5225b17a04f180813e9cd2d6d43c",
+      "source": "beau-gosse-basket-modifications"
+    },
+    {
+      "path": "models/mahjong-line-reader-aid/Mahjong Line Reader Aid.3mf",
+      "bytes": 37483,
+      "sha256": "c93d501cf163934268ee122a9b74a923af3236151cce8f8de7505fabb50e6dce",
+      "source": "beau-gosse-original"
     }
   ]
 }

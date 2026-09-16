@@ -1,0 +1,15 @@
+Copyright (c) 2026 Beau Gosse
+
+Beau Gosse's contributions to the modifications described in ATTRIBUTION.md
+are licensed under Creative Commons Attribution-NonCommercial-ShareAlike
+4.0 International (CC BY-NC-SA 4.0).
+
+License: https://creativecommons.org/licenses/by-nc-sa/4.0/
+Legal code: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+
+Please credit Beau Gosse and link to the model's page at:
+https://beau-gosse-dev.github.io/projects/3d-models/
+
+The original gpraceman/muddtt material retains CC BY-NC 4.0. See LICENSE.txt
+and ATTRIBUTION.md. This contribution license replaces neither those original
+notices nor their terms. It applies instead of the website repository's MIT license. Website code outside the model folders retains its existing license.

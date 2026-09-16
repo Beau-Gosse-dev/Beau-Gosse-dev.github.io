@@ -68,7 +68,7 @@ Then open your browser and visit: `http://localhost:8000`
 
 ## License
 
-Website code uses the repository's MIT license. Model files, model source, documentation, and previews under `projects/3d-models/models/` use [CC BY-NC-SA 4.0](projects/3d-models/models/LICENSE.txt).
+Website code uses the repository's MIT license. Model files, model source, documentation, and previews under `projects/3d-models/models/` have [project-specific licenses](projects/3d-models/models/LICENSE.txt): Beau's original models and contributions use CC BY-NC-SA 4.0; the original watch-cleaning baskets and images retain gpraceman's CC BY-NC 4.0 license, with credit to muddtt.
 
 ## Contact
 

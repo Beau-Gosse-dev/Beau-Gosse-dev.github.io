@@ -6,7 +6,8 @@ import struct
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
-def render(source, target, title, azimuth_degrees=200):
+def render(source, target, title, azimuth_degrees=200, elevation_degrees=17,
+           caption='Rendered from the downloadable STL'):
     raw = Path(source).read_bytes()
     count = struct.unpack_from('<I', raw, 80)[0]
     if len(raw) != 84 + 50 * count:
@@ -15,7 +16,7 @@ def render(source, target, title, azimuth_degrees=200):
     triangles = np.frombuffer(raw, dtype=dtype, offset=84, count=count)['vertices'].astype(float)
     normals = np.cross(triangles[:, 1] - triangles[:, 0], triangles[:, 2] - triangles[:, 0])
     normals /= np.maximum(np.linalg.norm(normals, axis=1)[:, None], 1e-12)
-    azimuth, elevation = math.radians(azimuth_degrees), math.radians(17)
+    azimuth, elevation = math.radians(azimuth_degrees), math.radians(elevation_degrees)
     view = np.array([math.cos(elevation)*math.cos(azimuth), math.cos(elevation)*math.sin(azimuth), math.sin(elevation)])
     right = np.array([-math.sin(azimuth), math.cos(azimuth), 0.])
     up = np.cross(view, right)
@@ -58,7 +59,7 @@ def render(source, target, title, azimuth_degrees=200):
     font=ImageFont.truetype(str(font_path), 34) if font_path.exists() else ImageFont.load_default()
     small=ImageFont.truetype('C:/Windows/Fonts/segoeui.ttf',22) if font_path.exists() else font
     draw.text((width/2,38),title,font=font,anchor='mt',fill='#253b40')
-    draw.text((width/2,height-42),'Rendered from the downloadable STL',font=small,anchor='mt',fill='#53666c')
+    draw.text((width/2,height-42),caption,font=small,anchor='mt',fill='#53666c')
     image.save(target)
     print(f'Rendered {Path(source).name} ({count:,} triangles)',flush=True)
 
@@ -66,5 +67,7 @@ if __name__ == '__main__':
     parser=argparse.ArgumentParser()
     parser.add_argument('source'); parser.add_argument('target'); parser.add_argument('title')
     parser.add_argument('--azimuth', type=float, default=200)
+    parser.add_argument('--elevation', type=float, default=17)
+    parser.add_argument('--caption', default='Rendered from the downloadable STL')
     args=parser.parse_args()
-    render(args.source,args.target,args.title,args.azimuth)
+    render(args.source,args.target,args.title,args.azimuth,args.elevation,args.caption)
