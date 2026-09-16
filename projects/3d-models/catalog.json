@@ -30,7 +30,7 @@
       ],
       [
         "Insert sizes",
-        "16–20 mm + 19 mm pair"
+        "16–20 mm (five pairs)"
       ]
     ],
     "sections": [
@@ -40,7 +40,7 @@
       },
       {
         "title": "Choose your files",
-        "text": "Print drum.stl upright as supplied. Use slot_inserts_19mm.stl for one matching 19 mm pair, or slot_inserts_16-20mm.stl for all five pairs. The editable OpenSCAD file opens as an assembly; export the separate parts for printing."
+        "text": "Print drum.stl upright as supplied. Use slot_inserts_16-20mm.stl for all five pairs, including 19 mm. Split the file into objects in your slicer to print just the pair you need. The editable OpenSCAD file opens as an assembly; export the separate parts for printing."
       },
       {
         "title": "Printing & use",
@@ -50,7 +50,6 @@
     "status": "Prototype. Revision 3 passed the supplied mesh and CAD clearance checks but has not been physically tested. Strength, fit, and cleaning performance still need confirmation.",
     "featuredFiles": [
       "drum.stl",
-      "slot_inserts_19mm.stl",
       "slot_inserts_16-20mm.stl",
       "expansion_band_stretcher.scad",
       "README.txt"
@@ -305,7 +304,7 @@
     "bundle": "mahjong-line-reader-aid.zip",
     "formats": "3MF",
     "aiAssisted": false,
-    "printables": null,
+    "printables": "https://www.printables.com/model/1710039-mahjong-card-line-reader-helper",
     "images": [
       {
         "file": "preview.png",

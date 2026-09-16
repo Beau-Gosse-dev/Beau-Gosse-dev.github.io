@@ -23,7 +23,6 @@ RETAINED REVISION 2 CHANGES
 
 FILES
   drum.stl: print one, flat bottom down (already oriented).
-  slot_inserts_19mm.stl: optional replacement pair for the measured 19 mm body.
   slot_inserts_16-20mm.stl: ten separate solids, two of each size.
     Already arranged flat, with the recessed labels facing upward.
     A slicer can split the file into objects to print only the pair needed.

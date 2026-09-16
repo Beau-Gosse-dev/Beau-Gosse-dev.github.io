@@ -2,7 +2,7 @@
 
 [Browse the public gallery](https://beau-gosse-dev.github.io/projects/3d-models/).
 
-The gallery brings together bracelet sizing cones, the Cedarburg HO house and garage, the Revision 3 expansion-band stretcher, watch-cleaning baskets, and a Mahjong line reader aid. Original model filenames are preserved. `source-files.json` records SHA-256 hashes for the 75 original imported files.
+The gallery brings together bracelet sizing cones, the Cedarburg HO house and garage, the Revision 3 expansion-band stretcher, watch-cleaning baskets, and a Mahjong line reader aid. Original model filenames are preserved. `source-files.json` records SHA-256 hashes for 74 imported files; edited instructions also retain their original source hashes and a change note. The standalone 19 mm insert file was removed from the public downloads; the 16–20 mm set includes the 19 mm pair.
 
 The watch-cleaning baskets credit **gpraceman**, whose design remixes **muddtt's** Pearl watch-cleaning parts. Beau Gosse added more holes and an extra spacer plate. The project page and [ATTRIBUTION.md](models/watch-cleaning-baskets/ATTRIBUTION.md) link the original creators and describe the changes. Original photographs retain their creator credit.
 

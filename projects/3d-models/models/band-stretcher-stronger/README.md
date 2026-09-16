@@ -24,7 +24,6 @@ A printable open drum for holding a detached expansion watch band stretched duri
 | File | Purpose |
 | --- | --- |
 | [drum.stl](drum.stl) | Updated drum; print upright as supplied |
-| [slot_inserts_19mm.stl](slot_inserts_19mm.stl) | Optional pair for a 19 mm band body; 19.4 mm clear opening |
 | [slot_inserts_16-20mm.stl](slot_inserts_16-20mm.stl) | Original ten inserts, two of each size; compatible with all revisions |
 | [expansion_band_stretcher.scad](expansion_band_stretcher.scad) | Editable OpenSCAD model, default assembly uses 19 mm inserts |
 | [README.txt](README.txt) | Detailed assembly, printing and sizing instructions |

@@ -3,12 +3,14 @@ from pathlib import Path
 from html import escape
 from urllib.parse import quote
 import json
+import hashlib
 import zipfile
 
 ROOT = Path(__file__).resolve().parent
 REPO = 'https://github.com/Beau-Gosse-dev/Beau-Gosse-dev.github.io'
 RAW = 'https://raw.githubusercontent.com/Beau-Gosse-dev/Beau-Gosse-dev.github.io/main/projects/3d-models/'
 LIVE = 'https://beau-gosse-dev.github.io/projects/3d-models/'
+PRINTABLES_PROFILE = 'https://www.printables.com/@BeauGosse_2885233/models'
 LICENSE = '''Copyright (c) 2026 Beau Gosse
 
 The 3D models, editable model source, model documentation, and previews in this
@@ -57,8 +59,8 @@ def header(title, description, prefix='', image=None, canonical=''):
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{escape(title)} · Beau's 3D Models</title><meta name="description" content="{escape(description, quote=True)}">
 <link rel="canonical" href="{LIVE}{canonical}"><meta property="og:title" content="{escape(title, quote=True)}"><meta property="og:description" content="{escape(description, quote=True)}"><meta property="og:image" content="{LIVE}{og}"><meta property="og:type" content="website">
-<link rel="stylesheet" href="{prefix}styles.css"><script src="{prefix}gallery.js" defer></script></head>
-<body><a class="skip" href="#main">Skip to content</a><div class="shell"><header class="topbar"><a class="brand" href="{prefix}../../">Beau Gosse <span>/ Projects</span></a><nav aria-label="Main navigation"><a href="{prefix}./" aria-current="page">3D Models</a><a href="{REPO}/tree/main/projects/3d-models">GitHub ↗</a></nav></header>'''
+<link rel="stylesheet" href="{prefix}styles.css?v={hashlib.sha256((ROOT/'styles.css').read_bytes()).hexdigest()[:12]}"><script src="{prefix}gallery.js" defer></script></head>
+<body><a class="skip" href="#main">Skip to content</a><div class="shell"><header class="topbar"><a class="brand" href="{prefix}../../">Beau Gosse <span>/ Projects</span></a><nav aria-label="Main navigation"><a href="{prefix}./" aria-current="page">3D Models</a><a href="{REPO}/tree/main/projects/3d-models">GitHub ↗</a><a class="printables-nav" href="{PRINTABLES_PROFILE}">Printables ↗</a></nav></header>'''
 
 def footer(prefix=''):
     return f'''<footer><span>Collection shared by Beau Gosse. Creators credited per project.</span><span><a href="{prefix}./">3D Models</a> · <a href="{prefix}models/LICENSE.txt">Model licenses</a></span></footer></div></body></html>'''
@@ -100,10 +102,13 @@ def main():
     page = header('3D Models', 'Explore watch tools, scale models, and game aids, with previews, creator credits, printing notes, and free downloads.')
     page += '<main id="main"><section class="hero"><p class="eyebrow">From my workbench to yours</p><h1>3D models.<br>Made to be made.</h1><p class="lead">Watch tools, small-scale buildings, and practical experiments. Browse the models, take a closer look, and download the files for your next print.</p><div class="pill-row"><span class="pill">3 projects</span><span class="pill">Free downloads</span><span class="pill">STL + editable files</span></div></section><div class="collection-heading"><h2>The model collection</h2><p>Previews rendered from model geometry</p></div><section class="cards" aria-label="3D model projects">'
     page = page.replace('3 projects', f'{len(catalog)} projects').replace('Previews rendered from model geometry', 'Model previews & creator photographs').replace('Watch tools, small-scale buildings, and practical experiments.', 'Watch tools, small-scale buildings, game aids, and practical experiments.')
+    page = page.replace('<div class="pill-row">', f'<div class="actions"><a class="button printables-button" href="{PRINTABLES_PROFILE}">Visit my Printables profile <span aria-hidden="true">↗</span></a></div><div class="pill-row">', 1)
     for model in catalog:
         slug = model['slug']; thumb = model['images'][0]
         byline = f'<p class="card-credit">{escape(model["byline"])}</p>' if model.get('byline') else ''
         page += f'''<article class="card"><a class="card-image" href="{slug}/" aria-label="View {escape(model['title'],quote=True)}"><img src="models/{slug}/{thumb['file']}" alt="{escape(model['title']+': '+thumb['label'],quote=True)}" width="1200" height="800" loading="lazy"></a><div class="card-body"><div class="card-topline"><span>{escape(model['category'])}</span><span>{escape(model['edition'])}</span></div><h3><a href="{slug}/">{escape(model['title'])}</a></h3>{byline}<p>{escape(model['summary'])}</p><div class="card-bottom"><span class="formats">{escape(model['formats'])}</span><a class="button secondary" href="{slug}/">Explore & download <span class="arrow" aria-hidden="true">→</span></a></div></div></article>'''
+        if model.get('printables'):
+            page=page.removesuffix('</div></article>')+f'<a class="button printables-button card-printables" href="{escape(model["printables"],quote=True)}">View on Printables ↗</a></div></article>'
     page += '</section><aside class="license-note"><strong>Credit the creators and check each model’s license.</strong> Beau’s original projects use CC BY-NC-SA 4.0. The watch-cleaning basket originals retain gpraceman’s CC BY-NC 4.0 license, with credit to muddtt; Beau’s modifications use CC BY-NC-SA 4.0. <a href="models/LICENSE.txt">Read the license overview</a>.</aside></main>' + footer()
     (ROOT/'index.html').write_text(page,encoding='utf-8')
     print(f'Built gallery, {len(catalog)} detail pages, and {len(catalog)} licensed ZIP downloads.')
@@ -114,7 +119,9 @@ def build_detail(m):
     page=header(m['title'],m['summary'],'../',f'models/{slug}/{image["file"]}',f'{slug}/')
     page += f'<main id="main"><div class="breadcrumb"><a href="../">← All 3D models</a></div><div class="detail-header"><section class="detail-heading"><p class="eyebrow">{escape(m["category"])} / {escape(m["edition"])}</p><h1>{escape(m["title"])}</h1><p class="lead">{escape(m["summary"])}</p><div class="actions"><a class="button" href="{RAW}models/{slug}/{m["bundle"]}" download>Download all files <span aria-hidden="true">↓</span></a>'
     if m['printables']:
-        page+=f'<a class="button secondary" href="{escape(m["printables"],quote=True)}">View on Printables ↗</a>'
+        page+=f'<a class="button printables-button" href="{escape(m["printables"],quote=True)}">View on Printables ↗</a>'
+    else:
+        page+=f'<a class="button printables-button" href="{PRINTABLES_PROFILE}">My Printables profile ↗</a>'
     page+=f'</div><p class="download-meta">ZIP · {m["bundleSize"]} · Includes license & instructions</p>'
     if m.get('byline'):
         page+=f'<p class="model-byline">{escape(m["byline"])}</p>'

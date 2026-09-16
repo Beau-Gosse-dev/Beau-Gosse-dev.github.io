@@ -207,26 +207,24 @@
     },
     {
       "path": "models/band-stretcher-stronger/README.md",
-      "bytes": 3525,
-      "sha256": "ce86de6833d8b4a69bdb7d2c2eceaf7cfd25b57a8d52497562551bd5348ec755",
-      "source": "band-stretcher-revision-3"
+      "bytes": 3413,
+      "sha256": "ad1cdbde2a2606c1210045590f3913d0fdb70dade9a44ff503e66e510dd0e23c",
+      "source": "band-stretcher-revision-3",
+      "sourceSha256": "ce86de6833d8b4a69bdb7d2c2eceaf7cfd25b57a8d52497562551bd5348ec755",
+      "changes": "Removed the standalone 19 mm insert download reference at the owner’s request."
     },
     {
       "path": "models/band-stretcher-stronger/README.txt",
-      "bytes": 6456,
-      "sha256": "6261579472722d8c9a1b8a6d15b71937a14c8daa85c3a1f4410e1b2183f813bb",
-      "source": "band-stretcher-revision-3"
+      "bytes": 6376,
+      "sha256": "fb8c04afe9d2e4f582f8b62dddd9d4214cb6593e707864eed622f173a44fd1fb",
+      "source": "band-stretcher-revision-3",
+      "sourceSha256": "6261579472722d8c9a1b8a6d15b71937a14c8daa85c3a1f4410e1b2183f813bb",
+      "changes": "Removed the standalone 19 mm insert download reference at the owner’s request."
     },
     {
       "path": "models/band-stretcher-stronger/slot_inserts_16-20mm.stl",
       "bytes": 2221482,
       "sha256": "5f280018d1dde9aa438f2a2332da22fda6023715a12571346b817748eaea0378",
-      "source": "band-stretcher-revision-3"
-    },
-    {
-      "path": "models/band-stretcher-stronger/slot_inserts_19mm.stl",
-      "bytes": 446024,
-      "sha256": "94205ec3421098efd0c5a19fb89c4b825ee97f9a64cd4132784b1274b9b0b061",
       "source": "band-stretcher-revision-3"
     },
     {

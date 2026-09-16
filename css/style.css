@@ -149,6 +149,19 @@ h3 {
     margin-top: 10px;
 }
 
+.btn.printables-link {
+    background-color: #ff8c50;
+    color: #20140d;
+    font-weight: 700;
+    box-shadow: none;
+}
+
+.btn.printables-link:hover:not(:disabled) {
+    background-color: #ffb184;
+    color: #20140d;
+    box-shadow: 0 4px 14px rgba(255, 140, 80, 0.25);
+}
+
 /* Back Links */
 .back-link {
     display: inline-block;
@@ -194,7 +207,7 @@ h3 {
     .projects-container {
         grid-template-columns: 1fr;
     }
-    
+
     .project-card {
         max-width: 500px;
         margin: 0 auto;
@@ -205,13 +218,13 @@ h3 {
     .container {
         padding: 0 10px 20px;
     }
-    
+
     .project-description {
         font-size: 14px;
     }
-    
+
     .btn {
         padding: 8px 16px;
         font-size: 14px;
     }
-} 
+}
