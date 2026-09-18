@@ -1,5 +1,5 @@
 {
-  "imported": "2026-09-16",
+  "imported": "2026-09-17",
   "files": [
     {
       "path": "models/cedarburg-house-ho/01_walls_plate.3mf",
@@ -447,6 +447,54 @@
       "path": "models/mahjong-line-reader-aid/Mahjong Line Reader Aid.3mf",
       "bytes": 37483,
       "sha256": "c93d501cf163934268ee122a9b74a923af3236151cce8f8de7505fabb50e6dce",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/hoyer-6000-series-bezel/mesh_check.json",
+      "bytes": 651,
+      "sha256": "838c1a160835041afbea6ecdd9e2e309ece359dd156f1cefd7341900890e97ff",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/hoyer-6000-series-bezel/preview_perspective.png",
+      "bytes": 39213,
+      "sha256": "a3fa64a2c9d53db8c8a35551380ad3c253202e0edcaa78ed2ba1641c6638e0ab",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/hoyer-6000-series-bezel/preview_side.png",
+      "bytes": 10038,
+      "sha256": "6d55fc885e72361baaa006d0314149bd23e3cf14a99bfec62d62fedbd8862cf6",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/hoyer-6000-series-bezel/preview_top.png",
+      "bytes": 16297,
+      "sha256": "9a99d212a1f3d1e166104ddeffe25662f2bfc5edcd5a9b72c03a6890eea60a05",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/hoyer-6000-series-bezel/README.md",
+      "bytes": 2008,
+      "sha256": "c132da1e81942595b314fc41807b6af34f94d1ea9fb1ab390fe44914d356c228",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/hoyer-6000-series-bezel/watch_bezel_assembly.stl",
+      "bytes": 347259,
+      "sha256": "4ab33db1f5986c513e368b4790f2b134307b1df9f37b4dc2612e0fff97f8f9d5",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/hoyer-6000-series-bezel/watch_bezel_half.stl",
+      "bytes": 172132,
+      "sha256": "cd8d028f378d16e93045d1ab922b70d8f2f05986170e2f7e610e61360abadd1d",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/hoyer-6000-series-bezel/watch_bezel.scad",
+      "bytes": 3539,
+      "sha256": "9a4f71766e26c1b2260486ae6b222ba028a77a4488562929bfc1271ae1c4b565",
       "source": "beau-gosse-original"
     }
   ]

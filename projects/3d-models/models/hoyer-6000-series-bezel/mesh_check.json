@@ -1,0 +1,29 @@
+{
+  "model": "Hoyer 6000 series bezel",
+  "validated": "2026-09-17",
+  "units": "millimeters",
+  "printable_half": {
+    "file": "watch_bezel_half.stl",
+    "watertight": true,
+    "winding_consistent": true,
+    "connected_components": 1,
+    "extents": [
+      40.2602,
+      13.10001,
+      3.0
+    ]
+  },
+  "assembly": {
+    "file": "watch_bezel_assembly.stl",
+    "watertight": true,
+    "connected_components": 2,
+    "side_gap": 9.29998
+  },
+  "dimensions": {
+    "circular_opening_diameter": 32.9,
+    "circular_outer_diameter": 35.5,
+    "terminal_shoulder_span": 35.5,
+    "overall_tip_span": 40.2602
+  },
+  "physical_fit_verified": false
+}

@@ -349,5 +349,71 @@
       "Mahjong Line Reader Aid.3mf",
       "README.txt"
     ]
+  },
+  {
+    "slug": "hoyer-6000-series-bezel",
+    "title": "Hoyer 6000 series bezel",
+    "category": "Watch parts",
+    "edition": "Prototype",
+    "summary": "A two-piece replacement bezel with mirrored halves, smooth convex terminals, and dimensions tuned for a Hoyer 6000-series watch.",
+    "byline": "Design: Beau Gosse",
+    "bundle": "hoyer-6000-series-bezel.zip",
+    "formats": "STL · OpenSCAD",
+    "aiAssisted": true,
+    "printables": null,
+    "images": [
+      {
+        "file": "preview_perspective.png",
+        "label": "Two-piece assembly"
+      },
+      {
+        "file": "preview_top.png",
+        "label": "Top view"
+      },
+      {
+        "file": "preview_side.png",
+        "label": "Side profile"
+      }
+    ],
+    "facts": [
+      [
+        "Circular opening",
+        "32.9 mm"
+      ],
+      [
+        "Shoulder span",
+        "35.5 mm"
+      ],
+      [
+        "Side separation",
+        "9.3 mm"
+      ],
+      [
+        "Print pieces",
+        "2 mirrored halves"
+      ]
+    ],
+    "sections": [
+      {
+        "title": "A replacement bezel for the Hoyer 6000 series",
+        "text": "The bezel is split into two mirrored halves that follow the dial while leaving the side openings clear. Filled transitions join the circular rim to the wider end sections, and each far edge rounds continuously down to the terminal floor."
+      },
+      {
+        "title": "Print two copies of the half",
+        "text": "watch_bezel_half.stl is the printable master; print it twice and rotate one copy 180 degrees around the dial. watch_bezel_assembly.stl shows the intended relationship between both pieces. The OpenSCAD source is included for dimensional adjustments."
+      },
+      {
+        "title": "Check fit before final use",
+        "text": "The modeled opening is 32.9 mm, the circular outside diameter and terminal shoulder span are both 35.5 mm, and the side separation is 9.3 mm. Import at 100% in millimeters, inspect the sliced result, and test the prototype gently against the watch."
+      }
+    ],
+    "status": "Prototype. The latest revision is watertight and passed the supplied digital dimension checks, but physical fit of the 32.9 mm opening and 35.5 mm terminal-shoulder revision has not yet been confirmed.",
+    "featuredFiles": [
+      "watch_bezel_half.stl",
+      "watch_bezel_assembly.stl",
+      "watch_bezel.scad",
+      "README.md",
+      "mesh_check.json"
+    ]
   }
 ]
