@@ -326,7 +326,7 @@ idb('readonly', s => s.get('song'))
   .then(rec => { if (rec && rec.blob) useSongBlob(rec.blob, rec.name); else trySong(); })
   .catch(() => trySong());
 
-const BPM = 124, SD = 60 / BPM / 4;
+const BPM = 112, SD = 60 / BPM / 4;
 const CH = [[53, 57, 60], [55, 59, 62], [57, 60, 64], [55, 60, 64]]; // F G Am C
 const BASS = [41, 43, 45, 48];
 const MEL = {};
@@ -426,7 +426,7 @@ addEventListener('drop', e => {
 });
 
 // ---------------------------------------------------------------- game constants
-const GRAV = 2600, JUMP = 920, JUMP2 = 860, PW = 80, PH = 70;
+const GRAV = 1900, JUMP = 790, JUMP2 = 735, PW = 80, PH = 70;
 
 let state = 'menu', G = null, T = 0, menuCam = 0, overReady = false;
 const input = { jumpHeld: false };
@@ -579,7 +579,7 @@ function pressDash() {
   if (!G || G.rescue || state !== 'play') return;
   const p = G.p;
   if (p.dashCd > 0) return;
-  p.dash = 0.3; p.dashCd = 0.5; p.kb = 0;
+  p.dash = 0.4; p.dashCd = 0.55; p.kb = 0;
   if (!p.onGround && p.jumps >= 2) p.jumps = 1; // dashing gives back your double jump
   S('dash');
   burst(p.x + 20, p.y - 45, 20, { speed: 200, vx: -300, size: 10, grav: 0 });
@@ -603,7 +603,7 @@ function bumpWall(pl) {
   // bounce high enough to land on top of the thing we bumped into
   const h = Math.max(80, p.y - pl.y + 70);
   p.vy = -Math.sqrt(2 * GRAV * h);
-  p.kb = 0.28; p.dash = 0; p.jumps = 1; p.dizzy = 1.0;
+  p.kb = 0.35; p.dash = 0; p.jumps = 1; p.dizzy = 1.2;
   hurt(p.x + PW, p.y - 40);
 }
 function fell() {
@@ -617,7 +617,7 @@ function startRescue() {
   for (const c of G.crystals) {
     if (!c.broken && c.x > tx - 100 && c.x < tx + 500) { c.broken = true; burst(c.x, c.y - 60, 30, { size: 10 }); }
   }
-  G.rescue = { t: 0, dur: 1.3, x0: p.x, y0: p.y, x1: tx, y1: ty };
+  G.rescue = { t: 0, dur: 1.8, x0: p.x, y0: p.y, x1: tx, y1: ty };
   p.vy = 0; p.dash = 0; p.kb = 0; p.dizzy = 0;
   S('rescue');
   popup(VW * 0.35, 300, 'Wheee!', 190);
@@ -635,8 +635,8 @@ function updateRescue(dt) {
 // ---------------------------------------------------------------- update
 function update(dt) {
   const p = G.p, easy = G.mode === 'easy';
-  const base = easy ? 420 : 520, top = easy ? 640 : 900;
-  G.speed = base + (top - base) * Math.min(1, G.dist / 2500);
+  const base = easy ? 330 : 420, top = easy ? 470 : 680;
+  G.speed = base + (top - base) * Math.min(1, G.dist / 4000);
   p.inv -= dt; p.dashCd -= dt; p.dizzy -= dt; p.jumpBuf -= dt; p.coyote -= dt;
   p.squash = Math.max(0, p.squash - dt * 4);
   G.shake = Math.max(0, G.shake - dt * 3);
@@ -646,16 +646,16 @@ function update(dt) {
   } else {
     let vx = G.speed;
     if (p.dash > 0) {
-      vx = G.speed * 2.1 + 250; p.dash -= dt;
+      vx = G.speed + (G.speed * 0.8 + 150) * Math.min(1, p.dash / 0.3); p.dash -= dt;
       burst(p.x, p.y - 45 + (Math.random() - 0.5) * 40, 1, { speed: 60, vx: -200, size: 9, grav: 0, life: 0.5 });
     }
-    if (p.kb > 0) { vx = -280; p.kb -= dt; }
+    if (p.kb > 0) { vx = lerp(G.speed, -220, p.kb / 0.35); p.kb -= dt; }
     const px0 = p.x, py0 = p.y;
     p.x += vx * dt;
     if (p.dash > 0) p.vy = 0;
     else {
       const g = input.jumpHeld && p.vy < 0 ? GRAV * 0.55 : GRAV;
-      p.vy = Math.min(1700, p.vy + g * dt);
+      p.vy = Math.min(1250, p.vy + g * dt);
     }
     p.y += p.vy * dt;
 
@@ -694,7 +694,7 @@ function update(dt) {
           G.bonus += 50;
           popupAtPlayer(pick(['+50 Sparkle!', '+50 Shiny!', '+50 Glitter!']));
         } else {
-          p.kb = 0.25; p.vy = Math.min(p.vy, -650); p.dizzy = 0.8;
+          p.kb = 0.35; p.vy = Math.min(p.vy, -560); p.dizzy = 0.8;
           hurt(p.x + PW, p.y - 40);
           if (state !== 'play') return;
         }
@@ -735,12 +735,12 @@ function update(dt) {
     burst(p.x + 40, p.y - 60, 80, { speed: 500, size: 12 });
   }
 
-  p.trail.unshift({ x: p.x + 4, y: p.y - 50 + (p.onGround ? -Math.abs(Math.sin(T * 13)) * 5 : 0) });
+  p.trail.unshift({ x: p.x + 4, y: p.y - 50 + (p.onGround ? -Math.abs(Math.sin(T * 5.5)) * 5 : 0) });
   const maxTrail = p.dash > 0 ? 30 : 20;
   if (p.trail.length > maxTrail) p.trail.length = maxTrail;
 
-  G.camX += (p.x - VW * 0.22 - G.camX) * Math.min(1, dt * (G.rescue ? 4 : 12));
-  G.camY += (clamp((p.y - 470) * 0.6, -280, 140) - G.camY) * Math.min(1, dt * 4);
+  G.camX += (p.x - VW * 0.22 - G.camX) * Math.min(1, dt * (G.rescue ? 3 : 6));
+  G.camY += (clamp((p.y - 470) * 0.6, -280, 140) - G.camY) * Math.min(1, dt * 2.5);
 
   while (G.platforms.length > 1 && G.platforms[0].x + G.platforms[0].w < G.camX - 600) G.platforms.shift();
   while (G.crystals.length && G.crystals[0].x < G.camX - 400) G.crystals.shift();
@@ -756,12 +756,12 @@ function updateMenu(dt) {
   menuCam += 330 * dt;
   MP.x = menuCam + VW * 0.38;
   MP.hop -= dt;
-  if (!MP.air && MP.hop <= 0) { MP.vy = -850; MP.air = true; MP.hop = 1.2 + Math.random() * 2; }
+  if (!MP.air && MP.hop <= 0) { MP.vy = -720; MP.air = true; MP.hop = 1.2 + Math.random() * 2; }
   if (MP.air) {
     MP.vy += GRAV * 0.7 * dt; MP.y += MP.vy * dt;
     if (MP.y >= 560) { MP.y = 560; MP.air = false; MP.vy = 0; }
   }
-  MP.trail.unshift({ x: MP.x - 36, y: MP.y - 50 + (MP.air ? 0 : -Math.abs(Math.sin(T * 13)) * 5) });
+  MP.trail.unshift({ x: MP.x - 36, y: MP.y - 50 + (MP.air ? 0 : -Math.abs(Math.sin(T * 5.5)) * 5) });
   if (MP.trail.length > 22) MP.trail.length = 22;
   if (Math.random() < 0.3) burst(MP.x - 20, MP.y - 2, 1, { speed: 40, vx: -120, vy: -60, size: 5, grav: 100, life: 0.5 });
   if (Math.random() < 0.08) burst(menuCam + Math.random() * VW, Math.random() * 400, 1, { speed: 20, size: 10, grav: 0, life: 1.2 });
@@ -961,7 +961,7 @@ function drawTrail(tr, camX, camY, thick) {
     }
     ctx.strokeStyle = style; ctx.lineWidth = thick; ctx.beginPath();
     for (let j = 0; j < tr.length; j++) {
-      const q = tr[j], yy = q.y - camY + (i - 2.5) * thick * 0.9 + Math.sin(j * 0.5 - T * 12) * 2.5;
+      const q = tr[j], yy = q.y - camY + (i - 2.5) * thick * 0.9 + Math.sin(j * 0.45 - T * 7) * 2.5;
       if (j) ctx.lineTo(q.x - camX, yy); else ctx.moveTo(q.x - camX, yy);
     }
     ctx.stroke();
@@ -981,10 +981,10 @@ function drawUnicorn(x, y, o) {
   ctx.save(); ctx.translate(x, y);
   ctx.globalAlpha = o.alpha ?? 1;
   const sq = o.squash || 0; ctx.scale(1 + sq * 0.12, 1 - sq * 0.15);
-  if (!o.air) ctx.translate(0, -Math.abs(Math.sin(t * 13)) * 5);
-  if (o.air) ctx.rotate(clamp((o.vy || 0) / 3500, -0.22, 0.22));
+  if (!o.air) ctx.translate(0, -Math.abs(Math.sin(t * 5.5)) * 5);
+  if (o.air) ctx.rotate(clamp((o.vy || 0) / 2600, -0.22, 0.22));
   if (o.dash) ctx.rotate(0.08);
-  const run = t * 15;
+  const run = t * 11;
   let aF1, aF2, aB1, aB2;
   if (o.air || o.dash) { aF1 = -1.1; aF2 = -0.8; aB1 = 0.9; aB2 = 1.2; }
   else { aF1 = Math.sin(run) * 0.75; aF2 = Math.sin(run + 0.7) * 0.75; aB1 = Math.sin(run + Math.PI) * 0.75; aB2 = Math.sin(run + Math.PI + 0.7) * 0.75; }
@@ -992,7 +992,7 @@ function drawUnicorn(x, y, o) {
   ctx.lineCap = 'round'; ctx.lineJoin = 'round';
   // rainbow tail
   for (let i = 0; i < 6; i++) {
-    const w = Math.sin(t * 10 + i * 0.6) * 7;
+    const w = Math.sin(t * 6.5 + i * 0.6) * 8;
     ctx.strokeStyle = RB[i]; ctx.lineWidth = 7; ctx.beginPath();
     ctx.moveTo(-34, -58 + i * 2.5);
     ctx.bezierCurveTo(-55, -72 + i * 5 + w * 0.5, -68, -44 + i * 5 - w, -92 - i * 1.5, -54 + i * 6.5 + w);
@@ -1036,7 +1036,7 @@ function drawUnicorn(x, y, o) {
   ctx.stroke();
   // rainbow mane
   for (let i = 0; i < 6; i++) {
-    const w = Math.sin(t * 9 + i) * 5, sx = 42 - i * 5, sy = -108 + i * 9;
+    const w = Math.sin(t * 6 + i) * 6, sx = 42 - i * 5, sy = -108 + i * 9;
     ctx.strokeStyle = RB[i]; ctx.lineWidth = 8; ctx.beginPath();
     ctx.moveTo(sx, sy); ctx.quadraticCurveTo(sx - 16 + w, sy + 2, sx - 24 + w, sy + 14); ctx.stroke();
   }
