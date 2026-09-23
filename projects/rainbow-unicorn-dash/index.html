@@ -47,7 +47,6 @@
   #toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); background: rgba(40, 10, 70, .8);
     color: #fff; padding: 10px 22px; border-radius: 999px; font-size: 20px; opacity: 0; transition: opacity .4s;
     pointer-events: none; z-index: 20; }
-  .songrow { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
   .small { font: inherit; font-size: min(2.8vw, 18px); padding: .35em 1em; border: 2px solid #fff; border-radius: 999px;
     color: #fff; background: rgba(255, 255, 255, .2); cursor: pointer; }
   .touch-only { display: none; }
@@ -89,12 +88,7 @@
   <div class="help touch-only">
     Tap the <b>left</b> side to jump (tap again to double jump) &middot; tap the <b>right</b> side to dash!
   </div>
-  <div class="songrow">
-    <button class="small" id="btnSong">&#127925; Use my own song</button>
-    <button class="small hidden" id="btnSongReset">Use game music</button>
-    <button class="small" id="btnMusic">&#128266; Music on</button>
-  </div>
-  <input type="file" id="songFile" accept="audio/*" class="hidden">
+  <button class="small" id="btnMusic">&#128266; Music on</button>
 </div>
 
 <div id="rotate"><div class="phone"></div><div>Turn your phone sideways to play!</div></div>
@@ -110,7 +104,6 @@
 
 <button id="home" class="hidden" title="Menu">&#127968;</button>
 <div id="toast"></div>
-<audio id="song" loop preload="auto"></audio>
 
 <script>
 'use strict';
@@ -158,7 +151,7 @@ try { const s = JSON.parse(localStorage.getItem(SAVE_KEY)); if (s && s.easy && s
 function writeSave() { try { localStorage.setItem(SAVE_KEY, JSON.stringify(save)); } catch (e) {} }
 
 // ---------------------------------------------------------------- audio
-let AC = null, master, musicBus, sfxBus, arpBus, delay, noiseBuf;
+let AC = null, master, musicBus, sfxBus, delay, noiseBuf;
 function initAudio() {
   if (AC) { if (AC.state !== 'running') AC.resume(); return; }
   // lets iPhones play game sounds even when the ring/silent switch is on silent
@@ -176,10 +169,6 @@ function initAudio() {
   const wet = AC.createGain(); wet.gain.value = 0.45;
   delay.connect(fb); fb.connect(delay); delay.connect(wet); wet.connect(master);
   sfxBus.connect(delay);
-  arpBus = AC.createGain(); arpBus.gain.value = 1;
-  arpBus.connect(musicBus);
-  const arpSend = AC.createGain(); arpSend.gain.value = 0.5;
-  arpBus.connect(arpSend); arpSend.connect(delay);
   noiseBuf = AC.createBuffer(1, AC.sampleRate, AC.sampleRate);
   const d = noiseBuf.getChannelData(0);
   for (let i = 0; i < d.length; i++) d[i] = Math.random() * 2 - 1;
@@ -257,155 +246,55 @@ const SFX = {
 function S(name) { if (AC && SFX[name]) SFX[name](AC.currentTime); }
 
 // ---------------------------------------------------------------- music
-// Music comes from, in order: a song the player picked on this device (kept in
-// IndexedDB, never uploaded anywhere), a music.* file next to this page, or the
-// original synth-pop loop below.
-const song = $('song');
-song.volume = 0.7;
-let songOK = false, songSource = null, musicOn = true, musicStarted = false;
-const SONG_FILES = ['music.mp3', 'music.m4a', 'music.ogg', 'music.wav'];
-let songIdx = 0;
-function trySong() {
-  if (songIdx >= SONG_FILES.length) { songSource = null; return; }
-  songSource = 'folder'; song.src = SONG_FILES[songIdx]; song.load();
+// theme.mp3 is the game's own tune, made with tools/make-music.html. After a
+// short intro it loops seamlessly between LOOP_START and LOOP_END (seconds).
+const THEME = 'theme.mp3', LOOP_START = 8.6214, LOOP_END = 77.1929;
+let musicOn = true, musicStarted = false, themeData = null, themeBuf = null, themeNode = null, themeEl = null, decoding = false;
+// Browsers block fetch() for pages opened straight from disk, so those use a plain <audio> element.
+const fromDisk = location.protocol === 'file:';
+if (!fromDisk) {
+  fetch(THEME).then(r => (r.ok ? r.arrayBuffer() : null))
+    .then(b => { themeData = b; if (AC && musicOn) Music.start(); })
+    .catch(() => {});
 }
-song.addEventListener('canplay', () => {
-  if (songSource !== 'folder') return;
-  songOK = true;
-  if (synthTimer && musicOn) { stopSynth(); song.play().catch(() => startSynth()); }
-});
-song.addEventListener('error', () => {
-  if (songSource === 'folder') { songIdx++; trySong(); }
-  else if (songSource === 'saved') {
-    songOK = false; toast("Couldn't play that song, using the game music");
-    if (musicOn && AC) startSynth();
+function playThemeBuffer() {
+  const n = AC.createBufferSource();
+  n.buffer = themeBuf; n.loop = true; n.loopStart = LOOP_START; n.loopEnd = LOOP_END;
+  n.connect(musicBus); n.start();
+  themeNode = n; musicStarted = true;
+}
+function playThemeElement() {
+  if (!themeEl) {
+    themeEl = new Audio(THEME);
+    themeEl.volume = 0.6;
+    themeEl.addEventListener('timeupdate', () => {
+      if (themeEl.currentTime >= LOOP_END) themeEl.currentTime -= LOOP_END - LOOP_START;
+    });
+    themeEl.addEventListener('ended', () => { themeEl.currentTime = LOOP_START; themeEl.play().catch(() => {}); });
   }
-});
-
-function idb(mode, fn) {
-  return new Promise((resolve, reject) => {
-    const rq = indexedDB.open('rainbowUnicornDash', 1);
-    rq.onupgradeneeded = () => rq.result.createObjectStore('kv');
-    rq.onerror = () => reject(rq.error);
-    rq.onsuccess = () => {
-      const tx = rq.result.transaction('kv', mode), r = fn(tx.objectStore('kv'));
-      tx.oncomplete = () => resolve(r && r.result);
-      tx.onerror = () => reject(tx.error);
-    };
-  });
+  themeEl.play().then(() => { musicStarted = true; }).catch(() => {});
 }
-function useSongBlob(blob, name) {
-  songSource = 'saved'; songOK = true;
-  song.src = URL.createObjectURL(blob);
-  if (musicOn && musicStarted) { stopSynth(); song.play().catch(() => {}); }
-  updateSongButtons();
-  return name;
-}
-function pickSong(f) {
-  if (!f || !(f.type.startsWith('audio') || /\.(mp3|m4a|aac|ogg|wav|flac)$/i.test(f.name))) { toast('That is not an audio file'); return; }
-  initAudio();
-  useSongBlob(f, f.name);
-  Music.start();
-  idb('readwrite', s => s.put({ blob: f, name: f.name }, 'song')).catch(() => {});
-  toast('Now playing: ' + f.name);
-}
-function resetSong() {
-  song.pause(); songSource = null; songOK = false;
-  song.removeAttribute('src'); song.load();
-  idb('readwrite', s => s.delete('song')).catch(() => {});
-  if (musicOn && AC) startSynth();
-  updateSongButtons();
-  toast('Using the game music');
-}
-function updateSongButtons() {
-  $('btnSong').innerHTML = songSource === 'saved' ? '&#127925; Change song' : '&#127925; Use my own song';
-  $('btnSongReset').classList.toggle('hidden', songSource !== 'saved');
-  $('btnMusic').innerHTML = musicOn ? '&#128266; Music on' : '&#128263; Music off';
-}
-idb('readonly', s => s.get('song'))
-  .then(rec => { if (rec && rec.blob) useSongBlob(rec.blob, rec.name); else trySong(); })
-  .catch(() => trySong());
-
-const BPM = 112, SD = 60 / BPM / 4;
-const CH = [[53, 57, 60], [55, 59, 62], [57, 60, 64], [55, 60, 64]]; // F G Am C
-const BASS = [41, 43, 45, 48];
-const MEL = {};
-[
-  [0, 0, 69, 2], [0, 2, 72, 2], [0, 4, 77, 4], [0, 8, 76, 2], [0, 10, 72, 2], [0, 12, 69, 4],
-  [1, 0, 71, 2], [1, 2, 74, 2], [1, 4, 79, 4], [1, 8, 77, 2], [1, 10, 74, 2], [1, 12, 71, 4],
-  [2, 0, 72, 2], [2, 2, 76, 2], [2, 4, 81, 6], [2, 10, 79, 2], [2, 12, 76, 4],
-  [3, 0, 79, 4], [3, 4, 76, 2], [3, 6, 74, 2], [3, 8, 72, 8],
-  [4, 0, 77, 2], [4, 2, 76, 2], [4, 4, 77, 2], [4, 6, 81, 2], [4, 8, 79, 4], [4, 12, 77, 4],
-  [5, 0, 74, 2], [5, 2, 76, 2], [5, 4, 79, 4], [5, 8, 81, 2], [5, 10, 79, 2], [5, 12, 74, 4],
-  [6, 0, 76, 2], [6, 2, 81, 2], [6, 4, 84, 4], [6, 8, 83, 2], [6, 10, 81, 2], [6, 12, 76, 4],
-  [7, 0, 79, 3], [7, 3, 76, 3], [7, 6, 74, 2], [7, 8, 72, 8],
-].forEach(([b, s, m, l]) => { MEL[b * 16 + s] = [m, l]; });
-
-function voice(freq, t, dur, type, vol, bus, cutoff, attack = 0.005) {
-  const o = AC.createOscillator(), g = AC.createGain();
-  o.type = type; o.frequency.value = freq;
-  let out = o;
-  if (cutoff) { const f = AC.createBiquadFilter(); f.type = 'lowpass'; f.frequency.value = cutoff; o.connect(f); out = f; }
-  out.connect(g); g.connect(bus);
-  g.gain.setValueAtTime(0.0001, t);
-  g.gain.exponentialRampToValueAtTime(vol, t + attack);
-  g.gain.setValueAtTime(vol, t + Math.max(attack, dur * 0.6));
-  g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
-  o.start(t); o.stop(t + dur + 0.05);
-}
-function kick(t) {
-  const o = AC.createOscillator(), g = AC.createGain();
-  o.frequency.setValueAtTime(150, t); o.frequency.exponentialRampToValueAtTime(45, t + 0.18);
-  g.gain.setValueAtTime(0.45, t); g.gain.exponentialRampToValueAtTime(0.0001, t + 0.3);
-  o.connect(g); g.connect(musicBus); o.start(t); o.stop(t + 0.32);
-}
-function scheduleStep(s, t) {
-  const bar = Math.floor(s / 16), st = s % 16, ch = CH[bar % 4];
-  if (bar >= 2 || st % 8 === 0) { if (st % 4 === 0) kick(t); }
-  if (bar >= 2) {
-    if (st === 4 || st === 12) noise(t, 0.16, { type: 'bandpass', freq: 1800, q: 0.8, vol: 0.22, bus: musicBus });
-    if (st % 4 === 2) noise(t, 0.05, { type: 'highpass', freq: 8000, vol: 0.1, bus: musicBus });
-    else if (st % 2 === 1) noise(t, 0.03, { type: 'highpass', freq: 9000, vol: 0.04, bus: musicBus });
-  }
-  if (st % 2 === 0) voice(mtof(BASS[bar % 4] + (st % 4 === 2 ? 12 : 0)), t, SD * 1.8, 'sawtooth', 0.12, musicBus, 900);
-  if (st === 0) ch.forEach(m => voice(mtof(m), t, SD * 16, 'triangle', 0.035, musicBus, 2500, 0.25));
-  const ap = [0, 1, 2, 3, 2, 1][st % 6];
-  voice(mtof((ap === 3 ? ch[0] + 12 : ch[ap]) + 24), t, SD * 0.9, 'square', 0.018, arpBus, 3500);
-  if (bar >= 4) {
-    const m = MEL[(s - 64) % 128];
-    if (m) {
-      voice(mtof(m[0]), t, SD * m[1] * 0.95, 'triangle', 0.11, arpBus, 5000, 0.01);
-      voice(mtof(m[0] + 12), t, SD * m[1] * 0.95, 'sine', 0.03, arpBus, null, 0.01);
-    }
-  }
-}
-let synthTimer = null, synthStep = 0, synthNext = 0;
-function synthTick() {
-  if (AC.currentTime - synthNext > 0.2) synthNext = AC.currentTime + 0.05; // tab was in background
-  while (synthNext < AC.currentTime + 0.15) { scheduleStep(synthStep, synthNext); synthNext += SD; synthStep++; }
-}
-function startSynth() { if (synthTimer || !AC) return; synthNext = AC.currentTime + 0.1; synthTimer = setInterval(synthTick, 25); }
-function stopSynth() { clearInterval(synthTimer); synthTimer = null; }
-
-// Phones only allow sound after certain taps, so keep retrying on each gesture
-// until playback has really started.
+// Phones only allow sound after certain taps, so this is retried on each tap until it plays.
 const Music = {
   start() {
     if (!musicOn || !AC) return;
-    if (songOK) {
-      song.play().then(() => { musicStarted = true; stopSynth(); }).catch(() => startSynth());
-    } else {
-      startSynth();
-      if (AC.state === 'running') musicStarted = true;
+    if (fromDisk || themeEl) { playThemeElement(); return; }
+    if (themeNode) return;
+    if (themeBuf) { playThemeBuffer(); return; }
+    if (themeData && !decoding) {
+      decoding = true;
+      AC.decodeAudioData(themeData.slice(0),
+        b => { themeBuf = b; decoding = false; if (musicOn) playThemeBuffer(); },
+        () => { decoding = false; playThemeElement(); });
     }
   },
-  stop() { song.pause(); stopSynth(); },
+  stop() { if (themeEl) themeEl.pause(); },
 };
 function toggleMusic() {
   musicOn = !musicOn;
-  if (musicBus) musicBus.gain.value = musicOn ? 0.55 : 0;
+  if (musicBus) musicBus.gain.value = musicOn ? 0.55 : 0; // the looping theme keeps its place while muted
   if (musicOn) Music.start(); else Music.stop();
-  updateSongButtons();
+  $('btnMusic').innerHTML = musicOn ? '&#128266; Music on' : '&#128263; Music off';
   toast(musicOn ? 'Music on' : 'Music off');
 }
 function firstGesture() {
@@ -418,12 +307,6 @@ function toast(msg) {
   const el = $('toast'); el.textContent = msg; el.style.opacity = 1;
   clearTimeout(toastTimer); toastTimer = setTimeout(() => { el.style.opacity = 0; }, 2200);
 }
-
-addEventListener('dragover', e => e.preventDefault());
-addEventListener('drop', e => {
-  e.preventDefault();
-  pickSong(e.dataTransfer.files[0]);
-});
 
 // ---------------------------------------------------------------- game constants
 const GRAV = 1900, JUMP = 790, JUMP2 = 735, PW = 80, PH = 70;
@@ -1217,12 +1100,8 @@ $('btnHard').onclick = () => startGame('hard');
 $('btnAgain').onclick = () => startGame(G ? G.mode : 'easy');
 $('btnMenu').onclick = goMenu;
 $('home').onclick = goMenu;
-$('btnSong').onclick = () => $('songFile').click();
-$('songFile').onchange = e => { pickSong(e.target.files[0]); e.target.value = ''; };
-$('btnSongReset').onclick = resetSong;
 $('btnMusic').onclick = toggleMusic;
 updateMenuScores();
-updateSongButtons();
 
 // ---------------------------------------------------------------- main loop
 let last = performance.now();

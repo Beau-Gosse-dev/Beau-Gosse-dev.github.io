@@ -1,7 +1,8 @@
-# Never publish music files; players pick their own song on their device.
+# The only audio published is the game's own theme (made with tools/make-music.html).
 *.mp3
 *.m4a
 *.aac
 *.ogg
 *.wav
 *.flac
+!theme.mp3

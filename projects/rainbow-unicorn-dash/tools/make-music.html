@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Rainbow Unicorn Dash - music renderer</title></head>
+<body>
+<p>Renders the original Rainbow Unicorn Dash theme. Run tools/make-music.js to produce ../theme.mp3.</p>
+<script>
+'use strict';
+// Layout: 4-bar intro, then a 32-bar loop (bars 4-35), then 2 bars that repeat the
+// start of the loop so the game can loop seamlessly from LOOP_END back to LOOP_START.
+const SR = 44100, BPM = 112, SD = 60 / BPM / 4, BAR = SD * 16;
+const INTRO = 4, LOOP_BARS = 32, POST = 2, BARS = INTRO + LOOP_BARS + POST;
+const LOOP_START = INTRO * BAR, LOOP_END = (INTRO + LOOP_BARS) * BAR;
+
+const CH = [[53, 57, 60], [55, 59, 62], [57, 60, 64], [55, 60, 64]]; // F G Am C
+const BASS = [41, 43, 45, 48];
+const mtof = m => 440 * Math.pow(2, (m - 69) / 12);
+function notes(list) { const m = {}; for (const [b, s, n, l] of list) m[b * 16 + s] = [n, l]; return m; }
+const MELODY = notes([
+  [0, 0, 69, 2], [0, 2, 72, 2], [0, 4, 77, 4], [0, 8, 76, 2], [0, 10, 72, 2], [0, 12, 69, 4],
+  [1, 0, 71, 2], [1, 2, 74, 2], [1, 4, 79, 4], [1, 8, 77, 2], [1, 10, 74, 2], [1, 12, 71, 4],
+  [2, 0, 72, 2], [2, 2, 76, 2], [2, 4, 81, 6], [2, 10, 79, 2], [2, 12, 76, 4],
+  [3, 0, 79, 4], [3, 4, 76, 2], [3, 6, 74, 2], [3, 8, 72, 8],
+  [4, 0, 77, 2], [4, 2, 76, 2], [4, 4, 77, 2], [4, 6, 81, 2], [4, 8, 79, 4], [4, 12, 77, 4],
+  [5, 0, 74, 2], [5, 2, 76, 2], [5, 4, 79, 4], [5, 8, 81, 2], [5, 10, 79, 2], [5, 12, 74, 4],
+  [6, 0, 76, 2], [6, 2, 81, 2], [6, 4, 84, 4], [6, 8, 83, 2], [6, 10, 81, 2], [6, 12, 76, 4],
+  [7, 0, 79, 3], [7, 3, 76, 3], [7, 6, 74, 2], [7, 8, 72, 8],
+]);
+// gentle long-note tune for the breakdown
+const DREAMY = notes([
+  [0, 0, 81, 8], [0, 8, 79, 4], [0, 12, 77, 4],
+  [1, 0, 79, 8], [1, 8, 77, 4], [1, 12, 74, 4],
+  [2, 0, 76, 8], [2, 8, 79, 4], [2, 12, 81, 4],
+  [3, 0, 79, 16],
+  [4, 0, 77, 6], [4, 6, 81, 2], [4, 8, 84, 8],
+  [5, 0, 83, 6], [5, 6, 81, 2], [5, 8, 79, 8],
+  [6, 0, 81, 4], [6, 4, 79, 4], [6, 8, 76, 8],
+  [7, 0, 79, 8], [7, 8, 72, 8],
+]);
+
+let AC, bus, arpBus, noiseBuf;
+function voice(freq, t, dur, type, vol, dest, cutoff, attack = 0.005, vib = 0) {
+  const o = AC.createOscillator(), g = AC.createGain();
+  o.type = type; o.frequency.value = freq;
+  let out = o;
+  if (cutoff) { const f = AC.createBiquadFilter(); f.type = 'lowpass'; f.frequency.value = cutoff; o.connect(f); out = f; }
+  out.connect(g); g.connect(dest);
+  g.gain.setValueAtTime(0.0001, t);
+  g.gain.exponentialRampToValueAtTime(vol, t + attack);
+  g.gain.setValueAtTime(vol, t + Math.max(attack, dur * 0.6));
+  g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+  o.start(t); o.stop(t + dur + 0.05);
+  if (vib) {
+    const l = AC.createOscillator(), lg = AC.createGain();
+    l.frequency.value = 5; lg.gain.value = vib; l.connect(lg); lg.connect(o.frequency);
+    l.start(t); l.stop(t + dur + 0.05);
+  }
+}
+function noise(t, dur, type, freq, q, vol) {
+  const s = AC.createBufferSource(); s.buffer = noiseBuf;
+  const f = AC.createBiquadFilter(); f.type = type; f.frequency.value = freq; f.Q.value = q;
+  const g = AC.createGain();
+  g.gain.setValueAtTime(vol, t); g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+  s.connect(f); f.connect(g); g.connect(bus);
+  s.start(t, (t * 7.31) % 0.5); s.stop(t + dur + 0.05);
+}
+function kick(t) {
+  const o = AC.createOscillator(), g = AC.createGain();
+  o.frequency.setValueAtTime(150, t); o.frequency.exponentialRampToValueAtTime(45, t + 0.18);
+  g.gain.setValueAtTime(0.45, t); g.gain.exponentialRampToValueAtTime(0.0001, t + 0.3);
+  o.connect(g); g.connect(bus); o.start(t); o.stop(t + 0.32);
+}
+
+// Sections (by bar): intro 0-3, A 4-11, A-sparkle 12-19, dreamy 20-27, A 28-35, then 36-37 = copy of 4-5.
+function section(bar) {
+  if (bar < 2) return 'intro1';
+  if (bar < 4) return 'intro2';
+  if (bar >= INTRO + LOOP_BARS) bar -= LOOP_BARS;
+  const k = Math.floor((bar - INTRO) / 8);
+  return ['A', 'A2', 'dreamy', 'A'][k];
+}
+function step(s, t) {
+  let bar = Math.floor(s / 16);
+  const st = s % 16, sec = section(bar);
+  if (bar >= INTRO + LOOP_BARS) bar -= LOOP_BARS;
+  const ch = CH[bar % 4], mbar = ((bar - INTRO) % 8 + 8) % 8, idx = mbar * 16 + st;
+  const full = sec === 'A' || sec === 'A2';
+
+  if ((full || sec === 'intro2') && st % 4 === 0) kick(t);
+  if (full) {
+    if (st === 4 || st === 12) noise(t, 0.16, 'bandpass', 1800, 0.8, 0.2);
+    if (st % 4 === 2) noise(t, 0.05, 'highpass', 8000, 1, 0.09);
+    else if (st % 2 === 1) noise(t, 0.03, 'highpass', 9000, 1, 0.035);
+  } else if (sec === 'dreamy' && st % 4 === 2) noise(t, 0.05, 'highpass', 8000, 1, 0.05);
+
+  if (sec !== 'intro1') {
+    if (sec === 'dreamy') { if (st === 0 || st === 8) voice(mtof(BASS[bar % 4]), t, SD * 7, 'sawtooth', 0.1, bus, 600, 0.02); }
+    else if (st % 2 === 0) voice(mtof(BASS[bar % 4] + (st % 4 === 2 ? 12 : 0)), t, SD * 1.8, 'sawtooth', 0.12, bus, 900);
+  }
+  if (st === 0) {
+    const padVol = sec === 'dreamy' ? 0.05 : 0.035;
+    ch.forEach(m => voice(mtof(m), t, SD * 16, 'triangle', padVol, bus, 2500, 0.3));
+  }
+  const ap = [0, 1, 2, 3, 2, 1][st % 6];
+  voice(mtof((ap === 3 ? ch[0] + 12 : ch[ap]) + 24), t, SD * 0.9, 'square', sec === 'intro1' ? 0.012 : 0.018, arpBus, 3500);
+
+  if (full) {
+    const m = MELODY[idx];
+    if (m) {
+      const d = SD * m[1] * 0.95;
+      voice(mtof(m[0]), t, d, 'triangle', 0.11, arpBus, 5000, 0.01);
+      voice(mtof(m[0] + 12), t, d, 'sine', sec === 'A2' ? 0.06 : 0.03, arpBus, null, 0.01);
+      if (sec === 'A2') voice(mtof(m[0] + 24), t, 0.5, 'sine', 0.025, arpBus, null, 0.003);
+    }
+  } else if (sec === 'dreamy') {
+    const m = DREAMY[idx];
+    if (m) {
+      const d = SD * m[1] * 0.98;
+      voice(mtof(m[0]), t, d, 'sine', 0.11, arpBus, null, 0.08, 4);
+      voice(mtof(m[0] - 12), t, d, 'triangle', 0.04, arpBus, 3000, 0.08);
+    }
+  }
+}
+
+async function renderMusic() {
+  const len = Math.ceil(SR * (BARS * BAR + 0.5));
+  AC = new OfflineAudioContext(2, len, SR);
+  const comp = AC.createDynamicsCompressor();
+  comp.threshold.value = -14; comp.ratio.value = 4;
+  comp.connect(AC.destination);
+  bus = AC.createGain(); bus.gain.value = 0.45; bus.connect(comp);
+  // sparkly stereo echo on the arp and melodies
+  arpBus = AC.createGain(); arpBus.connect(bus);
+  for (const [time, pan] of [[SD * 2, -0.7], [SD * 3, 0.7]]) {
+    const d = AC.createDelay(1); d.delayTime.value = time;
+    const fb = AC.createGain(); fb.gain.value = 0.3;
+    const p = AC.createStereoPanner(); p.pan.value = pan;
+    const wet = AC.createGain(); wet.gain.value = 0.35;
+    arpBus.connect(d); d.connect(fb); fb.connect(d); d.connect(p); p.connect(wet); wet.connect(bus);
+  }
+  noiseBuf = AC.createBuffer(1, SR, SR);
+  const nd = noiseBuf.getChannelData(0);
+  let seed = 12345;
+  for (let i = 0; i < nd.length; i++) { seed = (seed * 1103515245 + 12345) & 0x7fffffff; nd[i] = seed / 0x3fffffff - 1; }
+  for (let s = 0; s < BARS * 16; s++) step(s, 0.05 + s * SD);
+  const out = await AC.startRendering();
+
+  // normalise and pack as 16-bit stereo WAV
+  const L = out.getChannelData(0), R = out.getChannelData(1);
+  let peak = 0;
+  for (let i = 0; i < L.length; i++) peak = Math.max(peak, Math.abs(L[i]), Math.abs(R[i]));
+  const gain = 0.89 / peak, n = L.length, buf = new ArrayBuffer(44 + n * 4), v = new DataView(buf);
+  const str = (o, s) => { for (let i = 0; i < s.length; i++) v.setUint8(o + i, s.charCodeAt(i)); };
+  str(0, 'RIFF'); v.setUint32(4, 36 + n * 4, true); str(8, 'WAVE'); str(12, 'fmt ');
+  v.setUint32(16, 16, true); v.setUint16(20, 1, true); v.setUint16(22, 2, true); v.setUint32(24, SR, true);
+  v.setUint32(28, SR * 4, true); v.setUint16(32, 4, true); v.setUint16(34, 16, true); str(36, 'data'); v.setUint32(40, n * 4, true);
+  for (let i = 0, o = 44; i < n; i++, o += 4) {
+    v.setInt16(o, Math.max(-1, Math.min(1, L[i] * gain)) * 32767, true);
+    v.setInt16(o + 2, Math.max(-1, Math.min(1, R[i] * gain)) * 32767, true);
+  }
+  window.WAV = new Uint8Array(buf);
+  return { bytes: buf.byteLength, loopStart: LOOP_START + 0.05, loopEnd: LOOP_END + 0.05, seconds: n / SR };
+}
+function wavChunk(i, size) {
+  let s = '';
+  const a = window.WAV.subarray(i, i + size);
+  for (let k = 0; k < a.length; k += 0x8000) s += String.fromCharCode.apply(null, a.subarray(k, k + 0x8000));
+  return btoa(s);
+}
+</script>
+</body>
+</html>
