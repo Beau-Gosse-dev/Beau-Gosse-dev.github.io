@@ -1,0 +1,7 @@
+# Never publish music files; players pick their own song on their device.
+*.mp3
+*.m4a
+*.aac
+*.ogg
+*.wav
+*.flac
