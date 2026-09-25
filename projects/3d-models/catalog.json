@@ -415,5 +415,85 @@
       "README.md",
       "mesh_check.json"
     ]
+  },
+  {
+    "slug": "lego-brick-wall-shelf",
+    "title": "LEGO-style brick wall shelf",
+    "category": "Home & kids",
+    "edition": "1×2 & 1×4",
+    "summary": "A wall shelf built on real LEGO brick proportions, scaled to 245 mm wide, with LEGO-lettered studs and a flat top for displaying builds.",
+    "byline": "Design: Beau Gosse",
+    "bundle": "lego-brick-wall-shelf.zip",
+    "formats": "STL · OpenSCAD",
+    "aiAssisted": true,
+    "printables": null,
+    "images": [
+      {
+        "file": "preview_1x2_front.png",
+        "label": "1×2 shelf"
+      },
+      {
+        "file": "preview_1x4_front.png",
+        "label": "1×4 shelf"
+      },
+      {
+        "file": "preview_1x2_underside.png",
+        "label": "Open underside"
+      },
+      {
+        "file": "preview_1x2_back.png",
+        "label": "Keyhole mounts"
+      },
+      {
+        "file": "preview_1x2_print_parts.png",
+        "label": "Printed studs"
+      }
+    ],
+    "facts": [
+      [
+        "Width",
+        "245 mm"
+      ],
+      [
+        "Shelf top",
+        "149 or 74 mm deep"
+      ],
+      [
+        "Print pieces",
+        "Body + glued studs"
+      ],
+      [
+        "Supports",
+        "None"
+      ]
+    ],
+    "sections": [
+      {
+        "title": "A real LEGO brick, scaled up",
+        "text": "Every dimension follows a real 1×2 or 1×4 brick: N × 8 − 0.2 mm long, 7.8 mm wide, and 9.6 mm tall, with 4.8 mm studs on an 8 mm pitch. Scaled to 245 mm long, it fills a Prusa MK3/MK3S bed with room for a skirt. The brick hangs with its studs facing into the room, so its flat side becomes the shelf top."
+      },
+      {
+        "title": "Print the body and studs separately",
+        "text": "Print the body with the shelf top face-down on the bed and the open side up, exactly as the STL is oriented; it needs no supports. Print the studs flat on their backs with the lettering up, then glue each one into its 1 mm locating recess with CA glue. At 0.20 mm and 15% infill in PLA, the 1×2 takes about 21 hours and 382 g, and the 1×4 about 9.5 hours and 154 g."
+      },
+      {
+        "title": "Hang it on two screws",
+        "text": "Keyhole slots in the 3 mm back wall take pan-head screws with heads up to 9.5 mm and shanks up to 4.5 mm. Space the screws 124 mm apart for the 1×2 or 185 mm for the 1×4, leave about 3.5 mm under each head, and lower the shelf onto them. The open underside lets you see the screw heads while you line it up."
+      },
+      {
+        "title": "Trademark",
+        "text": "LEGO® is a trademark of the LEGO Group, which does not sponsor, authorize, or endorse this model."
+      }
+    ],
+    "status": "Not yet test-printed. All four STLs are watertight and fit the MK3 bed, and slicer estimates come from PrusaSlicer's MK3S profile, but the stud fit, glue joint, and keyhole hanging have not been confirmed on a physical print.",
+    "featuredFiles": [
+      "lego_brick_shelf_1x2_body.stl",
+      "lego_brick_shelf_1x2_studs.stl",
+      "lego_brick_shelf_1x4_body.stl",
+      "lego_brick_shelf_1x4_studs.stl",
+      "lego_brick_shelf.scad",
+      "README.md",
+      "mesh_check.json"
+    ]
   }
 ]

@@ -1,0 +1,60 @@
+{
+  "model": "LEGO-style brick wall shelf",
+  "validated": "2026-09-25",
+  "units": "millimeters",
+  "files": {
+    "lego_brick_shelf_1x2_body.stl": {
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_components": 1,
+      "extents": [
+        245.0,
+        148.861,
+        120.949
+      ]
+    },
+    "lego_brick_shelf_1x2_studs.stl": {
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_components": 2,
+      "extents": [
+        154.861,
+        74.43,
+        28.901
+      ]
+    },
+    "lego_brick_shelf_1x4_body.stl": {
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_components": 1,
+      "extents": [
+        245.0,
+        73.962,
+        60.094
+      ]
+    },
+    "lego_brick_shelf_1x4_studs.stl": {
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_components": 4,
+      "extents": [
+        79.962,
+        79.962,
+        14.858
+      ]
+    }
+  },
+  "fits_prusa_mk3_bed": {
+    "bed": [
+      250,
+      210,
+      210
+    ],
+    "largest_part_extents": [
+      245.0,
+      148.861,
+      120.949
+    ]
+  },
+  "physical_fit_verified": false
+}

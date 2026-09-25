@@ -1,5 +1,5 @@
 {
-  "imported": "2026-09-17",
+  "imported": "2026-09-25",
   "files": [
     {
       "path": "models/cedarburg-house-ho/01_walls_plate.3mf",
@@ -495,6 +495,78 @@
       "path": "models/hoyer-6000-series-bezel/watch_bezel.scad",
       "bytes": 3539,
       "sha256": "9a4f71766e26c1b2260486ae6b222ba028a77a4488562929bfc1271ae1c4b565",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/lego-brick-wall-shelf/README.md",
+      "bytes": 3327,
+      "sha256": "93429446207a6c2e58e9d47ef861fe2494ec379b534c7cfb868408f98da841bc",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/lego-brick-wall-shelf/lego_brick_shelf.scad",
+      "bytes": 4184,
+      "sha256": "8a97857ee9fbc0305c5b103cde9af9a1da900b05e23df091bcee0b9b012c2f11",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/lego-brick-wall-shelf/lego_brick_shelf_1x2_body.stl",
+      "bytes": 152284,
+      "sha256": "325b55b80a0c1afee62b67f4d72596c44f284a5fd6d2f12a74bfc63ec29fe68b",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/lego-brick-wall-shelf/lego_brick_shelf_1x2_studs.stl",
+      "bytes": 432884,
+      "sha256": "5d1b782bd01cedc109adb8060d63398a6db7dd0503b2af3e2c6218f11ac108aa",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/lego-brick-wall-shelf/lego_brick_shelf_1x4_body.stl",
+      "bytes": 216284,
+      "sha256": "253ef47bf7ab56b9f554ba992b406d7c940d59e1dec2f40a21dc67bcec415a3d",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/lego-brick-wall-shelf/lego_brick_shelf_1x4_studs.stl",
+      "bytes": 865684,
+      "sha256": "a35b96af9077386be715687a19d895dc2fed3deca9590107c9f63fab94a3f0f4",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/lego-brick-wall-shelf/mesh_check.json",
+      "bytes": 1166,
+      "sha256": "a4647b0184909ab8fad1dce7c05bdaf95a8d0c3f2c66e82b57df070ba24efdfc",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/lego-brick-wall-shelf/preview_1x2_back.png",
+      "bytes": 15239,
+      "sha256": "64ab06615f8916360e0ea4b635ff440e9ec840b4f077069453c9e982842c44bc",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/lego-brick-wall-shelf/preview_1x2_front.png",
+      "bytes": 57023,
+      "sha256": "185b043201d01df6432ed85eca37e6cb775ba625367594bcb10ddbab22dc4825",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/lego-brick-wall-shelf/preview_1x2_print_parts.png",
+      "bytes": 47059,
+      "sha256": "a00448e300d825e61b421306c55a9a82e80edd2f48adc8d00e1dbeb62b79e452",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/lego-brick-wall-shelf/preview_1x2_underside.png",
+      "bytes": 32297,
+      "sha256": "9563608147530f800e88c5b75488cee3317bd91147e7ec787743d3f1e936dc94",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/lego-brick-wall-shelf/preview_1x4_front.png",
+      "bytes": 59746,
+      "sha256": "4d8ef931c090e4d748dcef87a5383c252ca2b6b5284ee398bf9e1735bdf13b2e",
       "source": "beau-gosse-original"
     }
   ]
