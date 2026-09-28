@@ -17,8 +17,6 @@
 part = "assembled"; // [tower, windows, tray, assembled]
 
 /* [Overall] */
-// Tip of the central spire. The MK3 can print up to 210 mm.
-total_height = 205;
 plinth_h = 4;
 // Depth of the window pockets, and thickness of the glued-in tiles
 window_depth = 1.2;
@@ -28,6 +26,16 @@ tile_clearance = 0.15;
 /* [Central tower] */
 central_w = 40;
 central_top = 150;
+
+/* [Main spire] */
+// Print the top of the central tower as a separate piece that pegs on, so the
+// spire can rise above the MK3's 210 mm limit
+split_spire = true;
+// Tip of the central spire (at most 210 when split_spire is off)
+spire_top = 270;
+peg = 8;
+peg_h = 6;
+peg_clearance = 0.2;
 
 /* [Bowl] */
 // The bowl-shaped curve across the centre: its ends sit on the first side
@@ -97,7 +105,11 @@ assert(a_tip_bottom - b_under_a_tip >= 28, "Baffle A is too close to baffle B");
 assert(b_tip_bottom - floor_under_b_tip >= 28, "Baffle B is too close to the ramp");
 assert(shaft_d - baffle_reach >= 25, "Gap at the baffle tips is too narrow for large dice");
 assert(2 * baffle_reach > shaft_d, "Baffles must overlap so dice cannot fall straight through");
-assert(total_height <= 210, "Too tall for a Prusa MK3");
+spire_base = central_top + 7;
+spire_len = spire_top - spire_base;
+spire_t2 = 0.42 * spire_len;                 // top of the wide octagonal tier
+spire_t3 = spire_t2 + 3 + 0.2 * spire_len;   // top of the narrow tier
+assert(split_spire ? spire_len <= 208 : spire_top <= 210, "Too tall for a Prusa MK3");
 
 // Every window: [face, plane, centre, width, bottom, top, shape].
 // Shapes: "round" (round head), "rect" (flat top), "rose" (circle; width is
@@ -108,7 +120,7 @@ windows = concat(
      ["front", 0, 0, 14, 92, 144, "round"]],
     [for (f = [["front", 20 - oct_apothem, 0], ["back", 20 + oct_apothem, 0],
                ["right", oct_apothem, 20], ["left", -oct_apothem, 20]])
-        [f[0], f[1], f[2], 3, central_top + 11, central_top + 28, "round"]],
+        [f[0], f[1], f[2], 3, spire_base + 4, spire_base + spire_t2 - 4, "round"]],
     [for (s = [-1, 1]) each [
         ["front", 4, s * 30, 13, 30, 91, "round"],
         ["front", 0, s * 44, 3, 60, 120, "round"],
@@ -224,6 +236,36 @@ module plinth() {
     }
 }
 
+// Top of the central tower, from spire_base up: a tall octagonal tier with
+// lancets, a narrow tier, and the needle
+module main_spire() {
+    translate([0, 20, spire_base]) {
+        rotate(22.5) {
+            cylinder(d = 26, h = spire_t2, $fn = 8);
+            hull() {
+                translate([0, 0, spire_t2 - 0.1]) cylinder(d = 26, h = 0.1, $fn = 8);
+                translate([0, 0, spire_t2 + 3]) cylinder(d = 12, h = 0.1, $fn = 8);
+            }
+            translate([0, 0, spire_t2 + 3]) cylinder(d = 12, h = spire_t3 - spire_t2 - 3, $fn = 8);
+            for (a = [0 : 90 : 270]) rotate(a + 22.5) translate([11.4, 0, spire_t2 - 1])
+                spire(2.4, min(20, 0.27 * spire_len));
+            collar(12, spire_t3 - 0.1);
+        }
+        translate([0, 0, spire_t3]) spire(7, spire_len - spire_t3);
+        translate([0, 0, spire_len - 0.15 * (spire_len - spire_t3)]) sphere(d = 3, $fn = 16);
+    }
+}
+
+// The separate spire piece: socket for the peg, and window pockets
+module spire_piece() {
+    difference() {
+        main_spire();
+        translate([-peg / 2 - peg_clearance, 20 - peg / 2 - peg_clearance, spire_base - 1])
+            cube([peg + 2 * peg_clearance, peg + 2 * peg_clearance, peg_h + 1.4]);
+        window_volumes(0.05);
+    }
+}
+
 module central_tower() {
     // Main shaft
     translate([-cx, 0, 0]) cube([central_w, hall_y0 + 0.1, central_top]);
@@ -231,20 +273,11 @@ module central_tower() {
     translate([0, 20, 0]) rotate(22.5) {
         hull() {
             translate([0, 0, central_top - 0.1]) rotate(-22.5) cube([central_w, central_w, 0.2], center = true);
-            translate([0, 0, central_top + 7]) cylinder(d = 26, h = 0.1, $fn = 8);
+            translate([0, 0, spire_base - 0.1]) cylinder(d = 26, h = 0.1, $fn = 8);
         }
-        translate([0, 0, central_top + 7]) cylinder(d = 26, h = 24, $fn = 8);
-        hull() {
-            translate([0, 0, central_top + 31]) cylinder(d = 26, h = 0.1, $fn = 8);
-            translate([0, 0, central_top + 34]) cylinder(d = 12, h = 0.1, $fn = 8);
-        }
-        translate([0, 0, central_top + 34]) cylinder(d = 12, h = 9, $fn = 8);
-        for (a = [0 : 90 : 270]) rotate(a + 22.5) translate([11.4, 0, central_top + 30]) spire(2.4, 13);
     }
-    translate([0, 20, central_top + 43]) {
-        spire(7, total_height - central_top - 43);
-        translate([0, 0, total_height - central_top - 50]) sphere(d = 3, $fn = 16);
-    }
+    if (split_spire) translate([-peg / 2, 20 - peg / 2, spire_base - 0.1]) cube([peg, peg, peg_h + 0.1]);
+    else main_spire();
     // Vertical ribs up the front and sides
     mirrored() {
         for (x = [11.5, 16]) translate([x - 0.5, -0.8, 50]) cube([1, 1, central_top - 52]);
@@ -439,12 +472,15 @@ module tray_body() {
 
 // ---------------------------------------------------------------- output
 if (part == "tower") tower();
+if (part == "spire" && split_spire) translate([0, -20, -spire_base]) spire_piece();
+if (part == "spire_in_place" && split_spire) spire_piece();
 if (part == "windows") window_tiles();
 if (part == "glass") window_volumes(0, -tile_clearance);
 if (part == "tray_in_place") tray_body();
 if (part == "tray") translate([0, tray_d / 2 - plinth_front, 0]) tray_body();
 if (part == "assembled") {
     color("#2b2d33") tower();
+    if (split_spire) color("#2b2d33") spire_piece();
     color("#ff7a1a") window_volumes(0, -tile_clearance);
     color("#3a3d44") tray_body();
 }
