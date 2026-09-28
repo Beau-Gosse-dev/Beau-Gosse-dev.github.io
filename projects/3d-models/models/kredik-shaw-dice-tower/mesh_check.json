@@ -1,0 +1,66 @@
+{
+  "model": "Kredik Shaw dice tower",
+  "validated": "2026-09-28",
+  "units": "millimeters",
+  "checked_with": "PrusaSlicer 2.7.2 --info",
+  "files": {
+    "kredik_shaw_tower.stl": {
+      "manifold": true,
+      "parts": 1,
+      "extents": [
+        180.0,
+        148.0,
+        187.0
+      ]
+    },
+    "kredik_shaw_spire.stl": {
+      "manifold": true,
+      "parts": 1,
+      "extents": [
+        24.0,
+        24.0,
+        113.0
+      ]
+    },
+    "kredik_shaw_tray.stl": {
+      "manifold": true,
+      "parts": 1,
+      "extents": [
+        178.2,
+        122.2,
+        56.0
+      ]
+    },
+    "kredik_shaw_window_tiles.stl": {
+      "manifold": true,
+      "parts": 27,
+      "extents": [
+        156.7,
+        184.7,
+        1.2
+      ]
+    }
+  },
+  "fits_prusa_mk3_bed": {
+    "bed": [
+      250,
+      210,
+      210
+    ],
+    "largest_part_extents": [
+      180.0,
+      148.0,
+      187.0
+    ]
+  },
+  "supports_needed_build_plate_only": false,
+  "dice_path": {
+    "shaft_inside_mm": [
+      50,
+      60
+    ],
+    "gap_at_baffle_tips_mm": 26,
+    "exit_tunnel_width_mm": 32
+  },
+  "physical_fit_verified": false
+}

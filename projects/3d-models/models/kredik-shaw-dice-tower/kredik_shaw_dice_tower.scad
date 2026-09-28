@@ -5,16 +5,17 @@
 // baffles, run down a ramp through a tunnel under the central spire, and roll
 // out of the front gate into a separate courtyard tray.
 //
-// Sized for a Prusa MK3/MK3S: the tower prints upright in one piece, 205 mm
-// tall (the MK3 limit is 210 mm). Windows are shallow pockets; the "windows"
-// part is a plate of flat tiles, printed separately and glued in.
+// Sized for a Prusa MK3/MK3S (210 mm print height): the tower body prints
+// upright at 187 mm, and the top of the central tower is a separate piece
+// that pegs on, for 270 mm assembled. Nothing needs supports. Windows are
+// shallow pockets; the "windows" part is a plate of flat tiles to glue in.
 //
 // Coordinates: millimetres, Z up, the gate faces -Y. The tray sits in front
 // of the tower with its back wall touching the front of the tower's plinth.
 
 /* [Render] */
 // tower / windows / tray are printable parts; assembled is a preview
-part = "assembled"; // [tower, windows, tray, assembled]
+part = "assembled"; // [tower, spire, windows, tray, assembled]
 
 /* [Overall] */
 plinth_h = 4;
@@ -210,7 +211,7 @@ module spire(d, h) {
 // Lance: a long square shaft with thin square collars and a slender pyramid tip,
 // like the needle towers that bristle across the paintings
 module square_collar(d, z) {
-    b = d * 0.22;
+    b = d * 0.42;
     translate([0, 0, z - b]) rotate(45) cylinder(d1 = d * sqrt(2), d2 = d * 1.45 * sqrt(2), h = b, $fn = 4);
     translate([0, 0, z]) rotate(45) cylinder(d1 = d * 1.45 * sqrt(2), d2 = d * sqrt(2), h = b, $fn = 4);
 }
@@ -249,7 +250,7 @@ module main_spire() {
                 translate([0, 0, spire_t2 + 3]) cylinder(d = 12, h = 0.1, $fn = 8);
             }
             translate([0, 0, spire_t2 + 3]) cylinder(d = 12, h = spire_t3 - spire_t2 - 3, $fn = 8);
-            for (a = [0 : 90 : 270]) rotate(a + 22.5) translate([11.4, 0, spire_t2 - 1])
+            for (a = [0 : 90 : 270]) rotate(a) translate([11, 0, spire_t2 - 1])
                 spire(2.4, min(20, 0.27 * spire_len));
             collar(12, spire_t3 - 0.1);
         }
@@ -262,8 +263,12 @@ module main_spire() {
 module spire_piece() {
     difference() {
         main_spire();
-        translate([-peg / 2 - peg_clearance, 20 - peg / 2 - peg_clearance, spire_base - 1])
-            cube([peg + 2 * peg_clearance, peg + 2 * peg_clearance, peg_h + 1.4]);
+        // Socket with a pointed roof, so it prints without support
+        translate([0, 20, spire_base - 1]) hull() {
+            translate([-peg / 2 - peg_clearance, -peg / 2 - peg_clearance, 0])
+                cube([peg + 2 * peg_clearance, peg + 2 * peg_clearance, peg_h + 1.4]);
+            translate([0, 0, peg_h + 1.4 + peg * 0.8]) cube(0.1, center = true);
+        }
         window_volumes(0.05);
     }
 }
@@ -328,7 +333,9 @@ module lower_facade() {
     xs = [for (x = [bowl_a : -1 : -bowl_a]) x];
     along_y(4, hall_y0 + 0.1) polygon(concat(
         [[-bowl_a, 0], [bowl_a, 0]], [for (x = xs) [x, bowl_z(x)]]));
-    along_y(-1.5, 6) bowl_2d();
+    // The band stands 1.5 mm proud of the central tower, and 2 mm proud of the facade
+    along_y(-1.5, 6) intersection() { bowl_2d(); translate([-cx - 0.5, 0]) square([central_w + 1, bowl_zc + 10]); }
+    along_y(2, 6) bowl_2d();
     mirrored() {
         // Towers stepping down towards the sides, with low walls between them
         for (t = side_towers) translate([t[0], t[1] + t[2] / 2, 0]) side_tower(t[2], t[3], t[4]);
@@ -458,6 +465,11 @@ module window_tiles() {
 
 // ---------------------------------------------------------------- tray
 // Courtyard tray, modelled in place in front of the tower
+// Steep-headed blind arch for the tray walls (60-degree head, no support needed)
+module blind_arch() {
+    polygon([[-3, 3], [3, 3], [3, 9], [0, 9 + 3 * tan(60)], [-3, 9]]);
+}
+
 module tray_body() {
     x0 = -tray_w / 2;
     y0 = plinth_front - tray_d;
@@ -468,10 +480,10 @@ module tray_body() {
         // Gate in the back wall, lined up with the tower's exit
         translate([-tunnel_w / 2 - 4, y1 - tray_wall - 1, tray_floor]) cube([tunnel_w + 8, tray_wall + 2, tray_h + 1]);
         // Blind arcades on the outside of the walls
-        for (x = [x0 + 12 : 11 : -x0 - 12]) on_face("front", y0, x, 0.8, 1) pointed_arch(6, 3, 9, 1);
+        for (x = [x0 + 12 : 11 : -x0 - 12]) on_face("front", y0, x, 0.8, 1) blind_arch();
         for (y = [y0 + 12 : 11 : y1 - 10]) {
-            on_face("left", x0, y, 0.8, 1) pointed_arch(6, 3, 9, 1);
-            on_face("right", -x0, y, 0.8, 1) pointed_arch(6, 3, 9, 1);
+            on_face("left", x0, y, 0.8, 1) blind_arch();
+            on_face("right", -x0, y, 0.8, 1) blind_arch();
         }
     }
     // Lances at the corners and flanking the gate
