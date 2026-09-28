@@ -433,13 +433,17 @@ module tower() {
     }
 }
 
-// Flat tiles for every window, laid out on one plate
+// Flat tiles for every window, laid out in two rows on one plate
+tile_row_split = 13;
+function tile_x(i, first) = i <= first ? 0 : tile_x(i - 1, first) + windows[i - 1][3] + 4;
 module window_tiles() {
     for (i = [0 : len(windows) - 1]) {
         w = windows[i];
-        if (w[6] == "rose") translate([200, 20, 0]) linear_extrude(window_depth)
+        row = i < tile_row_split ? 0 : 1;
+        x = tile_x(i, row == 0 ? 0 : tile_row_split) + w[3] / 2;
+        if (w[6] == "rose") translate([x, row * 100 + w[3] / 2, 0]) linear_extrude(window_depth)
             window_2d(w[3], 0, 0, "rose", -tile_clearance);
-        else translate([(i % 10) * 19, floor(i / 10) * 105 - w[4], 0]) linear_extrude(window_depth)
+        else translate([x, row * 100 - w[4], 0]) linear_extrude(window_depth)
             difference() {
                 window_2d(w[3], w[4], w[5], w[6], -tile_clearance);
                 if (w[0] == "front" && w[1] <= 4) translate([-w[2], 0]) offset(delta = 0.6 + tile_clearance) bowl_2d();
