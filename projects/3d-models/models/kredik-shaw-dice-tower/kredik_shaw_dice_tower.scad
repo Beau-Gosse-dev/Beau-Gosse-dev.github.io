@@ -56,7 +56,7 @@ hall_y0 = 40;
 hall_top = 144;
 // Exit tunnel and gate
 tunnel_w = 32;
-tunnel_spring = 26;
+tunnel_spring = 30;
 // Baffles: slope from horizontal, reach from their wall, and thickness
 baffle_slope = 35;
 baffle_reach = 34;
@@ -80,13 +80,14 @@ $fs = 0.4;
 
 // ---------------------------------------------------------------- derived
 gate_y = 0;                          // front face of the central tower
-plinth_front = -12;                  // tray docks against this edge
+plinth_front = -34;                  // tray docks against this edge
+gate_floor = plinth_h + 6;           // ramp height at the gate; it slopes down to the plinth front
 cx = central_w / 2;
 sy0 = hall_y0 + hall_wall;           // shaft interior, front
 sy1 = sy0 + shaft_d;                 // shaft interior, back
 hall_y1 = sy1 + hall_wall;
 hall_x = shaft_w / 2 + hall_wall;
-floor_mid = plinth_h + (sy0 - gate_y) * tan(floor_tunnel_slope);
+floor_mid = gate_floor + (sy0 - gate_y) * tan(floor_tunnel_slope);
 floor_back = floor_mid + shaft_d * tan(floor_shaft_slope);
 baffle_drop = baffle_reach * tan(baffle_slope);
 baffle_tv = baffle_t / cos(baffle_slope);  // vertical thickness
@@ -94,7 +95,8 @@ baffle_tv = baffle_t / cos(baffle_slope);  // vertical thickness
 // Height of the bowl's lower edge; the facade below follows it
 function bowl_z(x) = bowl_zc - bowl_b * sqrt(max(0, 1 - (x / bowl_a) * (x / bowl_a)));
 // Side towers, stepping down away from the centre: [x, front y, width, height, spire]
-side_towers = [[44, 0, 8, 150, 34], [64, 2, 8, 112, 28], [84, 4, 7, 76, 24]];
+// Lower towers stand further forward, so the palace steps down towards you
+side_towers = [[44, 0, 8, 108, 78], [64, -14, 8, 72, 64], [84, -28, 7, 42, 54]];
 
 // Clearance checks for the largest dice
 a_tip_bottom = baffle_a_z - baffle_drop - baffle_tv;
@@ -116,18 +118,18 @@ assert(split_spire ? spire_len <= 208 : spire_top <= 210, "Too tall for a Prusa 
 // the diameter and bottom is the centre height).
 oct_apothem = 13 * cos(22.5);
 windows = concat(
-    [["front", 0, 0, 14, 54, 82, "rect"],
+    [["front", 0, 0, 14, 60, 82, "rect"],
      ["front", 0, 0, 14, 92, 144, "round"]],
     [for (f = [["front", 20 - oct_apothem, 0], ["back", 20 + oct_apothem, 0],
                ["right", oct_apothem, 20], ["left", -oct_apothem, 20]])
         [f[0], f[1], f[2], 3, spire_base + 4, spire_base + spire_t2 - 4, "round"]],
     [for (s = [-1, 1]) each [
         ["front", 4, s * 30, 13, 30, 91, "round"],
-        ["front", 0, s * 44, 3, 60, 120, "round"],
-        ["front", 2, s * 64, 3, 40, 95, "round"],
-        ["front", 4, s * 84, 2.6, 30, 62, "round"],
-        ["front", 6, s * 54, 5, 20, 56, "round"],
-        ["front", 6, s * 74.5, 4, 14, 36, "round"],
+        ["front", 0, s * 44, 3, 40, 92, "round"],
+        ["front", -14, s * 64, 3, 22, 60, "round"],
+        ["front", -28, s * 84, 2.6, 12, 34, "round"],
+        ["front", -8, s * 54, 5, 16, 48, "round"],
+        ["front", -20, s * 74.5, 4, 10, 28, "round"],
         ["front", -3.5 - 5 * cos(22.5), s * 30, 2.4, 20, 32, "round"],
         [s < 0 ? "left" : "right", s * hall_x, sy0 + 18, 7, 40, 125, "round"],
         [s < 0 ? "left" : "right", s * hall_x, sy0 + 44, 7, 40, 125, "round"],
@@ -297,15 +299,19 @@ module bowl_2d() {
     polygon(concat([for (x = xs) [x, bowl_z(x)]], [for (i = [len(xs) - 1 : -1 : 0]) [xs[i], bowl_z(xs[i]) + bowl_band]]));
 }
 
-// Flying buttress drawn in (x, z): springs from a tower face at xo and curves
-// up to meet a taller tower at xi, leaving a curved opening beneath it
-module flyer(xo, xi, zs, zc, t, y0, y1) {
-    r = zc - zs;
-    k = sign(xo - xi);
-    along_y(y0, y1) polygon(concat(
-        [[xo + k, zs]],
-        [for (a = [0 : 6 : 90]) [xi + (xo - xi) * cos(a), zs + r * sin(a)]],
-        [[xi - k, zc], [xi - k, zc + t], [xo + k, zs + 0.9 * r + t]]));
+// Flying buttress: a curved strut of thickness t and width w that springs
+// steeply from po = [x, y, z] on a lower tower and bends in to meet a taller
+// one at pi = [x, y, z], leaving a curved opening beneath it
+module flyer(po, pi, t = 4, w = 4, a1 = 32) {
+    d = [po[0] - pi[0], po[1] - pi[1]];
+    run = norm(d);
+    r = po[2] - pi[2];  // negative: pi is higher
+    pts = [for (a = [0 : 5 : a1]) [run * (cos(a) - cos(a1)) / (1 - cos(a1)), po[2] - r * sin(a) / sin(a1)]];
+    translate([pi[0], pi[1], 0]) rotate(atan2(d[1], d[0])) rotate([90, 0, 0]) translate([0, 0, -w / 2])
+        linear_extrude(w) for (i = [0 : len(pts) - 2]) hull() {
+            translate(pts[i]) circle(d = t, $fn = 12);
+            translate(pts[i + 1]) circle(d = t, $fn = 12);
+        }
 }
 
 // A slender square side tower with collars and a needle cap
@@ -314,7 +320,7 @@ module side_tower(w, h, cap) {
     for (f = [0.45, 0.75]) square_collar(w, f * h);
     square_collar(w, h);
     translate([0, 0, h]) rotate(45) cylinder(d1 = w * sqrt(2), d2 = 0, h = cap, $fn = 4);
-    translate([0, 0, h + cap * 0.35]) square_collar(w * 0.62, 0);
+    for (f = [0.3, 0.55]) translate([0, 0, h + cap * f]) square_collar(w * (1 - f), 0);
 }
 
 // Lower facade: the flanking windows, with its top following the bowl
@@ -326,12 +332,11 @@ module lower_facade() {
     mirrored() {
         // Towers stepping down towards the sides, with low walls between them
         for (t = side_towers) translate([t[0], t[1] + t[2] / 2, 0]) side_tower(t[2], t[3], t[4]);
-        translate([48, 6, 0]) cube([12.5, 24, 64]);
-        translate([68, 6, 0]) cube([13, 18, 40]);
-        // Flying buttresses with curved openings, all rising towards the centre
-        for (y = [3, 26]) flyer(40, cx, 138, 150, 5, y, y + 4);
-        flyer(60, 48, 82, 110, 4, 3, 7);
-        flyer(80.5, 68, 52, 74, 4, 4, 8);
+        translate([48, -8, 0]) cube([12.5, 32, 58]);
+        translate([68, -20, 0]) cube([13, 30, 36]);
+        // Flying buttresses: few, steep, springing low on each tower
+        flyer([64, -10, 52], [44, 4, 98], 4, 4);
+        flyer([84, -24.5, 26], [64, -10, 60], 3.5, 3.5);
         // Turret with a needle roof in front of each flanking window
         translate([30, -3.5, 0]) rotate(22.5) {
             cylinder(d = 10, h = 38, $fn = 8);
@@ -353,9 +358,9 @@ module hall() {
         translate([hall_x, hall_y0 + 1, 0]) lance(5, 172, [0.3, 0.55, 0.75]);
         translate([hall_x, hall_y1, 0]) lance(7, 186, [0.3, 0.55, 0.75]);
         // Towers along the sides, buttressing the hall with curved flyers
-        for (b = [[sy0 + 31, 116, 30], [sy0 + 57, 92, 26]]) {
+        for (b = [[sy0 + 44, 64, 62]]) {
             translate([hall_x + 17, b[0], 0]) side_tower(8, b[1], b[2]);
-            flyer(hall_x + 13, hall_x, b[1] - 36, b[1] - 6, 4, b[0] - 2, b[0] + 2);
+            flyer([hall_x + 17, b[0], b[1] - 44], [hall_x - 1, b[0], b[1] + 4], 4, 4);
         }
         // Vertical ribs on the sides and back, clear of the windows
         for (y = [sy0 + 4, sy0 + 9, sy0 + 24, sy0 + 38, sy0 + 50]) translate([hall_x - 0.2, y - 0.5, plinth_h]) cube([1, 1, hall_top - plinth_h - 4]);
@@ -379,7 +384,7 @@ module dice_path_cuts() {
 module dice_path_parts() {
     // Ramp: level in front of the gate, shallow through the tunnel, steeper under the shaft
     across_x(-shaft_w / 2 - 0.5, shaft_w / 2 + 0.5) polygon([
-        [plinth_front, 0], [plinth_front, plinth_h], [gate_y, plinth_h],
+        [plinth_front, 0], [plinth_front, plinth_h], [gate_y, gate_floor],
         [sy0, floor_mid], [sy1 + 0.5, floor_back], [sy1 + 0.5, 0]]);
     // Baffle A hangs from the back wall, baffle B from the front wall
     across_x(-shaft_w / 2 - 0.5, shaft_w / 2 + 0.5) {
@@ -394,7 +399,7 @@ module dice_path_parts() {
 }
 
 module window_frames() {
-    on_face("front", 0, 0, 0.2, 1) window_frame(14, 54, 144, "round");
+    on_face("front", 0, 0, 0.2, 1) window_frame(14, 60, 144, "round");
     mirrored() {
         on_face("front", 4, 30, 0.2, 1) window_frame(13, 30, 91, "round");
         for (y = [sy0 + 18, sy0 + 44]) on_face("right", hall_x, y, 0.2, 1) window_frame(7, 40, 125, "round");

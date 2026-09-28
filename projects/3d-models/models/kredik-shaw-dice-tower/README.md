@@ -6,7 +6,7 @@ Still being refined; not yet test-printed or listed in the gallery.
 
 | File | What it is | Size (mm) |
 | --- | --- | --- |
-| `kredik_shaw_tower.stl` | Main body, prints upright | 180 × 126 × 187 |
+| `kredik_shaw_tower.stl` | Main body, prints upright | 180 × 148 × 187 |
 | `kredik_shaw_spire.stl` | Top of the central tower; glue onto the square peg | 24 × 24 × 113 |
 | `kredik_shaw_tray.stl` | Courtyard tray; butts against the front of the base | 178 × 122 × 56 |
 | `kredik_shaw_window_tiles.stl` | Flat window tiles, 1.2 mm thick, to glue into the window pockets | 157 × 185 × 1.2 |
