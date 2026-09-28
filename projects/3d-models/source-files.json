@@ -1,5 +1,5 @@
 {
-  "imported": "2026-09-25",
+  "imported": "2026-09-28",
   "files": [
     {
       "path": "models/cedarburg-house-ho/01_walls_plate.3mf",
@@ -567,6 +567,96 @@
       "path": "models/lego-brick-wall-shelf/preview_1x4_front.png",
       "bytes": 59746,
       "sha256": "4d8ef931c090e4d748dcef87a5383c252ca2b6b5284ee398bf9e1735bdf13b2e",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/kredik-shaw-dice-tower/README.md",
+      "bytes": 4014,
+      "sha256": "e66de3b9315f1ae74fc85ee1f2b5b5ca0b91146874dfdccc3568307a75e65b0f",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/kredik-shaw-dice-tower/build_model.py",
+      "bytes": 1466,
+      "sha256": "1797e2a3a1383e70fa8379635d42e0acb9f8d466bbad79d937cd5d733a99014d",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/kredik-shaw-dice-tower/kredik_shaw_dice_tower.scad",
+      "bytes": 21998,
+      "sha256": "9b0d463f1dab5c9b5e93a035aef96f21801c6cef8c1229dece53c8ae47701f4f",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/kredik-shaw-dice-tower/kredik_shaw_spire.stl",
+      "bytes": 84784,
+      "sha256": "0aa8cf6094af2d398ff29411e6e6a24f8d72ef49e43d903835da3c2cb3721201",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/kredik-shaw-dice-tower/kredik_shaw_tower.stl",
+      "bytes": 602384,
+      "sha256": "467f6c8ef2630f27e34033804a7fcbe7940eb2d7410ed16964bad09c5f4b0eac",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/kredik-shaw-dice-tower/kredik_shaw_tray.stl",
+      "bytes": 75984,
+      "sha256": "94c8122097f62283f591c9a719f12aa22686dbaf766be3e1695f6a2a65212ff5",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/kredik-shaw-dice-tower/kredik_shaw_window_tiles.stl",
+      "bytes": 114084,
+      "sha256": "d62be698afbe8710096533de57ad2536d57a0b5985816f3fc628c553b023cd40",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/kredik-shaw-dice-tower/mesh_check.json",
+      "bytes": 1137,
+      "sha256": "e228dcfea76fde66552600a9ae4912679c1cde4c0672e3ad7d080873009843e6",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/kredik-shaw-dice-tower/preview_dice_path.png",
+      "bytes": 23480,
+      "sha256": "79f9f1fbeeb7b431216a0348a3212199dfbfc841bc8ad955d3f9f447a62ad87d",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/kredik-shaw-dice-tower/preview_front.png",
+      "bytes": 26798,
+      "sha256": "b2beac029483034b818c69107f41501ca8588d14509893c6a5dfa2d1384b016e",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/kredik-shaw-dice-tower/preview_spire.png",
+      "bytes": 38788,
+      "sha256": "726e2a40da6c42170db2f1adeddb5f92ce9ff85d22c553d21966715fe8f5f634",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/kredik-shaw-dice-tower/preview_three_quarter.png",
+      "bytes": 43591,
+      "sha256": "817bd646e3fa436ed6200ac7071b3ad6fcb0f537c0b4c07e240833a5222a8672",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/kredik-shaw-dice-tower/preview_with_tray.png",
+      "bytes": 50800,
+      "sha256": "6ec1ea1efe038ef91b4cb3005155a35deee8b96a43ecca0025b9411093a350af",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/kredik-shaw-dice-tower/tools/csg_eval.py",
+      "bytes": 9558,
+      "sha256": "74f6203523caa194463848fa995c91ac098bcb93657d20e00425bfc718914712",
+      "source": "beau-gosse-original"
+    },
+    {
+      "path": "models/kredik-shaw-dice-tower/tools/render.py",
+      "bytes": 4418,
+      "sha256": "d13321bf88d8b25aa2313da59bfa002d3564688e9e645acefb18c48e1f732021",
       "source": "beau-gosse-original"
     }
   ]
