@@ -29,12 +29,13 @@ tile_clearance = 0.15;
 central_w = 40;
 central_top = 150;
 
-/* [Halo ring] */
-// The great ring around the central tower: centre height and outer semi-axes
-ring_zc = 104;
-ring_a = 50;
-ring_b = 27;
-ring_band = 5;
+/* [Bowl] */
+// The bowl-shaped curve across the centre: its ends sit on the first side
+// towers at (±bowl_a, bowl_zc), and its lowest point is bowl_b below that
+bowl_zc = 118;
+bowl_a = 42;
+bowl_b = 34;
+bowl_band = 5;
 
 /* [Dice path] */
 // Inside of the dice shaft
@@ -82,10 +83,10 @@ floor_back = floor_mid + shaft_d * tan(floor_shaft_slope);
 baffle_drop = baffle_reach * tan(baffle_slope);
 baffle_tv = baffle_t / cos(baffle_slope);  // vertical thickness
 
-// Inner edge of the lower half of the ring; the facade below follows it
-ring_ia = ring_a - ring_band;
-ring_ib = ring_b - ring_band;
-function ring_low(x, a = ring_ia, b = ring_ib) = ring_zc - b * sqrt(max(0, 1 - (x / a) * (x / a)));
+// Height of the bowl's lower edge; the facade below follows it
+function bowl_z(x) = bowl_zc - bowl_b * sqrt(max(0, 1 - (x / bowl_a) * (x / bowl_a)));
+// Side towers, stepping down away from the centre: [x, front y, width, height, spire]
+side_towers = [[44, 0, 8, 150, 34], [64, 2, 8, 112, 28], [84, 4, 7, 76, 24]];
 
 // Clearance checks for the largest dice
 a_tip_bottom = baffle_a_z - baffle_drop - baffle_tv;
@@ -103,14 +104,18 @@ assert(total_height <= 210, "Too tall for a Prusa MK3");
 // the diameter and bottom is the centre height).
 oct_apothem = 13 * cos(22.5);
 windows = concat(
-    [["front", 0, 0, 14, 54, 73, "rect"],
-     ["front", 0, 0, 14, 82, 144, "round"]],
+    [["front", 0, 0, 14, 54, 82, "rect"],
+     ["front", 0, 0, 14, 92, 144, "round"]],
     [for (f = [["front", 20 - oct_apothem, 0], ["back", 20 + oct_apothem, 0],
                ["right", oct_apothem, 20], ["left", -oct_apothem, 20]])
         [f[0], f[1], f[2], 3, central_top + 11, central_top + 28, "round"]],
     [for (s = [-1, 1]) each [
-        ["front", 4, s * 30, 13, 30, 79, "round"],
-        [s < 0 ? "left" : "right", s * 51.5, 22, 6, 30, 92, "round"],
+        ["front", 4, s * 30, 13, 30, 91, "round"],
+        ["front", 0, s * 44, 3, 60, 120, "round"],
+        ["front", 2, s * 64, 3, 40, 95, "round"],
+        ["front", 4, s * 84, 2.6, 30, 62, "round"],
+        ["front", 6, s * 54, 5, 20, 56, "round"],
+        ["front", 6, s * 74.5, 4, 14, 36, "round"],
         ["front", -3.5 - 5 * cos(22.5), s * 30, 2.4, 20, 32, "round"],
         [s < 0 ? "left" : "right", s * hall_x, sy0 + 18, 7, 40, 125, "round"],
         [s < 0 ? "left" : "right", s * hall_x, sy0 + 44, 7, 40, 125, "round"],
@@ -213,7 +218,7 @@ module mirrored() {
 // ---------------------------------------------------------------- tower
 // Base: full width under the front, narrower under the hall at the back
 module plinth() {
-    for (r = [[84, plinth_front, 46], [60, 46, hall_y1 + 6]]) hull() {
+    for (r = [[90, plinth_front, 46], [56, 46, hall_y1 + 6]]) hull() {
         translate([-r[0], r[1], 0]) cube([2 * r[0], r[2] - r[1], plinth_h - 1.2]);
         translate([-r[0] + 1.2, r[1] + 1.2, 0]) cube([2 * r[0] - 2.4, r[2] - r[1] - 2.4, plinth_h]);
     }
@@ -253,30 +258,47 @@ module central_tower() {
     }
 }
 
-// The great ring, drawn in (x, z). Its top half stops at the central tower.
-module ring_2d() {
-    difference() {
-        translate([0, ring_zc]) scale([ring_a, ring_b]) circle(1, $fn = 120);
-        translate([0, ring_zc]) scale([ring_ia, ring_ib]) circle(1, $fn = 120);
-        translate([-cx + 0.5, ring_zc]) square([central_w - 1, ring_b + 1]);
-    }
+// The bowl: a raised band whose lower edge is bowl_z, drawn in (x, z)
+module bowl_2d() {
+    xs = [for (x = [-bowl_a : 1 : bowl_a]) x];
+    polygon(concat([for (x = xs) [x, bowl_z(x)]], [for (i = [len(xs) - 1 : -1 : 0]) [xs[i], bowl_z(xs[i]) + bowl_band]]));
 }
 
-// Lower facade: the flanking windows, with its top following the ring
+// Flying buttress drawn in (x, z): springs from a tower face at xo and curves
+// up to meet a taller tower at xi, leaving a curved opening beneath it
+module flyer(xo, xi, zs, zc, t, y0, y1) {
+    r = zc - zs;
+    k = sign(xo - xi);
+    along_y(y0, y1) polygon(concat(
+        [[xo + k, zs]],
+        [for (a = [0 : 6 : 90]) [xi + (xo - xi) * cos(a), zs + r * sin(a)]],
+        [[xi - k, zc], [xi - k, zc + t], [xo + k, zs + 0.9 * r + t]]));
+}
+
+// A slender square side tower with collars and a needle cap
+module side_tower(w, h, cap) {
+    translate([-w / 2, -w / 2, 0]) cube([w, w, h]);
+    for (f = [0.45, 0.75]) square_collar(w, f * h);
+    square_collar(w, h);
+    translate([0, 0, h]) rotate(45) cylinder(d1 = w * sqrt(2), d2 = 0, h = cap, $fn = 4);
+    translate([0, 0, h + cap * 0.35]) square_collar(w * 0.62, 0);
+}
+
+// Lower facade: the flanking windows, with its top following the bowl
 module lower_facade() {
-    xs = [for (x = [ring_ia : -2 : -ring_ia]) x];
+    xs = [for (x = [bowl_a : -1 : -bowl_a]) x];
     along_y(4, hall_y0 + 0.1) polygon(concat(
-        [[-51.5, 0], [51.5, 0], [51.5, ring_zc]],
-        [for (x = xs) [x, ring_low(x)]],
-        [[-51.5, ring_zc]]));
-    along_y(-1.5, 6) ring_2d();
+        [[-bowl_a, 0], [bowl_a, 0]], [for (x = xs) [x, bowl_z(x)]]));
+    along_y(-1.5, 6) bowl_2d();
     mirrored() {
-        // Tall lances at the ends of the ring, and one in front of each side
-        translate([54, 4, 0]) lance(6, 185, [0.2, 0.4, 0.62]);
-        translate([45, 2.5, 0]) lance(4, 128);
-        // Blade-like fins at the outer edges
-        along_y(8, 13) polygon(concat([[56, 0]],
-            [for (t = [0 : 0.05 : 1.001]) [60 + 18 * pow(1 - t, 2), 136 * t]], [[56, 122]]));
+        // Towers stepping down towards the sides, with low walls between them
+        for (t = side_towers) translate([t[0], t[1] + t[2] / 2, 0]) side_tower(t[2], t[3], t[4]);
+        translate([48, 6, 0]) cube([12.5, 24, 64]);
+        translate([68, 6, 0]) cube([13, 18, 40]);
+        // Flying buttresses with curved openings, all rising towards the centre
+        for (y = [3, 26]) flyer(40, cx, 138, 150, 5, y, y + 4);
+        flyer(60, 48, 82, 110, 4, 3, 7);
+        flyer(80.5, 68, 52, 74, 4, 4, 8);
         // Turret with a needle roof in front of each flanking window
         translate([30, -3.5, 0]) rotate(22.5) {
             cylinder(d = 10, h = 38, $fn = 8);
@@ -297,15 +319,16 @@ module hall() {
         // Corner lances
         translate([hall_x, hall_y0 + 1, 0]) lance(5, 172, [0.3, 0.55, 0.75]);
         translate([hall_x, hall_y1, 0]) lance(7, 186, [0.3, 0.55, 0.75]);
-        // Blade fins along the sides
-        for (y = [sy0 + 31, sy0 + 57]) along_y(y - 2, y + 2)
-            polygon(concat([[hall_x - 1, 0]],
-                [for (t = [0 : 0.05 : 1.001]) [hall_x + 2 + 18 * pow(1 - t, 2), 126 * t]], [[hall_x - 1, 114]]));
+        // Towers along the sides, buttressing the hall with curved flyers
+        for (b = [[sy0 + 31, 116, 30], [sy0 + 57, 92, 26]]) {
+            translate([hall_x + 17, b[0], 0]) side_tower(8, b[1], b[2]);
+            flyer(hall_x + 13, hall_x, b[1] - 36, b[1] - 6, 4, b[0] - 2, b[0] + 2);
+        }
         // Vertical ribs on the sides and back, clear of the windows
         for (y = [sy0 + 4, sy0 + 9, sy0 + 24, sy0 + 38, sy0 + 50]) translate([hall_x - 0.2, y - 0.5, plinth_h]) cube([1, 1, hall_top - plinth_h - 4]);
         for (x = [18.5, 22.5]) translate([x - 0.5, hall_y1 - 0.2, plinth_h]) cube([1, 1, hall_top - plinth_h - 4]);
         // Ribs on the back of the lower facade
-        for (x = [34, 40, 46]) translate([x - 0.5, hall_y0 - 0.2, plinth_h]) cube([1, 1, ring_zc - 6]);
+        for (x = [32, 37]) translate([x - 0.5, hall_y0 - 0.2, plinth_h]) cube([1, 1, bowl_zc - 30]);
     }
 }
 
@@ -340,7 +363,7 @@ module dice_path_parts() {
 module window_frames() {
     on_face("front", 0, 0, 0.2, 1) window_frame(14, 54, 144, "round");
     mirrored() {
-        on_face("front", 4, 30, 0.2, 1) window_frame(13, 30, 79, "round");
+        on_face("front", 4, 30, 0.2, 1) window_frame(13, 30, 91, "round");
         for (y = [sy0 + 18, sy0 + 44]) on_face("right", hall_x, y, 0.2, 1) window_frame(7, 40, 125, "round");
     }
     on_face("back", hall_y1, 0, 0.2, 1) window_frame(30, 112, 0, "rose", 2);
@@ -352,7 +375,7 @@ module window_volumes(e = 0, g = 0) {
     for (w = windows) on_face(w[0], w[1], w[2], window_depth, e)
         difference() {
             window_2d(w[3], w[4], w[5], w[6], g);
-            if (w[0] == "front" && w[1] <= 4) translate([-w[2], 0]) offset(delta = 0.6 - g) ring_2d();
+            if (w[0] == "front" && w[1] <= 4) translate([-w[2], 0]) offset(delta = 0.6 - g) bowl_2d();
         }
 }
 
@@ -386,7 +409,7 @@ module window_tiles() {
         else translate([(i % 10) * 19, floor(i / 10) * 105 - w[4], 0]) linear_extrude(window_depth)
             difference() {
                 window_2d(w[3], w[4], w[5], w[6], -tile_clearance);
-                if (w[0] == "front" && w[1] <= 4) translate([-w[2], 0]) offset(delta = 0.6 + tile_clearance) ring_2d();
+                if (w[0] == "front" && w[1] <= 4) translate([-w[2], 0]) offset(delta = 0.6 + tile_clearance) bowl_2d();
             }
     }
 }
