@@ -4,57 +4,43 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f4efdf">
-  <meta name="description" content="Argue with Dad, then dodge traffic. A silly single-player cycling game with bells, bike lights, and one incredibly confident dad.">
-  <title>Tim’s Right of Way — A Family Bike Ride</title>
+  <meta name="description" content="Dodge traffic and talk Tim into the right lane, all in one silly family bike ride.">
+  <title>Tim’s Right of Way</title>
   <link rel="stylesheet" href="styles.css">
   <script src="game.js" defer></script>
 </head>
 <body>
-  <div class="page">
+  <main class="game" data-phase="pick">
     <header class="topbar">
-      <a class="brand" href="./" aria-label="Tim’s Right of Way home"><span class="brand-icon">→</span> FAMILY OUTING STUDIOS</a>
-      <div class="controls"><button id="motion-toggle" class="utility" aria-pressed="false">Pause ride</button><button id="sound-toggle" class="utility" aria-pressed="false">Sound: off</button></div>
+      <h1>Tim’s <span>Right</span> of Way</h1>
+      <div class="utilities"><button id="motion-toggle" aria-pressed="false">Pause</button><button id="sound-toggle" aria-pressed="false">Sound off</button><button id="restart" aria-label="Restart and change character" title="Restart / change character">↻</button><a href="../../" aria-label="Back to all projects" title="All projects">Home</a></div>
     </header>
-    <main>
-      <section class="intro" aria-labelledby="game-title">
-        <div><p class="eyebrow"><span class="live-dot"></span> A VERY NORMAL FAMILY BIKE RIDE</p><h1 id="game-title">TIM’S <span>RIGHT</span> OF WAY<span class="period">.</span></h1><p class="subtitle">One family. Five bicycles. <strong>One incredibly confident dad.</strong></p></div>
-        <div class="edition"><span>THE FAMILY ROAD TRIP</span><strong>No. 001</strong><span>A GAME OF PERSUASION*</span><small>*allegedly</small></div>
-      </section>
-      <section class="game-layout" aria-label="The game">
-        <div class="ride-column">
-          <div class="scene-frame">
-            <div class="scene-topline"><span id="lane-label">← WRONG SIDE. STRONG OPINIONS.</span><span class="road-badge">SCENIC ROUTE</span></div>
-            <div class="scene"><canvas id="road" width="1000" height="590" role="img" aria-label="Tim leads his family of five on bicycles in the lane facing oncoming traffic."></canvas><div class="tim-bubble"><span>TIM, SELF-APPOINTED ROAD CAPTAIN</span><p id="scene-quote">“I like to see the traffic coming. It’s a system.”</p></div><div class="scene-stamp" id="scene-stamp">DAD KNOWS<br><strong>BEST?</strong></div>
-              <div id="traffic-hud" class="traffic-hud" hidden><span id="traffic-round">TRAFFIC 01</span><strong id="traffic-health">COMPOSURE 3/3</strong><span id="traffic-timer">14s</span><div class="traffic-progress"><i id="traffic-progress-fill"></i></div></div>
-              <div id="road-message" class="road-message" role="status" hidden></div>
-              <div id="road-overlay" class="road-overlay" hidden><div class="overlay-card"><p id="overlay-eyebrow" class="eyebrow">ROUND 02 · TRAFFIC</p><h2 id="overlay-title">Protect the family.</h2><p id="overlay-copy">Tim ignored you. Dodge the cars while the family follows your lead.</p><button id="road-continue" class="primary-button">Start traffic round <span>→</span></button></div></div>
-              <div id="pause-overlay" class="pause-overlay" hidden><strong>RIDE PAUSED</strong><button id="resume-ride" class="primary-button">Resume ride →</button></div>
-            </div>
-            <div id="arcade-controls" class="arcade-controls" hidden><div class="steering-controls"><button id="steer-left" aria-label="Swerve left">←<small>A / ←</small></button><button id="steer-right" aria-label="Swerve right">→<small>D / →</small></button></div><button id="ring-bell"><span>Ring bell <kbd>B</kbd></span><small id="bell-cooldown">Driver swerves</small></button><button id="flash-light"><span>Flash light <kbd>L</kbd></span><small id="light-cooldown">Traffic slows</small></button></div>
-            <div class="scene-caption"><span><i class="orange-dot"></i> <span id="scene-mode">THE SITUATION</span></span><p id="scene-caption-copy">No sidewalk. No bike lane. Tim has a theory.</p></div>
-          </div>
-          <div id="round-strip" class="round-strip"><span id="round-talk" class="active">01 / TALK TO TIM</span><span aria-hidden="true">→</span><span id="round-traffic">02 / PROTECT THE FAMILY</span></div>
-          <div class="stats" aria-label="Game statistics"><div><span>TIM’S STUBBORNNESS</span><strong id="stubbornness">100<span>%</span></strong><div class="meter"><i id="stubbornness-meter"></i></div></div><div><span>ARGUMENTS TRIED</span><strong id="attempt-count">00</strong><small id="attempt-note">Optimism is free.</small></div><div><span>FAMILY MORALE</span><strong id="morale">Hopeful-ish</strong><small id="morale-note">We just left the driveway.</small></div></div>
-          <p class="fine-print">A loving roast of dad logic. Bikes belong with traffic; Tim’s confidence is not a safety qualification.</p>
+    <div class="play-area">
+      <section class="road-panel" aria-label="The family bike ride">
+        <div class="ride-status"><span id="player-name">Family ride</span><strong id="traffic-health">Composure 3/3</strong></div>
+        <div class="scene">
+          <canvas id="road" width="850" height="740" role="img" aria-label="The family rides into oncoming traffic."></canvas>
+          <div id="road-message" class="road-message" role="status" hidden></div>
+          <div id="start-screen" class="screen-overlay"><div class="overlay-card">
+            <h2>Dad has a system.</h2><p>Tim rides toward traffic so he can “see it coming.” Dodge cars and convince him to move right.</p>
+            <h3>Who’s talking to Dad?</h3><div id="character-list" class="character-list"></div>
+            <small>← → steer · B bell · L light<br>Bikes should travel with traffic. Tim disagrees.</small>
+          </div></div>
+          <div id="end-screen" class="screen-overlay" hidden><div class="overlay-card"><h2 id="end-title"></h2><p id="end-copy"></p><button id="road-continue" class="primary-button">Ride again</button></div></div>
+          <div id="pause-overlay" class="screen-overlay" hidden><div class="overlay-card"><h2>Ride paused.</h2><button id="resume-ride" class="primary-button">Resume ride</button></div></div>
         </div>
-        <aside class="dialogue-panel" aria-label="Conversation controls">
-          <section id="character-screen">
-            <div class="panel-heading"><span class="step-number">01</span><p class="eyebrow">PICK YOUR PERSUADER</p></div>
-            <h2>Talk to Dad.<br>Dodge the consequences.</h2><p class="panel-copy">Choose your family member. Each argument triggers a road incident, then a <strong>playable traffic round</strong>. Protect the family until you find the one argument that changes Tim’s lane.</p>
-            <div id="character-list" class="character-list"></div>
-            <div class="mission-note"><span>↳ YOUR MISSION</span><p>Change his lane.<br>Good luck changing his mind.</p></div>
-          </section>
-          <section id="conversation-screen" hidden>
-            <div class="speaker-bar"><div id="selected-avatar" class="avatar"></div><div><span class="eyebrow">YOU’RE PLAYING AS</span><strong id="selected-name"></strong></div><button id="change-character" class="text-button">Change</button></div>
-            <div id="conversation" class="conversation" aria-live="polite" aria-atomic="true"><p class="eyebrow" id="response-label">TIM HAS THE FLOOR. NATURALLY.</p><blockquote id="tim-response">“Stay behind me. I’ve watched at least three cycling videos.”</blockquote><p id="family-response" class="family-response">The family exchanges a look.</p></div>
-            <div id="choice-area"><div class="choose-heading"><h2>Make your case.</h2><button id="hint-button" class="text-button">Need a hint?</button></div><p id="hint" class="hint" hidden></p><div id="topics" class="topics" aria-label="Argument category"></div><div id="choices" class="choices"></div><p class="choice-footnote">Every sensible argument is worth a shot.<br>Probably.</p></div>
-            <div id="traffic-panel" class="traffic-panel" hidden><p class="eyebrow">TIM TALKS. YOU DO THE ACTUAL WORK.</p><h2>Keep the whole<br>family rolling.</h2><p class="panel-copy">Steer the pack through the three paths on Tim’s side of the road. Cars enter from the top; watch their dashed warning trails.</p><div class="ability-guide"><div><strong>← → &nbsp; Swerve</strong><p>Move into a clear path. The family follows you.</p></div><div><strong>B &nbsp; Ring the bell</strong><p>The nearest approaching driver moves out of your path. Recharges in 4 seconds.</p></div><div><strong>L &nbsp; Flash your light</strong><p>Drivers slow down for 2.5 seconds, giving you time to dodge. Recharges in 6 seconds.</p></div></div><div class="traffic-report"><span class="eyebrow">THIS STRETCH</span><p id="traffic-report">Keep your composure. Tim has enough confidence for everyone.</p></div><p class="choice-footnote">Keyboard: A/D or arrows · B · L · P to pause.<br>On a phone, use the buttons under the road.</p></div>
-            <div id="victory" class="victory" hidden><p class="eyebrow">ACHIEVEMENT UNLOCKED</p><h2>Right lane.<br>Same dad.</h2><p id="victory-copy"></p><div class="victory-receipt"><span>ROAD SAFETY</span><strong>Improved ↑</strong><span>TIM’S SELF-AWARENESS</span><strong>Unchanged →</strong></div><button id="play-again" class="primary-button">Another family outing <span>→</span></button></div>
-          </section>
-        </aside>
+        <div class="riding-controls" aria-label="Riding controls">
+          <button id="steer-left" aria-label="Swerve left">← <kbd>A</kbd></button><button id="steer-right" aria-label="Swerve right">→ <kbd>D</kbd></button><button id="ring-bell">Bell <kbd id="bell-cooldown">B</kbd></button><button id="flash-light">Light <kbd id="light-cooldown">L</kbd></button>
+        </div>
       </section>
-    </main>
-    <footer><a class="back-to-projects" href="../../">← ALL PROJECTS</a><span>BUILT ON LOVE, BICYCLES & QUESTIONABLE REASONING.</span><span>1 PLAYER <span class="footer-dot">·</span> 0 COMMON SENSE</span></footer>
-  </div>
+      <section id="dialogue-dock" class="dialogue-dock" aria-label="Talk to Tim">
+        <div class="tim-says"><span class="small-label">TIM SAYS</span><blockquote id="tim-response" aria-live="polite">“I like to see the traffic coming. It’s a system.”</blockquote></div>
+        <div class="choice-header"><p id="dialogue-status">Convince Tim while you dodge.</p><button id="hint-button" class="text-button">Hint</button></div>
+        <div id="choices" class="choices" aria-label="Your arguments"></div>
+        <button id="more-ideas" class="text-button more-ideas">More ideas →</button>
+        <p id="lane-label" class="lane-label">Tim’s lane · oncoming traffic</p>
+      </section>
+    </div>
+  </main>
 </body>
 </html>

@@ -1,4 +1,4 @@
-/* A fully local game: no requests, accounts, storage, or dependencies. */
+/* A local, single-screen game. No dependencies or backend. */
 (() => {
   'use strict';
   const $ = id => document.getElementById(id);
@@ -49,448 +49,262 @@
       ego: { id: 'training-wheels', line: 'Is the left lane like training wheels for dads?', reply: 'Training wheels? These are premium confidence wheels.', aside: 'Nobody can find “confidence wheels” in the bicycle manual.' }
     }
   };
-  const topics = [{ id: 'sense', name: 'Common sense' }, { id: 'family', name: 'Family pressure' }, { id: 'ego', name: 'Dad psychology' }];
   const state = {
-    character: null, topic: 'sense', tried: new Set(), attempts: 0, won: false,
-    phase: 'pick', paused: false, reduced: matchMedia('(prefers-reduced-motion: reduce)').matches,
-    sound: false, elapsed: 0, lane: 0, event: null, traffic: null, cleared: 0, saved: 0
+    character: null, tried: new Set(), attempts: 0, page: 0, phase: 'pick', paused: false,
+    reduced: matchMedia('(prefers-reduced-motion: reduce)').matches, sound: false,
+    speechUntil: 0, winTime: 0, traffic: null
   };
   const TRACKS = [305, 395, 485];
-  const FAMILY_ROWS = [450, 485, 520, 555, 590];
-  const arcadePhases = ['ready', 'traffic', 'result', 'failed'];
-
-  function portrait(person) {
-    const backHair = person.hairStyle !== 'short' ? `<path d="M12 28 Q9 6 25 8 Q43 7 40 39 L11 39Z" fill="${person.hair}"/>` : '';
-    const ponytail = person.hairStyle === 'ponytail' ? `<path d="M36 17 Q49 15 41 34 L34 29Z" fill="${person.hair}"/>` : '';
-    return `<svg viewBox="0 0 50 50" aria-hidden="true"><rect width="50" height="50" fill="#e7e2cf"/>${backHair}${ponytail}<path d="M7 50 Q8 34 25 34 Q42 34 44 50" fill="${person.color}"/><rect x="21" y="28" width="8" height="10" rx="3" fill="${person.skin}"/><ellipse cx="25" cy="22" rx="11" ry="13" fill="${person.skin}"/><path d="M13 20 Q10 6 25 6 Q39 7 37 18 L32 14 L20 16Z" fill="${person.hair}"/><path d="M12 15 Q12 3 25 3 Q38 3 38 15Z" fill="${person.color}"/><path d="M12 14H39" stroke="#302f25" stroke-width="2"/><circle cx="21" cy="23" r="1" fill="#302f25"/><circle cx="29" cy="23" r="1" fill="#302f25"/><path d="M22 29 Q25 31 28 28" fill="none" stroke="#77513b" stroke-width="1.3"/></svg>`;
-  }
-
-  function reset() {
-    state.character = null; state.topic = 'sense'; state.tried.clear(); state.attempts = 0; state.won = false; state.lane = 0;
-    state.event = null; state.traffic = null; state.cleared = 0; state.saved = 0; state.paused = false;
-    $('character-screen').hidden = false; $('conversation-screen').hidden = true;
-    $('choice-area').hidden = false; $('victory').hidden = true; $('hint').hidden = true; $('hint-button').textContent = 'Need a hint?';
-    $('scene-quote').textContent = '“I like to see the traffic coming. It’s a system.”';
-    $('lane-label').textContent = '← WRONG SIDE. STRONG OPINIONS.';
-    $('scene-stamp').innerHTML = 'DAD KNOWS<br><strong>BEST?</strong>';
-    $('road').setAttribute('aria-label', 'Tim leads his family of five on bicycles in the lane facing oncoming traffic.');
-    $('road-message').hidden = true;
-    setPhase('pick'); updateStats(); updateMotionButton(); drawScene();
-  }
-  function selectCharacter(id) {
-    reset(); state.character = characters.find(c => c.id === id);
-    $('character-screen').hidden = true; $('conversation-screen').hidden = false;
-    $('selected-avatar').innerHTML = portrait(state.character); $('selected-name').textContent = state.character.name;
-    $('response-label').textContent = 'TIM HAS THE FLOOR. NATURALLY.';
-    $('tim-response').textContent = '“Stay behind me. I’ve watched at least three cycling videos.”';
-    $('family-response').textContent = `${state.character.name} takes a deep breath. This could be a long ride.`;
-    setPhase('dialogue'); renderTopics(); renderChoices();
-    $('choices').querySelector('button').focus({ preventScroll: true });
-  }
-  function renderTopics() {
-    $('topics').replaceChildren();
-    topics.forEach(topic => {
-      const button = document.createElement('button'); button.className = 'topic-button'; button.textContent = topic.name;
-      button.setAttribute('aria-pressed', String(state.topic === topic.id));
-      button.addEventListener('click', () => { state.topic = topic.id; renderTopics(); renderChoices(); $('topics').children[topics.indexOf(topic)].focus({ preventScroll: true }); });
-      $('topics').append(button);
-    });
-  }
-  function currentChoices() { return [...shared[state.topic], personal[state.character.id][state.topic]]; }
-  function renderChoices() {
-    $('choices').replaceChildren();
-    currentChoices().forEach((choice, index) => {
-      const button = document.createElement('button'); button.className = 'choice-button'; button.dataset.choice = choice.id;
-      button.disabled = state.tried.has(choice.id) || state.phase !== 'dialogue' || state.paused;
-      const number = document.createElement('span'); number.className = 'choice-number'; number.textContent = state.tried.has(choice.id) ? '✓' : String(index + 1).padStart(2, '0');
-      const label = document.createElement('span'); label.textContent = choice.line;
-      button.append(number, label); button.addEventListener('click', () => choose(choice)); $('choices').append(button);
-    });
-  }
-  function choose(choice) {
-    if (!state.character || state.won || state.paused || state.phase !== 'dialogue' || state.tried.has(choice.id)) return;
-    state.tried.add(choice.id); state.attempts++;
-    $('response-label').textContent = `${state.character.name.toUpperCase()}: “${choice.line}”`;
-    $('tim-response').textContent = `“${choice.reply}”`; $('family-response').textContent = choice.aside;
-    const sceneQuips = ['I’ve got a system. Everybody stay behind me.', 'That’s an interesting opinion. Anyway…', 'Trust the process. Specifically, my process.', 'I appreciate the feedback. Still the captain.', 'Excellent discussion. Same lane, though.'];
-    $('scene-quote').textContent = choice.wins ? '“Advanced family coming through!”' : `“${sceneQuips[(state.attempts - 1) % sceneQuips.length]}”`;
-    state.event = { time: 0, duration: choice.wins ? 2.8 : 3.2, type: state.topic, win: !!choice.wins };
-    setPhase(choice.wins ? 'winTransition' : 'consequence');
-    const incidents = {
-      sense: ['A sedan swerves around Tim.', 'SEDAN SWERVES · TIM CALLS IT TEAMWORK.'],
-      family: ['A snack van slams on the brakes.', 'SNACK VAN BRAKES · TIM ASKS ABOUT FLAVORS.'],
-      ego: ['An SUV honks and changes its path.', 'SUV HONKS · TIM ASSUMES IT’S APPLAUSE.']
-    };
-    if (choice.wins) {
-      $('scene-stamp').innerHTML = 'ADVANCED<br><strong>FAMILY</strong>';
-      $('lane-label').textContent = '→ CHANGING LANES. KEEP THE CREDIT, TIM.';
-      $('scene-caption-copy').textContent = 'The family finally follows Tim into the right lane.';
-      $('road').setAttribute('aria-label', 'Tim is finally moving the family to the right lane, with traffic.');
-    } else {
-      $('scene-stamp').innerHTML = state.topic === 'sense' ? 'OH NO<br><strong>SKRRRT!</strong>' : state.topic === 'family' ? 'BRAKES<br><strong>PLEASE!</strong>' : 'THAT’S A<br><strong>HONK!</strong>';
-      $('scene-caption-copy').textContent = incidents[state.topic][1];
-      $('road').setAttribute('aria-label', incidents[state.topic][0] + ' A playable traffic round comes next.');
-    }
-    updateStats(); renderChoices(); playTone(!!choice.wins);
-    revealRoad();
-  }
-  function updateStats() {
-    $('attempt-count').textContent = String(state.attempts).padStart(2, '0');
-    $('stubbornness').innerHTML = state.won ? '0<span>%*</span>' : '100<span>%</span>';
-    $('stubbornness-meter').style.width = state.won ? '0%' : '100%';
-    $('attempt-note').textContent = state.won ? '*Temporary lane exception.' : state.attempts > 5 ? 'An impressive waste of breath.' : state.attempts ? 'Logic has left the chat.' : 'Optimism is free.';
-    $('morale').textContent = state.won ? 'Collective relief' : state.attempts > 7 ? 'Eye-roll city' : state.attempts > 3 ? 'Deep sighs' : 'Hopeful-ish';
-    $('morale-note').textContent = state.won ? 'Nobody mention the beginner lane.' : state.attempts > 7 ? 'The sighs are now synchronized.' : state.attempts > 3 ? 'Are we there yet?' : 'We just left the driveway.';
-  }
-  function revealRoad() {
-    // On phones, an argument is selected below the scene. Bring its consequence into view.
-    if (innerWidth <= 760) document.querySelector('.game-layout').scrollIntoView({ behavior: 'instant', block: 'start' });
+  const FAMILY_ROWS = [420, 475, 530, 585, 640];
+  function makeTraffic() {
+    return { time: 0, track: 1, x: TRACKS[1], cars: [], spawned: 0, nextSpawn: 2.8,
+      health: 3, hits: 0, bellReady: 0, lightReady: 0, lightUntil: 0,
+      bellUntil: 0, invulnerableUntil: 0, message: '', messageUntil: 0, uiTime: -1 };
   }
   function setPhase(phase) {
     state.phase = phase;
-    const arcade = arcadePhases.includes(phase);
-    document.querySelector('.page').classList.toggle('arcade-game', arcade);
-    document.querySelector('.page').classList.toggle('consequence-game', phase === 'consequence');
-    document.querySelector('.page').dataset.phase = phase;
-    $('choice-area').hidden = phase !== 'dialogue';
-    $('conversation').hidden = arcade;
-    $('traffic-panel').hidden = !arcade;
-    $('traffic-hud').hidden = !arcade;
-    $('arcade-controls').hidden = !arcade;
-    $('road-overlay').hidden = !['ready', 'result', 'failed'].includes(phase);
-    $('round-talk').classList.toggle('active', !arcade);
-    $('round-traffic').classList.toggle('active', arcade);
-    const talkRound = Math.max(1, state.attempts * 2 + (phase === 'dialogue' ? 1 : -1));
-    $('round-talk').textContent = `${String(talkRound).padStart(2, '0')} / TALK TO TIM`;
-    $('round-traffic').textContent = `${String(talkRound + 1).padStart(2, '0')} / PROTECT THE FAMILY`;
-    $('scene-mode').textContent = arcade ? 'TRAFFIC ROUND' : phase === 'dialogue' ? 'DIALOGUE ROUND' : 'THE SITUATION';
-    if (phase === 'dialogue' || phase === 'pick') {
-      $('scene-caption-copy').textContent = phase === 'dialogue' ? 'Make an argument. Brace for the consequences.' : 'No sidewalk. No bike lane. Tim has a theory.';
-      $('lane-label').textContent = '← WRONG SIDE. STRONG OPINIONS.';
-      $('scene-stamp').innerHTML = 'DAD KNOWS<br><strong>BEST?</strong>';
-    } else if (arcade) {
-      $('lane-label').textContent = '↓ ONCOMING TRAFFIC. YOU’RE IN CHARGE.';
-      $('scene-caption-copy').textContent = 'Steer: ← → / A D · Bell: B · Light: L · Pause: P';
+    document.querySelector('.game').dataset.phase = phase;
+    $('start-screen').hidden = phase !== 'pick';
+    $('end-screen').hidden = !['failed', 'won'].includes(phase);
+    $('dialogue-dock').inert = phase !== 'riding' || state.paused;
+    $('motion-toggle').disabled = !['riding', 'winTransition'].includes(phase);
+    updateUI();
+  }
+  function reset() {
+    state.character = null; state.tried.clear(); state.attempts = 0; state.page = 0;
+    state.speechUntil = 0; state.winTime = 0; state.paused = false;
+    state.traffic = makeTraffic();
+    $('player-name').textContent = 'Family ride';
+    $('tim-response').textContent = '“I like to see the traffic coming. It’s a system.”';
+    $('dialogue-status').textContent = 'Convince Tim while you dodge.';
+    $('choices').replaceChildren(); $('road-message').hidden = true;
+    $('lane-label').textContent = 'Tim’s lane · oncoming traffic';
+    $('road').setAttribute('aria-label', 'Tim leads his family into oncoming traffic. Choose a family member to start the ride.');
+    setPhase('pick'); updatePause();
+  }
+  function selectCharacter(id) {
+    reset(); state.character = characters.find(c => c.id === id);
+    $('player-name').textContent = state.character.name;
+    $('tim-response').textContent = '“Stay behind me. I’ve watched at least three cycling videos.”';
+    $('road').setAttribute('aria-label', 'Steer the whole family around oncoming cars while choosing arguments to convince Tim. Left and right arrows steer, B rings the bell, L flashes the light, 1 to 3 choose dialogue.');
+    setPhase('riding'); renderChoices();
+    $('choices').querySelector('button').focus({ preventScroll: true });
+  }
+  // Each set has one common-sense, one family, and one dad-psychology argument.
+  function deck() {
+    return Array.from({ length: 4 }, (_, i) => ['sense', 'family', 'ego'].map(topic =>
+      ({ ...(i < 3 ? shared[topic][i] : personal[state.character.id][topic]), topic })));
+  }
+  function renderChoices() {
+    if (!state.character) return;
+    $('choices').replaceChildren();
+    deck()[state.page].forEach((choice, i) => {
+      const button = document.createElement('button'); button.className = 'choice-button'; button.dataset.choice = choice.id;
+      const number = document.createElement('span'); number.className = 'choice-number'; number.textContent = state.tried.has(choice.id) ? '✓' : i + 1;
+      const line = document.createElement('span'); line.textContent = choice.line;
+      button.append(number, line); button.addEventListener('click', () => choose(choice)); $('choices').append(button);
+    });
+    updateUI();
+  }
+  function choose(choice) {
+    const t = state.traffic;
+    if (state.phase !== 'riding' || state.paused || t.time < state.speechUntil || state.tried.has(choice.id)) return;
+    state.tried.add(choice.id); state.attempts++;
+    $('tim-response').textContent = `“${choice.reply}”`;
+    state.speechUntil = t.time + 3;
+    if (choice.wins) {
+      state.winTime = 0; setPhase('winTransition');
+      $('lane-label').textContent = 'Moving to the right lane…';
+      roadMessage('“Advanced family coming through!”', 3);
+      playTone(true);
+    } else {
+      // The rejection changes the road immediately, without taking away the controls.
+      const driver = t.cars.filter(c => !c.hit && !c.diverted && c.y < 620).sort((a, b) => b.y - a.y)[0];
+      const reaction = driver || { x: TRACKS[t.track], y: 40, speed: 160,
+        color: choice.topic === 'family' ? '#c28a5b' : '#6e8c8a', hit: false };
+      reaction.targetX = TRACKS[t.track === 0 ? 2 : 0]; reaction.diverted = true;
+      if (!driver) t.cars.push(reaction);
+      roadMessage(choice.topic === 'family' ? 'SCREEECH! Snack van brakes and swerves.' : choice.topic === 'ego' ? 'HONK! Tim assumes it’s applause.' : 'SKRRRT! A driver swerves around Tim.', 2.7);
+      playTone(false); updateUI();
     }
-    $('pause-overlay').hidden = !state.paused;
-    if (arcade) updateTrafficUI();
   }
-  function finishWin() {
-    state.won = true; state.event = null; state.lane = 1;
-    setPhase('won'); $('victory').hidden = false;
-    $('victory-copy').textContent = `You changed Tim’s lane in ${state.attempts} argument${state.attempts === 1 ? '' : 's'} and survived ${state.cleared} traffic round${state.cleared === 1 ? '' : 's'}. He will be telling this story differently at dinner.`;
-    $('lane-label').textContent = '→ RIGHT SIDE. STILL STRONG OPINIONS.';
-    $('scene-caption-copy').textContent = 'With traffic. At last. Tim says this was always the plan.';
-    $('road').setAttribute('aria-label', 'Tim and the family have moved to the right lane, traveling with traffic. You won.');
-    updateStats(); $('play-again').focus({ preventScroll: true });
-  }
-  $('character-list').innerHTML = '';
-  characters.forEach(person => {
-    const button = document.createElement('button'); button.className = 'character-card'; button.dataset.character = person.id;
-    button.innerHTML = `<span class="avatar">${portrait(person)}</span><span><strong>${person.name}</strong><small>${person.role}</small></span><span class="character-arrow" aria-hidden="true">→</span>`;
-    button.addEventListener('click', () => selectCharacter(person.id)); $('character-list').append(button);
+  $('more-ideas').addEventListener('click', () => {
+    if (state.phase !== 'riding' || state.paused) return;
+    state.page = (state.page + 1) % 4; renderChoices();
   });
-  function goHome() { reset(); $('character-list').querySelector('button').focus({ preventScroll: true }); }
-  document.querySelector('.brand').addEventListener('click', event => { event.preventDefault(); goHome(); });
-  $('change-character').addEventListener('click', goHome); $('play-again').addEventListener('click', goHome);
   $('hint-button').addEventListener('click', () => {
-    $('hint').hidden = !$('hint').hidden;
-    $('hint').textContent = 'You’re debating a dad, not a traffic engineer. Try his pride. He would hate to think he’s in the beginner lane.';
-    $('hint-button').textContent = $('hint').hidden ? 'Need a hint?' : 'Hide hint';
-  });
-  document.addEventListener('keydown', event => {
-    if (event.altKey || event.ctrlKey || event.metaKey || !state.character || state.won) return;
-    const key = event.key.toLowerCase();
-    if (key === 'p' && ['traffic', 'consequence', 'winTransition'].includes(state.phase)) { event.preventDefault(); if (!event.repeat) togglePause(); return; }
-    if (state.phase === 'traffic') {
-      if (['arrowleft', 'arrowright', 'a', 'd', 'b', 'l'].includes(key)) event.preventDefault();
-      if (state.paused || event.repeat) return;
-      if (key === 'arrowleft' || key === 'a') steer(-1);
-      if (key === 'arrowright' || key === 'd') steer(1);
-      if (key === 'b') useAbility('bell');
-      if (key === 'l') useAbility('light');
-    } else if (state.phase === 'dialogue' && /^[1-4]$/.test(key)) {
-      $('choices').children[Number(key) - 1]?.click();
-    }
-  });
-
-  function makeTraffic() {
-    return {
-      time: 0, duration: Math.min(14 + (state.attempts - 1), 18), track: 1, x: TRACKS[1],
-      cars: [], spawned: 0, nextSpawn: .7, health: 3, hits: 0, passed: 0, bells: 0, lights: 0,
-      bellReady: 0, lightReady: 0, lightUntil: 0, bellUntil: 0, invulnerableUntil: 0,
-      message: '', messageUntil: 0, uiTime: -1, swerves: 0
-    };
-  }
-  function prepareTraffic() {
-    state.event = null; state.traffic = makeTraffic();
-    setPhase('ready');
-    $('overlay-eyebrow').textContent = `ROUND ${String(state.attempts * 2).padStart(2, '0')} · TRAFFIC`;
-    $('overlay-title').textContent = 'Protect the family.';
-    $('overlay-copy').textContent = `Dodge cars for ${state.traffic.duration} seconds. Steer with arrows or the buttons below. Ring the bell to clear a path; flash the light to buy time.`;
-    $('road-continue').textContent = 'Start traffic round →';
-    $('traffic-report').textContent = 'Tim: “See? The drivers can see us. System working perfectly.”';
-    $('road').setAttribute('aria-label', 'Overhead view of the road. The family is in the left lane. Start the traffic round to steer, ring the bell, and flash your light.');
-    $('road-continue').focus({ preventScroll: true }); revealRoad(); drawScene();
-  }
-  function startTraffic() {
-    state.traffic = makeTraffic(); state.paused = false;
-    setPhase('traffic'); updateMotionButton();
-    roadMessage('Protect the whole family. Watch the warning trails!', 2.5);
-    $('road').setAttribute('aria-label', 'Traffic round in progress. Cars approach from the top. Use left and right arrows to steer, B to ring the bell, and L to flash the light.');
-    $('steer-left').focus({ preventScroll: true }); revealRoad();
-  }
-  function returnToDialogue() {
-    state.traffic = null; $('road-message').hidden = true;
-    setPhase('dialogue');
-    $('response-label').textContent = 'TIM’S COMPLETELY UNHELPFUL ASSESSMENT';
-    $('tim-response').textContent = '“That went well. I knew my system would work. Now, what were you saying?”';
-    $('family-response').textContent = 'The family did all the dodging. Tim has learned absolutely nothing. Try another argument.';
-    $('scene-quote').textContent = '“Excellent work, everyone. Especially me.”';
-    $('road').setAttribute('aria-label', 'The family survived the traffic round. Tim is still leading them on the wrong side. Try another argument.');
-    renderTopics(); renderChoices(); updateStats();
-    ($('choices').querySelector('button:not(:disabled)') || $('topics').querySelector('button')).focus({ preventScroll: true });
-    if (innerWidth <= 760) $('conversation-screen').scrollIntoView({ behavior: 'instant', block: 'start' });
-  }
-  $('road-continue').addEventListener('click', () => {
-    if (state.phase === 'ready' || state.phase === 'failed') startTraffic();
-    else if (state.phase === 'result') returnToDialogue();
+    $('tim-response').textContent = 'Hint: Tim would hate to think he’s in the beginner lane. Try his pride.';
   });
   function roadMessage(message, duration = 2) {
-    if (state.traffic) { state.traffic.message = message; state.traffic.messageUntil = state.traffic.time + duration; }
+    const t = state.traffic; t.message = message; t.messageUntil = t.time + duration;
     $('road-message').textContent = message; $('road-message').hidden = false;
   }
   function steer(direction) {
-    if (state.phase !== 'traffic' || state.paused) return;
-    const t = state.traffic, target = Math.max(0, Math.min(2, t.track + direction));
-    if (target !== t.track) {
-      t.track = target; t.swerves++;
-      roadMessage(direction < 0 ? '← Family swerves left!' : 'Family swerves right! →', 1.1);
-      updateTrafficUI();
-    }
+    if (state.phase !== 'riding' || state.paused) return;
+    state.traffic.track = Math.max(0, Math.min(2, state.traffic.track + direction)); updateUI();
   }
   function useAbility(kind) {
-    if (state.phase !== 'traffic' || state.paused) return;
+    if (state.phase !== 'riding' || state.paused) return;
     const t = state.traffic;
     if (kind === 'bell') {
       if (t.time < t.bellReady) return;
-      t.bellReady = t.time + 4; t.bellUntil = t.time + 1; t.bells++;
-      const approaching = t.cars.filter(c => !c.hit && !c.diverted && c.y < 630);
-      approaching.sort((a, b) => Math.abs(FAMILY_ROWS[0] - a.y) - Math.abs(FAMILY_ROWS[0] - b.y));
-      const driver = approaching[0];
-      if (driver) {
-        driver.targetX = TRACKS[t.track === 0 ? 2 : 0]; driver.diverted = true;
-        roadMessage('DING DING! A driver swerves out of your path.');
-        $('traffic-report').textContent = 'Tim: “Good bell technique. Must run in the family.”';
-      } else roadMessage('Ding! No approaching driver in range yet.');
+      t.bellReady = t.time + 4; t.bellUntil = t.time + 1;
+      const cars = t.cars.filter(c => !c.hit && !c.diverted && c.y < 630);
+      // Clear the current path first, then the nearest approaching driver.
+      cars.sort((a,b) => (Math.abs(a.targetX - TRACKS[t.track]) > 45) - (Math.abs(b.targetX - TRACKS[t.track]) > 45) || Math.abs(FAMILY_ROWS[0] - a.y) - Math.abs(FAMILY_ROWS[0] - b.y));
+      if (cars[0]) { cars[0].targetX = TRACKS[t.track === 0 ? 2 : 0]; cars[0].diverted = true; roadMessage('DING! Driver swerves out of your path.'); }
+      else roadMessage('DING! Nobody in range yet.');
     } else {
       if (t.time < t.lightReady) return;
-      t.lightReady = t.time + 6; t.lightUntil = t.time + 2.5; t.lights++;
-      roadMessage('LIGHT ON · Drivers slow. Find a clear path!');
-      $('traffic-report').textContent = 'Tim: “They’re slowing down to admire my cycling form.”';
+      t.lightReady = t.time + 6; t.lightUntil = t.time + 2.5;
+      roadMessage('Light on. Traffic slows — find a clear path!');
     }
-    playTone(kind === 'light'); updateTrafficUI();
+    playTone(kind === 'light'); updateUI();
+  }
+  function updateUI() {
+    const t = state.traffic;
+    $('traffic-health').textContent = `Composure ${t.health}/3`;
+    $('traffic-health').classList.toggle('low', t.health === 1);
+    const playable = state.phase === 'riding' && !state.paused;
+    $('steer-left').disabled = !playable || t.track === 0;
+    $('steer-right').disabled = !playable || t.track === 2;
+    $('ring-bell').disabled = !playable || t.time < t.bellReady;
+    $('flash-light').disabled = !playable || t.time < t.lightReady;
+    $('bell-cooldown').textContent = t.time < t.bellReady ? `${Math.ceil(t.bellReady-t.time)}s` : 'B';
+    $('light-cooldown').textContent = t.time < t.lightReady ? `${Math.ceil(t.lightReady-t.time)}s` : 'L';
+    const waiting = Math.max(0, Math.ceil(state.speechUntil - t.time));
+    $('dialogue-status').textContent = state.phase === 'winTransition' || state.phase === 'won' ? 'He’s finally changing lanes.' : waiting ? `Tim’s talking… keep dodging! (${waiting}s)` : 'Convince Tim while you dodge.';
+    $('choices').querySelectorAll('button').forEach(button => {
+      button.disabled = !playable || waiting > 0 || state.tried.has(button.dataset.choice);
+      button.querySelector('.choice-number').textContent = state.tried.has(button.dataset.choice) ? '✓' : [...$('choices').children].indexOf(button) + 1;
+    });
+    $('more-ideas').disabled = !playable; $('hint-button').disabled = !playable;
+  }
+  function finishFailed() {
+    setPhase('failed');
+    $('end-title').textContent = 'Emergency snack stop.';
+    $('end-copy').textContent = 'Three close calls. Tim blames low snack levels. Take a breather, then try again.';
+    $('road-continue').textContent = 'Back on the bikes';
+    $('road-continue').focus({ preventScroll: true });
+  }
+  function finishWin() {
+    setPhase('won');
+    $('lane-label').textContent = 'Right lane. Same dad.';
+    $('end-title').textContent = 'Right lane. Same dad.';
+    $('end-copy').textContent = `You convinced Tim in ${state.attempts} argument${state.attempts === 1 ? '' : 's'}. He will take full credit at dinner.`;
+    $('road-continue').textContent = 'Ride again';
+    $('road').setAttribute('aria-label', 'The whole family moved to the right side of the road, with traffic. You won.');
+    $('road-continue').focus({ preventScroll: true });
+  }
+  $('road-continue').addEventListener('click', () => {
+    if (state.phase === 'failed') {
+      state.traffic = makeTraffic(); state.speechUntil = 0; $('road-message').hidden = true;
+      setPhase('riding'); renderChoices(); $('choices').querySelector('button:not(:disabled)')?.focus({ preventScroll: true });
+    } else reset();
+  });
+  function updateTraffic(delta) {
+    const t = state.traffic; t.time += delta;
+    if (state.phase === 'winTransition') {
+      state.winTime += delta;
+      t.x += (675 - t.x) * Math.min(delta * 2, 1);
+      t.cars.forEach(c => { c.y += c.speed * delta; });
+      if (state.winTime >= 2.8) finishWin();
+      return;
+    }
+    t.x += (TRACKS[t.track] - t.x) * Math.min(delta * 12, 1);
+    if (t.time >= t.nextSpawn) {
+      const track = t.spawned < 2 || t.spawned % 3 === 0 ? 1 : t.spawned % 3;
+      t.cars.push({ x: TRACKS[track], targetX: TRACKS[track], y: -90,
+        speed: 150 + Math.min(t.time*.35, 35), color: ['#6e8c8a','#c28a5b','#727b97'][t.spawned % 3], hit: false, diverted: false, warned: false });
+      t.spawned++; t.nextSpawn += Math.max(2, 3 - t.time*.005);
+    }
+    for (const driver of t.cars) {
+      driver.x += (driver.targetX - driver.x) * Math.min(delta * 7, 1);
+      driver.y += driver.speed * (t.time < t.lightUntil ? .42 : 1) * delta;
+      if (!driver.warned && !driver.diverted && driver.y > 170 && Math.abs(driver.targetX - TRACKS[t.track]) < 45) {
+        driver.warned = true;
+        if (t.time > t.messageUntil) roadMessage('Car in your path! Swerve or ring the bell.', 1.6);
+      }
+      if (!driver.hit && !driver.diverted && Math.abs(driver.x - t.x) < 43 && FAMILY_ROWS.some(y => Math.abs(driver.y - y) < 56)) {
+        driver.hit = true; driver.targetX = TRACKS[t.track === 0 ? 2 : 0];
+        if (t.time >= t.invulnerableUntil) {
+          t.health--; t.hits++; t.invulnerableUntil = t.time + 1.3;
+          roadMessage('WHOAAA! Close call. Composure −1.', 2); playTone(false); updateUI();
+          if (t.health <= 0) { finishFailed(); return; }
+        }
+      }
+    }
+    t.cars = t.cars.filter(c => c.y <= 820);
+    if (t.time > t.messageUntil) $('road-message').hidden = true;
+    if (t.time - t.uiTime > .1) { updateUI(); t.uiTime = t.time; }
   }
   $('steer-left').addEventListener('click', () => steer(-1));
   $('steer-right').addEventListener('click', () => steer(1));
   $('ring-bell').addEventListener('click', () => useAbility('bell'));
   $('flash-light').addEventListener('click', () => useAbility('light'));
   let swipeStart = null;
-  $('road').addEventListener('pointerdown', event => { if (state.phase === 'traffic') swipeStart = event.clientX; });
-  $('road').addEventListener('pointerup', event => {
-    if (swipeStart !== null && Math.abs(event.clientX - swipeStart) > 25) steer(event.clientX > swipeStart ? 1 : -1);
-    swipeStart = null;
+  $('road').addEventListener('pointerdown', e => { if (state.phase === 'riding') swipeStart = e.clientX; });
+  $('road').addEventListener('pointerup', e => { if (swipeStart !== null && Math.abs(e.clientX-swipeStart)>25) steer(e.clientX>swipeStart?1:-1); swipeStart=null; });
+  $('road').addEventListener('pointercancel', () => { swipeStart=null; });
+  document.addEventListener('keydown', e => {
+    if (e.altKey || e.ctrlKey || e.metaKey || !['riding','winTransition'].includes(state.phase)) return;
+    const key = e.key.toLowerCase();
+    if (key === 'p') { e.preventDefault(); if (!e.repeat) togglePause(); return; }
+    if (state.paused || e.repeat || state.phase !== 'riding') return;
+    if (['arrowleft','arrowright','a','d','b','l','1','2','3'].includes(key)) e.preventDefault();
+    if (key === 'arrowleft' || key === 'a') steer(-1);
+    if (key === 'arrowright' || key === 'd') steer(1);
+    if (key === 'b') useAbility('bell');
+    if (key === 'l') useAbility('light');
+    if (/^[1-3]$/.test(key)) $('choices').children[Number(key)-1]?.click();
   });
-  $('road').addEventListener('pointercancel', () => { swipeStart = null; });
-  function updateTrafficUI() {
-    const t = state.traffic; if (!t) return;
-    $('traffic-round').textContent = `TRAFFIC ${String(state.attempts).padStart(2, '0')}`;
-    $('traffic-health').textContent = `COMPOSURE ${t.health}/3`;
-    $('traffic-health').style.color = t.health === 1 ? '#ffc093' : '#d6e1aa';
-    $('traffic-timer').textContent = `${Math.max(0, Math.ceil(t.duration - t.time))}s`;
-    $('traffic-progress-fill').style.width = `${Math.min(100, t.time / t.duration * 100)}%`;
-    const playable = state.phase === 'traffic' && !state.paused;
-    $('steer-left').disabled = !playable || t.track === 0;
-    $('steer-right').disabled = !playable || t.track === 2;
-    $('ring-bell').disabled = !playable || t.time < t.bellReady;
-    $('flash-light').disabled = !playable || t.time < t.lightReady;
-    $('bell-cooldown').textContent = t.time < t.bellReady ? `Ready in ${(t.bellReady - t.time).toFixed(1)}s` : 'Driver swerves';
-    $('light-cooldown').textContent = t.time < t.lightReady ? `Ready in ${(t.lightReady - t.time).toFixed(1)}s` : 'Traffic slows';
+  function updatePause() {
+    $('motion-toggle').textContent = state.paused ? 'Resume' : 'Pause';
+    $('motion-toggle').setAttribute('aria-pressed', String(state.paused));
+    $('pause-overlay').hidden = !state.paused;
+    $('dialogue-dock').inert = state.paused || state.phase !== 'riding'; updateUI();
   }
-  function finishTraffic(failed) {
-    const t = state.traffic;
-    if (!failed) { state.cleared++; state.saved += t.passed; }
-    $('road-message').hidden = true;
-    setPhase(failed ? 'failed' : 'result');
-    $('overlay-eyebrow').textContent = failed ? 'COMPOSURE: COMPLETELY LOST' : `ROUND ${String(state.attempts * 2).padStart(2, '0')} · SURVIVED`;
-    $('overlay-title').textContent = failed ? 'Emergency snack stop.' : 'Everyone’s still rolling.';
-    $('overlay-copy').textContent = failed ? 'Three close calls! The family pulls over for snacks. Tim blames “unpredictable snack levels.” Retry this stretch.' : `${t.passed} cars passed · ${t.hits} close call${t.hits === 1 ? '' : 's'}. Tim still thinks he was right. Time for another argument.`;
-    $('road-continue').textContent = failed ? 'Retry traffic round →' : 'Talk to Tim again →';
-    $('traffic-report').textContent = `${t.swerves} swerves · ${t.bells} bell ring${t.bells === 1 ? '' : 's'} · ${t.lights} light burst${t.lights === 1 ? '' : 's'}. ${failed ? 'Snacks restore composure for the retry.' : 'Your work. Tim’s credit.'}`;
-    $('road').setAttribute('aria-label', failed ? 'The family lost its composure after three close calls and stopped for snacks. Retry the traffic round.' : 'The traffic round is complete. Everyone is still rolling. Continue to another dialogue round.');
-    $('road-continue').focus({ preventScroll: true });
+  function togglePause() {
+    if (!['riding','winTransition'].includes(state.phase)) return;
+    state.paused = !state.paused; updatePause();
   }
-  function updateTraffic(delta) {
-    const t = state.traffic; t.time += delta;
-    t.x += (TRACKS[t.track] - t.x) * Math.min(delta * 12, 1);
-    if (t.time >= t.nextSpawn && t.time < t.duration - 4.7) {
-      // A honking convoy makes staying still risky; other cars use the outer paths.
-      const track = t.spawned < 2 || t.spawned % 3 === 0 ? 1 : (t.spawned + state.attempts) % 3;
-      t.cars.push({ x: TRACKS[track], targetX: TRACKS[track], y: -90, speed: 176 + Math.min(state.attempts * 7, 35), color: ['#6e8c8a', '#c28a5b', '#727b97'][t.spawned % 3], hit: false, diverted: false, warned: false });
-      t.spawned++; t.nextSpawn += Math.max(1.55, 2.25 - state.attempts * .08);
-    }
-    for (const driver of t.cars) {
-      driver.x += (driver.targetX - driver.x) * Math.min(delta * 7, 1);
-      driver.y += driver.speed * (t.time < t.lightUntil ? .42 : 1) * delta;
-      if (!driver.warned && driver.y > 170 && Math.abs(driver.targetX - TRACKS[t.track]) < 45) {
-        driver.warned = true;
-        if (t.time > t.messageUntil) roadMessage('CAR IN YOUR PATH · Swerve, ring, or flash!', 1.6);
-      }
-      if (!driver.hit && Math.abs(driver.x - t.x) < 43 && FAMILY_ROWS.some(y => Math.abs(driver.y - y) < 56)) {
-        driver.hit = true;
-        driver.targetX = TRACKS[t.track === 0 ? 2 : 0];
-        if (t.time >= t.invulnerableUntil) {
-          t.health--; t.hits++; t.invulnerableUntil = t.time + 1.3;
-          roadMessage('WHOAAA! Close call. Composure −1.', 2);
-          $('traffic-report').textContent = 'Tim: “That was a strategic maneuver. Totally intentional.”';
-          playTone(false);
-          if (t.health <= 0) { finishTraffic(true); return; }
-        }
-      }
-    }
-    const passed = t.cars.filter(c => c.y > 820); t.passed += passed.length;
-    t.cars = t.cars.filter(c => c.y <= 820);
-    if (t.time > t.messageUntil) $('road-message').hidden = true;
-    if (t.time - t.uiTime > .1) { updateTrafficUI(); t.uiTime = t.time; }
-    if (t.time >= t.duration) finishTraffic(false);
-  }
+  $('motion-toggle').addEventListener('click', togglePause);
+  $('resume-ride').addEventListener('click', togglePause);
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden && !state.paused && ['riding','winTransition'].includes(state.phase)) togglePause();
+  });
+  $('restart').addEventListener('click', reset);
   let audioContext;
   function playTone(won) {
     if (!state.sound) return;
     try {
       audioContext ||= new (window.AudioContext || window.webkitAudioContext)();
       audioContext.resume().catch(() => {});
-      const notes = won ? [523, 659, 784, 1047] : [330, 247];
-      notes.forEach((frequency, i) => {
-        const oscillator = audioContext.createOscillator(), gain = audioContext.createGain();
-        const start = audioContext.currentTime + i * .12;
-        oscillator.type = 'triangle'; oscillator.frequency.value = frequency;
-        gain.gain.setValueAtTime(0, start); gain.gain.linearRampToValueAtTime(.06, start + .015); gain.gain.exponentialRampToValueAtTime(.001, start + .18);
-        oscillator.connect(gain); gain.connect(audioContext.destination); oscillator.start(start); oscillator.stop(start + .2);
+      (won ? [523,659,784] : [330,247]).forEach((frequency,i) => {
+        const oscillator=audioContext.createOscillator(), gain=audioContext.createGain(), start=audioContext.currentTime+i*.12;
+        oscillator.type='triangle'; oscillator.frequency.value=frequency;
+        gain.gain.setValueAtTime(0,start); gain.gain.linearRampToValueAtTime(.04,start+.015); gain.gain.exponentialRampToValueAtTime(.001,start+.18);
+        oscillator.connect(gain); gain.connect(audioContext.destination); oscillator.start(start); oscillator.stop(start+.2);
       });
-    } catch { /* Sound is optional; gameplay works without browser audio support. */ }
+    } catch { /* Audio is optional. */ }
   }
-  $('sound-toggle').addEventListener('click', () => { state.sound = !state.sound; $('sound-toggle').textContent = `Sound: ${state.sound ? 'on' : 'off'}`; $('sound-toggle').setAttribute('aria-pressed', String(state.sound)); if (state.sound) playTone(false); });
-  function updateMotionButton() {
-    $('motion-toggle').textContent = state.paused ? 'Resume ride' : 'Pause ride';
-    $('motion-toggle').setAttribute('aria-pressed', String(state.paused));
-    $('pause-overlay').hidden = !state.paused;
-    updateTrafficUI();
-  }
-  function togglePause() {
-    state.paused = !state.paused; updateMotionButton();
-    if (state.phase === 'dialogue') renderChoices();
-  }
-  $('motion-toggle').addEventListener('click', togglePause);
-  $('resume-ride').addEventListener('click', togglePause);
-  document.addEventListener('visibilitychange', () => {
-    if (document.hidden && !state.paused && ['traffic', 'consequence', 'winTransition'].includes(state.phase)) togglePause();
+  $('sound-toggle').addEventListener('click', () => {
+    state.sound=!state.sound; $('sound-toggle').textContent=`Sound ${state.sound?'on':'off'}`;
+    $('sound-toggle').setAttribute('aria-pressed', String(state.sound)); if(state.sound) playTone(false);
   });
-  const motionPreference = matchMedia('(prefers-reduced-motion: reduce)');
-  motionPreference.addEventListener('change', event => { state.reduced = event.matches; drawScene(); });
-  updateMotionButton();
-
-  // Hand-drawn scenery uses a fixed logical canvas; the backing bitmap follows display density.
-  const canvas = $('road'), ctx = canvas.getContext('2d');
-  const W = 1000, H = 590;
-  function resizeCanvas() {
-    const rect = canvas.getBoundingClientRect(), density = Math.min(devicePixelRatio || 1, 2);
-    canvas.width = Math.round(rect.width * density); canvas.height = Math.round(rect.height * density);
-    drawScene();
+  function portrait(person) {
+    const backHair = person.hairStyle !== 'short' ? `<path d="M12 28 Q9 6 25 8 Q43 7 40 39 L11 39Z" fill="${person.hair}"/>` : '';
+    const ponytail = person.hairStyle === 'ponytail' ? `<path d="M36 17 Q49 15 41 34 L34 29Z" fill="${person.hair}"/>` : '';
+    return `<svg viewBox="0 0 50 50" aria-hidden="true"><rect width="50" height="50" fill="#e7e2cf"/>${backHair}${ponytail}<path d="M7 50 Q8 34 25 34 Q42 34 44 50" fill="${person.color}"/><rect x="21" y="28" width="8" height="10" rx="3" fill="${person.skin}"/><ellipse cx="25" cy="22" rx="11" ry="13" fill="${person.skin}"/><path d="M13 20 Q10 6 25 6 Q39 7 37 18 L32 14 L20 16Z" fill="${person.hair}"/><path d="M12 15 Q12 3 25 3 Q38 3 38 15Z" fill="${person.color}"/><path d="M12 14H39" stroke="#302f25" stroke-width="2"/><circle cx="21" cy="23" r="1" fill="#302f25"/><circle cx="29" cy="23" r="1" fill="#302f25"/><path d="M22 29 Q25 31 28 28" fill="none" stroke="#77513b" stroke-width="1.3"/></svg>`;
   }
-  new ResizeObserver(resizeCanvas).observe(canvas);
+
   function path(points, fill, stroke, width = 2) {
     ctx.beginPath(); points.forEach((p, i) => i ? ctx.lineTo(...p) : ctx.moveTo(...p));
     if (fill) { ctx.closePath(); ctx.fillStyle = fill; ctx.fill(); }
     if (stroke) { ctx.strokeStyle = stroke; ctx.lineWidth = width; ctx.lineCap = 'round'; ctx.lineJoin = 'round'; ctx.stroke(); }
   }
   function ellipse(x, y, rx, ry, color) { ctx.beginPath(); ctx.ellipse(x, y, rx, ry, 0, 0, Math.PI * 2); ctx.fillStyle = color; ctx.fill(); }
-  function tree(x, y, size) {
-    ctx.fillStyle = '#6b704c'; ctx.fillRect(x - 3 * size, y - 10 * size, 6 * size, 55 * size);
-    ellipse(x - 20 * size, y - 21 * size, 29 * size, 35 * size, '#7f9863'); ellipse(x + 14 * size, y - 31 * size, 34 * size, 43 * size, '#91a16b'); ellipse(x, y - 53 * size, 31 * size, 39 * size, '#8e9f69');
-  }
   function roadArrow(x, y, direction) { ctx.save(); ctx.translate(x, y); ctx.scale(direction, 1); path([[-25,-3],[8,-3],[8,-10],[27,0],[8,10],[8,3],[-25,3]], '#c9c5aa'); ctx.restore(); }
-  function car(x, y, color, direction) {
-    ctx.save(); ctx.translate(x, y); ctx.scale(direction, 1);
-    ellipse(0, 13, 59, 8, '#34382d20');
-    path([[-57,4],[-53,-18],[-32,-22],[-16,-42],[20,-42],[40,-20],[57,-15],[60,4]], color, '#555945', 2);
-    path([[-22,-23],[-11,-36],[16,-36],[29,-23]], '#d7e1d4'); path([[3,-36],[3,-23]], null, color, 3);
-    ctx.fillStyle = '#e7dcc0'; ctx.fillRect(47,-12,8,5); ctx.fillStyle = '#9d5040'; ctx.fillRect(-53,-11,6,5);
-    [-35, 36].forEach(wx => { ellipse(wx,5,12,12,'#424638'); ellipse(wx,5,6,6,'#d3d3bc'); });
-    ctx.restore();
-  }
-  function cyclist(x, y, scale, person, phase) {
-    ctx.save(); ctx.translate(x, y); ctx.scale(scale, scale);
-    const pedal = (state.reduced ? 0 : state.elapsed * 5) + phase;
-    ellipse(3, 6, 55, 8, '#35433320');
-    [-35, 38].forEach(wx => {
-      ellipse(wx,0,24,24,'#3d4538'); ellipse(wx,0,20,20,'#ece9d4');
-      ctx.save(); ctx.translate(wx,0); ctx.rotate(pedal); for (let n=0;n<4;n++) { ctx.rotate(Math.PI/4); path([[-19,0],[19,0]],null,'#858b76',1); } ctx.restore();
-    });
-    path([[-35,0],[-11,-31],[7,0],[-35,0],[-11,-31],[24,-30],[7,0],[38,0],[24,-30],[23,-43],[35,-46]],null,person.id === 'tim' ? '#a8452b' : '#526b61',4);
-    path([[-18,-35],[-7,-35]],null,'#353d31',5);
-    const footX = 7 + Math.cos(pedal) * 11, footY = Math.sin(pedal) * 9;
-    path([[-12,-48],[-20,-22],[footX,footY]],null,'#776349',9);
-    path([[footX-5,footY],[footX+8,footY]],null,'#363d30',5);
-    path([[-13,-49],[4,-22],[14-Math.cos(pedal)*10,-Math.sin(pedal)*8]],null,person.skin,8);
-    path([[-17,-74],[-15,-50],[2,-46],[4,-70]],person.color);
-    path([[0,-69],[15,-53],[31,-46]],null,person.skin,7);
-    if (person.hairStyle !== 'short') path([[-20,-88],[-24,-56],[-9,-61],[-8,-89]],person.hair);
-    if (person.hairStyle === 'ponytail') ellipse(-26,-86,8,15,person.hair);
-    path([[-11,-73],[-7,-86]],null,person.skin,8);
-    ellipse(-7,-93,13,16,person.skin);
-    path([[-20,-96],[-18,-106],[-7,-110],[4,-105],[7,-96]],person.color,'#586245',2);
-    path([[-19,-96],[8,-96]],null,'#424839',2); path([[-16,-106],[-13,-99]],null,'#f2e8cd',2); path([[-7,-108],[-5,-99]],null,'#f2e8cd',2);
-    ellipse(3,-92,2,2,'#3c4434'); path([[4,-83],[9,-84]],null,'#83543e',1.5);
-    if (person.id === 'tim') { path([[-2,-93],[9,-93]],null,'#3b4838',3); path([[4,-80],[-5,-80]],null,'#77604b',3); }
-    if (state.character?.id === person.id) { ctx.fillStyle = '#fffbed'; ctx.font = 'bold 10px monospace'; ctx.textAlign = 'center'; ctx.fillRect(-29,-139,45,16); ctx.fillStyle = '#bd532e'; ctx.fillText('YOU',-7,-127); }
-    ctx.restore();
-  }
-  function drawRoadIncident() {
-    const e = state.event, time = e.time;
-    const smooth = value => { const v = Math.max(0, Math.min(1, value)); return v * v * (3 - 2 * v); };
-    let x, y, label, color;
-    if (e.type === 'family') {
-      x = time < 1.3 ? 980 - smooth(time / 1.3) * 240 : 740 - (time - 1.3) * 420;
-      y = 368 + smooth((time - 1.05) / .8) * 104; label = 'SCREEECH!'; color = '#c79b59';
-    } else {
-      x = 1010 - time * (e.type === 'ego' ? 330 : 360);
-      y = 367 + smooth((time - .65) / .65) * 106;
-      label = e.type === 'ego' ? 'HONK HONK!' : 'SKRRRT!'; color = e.type === 'ego' ? '#697d90' : '#729389';
-    }
-    if (time > .6 && time < 2.8) {
-      ctx.save(); ctx.globalAlpha = .55;
-      path([[900,366],[820,370],[755,385],[700,440],[620,470]],null,'#4a4d40',4);
-      path([[900,382],[820,386],[755,401],[700,456],[620,486]],null,'#4a4d40',4);
-      ctx.restore();
-    }
-    ctx.save(); ctx.translate(x,y);
-    if (!state.reduced && time > .7 && time < 1.4) ctx.rotate(-.18);
-    if (e.type === 'family') ctx.scale(1.13,1.15);
-    car(0,0,color,-1);
-    if (e.type === 'family') {
-      ctx.fillStyle='#fff2c6';ctx.fillRect(-37,-19,68,17);ctx.fillStyle='#82633c';ctx.font='bold 11px monospace';ctx.textAlign='center';ctx.fillText('SNACKS',-3,-6);
-    }
-    ctx.restore();
-    if (time > .55 && time < 2.5) {
-      ctx.save(); ctx.translate(Math.max(125,Math.min(850,x)),y-80); ctx.rotate(-.08);
-      ctx.fillStyle='#fff1bf';ctx.fillRect(-87,-20,174,33);ctx.fillStyle='#a3462c';ctx.font='bold 23px monospace';ctx.textAlign='center';ctx.fillText(label,0,4);ctx.restore();
-    }
-    if (e.type === 'family' && time > 1.1) {
-      const bagX = 760 - (time - 1.1)*85, bagY = 385 - Math.sin(Math.min(Math.PI,(time-1.1)*2))*55;
-      ctx.save();ctx.translate(bagX,bagY);ctx.rotate(time*2);ctx.fillStyle='#dbc394';ctx.fillRect(-8,-12,16,24);ctx.fillStyle='#af6e3f';ctx.fillRect(-8,-12,16,4);ctx.restore();
-    }
-  }
   function topDownCar(driver) {
     const t = state.traffic, slow = t.time < t.lightUntil;
     ctx.save();ctx.translate(driver.x,driver.y);
@@ -508,6 +322,8 @@
   }
   function topDownBike(x, y, person, selected) {
     ctx.save();ctx.translate(x,y);
+    // Keep the riders legible when the phone's road view is short.
+    ctx.scale(1.1, Math.min(1.5, Math.max(1, (canvas.width / 850) / (canvas.height / 740))));
     ellipse(4,5,17,31,'#253b2a28');
     path([[0,-28],[0,29]],null,'#36473a',5);
     path([[-13,-17],[13,-17]],null,'#455746',3);
@@ -526,9 +342,9 @@
   }
   function drawTraffic() {
     const t = state.traffic; if (!t) return;
-    const narrow = innerWidth <= 760, visibleWidth = narrow ? 700 : 1000;
+    const visibleWidth = 850;
     const sx = canvas.width / visibleWidth;
-    ctx.setTransform(sx, 0, 0, canvas.height / 740, narrow ? -180*sx : 0, 0);ctx.clearRect(0,0,1000,740);
+    ctx.setTransform(sx, 0, 0, canvas.height / 740, -150*sx, 0);ctx.clearRect(0,0,1000,740);
     ctx.fillStyle='#aebd85';ctx.fillRect(0,0,1000,740);
     ctx.fillStyle='#bdc899';ctx.fillRect(0,0,190,740);ctx.fillRect(860,0,140,740);
     for(let i=0;i<8;i++) {
@@ -561,10 +377,11 @@
       path([[t.x-12,420],[t.x-105,65],[t.x+105,65],[t.x+12,420]],'#fff4ac45');
       path([[t.x-5,420],[t.x-25,75],[t.x+25,75],[t.x+5,420]],'#fff6c760');
     }
-    const pack = [state.character,tim,...characters.filter(c=>c.id!==state.character.id)];
+    const selected = state.character || characters[0];
+    const pack = [tim,selected,...characters.filter(c=>c.id!==selected.id)];
     pack.forEach((person,i) => {
       const wobble = !state.reduced && t.time<t.invulnerableUntil ? Math.sin(t.time*22+i)*7 : 0;
-      topDownBike(t.x+wobble,FAMILY_ROWS[i],person,i===0);
+      topDownBike(t.x+wobble,FAMILY_ROWS[i],person,person.id===selected.id);
     });
     t.cars.forEach(topDownCar);
     if (t.time<t.bellUntil) {
@@ -577,64 +394,30 @@
     }
   }
   function drawScene() {
-    if (!ctx || !canvas.width || !canvas.height) return;
-    if (arcadePhases.includes(state.phase)) { drawTraffic(); return; }
-    ctx.setTransform(canvas.width / W, 0, 0, canvas.height / H, 0, 0); ctx.clearRect(0,0,W,H);
-    ctx.fillStyle = '#e5e9cd'; ctx.fillRect(0,0,W,H);
-    // Layered hills and hedgerows. The camera travels with the bicycles.
-    path([[0,225],[0,160],[110,145],[215,158],[330,139],[455,151],[565,128],[705,161],[810,130],[1000,157],[1000,255]],'#c6d0a5');
-    path([[0,257],[0,207],[105,185],[225,216],[375,184],[520,210],[690,177],[810,215],[950,183],[1000,199],[1000,270]],'#b3c093');
-    ctx.fillStyle = '#abb989'; ctx.fillRect(0,254,W,76);
-    for(let i=-1;i<8;i++) { const x = i*175 - (state.elapsed*18%175); tree(x,240,.75+(i%3)*.12); }
-    ctx.fillStyle = '#dad5b9'; ctx.fillRect(0,307,W,18);
-    path([[0,310],[1000,310]],null,'#e9e5cb',3);
-    ctx.fillStyle = '#92937e'; ctx.fillRect(0,325,W,188);
-    ctx.fillStyle = '#a6a591'; ctx.fillRect(0,327,W,3);
-    for(let x=-120;x<W+120;x+=145) { ctx.fillStyle = '#e9db9d'; ctx.fillRect(x-(state.elapsed*75%145),416,76,4); }
-    path([[0,506],[1000,506]],null,'#e9e5cb',3);
-    roadArrow(135-(state.elapsed*20%480),380,-1); roadArrow(635-(state.elapsed*20%480),380,-1);
-    roadArrow(205-(state.elapsed*20%480),475,1); roadArrow(705-(state.elapsed*20%480),475,1);
-    // Between arguments the ride is quiet; rejected arguments trigger a visible incident.
-    const oncomingX = 1400 - ((state.elapsed * 110 + 50) % 1650);
-    if (!state.event && (oncomingX > 740 || oncomingX < -80)) car(oncomingX,367,'#708c85',-1);
-    const followingX = 850 + Math.sin(state.elapsed*.18)*105;
-    car(followingX,476,'#bd8a62',1);
-    const row = 371 + state.lane*113;
-    const family = [characters[3],characters[2],characters[1],characters[0],tim];
-    family.forEach((person,i) => {
-      const scale = person.id === 'son' ? .69 : person.id === 'younger' ? .81 : person.id === 'older' ? .89 : .97;
-      const bob = state.paused || state.reduced ? 0 : Math.sin(state.elapsed*4+i)*1.8;
-      cyclist(120+i*116,row+bob,scale,person,i*1.8);
-    });
-    if (state.event && !state.event.win) drawRoadIncident();
-    ctx.fillStyle = '#a7b67b'; ctx.fillRect(0,513,W,77);
-    ctx.fillStyle = '#bac38b'; ctx.fillRect(0,513,W,9);
-    for(let i=0;i<32;i++) { const x=(i*47-state.elapsed*80%47+W)%W; path([[x,558+i%4*5],[x+4,545+i%4*5]],null,'#7c925e',1.5); if(i%5===0) ellipse(x+4,543+i%4*5,3,3,'#e6cd7b'); }
-    // A little roadside sign establishes the joke without needing an explanation.
-    const signX = 805 - (state.elapsed*15 % 155);
-    path([[signX,291],[signX,247]],null,'#7b8167',4);
-    ctx.fillStyle='#f3f0db';ctx.fillRect(signX-49,221,98,29);ctx.strokeStyle='#8c9575';ctx.lineWidth=1;ctx.strokeRect(signX-49,221,98,29);
-    ctx.fillStyle='#647354';ctx.font='10px monospace';ctx.textAlign='center';ctx.fillText('KEEP RIGHT →',signX,239);
-    if (state.won) {
-      ctx.fillStyle = '#3c6745'; ctx.font = 'bold 11px monospace'; ctx.textAlign = 'left'; ctx.fillText('✓ WITH TRAFFIC. FINALLY.',28,565);
-      if (!state.paused && !state.reduced) for (let i=0;i<25;i++) { const x=(i*113+state.elapsed*20)%W,y=(i*51+state.elapsed*38)%280;ctx.fillStyle=['#c96e3d','#e3c066','#819369'][i%3];ctx.save();ctx.translate(x,y);ctx.rotate(state.elapsed+i);ctx.fillRect(-2,-2,5,9);ctx.restore(); }
-    }
+    if (ctx && canvas.width && canvas.height) drawTraffic();
   }
+  const canvas = $('road'), ctx = canvas.getContext('2d');
+  function resizeCanvas() {
+    const rect = canvas.getBoundingClientRect(), density = Math.min(devicePixelRatio || 1, 2);
+    canvas.width = Math.round(rect.width*density); canvas.height = Math.round(rect.height*density); drawScene();
+  }
+  new ResizeObserver(resizeCanvas).observe(canvas);
+  const preference = matchMedia('(prefers-reduced-motion: reduce)');
+  preference.addEventListener('change', e => { state.reduced=e.matches; drawScene(); });
+  characters.forEach(person => {
+    const button = document.createElement('button'); button.className='character-card'; button.dataset.character=person.id;
+    button.innerHTML=`<span class="avatar">${portrait(person)}</span><span>${person.name}</span>`;
+    button.addEventListener('click', () => selectCharacter(person.id)); $('character-list').append(button);
+  });
   let previousTime = 0;
   function animate(time) {
-    const delta = previousTime ? Math.min((time-previousTime)/1000,.05) : 0; previousTime = time;
+    const delta = previousTime ? Math.min((time-previousTime)/1000,.05) : 0; previousTime=time;
     if (!state.paused) {
-      const active = ['traffic', 'consequence', 'winTransition'].includes(state.phase);
-      if (!state.reduced || active) state.elapsed += delta;
-      state.lane += ((state.won || state.phase === 'winTransition' ? 1 : 0) - state.lane) * Math.min(delta * 3, 1);
-      if (state.phase === 'traffic') updateTraffic(delta);
-      else if (state.event) {
-        state.event.time += delta;
-        if (state.event.time >= state.event.duration) state.event.win ? finishWin() : prepareTraffic();
-      }
+      if (['riding','winTransition'].includes(state.phase)) updateTraffic(delta);
       drawScene();
     }
     requestAnimationFrame(animate);
   }
   reset(); requestAnimationFrame(animate);
+
 })();
