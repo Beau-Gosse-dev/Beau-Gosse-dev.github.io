@@ -8,6 +8,13 @@ You can access the live website here: [https://beau-gosse-dev.github.io/](https:
 
 ## Projects
 
+### Tim's Right of Way
+
+A single-player family cycling game with alternating dialogue and traffic rounds. Persuade Tim to ride with traffic while steering the family, ringing the bell, and flashing the bike light to dodge oncoming cars. Works with keyboard and phone controls, with no backend or external dependencies.
+
+- [Play Tim's Right of Way](https://beau-gosse-dev.github.io/projects/tims-right-of-way/)
+- [Editable source and controls](projects/tims-right-of-way/README.md)
+
 ### 3D Models
 
 Printable watch tools and scale models, with previews, printing notes, and downloadable files.
